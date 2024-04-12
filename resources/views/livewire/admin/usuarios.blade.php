@@ -60,10 +60,11 @@
 
             <x-slot name="head">
 
+                <x-table.heading sortable wire:click="sortBy('status')" :direction="$sort === 'status' ? $direction : null" >Estado</x-table.heading>
                 <x-table.heading sortable wire:click="sortBy('name')" :direction="$sort === 'name' ? $direction : null" >Nombre</x-table.heading>
                 <x-table.heading sortable wire:click="sortBy('email')" :direction="$sort === 'email' ? $direction : null" >Correo</x-table.heading>
                 <x-table.heading >Rol</x-table.heading>
-                <x-table.heading sortable wire:click="sortBy('status')" :direction="$sort === 'status' ? $direction : null" >Estado</x-table.heading>
+                <x-table.heading >Entidad</x-table.heading>
                 <x-table.heading sortable wire:click="sortBy('created_at')" :direction="$sort === 'created_at' ? $direction : null">Registro</x-table.heading>
                 <x-table.heading sortable wire:click="sortBy('updated_at')" :direction="$sort === 'updated_at' ? $direction : null">Actualizado</x-table.heading>
                 <x-table.heading >Acciones</x-table.heading>
@@ -75,6 +76,22 @@
                 @forelse ($usuarios as $usuario)
 
                     <x-table.row wire:loading.class.delaylongest="opacity-50" wire:key="row-{{ $usuario->id }}">
+
+                        <x-table.cell>
+
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Status</span>
+
+                            @if($usuario->status == 'activo')
+
+                                <span class="bg-green-400 py-1 px-2 rounded-full text-white text-xs">{{ ucfirst($usuario->status) }}</span>
+
+                            @else
+
+                                <span class="bg-red-400 py-1 px-2 rounded-full text-white text-xs">{{ ucfirst($usuario->status) }}</span>
+
+                            @endif
+
+                        </x-table.cell>
 
                         <x-table.cell>
 
@@ -112,17 +129,9 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Status</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Entidad</span>
 
-                            @if($usuario->status == 'activo')
-
-                                <span class="bg-green-400 py-1 px-2 rounded-full text-white text-xs">{{ ucfirst($usuario->status) }}</span>
-
-                            @else
-
-                                <span class="bg-red-400 py-1 px-2 rounded-full text-white text-xs">{{ ucfirst($usuario->status) }}</span>
-
-                            @endif
+                            {{ $usuario->entidad?->dependencia }} {{ $usuario->entidad?->numero_notaria ? 'Notaria: ' . $usuario->entidad?->numero_notaria : '' }}
 
                         </x-table.cell>
 
@@ -251,15 +260,15 @@
 
                     </x-input-group>
 
-                </div>
-
-                <div class="flex flex-col md:flex-row justify-between md:space-x-3 mb-5">
-
                     <x-input-group for="modelo_editar.email" label="Correo" :error="$errors->first('modelo_editar.email')" class="w-full">
 
                         <x-input-text id="modelo_editar.email" wire:model="modelo_editar.email" />
 
                     </x-input-group>
+
+                </div>
+
+                <div class="flex flex-col md:flex-row justify-between md:space-x-3 mb-5">
 
                     <x-input-group for="modelo_editar.status" label="Estado" :error="$errors->first('modelo_editar.status')" class="w-full">
 
@@ -282,6 +291,22 @@
                             @foreach ($roles as $role)
 
                                 <option value="{{ $role->id }}">{{ $role->name }}</option>
+
+                            @endforeach
+
+                        </x-input-select>
+
+                    </x-input-group>
+
+                    <x-input-group for="modelo_editar.entidad_id" label="Entidad" :error="$errors->first('modelo_editar.entidad_id')" class="w-full">
+
+                        <x-input-select id="modelo_editar.entidad_id" wire:model="modelo_editar.entidad_id" class="w-full">
+
+                            <option value="">Seleccione una opción</option>
+
+                            @foreach ($entidades as $entidad)
+
+                                <option value="{{ $entidad->id }}">{{ $entidad->dependencia }} {{ $entidad->numero_notaria ? 'Notaria: ' . $entidad->numero_notaria : '' }}</option>
 
                             @endforeach
 

@@ -16,9 +16,11 @@ class RoleSeeder extends Seeder
     {
 
         $role1 = Role::create(['name' => 'Administrador']);
-        /* Certificaciones */
         $role2 = Role::create(['name' => 'Notario']);
         $role3 = Role::create(['name' => 'Gestor']);
+        $role4 = Role::create(['name' => 'Dependencia']);
+        $role5 = Role::create(['name' => 'AMPI']);
+        $role6 = Role::create(['name' => 'Abogado']);
 
 
         Permission::create(['name' => 'Lista de roles', 'area' => 'Roles'])->syncRoles([$role1]);
@@ -36,9 +38,21 @@ class RoleSeeder extends Seeder
         Permission::create(['name' => 'Editar usuario', 'area' => 'Usuarios'])->syncRoles([$role1, $role2]);
         Permission::create(['name' => 'Borrar usuario', 'area' => 'Usuarios'])->syncRoles([$role1]);
 
+        Permission::create(['name' => 'Lista de entidades', 'area' => 'Entidades'])->syncRoles([$role1, $role2]);
+        Permission::create(['name' => 'Crear entidad', 'area' => 'Entidades'])->syncRoles([$role1, $role2]);
+        Permission::create(['name' => 'Editar entidad', 'area' => 'Entidades'])->syncRoles([$role1, $role2]);
+        Permission::create(['name' => 'Borrar entidad', 'area' => 'Entidades'])->syncRoles([$role1]);
+
         Permission::create(['name' => 'Auditoria', 'area' => 'Auditoria'])->syncRoles([$role1]);
 
         Permission::create(['name' => 'Logs', 'area' => 'Logs'])->syncRoles([$role1]);
+
+        Permission::create(['name' => 'Área de usuarios', 'area' => 'Usuarios'])->syncRoles([$role1, $role2, $role3, $role4]);
+        Permission::create(['name' => 'Nuevo aviso', 'area' => 'Usuarios'])->syncRoles([$role1, $role2, $role3, $role4]);
+        Permission::create(['name' => 'Avisos', 'area' => 'Usuarios'])->syncRoles([$role1, $role2, $role3, $role4]);
+        Permission::create(['name' => 'Trámites', 'area' => 'Usuarios'])->syncRoles([$role1, $role2, $role3, $role4]);
+        Permission::create(['name' => 'Trámite nuevo', 'area' => 'Usuarios'])->syncRoles([$role1, $role2, $role3, $role4]);
+        Permission::create(['name' => 'Certificados', 'area' => 'Usuarios'])->syncRoles([$role1, $role2, $role3, $role4]);
 
     }
 }

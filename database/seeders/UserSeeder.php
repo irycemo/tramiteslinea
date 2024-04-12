@@ -16,6 +16,7 @@ class UserSeeder extends Seeder
     {
 
         User::create([
+            'clave' => 1,
             'name' => 'Enrique Robledo Camacho',
             'status' => 'activo',
             'email' => 'enrique_j_@hotmail.com',
@@ -23,6 +24,7 @@ class UserSeeder extends Seeder
         ])->assignRole('Administrador');
 
         User::create([
+            'clave' => 2,
             'name' => 'Tomas Hernandez Cuellar',
             'status' => 'activo',
             'email' => 'tomas.hernandez@plancartemorelia.edu.mx',
@@ -30,6 +32,7 @@ class UserSeeder extends Seeder
         ])->assignRole('Administrador');
 
         User::create([
+            'clave' => 3,
             'name' => 'Martin Cervantes Contreras',
             'status' => 'activo',
             'email' => 'cervantes.martin@gmail.com',
@@ -37,6 +40,7 @@ class UserSeeder extends Seeder
         ])->assignRole('Administrador');
 
         User::create([
+            'clave' => 4,
             'name' => 'Mauricio Landa Herrera',
             'status' => 'activo',
             'email' => 'mlanda64@hotmail.com',
@@ -44,6 +48,7 @@ class UserSeeder extends Seeder
         ])->assignRole('Administrador');
 
         User::create([
+            'clave' => 5,
             'name' => 'Salvador Sanchez Alvarez',
             'status' => 'activo',
             'email' => 'ssacat@outlook.com',
@@ -51,6 +56,7 @@ class UserSeeder extends Seeder
         ])->assignRole('Administrador');
 
         User::create([
+            'clave' => 6,
             'name' => 'Saul Hernandez Castro',
             'status' => 'activo',
             'email' => 'scastro@michoacan.gob.mx',

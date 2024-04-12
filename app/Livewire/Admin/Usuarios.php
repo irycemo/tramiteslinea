@@ -4,6 +4,7 @@ namespace App\Livewire\Admin;
 
 use App\Models\Role;
 use App\Models\User;
+use App\Models\Entidad;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Traits\ComponentesTrait;
@@ -18,6 +19,7 @@ class Usuarios extends Component
 
     public $roles;
     public $permisos;
+    public $entidades;
 
     public User $modelo_editar;
     public $role;
@@ -31,6 +33,7 @@ class Usuarios extends Component
     protected function rules(){
         return [
             'modelo_editar.name' => 'required',
+            'modelo_editar.entidad_id' => 'nullable',
             'modelo_editar.email' => 'required|email|unique:users,email,' . $this->modelo_editar->id,
             'modelo_editar.status' => 'required|in:activo,inactivo',
             'role' => 'required',
@@ -39,6 +42,7 @@ class Usuarios extends Component
 
     protected $validationAttributes  = [
         'role' => 'rol',
+        'modelo_editar.entidad_id' => 'entidad'
     ];
 
     public function crearModeloVacio(){
@@ -67,6 +71,7 @@ class Usuarios extends Component
 
             DB::transaction(function () {
 
+                $this->modelo_editar->clave = User::max('clave') + 1;
                 $this->modelo_editar->password = bcrypt('sistema');
                 $this->modelo_editar->creado_por = auth()->user()->id;
                 $this->modelo_editar->save();
@@ -145,12 +150,14 @@ class Usuarios extends Component
 
         $this->roles = Role::where('id', '!=', 1)->select('id', 'name')->orderBy('name')->get();
 
+        $this->entidades = Entidad::all();
+
     }
 
     public function render()
     {
 
-        $usuarios = User::with('creadoPor', 'actualizadoPor')
+        $usuarios = User::with('creadoPor', 'actualizadoPor', 'entidad')
                             ->where(function($q){
                                 $q->where('name', 'LIKE', '%' . $this->search . '%');
                             })

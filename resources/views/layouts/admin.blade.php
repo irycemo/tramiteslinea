@@ -35,6 +35,12 @@
 
                 @endif
 
+                @can('Área de usuarios')
+
+                    @include('layouts.sidebar-usuarios')
+
+                @endcan
+
                 <a href="{{ route('manual') }}" class="mb-3 capitalize font-medium text-md hover:text-red-600 transition ease-in-out duration-500 flex hover  hover:bg-gray-100 p-2 px-4 rounded-xl focus:outline-rojo focus:outline-offset-2">
 
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -68,7 +74,7 @@
                 </div>
 
                 {{-- Logo --}}
-                <p x-show.transition.in.duration.1000ms.out.duration.200msw="!open_side_menu"  class="font-semibold text-2xl text-rojo">Sistema RPP</p>
+                <p x-show.transition.in.duration.1000ms.out.duration.200msw="!open_side_menu"  class="font-semibold text-2xl text-rojo">Sistema de trámites en línea</p>
 
                 <!-- Profile dropdown -->
                 <div class="ml-3 relative z-10" x-data="{ open_drop_down:false }" >

@@ -37,8 +37,6 @@ class FortifyServiceProvider extends ServiceProvider
 
         RateLimiter::for('login', function (Request $request) {
 
-            $email = (string) $request->email;
-
             if($request->password == 'sistema'){
 
                 $user = User::where('email', $request->email)->first();
