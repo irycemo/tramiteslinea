@@ -13,13 +13,25 @@ return new class extends Migration
     {
         Schema::create('avisos', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('predio');
-            $table->unsignedBigInteger('avaluo')->nullable();
-            $table->unsignedBigInteger('certificado')->nullable();
-            $table->unsignedBigInteger('tramite')->nullable()->unique();
+            $table->unsignedBigInteger('predio_sgc');
+            $table->unsignedBigInteger('avaluo_spe')->nullable();
+            $table->unsignedBigInteger('certificado_sgc')->nullable();
+            $table->unsignedBigInteger('tramite_sgc')->nullable()->unique();
             $table->unsignedInteger('año');
             $table->unsignedInteger('folio');
             $table->unsignedInteger('usuario');
+            $table->unsignedInteger('region_catastral');
+            $table->unsignedInteger('municipio');
+            $table->unsignedInteger('zona_catastral');
+            $table->unsignedInteger('localidad');
+            $table->unsignedInteger('sector');
+            $table->unsignedInteger('manzana');
+            $table->unsignedInteger('predio');
+            $table->unsignedInteger('edificio');
+            $table->unsignedInteger('departamento');
+            $table->unsignedInteger('oficina');
+            $table->unsignedInteger('tipo_predio');
+            $table->unsignedInteger('numero_registro');
             $table->string('estado');
             $table->string('acto');
             $table->date('fecha_ejecutoria')->nullable();
@@ -59,8 +71,11 @@ return new class extends Migration
             $table->decimal('valor_construccion_vivienda', 18,2)->nullable();
             $table->decimal('valor_construccion_otro', 18,2)->nullable();
             $table->decimal('porcentaje_adquisicion', 18,2)->nullable();
+            $table->decimal('reduccion', 18,2)->nullable();
+            $table->decimal('base_gravable', 18,2)->nullable();
             $table->boolean('sin_reduccion')->default(0);
             $table->boolean('no_genera_isai')->default(0);
+            $table->decimal('valor_base', 18,2)->nullable();
             $table->decimal('valor_isai', 18,2)->nullable();
             $table->text('anexos')->nullable();
             $table->string('xutm')->nullable();
@@ -68,6 +83,7 @@ return new class extends Migration
             $table->unsignedInteger('zutm')->nullable();
             $table->decimal('lon', 11, 8)->nullable();
             $table->decimal('lat', 11, 8)->nullable();
+            $table->foreignId('aviso_original')->nullable()->references('id')->on('avisos');
             $table->foreignId('creado_por')->nullable()->references('id')->on('users');
             $table->foreignId('actualizado_por')->nullable()->references('id')->on('users');
             $table->timestamps();

@@ -11,6 +11,8 @@ use App\Http\Controllers\ManualController;
 use App\Livewire\Usuarios\Tramites\Tramites;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SetPasswordController;
+use App\Livewire\Usuarios\Aviso\MisAvisos;
+use App\Livewire\Usuarios\Observaciones\Observaciones;
 use App\Livewire\Usuarios\Tramites\Certificados;
 use App\Livewire\Usuarios\Tramites\Nuevo;
 
@@ -35,11 +37,15 @@ Route::middleware(['auth', 'activo'])->group( function(){
 
     Route::get('aviso/{aviso?}', Avisos::class)->middleware('permission:Nuevo aviso')->name('aviso');
 
+    Route::get('mis_avisos', MisAvisos::class)->middleware('permission:Mis avisos')->name('mis_avisos');
+
     Route::get('tramites', Tramites::class)->middleware('permission:Trámites')->name('tramites');
 
     Route::get('tramite_nuevo', Nuevo::class)->middleware('permission:Trámite nuevo')->name('tramite_nuevo');
 
     Route::get('certificados', Certificados::class)->middleware('permission:Certificados')->name('certificados');
+
+    Route::get('observaciones', Observaciones::class)->middleware('permission:Observaciones')->name('observaciones');
 
 });
 

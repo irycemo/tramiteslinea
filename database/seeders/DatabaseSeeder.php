@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Database\Seeders\UmaSeeder;
 use Illuminate\Database\Seeder;
 use Database\Seeders\UserSeeder;
 
@@ -18,6 +19,8 @@ class DatabaseSeeder extends Seeder
 
         $this->call(RoleSeeder::class);
         $this->call(UserSeeder::class);
+        $this->call(UmaSeeder::class);
 
+        $this->call(CuotaminimasTableSeeder::class);
     }
 }

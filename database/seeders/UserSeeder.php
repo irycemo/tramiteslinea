@@ -63,5 +63,13 @@ class UserSeeder extends Seeder
             'password' => bcrypt('sistema'),
         ])->assignRole('Administrador');
 
+        User::create([
+            'clave' => 7,
+            'name' => 'Sistema de Gestión Catastral',
+            'status' => 'activo',
+            'email' => 'sgc@gmail.com',
+            'password' => Hash::make('12345678'),
+        ])->assignRole('Sistemas');
+
     }
 }

@@ -2,29 +2,39 @@
 
 namespace App\Livewire\Usuarios\Aviso;
 
+use App\Models\File;
 use App\Models\Aviso;
 use Livewire\Component;
 use App\Models\Colindancia;
+use Livewire\WithFileUploads;
 use App\Constantes\Constantes;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Storage;
 use App\Services\Coordenadas\Coordenadas;
 use Illuminate\Http\Client\ConnectionException;
 
 class IdentificacionInmueble extends Component
 {
 
+    use WithFileUploads;
+
     public $codigos_postales;
     public $tipoVialidades;
     public $tipoAsentamientos;
     public $nombres_asentamientos = [];
+    public $años;
+    public $año;
 
     public $vientos;
     public $medidas = [];
+    public $croquis;
 
     public Aviso $aviso;
     public $avisoId;
+
+    public $folio;
 
     protected $listeners = ['cargarAviso'];
 
@@ -37,25 +47,25 @@ class IdentificacionInmueble extends Component
                                         'numeric',
                                         'min:0',
                                     ],
-            'medidas.*.descripcion' => 'required|string|regex:/^[a-zA-Z0-9\s]+$/',
+            'medidas.*.descripcion' => 'required|'. utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.() ]*$/'),
             'aviso' => 'required',
             'aviso.tipo_asentamiento' => 'required',
             'aviso.nombre_asentamiento' => 'required',
             'aviso.tipo_vialidad' => 'required',
-            'aviso.nombre_vialidad' => 'required|regex:/^[a-zA-Z0-9\s]+$/',
-            'aviso.numero_exterior' => 'required|regex:/^[a-zA-Z0-9\s]+$/',
-            'aviso.numero_exterior_2' => 'nullable|regex:/^[a-zA-Z0-9\s]+$/',
-            'aviso.numero_interior' => 'nullable|regex:/^[a-zA-Z0-9\s]+$/',
-            'aviso.numero_adicional_2' => 'nullable|regex:/^[a-zA-Z0-9\s]+$/',
-            'aviso.numero_adicional' => 'nullable|regex:/^[a-zA-Z0-9\s]+$/',
+            'aviso.nombre_vialidad' => 'required|'. utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.() ]*$/'),
+            'aviso.numero_exterior' => 'required|'. utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.() ]*$/'),
+            'aviso.numero_exterior_2' => 'nullable|' . utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.() ]*$/'),
+            'aviso.numero_interior' => 'nullable|' . utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.() ]*$/'),
+            'aviso.numero_adicional_2' => 'nullable|' . utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.() ]*$/'),
+            'aviso.numero_adicional' => 'nullable|' . utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.() ]*$/'),
             'aviso.codigo_postal' => 'required|numeric',
-            'aviso.lote_fraccionador' => 'nullable|regex:/^[a-zA-Z0-9\s]+$/',
-            'aviso.manzana_fraccionador' => 'nullable|regex:/^[a-zA-Z0-9\s]+$/',
-            'aviso.etapa_fraccionador' => 'nullable|regex:/^[a-zA-Z0-9\s]+$/',
-            'aviso.nombre_predio'  => 'nullable|regex:/^[a-zA-Z0-9\s]+$/',
-            'aviso.nombre_edificio' => 'nullable|regex:/^[a-zA-Z0-9\s]+$/',
-            'aviso.clave_edificio' => 'nullable|regex:/^[a-zA-Z0-9\s]+$/',
-            'aviso.departamento_edificio' => 'nullable|regex:/^[a-zA-Z0-9\s]+$/',
+            'aviso.lote_fraccionador' => 'nullable|' . utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.() ]*$/'),
+            'aviso.manzana_fraccionador' => 'nullable|' . utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.() ]*$/'),
+            'aviso.etapa_fraccionador' => 'nullable|' . utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.() ]*$/'),
+            'aviso.nombre_predio'  => 'nullable|' . utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.() ]*$/'),
+            'aviso.nombre_edificio' => 'nullable|' . utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.() ]*$/'),
+            'aviso.clave_edificio' => 'nullable|' . utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.() ]*$/'),
+            'aviso.departamento_edificio' => 'nullable|' . utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.() ]*$/'),
             'aviso.xutm' => 'nullable|string',
             'aviso.yutm' => 'nullable|string',
             'aviso.zutm' => 'nullable',
@@ -65,6 +75,8 @@ class IdentificacionInmueble extends Component
             'aviso.superficie_construccion' => 'nullable|numeric',
             'aviso.valor_catastral' => 'required|numeric',
             'aviso.cantidad_tramitada' => 'required',
+            'aviso.avaluo_spe' => 'nullable',
+            'croquis' => 'required|image',
          ];
     }
 
@@ -79,7 +91,7 @@ class IdentificacionInmueble extends Component
     ];
 
     public function crearModeloVacio(){
-        $this->aviso = Aviso::make();
+        $this->aviso = Aviso::make(['estado' => 'nuevo']);
     }
 
     public function updatedAvisoCodigoPostal(){
@@ -151,6 +163,97 @@ class IdentificacionInmueble extends Component
 
         if(count($this->medidas) == 0)
             $this->agregarMedida();
+
+    }
+
+    public function cargarAvaluo(){
+
+        $this->validate(['año' => 'required', 'folio' => 'required']);
+
+        try {
+
+            $response = Http::acceptJson()
+                        ->withToken(env('SISTEMA_PERITOS_EXTERNOS_TOKEN'))
+                        ->withQueryParameters([
+                            'año' => $this->año,
+                            'folio' => $this->folio
+                        ])
+                        ->get(env('SISTEMA_PERITOS_EXTERNOS_CONSULTAR_AVALUO'));
+
+
+            $data = json_decode($response, true);
+
+            if($response->status() === 200){
+
+                if($this->aviso->predio_sgc !== $data['data']['predio_sgc']){
+
+                    $this->dispatch('mostrarMensaje', ['error', 'El predio del aviso y el predio del avalúo no son el mismo.']);
+
+                    return;
+
+                }
+
+                $this->aviso->colindancias()->delete();
+
+                $this->reset('medidas');
+
+                $this->aviso->avaluo_spe = $data['data']['id'];
+                $this->aviso->tipo_asentamiento = $data['data']['tipo_asentamiento'];
+                $this->aviso->nombre_asentamiento = $data['data']['nombre_asentamiento'];
+                $this->aviso->tipo_vialidad = $data['data']['tipo_vialidad'];
+                $this->aviso->nombre_vialidad = $data['data']['nombre_vialidad'];
+                $this->aviso->numero_exterior = $data['data']['numero_exterior'];
+                $this->aviso->numero_exterior_2 = $data['data']['numero_exterior_2'];
+                $this->aviso->numero_interior = $data['data']['numero_interior'];
+                $this->aviso->numero_adicional_2 = $data['data']['numero_adicional_2'];
+                $this->aviso->numero_adicional = $data['data']['numero_adicional'];
+                $this->aviso->codigo_postal = $data['data']['codigo_postal'];
+                $this->aviso->lote_fraccionador = $data['data']['lote_fraccionador'];
+                $this->aviso->manzana_fraccionador = $data['data']['manzana_fraccionador'];
+                $this->aviso->etapa_fraccionador = $data['data']['etapa_fraccionador'];
+                $this->aviso->nombre_predio = $data['data']['nombre_predio'];
+                $this->aviso->nombre_edificio = $data['data']['nombre_edificio'];
+                $this->aviso->clave_edificio = $data['data']['clave_edificio'];
+                $this->aviso->departamento_edificio = $data['data']['departamento_edificio'];
+                $this->aviso->xutm = $data['data']['xutm'];
+                $this->aviso->yutm = $data['data']['yutm'];
+                $this->aviso->zutm = $data['data']['zutm'];
+                $this->aviso->lat = $data['data']['lat'];
+                $this->aviso->lon = $data['data']['lon'];
+                $this->aviso->superficie_terreno = $data['data']['superficie_terreno'];
+                $this->aviso->superficie_construccion = $data['data']['superficie_construccion'];
+                $this->aviso->valor_catastral = $data['data']['valor_catastral'];
+
+                foreach ($data['data']['colindancias'] as $colindancia) {
+
+                    $this->medidas[] =[
+                        'id' => null,
+                        'viento' => $colindancia['viento'],
+                        'longitud' => $colindancia['longitud'],
+                        'descripcion' => $colindancia['descripcion'],
+                    ];
+
+                }
+
+
+            }else if($response->status() === 404 || $response->status() === 401){
+
+                $this->dispatch('mostrarMensaje', ['error', $data['error']]);
+
+            }else{
+
+                Log::error("Error al cargar transmitentes por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . json_encode($data));
+
+                $this->dispatch('mostrarMensaje', ['error', 'Hubo un error']);
+
+            }
+
+        } catch (\Throwable $th) {
+
+            $this->dispatch('mostrarMensaje', ['error', 'Hubo un error con']);
+            Log::error("Error al consultar avaluo en Sistema de Peritos Externos por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+
+        }
 
     }
 
@@ -255,6 +358,29 @@ class IdentificacionInmueble extends Component
 
             DB::transaction(function () {
 
+                if($this->aviso->croquis()->first()){
+
+                    $file = File::where('fileable_id', $this->aviso->id)->where('fileable_type', 'App\Models\Aviso')->where('descripcion', 'croquis')->first();
+
+                    Storage::disk('avisos')->delete($file->url);
+
+                    $file->delete();
+
+                }
+
+                if($this->croquis){
+
+                    $pdf = $this->croquis->store('/', 'avisos');
+
+                    File::create([
+                        'fileable_id' => $this->aviso->id,
+                        'fileable_type' => 'App\Models\Aviso',
+                        'descripcion' => 'croquis',
+                        'url' => $pdf
+                    ]);
+
+                }
+
                 $this->aviso->actualizado_por = auth()->id();
                 $this->aviso->save();
 
@@ -316,6 +442,10 @@ class IdentificacionInmueble extends Component
         $this->tipoVialidades = Constantes::TIPO_VIALIDADES;
 
         $this->tipoAsentamientos = Constantes::TIPO_ASENTAMIENTO;
+
+        $this->años = Constantes::AÑOS;
+
+        $this->año = now()->format('Y');
 
     }
 

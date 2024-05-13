@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('nombre')->nullable();
             $table->string('ap_paterno')->nullable();
             $table->string('ap_materno')->nullable();
-            $table->string('curp')->nullable();
-            $table->string('rfc')->nullable();
+            $table->string('curp')->nullable()->unique();
+            $table->string('rfc')->nullable()->unique();
             $table->string('razon_social')->nullable();
             $table->date('fecha_nacimiento')->nullable();
             $table->string('nacionalidad')->nullable();

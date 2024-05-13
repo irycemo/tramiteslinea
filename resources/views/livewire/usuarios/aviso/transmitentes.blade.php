@@ -38,22 +38,26 @@
 
         </div>
 
-        <div class="mb-3">
+        @if($aviso->estado === 'nuevo')
 
-            <button
-                wire:click="buscarTramite"
-                wire:loading.attr="disabled"
-                wire:target="buscarTramite"
-                type="button"
-                class="bg-blue-400 mx-auto hover:shadow-lg text-white font-bold px-4 py-2 rounded text-xs hover:bg-blue-700 focus:outline-none flex items-center justify-center focus:outline-blue-400 focus:outline-offset-2">
+            <div class="mb-3">
 
-                <img wire:loading wire:target="buscarTramite" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                <button
+                    wire:click="buscarTramite"
+                    wire:loading.attr="disabled"
+                    wire:target="buscarTramite"
+                    type="button"
+                    class="bg-blue-400 mx-auto hover:shadow-lg text-white font-bold px-4 py-2 rounded text-xs hover:bg-blue-700 focus:outline-none flex items-center justify-center focus:outline-blue-400 focus:outline-offset-2">
 
-                Buscar trámtie
+                    <img wire:loading wire:target="buscarTramite" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-            </button>
+                    Buscar trámtie
 
-        </div>
+                </button>
+
+            </div>
+
+        @endif
 
     </div>
 
@@ -119,19 +123,56 @@
 
                             <x-table.row >
 
-                                <x-table.cell>{{ $transmitente->persona->tipo }}</x-table.cell>
-                                <x-table.cell>{{ $transmitente->persona->nombre }} {{ $transmitente->persona->ap_paterno }} {{ $transmitente->persona->ap_materno }} {{ $transmitente->persona->razon_social }}</x-table.cell>
-                                <x-table.cell>{{ number_format($transmitente->porcentaje, 2) }}%</x-table.cell>
-                                <x-table.cell>{{ number_format($transmitente->porcentaje_nuda, 2) }}%</x-table.cell>
-                                <x-table.cell>{{ number_format($transmitente->porcentaje_usufructo, 2) }}%</x-table.cell>
                                 <x-table.cell>
-                                    <div class="flex items-center gap-3">
-                                        <x-button-red
-                                            wire:click="borrar({{ $transmitente->id }})"
-                                            wire:loading.attr="disabled">
-                                            Borrar
-                                        </x-button-red>
-                                    </div>
+
+                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Tipo de persona</span>
+
+                                    {{ $transmitente->persona->tipo }}
+
+                                </x-table.cell>
+
+                                <x-table.cell>
+
+                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Nombre / Razón social</span>
+
+                                    <p class="pt-4">{{ $transmitente->persona->nombre }} {{ $transmitente->persona->ap_paterno }} {{ $transmitente->persona->ap_materno }} {{ $transmitente->persona->razon_social }}</p>
+
+                                </x-table.cell>
+
+                                <x-table.cell>
+
+                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">% de propiedad</span>
+
+                                    {{ number_format($transmitente->porcentaje, 2) }}%
+
+                                </x-table.cell>
+
+                                <x-table.cell>
+
+                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">% de nuda</span>
+
+                                    {{ number_format($transmitente->porcentaje_nuda, 2) }}%
+
+                                </x-table.cell>
+                                <x-table.cell>
+
+                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">% de usufructo</span>
+
+                                    {{ number_format($transmitente->porcentaje_usufructo, 2) }}%
+
+                                </x-table.cell>
+                                <x-table.cell>
+                                    @if($aviso->estado === 'nuevo')
+
+                                        <div class="flex items-center justify-center gap-3">
+                                            <x-button-red
+                                                wire:click="borrarTransmitente({{ $transmitente->id }})"
+                                                wire:loading.attr="disabled">
+                                                Borrar
+                                            </x-button-red>
+                                        </div>
+
+                                    @endif
                                 </x-table.cell>
 
                             </x-table.row>
@@ -149,39 +190,5 @@
         </div>
 
     @endif
-
-    @if(count($errors) > 0)
-
-        <div class="mb-5 bg-white rounded-lg p-2 shadow-lg flex gap-2 flex-wrap ">
-
-            <ul class="flex gap-2 felx flex-wrap list-disc ml-5">
-            @foreach ($errors->all() as $error)
-
-                <li class="text-red-500 text-xs md:text-sm ml-5">
-                    {{ $error }}
-                </li>
-
-            @endforeach
-
-        </ul>
-
-        </div>
-
-    @endif
-
-    <div class="space-y-2 mb-5 bg-white rounded-lg p-2 shadow-lg flex justify-end">
-
-        <x-button-green
-            wire:click="guardar"
-            wire:loading.attr="disabled"
-            wire:target="guardar">
-
-            <img wire:loading wire:target="guardar" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
-
-            Guardar
-
-        </x-button-green>
-
-    </div>
 
 </div>

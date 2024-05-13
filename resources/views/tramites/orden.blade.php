@@ -137,7 +137,7 @@
                 <th>
                     <p>Trámite: {{ $tramite['año'] }}-{{ $tramite['folio'] }}-{{ $tramite['usuario'] }}</p>
                     <p>Solicitante: {{ $tramite['nombre_solicitante'] }}</p>
-                    <p>Servicio: {{ $tramite['categoria'] }} {{ $tramite['servicio'] }}
+                    <p>Servicio: {{ $tramite['servicio'] }}
                     </p>
                     <p>Tipo de servicio: {{ $tramite['tipo_servicio'] }}, Cantidad: {{ $tramite['cantidad'] }}</p>
                     <p>Orden de pago: {{ $tramite['orden_de_pago'] }}</p>

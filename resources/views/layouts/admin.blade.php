@@ -35,9 +35,9 @@
 
                 @endif
 
-                @can('Área de usuarios')
+                @can('Área de catastro')
 
-                    @include('layouts.sidebar-usuarios')
+                    @include('layouts.sidebar-catastro')
 
                 @endcan
 

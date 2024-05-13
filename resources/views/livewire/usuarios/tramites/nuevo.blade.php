@@ -181,18 +181,27 @@
 
                         </button>
 
-                        <button
-                            wire:click="pagarEnLinea"
-                            wire:loading.attr="disabled"
-                            wire:target="pagarEnLinea"
-                            type="button"
-                            class="bg-red-400 hover:shadow-lg text-white font-bold px-4 py-2 rounded text-sm hover:bg-red-700 focus:outline-none flex justify-center items-center w-full focus:outline-bg-red-400 focus:outline-offset-2">
+                        <form action="http://10.0.250.55:8081/pagolinea" method="post" class="w-full">
 
-                            <img wire:loading wire:target="pagarEnLinea" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                            <input type="hidden" name="concepto" value="IRYCEM">
+                            <input type="hidden" name="lcaptura" value="{{ $this->tramite['linea_de_captura'] }}">
+                            <input type="hidden" name="monto" value="{{ $this->tramite['monto'] }}">
+                            <input type="hidden" name="urlRetorno" value="http://127.0.0.1:8000/tramite_nuevo">
+                            <input type="hidden" name="fecha_vencimiento" value="{{ $this->tramite['fecha_vencimiento'] }}">
+                            <input type="hidden" name="tkn" value="{{ $token }}">
 
-                            <p>Pagar en linea</p>
+                            <button
+                                wire:loading.attr="disabled"
+                                type="submit"
+                                class="bg-red-400 hover:shadow-lg text-white font-bold px-4 py-2 rounded text-sm hover:bg-red-700 focus:outline-none flex justify-center items-center w-full focus:outline-bg-red-400 focus:outline-offset-2">
 
-                        </button>
+                                <img wire:loading wire:target="pagarEnLinea" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+
+                                <p>Pagar en linea</p>
+
+                            </button>
+
+                        </form>
 
                     @endif
 

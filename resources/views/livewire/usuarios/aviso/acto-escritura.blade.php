@@ -10,6 +10,69 @@
 
     @endif
 
+    @if(!$aviso->getKey())
+
+        <div class="mb-5 bg-white rounded-lg p-2 shadow-lg">
+
+            <div class="flex space-x-4 items-center justify-center">
+
+                <x-checkbox wire:model.live="revision"></x-checkbox>
+
+                <Label>Aviso aclaratorio</Label>
+
+            </div>
+
+            <div class="text-center">
+
+                @if($revision)
+
+                    <div >
+
+                        <Label class="text-base tracking-widest rounded-xl border-gray-500">Trámite del aviso</Label>
+
+                    </div>
+
+                    <div class="inline-flex">
+
+                        <select class="bg-white rounded-l text-sm border border-r-transparent  focus:ring-0" wire:model="año_aviso">
+                            @foreach ($años as $año)
+
+                                <option value="{{ $año }}">{{ $año }}</option>
+
+                            @endforeach
+                        </select>
+
+                        <input type="number" class="bg-white text-sm w-20 focus:ring-0 @error('folio_aviso') border-red-500 @enderror" wire:model="folio_aviso">
+
+                        <input type="number" class="bg-white text-sm w-20 border-l-0 rounded-r focus:ring-0 @error('usuario_aviso') border-red-500 @enderror" wire:model="usuario_aviso">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <button
+                            wire:click="buscarAviso"
+                            wire:loading.attr="disabled"
+                            wire:target="buscarAviso"
+                            type="button"
+                            class="bg-blue-400 mt-3 mx-auto hover:shadow-lg text-white font-bold px-4 py-2 rounded text-xs hover:bg-blue-700 focus:outline-none flex items-center justify-center focus:outline-blue-400 focus:outline-offset-2">
+
+                            <img wire:loading wire:target="buscarAviso" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+
+                            Buscar aviso
+
+                        </button>
+
+                    </div>
+
+                @endif
+
+            </div>
+
+        </div>
+
+    @endif
+
     <div class="space-y-2 mb-5 bg-white rounded-lg p-2 shadow-lg">
 
         <div class="flex gap-3 justify-center items-center">
@@ -248,36 +311,40 @@
 
     @endif
 
-    <div class="space-y-2 mb-5 bg-white rounded-lg p-2 shadow-lg flex justify-end">
+    @if($aviso->estado === 'nuevo')
 
-        @if($actualizacion)
+        <div class="space-y-2 mb-5 bg-white rounded-lg p-2 shadow-lg flex justify-end">
 
-            <x-button-green
-                wire:click="actualizar"
-                wire:loading.attr="disabled"
-                wire:target="actualizar">
+            @if($actualizacion)
 
-                <img wire:loading wire:target="actualizar" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                <x-button-green
+                    wire:click="actualizar"
+                    wire:loading.attr="disabled"
+                    wire:target="actualizar">
 
-                Actualizar
+                    <img wire:loading wire:target="actualizar" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-            </x-button-green>
+                    Actualizar
 
-        @else
+                </x-button-green>
 
-            <x-button-green
-                wire:click="crear"
-                wire:loading.attr="disabled"
-                wire:target="crear">
+            @else
 
-                <img wire:loading wire:target="crear" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                <x-button-green
+                    wire:click="crear"
+                    wire:loading.attr="disabled"
+                    wire:target="crear">
 
-                Guardar
+                    <img wire:loading wire:target="crear" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-            </x-button-green>
+                    Guardar
 
-        @endif
+                </x-button-green>
 
-    </div>
+            @endif
+
+        </div>
+
+    @endif
 
 </div>

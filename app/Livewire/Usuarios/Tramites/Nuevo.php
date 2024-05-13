@@ -195,6 +195,8 @@ class Nuevo extends Component
 
                 $this->dispatch('mostrarMensaje', ['success', 'Trámite ' . $this->tramite['año'] . '-' . $this->tramite['folio'] . '-' . $this->tramite['usuario'] . ' se registró con éxito']);
 
+                $this->token = $this->encrypt_decrypt("encrypt", $this->tramite['linea_de_captura'] . $this->tramite['monto'] . "IRYCEM" . $this->tramite['fecha_vencimiento']);
+
                 if($this->tipo_tramite === 'exento'){
 
                     $this->resetearTodo();
@@ -223,17 +225,33 @@ class Nuevo extends Component
 
     }
 
+    function encrypt_decrypt($action, $string) {
+        $output = false;
+        $encrypt_method = "AES-256-CBC";
+        $secret_key = 'regcatastral.2023@gob';
+        $secret_iv = 'regcatastral.2023@gob';
+        $key = hash('sha256', $secret_key);
+        $iv = substr(hash('sha256', $secret_iv), 0, 16);
+        if ( $action == 'encrypt' ) {
+            $output = openssl_encrypt($string, $encrypt_method, $key, 0, $iv);
+            $output = base64_encode($output);
+        } else if( $action == 'decrypt' ) {
+            $output = openssl_decrypt(base64_decode($string), $encrypt_method, $key, 0, $iv);
+        }
+        return $output;
+    }
+
     public function getToken(){
 
         $output = false;
 
-        $string = $this->tramite['monto'] . $this->servicioSeleccionado['nombre'] . $this->tramite['fecha_vencimiento'];
+        $string = $this->tramite['linea_de_captura'] . $this->tramite['monto'] . "IRYCEM" . $this->tramite['fecha_vencimiento'];
 
         $encrypt_method = "AES-256-CBC";
 
-        $secret_key = 'IRYCEMC';
+        $secret_key = 'regcatastral.2023@gob';
 
-        $secret_iv = 'Gm8rHEM2011b';
+        $secret_iv = 'regcatastral.2023@gob';
 
         $key = hash('sha256', $secret_key);
 
@@ -266,14 +284,16 @@ class Nuevo extends Component
 
         try {
 
-            return redirect('http://10.0.250.55/plinea/PagoLinea/', [
-                'concepto' => $this->servicioSeleccionado['nombre'],
+            $response =  Http::post('http://10.0.250.55:8081/pagolinea', [
+                'concepto' => "IRYCEM",
                 'lcaptura' => $this->tramite['linea_de_captura'],
                 'monto' => $this->tramite['monto'],
                 'urlRetorno' => route('tramites'),
                 'fecha_vencimiento' => $this->tramite['fecha_vencimiento'],
                 'tkn' => $this->getToken()
             ]);
+
+            dd(json_decode($response, true));
 
         } catch (\Throwable $th) {
 
@@ -298,6 +318,8 @@ class Nuevo extends Component
             Log::error("Error al cargar servicio nuevo en trámties: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
 
             $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
+
+            response()->json(['message' => 'Ha ocurrido un error en el sistema comuniquese con el departamento de operaciones y desarrollo de sistemas.'], 500);
 
             abort(500, message:"Ha ocurrido un error en el sistema comuniquese con el departamento de operaciones y desarrollo de sistemas.");
 

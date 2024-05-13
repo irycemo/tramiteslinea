@@ -1,6 +1,14 @@
 <div>
 
-    <x-header>Aviso</x-header>
+    <x-header>
+
+         @if($aviso?->aviso_original)
+            Aviso aclaratorio
+        @else
+            Aviso
+        @endif
+
+    </x-header>
 
     <div class="tab-wrapper max-h-full" x-data="{ activeTab: 0 }">
 
@@ -84,31 +92,31 @@
 
         <div x-cloak class="tab-panel" :class="{ 'active': activeTab === 3 }" x-show.transition.in.opacity.duration.800="activeTab === 3"  wire:key="tab-3">
 
-            3
+            @livewire('usuarios.aviso.adquirientes', ['avisoId' => $aviso?->id])
 
          </div>
 
          <div x-cloak class="tab-panel" :class="{ 'active': activeTab === 4 }" x-show.transition.in.opacity.duration.800="activeTab === 4"  wire:key="tab-4">
 
-            4
+            @livewire('usuarios.aviso.antecedentes', ['avisoId' => $aviso?->id])
 
          </div>
 
          <div x-cloak class="tab-panel" :class="{ 'active': activeTab === 5 }" x-show.transition.in.opacity.duration.800="activeTab === 5"  wire:key="tab-5">
 
-            5
+            @livewire('usuarios.aviso.fideicomisos', ['avisoId' => $aviso?->id])
 
          </div>
 
          <div x-cloak class="tab-panel" :class="{ 'active': activeTab === 6 }" x-show.transition.in.opacity.duration.800="activeTab === 6"  wire:key="tab-6">
 
-            6
+            @livewire('usuarios.aviso.isai', ['avisoId' => $aviso?->id])
 
          </div>
 
          <div x-cloak class="tab-panel" :class="{ 'active': activeTab === 7 }" x-show.transition.in.opacity.duration.800="activeTab === 7"  wire:key="tab-7">
 
-            7
+            @livewire('usuarios.aviso.archivo', ['avisoId' => $aviso?->id])
 
          </div>
 

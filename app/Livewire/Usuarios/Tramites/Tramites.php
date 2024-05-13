@@ -31,6 +31,8 @@ class Tramites extends Component
 
     public $tramiteSeleccionado;
 
+    public $token;
+
     public function nextPage(){ (int)$this->paginaActual++; $this->dispatch('gotoTop'); }
 
     public function previousPage(){ (int)$this->paginaActual--; $this->dispatch('gotoTop'); }
@@ -40,6 +42,30 @@ class Tramites extends Component
         $this->modal = true;
 
         $this->tramiteSeleccionado =  $tramite;
+
+    }
+
+    public function getToken($tramite){
+
+        $output = false;
+
+        $string = $tramite['linea_de_captura'] . $tramite['monto'] . "IRYCEM" . $tramite['fecha_vencimiento'];
+
+        $encrypt_method = "AES-256-CBC";
+
+        $secret_key = 'regcatastral.2023@gob';
+
+        $secret_iv = 'regcatastral.2023@gob';
+
+        $key = hash('sha256', $secret_key);
+
+        $iv = substr(hash('sha256', $secret_iv), 0, 16);
+
+        $output = openssl_encrypt($string, $encrypt_method, $key, 0, $iv);
+
+        $output = base64_encode($output);
+
+        $this->token =  $output;
 
     }
 
@@ -65,8 +91,10 @@ class Tramites extends Component
             $response = Http::withToken(env('SGC_ACCESS_TOKEN'))->accept('application/json')->get(env('SGC_CONSULTA_SERVICIOS'), [
                                                                                                                                     'ids' =>[3,4,5,6,7,8,9,10,11,66,67,68,64,65,57,55]
                                                                                                                                 ]);
-
-            $this->servicios = collect(json_decode($response, true)['data']);
+            if($response->status() === 200)
+                $this->servicios = collect(json_decode($response, true)['data']);
+            else
+                $this->servicios = [];
 
         } catch (ConnectionException $th) {
 
@@ -109,8 +137,6 @@ class Tramites extends Component
             $tramites =  collect($data['data']);
 
         }else{
-
-            dd($data);
 
             $tramites = [];
 

@@ -27,7 +27,7 @@ class Transmitentes extends Component
     protected $listeners = ['cargarAviso'];
 
     public function crearModeloVacio(){
-        $this->aviso = Aviso::make();
+        $this->aviso = Aviso::make(['estado' => 'nuevo']);
     }
 
     public function cargarAviso($id){
@@ -38,33 +38,47 @@ class Transmitentes extends Component
 
     public function buscarTramite(){
 
-        $response = Http::acceptJson()
+        if(!$this->aviso->getKey()){
+
+            $this->dispatch('mostrarMensaje', ['error', "Primero debe cargar el aviso."]);
+
+            return;
+
+        }
+
+        try {
+
+            $response = Http::acceptJson()
                             ->withToken(env('SGC_ACCESS_TOKEN'))
                             ->withQueryParameters([
                                 'entidad' => auth()->user()->entidad_id,
                                 'año' => $this->año,
                                 'folio' => $this->folio,
-                                'predio' => $this->aviso->predio
+                                'predio' => $this->aviso->predio_sgc
                             ])
                             ->get(env('SGC_CONSULTA_PROPIETARIOS'));
 
 
-        $data = json_decode($response, true);
+            $data = json_decode($response, true);
 
-        if($response->status() === 200){
+            if($response->status() === 200){
 
-            $this->transmitentes =  collect($data['data']);
+                $this->transmitentes =  collect($data['data']);
 
-        }else if($response->status() === 404 || $response->status() === 401){
+            }else if($response->status() === 404 || $response->status() === 401){
 
-            $this->dispatch('mostrarMensaje', ['error', $data['error']]);
+                $this->dispatch('mostrarMensaje', ['error', $data['error']]);
 
-        }else{
+            }else{
 
-            Log::error("Error al cargar transmitentes por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . json_encode($data));
+                Log::error("Error al cargar transmitentes por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . json_encode($data));
 
-            $this->dispatch('mostrarMensaje', ['error', 'Hubo un error']);
+                $this->dispatch('mostrarMensaje', ['error', 'Hubo un error']);
 
+            }
+
+        } catch (\Throwable $th) {
+            Log::error("Error al consultar propietarios en SGC por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
         }
 
     }
@@ -75,14 +89,12 @@ class Transmitentes extends Component
 
             $transmitente = $this->transmitentes->where('id', $this->transmitente)->first();
 
-            $persona = Persona::where(function($q) use($transmitente){
-                                    $q->where('nombre', 'like', '%' . $transmitente['nombre'] . '%')
-                                    ->orWhere('ap_paterno', 'like', '%' . $transmitente['ap_paterno'] . '%')
-                                    ->orWhere('ap_materno', 'like', '%' . $transmitente['ap_materno'] . '%');
-                                })
-                                ->orWhere('razon_social', 'like', '%' . $transmitente['razon_social'] . '%')
-                                ->orWhere('rfc', 'like', '%' . $transmitente['rfc'] . '%')
-                                ->orWhere('curp', 'like', '%' . $transmitente['curp'] . '%')
+            $persona = Persona::where('nombre', $transmitente['nombre'])
+                                ->where('ap_paterno', $transmitente['ap_paterno'])
+                                ->where('ap_materno', $transmitente['ap_materno'])
+                                ->where('razon_social', $transmitente['razon_social'])
+                                ->where('rfc', $transmitente['rfc'])
+                                ->where('curp', $transmitente['curp'])
                                 ->first();
 
             if($persona && $this->aviso->actores()->where('tipo', 'transmitente')->where('persona_id', $persona->id)->first()){

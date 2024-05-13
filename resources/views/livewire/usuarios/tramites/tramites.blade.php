@@ -167,7 +167,7 @@
 
                             <div class="ml-3 relative" x-data="{ open_drop_down:false }">
 
-                                <div>
+                                <div wire:click="getToken({{ json_encode($tramite) }})">
 
                                     <button x-on:click="open_drop_down=true" type="button" class="rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
 
@@ -199,13 +199,24 @@
                                             Imprimir orden de pago en ventanilla
                                         </button>
 
-                                        <button
-                                            wire:click="#"
-                                            wire:loading.attr="disabled"
-                                            class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                                            role="menuitem">
-                                            Pagar en línea
-                                        </button>
+                                        <form action="http://10.0.250.55:8081/pagolinea" method="post">
+
+                                            <input type="hidden" name="concepto" value="IRYCEM">
+                                            <input type="hidden" name="lcaptura" value="{{ $tramite['linea_de_captura'] }}">
+                                            <input type="hidden" name="monto" value="{{ $tramite['monto'] }}">
+                                            <input type="hidden" name="urlRetorno" value="http://127.0.0.1:8000/tramite_nuevo">
+                                            <input type="hidden" name="fecha_vencimiento" value="{{ $tramite['fecha_vencimiento'] }}">
+                                            <input type="hidden" name="tkn" value="{{ $token }}">
+
+                                            <button
+                                                type="submit"
+                                                wire:loading.attr="disabled"
+                                                class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                                                role="menuitem">
+                                                Pagar en línea
+                                            </button>
+
+                                        </form>
 
                                     @endif
 

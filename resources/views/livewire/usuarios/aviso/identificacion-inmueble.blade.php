@@ -10,11 +10,60 @@
 
     @endif
 
+    @if($aviso->estado === 'nuevo')
+
+        <div class="bg-white p-4 rounded-lg mb-5 shadow-lg">
+
+            <div class="flex-auto text-center mb-3">
+
+                <div >
+
+                    <Label class="text-base tracking-widest rounded-xl border-gray-500">Folio del avalúo</Label>
+
+                </div>
+
+                <div class="inline-flex">
+
+                    <select class="bg-white rounded-l text-sm border border-r-transparent  focus:ring-0" wire:model="año">
+                        @foreach ($años as $año)
+
+                            <option value="{{ $año }}">{{ $año }}</option>
+
+                        @endforeach
+                    </select>
+
+                    <input type="number" class="bg-white text-sm w-20 focus:ring-0 rounded-r @error('folio') border-red-500 @enderror" wire:model="folio">
+
+                </div>
+
+            </div>
+
+            <div class="mb-3">
+
+                <button
+                    wire:click="cargarAvaluo"
+                    wire:loading.attr="disabled"
+                    wire:target="cargarAvaluo"
+                    type="button"
+                    class="bg-blue-400 mx-auto hover:shadow-lg text-white font-bold px-4 py-2 rounded text-xs hover:bg-blue-700 focus:outline-none flex items-center justify-center focus:outline-blue-400 focus:outline-offset-2">
+
+                    <img wire:loading wire:target="cargarAvaluo" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+
+                    Cargar información del avalúo
+
+                </button>
+
+            </div>
+
+        </div>
+
+    @endif
+
     <div class="space-y-2 mb-5 bg-white rounded-lg p-3 shadow-lg">
 
         <h4 class="text-lg mb-5 text-center">Ubicación del predio</h4>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3 items-start">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-3 items-start">
 
             <div class="flex-auto ">
 
@@ -389,7 +438,7 @@
 
             </div>
 
-            <div class="flex-auto col-span-2">
+            <div class="flex-auto grid-cols-1 md:col-span-2">
 
                 <div>
 
@@ -419,7 +468,7 @@
 
         <h4 class="text-lg mb-5 text-center">Coordenadas geográficas</h4>
 
-        <div class="flex-auto ">
+        <div class="flex-auto mb-3">
 
             <div class="">
 
@@ -477,9 +526,45 @@
 
         </div>
 
+        <div x-data="{ focused: false }" class="w-full md:w-1/2 lg:w-1/4 mx-auto">
+
+            <span class="rounded-md shadow-sm">
+
+                <input @focus="focused = true" @blur="focused = false" class="sr-only" type="file" wire:model.live="croquis" id="croquis">
+
+                <label
+                    for="croquis"
+                    :class="{ 'outline-none border-blue-300 shadow-outline-blue': focused }" class="flex items-center relative justify-between w-full cursor-pointer py-2 px-3 border border-gray-300 rounded-md text-sm leading-4 font-medium text-gray-700 hover:text-gray-500 active:bg-gray-50 active:text-gray-800 transition duration-150 ease-in-out">
+                    Croquis
+
+                    <div wire:loading.flex wire:target="croquis" class="flex absolute top-1 right-1 items-center">
+                        <svg class="animate-spin h-4 w-4 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                    </div>
+
+                    @if($croquis)
+
+                        <span class=" text-blue-700" wire:loading.remove wire:target="croquis">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 rounded-full border border-blue-700">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+
+                        </span>
+
+                    @endif
+
+                </label>
+
+            </span>
+
+        </div>
+
     </div>
 
-    <div class="bg-white rounded-lg p-3 flex gap-3 mb-3 shadow-lg items-end">
+    <div class="bg-white rounded-lg p-3 flex flex-col lg:flex-row gap-3 mb-3 shadow-lg items-end">
 
         <x-input-group for="aviso.superficie_terreno" label="Superficie de terreno" :error="$errors->first('aviso.superficie_terreno')" class="w-full">
 
@@ -602,16 +687,20 @@
 
                     <div class="flex-auto lg:col-span-1 my-auto">
 
-                        <x-button-red
-                            wire:click="borrarMedida({{ $index }})"
-                            wire:loading.attr="disabled"
-                            wire:target="borrarMedida({{ $index }})">
+                        @if($aviso->estado === 'nuevo')
 
-                            <img wire:loading wire:target="borrarMedida({{ $index }})" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                            <x-button-red
+                                wire:click="borrarMedida({{ $index }})"
+                                wire:loading.attr="disabled"
+                                wire:target="borrarMedida({{ $index }})">
 
-                            Borrar
+                                <img wire:loading wire:target="borrarMedida({{ $index }})" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-                        </x-button-red>
+                                Borrar
+
+                            </x-button-red>
+
+                        @endif
 
                     </div>
 
@@ -653,19 +742,23 @@
 
     @endif
 
-    <div class="space-y-2 mb-5 bg-white rounded-lg p-2 shadow-lg flex justify-end">
+    @if($aviso->estado === 'nuevo')
 
-        <x-button-green
-            wire:click="guardar"
-            wire:loading.attr="disabled"
-            wire:target="guardar">
+        <div class="space-y-2 mb-5 bg-white rounded-lg p-2 shadow-lg flex justify-end">
 
-            <img wire:loading wire:target="guardar" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+            <x-button-green
+                wire:click="guardar"
+                wire:loading.attr="disabled"
+                wire:target="guardar">
 
-            Guardar
+                <img wire:loading wire:target="guardar" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-        </x-button-green>
+                Guardar
 
-    </div>
+            </x-button-green>
+
+        </div>
+
+    @endif
 
 </div>

@@ -56,6 +56,14 @@ return [
             'throw' => false,
         ],
 
+        'avisos' => [
+            'driver' => 'local',
+            'root' => storage_path('app/avisos'),
+            'url' => env('APP_URL').'/avisos',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
     ],
 
     /*
@@ -71,6 +79,7 @@ return [
 
     'links' => [
         public_path('storage') => storage_path('app/public'),
+        public_path('avisos') => storage_path('app/avisos'),
     ],
 
 ];
