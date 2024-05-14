@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Application;
 use App\Http\Middleware\EstaActivoMiddleware;
 use Spatie\Permission\Middleware\RoleMiddleware;
@@ -21,6 +22,8 @@ return Application::configure(basePath: dirname(__DIR__))
             'role'=> RoleMiddleware::class,
             'permission' => PermissionMiddleware::class
         ]);
+
+        $middleware->trustProxies(at: '*', headers: Request::HEADER_X_FORWARDED_AWS_ELB);
 
     })
     ->withExceptions(function (Exceptions $exceptions) {
