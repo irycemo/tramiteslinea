@@ -31,7 +31,7 @@ class AppServiceProvider extends ServiceProvider
         if(!env('LOCAL')){
 
             Livewire::setScriptRoute(function ($handle) {
-                return Route::get('/tramiteslinea/public/vendor/livewire/livewire.js', $handle);
+                return Route::get('vendor/livewire/livewire.js', $handle);
             });
 
             Livewire::setUpdateRoute(function ($handle) {
