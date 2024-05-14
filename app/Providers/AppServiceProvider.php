@@ -35,7 +35,7 @@ class AppServiceProvider extends ServiceProvider
             });
 
             Livewire::setUpdateRoute(function ($handle) {
-                return Route::post('https://d3td8ttammgj5o.cloudfront.net/tramiteslinea/public/vendor/livewire/update', $handle);
+                return Route::post('tramiteslinea/public/vendor/livewire/update', $handle);
             });
 
         }
