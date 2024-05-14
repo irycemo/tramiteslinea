@@ -133,7 +133,7 @@ class Permisos extends Component
                                 ->orderBy($this->sort, $this->direction)
                                 ->paginate($this->pagination);
 
-        return view('livewire.Admin.permisos', compact('permisos'))->extends('layouts.admin');
+        return view('livewire.admin.permisos', compact('permisos'))->extends('layouts.admin');
     }
 
 }

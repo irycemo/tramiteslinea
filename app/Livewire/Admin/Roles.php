@@ -152,7 +152,7 @@ class Roles extends Component
                             ->orderBy($this->sort, $this->direction)
                             ->paginate($this->pagination);
 
-        return view('livewire.Admin.roles', compact('roles'))->extends('layouts.admin');
+        return view('livewire.admin.roles', compact('roles'))->extends('layouts.admin');
     }
 
 }
