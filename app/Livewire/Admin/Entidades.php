@@ -149,6 +149,6 @@ class Entidades extends Component
                                 ->orderBy($this->sort, $this->direction)
                                 ->paginate($this->pagination);
 
-        return view('livewire.admin.entidades', compact('entidades'))->extends('layouts.admin');
+        return view('livewire.Admin.entidades', compact('entidades'))->extends('layouts.admin');
     }
 }
