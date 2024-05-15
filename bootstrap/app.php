@@ -23,8 +23,6 @@ return Application::configure(basePath: dirname(__DIR__))
             'permission' => PermissionMiddleware::class
         ]);
 
-        /* $middleware->trustProxies(at: '*', headers: Request::HEADER_X_FORWARDED_AWS_ELB); */
-
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

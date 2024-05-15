@@ -26,9 +26,9 @@ class AppServiceProvider extends ServiceProvider
 
         Model::shouldBeStrict();
 
-        URL::forceScheme('https');
-
         if(!env('LOCAL')){
+
+            URL::forceScheme('https');
 
             Livewire::setScriptRoute(function ($handle) {
                 return Route::get('/tramiteslinea/public/vendor/livewire/livewire.js', $handle);

@@ -46,9 +46,7 @@ class Usuarios extends Component
     ];
 
     public function crearModeloVacio(){
-        $this->modelo_editar =  User::make([
-            'valuador' => false
-        ]);
+        $this->modelo_editar =  User::make();
     }
 
     public function abrirModalEditar(User $modelo){

@@ -166,7 +166,7 @@
 
             </tr>
 
-            @if(count($tramite['predios']))
+            @if(isset($tramite['predios']) && count($tramite['predios']))
 
                 <tr>
                     <th colspan="2">

@@ -57,5 +57,9 @@ class RoleSeeder extends Seeder
         Permission::create(['name' => 'Certificados', 'area' => 'Catastro'])->syncRoles([$role1, $role2, $role3, $role4]);
         Permission::create(['name' => 'Observaciones', 'area' => 'Catastro'])->syncRoles([$role1, $role2, $role3, $role4]);
 
+        Permission::create(['name' => 'Área de rpp', 'area' => 'RPP'])->syncRoles([$role1, $role2, $role3, $role4]);
+        Permission::create(['name' => 'Trámites rpp', 'area' => 'RPP'])->syncRoles([$role1, $role2, $role3, $role4]);
+        Permission::create(['name' => 'Trámite nuevo rpp', 'area' => 'RPP'])->syncRoles([$role1, $role2, $role3, $role4]);
+
     }
 }

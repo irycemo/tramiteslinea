@@ -9,7 +9,8 @@ class Constantes{
         'Permisos',
         'Usuarios',
         'Auditoría',
-        'Catastro'
+        'Catastro',
+        'RPP'
     ];
 
     const ACTOS = [
