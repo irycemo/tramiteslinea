@@ -8,7 +8,7 @@
 
                 <select class="bg-white rounded-full text-sm w-full" wire:model.live="servicio">
 
-                    <option value="" selected>Servicio</option>
+                    <option value="" selected>Seleccione un servicio</option>
 
                     @foreach ($servicios as $item)
 
@@ -79,7 +79,7 @@
                         <input type="hidden" name="concepto" value="IRYCEM">
                         <input type="hidden" name="lcaptura" value="{{ $this->tramite['linea_de_captura'] }}">
                         <input type="hidden" name="monto" value="{{ $this->tramite['monto'] }}">
-                        <input type="hidden" name="urlRetorno" value="http://127.0.0.1:8000/tramite_nuevo">
+                        <input type="hidden" name="urlRetorno" value="{{ route('acredita_pago') }}">
                         <input type="hidden" name="fecha_vencimiento" value="{{ $this->tramite['fecha_vencimiento'] }}">
                         <input type="hidden" name="tkn" value="{{ $token }}">
 

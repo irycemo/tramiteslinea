@@ -288,7 +288,7 @@ class Nuevo extends Component
                 'concepto' => "IRYCEM",
                 'lcaptura' => $this->tramite['linea_de_captura'],
                 'monto' => $this->tramite['monto'],
-                'urlRetorno' => route('tramites'),
+                'urlRetorno' => route('acredita_pago'),
                 'fecha_vencimiento' => $this->tramite['fecha_vencimiento'],
                 'tkn' => $this->getToken()
             ]);
@@ -307,11 +307,56 @@ class Nuevo extends Component
 
         try {
 
-            $response = Http::withToken(env('SISTEMA_TRAMITES_TOKEN'))->accept('application/json')->get(env('SISTEMA_TRAMITES_CONSULTA_SERVICIOS'), [
-                                                                                                                                    'ids' =>[3,4,5,6,7,8,9,10,11,66,67,68,64,65,57,55]
-                                                                                                                                ]);
+            $response = Http::withToken(env('SGC_ACCESS_TOKEN'))
+                                ->accept('application/json')
+                                ->get(env('SISTEMA_TRAMITES_CONSULTA_SERVICIOS'), [
+                                                                                    'ids' =>[3,4,5,6,7,8,9,10,11,66,67,68,64,65,57,55]
+                                                                                ]
+                                );
 
-            $this->servicios = collect(json_decode($response, true)['data']);
+            if($response->status() === 200){
+
+                $this->servicios = collect(json_decode($response, true)['data']);
+
+                if(auth()->user()->hasRole(['Notario', 'Gestor'])){
+
+                    $this->solicitante = 'Notaría';
+
+                    $this->nombre_solicitante =  auth()->user()->entidad->numero_notaria . ' - ' . auth()->user()->entidad->titular->name;
+
+                    $this->tipo_tramite = 'normal';
+
+                }elseif(auth()->user()->hasRole('Dependencia')){
+
+                    $this->solicitante = 'Escrituración social';
+
+                    $this->nombre_solicitante =  auth()->user()->entidad->dependencia;
+
+                    $this->tipo_tramite = 'exento';
+
+                }elseif(auth()->user()->hasRole('AMPI')){
+
+                    $this->solicitante = 'Usuario';
+
+                    $this->nombre_solicitante =  auth()->user()->entidad->dependencia;
+
+                    $this->tipo_tramite = 'normal';
+
+                }elseif(auth()->user()->hasRole('Abogado')){
+
+                    $this->solicitante = 'Usuario';
+
+                    $this->nombre_solicitante =  auth()->user()->name;
+
+                    $this->tipo_tramite = 'normal';
+
+                }
+
+            }else{
+
+                $this->servicios = [];
+
+            }
 
         } catch (ConnectionException $th) {
 
@@ -322,40 +367,6 @@ class Nuevo extends Component
             response()->json(['message' => 'Ha ocurrido un error en el sistema comuniquese con el departamento de operaciones y desarrollo de sistemas.'], 500);
 
             abort(500, message:"Ha ocurrido un error en el sistema comuniquese con el departamento de operaciones y desarrollo de sistemas.");
-
-        }
-
-        if(auth()->user()->hasRole(['Notario', 'Gestor'])){
-
-            $this->solicitante = 'Notaría';
-
-            $this->nombre_solicitante =  auth()->user()->entidad->numero_notaria . ' - ' . auth()->user()->entidad->titular->name;
-
-            $this->tipo_tramite = 'normal';
-
-        }elseif(auth()->user()->hasRole('Dependencia')){
-
-            $this->solicitante = 'Escrituración social';
-
-            $this->nombre_solicitante =  auth()->user()->entidad->dependencia;
-
-            $this->tipo_tramite = 'exento';
-
-        }elseif(auth()->user()->hasRole('AMPI')){
-
-            $this->solicitante = 'Usuario';
-
-            $this->nombre_solicitante =  auth()->user()->entidad->dependencia;
-
-            $this->tipo_tramite = 'normal';
-
-        }elseif(auth()->user()->hasRole('Abogado')){
-
-            $this->solicitante = 'Usuario';
-
-            $this->nombre_solicitante =  auth()->user()->name;
-
-            $this->tipo_tramite = 'normal';
 
         }
 

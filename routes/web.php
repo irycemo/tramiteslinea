@@ -10,6 +10,7 @@ use App\Livewire\Usuarios\Aviso\Avisos;
 use App\Http\Controllers\ManualController;
 use App\Livewire\Usuarios\Tramites\Tramites;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Sap\AcreditaPagoController;
 use App\Http\Controllers\SetPasswordController;
 use App\Livewire\Rpp\Tramites\Nuevo as TramitesNuevo;
 use App\Livewire\Rpp\Tramites\Tramites as TramitesTramites;
@@ -54,6 +55,8 @@ Route::middleware(['auth', 'activo'])->group( function(){
     Route::get('tramites_rpp', TramitesTramites::class)->middleware('permission:Trámites rpp')->name('tramites_rpp');
 
     Route::get('tramite_nuevo_rpp', TramitesNuevo::class)->middleware('permission:Trámite nuevo rpp')->name('tramite_nuevo_rpp');
+
+    Route::get('acredita_pago', AcreditaPagoController::class)->name('acredita_pago');
 
 });
 

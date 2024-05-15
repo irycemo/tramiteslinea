@@ -37,6 +37,11 @@ class Usuarios extends Component
             'modelo_editar.email' => 'required|email|unique:users,email,' . $this->modelo_editar->id,
             'modelo_editar.status' => 'required|in:activo,inactivo',
             'role' => 'required',
+            'modelo_editar.rfc' => [
+                'required',
+                'regex:/^([A-ZÑ&]{3,4}) ?(?:- ?)?(\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])) ?(?:- ?)?([A-Z\d]{2})([A\d])$/'
+            ],
+            'modelo_editar.curp' => 'nullable',
          ];
     }
 

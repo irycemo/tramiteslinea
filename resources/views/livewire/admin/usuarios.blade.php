@@ -316,6 +316,22 @@
 
                 </div>
 
+                <div class="flex flex-col md:flex-row justify-between md:space-x-3 mb-5">
+
+                    <x-input-group for="modelo_editar.rfc" label="RFC" :error="$errors->first('modelo_editar.rfc')" class="w-full">
+
+                        <x-input-text id="modelo_editar.rfc" wire:model="modelo_editar.rfc" />
+
+                    </x-input-group>
+
+                    <x-input-group for="modelo_editar.curp" label="CURP" :error="$errors->first('modelo_editar.curp')" class="w-full">
+
+                        <x-input-text id="modelo_editar.curp" wire:model="modelo_editar.curp" />
+
+                    </x-input-group>
+
+                </div>
+
             </div>
 
         </x-slot>
