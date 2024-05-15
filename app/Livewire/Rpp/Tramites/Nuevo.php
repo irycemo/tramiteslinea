@@ -211,7 +211,7 @@ class Nuevo extends Component
             $response = Http::withToken(env('SISTEMA_TRAMITES_TOKEN'))->accept('application/json')->get(env('SISTEMA_TRAMITES_CONSULTA_SERVICIOS'), [
                                                                                                                                     'ids' =>[22,23,24,25,26]
                                                                                                                                 ]);
-                                                                                                                                dd($response);
+
             $this->servicios = collect(json_decode($response, true)['data']);
 
             if(auth()->user()->hasRole(['Notario', 'Gestor'])){
