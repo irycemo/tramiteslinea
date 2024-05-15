@@ -108,8 +108,6 @@ class Nuevo extends Component
 
             }else{
 
-                dd($data);
-
                 $this->dispatch('mostrarMensaje', ['error', $data['error']]);
 
             }
@@ -212,39 +210,47 @@ class Nuevo extends Component
                                                                                                                                     'ids' =>[22,23,24,25,26]
                                                                                                                                 ]);
 
-            $this->servicios = collect(json_decode($response, true)['data']);
+            if($response->status() === 200){
 
-            if(auth()->user()->hasRole(['Notario', 'Gestor'])){
+                $this->servicios = collect(json_decode($response, true)['data']);
 
-                $this->solicitante = 'Notaría';
+                if(auth()->user()->hasRole(['Notario', 'Gestor'])){
 
-                $this->nombre_solicitante =  auth()->user()->entidad->numero_notaria . ' - ' . auth()->user()->entidad->titular->name;
+                    $this->solicitante = 'Notaría';
 
-                $this->tipo_tramite = 'normal';
+                    $this->nombre_solicitante =  auth()->user()->entidad->numero_notaria . ' - ' . auth()->user()->entidad->titular->name;
 
-            }elseif(auth()->user()->hasRole('Dependencia')){
+                    $this->tipo_tramite = 'normal';
 
-                $this->solicitante = 'Escrituración social';
+                }elseif(auth()->user()->hasRole('Dependencia')){
 
-                $this->nombre_solicitante =  auth()->user()->entidad->dependencia;
+                    $this->solicitante = 'Escrituración social';
 
-                $this->tipo_tramite = 'exento';
+                    $this->nombre_solicitante =  auth()->user()->entidad->dependencia;
 
-            }elseif(auth()->user()->hasRole('AMPI')){
+                    $this->tipo_tramite = 'exento';
 
-                $this->solicitante = 'Usuario';
+                }elseif(auth()->user()->hasRole('AMPI')){
 
-                $this->nombre_solicitante =  auth()->user()->entidad->dependencia;
+                    $this->solicitante = 'Usuario';
 
-                $this->tipo_tramite = 'normal';
+                    $this->nombre_solicitante =  auth()->user()->entidad->dependencia;
 
-            }elseif(auth()->user()->hasRole('Abogado')){
+                    $this->tipo_tramite = 'normal';
 
-                $this->solicitante = 'Usuario';
+                }elseif(auth()->user()->hasRole('Abogado')){
 
-                $this->nombre_solicitante =  auth()->user()->name;
+                    $this->solicitante = 'Usuario';
 
-                $this->tipo_tramite = 'normal';
+                    $this->nombre_solicitante =  auth()->user()->name;
+
+                    $this->tipo_tramite = 'normal';
+
+                }
+
+            }else{
+
+                $this->servicios = [];
 
             }
 

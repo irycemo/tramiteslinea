@@ -42,7 +42,7 @@
 
                 <p class="text-center font-semibold text-xl">Total: ${{ number_format($total, 2) }}</p>
 
-                @if($this->servicioSeleccionado)
+                @if(!$this->tramite)
 
                     <button
                         wire:click="crearTramite"
