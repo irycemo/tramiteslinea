@@ -32,6 +32,7 @@
 
     body{
         margin-top: 120px;
+        margin-bottom: 20px;
         counter-reset: page;
         height: 100%;
         background-image: url("storage/img/escudo_fondo.png");
@@ -45,8 +46,9 @@
 
     .titulo{
         text-align: center;
-        font-size: 14px;
+        font-size: 11px;
         font-weight: bold;
+        margin: 0;
     }
 
     .fundamento{

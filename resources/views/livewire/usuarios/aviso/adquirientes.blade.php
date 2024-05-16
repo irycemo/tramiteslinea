@@ -282,6 +282,12 @@
 
                 </x-input-group>
 
+                <x-input-group for="correo" label="Email" :error="$errors->first('correo')" class="w-full">
+
+                    <x-input-text type="email" id="correo" wire:model="correo" />
+
+                </x-input-group>
+
                 <span class="flex items-center justify-center text-lg text-gray-700 md:col-span-3 col-span-1 sm:col-span-2">Porcentajes</span>
 
                 <x-input-group for="porcentaje" label="Porcentaje de propiedad" :error="$errors->first('porcentaje')" class="w-full">
