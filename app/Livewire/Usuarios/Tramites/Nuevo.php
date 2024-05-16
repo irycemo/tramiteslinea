@@ -309,7 +309,7 @@ class Nuevo extends Component
 
             $response = Http::withToken(env('SGC_ACCESS_TOKEN'))
                                 ->accept('application/json')
-                                ->get(env('SISTEMA_TRAMITES_CONSULTA_SERVICIOS'), [
+                                ->get(env('SGC_CONSULTA_SERVICIOS'), [
                                                                                     'ids' =>[3,4,5,6,7,8,9,10,11,66,67,68,64,65,57,55]
                                                                                 ]
                                 );

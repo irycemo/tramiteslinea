@@ -479,15 +479,15 @@ class ActoEscritura extends Component
 
                 abort(500, message:"Ha ocurrido un error en el sistema comuniquese con el departamento de operaciones y desarrollo de sistemas.");
 
-            }
+            }else{
 
-            $this->oficinas = collect(json_decode($response, true)['data']);
+                $this->oficinas = collect(json_decode($response, true)['data']);
+
+            }
 
         } catch (ConnectionException $th) {
 
             Log::error("Error al cargar oficinas en avisos: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
-
-            $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
 
             abort(500, message:"Ha ocurrido un error en el sistema comuniquese con el departamento de operaciones y desarrollo de sistemas.");
 

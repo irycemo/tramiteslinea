@@ -77,16 +77,18 @@ class Nuevo extends Component
 
         try {
 
-            $response = Http::withToken(env('SISTEMA_TRAMITES_TOKEN'))->accept('application/json')->post(env('SISTEMA_TRAMITES_CREAR_TRAMITE'), [
-                                                                                                                'tipo_tramite' => $this->tipo_tramite,
-                                                                                                                'tipo_servicio' => $this->tipo_servicio,
-                                                                                                                'servicio_id' => $this->servicio,
-                                                                                                                'solicitante' => $this->solicitante,
-                                                                                                                'nombre_solicitante' => $this->nombre_solicitante,
-                                                                                                                'monto' => $this->total,
-                                                                                                                'cantidad' => 1,
-                                                                                                                'usuario_tramites_linea_id' => auth()->user()->entidad->id,
-                                                                                                            ]);
+            $response = Http::withToken(env('SISTEMA_TRAMITES_TOKEN'))
+                                ->accept('application/json')
+                                ->post(env('SISTEMA_TRAMITES_CREAR_TRAMITE'), [
+                                                                'tipo_tramite' => $this->tipo_tramite,
+                                                                'tipo_servicio' => $this->tipo_servicio,
+                                                                'servicio_id' => $this->servicio,
+                                                                'solicitante' => $this->solicitante,
+                                                                'nombre_solicitante' => $this->nombre_solicitante,
+                                                                'monto' => $this->total,
+                                                                'cantidad' => 1,
+                                                                'usuario_tramites_linea_id' => auth()->user()->entidad->id,
+                                                            ]);
 
             $data = json_decode($response, true);
 
@@ -206,9 +208,11 @@ class Nuevo extends Component
 
         try {
 
-            $response = Http::withToken(env('SISTEMA_TRAMITES_TOKEN'))->accept('application/json')->get(env('SISTEMA_TRAMITES_CONSULTA_SERVICIOS'), [
-                                                                                                                                    'ids' =>[22,23,24,25,26]
-                                                                                                                                ]);
+            $response = Http::withToken(env('SISTEMA_TRAMITES_TOKEN'))
+                                ->accept('application/json')
+                                ->get(env('SISTEMA_TRAMITES_CONSULTA_SERVICIOS'), [
+                                                                                    'ids' =>[22,23,24,25,26]
+                                                                                ]);
 
             if($response->status() === 200){
 
