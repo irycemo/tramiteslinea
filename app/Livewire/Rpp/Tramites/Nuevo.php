@@ -110,8 +110,6 @@ class Nuevo extends Component
 
             }else{
 
-                dd($response);
-
                 $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
 
             }

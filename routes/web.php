@@ -56,9 +56,9 @@ Route::middleware(['auth', 'activo'])->group( function(){
 
     Route::get('tramite_nuevo_rpp', TramitesNuevo::class)->middleware('permission:Trámite nuevo rpp')->name('tramite_nuevo_rpp');
 
-    Route::get('acredita_pago', AcreditaPagoController::class)->name('acredita_pago');
-
 });
+
+Route::get('acredita_pago', AcreditaPagoController::class)->name('acredita_pago');
 
 Route::get('setpassword/{email}', [SetPasswordController::class, 'create'])->name('setpassword');
 Route::post('setpassword', [SetPasswordController::class, 'store'])->name('setpassword.store');
