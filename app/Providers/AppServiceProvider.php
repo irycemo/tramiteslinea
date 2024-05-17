@@ -40,13 +40,13 @@ class AppServiceProvider extends ServiceProvider
 
         }else{
 
-            Livewire::setScriptRoute(function ($handle) {
+           /*  Livewire::setScriptRoute(function ($handle) {
                 return Route::get('/tramiteslinea/public/vendor/livewire/livewire.js', $handle);
             });
 
             Livewire::setUpdateRoute(function ($handle) {
                 return Route::post('/tramiteslinea/public/livewire/update', $handle);
-            });
+            }); */
 
         }
 

@@ -110,9 +110,9 @@ class Nuevo extends Component
 
             }else{
 
-                Log::error("Error al cargar servicio nuevo en trámties: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . json_encode($data));
+                dd($response);
 
-                $this->dispatch('mostrarMensaje', ['error', $data['error']]);
+                $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
 
             }
 

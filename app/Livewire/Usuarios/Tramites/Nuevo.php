@@ -207,7 +207,7 @@ class Nuevo extends Component
 
             }else{
 
-                dd($data);
+                dd($response);
 
                 $this->dispatch('mostrarMensaje', ['error', $data['error']]);
 
