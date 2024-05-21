@@ -2,7 +2,7 @@
 
     <div class="max-w-7xl mx-auto p-6 lg:p-8">
 
-        <div class="flex justify-center">
+        <div class="flex justify-center mb-10">
             <a href="/">
                 <img src="{{ asset('storage/img/logo2.png') }}" alt="Logo" class="w-96">
             </a>
