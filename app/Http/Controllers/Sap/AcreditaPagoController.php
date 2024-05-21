@@ -25,7 +25,7 @@ class AcreditaPagoController extends Controller
 
             $response = Http::withToken(env('SISTEMA_TRAMITES_TOKEN'))
                                 ->accept('application/json')
-                                ->get(env('SISTEMA_TRAMITES_ACREDITAR_TRAMITE'), ['linea_de_captura' => $validated['linea_de_captura']]);
+                                ->post(env('SISTEMA_TRAMITES_ACREDITAR_TRAMITE'), ['linea_de_captura' => $validated['linea_de_captura']]);
 
             $data_st = json_decode($response, true);
 
@@ -37,7 +37,7 @@ class AcreditaPagoController extends Controller
 
                 $response = Http::withToken(env('SGC_ACCESS_TOKEN'))
                                 ->accept('application/json')
-                                ->get(env('SGC_ACREDITA_TRAMITE'), ['linea_de_captura' => $validated['linea_de_captura']]);
+                                ->post(env('SGC_ACREDITA_TRAMITE'), ['linea_de_captura' => $validated['linea_de_captura']]);
 
                 $data_sgc = json_decode($response, true);
 
