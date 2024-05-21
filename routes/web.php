@@ -7,17 +7,18 @@ use App\Livewire\Admin\Auditoria;
 use App\Livewire\Admin\Entidades;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Usuarios\Aviso\Avisos;
+use App\Http\Middleware\VerifyCsrfToken;
+use App\Livewire\Usuarios\Tramites\Nuevo;
 use App\Http\Controllers\ManualController;
+use App\Livewire\Usuarios\Aviso\MisAvisos;
 use App\Livewire\Usuarios\Tramites\Tramites;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\Sap\AcreditaPagoController;
 use App\Http\Controllers\SetPasswordController;
-use App\Livewire\Rpp\Tramites\Nuevo as TramitesNuevo;
-use App\Livewire\Rpp\Tramites\Tramites as TramitesTramites;
-use App\Livewire\Usuarios\Aviso\MisAvisos;
-use App\Livewire\Usuarios\Observaciones\Observaciones;
 use App\Livewire\Usuarios\Tramites\Certificados;
-use App\Livewire\Usuarios\Tramites\Nuevo;
+use App\Http\Controllers\Sap\AcreditaPagoController;
+use App\Livewire\Rpp\Tramites\Nuevo as TramitesNuevo;
+use App\Livewire\Usuarios\Observaciones\Observaciones;
+use App\Livewire\Rpp\Tramites\Tramites as TramitesTramites;
 
 Route::get('/', function () {
     return redirect('login');
@@ -58,7 +59,7 @@ Route::middleware(['auth', 'activo'])->group( function(){
 
 });
 
-Route::post('acredita_pago', AcreditaPagoController::class)->name('acredita_pago');
+Route::post('acredita_pago', AcreditaPagoController::class)->name('acredita_pago')->withoutMiddleware([VerifyCsrfToken::class]);
 
 Route::get('setpassword/{email}', [SetPasswordController::class, 'create'])->name('setpassword');
 Route::post('setpassword', [SetPasswordController::class, 'store'])->name('setpassword.store');
