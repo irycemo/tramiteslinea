@@ -21,6 +21,8 @@ class AcreditaPagoController extends Controller
 
         $validated['linea_de_captura'] = $request['c_referencia'];
 
+        info($validated['linea_de_captura']);
+
         try {
 
             $response = Http::withToken(env('SISTEMA_TRAMITES_TOKEN'))
