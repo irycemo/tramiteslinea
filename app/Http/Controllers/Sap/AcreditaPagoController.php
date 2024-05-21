@@ -41,6 +41,10 @@ class AcreditaPagoController extends Controller
 
                 $data_sgc = json_decode($response, true);
 
+                info($response );
+
+                info($data_sgc );
+
                 if($response->status() === 200){
 
                     return view('sap.acreditaPago')->with(['status' => 'success', 'data' => $data_sgc]);
