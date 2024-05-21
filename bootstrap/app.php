@@ -23,6 +23,8 @@ return Application::configure(basePath: dirname(__DIR__))
             'permission' => PermissionMiddleware::class
         ]);
 
+        $middleware->validateCsrfTokens(except:['acredita_pago']);
+
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

@@ -158,6 +158,7 @@ class Constantes{
         'ESCRITURA PRIVADA',
         'TITULO DE PROPIEDAD',
         'CONTRATO DE COMPRAVENTA',
+        'MINUTA DE PROPIEDAD COMUNIDAD INDIGENA'
     ];
 
     const TIPO_VIALIDADES = [
