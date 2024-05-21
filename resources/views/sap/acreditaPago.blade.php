@@ -1,6 +1,4 @@
-@extends('layouts.admin')
-
-@section('content')
+<x-app-layout>
 
     <x-header>Acreditación de pago</x-header>
 
@@ -55,4 +53,4 @@
 
     @endif
 
-@endsection
+</x-app-layout>
