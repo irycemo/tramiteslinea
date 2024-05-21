@@ -14,14 +14,7 @@ class AcreditaPagoController extends Controller
     public function __invoke(Request $request)
     {
 
-        /* info($request); */
-        /* $validated = $request->validate([
-            'linea_de_captura' => 'required',
-        ]); */
-
         $validated['linea_de_captura'] = $request['c_referencia'];
-
-        info($validated['linea_de_captura']);
 
         try {
 
@@ -31,13 +24,9 @@ class AcreditaPagoController extends Controller
 
             $data_st = json_decode($response, true);
 
-            info($response );
-
-            info($data_st );
-
             if($response->status() === 200){
 
-                return view('sap.acreditaPago')->with(['status' => 'success', 'data' => $data_st]);
+                return view('sap.acreditaPago')->with(['status' => 'success', 'data' => $data_st['data']]);
 
             }elseif($response->status() === 404){
 
@@ -47,13 +36,9 @@ class AcreditaPagoController extends Controller
 
                 $data_sgc = json_decode($response, true);
 
-                info($response );
-
-                info($data_sgc );
-
                 if($response->status() === 200){
 
-                    return view('sap.acreditaPago')->with(['status' => 'success', 'data' => $data_sgc]);
+                    return view('sap.acreditaPago')->with(['status' => 'success', 'data' => $data_sgc['data']]);
 
                 }elseif($response->status() === 404){
 
@@ -66,10 +51,6 @@ class AcreditaPagoController extends Controller
                 }
 
             }else{
-
-                info($response );
-
-                info($data_st );
 
                 return view('sap.acreditaPago')->with(['status' => 'error', 'mensaje' => $data_st['error']]);
 
