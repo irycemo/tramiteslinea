@@ -24,7 +24,7 @@ return Application::configure(basePath: dirname(__DIR__))
         ]);
 
         $middleware->validateCsrfTokens(except: [
-            'acredita_pago/*',
+            'acredita_pago',
         ]);
 
     })
