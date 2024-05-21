@@ -14,9 +14,12 @@ class AcreditaPagoController extends Controller
     public function __invoke(Request $request)
     {
 
-        $validated = $request->validate([
+        info($request);
+        /* $validated = $request->validate([
             'linea_de_captura' => 'required',
-        ]);
+        ]); */
+
+        $validated['linea_de_captura'] = $request['linea_de_captura'];
 
         try {
 
