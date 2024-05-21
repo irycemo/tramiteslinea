@@ -58,7 +58,7 @@ Route::middleware(['auth', 'activo'])->group( function(){
 
 });
 
-Route::get('acredita_pago', AcreditaPagoController::class)->name('acredita_pago');
+Route::post('acredita_pago', AcreditaPagoController::class)->name('acredita_pago');
 
 Route::get('setpassword/{email}', [SetPasswordController::class, 'create'])->name('setpassword');
 Route::post('setpassword', [SetPasswordController::class, 'store'])->name('setpassword.store');

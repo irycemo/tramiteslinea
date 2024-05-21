@@ -73,8 +73,6 @@ class Nuevo extends Component
 
         $this->total = count($this->predios) * $costo;
 
-
-
     }
 
     public function resetearTodo(){
