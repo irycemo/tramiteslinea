@@ -232,7 +232,7 @@
 
                 <option value="">Seleccione una opción</option>
 
-                @foreach ($actos as $item)
+                @foreach ($tipos_escritura as $item)
 
                     <option value="{{ $item }}">{{ $item }}</option>
 

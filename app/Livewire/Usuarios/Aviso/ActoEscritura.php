@@ -538,6 +538,8 @@ class ActoEscritura extends Component
 
         $this->actos = Constantes::ACTOS;
 
+        $this->tipos_escritura = Constantes::TIPO_ESCRITURA;
+
         $this->años = Constantes::AÑOS;
 
         $this->año_aviso = now()->format('Y');
