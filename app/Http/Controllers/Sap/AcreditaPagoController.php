@@ -65,6 +65,10 @@ class AcreditaPagoController extends Controller
 
             }else{
 
+                info($response );
+
+                info($data_st );
+
                 return view('sap.acreditaPago')->with(['status' => 'error', 'mensaje' => $data_st['error']]);
 
             }
