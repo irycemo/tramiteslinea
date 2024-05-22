@@ -35,7 +35,7 @@ class AppServiceProvider extends ServiceProvider
             });
 
             Livewire::setUpdateRoute(function ($handle) {
-                return Route::post('tramiteslinea/public/livewire/update', $handle);
+                return Route::post('/tramiteslinea/public/livewire/update', $handle);
             });
 
         }elseif(env('LOCAL') === 0){
@@ -45,7 +45,7 @@ class AppServiceProvider extends ServiceProvider
             });
 
             Livewire::setUpdateRoute(function ($handle) {
-                return Route::post('tramiteslinea/public/livewire/update', $handle);
+                return Route::post('/tramiteslinea/public/livewire/update', $handle);
             });
 
         }
