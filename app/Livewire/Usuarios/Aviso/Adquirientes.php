@@ -74,7 +74,7 @@ class Adquirientes extends Component
                 'regex:/^([A-ZÑ&]{3,4}) ?(?:- ?)?(\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])) ?(?:- ?)?([A-Z\d]{2})([A\d])$/',
                 'unique:personas,rfc,' . $this->rfc
             ],
-            'razon_social' => [Rule::requiredIf($this->tipo_persona === 'MORAL')],
+            'razon_social' => ['nullable', Rule::requiredIf($this->tipo_persona === 'MORAL'), utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.()\/\-," ]*$/')],
             'fecha_nacimiento' => 'nullable',
             'nacionalidad' => 'nullable|' . utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.() ]*$/'),
             'estado_civil' => 'nullable',
