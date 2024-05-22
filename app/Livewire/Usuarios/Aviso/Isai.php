@@ -62,10 +62,7 @@ class Isai extends Component
                 'nullable',
                 'date'
             ],
-            'aviso.no_genera_isai' => 'required',
-            'aviso.valor_isai' => 'nullable|numeric|gt:0',
-            'aviso.reduccion' => 'nullable|numeric',
-            'aviso.base_gravable' => 'nullable|numeric',
+            'aviso.no_genera_isai' => 'required'
         ];
     }
 
