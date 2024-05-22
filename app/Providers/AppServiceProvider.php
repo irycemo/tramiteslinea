@@ -24,7 +24,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
 
-        /* Model::shouldBeStrict(); */
+        Model::shouldBeStrict();
 
         if(env('LOCAL') === "1"){
 
@@ -49,6 +49,14 @@ class AppServiceProvider extends ServiceProvider
             });
 
         }
+
+        Livewire::setScriptRoute(function ($handle) {
+            return Route::get('/tramiteslinea/public/vendor/livewire/livewire.js', $handle);
+        });
+
+        Livewire::setUpdateRoute(function ($handle) {
+            return Route::post('/tramiteslinea/public/livewire/update', $handle);
+        });
 
     }
 }
