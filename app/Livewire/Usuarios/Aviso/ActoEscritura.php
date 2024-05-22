@@ -499,7 +499,10 @@ class ActoEscritura extends Component
 
             try {
 
-                $response = Http::withToken(env('SGC_ACCESS_TOKEN'))->accept('application/json')->asForm()->post(env('SGC_CONSULTA_PREDIO'), ['id' => $this->aviso->predio_sgc]);
+                $response = Http::withToken(env('SGC_ACCESS_TOKEN'))
+                                    ->accept('application/json')
+                                    ->asForm()
+                                    ->post(env('SGC_CONSULTA_PREDIO'), ['id' => $this->aviso->predio_sgc]);
 
                 $data = collect(json_decode($response, true));
 

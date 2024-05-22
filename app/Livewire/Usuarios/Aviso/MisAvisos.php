@@ -132,7 +132,7 @@ class MisAvisos extends Component
     public function render()
     {
 
-        $avisos = Aviso::with('creadoPor', 'actualizadoPor', 'entidad')
+        $avisos = Aviso::with('creadoPor', 'actualizadoPor', 'entidad', 'observacionesLista')
                             ->when($this->filters['año'], fn($q, $año) => $q->where('año', $año))
                             ->when($this->filters['folio'], fn($q, $folio) => $q->where('folio', $folio))
                             ->when($this->filters['usuario'], fn($q, $usuario) => $q->where('usuario', $usuario))

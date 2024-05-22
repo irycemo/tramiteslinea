@@ -99,7 +99,7 @@
 
                     <x-input-select id="localidadSeleccionada" wire:model.live="localidadSeleccionada">
 
-                        <option value="">Seleccione una opción</option>
+                        <option value="">{{ collect($municipios)->where('id', $municipioSeleccionado)->first()['nombre'] }}</option>
 
                         @foreach ($localidades as $item)
 
