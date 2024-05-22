@@ -40,7 +40,7 @@ class Archivo extends Component
     protected function rules(){
         return [
             'documento' => 'nullable|mimes:pdf',
-            'aviso.observaciones' => 'nullable|' . utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.() ]*$/'),
+            'aviso.observaciones' => 'nullable|' . utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.()\/\-," ]*$/'),
         ];
     }
 

@@ -36,7 +36,7 @@ class Antecedentes extends Component
             'registro' => 'required',
             'seccion' => 'required',
             'distrito' => 'required',
-            'acto' => 'required',
+            'acto' => 'required|'. utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.()\/\-," ]*$/'),
         ];
     }
 
