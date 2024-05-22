@@ -412,9 +412,9 @@ class Adquirientes extends Component
 
                 }
 
-                if($this->predio->propietarios()->where('persona_id', $persona->id)->first()){
+                if($this->aviso->actores()->where('persona_id', $persona->id)->first()){
 
-                    $this->dispatch('mostrarMensaje', ['error', "La persona ya es un propietario."]);
+                    $this->dispatch('mostrarMensaje', ['error', "La persona ya esta relacionada a este aviso."]);
 
                     return;
 
