@@ -74,7 +74,7 @@ class Adquirientes extends Component
                 'regex:/^([A-ZÑ&]{3,4}) ?(?:- ?)?(\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])) ?(?:- ?)?([A-Z\d]{2})([A\d])$/',
                 'unique:personas,rfc,' . $this->rfc
             ],
-            'razon_social' => [Rule::requiredIf($this->tipo_persona === 'MORAL'), utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.()\/\-," ]*$/'),],
+            'razon_social' => [Rule::requiredIf($this->tipo_persona === 'MORAL'), utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.()\/\-," ]*$/')],
             'fecha_nacimiento' => 'nullable',
             'nacionalidad' => 'nullable|' . utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.() ]*$/'),
             'estado_civil' => 'nullable',
@@ -106,6 +106,28 @@ class Adquirientes extends Component
         }elseif($property == 'porcentaje'){
 
             $this->reset(['porcentaje_nuda', 'porcentaje_usufructo']);
+
+        }
+
+    }
+
+    public function updatedTipoPersona(){
+
+        if($this->tipo_persona == 'FISICA'){
+
+            $this->reset('razon_social');
+
+        }elseif($this->tipo_persona == 'MORAL'){
+
+            $this->reset([
+                'nombre',
+                'ap_paterno',
+                'ap_materno',
+                'curp',
+                'fecha_nacimiento',
+                'estado_civil',
+                'rfc'
+            ]);
 
         }
 
@@ -352,15 +374,18 @@ class Adquirientes extends Component
 
             DB::transaction(function () {
 
-                $persona = Persona::where('rfc', $this->rfc)->first();
+                $persona = Persona::query()
+                                    ->where(function($q){
+                                        $q->when($this->nombre, fn($q) => $q->where('nombre', $this->nombre))
+                                            ->when($this->ap_paterno, fn($q) => $q->where('ap_paterno', $this->ap_paterno))
+                                            ->when($this->ap_materno, fn($q) => $q->where('ap_materno', $this->ap_materno));
+                                    })
+                                    ->when($this->razon_social, fn($q) => $q->orWhere('razon_social', $this->razon_social))
+                                    ->when($this->rfc, fn($q) => $q->orWhere('rfc', $this->rfc))
+                                    ->when($this->curp, fn($q) => $q->orWhere('curp', $this->curp))
+                                    ->first();
 
-                if($persona != null && $this->aviso->actores()->where('persona_id', $persona->id)->first()){
-
-                    $this->dispatch('mostrarMensaje', ['error', "La persona ya esta relacionada a este aviso."]);
-
-                    return;
-
-                }elseif(!$persona){
+                if(!$persona){
 
                     $persona = Persona::create([
                         'tipo' => $this->tipo_persona,
@@ -378,12 +403,20 @@ class Adquirientes extends Component
                         'numero_interior' => $this->numero_interior_propietario,
                         'colonia' => $this->colonia,
                         'ciudad' => $this->ciudad,
+                        'correo' => $this->correo,
                         'cp' => $this->cp,
                         'entidad' => $this->entidad,
-                        'correo' => $this->correo,
                         'municipio' => $this->municipio_propietario,
                         'creado_por' => auth()->id()
                     ]);
+
+                }
+
+                if($this->predio->propietarios()->where('persona_id', $persona->id)->first()){
+
+                    $this->dispatch('mostrarMensaje', ['error', "La persona ya es un propietario."]);
+
+                    return;
 
                 }
 
