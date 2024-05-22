@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
 
         /* Model::shouldBeStrict(); */
 
-        if(env('LOCAL') === 1){
+        if(env('LOCAL') === "1"){
 
             URL::forceScheme('https');
 
@@ -38,7 +38,7 @@ class AppServiceProvider extends ServiceProvider
                 return Route::post('/tramiteslinea/public/livewire/update', $handle);
             });
 
-        }elseif(env('LOCAL') === 0){
+        }elseif(env('LOCAL') === "0"){
 
             Livewire::setScriptRoute(function ($handle) {
                 return Route::get('/tramiteslinea/public/vendor/livewire/livewire.js', $handle);
