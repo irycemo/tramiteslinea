@@ -155,6 +155,8 @@ class Adquirientes extends Component
 
         $this->aviso = Aviso::find($id);
 
+        $this->cargarPorcentajes();
+
     }
 
     public function resetear(){

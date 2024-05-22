@@ -108,7 +108,6 @@ class Antecedentes extends Component
                 'seccion' => $this->seccion,
                 'distrito' => $this->distrito,
                 'acto' => $this->acto,
-                'selected_id' => $this->selected_id,
                 'actualizado_por' => auth()->id()
             ]);
 
