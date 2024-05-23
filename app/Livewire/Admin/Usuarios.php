@@ -63,7 +63,7 @@ class Usuarios extends Component
         if($this->modelo_editar->isNot($modelo))
             $this->modelo_editar = $modelo;
 
-        $this->role = $modelo['roles'][0]['id'];
+        /* $this->role = $modelo['roles'][0]['id']; */
     }
 
     public function guardar(){
