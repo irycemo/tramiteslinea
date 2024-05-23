@@ -211,7 +211,21 @@ class Nuevo extends Component
             $response = Http::withToken(env('SISTEMA_TRAMITES_TOKEN'))
                                 ->accept('application/json')
                                 ->get(env('SISTEMA_TRAMITES_CONSULTA_SERVICIOS'), [
-                                                                                    'ids' =>[22,23,24,25,26]
+                                                                                    'claves' =>[
+                                                                                        'DC94',
+                                                                                        'DC95',
+                                                                                        'DC97',
+                                                                                        'DC96',
+                                                                                        'DL21',
+                                                                                        'DL22',
+                                                                                        'DL23',
+                                                                                        'DL24',
+                                                                                        'DL25',
+                                                                                        'DL26',
+                                                                                        'DL27',
+                                                                                        'DL16',
+                                                                                        'DL17'
+                                                                                    ]
                                                                                 ]);
 
             if($response->status() === 200){
