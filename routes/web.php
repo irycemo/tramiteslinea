@@ -19,6 +19,7 @@ use App\Http\Controllers\Sap\AcreditaPagoController;
 use App\Livewire\Rpp\Tramites\Nuevo as TramitesNuevo;
 use App\Livewire\Usuarios\Observaciones\Observaciones;
 use App\Livewire\Rpp\Tramites\Tramites as TramitesTramites;
+use App\Livewire\Usuarios\Usuarios as UsuariosUsuarios;
 
 Route::get('/', function () {
     return redirect('login');
@@ -56,6 +57,8 @@ Route::middleware(['auth', 'activo'])->group( function(){
     Route::get('tramites_rpp', TramitesTramites::class)->middleware('permission:Trámites rpp')->name('tramites_rpp');
 
     Route::get('tramite_nuevo_rpp', TramitesNuevo::class)->middleware('permission:Trámite nuevo rpp')->name('tramite_nuevo_rpp');
+
+    Route::get('usuarios_notaria', UsuariosUsuarios::class)->middleware('permission:Usuarios notaria')->name('usuarios_notaria');
 
 });
 

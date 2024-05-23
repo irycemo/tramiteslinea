@@ -37,6 +37,14 @@ class Nuevo extends Component
 
     public function updatedServicio(){
 
+        if($this->servicio == ''){
+
+            $this->resetearTodo();
+
+            return;
+
+        }
+
         $this->servicioSeleccionado = collect($this->servicios)->where('id', $this->servicio)->first();
 
         $this->resetearTodo();
