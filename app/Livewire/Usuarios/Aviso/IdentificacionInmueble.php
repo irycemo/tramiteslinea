@@ -261,9 +261,6 @@ class IdentificacionInmueble extends Component
                     'url' => $name
                 ]);
 
-                $this->aviso->refresh();
-
-
             }else if($response->status() === 404 || $response->status() === 401){
 
                 $this->dispatch('mostrarMensaje', ['error', $data['error']]);
@@ -278,7 +275,7 @@ class IdentificacionInmueble extends Component
 
         } catch (\Throwable $th) {
 
-            $this->dispatch('mostrarMensaje', ['error', 'Hubo un error con']);
+            $this->dispatch('mostrarMensaje', ['error', 'Hubo un error']);
             Log::error("Error al consultar avaluo en Sistema de Peritos Externos por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
 
         }
