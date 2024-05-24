@@ -105,6 +105,15 @@ class IdentificacionInmueble extends Component
 
                 $this->codigos_postales = collect(json_decode($response, true)['data']);
 
+                if($this->codigos_postales->count()){
+
+                    foreach ($this->codigos_postales as $codigo) {
+
+                        array_push($this->nombres_asentamientos, $codigo->nombre_asentamiento);
+                    }
+
+                }
+
             }else{
 
                 $this->dispatch('mostrarMensaje', ['error', json_decode($response, true)['error']]);
