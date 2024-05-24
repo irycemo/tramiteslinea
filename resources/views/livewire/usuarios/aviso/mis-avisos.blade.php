@@ -175,6 +175,10 @@
                                             Reactivar aviso
                                         </button>
 
+                                    @endif
+
+                                    @if($aviso->avaluo_spe)
+
                                         <button
                                             wire:click="reactivarAvaluo({{ $aviso->id }})"
                                             wire:loading.attr="disabled"
