@@ -87,41 +87,70 @@
 
             </div>
 
-            <div class="flex-auto">
+            @if($codigos_postales)
 
-                <div class="">
+                <div class="flex-auto">
 
-                    <label class="text-sm " >Nombre del asentamiento</label>
+                    <div class="">
+
+                        <label class="text-sm " >Nombre del asentamiento</label>
+
+                    </div>
+
+                    <div>
+
+                        <select class="bg-white rounded text-xs w-full" wire:model.live="aviso.nombre_asentamiento">
+
+                            <option value="" selected>Seleccione una opción</option>
+
+                            @if($nombres_asentamientos)
+
+                                @foreach ($nombres_asentamientos as $nombre)
+
+                                    <option value="{{ $nombre }}">{{ $nombre }}</option>
+
+                                @endforeach
+
+                            @endif
+
+                        </select>
+
+                    </div>
+
+                    <div>
+
+                        @error('aviso.nombre_asentamiento') <span class="error text-sm text-red-500">{{ $message }}</span> @enderror
+
+                    </div>
 
                 </div>
 
-                <div>
+            @else
 
-                    <select class="bg-white rounded text-xs w-full" wire:model.live="aviso.nombre_asentamiento">
+                <div class="flex-auto ">
 
-                        <option value="" selected>Seleccione una opción</option>
+                    <div>
 
-                        @if($nombres_asentamientos)
+                        <label class="text-sm" >Nombre del asentamiento</label>
 
-                            @foreach ($nombres_asentamientos as $nombre)
+                    </div>
 
-                                <option value="{{ $nombre }}">{{ $nombre }}</option>
+                    <div>
 
-                            @endforeach
+                        <input  class="bg-white rounded text-xs w-full" wire:model.lazy="aviso.nombre_asentamiento">
 
-                        @endif
+                    </div>
 
-                    </select>
+                    <div>
 
-                </div>
+                        @error('aviso.nombre_asentamiento') <span class="error text-sm text-red-500">{{ $message }}</span> @enderror
 
-                <div>
-
-                    @error('aviso.nombre_asentamiento') <span class="error text-sm text-red-500">{{ $message }}</span> @enderror
+                    </div>
 
                 </div>
 
-            </div>
+            @endif
+
 
             <div class="flex-auto">
 
@@ -562,7 +591,7 @@
 
             @if($aviso->croquis)
 
-                <img class="h-40 mx-auto" src="{{ Storage::disk('avisos')->url($aviso->croquis->url) }}" alt="Croquis">
+                <img class="h-40 mx-auto mt-3" src="{{ Storage::disk('avisos')->url($aviso->croquis->url) }}" alt="Croquis">
 
             @endif
 

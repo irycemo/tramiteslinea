@@ -114,12 +114,6 @@ class IdentificacionInmueble extends Component
 
                 }
 
-                if($this->aviso->nombre_asentamiento){
-
-                    array_push($this->nombres_asentamientos, $this->aviso->nombre_asentamiento);
-
-                }
-
                 $this->nombres_asentamientos = array_filter($this->nombres_asentamientos);
 
             }else{
@@ -182,6 +176,8 @@ class IdentificacionInmueble extends Component
 
         $this->validate(['año' => 'required', 'folio' => 'required']);
 
+        $this->reset('codigos_postales');
+
         try {
 
             $response = Http::acceptJson()
@@ -235,8 +231,6 @@ class IdentificacionInmueble extends Component
                 $this->aviso->superficie_terreno = $data['data']['superficie_terreno'];
                 $this->aviso->superficie_construccion = $data['data']['superficie_construccion'];
                 $this->aviso->valor_catastral = $data['data']['valor_catastral'];
-
-                $this->updatedAvisoCodigoPostal();
 
                 foreach ($data['data']['colindancias'] as $colindancia) {
 
