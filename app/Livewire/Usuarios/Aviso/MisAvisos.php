@@ -44,7 +44,7 @@ class MisAvisos extends Component
 
     }
 
-    public function reactivarAviso(Aviso $aviso){
+    public function reactivarAvaluo(Aviso $aviso){
 
         $this->modelo_editar = $aviso;
 
@@ -81,7 +81,29 @@ class MisAvisos extends Component
         } catch (\Throwable $th) {
 
             $this->dispatch('mostrarMensaje', ['error', 'Hubo un error con']);
-            Log::error("Error al consultar avaluo en Sistema de Peritos Externos por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+
+            Log::error("Error al reactivar avalúp por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+
+        }
+
+
+    }
+
+    public function reactivarAviso(Aviso $aviso){
+
+        $this->modelo_editar = $aviso;
+
+        try {
+
+            $this->modelo_editar->update(['estado' => 'nuevo', 'actualizado_por' => auth()->id()]);
+
+            $this->dispatch('mostrarMensaje', ['success', 'El aviso y el avalúo han sido reactivados.']);
+
+        } catch (\Throwable $th) {
+
+            $this->dispatch('mostrarMensaje', ['error', 'Hubo un error con']);
+
+            Log::error("Error al reactivar aviso por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
 
         }
 

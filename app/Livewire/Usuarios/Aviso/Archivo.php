@@ -71,17 +71,17 @@ class Archivo extends Component
 
             DB::transaction(function () {
 
-                if($this->aviso->archivo()->first()){
-
-                    $file = File::where('fileable_id', $this->aviso->id)->where('fileable_type', 'App\Models\Aviso')->where('descripcion', 'archivo')->first();
-
-                    Storage::disk('avisos')->delete($file->url);
-
-                    $file->delete();
-
-                }
-
                 if($this->documento){
+
+                    if($this->aviso->archivo()->first()){
+
+                        $file = File::where('fileable_id', $this->aviso->id)->where('fileable_type', 'App\Models\Aviso')->where('descripcion', 'archivo')->first();
+
+                        Storage::disk('avisos')->delete($file->url);
+
+                        $file->delete();
+
+                    }
 
                     $pdf = $this->documento->store('/', 'avisos');
 
@@ -124,7 +124,7 @@ class Archivo extends Component
 
         if(!$this->aviso->colindancias->count()){
 
-            $this->dispatch('mostrarMensaje', ['error', "Debe ingresar la información de identificación de inmueble."]);
+            $this->dispatch('mostrarMensaje', ['error', "Debe ingresar las colindancias información de identificación de inmueble."]);
 
             return true;
 

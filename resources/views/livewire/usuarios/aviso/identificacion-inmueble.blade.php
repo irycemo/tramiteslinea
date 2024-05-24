@@ -560,6 +560,12 @@
 
             </span>
 
+            @if($aviso->croquis)
+
+                <img class="h-40 mx-auto" src="{{ Storage::disk('avisos')->url($aviso->croquis->url) }}" alt="Croquis">
+
+            @endif
+
         </div>
 
     </div>

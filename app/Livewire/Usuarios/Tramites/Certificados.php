@@ -2,18 +2,19 @@
 
 namespace App\Livewire\Usuarios\Tramites;
 
+use Carbon\Carbon;
 use Livewire\Component;
 use Illuminate\Support\Arr;
 use App\Constantes\Constantes;
 use Barryvdh\DomPDF\Facade\Pdf;
-use Illuminate\Support\Facades\Http;
 use Endroid\QrCode\Builder\Builder;
+use Endroid\QrCode\Writer\PngWriter;
+use Illuminate\Support\Facades\Http;
 use Endroid\QrCode\Encoding\Encoding;
+use Endroid\QrCode\RoundBlockSizeMode;
+use Endroid\QrCode\Label\Font\NotoSans;
 use Endroid\QrCode\ErrorCorrectionLevel;
 use Endroid\QrCode\Label\LabelAlignment;
-use Endroid\QrCode\Label\Font\NotoSans;
-use Endroid\QrCode\RoundBlockSizeMode;
-use Endroid\QrCode\Writer\PngWriter;
 
 class Certificados extends Component
 {
@@ -40,6 +41,14 @@ class Certificados extends Component
     public function previousPage(){ (int)$this->paginaActual--; $this->dispatch('gotoTop'); }
 
     public function abrirModalVer($tramite){
+
+        if(Carbon::parse($tramite['fecha_entrega'])->gte(now())){
+
+            $this->dispatch('mostrarMensaje', ['warning', "La fecha de entrega del trámite es: " . $tramite['fecha_entrega']]);
+
+            return;
+
+        }
 
         $this->modal = true;
 

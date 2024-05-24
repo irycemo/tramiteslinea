@@ -6,6 +6,7 @@ use App\Models\File;
 use App\Models\Aviso;
 use Livewire\Component;
 use App\Models\Colindancia;
+use Illuminate\Support\Str;
 use Livewire\WithFileUploads;
 use App\Constantes\Constantes;
 use Illuminate\Support\Facades\DB;
@@ -76,7 +77,7 @@ class IdentificacionInmueble extends Component
             'aviso.valor_catastral' => 'required|numeric',
             'aviso.cantidad_tramitada' => 'required',
             'aviso.avaluo_spe' => 'nullable',
-            'croquis' => 'required|image',
+            'croquis' => 'nullable|image',
          ];
     }
 
@@ -235,6 +236,33 @@ class IdentificacionInmueble extends Component
 
                 }
 
+                $file = File::where('fileable_id', $this->aviso->id)->where('fileable_type', 'App\Models\Aviso')->where('descripcion', 'croquis')->first();
+
+                if($file){
+
+                    Storage::disk('avisos')->delete($file->url);
+
+                    $file->delete();
+
+                }
+
+                $contents = file_get_contents($data['data']['croquis']);
+
+                $extension = pathinfo(parse_url($data['data']['croquis'], PHP_URL_PATH), PATHINFO_EXTENSION);
+
+                $name = Str::random(40) . '.' . $extension;
+
+                Storage::disk('avisos')->put($name, $contents);
+
+                File::create([
+                    'fileable_id' => $this->aviso->id,
+                    'fileable_type' => 'App\Models\Aviso',
+                    'descripcion' => 'croquis',
+                    'url' => $name
+                ]);
+
+                $this->aviso->refresh();
+
 
             }else if($response->status() === 404 || $response->status() === 401){
 
@@ -358,17 +386,17 @@ class IdentificacionInmueble extends Component
 
             DB::transaction(function () {
 
-                if($this->aviso->croquis()->first()){
-
-                    $file = File::where('fileable_id', $this->aviso->id)->where('fileable_type', 'App\Models\Aviso')->where('descripcion', 'croquis')->first();
-
-                    Storage::disk('avisos')->delete($file->url);
-
-                    $file->delete();
-
-                }
-
                 if($this->croquis){
+
+                    if($this->aviso->croquis()->first()){
+
+                        $file = File::where('fileable_id', $this->aviso->id)->where('fileable_type', 'App\Models\Aviso')->where('descripcion', 'croquis')->first();
+
+                        Storage::disk('avisos')->delete($file->url);
+
+                        $file->delete();
+
+                    }
 
                     $pdf = $this->croquis->store('/', 'avisos');
 

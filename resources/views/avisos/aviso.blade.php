@@ -240,11 +240,10 @@
                 @if($aviso->lote_fraccionador)<strong>Lote del fraccionador:</strong> {{ $aviso->lote_fraccionador }},@endif
                 @if($aviso->manzana_fraccionador)<strong>Manzana del fraccionador:</strong> {{ $aviso->manzana_fraccionador }},@endif
                 @if($aviso->etapa_fraccionador)<strong>Etapa del fraccionador:</strong> {{ $aviso->etapa_fraccionador }}@endif
-                @if($aviso->ubicacion_en_manzana)<strong>Ubicación del aviso en la manzana:</strong> {{ $aviso->ubicacion_en_manzana }}@endif
             </p>
 
             <p style="">
-                @if($aviso->nombre_aviso)<strong>aviso Rústico Denominado ó Antecedente:</strong> {{ $aviso->nombre_aviso }}@endif
+                @if($aviso->nombre_predio)<strong>aviso Rústico Denominado ó Antecedente:</strong> {{ $aviso->nombre_predio }}@endif
             </p>
 
             @if($aviso->xutm || $aviso->lat)
@@ -320,7 +319,11 @@
                 @if($aviso->superficie_construccion > 0)<strong>Superficie de construcción:</strong> {{ number_format($aviso->superficie_construccion, 2) }},@endif
             </p>
 
-            <p><strong>Valor catastral: </strong>${{ number_format($aviso->valor_catastral, 2) }}</p>
+            @if($aviso->valor_catastral)
+
+                <p><strong>Valor catastral: </strong>${{ number_format($aviso->valor_catastral, 2) }}</p>
+
+            @endif
 
         </div>
 
@@ -338,6 +341,7 @@
                         <th style="text-align: left;">% de propiedad</th>
                         <th style="text-align: left;">% de nuda</th>
                         <th style="text-align: left;">% de usufructo</th>
+                        <th style="text-align: left;">Generales</th>
                     </tr>
 
                 </thead>
@@ -347,10 +351,10 @@
                     @foreach ($aviso->transmitentes() as $transmitente)
 
                         <tr>
-                            <td style="padding-right: 40px;">
+                            <td >
                                 <p>{{ $transmitente->persona->tipo }}</p>
                             </td>
-                            <td style="padding-right: 40px;">
+                            <td >
                                 <p>{{ $transmitente->persona->nombre }} {{ $transmitente->persona->ap_paterno }} {{ $transmitente->persona->ap_materno }} {{ $transmitente->persona->razon_social }}</p>
                             </td>
                             <td>
@@ -362,10 +366,7 @@
                             <td>
                                 <p>{{ $transmitente->porcentaje_usufructo ?? 0 }}</p>
                             </td>
-                        </tr>
-                        <tr >
-                            <td colspan="5" style="border-bottom: 0.5px solid gray">
-                                <strong>Generales:</strong>
+                            <td>
                                 <p>
                                     @if($transmitente->persona->nacionalidad)<strong>Nacionalidad:</strong> {{ $transmitente->persona->nacionalidad }},@endif
                                     @if($transmitente->persona->fecha_nacimiento)<strong>Fecha de nacimiento:</strong> {{ $transmitente->persona->fecha_nacimiento }},@endif
@@ -404,6 +405,7 @@
                         <th style="text-align: left;">% de propiedad</th>
                         <th style="text-align: left;">% de nuda</th>
                         <th style="text-align: left;">% de usufructo</th>
+                        <th style="text-align: left;">Generales</th>
                     </tr>
 
                 </thead>
@@ -413,10 +415,10 @@
                     @foreach ($aviso->adquirientes() as $adquiriente)
 
                         <tr >
-                            <td style="padding-right: 40px;">
+                            <td >
                                 <p>{{ $adquiriente->persona->tipo }}</p>
                             </td>
-                            <td style="padding-right: 40px;">
+                            <td >
                                 <p>{{ $adquiriente->persona->nombre }} {{ $adquiriente->persona->ap_paterno }} {{ $adquiriente->persona->ap_materno }} {{ $adquiriente->persona->razon_social }}</p>
                             </td>
                             <td>
@@ -428,10 +430,7 @@
                             <td>
                                 <p>{{ $adquiriente->porcentaje_usufructo ?? 0 }}</p>
                             </td>
-                        </tr>
-                        <tr >
-                            <td colspan="5" style="border-bottom: 0.5px solid gray">
-                                <strong>Generales:</strong>
+                            <td>
                                 <p>
                                     @if($adquiriente->persona->nacionalidad)<strong>Nacionalidad:</strong> {{ $adquiriente->persona->nacionalidad }},@endif
                                     @if($adquiriente->persona->fecha_nacimiento)<strong>Fecha de nacimiento:</strong> {{ $adquiriente->persona->fecha_nacimiento }},@endif
@@ -457,370 +456,340 @@
 
         </div>
 
-        <p class="separador">Antecedentes</p>
+        @if($aviso->antecedentes->count())
 
-        <div class="informacion">
+            <p class="separador">Antecedentes</p>
 
-            <table style="width: 100%">
+            <div class="informacion">
 
-                <thead>
+                <table style="width: 100%">
 
-                    <tr>
-                        <th style="text-align: left;">Tomo</th>
-                        <th style="text-align: left;">Registro</th>
-                        <th style="text-align: left;">Sección</th>
-                        <th style="text-align: left;">Distrito</th>
-                    </tr>
+                    <thead>
 
-                </thead>
+                        <tr>
+                            <th style="text-align: left;">Tomo</th>
+                            <th style="text-align: left;">Registro</th>
+                            <th style="text-align: left;">Sección</th>
+                            <th style="text-align: left;">Distrito</th>
+                        </tr>
 
-                <tbody>
+                    </thead>
 
-                    @foreach ($aviso->antecedentes as $antecedente)
+                    <tbody>
+
+                        @foreach ($aviso->antecedentes as $antecedente)
+
+                            <tr>
+                                <td style="padding-right: 40px;">
+                                    <p>{{ $antecedente->tomo }}</p>
+                                </td>
+                                <td style="padding-right: 40px;">
+                                    <p>{{ $antecedente->registro }}</p>
+                                </td>
+                                <td>
+                                    <p>{{ $antecedente->seccion }}</p>
+                                </td>
+                                <td>
+                                    <p>{{ $antecedente->distrito }}</p>
+                                </td>
+                            </tr>
+                            <tr >
+                                <td colspan="5" style="border-bottom: 0.5px solid gray">
+                                    <strong>Acto:</strong><p>{{ $antecedente->acto }}</p>
+                                </td>
+                            </tr>
+
+                        @endforeach
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        @endif
+
+        @if($aviso->fiduciaria()->count() || $aviso->fideicomitentes()->count() || $aviso->fideicomisarios()->count())
+
+            <p class="separador">Fideicomisos</p>
+
+            <div class="informacion">
+
+                @if($aviso->fiduciaria()->count())
+
+                    <p style="text-align: center; font-weight:bold;">Fiduciaria</p>
+
+                    <table style="width: 100%">
+
+                        <thead>
+
+                            <tr>
+                                <th style="text-align: left;">Tipo de persona</th>
+                                <th style="text-align: left;">Nombre / Razón social</th>
+                                <th style="text-align: left;">Genreales</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            @foreach ($aviso->fiduciaria() as $fiduciaria)
+
+                                <tr>
+                                    <td style="padding-right: 40px;">
+                                        <p>{{ $fiduciaria->persona->tipo }}</p>
+                                    </td>
+                                    <td style="padding-right: 40px;">
+                                        <p>{{ $fiduciaria->persona->nombre }} {{ $fiduciaria->persona->ap_paterno }} {{ $fiduciaria->persona->ap_materno }} {{ $fiduciaria->persona->razon_social }}</p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            @if($fiduciaria->persona->nacionalidad)<strong>Nacionalidad:</strong> {{ $fiduciaria->persona->nacionalidad }},@endif
+                                            @if($fiduciaria->persona->fecha_nacimiento)<strong>Fecha de nacimiento:</strong> {{ $fiduciaria->persona->fecha_nacimiento }},@endif
+                                            @if($fiduciaria->persona->estado_civil)<strong>Estado civil:</strong> {{ $fiduciaria->persona->estado_civil }},@endif
+                                            @if($fiduciaria->persona->calle)<strong>Calle:</strong> {{ $fiduciaria->persona->calle }},@endif
+                                            @if($fiduciaria->persona->numero_exterior)<strong>Número exterior:</strong> {{ $fiduciaria->persona->numero_exterior }},@endif
+                                            @if($fiduciaria->persona->numero_interior)<strong>Número interior:</strong> {{ $fiduciaria->persona->numero_interior }},@endif
+                                            @if($fiduciaria->persona->colonia)<strong>Colonia:</strong> {{ $fiduciaria->persona->colonia }},@endif
+                                            @if($fiduciaria->persona->cp)<strong>Código postal:</strong> {{ $fiduciaria->persona->cp }},@endif
+                                            @if($fiduciaria->persona->entidad)<strong>Entidad:</strong> {{ $fiduciaria->persona->entidad }},@endif
+                                            @if($fiduciaria->persona->municipio)<strong>Municipio:</strong> {{ $fiduciaria->persona->municipio }},@endif
+                                            @if($fiduciaria->persona->ciudad)<strong>Ciudad:</strong> {{ $fiduciaria->persona->ciudad }},@endif
+
+                                        </p>
+                                    </td>
+                                </tr>
+
+                            @endforeach
+
+                        </tbody>
+
+                    </table>
+
+                @endif
+
+                @if($aviso->fideicomitentes()->count())
+
+                    <p style="text-align: center; font-weight:bold;">Fideicomitentes</p>
+
+                    <table style="width: 100%">
+
+                        <thead>
+
+                            <tr>
+                                <th style="text-align: left;">Tipo de persona</th>
+                                <th style="text-align: left;">Nombre / Razón social</th>
+                                <th style="text-align: left;">Genreales</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            @foreach ($aviso->fideicomitentes() as $fideicomitente)
+
+                                <tr>
+                                    <td style="padding-right: 40px;">
+                                        <p>{{ $fideicomitente->persona->tipo }}</p>
+                                    </td>
+                                    <td style="padding-right: 40px;">
+                                        <p>{{ $fideicomitente->persona->nombre }} {{ $fideicomitente->persona->ap_paterno }} {{ $fideicomitente->persona->ap_materno }} {{ $fideicomitente->persona->razon_social }}</p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            @if($fideicomitente->persona->nacionalidad)<strong>Nacionalidad:</strong> {{ $fideicomitente->persona->nacionalidad }},@endif
+                                            @if($fideicomitente->persona->fecha_nacimiento)<strong>Fecha de nacimiento:</strong> {{ $fideicomitente->persona->fecha_nacimiento }},@endif
+                                            @if($fideicomitente->persona->estado_civil)<strong>Estado civil:</strong> {{ $fideicomitente->persona->estado_civil }},@endif
+                                            @if($fideicomitente->persona->calle)<strong>Calle:</strong> {{ $fideicomitente->persona->calle }},@endif
+                                            @if($fideicomitente->persona->numero_exterior)<strong>Número exterior:</strong> {{ $fideicomitente->persona->numero_exterior }},@endif
+                                            @if($fideicomitente->persona->numero_interior)<strong>Número interior:</strong> {{ $fideicomitente->persona->numero_interior }},@endif
+                                            @if($fideicomitente->persona->colonia)<strong>Colonia:</strong> {{ $fideicomitente->persona->colonia }},@endif
+                                            @if($fideicomitente->persona->cp)<strong>Código postal:</strong> {{ $fideicomitente->persona->cp }},@endif
+                                            @if($fideicomitente->persona->entidad)<strong>Entidad:</strong> {{ $fideicomitente->persona->entidad }},@endif
+                                            @if($fideicomitente->persona->municipio)<strong>Municipio:</strong> {{ $fideicomitente->persona->municipio }},@endif
+                                            @if($fideicomitente->persona->ciudad)<strong>Ciudad:</strong> {{ $fideicomitente->persona->ciudad }},@endif
+
+                                        </p>
+                                    </td>
+                                </tr>
+
+                            @endforeach
+
+                        </tbody>
+
+                    </table>
+
+                @endif
+
+                @if($aviso->fideicomisarios()->count())
+
+                    <p style="text-align: center; font-weight:bold;">Fideicomisarios</p>
+
+                    <table style="width: 100%">
+
+                        <thead>
+
+                            <tr>
+                                <th style="text-align: left;">Tipo de persona</th>
+                                <th style="text-align: left;">Nombre / Razón social</th>
+                                <th style="text-align: left;">Genreales</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            @foreach ($aviso->fideicomisarios() as $fidecomisario)
+
+                                <tr>
+                                    <td style="padding-right: 40px;">
+                                        <p>{{ $fidecomisario->persona->tipo }}</p>
+                                    </td>
+                                    <td style="padding-right: 40px;">
+                                        <p>{{ $fidecomisario->persona->nombre }} {{ $fidecomisario->persona->ap_paterno }} {{ $fidecomisario->persona->ap_materno }} {{ $fidecomisario->persona->razon_social }}</p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            @if($fidecomisario->persona->nacionalidad)<strong>Nacionalidad:</strong> {{ $fidecomisario->persona->nacionalidad }},@endif
+                                            @if($fidecomisario->persona->fecha_nacimiento)<strong>Fecha de nacimiento:</strong> {{ $fidecomisario->persona->fecha_nacimiento }},@endif
+                                            @if($fidecomisario->persona->estado_civil)<strong>Estado civil:</strong> {{ $fidecomisario->persona->estado_civil }},@endif
+                                            @if($fidecomisario->persona->calle)<strong>Calle:</strong> {{ $fidecomisario->persona->calle }},@endif
+                                            @if($fidecomisario->persona->numero_exterior)<strong>Número exterior:</strong> {{ $fidecomisario->persona->numero_exterior }},@endif
+                                            @if($fidecomisario->persona->numero_interior)<strong>Número interior:</strong> {{ $fidecomisario->persona->numero_interior }},@endif
+                                            @if($fidecomisario->persona->colonia)<strong>Colonia:</strong> {{ $fidecomisario->persona->colonia }},@endif
+                                            @if($fidecomisario->persona->cp)<strong>Código postal:</strong> {{ $fidecomisario->persona->cp }},@endif
+                                            @if($fidecomisario->persona->entidad)<strong>Entidad:</strong> {{ $fidecomisario->persona->entidad }},@endif
+                                            @if($fidecomisario->persona->municipio)<strong>Municipio:</strong> {{ $fidecomisario->persona->municipio }},@endif
+                                            @if($fidecomisario->persona->ciudad)<strong>Ciudad:</strong> {{ $fidecomisario->persona->ciudad }},@endif
+
+                                        </p>
+                                    </td>
+                                </tr>
+
+                            @endforeach
+
+                        </tbody>
+
+                    </table>
+
+                @endif
+
+                <p style=" margin-bottom: 8px;">
+                    @if($aviso->descripcion_fideicomiso)<strong>Objeto principal del fideicomiso:</strong> {{ $aviso->descripcion_fideicomiso }}@endif
+                </p>
+
+            </div>
+
+        @endif
+
+        @if($aviso->valor_isai)
+
+            <p class="separador">Croquis / I.S.A.I.</p>
+
+            <div class="informacion">
+
+                <table style="width: 100%">
+
+                    <thead>
+
+                        <tr>
+                            <th style="text-align: center;">Croquis</th>
+                            <th style="text-align: center;">I.S.A.I.</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
 
                         <tr>
                             <td style="padding-right: 40px;">
-                                <p>{{ $antecedente->tomo }}</p>
+                                <img class="imagenes" src="{{ public_path('avisos/' . $aviso->croquis->url) }}" alt="Croquis">
                             </td>
                             <td style="padding-right: 40px;">
-                                <p>{{ $antecedente->registro }}</p>
-                            </td>
-                            <td>
-                                <p>{{ $antecedente->seccion }}</p>
-                            </td>
-                            <td>
-                                <p>{{ $antecedente->distrito }}</p>
+
+                                <table style="width: 100%">
+
+                                    <thead>
+
+                                        <tr>
+                                            <th style="text-align: left;"></th>
+                                            <th style="text-align: left;"></th>
+                                        </tr>
+
+                                    </thead>
+
+                                    <tbody>
+
+                                        <tr>
+                                            <td style="padding-right: 40px;">
+                                                <strong>Base gravable:</strong>
+                                            </td>
+                                            <td style="padding-right: 40px; text-align: right;">
+                                                ${{ number_format($aviso->base_gravable, 2) }}
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="padding-right: 40px;">
+                                                <strong>Reducción:</strong>
+                                            </td>
+                                            <td style="padding-right: 40px; text-align: right;">
+                                                ${{ number_format($aviso->reduccion, 2) }}
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="padding-right: 40px;">
+                                                <strong>Valor base:</strong>
+                                            </td>
+                                            <td style="padding-right: 40px; text-align: right;">
+                                                ${{ number_format($aviso->valor_base, 2) }}
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="padding-right: 40px;">
+                                                <strong>Valor isai:</strong>
+                                            </td>
+                                            <td style="padding-right: 40px; text-align: right;">
+                                                ${{ number_format($aviso->valor_isai, 2) }}
+                                            </td>
+                                        </tr>
+
+                                        <tr></tr>
+
+                                        <tr>
+                                            <td style="padding-right: 40px;">
+                                                <strong>Valor de adquisición:</strong>
+                                            </td>
+                                            <td style="padding-right: 40px; text-align: right;">
+                                                ${{ number_format($aviso->valor_adquisicion, 2) }}
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="padding-right: 40px;">
+                                                <strong>Valor de avalúo:</strong>
+                                            </td>
+                                            <td style="padding-right: 40px; text-align: right;">
+                                                ${{ number_format($aviso->valor_catastral, 2) }}
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+
                             </td>
                         </tr>
-                        <tr >
-                            <td colspan="5" style="border-bottom: 0.5px solid gray">
-                                <strong>Acto:</strong><p>{{ $antecedente->acto }}</p>
-                            </td>
-                        </tr>
-
-                    @endforeach
-
-                </tbody>
-
-            </table>
-
-        </div>
-
-        <p class="separador">Fideicomisos</p>
-
-        <div class="informacion">
-
-            @if($aviso->fiduciaria()->count())
-
-                <p style="text-align: center">Fiduciaria</p>
-
-                <table style="width: 100%">
-
-                    <thead>
-
-                        <tr>
-                            <th style="text-align: left;">Tipo de persona</th>
-                            <th style="text-align: left;">Nombre / Razón social</th>
-                            <th style="text-align: left;">% de propiedad</th>
-                            <th style="text-align: left;">% de nuda</th>
-                            <th style="text-align: left;">% de usufructo</th>
-                        </tr>
-
-                    </thead>
-
-                    <tbody>
-
-                        @foreach ($aviso->fiduciaria() as $fiduciaria)
-
-                            <tr>
-                                <td style="padding-right: 40px;">
-                                    <p>{{ $fiduciaria->persona->tipo }}</p>
-                                </td>
-                                <td style="padding-right: 40px;">
-                                    <p>{{ $fiduciaria->persona->nombre }} {{ $fiduciaria->persona->ap_paterno }} {{ $fiduciaria->persona->ap_materno }} {{ $fiduciaria->persona->razon_social }}</p>
-                                </td>
-                                <td>
-                                    <p>{{ $fiduciaria->porcentaje ?? 0 }}</p>
-                                </td>
-                                <td>
-                                    <p>{{ $fiduciaria->porcentaje_nuda ?? 0 }}</p>
-                                </td>
-                                <td>
-                                    <p>{{ $fiduciaria->porcentaje_usufructo ?? 0 }}</p>
-                                </td>
-                            </tr>
-                            <tr >
-                                <td colspan="5" style="border-bottom: 0.5px solid gray">
-                                    <strong>Generales:</strong>
-                                    <p>
-                                        @if($fiduciaria->persona->nacionalidad)<strong>Nacionalidad:</strong> {{ $fiduciaria->persona->nacionalidad }},@endif
-                                        @if($fiduciaria->persona->fecha_nacimiento)<strong>Fecha de nacimiento:</strong> {{ $fiduciaria->persona->fecha_nacimiento }},@endif
-                                        @if($fiduciaria->persona->estado_civil)<strong>Estado civil:</strong> {{ $fiduciaria->persona->estado_civil }},@endif
-                                        @if($fiduciaria->persona->calle)<strong>Calle:</strong> {{ $fiduciaria->persona->calle }},@endif
-                                        @if($fiduciaria->persona->numero_exterior)<strong>Número exterior:</strong> {{ $fiduciaria->persona->numero_exterior }},@endif
-                                        @if($fiduciaria->persona->numero_interior)<strong>Número interior:</strong> {{ $fiduciaria->persona->numero_interior }},@endif
-                                        @if($fiduciaria->persona->colonia)<strong>Colonia:</strong> {{ $fiduciaria->persona->colonia }},@endif
-                                        @if($fiduciaria->persona->cp)<strong>Código postal:</strong> {{ $fiduciaria->persona->cp }},@endif
-                                        @if($fiduciaria->persona->entidad)<strong>Entidad:</strong> {{ $fiduciaria->persona->entidad }},@endif
-                                        @if($fiduciaria->persona->municipio)<strong>Municipio:</strong> {{ $fiduciaria->persona->municipio }},@endif
-                                        @if($fiduciaria->persona->ciudad)<strong>Ciudad:</strong> {{ $fiduciaria->persona->ciudad }},@endif
-
-                                    </p>
-                                </td>
-                            </tr>
-
-                        @endforeach
 
                     </tbody>
 
                 </table>
 
-            @endif
+            </div>
 
-            @if($aviso->fideicomitentes()->count())
-
-                <p style="text-align: center">Fideicomitentes</p>
-
-                <table style="width: 100%">
-
-                    <thead>
-
-                        <tr>
-                            <th style="text-align: left;">Tipo de persona</th>
-                            <th style="text-align: left;">Nombre / Razón social</th>
-                            <th style="text-align: left;">% de propiedad</th>
-                            <th style="text-align: left;">% de nuda</th>
-                            <th style="text-align: left;">% de usufructo</th>
-                        </tr>
-
-                    </thead>
-
-                    <tbody>
-
-                        @foreach ($aviso->fideicomitentes() as $fideicomitente)
-
-                            <tr>
-                                <td style="padding-right: 40px;">
-                                    <p>{{ $fideicomitente->persona->tipo }}</p>
-                                </td>
-                                <td style="padding-right: 40px;">
-                                    <p>{{ $fideicomitente->persona->nombre }} {{ $fideicomitente->persona->ap_paterno }} {{ $fideicomitente->persona->ap_materno }} {{ $fideicomitente->persona->razon_social }}</p>
-                                </td>
-                                <td>
-                                    <p>{{ $fideicomitente->porcentaje ?? 0 }}</p>
-                                </td>
-                                <td>
-                                    <p>{{ $fideicomitente->porcentaje_nuda ?? 0 }}</p>
-                                </td>
-                                <td>
-                                    <p>{{ $fideicomitente->porcentaje_usufructo ?? 0 }}</p>
-                                </td>
-                            </tr>
-                            <tr >
-                                <td colspan="5" style="border-bottom: 0.5px solid gray">
-                                    <strong>Generales:</strong>
-                                    <p>
-                                        @if($fideicomitente->persona->nacionalidad)<strong>Nacionalidad:</strong> {{ $fideicomitente->persona->nacionalidad }},@endif
-                                        @if($fideicomitente->persona->fecha_nacimiento)<strong>Fecha de nacimiento:</strong> {{ $fideicomitente->persona->fecha_nacimiento }},@endif
-                                        @if($fideicomitente->persona->estado_civil)<strong>Estado civil:</strong> {{ $fideicomitente->persona->estado_civil }},@endif
-                                        @if($fideicomitente->persona->calle)<strong>Calle:</strong> {{ $fideicomitente->persona->calle }},@endif
-                                        @if($fideicomitente->persona->numero_exterior)<strong>Número exterior:</strong> {{ $fideicomitente->persona->numero_exterior }},@endif
-                                        @if($fideicomitente->persona->numero_interior)<strong>Número interior:</strong> {{ $fideicomitente->persona->numero_interior }},@endif
-                                        @if($fideicomitente->persona->colonia)<strong>Colonia:</strong> {{ $fideicomitente->persona->colonia }},@endif
-                                        @if($fideicomitente->persona->cp)<strong>Código postal:</strong> {{ $fideicomitente->persona->cp }},@endif
-                                        @if($fideicomitente->persona->entidad)<strong>Entidad:</strong> {{ $fideicomitente->persona->entidad }},@endif
-                                        @if($fideicomitente->persona->municipio)<strong>Municipio:</strong> {{ $fideicomitente->persona->municipio }},@endif
-                                        @if($fideicomitente->persona->ciudad)<strong>Ciudad:</strong> {{ $fideicomitente->persona->ciudad }},@endif
-
-                                    </p>
-                                </td>
-                            </tr>
-
-                        @endforeach
-
-                    </tbody>
-
-                </table>
-
-            @endif
-
-            @if($aviso->fideicomisarios()->count())
-
-                <p style="text-align: center">Fideicomitentes</p>
-
-                <table style="width: 100%">
-
-                    <thead>
-
-                        <tr>
-                            <th style="text-align: left;">Tipo de persona</th>
-                            <th style="text-align: left;">Nombre / Razón social</th>
-                            <th style="text-align: left;">% de propiedad</th>
-                            <th style="text-align: left;">% de nuda</th>
-                            <th style="text-align: left;">% de usufructo</th>
-                        </tr>
-
-                    </thead>
-
-                    <tbody>
-
-                        @foreach ($aviso->fideicomisarios() as $fidecomisario)
-
-                            <tr>
-                                <td style="padding-right: 40px;">
-                                    <p>{{ $fidecomisario->persona->tipo }}</p>
-                                </td>
-                                <td style="padding-right: 40px;">
-                                    <p>{{ $fidecomisario->persona->nombre }} {{ $fidecomisario->persona->ap_paterno }} {{ $fidecomisario->persona->ap_materno }} {{ $fidecomisario->persona->razon_social }}</p>
-                                </td>
-                                <td>
-                                    <p>{{ $fidecomisario->porcentaje ?? 0 }}</p>
-                                </td>
-                                <td>
-                                    <p>{{ $fidecomisario->porcentaje_nuda ?? 0 }}</p>
-                                </td>
-                                <td>
-                                    <p>{{ $fidecomisario->porcentaje_usufructo ?? 0 }}</p>
-                                </td>
-                            </tr>
-                            <tr >
-                                <td colspan="5" style="border-bottom: 0.5px solid gray">
-                                    <strong>Generales:</strong>
-                                    <p>
-                                        @if($fidecomisario->persona->nacionalidad)<strong>Nacionalidad:</strong> {{ $fidecomisario->persona->nacionalidad }},@endif
-                                        @if($fidecomisario->persona->fecha_nacimiento)<strong>Fecha de nacimiento:</strong> {{ $fidecomisario->persona->fecha_nacimiento }},@endif
-                                        @if($fidecomisario->persona->estado_civil)<strong>Estado civil:</strong> {{ $fidecomisario->persona->estado_civil }},@endif
-                                        @if($fidecomisario->persona->calle)<strong>Calle:</strong> {{ $fidecomisario->persona->calle }},@endif
-                                        @if($fidecomisario->persona->numero_exterior)<strong>Número exterior:</strong> {{ $fidecomisario->persona->numero_exterior }},@endif
-                                        @if($fidecomisario->persona->numero_interior)<strong>Número interior:</strong> {{ $fidecomisario->persona->numero_interior }},@endif
-                                        @if($fidecomisario->persona->colonia)<strong>Colonia:</strong> {{ $fidecomisario->persona->colonia }},@endif
-                                        @if($fidecomisario->persona->cp)<strong>Código postal:</strong> {{ $fidecomisario->persona->cp }},@endif
-                                        @if($fidecomisario->persona->entidad)<strong>Entidad:</strong> {{ $fidecomisario->persona->entidad }},@endif
-                                        @if($fidecomisario->persona->municipio)<strong>Municipio:</strong> {{ $fidecomisario->persona->municipio }},@endif
-                                        @if($fidecomisario->persona->ciudad)<strong>Ciudad:</strong> {{ $fidecomisario->persona->ciudad }},@endif
-
-                                    </p>
-                                </td>
-                            </tr>
-
-                        @endforeach
-
-                    </tbody>
-
-                </table>
-
-            @endif
-
-            <p style=" margin-bottom: 8px;">
-                @if($aviso->descripcion_fideicomiso)<strong>Objeto principal del fideicomiso:</strong> {{ $aviso->descripcion_fideicomiso }}@endif
-            </p>
-
-        </div>
-
-        <p class="separador">Croquis / I.S.A.I.</p>
-
-        <div class="informacion">
-
-            <table style="width: 100%">
-
-                <thead>
-
-                    <tr>
-                        <th style="text-align: center;">Croquis</th>
-                        <th style="text-align: center;">I.S.A.I.</th>
-                    </tr>
-
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <td style="padding-right: 40px;">
-                            <img class="imagenes" src="{{ public_path('avisos/' . $aviso->croquis->url) }}" alt="Croquis">
-                        </td>
-                        <td style="padding-right: 40px;">
-
-                            <table style="width: 100%">
-
-                                <thead>
-
-                                    <tr>
-                                        <th style="text-align: left;"></th>
-                                        <th style="text-align: left;"></th>
-                                    </tr>
-
-                                </thead>
-
-                                <tbody>
-
-                                    <tr>
-                                        <td style="padding-right: 40px;">
-                                            <strong>Base gravable:</strong>
-                                        </td>
-                                        <td style="padding-right: 40px; text-align: right;">
-                                            ${{ number_format($aviso->base_gravable, 2) }}
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td style="padding-right: 40px;">
-                                            <strong>Reducción:</strong>
-                                        </td>
-                                        <td style="padding-right: 40px; text-align: right;">
-                                            ${{ number_format($aviso->reduccion, 2) }}
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td style="padding-right: 40px;">
-                                            <strong>Valor base:</strong>
-                                        </td>
-                                        <td style="padding-right: 40px; text-align: right;">
-                                            ${{ number_format($aviso->valor_base, 2) }}
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td style="padding-right: 40px;">
-                                            <strong>Valor isai:</strong>
-                                        </td>
-                                        <td style="padding-right: 40px; text-align: right;">
-                                            ${{ number_format($aviso->valor_isai, 2) }}
-                                        </td>
-                                    </tr>
-
-                                    <tr></tr>
-
-                                    <tr>
-                                        <td style="padding-right: 40px;">
-                                            <strong>Valor de adquisición:</strong>
-                                        </td>
-                                        <td style="padding-right: 40px; text-align: right;">
-                                            ${{ number_format($aviso->valor_adquisicion, 2) }}
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td style="padding-right: 40px;">
-                                            <strong>Valor de avalúo:</strong>
-                                        </td>
-                                        <td style="padding-right: 40px; text-align: right;">
-                                            ${{ number_format($aviso->valor_catastral, 2) }}
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-
-                            </table>
-
-                        </td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-
-        </div>
+        @endif
 
         @if($aviso->observaciones)
 

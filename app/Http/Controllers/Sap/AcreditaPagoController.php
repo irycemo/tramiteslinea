@@ -42,17 +42,17 @@ class AcreditaPagoController extends Controller
 
                 }elseif($response->status() === 404){
 
-                    return view('sap.acreditaPago')->with(['status' => 'error', 'mensaje' => $data_sgc['error']]);
+                    return view('sap.acreditaPago')->with(['status' => 'error', 'data' => $data_sgc['error']]);
 
                 }else{
 
-                    return view('sap.acreditaPago')->with(['status' => 'error', 'mensaje' => $data_sgc['error']]);
+                    return view('sap.acreditaPago')->with(['status' => 'error', 'data' => $data_sgc['error']]);
 
                 }
 
             }else{
 
-                return view('sap.acreditaPago')->with(['status' => 'error', 'mensaje' => $data_st['error']]);
+                return view('sap.acreditaPago')->with(['status' => 'error', 'data' => $data_st['error']]);
 
             }
 
@@ -60,7 +60,7 @@ class AcreditaPagoController extends Controller
 
             Log::error("Error al acreditar pago en línea: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
 
-            abort(500, message:"Ha ocurrido un error en el sistema comuniquese con el departamento de operaciones y desarrollo de sistemas.");
+            abort(500, message:"Ha ocurrido un error comuníquese con el departamento de operaciones y desarrollo de sistemas.");
 
         }
 
