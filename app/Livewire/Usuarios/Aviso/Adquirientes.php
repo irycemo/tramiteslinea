@@ -59,7 +59,7 @@ class Adquirientes extends Component
             'porcentaje_nuda' => 'nullable|numeric|max:100',
             'porcentaje_usufructo' => 'nullable|numeric|max:100',
             'tipo_persona' => 'required',
-            'correo' => 'nullable|unique:personas,correo,' . $this->correo,
+            'correo' => 'nullable',
             'nombre' => [Rule::requiredIf($this->tipo_persona === 'FISICA')],
             'ap_paterno' => [Rule::requiredIf($this->tipo_persona === 'FISICA')],
             'ap_materno' => [Rule::requiredIf($this->tipo_persona === 'FISICA')],
