@@ -22,7 +22,7 @@ Es motivo de rechazo el no contar con los elementos necesarios para la autorizac
 <x-mail::button :url="$url">
 Ir al Sistema de Trámites en Línea
 </x-mail::button>
-r
+
 Favor de no contestar a este correo<br>
 {{ config('app.name') }}<br>
 Instituto Registral y Catastral de Michoacán de Ocampo<br>

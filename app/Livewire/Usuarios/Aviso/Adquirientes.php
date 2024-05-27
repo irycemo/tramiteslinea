@@ -66,13 +66,11 @@ class Adquirientes extends Component
             'curp' => [
                 'nullable',
                 Rule::requiredIf($this->tipo_persona === 'FISICA'),
-                'regex:/^[A-Z]{1}[AEIOUX]{1}[A-Z]{2}[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM]{1}(AS|BC|BS|CC|CS|CH|CL|CM|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[B-DF-HJ-NP-TV-Z]{3}[0-9A-Z]{1}[0-9]{1}$/i',
-                'unique:personas,curp,' . $this->curp
+                'regex:/^[A-Z]{1}[AEIOUX]{1}[A-Z]{2}[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM]{1}(AS|BC|BS|CC|CS|CH|CL|CM|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[B-DF-HJ-NP-TV-Z]{3}[0-9A-Z]{1}[0-9]{1}$/i'
             ],
             'rfc' => [
                 'required',
-                'regex:/^([A-ZÑ&]{3,4}) ?(?:- ?)?(\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])) ?(?:- ?)?([A-Z\d]{2})([A\d])$/',
-                'unique:personas,rfc,' . $this->rfc
+                'regex:/^([A-ZÑ&]{3,4}) ?(?:- ?)?(\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])) ?(?:- ?)?([A-Z\d]{2})([A\d])$/'
             ],
             'razon_social' => ['nullable', Rule::requiredIf($this->tipo_persona === 'MORAL'), utf8_encode('regex:/^[áéíóúÁÉÍÓÚñÑa-zA-Z-0-9$#.()\/\-," ]*$/')],
             'fecha_nacimiento' => 'nullable',
@@ -139,6 +137,12 @@ class Adquirientes extends Component
 
     public function cargarPorcentajes(){
 
+        $this->pn_transmitentes = 0;
+
+        $this->pu_transmitentes = 0;
+
+        $this->pp_transmitentes = 0;
+
         foreach($this->aviso->transmitentes() as $transmitente){
 
             $this->pn_transmitentes = $this->pn_transmitentes + $transmitente->porcentaje_nuda;
@@ -191,6 +195,14 @@ class Adquirientes extends Component
         if(!$this->aviso->getKey()){
 
             $this->dispatch('mostrarMensaje', ['error', "Primero debe cargar el aviso."]);
+
+            return;
+
+        }
+
+        if(!$this->aviso->transmitentes()->count()){
+
+            $this->dispatch('mostrarMensaje', ['error', "Primero debe cargar los transmitentes."]);
 
             return;
 
