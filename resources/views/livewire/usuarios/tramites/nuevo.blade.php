@@ -44,25 +44,25 @@
 
                         <div>
 
-                            <input placeholder="Localidad" type="number" class="bg-white rounded text-sm w-full @error('localidad') border-red-500 @enderror" wire:model="localidad">
+                            <input placeholder="Localidad" type="number" class="bg-white rounded text-sm w-min  @error('localidad') border-red-500 @enderror" wire:model="localidad">
 
                         </div>
 
                         <div>
 
-                            <input placeholder="Oficina" type="number" class="bg-white rounded text-sm w-full @error('oficina') border-red-500 @enderror" wire:model="oficina">
+                            <input placeholder="Oficina" type="number" class="bg-white rounded text-sm w-min  @error('oficina') border-red-500 @enderror" wire:model="oficina">
+
+                        </div>
+
+                        <div >
+
+                            <input placeholder="Tipo" type="number" class="bg-white rounded text-sm @error('tipo') border-red-500 @enderror" wire:model="tipo">
 
                         </div>
 
                         <div>
 
-                            <input placeholder="Tipo" type="number" class="bg-white rounded text-sm w-full @error('tipo') border-red-500 @enderror" wire:model="tipo">
-
-                        </div>
-
-                        <div>
-
-                            <input placeholder="Registro" type="number" class="bg-white rounded text-sm w-full @error('registro') border-red-500 @enderror" wire:model="registro">
+                            <input placeholder="Registro" type="number" class="bg-white rounded text-sm @error('registro') border-red-500 @enderror" wire:model="registro">
 
                         </div>
 

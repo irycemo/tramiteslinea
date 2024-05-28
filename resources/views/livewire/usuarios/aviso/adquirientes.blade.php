@@ -172,7 +172,7 @@
 
                     </x-input-group>
 
-                    <x-input-group for="curp" label="CURP" :error="$errors->first('curp')" class="w-full">
+                    <x-input-group for="curp" label="CURP" :error="$errors->first('curp')" class="w-full uppercase">
 
                         <x-input-text id="curp" wire:model="curp" />
 
@@ -210,9 +210,9 @@
 
                 @endif
 
-                <x-input-group for="rfc" label="RFC" :error="$errors->first('rfc')" class="w-full">
+                <x-input-group for="rfc" label="RFC" :error="$errors->first('rfc')" class="w-full uppercase">
 
-                    <x-input-text id="rfc" wire:model="rfc" />
+                    <x-input-text id="rfc" wire:model="rfc" oninput="this.value = this.value.toUpperCase()"/>
 
                 </x-input-group>
 
