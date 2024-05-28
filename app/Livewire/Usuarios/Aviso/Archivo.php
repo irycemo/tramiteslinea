@@ -264,6 +264,7 @@ class Archivo extends Component
                             'entidad' => auth()->user()->entidad_id,
                             'año' => $this->año_tramite,
                             'folio' => $this->folio_tramite,
+                            'usuario' => $this->usuario,
                         ])
                         ->get(env('SGC_CONSULTA_TRAMITE'));
 
@@ -355,6 +356,7 @@ class Archivo extends Component
                         ->withQueryParameters([
                             'año' => $this->año_certificado,
                             'folio' => $this->folio_certificado,
+                            'usuario' => $this->usuario,
                             'localidad' => $this->aviso->localidad,
                             'oficina' => $this->aviso->oficina,
                             'tipo_predio' => $this->aviso->tipo_predio,
