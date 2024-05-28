@@ -153,6 +153,12 @@ class Adquirientes extends Component
 
         }
 
+        $this->pn_transmitentes = round($this->pn_transmitentes, 2);
+
+        $this->pu_transmitentes = round($this->pu_transmitentes, 2);
+
+        $this->pp_transmitentes = round($this->pp_transmitentes, 2);
+
     }
 
     public function cargarAviso($id){
