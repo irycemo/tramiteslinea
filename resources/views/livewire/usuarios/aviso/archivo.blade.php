@@ -138,7 +138,7 @@
 
                         <input type="number" class="bg-white text-sm w-20 focus:ring-0 @error('folio_tramite') border-red-500 @enderror" wire:model="folio_tramite">
 
-                        <input type="number" class="bg-white text-sm w-20 border-l-0 rounded-r focus:ring-0 @error('usuario') border-red-500 @enderror" wire:model="usuario" readonly>
+                        <input type="number" class="bg-white text-sm w-20 border-l-0 rounded-r focus:ring-0 @error('usuario') border-red-500 @enderror" wire:model="usuario">
 
                     </div>
 
@@ -170,7 +170,7 @@
 
                             <input type="number" class="bg-white text-sm w-20 focus:ring-0 @error('folio_certificado') border-red-500 @enderror" wire:model="folio_certificado">
 
-                            <input type="number" class="bg-white text-sm w-20 border-l-0 rounded-r focus:ring-0 @error('usuario') border-red-500 @enderror" wire:model="usuario" readonly>
+                            <input type="number" class="bg-white text-sm w-20 border-l-0 rounded-r focus:ring-0 @error('usuario') border-red-500 @enderror" wire:model="usuario">
 
                         </div>
 

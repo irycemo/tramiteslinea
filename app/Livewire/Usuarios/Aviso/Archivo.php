@@ -34,7 +34,8 @@ class Archivo extends Component
     public $folio_tramite;
     public $folio_certificado;
     public $folio_avaluo;
-    public $usuario = 11;
+    public $usuario_tramite = 11;
+    public $usuario_certificado = 11;
     public $nombre_entidad;
 
     protected function rules(){
@@ -264,7 +265,7 @@ class Archivo extends Component
                             'entidad' => auth()->user()->entidad_id,
                             'año' => $this->año_tramite,
                             'folio' => $this->folio_tramite,
-                            'usuario' => $this->usuario,
+                            'usuario' => $this->usuario_tramite,
                         ])
                         ->get(env('SGC_CONSULTA_TRAMITE'));
 
@@ -356,7 +357,7 @@ class Archivo extends Component
                         ->withQueryParameters([
                             'año' => $this->año_certificado,
                             'folio' => $this->folio_certificado,
-                            'usuario' => $this->usuario,
+                            'usuario' => $this->usuario_certificado,
                             'localidad' => $this->aviso->localidad,
                             'oficina' => $this->aviso->oficina,
                             'tipo_predio' => $this->aviso->tipo_predio,
