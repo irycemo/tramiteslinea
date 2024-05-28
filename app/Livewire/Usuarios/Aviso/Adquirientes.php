@@ -349,7 +349,7 @@ class Adquirientes extends Component
 
         if(((float)$this->porcentaje_usufructo + $pu_adquirientes) > $this->pu_transmitentes){
 
-            $this->dispatch('mostrarMensaje', ['error', "La suma de los porcentajes de nuda no puede exceder el " . $this->pu_transmitentes . '%.']);
+            $this->dispatch('mostrarMensaje', ['error', "La suma de los porcentajes de usufructo no puede exceder el " . $this->pu_transmitentes . '%.']);
 
             return true;
 
