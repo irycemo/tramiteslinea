@@ -217,41 +217,19 @@ class Archivo extends Component
 
         }
 
-        if($pp_transmitentes == 0){
+        if($pn_adquirientes != $pn_transmitentes){
 
-            if($pn_adquirientes != $pn_transmitentes){
+            $this->dispatch('mostrarMensaje', ['error', "La suma de los porcentajes de nuda no es igual."]);
 
-                $this->dispatch('mostrarMensaje', ['error', "La suma de los porcentajes de nuda no es igual."]);
+            return true;
 
-                return true;
+        }
 
-            }
+        if($pu_adquirientes != $pu_transmitentes){
 
-            if($pu_adquirientes != $pu_transmitentes){
+            $this->dispatch('mostrarMensaje', ['error', "La suma de los porcentajes de usufructo no es igual."]);
 
-                $this->dispatch('mostrarMensaje', ['error', "La suma de los porcentajes de usufructo no es igual."]);
-
-                return true;
-
-            }
-
-        }else{
-
-            if($pn_adquirientes != $pp_transmitentes){
-
-                $this->dispatch('mostrarMensaje', ['error', "La suma de los porcentajes de nuda no es igual."]);
-
-                return true;
-
-            }
-
-            if($pu_adquirientes != $pp_transmitentes){
-
-                $this->dispatch('mostrarMensaje', ['error', "La suma de los porcentajes de usufructo no es igual."]);
-
-                return true;
-
-            }
+            return true;
 
         }
 
