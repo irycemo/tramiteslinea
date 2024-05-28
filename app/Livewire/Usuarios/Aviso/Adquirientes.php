@@ -261,13 +261,7 @@ class Adquirientes extends Component
 
         $this->validate();
 
-        if($this->revisarProcentajes($this->adquiriente->id)){
-
-            $this->dispatch('mostrarMensaje', ['error', "La suma de los porcentajes no puede exceder el 100%."]);
-
-            return;
-
-        }
+        if($this->revisarProcentajes($this->adquiriente->id)) return;
 
         try {
 
