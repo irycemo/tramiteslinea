@@ -209,7 +209,7 @@ class Archivo extends Component
 
         }
 
-        if($pp_adquirientes != $pp_transmitentes){
+        if(round($pp_adquirientes, 2) != round($pp_transmitentes, 2)){
 
             $this->dispatch('mostrarMensaje', ['error', "La suma de los porcentajes de propiedad no es igual."]);
 
@@ -217,7 +217,7 @@ class Archivo extends Component
 
         }
 
-        if($pn_adquirientes != $pn_transmitentes){
+        if(round($pn_adquirientes, 2) != round($pn_transmitentes, 2)){
 
             $this->dispatch('mostrarMensaje', ['error', "La suma de los porcentajes de nuda no es igual."]);
 
@@ -225,7 +225,7 @@ class Archivo extends Component
 
         }
 
-        if($pu_adquirientes != $pu_transmitentes){
+        if(round($pu_adquirientes, 2) != round($pu_transmitentes, 2)){
 
             $this->dispatch('mostrarMensaje', ['error', "La suma de los porcentajes de usufructo no es igual."]);
 
