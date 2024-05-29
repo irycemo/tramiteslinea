@@ -298,7 +298,7 @@ class Adquirientes extends Component
             DB::transaction(function () {
 
                 $this->adquiriente->persona->update([
-                    'tipo' => $this->tipo_presona,
+                    'tipo' => $this->tipo_persona,
                     'nombre' => $this->nombre,
                     'ap_paterno' => $this->ap_paterno,
                     'ap_materno' => $this->ap_materno,
