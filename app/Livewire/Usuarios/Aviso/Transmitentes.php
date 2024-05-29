@@ -89,13 +89,17 @@ class Transmitentes extends Component
 
             $transmitente = $this->transmitentes->where('id', $this->transmitente)->first();
 
-            $persona = Persona::where('nombre', $transmitente['nombre'])
-                                ->where('ap_paterno', $transmitente['ap_paterno'])
-                                ->where('ap_materno', $transmitente['ap_materno'])
-                                ->where('razon_social', $transmitente['razon_social'])
-                                ->where('rfc', $transmitente['rfc'])
-                                ->where('curp', $transmitente['curp'])
+            $persona = Persona::query()
+                                ->where(function($q) use($transmitente){
+                                    $q->when(isset($transmitente['nombre']), function($q) use($transmitente) { $q->where('nombre', $transmitente['nombre']); })
+                                        ->when(isset($transmitente['ap_paterno']), function($q) use($transmitente) { $q->where('ap_paterno', $transmitente['ap_paterno']); })
+                                        ->when(isset($transmitente['ap_materno']), function($q) use($transmitente) { $q->where('ap_materno', $transmitente['ap_materno']); });
+                                })
+                                ->when(isset($transmitente['razon_social']), function($q) use($transmitente) { $q->orWhere('razon_social', $transmitente['razon_social']); })
+                                ->when(isset($transmitente['rfc']), function($q) use($transmitente) { $q->orWhere('rfc', $transmitente['rfc']); })
+                                ->when(isset($transmitente['curp']), function($q) use($transmitente) { $q->orWhere('curp', $transmitente['curp']); })
                                 ->first();
+
 
             if($persona && $this->aviso->actores()->where('tipo', 'transmitente')->where('persona_id', $persona->id)->first()){
 

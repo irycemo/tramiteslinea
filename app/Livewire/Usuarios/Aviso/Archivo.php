@@ -209,7 +209,7 @@ class Archivo extends Component
 
         }
 
-        if(round($pp_adquirientes, 2) != round($pp_transmitentes, 2)){
+        /* if(round($pp_adquirientes, 2) > round($pp_transmitentes, 2)){
 
             $this->dispatch('mostrarMensaje', ['error', "La suma de los porcentajes de propiedad no es igual."]);
 
@@ -231,7 +231,7 @@ class Archivo extends Component
 
             return true;
 
-        }
+        } */
 
     }
 
