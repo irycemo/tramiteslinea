@@ -263,7 +263,7 @@ class Adquirientes extends Component
             'porcentaje' => ['numeric', 'max:100', 'nullable', Rule::requiredIf($this->porcentaje_nuda === null && $this->porcentaje_usufructo === null)],
             'porcentaje_nuda' => 'nullable|numeric|max:100',
             'porcentaje_usufructo' => 'nullable|numeric|max:100',
-            'correo' => 'nullable|unique:personas,correo,' . $this->propietario->persona->id,
+            'correo' => 'nullable|unique:personas,correo,' . $this->adquiriente->persona->id,
             'tipo_persona' => 'required',
             'nombre' => [Rule::requiredIf($this->tipo_persona === 'FÍSICA')],
             'ap_paterno' => [Rule::requiredIf($this->tipo_persona === 'FÍSICA')],
