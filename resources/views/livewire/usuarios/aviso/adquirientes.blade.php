@@ -146,13 +146,13 @@
 
                         <option value="">Seleccione una opción</option>
                         <option value="MORAL">MORAL</option>
-                        <option value="FISICA">FISICA</option>
+                        <option value="FÍSICA">FÍSICA</option>
 
                     </x-input-select>
 
                 </x-input-group>
 
-                @if($tipo_persona == 'FISICA')
+                @if($tipo_persona == 'FÍSICA')
 
                     <x-input-group for="nombre" label="Nombre(s)" :error="$errors->first('nombre')" class="w-full">
 

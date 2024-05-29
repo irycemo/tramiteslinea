@@ -60,12 +60,12 @@ class Adquirientes extends Component
             'porcentaje_usufructo' => 'nullable|numeric|max:100',
             'tipo_persona' => 'required',
             'correo' => 'nullable',
-            'nombre' => [Rule::requiredIf($this->tipo_persona === 'FISICA')],
-            'ap_paterno' => [Rule::requiredIf($this->tipo_persona === 'FISICA')],
-            'ap_materno' => [Rule::requiredIf($this->tipo_persona === 'FISICA')],
+            'nombre' => [Rule::requiredIf($this->tipo_persona === 'FÍSICA')],
+            'ap_paterno' => [Rule::requiredIf($this->tipo_persona === 'FÍSICA')],
+            'ap_materno' => [Rule::requiredIf($this->tipo_persona === 'FÍSICA')],
             'curp' => [
                 'required',
-                Rule::requiredIf($this->tipo_persona === 'FISICA'),
+                Rule::requiredIf($this->tipo_persona === 'FÍSICA'),
                 'regex:/^[A-Z]{1}[AEIOUX]{1}[A-Z]{2}[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM]{1}(AS|BC|BS|CC|CS|CH|CL|CM|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[B-DF-HJ-NP-TV-Z]{3}[0-9A-Z]{1}[0-9]{1}$/i'
             ],
             'rfc' => [
@@ -111,7 +111,7 @@ class Adquirientes extends Component
 
     public function updatedTipoPersona(){
 
-        if($this->tipo_persona == 'FISICA'){
+        if($this->tipo_persona == 'FÍSICA'){
 
             $this->reset('razon_social');
 
@@ -248,6 +248,7 @@ class Adquirientes extends Component
         $this->cp = $this->adquiriente->persona->cp;
         $this->entidad = $this->adquiriente->persona->entidad;
         $this->municipio_propietario = $this->adquiriente->persona->municipio;
+        $this->correo = $this->adquiriente->persona->correo;
 
         $this->modal = true;
 
@@ -297,6 +298,7 @@ class Adquirientes extends Component
             DB::transaction(function () {
 
                 $this->adquiriente->persona->update([
+                    'tipo' => $this->tipo_presona,
                     'nombre' => $this->nombre,
                     'ap_paterno' => $this->ap_paterno,
                     'ap_materno' => $this->ap_materno,
