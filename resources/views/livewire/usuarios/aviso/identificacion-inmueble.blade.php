@@ -75,7 +75,7 @@
 
                 <div>
 
-                    <input type="number" class="bg-white rounded text-xs w-full" wire:model.lazy="aviso.codigo_postal">
+                    <input type="number" class="bg-white rounded text-xs w-full" wire:model="aviso.codigo_postal">
 
                 </div>
 
@@ -86,71 +86,6 @@
                 </div>
 
             </div>
-
-            @if($codigos_postales)
-
-                <div class="flex-auto">
-
-                    <div class="">
-
-                        <label class="text-sm " >Nombre del asentamiento</label>
-
-                    </div>
-
-                    <div>
-
-                        <select class="bg-white rounded text-xs w-full" wire:model.live="aviso.nombre_asentamiento">
-
-                            <option value="" selected>Seleccione una opción</option>
-
-                            @if($nombres_asentamientos)
-
-                                @foreach ($nombres_asentamientos as $nombre)
-
-                                    <option value="{{ $nombre }}">{{ $nombre }}</option>
-
-                                @endforeach
-
-                            @endif
-
-                        </select>
-
-                    </div>
-
-                    <div>
-
-                        @error('aviso.nombre_asentamiento') <span class="error text-sm text-red-500">{{ $message }}</span> @enderror
-
-                    </div>
-
-                </div>
-
-            @else
-
-                <div class="flex-auto ">
-
-                    <div>
-
-                        <label class="text-sm" >Nombre del asentamiento</label>
-
-                    </div>
-
-                    <div>
-
-                        <input  class="bg-white rounded text-xs w-full" wire:model.lazy="aviso.nombre_asentamiento">
-
-                    </div>
-
-                    <div>
-
-                        @error('aviso.nombre_asentamiento') <span class="error text-sm text-red-500">{{ $message }}</span> @enderror
-
-                    </div>
-
-                </div>
-
-            @endif
-
 
             <div class="flex-auto">
 
@@ -168,6 +103,28 @@
                 <div>
 
                     @error('aviso.tipo_asentamiento') <span class="error text-sm text-red-500">{{ $message }}</span> @enderror
+
+                </div>
+
+            </div>
+
+            <div class="flex-auto ">
+
+                <div>
+
+                    <label class="text-sm" >Nombre del asentamiento</label>
+
+                </div>
+
+                <div>
+
+                    <input  class="bg-white rounded text-xs w-full" wire:model="aviso.nombre_asentamiento">
+
+                </div>
+
+                <div>
+
+                    @error('aviso.nombre_asentamiento') <span class="error text-sm text-red-500">{{ $message }}</span> @enderror
 
                 </div>
 

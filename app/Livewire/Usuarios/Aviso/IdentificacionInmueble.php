@@ -95,7 +95,7 @@ class IdentificacionInmueble extends Component
         $this->aviso = Aviso::make(['estado' => 'nuevo']);
     }
 
-    public function updatedAvisoCodigoPostal(){
+    /* public function updatedAvisoCodigoPostal(){
 
         try {
 
@@ -141,7 +141,7 @@ class IdentificacionInmueble extends Component
         else
             $this->aviso->tipo_asentamiento = null;
 
-    }
+    } */
 
     public function updated($value){
 

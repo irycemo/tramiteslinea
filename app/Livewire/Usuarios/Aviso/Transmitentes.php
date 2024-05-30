@@ -64,7 +64,15 @@ class Transmitentes extends Component
 
             if($response->status() === 200){
 
-                $this->transmitentes =  collect($data['data']);
+                if($this->aviso->acto == 'CONSOLIDACIÓN DE USUFRUCTO'){
+
+                    $this->obtenerAdquirientes($data['data']);
+
+                }else{
+
+                    $this->transmitentes =  collect($data['data']);
+
+                }
 
             }else if($response->status() === 404 || $response->status() === 401){
 
@@ -173,6 +181,68 @@ class Transmitentes extends Component
             Log::error("Error al borrar transmitente por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
 
             $this->dispatch('mostrarMensaje', ['error', 'Hubo un error']);
+
+        }
+
+    }
+
+    public function obtenerAdquirientes($data){
+
+        $propietarios = collect($data['data']);
+
+        foreach($propietarios as $propietario){
+
+            if(isset($propietario['porcentaje_nuda'])){
+
+                $persona = Persona::query()
+                                        ->where(function($q) use($propietario){
+                                            $q->when(isset($propietario['nombre']), function($q) use($propietario) { $q->where('nombre', $propietario['nombre']); })
+                                                ->when(isset($propietario['ap_paterno']), function($q) use($propietario) { $q->where('ap_paterno', $propietario['ap_paterno']); })
+                                                ->when(isset($propietario['ap_materno']), function($q) use($propietario) { $q->where('ap_materno', $propietario['ap_materno']); });
+                                        })
+                                        ->when(isset($propietario['razon_social']), function($q) use($propietario) { $q->orWhere('razon_social', $propietario['razon_social']); })
+                                        ->when(isset($propietario['rfc']), function($q) use($propietario) { $q->orWhere('rfc', $propietario['rfc']); })
+                                        ->when(isset($propietario['curp']), function($q) use($propietario) { $q->orWhere('curp', $propietario['curp']); })
+                                        ->when(isset($propietario['correo']), function($q) use($propietario) { $q->orWhere('correo', $propietario['correo']); })
+                                        ->first();
+
+                if(!$persona){
+
+                    $persona = Persona::create([
+                        'tipo' => $propietario['tipo_persona'],
+                        'nombre' => $propietario['nombre'],
+                        'ap_paterno' => $propietario['ap_paterno'],
+                        'ap_materno' => $propietario['ap_materno'],
+                        'curp' => $propietario['curp'],
+                        'rfc' => $propietario['rfc'],
+                        'razon_social' => $propietario['razon_social'],
+                        'fecha_nacimiento' => $propietario['fecha_nacimiento'],
+                        'nacionalidad' => $propietario['nacionalidad'],
+                        'estado_civil' => $propietario['estado_civil'],
+                        'calle' => $propietario['calle'],
+                        'numero_exterior' => $propietario['numero_exterior_propietario'],
+                        'numero_interior' => $propietario['numero_interior_propietario'],
+                        'colonia' => $propietario['colonia'],
+                        'ciudad' => $propietario['ciudad'],
+                        'correo' => $propietario['correo'],
+                        'cp' => $propietario['cp'],
+                        'entidad' => $propietario['entidad'],
+                        'municipio' => $propietario['municipio_propietario'],
+                        'creado_por' => auth()->id()
+                    ]);
+
+                }
+
+                $this->aviso->actores()->create([
+                    'persona_id' => $persona->id,
+                    'tipo' => 'adquiriente',
+                    'porcentaje' => $propietario['porcentaje'],
+                    'porcentaje_nuda' => $propietario['porcentaje_nuda'],
+                    'porcentaje_usufructo' => $propietario['porcentaje_usufructo'],
+                    'creado_por' => auth()->id()
+                ]);
+
+            }
 
         }
 

@@ -10,6 +10,7 @@ use App\Constantes\Constantes;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Validation\ValidationException;
 
 class Adquirientes extends Component
 {
@@ -293,34 +294,82 @@ class Adquirientes extends Component
 
         if($this->revisarProcentajes($this->adquiriente->id)) return;
 
+        $persona = Persona::query()
+                        ->where(function($q){
+                            $q->when($this->nombre, fn($q) => $q->where('nombre', $this->nombre))
+                                ->when($this->ap_paterno, fn($q) => $q->where('ap_paterno', $this->ap_paterno))
+                                ->when($this->ap_materno, fn($q) => $q->where('ap_materno', $this->ap_materno));
+                        })
+                        ->when($this->razon_social, fn($q) => $q->orWhere('razon_social', $this->razon_social))
+                        ->when($this->rfc, fn($q) => $q->orWhere('rfc', $this->rfc))
+                        ->when($this->curp, fn($q) => $q->orWhere('curp', $this->curp))
+                        ->when($this->correo, fn($q) => $q->orWhere('correo', $this->correo))
+                        ->first();
+
         try {
 
-            DB::transaction(function () {
+            DB::transaction(function () use($persona){
 
-                $this->adquiriente->persona->update([
-                    'tipo' => $this->tipo_persona,
-                    'nombre' => $this->nombre,
-                    'ap_paterno' => $this->ap_paterno,
-                    'ap_materno' => $this->ap_materno,
-                    'razon_social' => $this->razon_social,
-                    'fecha_nacimiento' => $this->fecha_nacimiento,
-                    'nacionalidad' => $this->nacionalidad,
-                    'estado_civil' => $this->estado_civil,
-                    'calle' => $this->calle,
-                    'rfc' => $this->rfc,
-                    'curp' => $this->curp,
-                    'numero_exterior' => $this->numero_exterior_propietario,
-                    'numero_interior' => $this->numero_interior_propietario,
-                    'colonia' => $this->colonia,
-                    'ciudad' => $this->ciudad,
-                    'cp' => $this->cp,
-                    'correo' => $this->correo,
-                    'entidad' => $this->entidad,
-                    'municipio' => $this->municipio_propietario,
-                    'actualizado_por' => auth()->id()
-                ]);
+                if($persona){
+
+                    $this->adquiriente->persona->update([
+                        'tipo' => $this->tipo_persona,
+                        'nombre' => $this->nombre,
+                        'ap_paterno' => $this->ap_paterno,
+                        'ap_materno' => $this->ap_materno,
+                        'razon_social' => $this->razon_social,
+                        'fecha_nacimiento' => $this->fecha_nacimiento,
+                        'nacionalidad' => $this->nacionalidad,
+                        'estado_civil' => $this->estado_civil,
+                        'calle' => $this->calle,
+                        'rfc' => $this->rfc,
+                        'curp' => $this->curp,
+                        'numero_exterior' => $this->numero_exterior_propietario,
+                        'numero_interior' => $this->numero_interior_propietario,
+                        'colonia' => $this->colonia,
+                        'ciudad' => $this->ciudad,
+                        'cp' => $this->cp,
+                        'correo' => $this->correo,
+                        'entidad' => $this->entidad,
+                        'municipio' => $this->municipio_propietario,
+                        'actualizado_por' => auth()->id()
+                    ]);
+
+                }else{
+
+                    $this->validate([
+                        'correo' => 'nullable|unique:personas,correo',
+                        'curp' => 'nullable|unique:personas,curp',
+                        'rfc' => 'nullable|unique:personas,rfc',
+                    ]);
+
+                    $persona = Persona::create([
+                        'tipo' => $this->tipo_persona,
+                        'nombre' => $this->nombre,
+                        'ap_paterno' => $this->ap_paterno,
+                        'ap_materno' => $this->ap_materno,
+                        'curp' => $this->curp,
+                        'rfc' => $this->rfc,
+                        'razon_social' => $this->razon_social,
+                        'fecha_nacimiento' => $this->fecha_nacimiento,
+                        'nacionalidad' => $this->nacionalidad,
+                        'estado_civil' => $this->estado_civil,
+                        'calle' => $this->calle,
+                        'numero_exterior' => $this->numero_exterior_propietario,
+                        'numero_interior' => $this->numero_interior_propietario,
+                        'colonia' => $this->colonia,
+                        'ciudad' => $this->ciudad,
+                        'correo' => $this->correo,
+                        'cp' => $this->cp,
+                        'entidad' => $this->entidad,
+                        'municipio' => $this->municipio_propietario,
+                        'creado_por' => auth()->id()
+                    ]);
+
+                }
 
                 $this->adquiriente->update([
+                    'persona_id' => $persona->id,
                     'porcentaje' => $this->porcentaje,
                     'porcentaje_nuda' => $this->porcentaje_nuda,
                     'porcentaje_usufructo' => $this->porcentaje_usufructo,
@@ -434,6 +483,37 @@ class Adquirientes extends Component
                         'creado_por' => auth()->id()
                     ]);
 
+                }else{
+
+                    $this->validate([
+                        'correo' => 'nullable|unique:personas,correo',
+                        'curp' => 'nullable|unique:personas,curp',
+                        'rfc' => 'nullable|unique:personas,rfc',
+                    ]);
+
+                    $persona->update([
+                        'tipo' => $this->tipo_persona,
+                        'nombre' => $this->nombre,
+                        'ap_paterno' => $this->ap_paterno,
+                        'ap_materno' => $this->ap_materno,
+                        'curp' => $this->curp,
+                        'rfc' => $this->rfc,
+                        'razon_social' => $this->razon_social,
+                        'fecha_nacimiento' => $this->fecha_nacimiento,
+                        'nacionalidad' => $this->nacionalidad,
+                        'estado_civil' => $this->estado_civil,
+                        'calle' => $this->calle,
+                        'numero_exterior' => $this->numero_exterior_propietario,
+                        'numero_interior' => $this->numero_interior_propietario,
+                        'colonia' => $this->colonia,
+                        'ciudad' => $this->ciudad,
+                        'correo' => $this->correo,
+                        'cp' => $this->cp,
+                        'entidad' => $this->entidad,
+                        'municipio' => $this->municipio_propietario,
+                        'actualizado_por' => auth()->id()
+                    ]);
+
                 }
 
                 if($this->aviso->actores()->where('persona_id', $persona->id)->first()){
@@ -458,6 +538,10 @@ class Adquirientes extends Component
                 $this->resetear();
 
             });
+
+        } catch (ValidationException $th) {
+
+            $this->dispatch('mostrarMensaje', ['error', $th->getMessage()]);
 
         } catch (\Throwable $th) {
 
