@@ -266,7 +266,7 @@ class Archivo extends Component
 
                 if(!in_array($data['data']['servicio_id'], [66,67])){
 
-                    $this->dispatch('mostrarMensaje', ['error', "El trámite del aviso no corresponde a una revisión de avisio."]);
+                    $this->dispatch('mostrarMensaje', ['error', "El trámite del aviso no corresponde a una revisión de aviso."]);
 
                     return true;
 

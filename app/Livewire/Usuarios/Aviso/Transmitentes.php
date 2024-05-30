@@ -54,6 +54,7 @@ class Transmitentes extends Component
                                 'entidad' => auth()->user()->entidad_id,
                                 'año' => $this->año,
                                 'folio' => $this->folio,
+                                'usuario' => $this->usuario,
                                 'predio' => $this->aviso->predio_sgc
                             ])
                             ->get(env('SGC_CONSULTA_PROPIETARIOS'));
