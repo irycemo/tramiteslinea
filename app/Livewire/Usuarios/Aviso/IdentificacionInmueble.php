@@ -228,8 +228,8 @@ class IdentificacionInmueble extends Component
                 $this->aviso->zutm = $data['data']['zutm'];
                 $this->aviso->lat = $data['data']['lat'];
                 $this->aviso->lon = $data['data']['lon'];
-                $this->aviso->superficie_terreno = $data['data']['superficie_terreno'];
-                $this->aviso->superficie_construccion = $data['data']['superficie_construccion'];
+                $this->aviso->superficie_terreno = (float)$data['data']['superficie_terreno'] + (float)$data['data']['superficie_terreno_comun'];
+                $this->aviso->superficie_construccion = (float)$data['data']['superficie_construccion'] + (float)$data['data']['superficie_construccion_comun'];
                 $this->aviso->valor_catastral = $data['data']['valor_catastral'];
 
                 foreach ($data['data']['colindancias'] as $colindancia) {
