@@ -486,9 +486,9 @@ class Adquirientes extends Component
                 }else{
 
                     $this->validate([
-                        'correo' => 'nullable|unique:personas,correo',
-                        'curp' => 'nullable|unique:personas,curp',
-                        'rfc' => 'nullable|unique:personas,rfc',
+                        'correo' => 'nullable|unique:personas,correo,' . $persona->id,
+                        'curp' => 'nullable|unique:personas,curp,' . $persona->id,
+                        'rfc' => 'nullable|unique:personas,rfc,' . $persona->id,
                     ]);
 
                     $persona->update([
