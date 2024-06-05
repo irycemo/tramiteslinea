@@ -32,7 +32,7 @@ class Nuevo extends Component
     public $predios = [];
     public $predio;
 
-    public $multi_predios = [3,4,6];
+    public $multi_predios = [3,4,6,66,67];
 
     public $tramite;
 

@@ -193,6 +193,8 @@ class Isai extends Component
 
             $this->aviso->reduccion = round(($this->aviso->reduccion * $this->aviso->porcentaje_adquisicion) / 100, 2);
 
+            $this->aviso->valor_base = round(($this->aviso->valor_base * $this->aviso->porcentaje_adquisicion) / 100, 2);
+
             $this->aviso->valor_isai = ceil(($this->aviso->valor_isai * $this->aviso->porcentaje_adquisicion) / 100);
 
             if($this->aviso->valor_isai < $this->cuota_minima->cuota_minima)
