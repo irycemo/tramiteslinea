@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Schema;
 
 class UsersTableSeeder extends Seeder
 {
@@ -14,12 +15,13 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
+        Schema::disableForeignKeyConstraints();
 
         \DB::table('users')->delete();
-        
+
         \DB::table('users')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 1,
                 'clave' => 1,
@@ -41,7 +43,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-16 14:00:43',
                 'entidad_id' => NULL,
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 2,
                 'clave' => 2,
@@ -63,7 +65,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-21 08:43:38',
                 'entidad_id' => NULL,
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 3,
                 'clave' => 3,
@@ -85,7 +87,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-22 12:29:40',
                 'entidad_id' => NULL,
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 4,
                 'clave' => 4,
@@ -107,7 +109,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-16 14:00:23',
                 'entidad_id' => NULL,
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 5,
                 'clave' => 5,
@@ -129,7 +131,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-16 14:00:24',
                 'entidad_id' => NULL,
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 6,
                 'clave' => 6,
@@ -151,7 +153,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-21 08:55:16',
                 'entidad_id' => NULL,
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 7,
                 'clave' => 7,
@@ -173,7 +175,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-16 14:00:24',
                 'entidad_id' => NULL,
             ),
-            7 => 
+            7 =>
             array (
                 'id' => 8,
                 'clave' => 8,
@@ -195,7 +197,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:33:05',
                 'entidad_id' => NULL,
             ),
-            8 => 
+            8 =>
             array (
                 'id' => 9,
                 'clave' => 9,
@@ -217,7 +219,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:34:33',
                 'entidad_id' => NULL,
             ),
-            9 => 
+            9 =>
             array (
                 'id' => 10,
                 'clave' => 10,
@@ -239,7 +241,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:35:16',
                 'entidad_id' => NULL,
             ),
-            10 => 
+            10 =>
             array (
                 'id' => 11,
                 'clave' => 11,
@@ -261,7 +263,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:35:54',
                 'entidad_id' => NULL,
             ),
-            11 => 
+            11 =>
             array (
                 'id' => 12,
                 'clave' => 12,
@@ -283,7 +285,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:38:08',
                 'entidad_id' => NULL,
             ),
-            12 => 
+            12 =>
             array (
                 'id' => 13,
                 'clave' => 13,
@@ -305,7 +307,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:39:28',
                 'entidad_id' => NULL,
             ),
-            13 => 
+            13 =>
             array (
                 'id' => 14,
                 'clave' => 14,
@@ -327,7 +329,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:40:19',
                 'entidad_id' => NULL,
             ),
-            14 => 
+            14 =>
             array (
                 'id' => 15,
                 'clave' => 15,
@@ -349,7 +351,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:41:04',
                 'entidad_id' => NULL,
             ),
-            15 => 
+            15 =>
             array (
                 'id' => 16,
                 'clave' => 16,
@@ -371,7 +373,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:41:43',
                 'entidad_id' => NULL,
             ),
-            16 => 
+            16 =>
             array (
                 'id' => 17,
                 'clave' => 17,
@@ -393,7 +395,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:42:14',
                 'entidad_id' => NULL,
             ),
-            17 => 
+            17 =>
             array (
                 'id' => 18,
                 'clave' => 18,
@@ -415,7 +417,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:43:08',
                 'entidad_id' => NULL,
             ),
-            18 => 
+            18 =>
             array (
                 'id' => 19,
                 'clave' => 19,
@@ -437,7 +439,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:43:49',
                 'entidad_id' => NULL,
             ),
-            19 => 
+            19 =>
             array (
                 'id' => 20,
                 'clave' => 20,
@@ -459,7 +461,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:45:11',
                 'entidad_id' => NULL,
             ),
-            20 => 
+            20 =>
             array (
                 'id' => 21,
                 'clave' => 21,
@@ -481,7 +483,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:45:59',
                 'entidad_id' => NULL,
             ),
-            21 => 
+            21 =>
             array (
                 'id' => 22,
                 'clave' => 22,
@@ -503,7 +505,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:46:43',
                 'entidad_id' => NULL,
             ),
-            22 => 
+            22 =>
             array (
                 'id' => 23,
                 'clave' => 23,
@@ -525,7 +527,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:48:03',
                 'entidad_id' => NULL,
             ),
-            23 => 
+            23 =>
             array (
                 'id' => 24,
                 'clave' => 24,
@@ -547,7 +549,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:48:44',
                 'entidad_id' => NULL,
             ),
-            24 => 
+            24 =>
             array (
                 'id' => 25,
                 'clave' => 25,
@@ -569,7 +571,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:49:49',
                 'entidad_id' => NULL,
             ),
-            25 => 
+            25 =>
             array (
                 'id' => 26,
                 'clave' => 26,
@@ -591,7 +593,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:50:38',
                 'entidad_id' => NULL,
             ),
-            26 => 
+            26 =>
             array (
                 'id' => 27,
                 'clave' => 27,
@@ -613,7 +615,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:51:50',
                 'entidad_id' => NULL,
             ),
-            27 => 
+            27 =>
             array (
                 'id' => 28,
                 'clave' => 28,
@@ -635,7 +637,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:52:27',
                 'entidad_id' => NULL,
             ),
-            28 => 
+            28 =>
             array (
                 'id' => 29,
                 'clave' => 29,
@@ -657,7 +659,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:53:15',
                 'entidad_id' => NULL,
             ),
-            29 => 
+            29 =>
             array (
                 'id' => 30,
                 'clave' => 30,
@@ -679,7 +681,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:53:54',
                 'entidad_id' => NULL,
             ),
-            30 => 
+            30 =>
             array (
                 'id' => 31,
                 'clave' => 31,
@@ -701,7 +703,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:55:08',
                 'entidad_id' => NULL,
             ),
-            31 => 
+            31 =>
             array (
                 'id' => 32,
                 'clave' => 32,
@@ -723,7 +725,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:55:57',
                 'entidad_id' => NULL,
             ),
-            32 => 
+            32 =>
             array (
                 'id' => 33,
                 'clave' => 33,
@@ -745,7 +747,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:56:28',
                 'entidad_id' => NULL,
             ),
-            33 => 
+            33 =>
             array (
                 'id' => 34,
                 'clave' => 34,
@@ -767,7 +769,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:56:58',
                 'entidad_id' => NULL,
             ),
-            34 => 
+            34 =>
             array (
                 'id' => 35,
                 'clave' => 35,
@@ -789,7 +791,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:57:49',
                 'entidad_id' => NULL,
             ),
-            35 => 
+            35 =>
             array (
                 'id' => 36,
                 'clave' => 36,
@@ -811,7 +813,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:58:22',
                 'entidad_id' => NULL,
             ),
-            36 => 
+            36 =>
             array (
                 'id' => 37,
                 'clave' => 37,
@@ -833,7 +835,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:58:54',
                 'entidad_id' => NULL,
             ),
-            37 => 
+            37 =>
             array (
                 'id' => 38,
                 'clave' => 38,
@@ -855,7 +857,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 08:59:32',
                 'entidad_id' => NULL,
             ),
-            38 => 
+            38 =>
             array (
                 'id' => 39,
                 'clave' => 39,
@@ -877,7 +879,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:00:10',
                 'entidad_id' => NULL,
             ),
-            39 => 
+            39 =>
             array (
                 'id' => 40,
                 'clave' => 40,
@@ -899,7 +901,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:00:45',
                 'entidad_id' => NULL,
             ),
-            40 => 
+            40 =>
             array (
                 'id' => 41,
                 'clave' => 41,
@@ -921,7 +923,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:01:21',
                 'entidad_id' => NULL,
             ),
-            41 => 
+            41 =>
             array (
                 'id' => 42,
                 'clave' => 42,
@@ -943,7 +945,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:02:44',
                 'entidad_id' => NULL,
             ),
-            42 => 
+            42 =>
             array (
                 'id' => 43,
                 'clave' => 43,
@@ -965,7 +967,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:03:14',
                 'entidad_id' => NULL,
             ),
-            43 => 
+            43 =>
             array (
                 'id' => 44,
                 'clave' => 44,
@@ -987,7 +989,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:03:45',
                 'entidad_id' => NULL,
             ),
-            44 => 
+            44 =>
             array (
                 'id' => 45,
                 'clave' => 45,
@@ -1009,7 +1011,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:04:34',
                 'entidad_id' => NULL,
             ),
-            45 => 
+            45 =>
             array (
                 'id' => 46,
                 'clave' => 46,
@@ -1031,7 +1033,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:05:14',
                 'entidad_id' => NULL,
             ),
-            46 => 
+            46 =>
             array (
                 'id' => 47,
                 'clave' => 47,
@@ -1053,7 +1055,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:05:59',
                 'entidad_id' => NULL,
             ),
-            47 => 
+            47 =>
             array (
                 'id' => 48,
                 'clave' => 48,
@@ -1075,7 +1077,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:06:43',
                 'entidad_id' => NULL,
             ),
-            48 => 
+            48 =>
             array (
                 'id' => 49,
                 'clave' => 49,
@@ -1097,7 +1099,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:07:18',
                 'entidad_id' => NULL,
             ),
-            49 => 
+            49 =>
             array (
                 'id' => 50,
                 'clave' => 50,
@@ -1119,7 +1121,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:07:49',
                 'entidad_id' => NULL,
             ),
-            50 => 
+            50 =>
             array (
                 'id' => 51,
                 'clave' => 51,
@@ -1141,7 +1143,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:08:34',
                 'entidad_id' => NULL,
             ),
-            51 => 
+            51 =>
             array (
                 'id' => 52,
                 'clave' => 52,
@@ -1163,7 +1165,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:09:11',
                 'entidad_id' => NULL,
             ),
-            52 => 
+            52 =>
             array (
                 'id' => 53,
                 'clave' => 53,
@@ -1185,7 +1187,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:09:46',
                 'entidad_id' => NULL,
             ),
-            53 => 
+            53 =>
             array (
                 'id' => 54,
                 'clave' => 54,
@@ -1207,7 +1209,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:10:15',
                 'entidad_id' => NULL,
             ),
-            54 => 
+            54 =>
             array (
                 'id' => 55,
                 'clave' => 55,
@@ -1229,7 +1231,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:30:42',
                 'entidad_id' => NULL,
             ),
-            55 => 
+            55 =>
             array (
                 'id' => 56,
                 'clave' => 56,
@@ -1251,7 +1253,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:31:17',
                 'entidad_id' => NULL,
             ),
-            56 => 
+            56 =>
             array (
                 'id' => 57,
                 'clave' => 57,
@@ -1273,7 +1275,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:32:37',
                 'entidad_id' => NULL,
             ),
-            57 => 
+            57 =>
             array (
                 'id' => 58,
                 'clave' => 58,
@@ -1295,7 +1297,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:33:32',
                 'entidad_id' => NULL,
             ),
-            58 => 
+            58 =>
             array (
                 'id' => 59,
                 'clave' => 59,
@@ -1317,7 +1319,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:34:18',
                 'entidad_id' => NULL,
             ),
-            59 => 
+            59 =>
             array (
                 'id' => 60,
                 'clave' => 60,
@@ -1339,7 +1341,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:35:20',
                 'entidad_id' => NULL,
             ),
-            60 => 
+            60 =>
             array (
                 'id' => 61,
                 'clave' => 61,
@@ -1361,7 +1363,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:35:59',
                 'entidad_id' => NULL,
             ),
-            61 => 
+            61 =>
             array (
                 'id' => 62,
                 'clave' => 62,
@@ -1383,7 +1385,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:36:56',
                 'entidad_id' => NULL,
             ),
-            62 => 
+            62 =>
             array (
                 'id' => 63,
                 'clave' => 63,
@@ -1405,7 +1407,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:37:29',
                 'entidad_id' => NULL,
             ),
-            63 => 
+            63 =>
             array (
                 'id' => 64,
                 'clave' => 64,
@@ -1427,7 +1429,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:38:06',
                 'entidad_id' => NULL,
             ),
-            64 => 
+            64 =>
             array (
                 'id' => 65,
                 'clave' => 65,
@@ -1449,7 +1451,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:38:46',
                 'entidad_id' => NULL,
             ),
-            65 => 
+            65 =>
             array (
                 'id' => 66,
                 'clave' => 66,
@@ -1471,7 +1473,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:41:21',
                 'entidad_id' => NULL,
             ),
-            66 => 
+            66 =>
             array (
                 'id' => 67,
                 'clave' => 67,
@@ -1493,7 +1495,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:42:25',
                 'entidad_id' => NULL,
             ),
-            67 => 
+            67 =>
             array (
                 'id' => 68,
                 'clave' => 68,
@@ -1515,7 +1517,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:43:01',
                 'entidad_id' => NULL,
             ),
-            68 => 
+            68 =>
             array (
                 'id' => 69,
                 'clave' => 69,
@@ -1537,7 +1539,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 09:47:54',
                 'entidad_id' => NULL,
             ),
-            69 => 
+            69 =>
             array (
                 'id' => 70,
                 'clave' => 70,
@@ -1559,7 +1561,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:04:36',
                 'entidad_id' => NULL,
             ),
-            70 => 
+            70 =>
             array (
                 'id' => 71,
                 'clave' => 71,
@@ -1581,7 +1583,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:05:08',
                 'entidad_id' => NULL,
             ),
-            71 => 
+            71 =>
             array (
                 'id' => 72,
                 'clave' => 72,
@@ -1603,7 +1605,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:05:59',
                 'entidad_id' => NULL,
             ),
-            72 => 
+            72 =>
             array (
                 'id' => 73,
                 'clave' => 73,
@@ -1625,7 +1627,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:07:24',
                 'entidad_id' => NULL,
             ),
-            73 => 
+            73 =>
             array (
                 'id' => 74,
                 'clave' => 74,
@@ -1647,7 +1649,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:08:10',
                 'entidad_id' => NULL,
             ),
-            74 => 
+            74 =>
             array (
                 'id' => 75,
                 'clave' => 75,
@@ -1669,7 +1671,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:08:58',
                 'entidad_id' => NULL,
             ),
-            75 => 
+            75 =>
             array (
                 'id' => 76,
                 'clave' => 76,
@@ -1691,7 +1693,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:09:28',
                 'entidad_id' => NULL,
             ),
-            76 => 
+            76 =>
             array (
                 'id' => 77,
                 'clave' => 77,
@@ -1713,7 +1715,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:10:03',
                 'entidad_id' => NULL,
             ),
-            77 => 
+            77 =>
             array (
                 'id' => 78,
                 'clave' => 78,
@@ -1735,7 +1737,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:10:42',
                 'entidad_id' => NULL,
             ),
-            78 => 
+            78 =>
             array (
                 'id' => 79,
                 'clave' => 79,
@@ -1757,7 +1759,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:12:55',
                 'entidad_id' => NULL,
             ),
-            79 => 
+            79 =>
             array (
                 'id' => 80,
                 'clave' => 80,
@@ -1779,7 +1781,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:13:26',
                 'entidad_id' => NULL,
             ),
-            80 => 
+            80 =>
             array (
                 'id' => 81,
                 'clave' => 81,
@@ -1801,7 +1803,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:14:02',
                 'entidad_id' => NULL,
             ),
-            81 => 
+            81 =>
             array (
                 'id' => 82,
                 'clave' => 82,
@@ -1823,7 +1825,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:14:48',
                 'entidad_id' => NULL,
             ),
-            82 => 
+            82 =>
             array (
                 'id' => 83,
                 'clave' => 83,
@@ -1845,7 +1847,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:15:30',
                 'entidad_id' => NULL,
             ),
-            83 => 
+            83 =>
             array (
                 'id' => 84,
                 'clave' => 84,
@@ -1867,7 +1869,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:16:33',
                 'entidad_id' => NULL,
             ),
-            84 => 
+            84 =>
             array (
                 'id' => 85,
                 'clave' => 85,
@@ -1889,7 +1891,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:17:06',
                 'entidad_id' => NULL,
             ),
-            85 => 
+            85 =>
             array (
                 'id' => 86,
                 'clave' => 86,
@@ -1911,7 +1913,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:18:06',
                 'entidad_id' => NULL,
             ),
-            86 => 
+            86 =>
             array (
                 'id' => 87,
                 'clave' => 87,
@@ -1933,7 +1935,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:18:43',
                 'entidad_id' => NULL,
             ),
-            87 => 
+            87 =>
             array (
                 'id' => 88,
                 'clave' => 88,
@@ -1955,7 +1957,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:19:14',
                 'entidad_id' => NULL,
             ),
-            88 => 
+            88 =>
             array (
                 'id' => 89,
                 'clave' => 89,
@@ -1977,7 +1979,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:20:07',
                 'entidad_id' => NULL,
             ),
-            89 => 
+            89 =>
             array (
                 'id' => 90,
                 'clave' => 90,
@@ -1999,7 +2001,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:20:44',
                 'entidad_id' => NULL,
             ),
-            90 => 
+            90 =>
             array (
                 'id' => 91,
                 'clave' => 91,
@@ -2021,7 +2023,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:21:16',
                 'entidad_id' => NULL,
             ),
-            91 => 
+            91 =>
             array (
                 'id' => 92,
                 'clave' => 92,
@@ -2043,7 +2045,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:23:03',
                 'entidad_id' => NULL,
             ),
-            92 => 
+            92 =>
             array (
                 'id' => 93,
                 'clave' => 93,
@@ -2065,7 +2067,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:27:12',
                 'entidad_id' => NULL,
             ),
-            93 => 
+            93 =>
             array (
                 'id' => 94,
                 'clave' => 94,
@@ -2087,7 +2089,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:27:59',
                 'entidad_id' => NULL,
             ),
-            94 => 
+            94 =>
             array (
                 'id' => 95,
                 'clave' => 95,
@@ -2109,7 +2111,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:28:43',
                 'entidad_id' => NULL,
             ),
-            95 => 
+            95 =>
             array (
                 'id' => 96,
                 'clave' => 96,
@@ -2131,7 +2133,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:29:15',
                 'entidad_id' => NULL,
             ),
-            96 => 
+            96 =>
             array (
                 'id' => 97,
                 'clave' => 97,
@@ -2153,7 +2155,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:30:04',
                 'entidad_id' => NULL,
             ),
-            97 => 
+            97 =>
             array (
                 'id' => 98,
                 'clave' => 98,
@@ -2175,7 +2177,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:30:56',
                 'entidad_id' => NULL,
             ),
-            98 => 
+            98 =>
             array (
                 'id' => 99,
                 'clave' => 99,
@@ -2197,7 +2199,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:31:27',
                 'entidad_id' => NULL,
             ),
-            99 => 
+            99 =>
             array (
                 'id' => 100,
                 'clave' => 100,
@@ -2219,7 +2221,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:32:18',
                 'entidad_id' => NULL,
             ),
-            100 => 
+            100 =>
             array (
                 'id' => 101,
                 'clave' => 101,
@@ -2241,7 +2243,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:32:50',
                 'entidad_id' => NULL,
             ),
-            101 => 
+            101 =>
             array (
                 'id' => 102,
                 'clave' => 102,
@@ -2263,7 +2265,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:33:22',
                 'entidad_id' => NULL,
             ),
-            102 => 
+            102 =>
             array (
                 'id' => 103,
                 'clave' => 103,
@@ -2285,7 +2287,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:33:53',
                 'entidad_id' => NULL,
             ),
-            103 => 
+            103 =>
             array (
                 'id' => 104,
                 'clave' => 104,
@@ -2307,7 +2309,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:34:29',
                 'entidad_id' => NULL,
             ),
-            104 => 
+            104 =>
             array (
                 'id' => 105,
                 'clave' => 105,
@@ -2329,7 +2331,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:35:22',
                 'entidad_id' => NULL,
             ),
-            105 => 
+            105 =>
             array (
                 'id' => 106,
                 'clave' => 106,
@@ -2351,7 +2353,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:35:56',
                 'entidad_id' => NULL,
             ),
-            106 => 
+            106 =>
             array (
                 'id' => 107,
                 'clave' => 107,
@@ -2373,7 +2375,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:36:38',
                 'entidad_id' => NULL,
             ),
-            107 => 
+            107 =>
             array (
                 'id' => 108,
                 'clave' => 108,
@@ -2395,7 +2397,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:37:24',
                 'entidad_id' => NULL,
             ),
-            108 => 
+            108 =>
             array (
                 'id' => 109,
                 'clave' => 109,
@@ -2417,7 +2419,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:37:59',
                 'entidad_id' => NULL,
             ),
-            109 => 
+            109 =>
             array (
                 'id' => 110,
                 'clave' => 110,
@@ -2439,7 +2441,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:38:39',
                 'entidad_id' => NULL,
             ),
-            110 => 
+            110 =>
             array (
                 'id' => 111,
                 'clave' => 111,
@@ -2461,7 +2463,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:40:11',
                 'entidad_id' => NULL,
             ),
-            111 => 
+            111 =>
             array (
                 'id' => 112,
                 'clave' => 112,
@@ -2483,7 +2485,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:40:47',
                 'entidad_id' => NULL,
             ),
-            112 => 
+            112 =>
             array (
                 'id' => 113,
                 'clave' => 113,
@@ -2505,7 +2507,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:41:15',
                 'entidad_id' => NULL,
             ),
-            113 => 
+            113 =>
             array (
                 'id' => 114,
                 'clave' => 114,
@@ -2527,7 +2529,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:41:49',
                 'entidad_id' => NULL,
             ),
-            114 => 
+            114 =>
             array (
                 'id' => 115,
                 'clave' => 115,
@@ -2549,7 +2551,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:42:25',
                 'entidad_id' => NULL,
             ),
-            115 => 
+            115 =>
             array (
                 'id' => 116,
                 'clave' => 116,
@@ -2571,7 +2573,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:43:03',
                 'entidad_id' => NULL,
             ),
-            116 => 
+            116 =>
             array (
                 'id' => 117,
                 'clave' => 117,
@@ -2593,7 +2595,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:43:28',
                 'entidad_id' => NULL,
             ),
-            117 => 
+            117 =>
             array (
                 'id' => 118,
                 'clave' => 118,
@@ -2615,7 +2617,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:43:58',
                 'entidad_id' => NULL,
             ),
-            118 => 
+            118 =>
             array (
                 'id' => 119,
                 'clave' => 119,
@@ -2637,7 +2639,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:44:46',
                 'entidad_id' => NULL,
             ),
-            119 => 
+            119 =>
             array (
                 'id' => 120,
                 'clave' => 120,
@@ -2659,7 +2661,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:45:13',
                 'entidad_id' => NULL,
             ),
-            120 => 
+            120 =>
             array (
                 'id' => 121,
                 'clave' => 121,
@@ -2681,7 +2683,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:45:46',
                 'entidad_id' => NULL,
             ),
-            121 => 
+            121 =>
             array (
                 'id' => 122,
                 'clave' => 122,
@@ -2703,7 +2705,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:46:20',
                 'entidad_id' => NULL,
             ),
-            122 => 
+            122 =>
             array (
                 'id' => 123,
                 'clave' => 123,
@@ -2725,7 +2727,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:46:55',
                 'entidad_id' => NULL,
             ),
-            123 => 
+            123 =>
             array (
                 'id' => 124,
                 'clave' => 124,
@@ -2747,7 +2749,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:47:32',
                 'entidad_id' => NULL,
             ),
-            124 => 
+            124 =>
             array (
                 'id' => 125,
                 'clave' => 125,
@@ -2769,7 +2771,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:48:20',
                 'entidad_id' => NULL,
             ),
-            125 => 
+            125 =>
             array (
                 'id' => 126,
                 'clave' => 126,
@@ -2791,7 +2793,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:49:42',
                 'entidad_id' => NULL,
             ),
-            126 => 
+            126 =>
             array (
                 'id' => 127,
                 'clave' => 127,
@@ -2813,7 +2815,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:50:15',
                 'entidad_id' => NULL,
             ),
-            127 => 
+            127 =>
             array (
                 'id' => 128,
                 'clave' => 128,
@@ -2835,7 +2837,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:50:48',
                 'entidad_id' => NULL,
             ),
-            128 => 
+            128 =>
             array (
                 'id' => 129,
                 'clave' => 129,
@@ -2857,7 +2859,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:52:03',
                 'entidad_id' => NULL,
             ),
-            129 => 
+            129 =>
             array (
                 'id' => 130,
                 'clave' => 130,
@@ -2879,7 +2881,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:52:27',
                 'entidad_id' => NULL,
             ),
-            130 => 
+            130 =>
             array (
                 'id' => 131,
                 'clave' => 131,
@@ -2901,7 +2903,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:52:58',
                 'entidad_id' => NULL,
             ),
-            131 => 
+            131 =>
             array (
                 'id' => 132,
                 'clave' => 132,
@@ -2923,7 +2925,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:53:28',
                 'entidad_id' => NULL,
             ),
-            132 => 
+            132 =>
             array (
                 'id' => 133,
                 'clave' => 133,
@@ -2945,7 +2947,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:54:06',
                 'entidad_id' => NULL,
             ),
-            133 => 
+            133 =>
             array (
                 'id' => 134,
                 'clave' => 134,
@@ -2967,7 +2969,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:55:48',
                 'entidad_id' => NULL,
             ),
-            134 => 
+            134 =>
             array (
                 'id' => 135,
                 'clave' => 135,
@@ -2989,7 +2991,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:56:18',
                 'entidad_id' => NULL,
             ),
-            135 => 
+            135 =>
             array (
                 'id' => 136,
                 'clave' => 136,
@@ -3011,7 +3013,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:56:48',
                 'entidad_id' => NULL,
             ),
-            136 => 
+            136 =>
             array (
                 'id' => 137,
                 'clave' => 137,
@@ -3033,7 +3035,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:57:17',
                 'entidad_id' => NULL,
             ),
-            137 => 
+            137 =>
             array (
                 'id' => 138,
                 'clave' => 138,
@@ -3055,7 +3057,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:57:49',
                 'entidad_id' => NULL,
             ),
-            138 => 
+            138 =>
             array (
                 'id' => 139,
                 'clave' => 139,
@@ -3077,7 +3079,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:58:19',
                 'entidad_id' => NULL,
             ),
-            139 => 
+            139 =>
             array (
                 'id' => 140,
                 'clave' => 140,
@@ -3099,7 +3101,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:58:50',
                 'entidad_id' => NULL,
             ),
-            140 => 
+            140 =>
             array (
                 'id' => 141,
                 'clave' => 141,
@@ -3121,7 +3123,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 10:59:20',
                 'entidad_id' => NULL,
             ),
-            141 => 
+            141 =>
             array (
                 'id' => 142,
                 'clave' => 142,
@@ -3143,7 +3145,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:00:02',
                 'entidad_id' => NULL,
             ),
-            142 => 
+            142 =>
             array (
                 'id' => 143,
                 'clave' => 143,
@@ -3165,7 +3167,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:40:26',
                 'entidad_id' => 1,
             ),
-            143 => 
+            143 =>
             array (
                 'id' => 144,
                 'clave' => 144,
@@ -3187,7 +3189,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:46:18',
                 'entidad_id' => NULL,
             ),
-            144 => 
+            144 =>
             array (
                 'id' => 145,
                 'clave' => 145,
@@ -3209,7 +3211,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:49:06',
                 'entidad_id' => NULL,
             ),
-            145 => 
+            145 =>
             array (
                 'id' => 146,
                 'clave' => 146,
@@ -3231,7 +3233,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:49:46',
                 'entidad_id' => NULL,
             ),
-            146 => 
+            146 =>
             array (
                 'id' => 147,
                 'clave' => 147,
@@ -3253,7 +3255,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:50:16',
                 'entidad_id' => NULL,
             ),
-            147 => 
+            147 =>
             array (
                 'id' => 148,
                 'clave' => 148,
@@ -3275,7 +3277,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:50:49',
                 'entidad_id' => NULL,
             ),
-            148 => 
+            148 =>
             array (
                 'id' => 149,
                 'clave' => 149,
@@ -3297,7 +3299,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:51:17',
                 'entidad_id' => NULL,
             ),
-            149 => 
+            149 =>
             array (
                 'id' => 150,
                 'clave' => 150,
@@ -3319,7 +3321,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:51:48',
                 'entidad_id' => NULL,
             ),
-            150 => 
+            150 =>
             array (
                 'id' => 151,
                 'clave' => 151,
@@ -3341,7 +3343,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:52:37',
                 'entidad_id' => NULL,
             ),
-            151 => 
+            151 =>
             array (
                 'id' => 152,
                 'clave' => 152,
@@ -3363,7 +3365,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:53:17',
                 'entidad_id' => NULL,
             ),
-            152 => 
+            152 =>
             array (
                 'id' => 153,
                 'clave' => 153,
@@ -3385,7 +3387,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:54:17',
                 'entidad_id' => NULL,
             ),
-            153 => 
+            153 =>
             array (
                 'id' => 154,
                 'clave' => 154,
@@ -3407,7 +3409,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:54:54',
                 'entidad_id' => NULL,
             ),
-            154 => 
+            154 =>
             array (
                 'id' => 155,
                 'clave' => 155,
@@ -3429,7 +3431,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:55:32',
                 'entidad_id' => NULL,
             ),
-            155 => 
+            155 =>
             array (
                 'id' => 156,
                 'clave' => 156,
@@ -3451,7 +3453,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:56:30',
                 'entidad_id' => NULL,
             ),
-            156 => 
+            156 =>
             array (
                 'id' => 157,
                 'clave' => 157,
@@ -3473,7 +3475,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:57:01',
                 'entidad_id' => NULL,
             ),
-            157 => 
+            157 =>
             array (
                 'id' => 158,
                 'clave' => 158,
@@ -3495,7 +3497,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:57:29',
                 'entidad_id' => NULL,
             ),
-            158 => 
+            158 =>
             array (
                 'id' => 159,
                 'clave' => 159,
@@ -3517,7 +3519,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:57:59',
                 'entidad_id' => NULL,
             ),
-            159 => 
+            159 =>
             array (
                 'id' => 160,
                 'clave' => 160,
@@ -3539,7 +3541,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:58:24',
                 'entidad_id' => NULL,
             ),
-            160 => 
+            160 =>
             array (
                 'id' => 161,
                 'clave' => 161,
@@ -3561,7 +3563,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:59:10',
                 'entidad_id' => NULL,
             ),
-            161 => 
+            161 =>
             array (
                 'id' => 162,
                 'clave' => 162,
@@ -3583,7 +3585,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 11:59:52',
                 'entidad_id' => NULL,
             ),
-            162 => 
+            162 =>
             array (
                 'id' => 163,
                 'clave' => 163,
@@ -3605,7 +3607,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:00:38',
                 'entidad_id' => NULL,
             ),
-            163 => 
+            163 =>
             array (
                 'id' => 164,
                 'clave' => 164,
@@ -3627,7 +3629,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:01:11',
                 'entidad_id' => NULL,
             ),
-            164 => 
+            164 =>
             array (
                 'id' => 165,
                 'clave' => 165,
@@ -3649,7 +3651,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:01:40',
                 'entidad_id' => NULL,
             ),
-            165 => 
+            165 =>
             array (
                 'id' => 166,
                 'clave' => 166,
@@ -3671,7 +3673,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:02:08',
                 'entidad_id' => NULL,
             ),
-            166 => 
+            166 =>
             array (
                 'id' => 167,
                 'clave' => 167,
@@ -3693,7 +3695,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:02:59',
                 'entidad_id' => NULL,
             ),
-            167 => 
+            167 =>
             array (
                 'id' => 168,
                 'clave' => 168,
@@ -3715,7 +3717,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:03:29',
                 'entidad_id' => NULL,
             ),
-            168 => 
+            168 =>
             array (
                 'id' => 169,
                 'clave' => 169,
@@ -3737,7 +3739,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:03:59',
                 'entidad_id' => NULL,
             ),
-            169 => 
+            169 =>
             array (
                 'id' => 170,
                 'clave' => 170,
@@ -3759,7 +3761,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:04:28',
                 'entidad_id' => NULL,
             ),
-            170 => 
+            170 =>
             array (
                 'id' => 171,
                 'clave' => 171,
@@ -3781,7 +3783,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:05:00',
                 'entidad_id' => NULL,
             ),
-            171 => 
+            171 =>
             array (
                 'id' => 172,
                 'clave' => 172,
@@ -3803,7 +3805,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:05:44',
                 'entidad_id' => NULL,
             ),
-            172 => 
+            172 =>
             array (
                 'id' => 173,
                 'clave' => 173,
@@ -3825,7 +3827,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:06:24',
                 'entidad_id' => NULL,
             ),
-            173 => 
+            173 =>
             array (
                 'id' => 174,
                 'clave' => 174,
@@ -3847,7 +3849,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:06:58',
                 'entidad_id' => NULL,
             ),
-            174 => 
+            174 =>
             array (
                 'id' => 175,
                 'clave' => 175,
@@ -3869,7 +3871,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:07:31',
                 'entidad_id' => NULL,
             ),
-            175 => 
+            175 =>
             array (
                 'id' => 176,
                 'clave' => 176,
@@ -3891,7 +3893,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:08:07',
                 'entidad_id' => NULL,
             ),
-            176 => 
+            176 =>
             array (
                 'id' => 177,
                 'clave' => 177,
@@ -3913,7 +3915,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:08:40',
                 'entidad_id' => NULL,
             ),
-            177 => 
+            177 =>
             array (
                 'id' => 178,
                 'clave' => 178,
@@ -3935,7 +3937,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:09:16',
                 'entidad_id' => NULL,
             ),
-            178 => 
+            178 =>
             array (
                 'id' => 179,
                 'clave' => 179,
@@ -3957,7 +3959,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:09:47',
                 'entidad_id' => NULL,
             ),
-            179 => 
+            179 =>
             array (
                 'id' => 180,
                 'clave' => 180,
@@ -3979,7 +3981,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:10:22',
                 'entidad_id' => NULL,
             ),
-            180 => 
+            180 =>
             array (
                 'id' => 181,
                 'clave' => 181,
@@ -4001,7 +4003,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:11:33',
                 'entidad_id' => NULL,
             ),
-            181 => 
+            181 =>
             array (
                 'id' => 182,
                 'clave' => 182,
@@ -4023,7 +4025,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:12:06',
                 'entidad_id' => NULL,
             ),
-            182 => 
+            182 =>
             array (
                 'id' => 183,
                 'clave' => 183,
@@ -4045,7 +4047,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:12:34',
                 'entidad_id' => NULL,
             ),
-            183 => 
+            183 =>
             array (
                 'id' => 184,
                 'clave' => 184,
@@ -4067,7 +4069,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:13:02',
                 'entidad_id' => NULL,
             ),
-            184 => 
+            184 =>
             array (
                 'id' => 185,
                 'clave' => 185,
@@ -4089,7 +4091,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:13:30',
                 'entidad_id' => NULL,
             ),
-            185 => 
+            185 =>
             array (
                 'id' => 186,
                 'clave' => 186,
@@ -4111,7 +4113,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:14:11',
                 'entidad_id' => NULL,
             ),
-            186 => 
+            186 =>
             array (
                 'id' => 187,
                 'clave' => 187,
@@ -4133,7 +4135,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:14:42',
                 'entidad_id' => NULL,
             ),
-            187 => 
+            187 =>
             array (
                 'id' => 188,
                 'clave' => 188,
@@ -4155,7 +4157,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:15:55',
                 'entidad_id' => NULL,
             ),
-            188 => 
+            188 =>
             array (
                 'id' => 189,
                 'clave' => 189,
@@ -4177,7 +4179,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:16:30',
                 'entidad_id' => NULL,
             ),
-            189 => 
+            189 =>
             array (
                 'id' => 190,
                 'clave' => 190,
@@ -4199,7 +4201,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:17:01',
                 'entidad_id' => NULL,
             ),
-            190 => 
+            190 =>
             array (
                 'id' => 191,
                 'clave' => 191,
@@ -4221,7 +4223,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:17:46',
                 'entidad_id' => NULL,
             ),
-            191 => 
+            191 =>
             array (
                 'id' => 192,
                 'clave' => 192,
@@ -4243,7 +4245,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:18:22',
                 'entidad_id' => NULL,
             ),
-            192 => 
+            192 =>
             array (
                 'id' => 193,
                 'clave' => 193,
@@ -4265,7 +4267,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-17 12:18:58',
                 'entidad_id' => NULL,
             ),
-            193 => 
+            193 =>
             array (
                 'id' => 194,
                 'clave' => 194,
@@ -4287,7 +4289,7 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => '2024-05-22 14:33:06',
                 'entidad_id' => NULL,
             ),
-            194 => 
+            194 =>
             array (
                 'id' => 195,
                 'clave' => 195,
@@ -4310,7 +4312,9 @@ class UsersTableSeeder extends Seeder
                 'entidad_id' => 188,
             ),
         ));
-        
-        
+
+        Schema::enableForeignKeyConstraints();
+
     }
+
 }

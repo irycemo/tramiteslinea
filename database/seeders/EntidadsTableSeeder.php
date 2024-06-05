@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Schema;
 
 class EntidadsTableSeeder extends Seeder
 {
@@ -15,7 +16,7 @@ class EntidadsTableSeeder extends Seeder
     public function run()
     {
 
-
+        Schema::disableForeignKeyConstraints();
         \DB::table('entidads')->delete();
 
         \DB::table('entidads')->insert(array (
@@ -2653,6 +2654,7 @@ class EntidadsTableSeeder extends Seeder
             ),
         ));
 
+        Schema::enableForeignKeyConstraints();
 
     }
 }

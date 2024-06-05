@@ -127,7 +127,7 @@
         <x-slot name="title">
 
             @if($crear)
-                Nuevo Adquiriente
+                Agregar Adquiriente
             @elseif($editar)
                 Editar Adquiriente
             @endif
