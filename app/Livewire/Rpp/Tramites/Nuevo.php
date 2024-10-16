@@ -119,6 +119,8 @@ class Nuevo extends Component
 
             }else{
 
+                Log::error($data);
+
                 $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
 
             }
@@ -130,6 +132,11 @@ class Nuevo extends Component
             $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
 
             abort(500, message:"Ha ocurrido un error en el sistema comuniquese con el departamento de operaciones y desarrollo de sistemas.");
+
+        }catch (\Throwable $th) {
+
+            Log::error("Error al cargar servicio nuevo en trámties: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+            $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
 
         }
 
@@ -291,7 +298,7 @@ class Nuevo extends Component
 
         if(env('loacl') == "1"){
 
-            $this->url_pago_linea  = "https://pagoenlinea.michoacan.gob.mx";
+            $this->url_pago_linea  = "https://pagoenlinea.michoacan.gob.mx/pagolinea";
 
         }else{
 
