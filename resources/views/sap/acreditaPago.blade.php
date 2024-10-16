@@ -50,7 +50,15 @@
                     <span class="font-medium text-lg">El pago no pudo ser registrado</span>
 
                     <ul class="mt-1.5 list-disc list-inside">
-                        <li><strong>Error: </strong>{{ $data['error'] }}
+                        @if(isset($data['error']))
+
+                            <li><strong>Error: </strong>{{ $data['error'] }}</li>
+
+                        @else
+
+                            <li><strong>Error: </strong>La información proviniente de la secretaría de finanzas y administración ha sido insuficiente para poder acreditar el pago. Favor de comunicarse al departamento de operaciones y desarrollo de sistemas teniendo su comprobante de pago disponible par aser acreditado.</li>
+
+                        @endif
                     </ul>
 
                 </div>
