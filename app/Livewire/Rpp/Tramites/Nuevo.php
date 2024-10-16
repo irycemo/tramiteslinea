@@ -296,7 +296,7 @@ class Nuevo extends Component
 
         }
 
-        if(env('loacl') == "1"){
+        if(env('LOCAL') == "1"){
 
             $this->url_pago_linea  = "https://pagoenlinea.michoacan.gob.mx/pagolinea";
 
