@@ -26,6 +26,7 @@ class Nuevo extends Component
     public $tramite;
 
     public $token;
+    public $url_pago_linea;
 
     protected function rules(){
         return [
@@ -285,6 +286,16 @@ class Nuevo extends Component
             Log::error("Error al cargar servicio nuevo en trámties: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
 
             abort(500, message:"Ha ocurrido un error en el sistema comuniquese con el departamento de operaciones y desarrollo de sistemas.");
+
+        }
+
+        if(env('loacl') == "1"){
+
+            $this->url_pago_linea  = "https://pagoenlinea.michoacan.gob.mx";
+
+        }else{
+
+            $this->url_pago_linea  = "http://10.0.250.55:8081/pagolinea";
 
         }
 

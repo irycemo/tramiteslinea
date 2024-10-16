@@ -74,7 +74,7 @@
 
                     </button>
 
-                    <form action="http://10.0.250.55:8081/pagolinea" method="post" class="w-full">
+                    <form action="{{ $url_pago_linea }}" method="post" class="w-full">
 
                         <input type="hidden" name="concepto" value="IRYCEM">
                         <input type="hidden" name="lcaptura" value="{{ $this->tramite['linea_de_captura'] }}">

@@ -55,6 +55,8 @@ class Fideicomisos extends Component
     public $fideicomisario = false;
     public $fiduciaria = false;
 
+    protected $listeners = ['cargarAviso'];
+
     protected function rules(){
         return [
             'tipo_persona' => 'required',
@@ -85,8 +87,6 @@ class Fideicomisos extends Component
             'aviso.descripcion_fideicomiso' => 'nullable'
         ];
     }
-
-    protected $listeners = ['cargarAviso'];
 
     public function crearModeloVacio(){
         $this->aviso = Aviso::make(['estado' => 'nuevo']);
