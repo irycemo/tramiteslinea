@@ -162,7 +162,12 @@ class Usuarios extends Component
 
         $usuarios = User::with('creadoPor', 'actualizadoPor', 'entidad')
                             ->where(function($q){
-                                $q->where('name', 'LIKE', '%' . $this->search . '%');
+                                $q->where('name', 'LIKE', '%' . $this->search . '%')
+                                    ->orWhere('email', 'LIKE', '%' . $this->search . '%')
+                                    ->orWHereHas('entidad', function($q){
+                                        $q->where('numero_notaria', $this->search)
+                                            ->orWhere('dependencia', $this->search);
+                                    });
                             })
                             ->when($this->filters['rol'], fn($q, $rol) => $q->whereHas('roles', function($q) use($rol){ $q->where('name', $rol); }))
                             ->orderBy($this->sort, $this->direction)

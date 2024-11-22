@@ -89,7 +89,7 @@ class Tramites extends Component
         try {
 
             $response = Http::withToken(env('SISTEMA_TRAMITES_TOKEN'))->accept('application/json')->get(env('SISTEMA_TRAMITES_CONSULTA_SERVICIOS'), [
-                                                                                                                                    'ids' =>[22,23,24,25,26]
+                                                                                                                                    'claves' =>['DL17', 'DL16', 'DL27', 'DL25', 'DL24', 'DL23', 'DL22', 'DL21']
                                                                                                                                 ]);
             if($response->status() === 200)
                 $this->servicios = collect(json_decode($response, true)['data']);

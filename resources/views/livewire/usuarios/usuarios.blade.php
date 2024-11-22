@@ -6,7 +6,7 @@
 
         <div class="flex justify-between items-center ">
 
-            <div class="space-y-2">
+            <div class="">
 
                 <input type="text" wire:model.live.debounce.500ms="search" placeholder="Buscar" class="bg-white rounded-full text-sm ">
 
@@ -61,7 +61,7 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Status</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold capitalize opacity-90 rounded-br-xl">Status</span>
 
                             @if($usuario->status == 'activo')
 
@@ -77,7 +77,7 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Nombre</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold capitalize opacity-90 rounded-br-xl">Nombre</span>
 
                             <div class="flex items-center justify-center lg:justify-start">
 
@@ -91,7 +91,7 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Email</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold capitalize opacity-90 rounded-br-xl">Email</span>
 
                             {{ $usuario->email }}
 
@@ -99,7 +99,7 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Registrado</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold capitalize opacity-90 rounded-br-xl">Registrado</span>
 
 
                             <span class="font-semibold">@if($usuario->creadoPor != null)Registrado por: {{$usuario->creadoPor->name}} @else Registro: @endif</span> <br>
@@ -118,7 +118,7 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Acciones</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold capitalize opacity-90 rounded-br-xl">Acciones</span>
 
                             <div class="flex flex-col justify-center lg:justify-start gap-2">
 
@@ -224,9 +224,6 @@
 
                     </x-input-group>
 
-                </div>
-
-                <div class="flex flex-col md:flex-row justify-between md:space-x-3 mb-5">
 
                     <x-input-group for="modelo_editar.rfc" label="RFC" :error="$errors->first('modelo_editar.rfc')" class="w-full">
 

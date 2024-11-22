@@ -66,9 +66,7 @@
             <x-slot name="head">
 
                 <x-table.heading>Estado</x-table.heading>
-                <x-table.heading>Año</x-table.heading>
-                <x-table.heading>Folio</x-table.heading>
-                <x-table.heading>Usuario</x-table.heading>
+                <x-table.heading># Trámite</x-table.heading>
                 <x-table.heading>Servicio</x-table.heading>
                 <x-table.heading>Cantidad</x-table.heading>
                 <x-table.heading>Monto</x-table.heading>
@@ -85,7 +83,7 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Estado</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold capitalize opacity-90 rounded-br-xl">Estado</span>
 
                             @php
 
@@ -107,31 +105,15 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Año</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold capitalize opacity-90 rounded-br-xl"># Trámite</span>
 
-                            {{ $tramite['año'] }}
-
-                        </x-table.cell>
-
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Folio</span>
-
-                            {{ $tramite['folio'] }}
+                            {{ $tramite['año'] }}-{{ $tramite['folio'] }}-{{ $tramite['usuario'] }}
 
                         </x-table.cell>
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Usuario</span>
-
-                            {{ $tramite['usuario'] }}
-
-                        </x-table.cell>
-
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Servicio</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold capitalize opacity-90 rounded-br-xl">Servicio</span>
 
                             {{ $tramite['servicio'] }}
 
@@ -139,7 +121,7 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Cantidad</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold capitalize opacity-90 rounded-br-xl">Cantidad</span>
 
                             {{ $tramite['cantidad'] }}
 
@@ -147,7 +129,7 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Monto</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold capitalize opacity-90 rounded-br-xl">Monto</span>
 
                             ${{ number_format($tramite['monto'], 2) }}
 
@@ -155,7 +137,7 @@
 
                         <x-table.cell class="capitalize">
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Tipo de servicio</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold capitalize opacity-90 rounded-br-xl">Tipo de servicio</span>
 
                             {{ $tramite['tipo_servicio'] }}
 
@@ -163,7 +145,7 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Acciones</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold capitalize opacity-90 rounded-br-xl">Acciones</span>
 
                             <div class="ml-3 relative" x-data="{ open_drop_down:false }">
 

@@ -184,16 +184,23 @@ class Nuevo extends Component
 
     public function pagarVentanilla(){
 
-        $generatorPNG = new BarcodeGeneratorPNG();
+        try {
 
-        $pdf = Pdf::loadView('tramites.orden', ['tramite' => $this->tramite, 'generatorPNG' => $generatorPNG])->output();
+            $generatorPNG = new BarcodeGeneratorPNG();
 
-        $this->resetearTodo();
+            $pdf = Pdf::loadView('tramites.orden', ['tramite' => $this->tramite, 'generatorPNG' => $generatorPNG])->output();
 
-        return response()->streamDownload(
-            fn () => print($pdf),
-            'orden_de_pago.pdf'
-        );
+            $this->resetearTodo();
+
+            return response()->streamDownload(
+                fn () => print($pdf),
+                'orden_de_pago.pdf'
+            );
+
+        } catch (\Throwable $th) {
+            $this->dispatch('mostrarMensaje', ['error', 'Hubo un error.']);
+        }
+
 
     }
 
@@ -217,6 +224,12 @@ class Nuevo extends Component
             Log::error("Error al pagar trámtie en linínea: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
 
         }
+
+    }
+
+    public function descargarFicha(){
+
+        return response()->download(storage_path('app/public/RPC.xlsx'));
 
     }
 

@@ -93,7 +93,7 @@
                 </div>
 
                 {{-- Logo --}}
-                <p x-show.transition.in.duration.1000ms.out.duration.200msw="!open_side_menu"  class="font-semibold text-2xl text-rojo">Sistema de trámites en línea</p>
+                <p x-show.transition.in.duration.1000ms.out.duration.200msw="!open_side_menu"  class="font-semibold lg:text-2xl text-rojo">Sistema de trámites en línea</p>
 
                 <!-- Profile dropdown -->
                 <div class="ml-3 relative z-10" x-data="{ open_drop_down:false }" >

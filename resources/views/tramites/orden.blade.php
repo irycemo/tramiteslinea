@@ -111,13 +111,13 @@
 
                 <th width="80%" style="vertical-align: middle">
                     <div >
-                        <p style="font-size: 12px; text-align: center">DIRECCIÓN DE CATASTRO</p>
-                        <p style="font-size: 12px; text-align: center">GOBIERNO DEL ESTADO DE MICHOACÁN DE OCAMPO</p>
+                        <p style="font-size: 11px; text-align: center">INSTITUTO REGISTRAL Y CATASTRAL DE MICHOACÁN DE OCAMPO</p>
+                        <p style="font-size: 11px; text-align: center">GOBIERNO DEL ESTADO DE MICHOACÁN DE OCAMPO</p>
                     </div>
                 </th>
 
                 <th width="10%" >
-                    <p style="font-size: 10px; text-align: right;"><nobr>{{ now()->format('d-m-Y H:i:s') }}</nobr></p>
+                    <p style="font-size: 9px; text-align: right;"><nobr>{{ now()->format('d-m-Y H:i:s') }}</nobr></p>
                 </th>
 
             </tr>
