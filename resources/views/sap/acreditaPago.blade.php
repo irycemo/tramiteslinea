@@ -57,7 +57,15 @@
 
                         @else
 
-                            <li class="text-justify"><strong>Error: </strong>La información proveniente de la secretaría de finanzas y administración ha sido insuficiente para poder acreditar el pago. Favor de comunicarse al departamento de operaciones y desarrollo de sistemas teniendo su comprobante de pago disponible para ser acreditado.</li>
+                            <li class="text-justify">
+                                <strong>Error: </strong>
+                                <p>
+                                    La información proveniente de la secretaría de finanzas y administración ha sido insuficiente para poder acreditar el pago.
+                                </p>
+                                <p>
+                                    Favor de comunicarse al departamento de operación y desarrollo de sistemas teniendo su comprobante de pago y número de trámite disponibles para ser acreditado.
+                                </p>
+                            </li>
 
                         @endif
 
