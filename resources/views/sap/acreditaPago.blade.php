@@ -53,7 +53,7 @@
 
                         @if(isset($data['error']))
 
-                            <li><strong>Error: </strong>{{ $data['error'] }}</li>
+                            <li><strong>Error: </strwong>{{ $data['error'] }}</li>
 
                         @else
 

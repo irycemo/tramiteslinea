@@ -24,7 +24,7 @@
 
     <div class="bg-white shadow-lg  rounded-lg p-4">
 
-            <div class="lg:w-1/3 mx-auto flex flex-col justify-center items-center gap-3">
+            {{-- <div class="lg:w-1/3 mx-auto flex flex-col justify-center items-center gap-3">
 
                 <select class="bg-white rounded-full text-sm w-full" wire:model.live="servicio">
 
@@ -117,6 +117,27 @@
                     </form>
 
                 @endif
+
+            </div> --}}
+
+            <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 w-full lg:w-1/4 mx-auto shadow-lg">
+
+                <div class="text-center">
+                    <span class="mx-auto font-bold">AVISO</span>
+                </div>
+
+                <p class="text-justify">
+                    Por actualización de tarifas para los servicios de comercio publicadas en la Ley de Ingresos para el Ejercicio 2025,
+                    el servicio de pago en línea se reestablecerá a partir de las 9:00 hrs. del día 17 del mes y año que corre.
+                </p>
+
+                <div class="text-center mt-4">
+                    <span class="mx-auto font-bold">IMPORTANTE:</span>
+                </div>
+
+                <p class="text-justify">
+                    Para evitar pagos complementarios, deberán estar al corriente en la inscripción y firma de trámites hasta el día de hoy.
+                </p>
 
             </div>
 
