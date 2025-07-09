@@ -6,6 +6,7 @@ use App\Http\Controllers\Api\V1\AcreditarPagoController;
 use App\Http\Controllers\Api\V1\RechazarAvisoController;
 use App\Http\Controllers\Api\V1\AutorizarAvisoController;
 use App\Http\Controllers\Api\V1\ConsultarAvisoController;
+use App\Http\Controllers\Api\V1\GenerarAvisoPdfController;
 
 Route::middleware('auth:sanctum')->group(function () {
 
@@ -16,6 +17,8 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('operar_aviso', [OperarAvisoController::class, 'operarAviso']);
 
     Route::post('rechazar_aviso', [RechazarAvisoController::class, 'rechazarAviso']);
+
+    Route::post('generar_aviso_pdf', [GenerarAvisoPdfController::class, 'generarPdf']);
 
 });
 
