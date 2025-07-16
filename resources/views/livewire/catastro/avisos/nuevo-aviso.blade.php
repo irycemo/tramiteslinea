@@ -1,6 +1,6 @@
 <div>
 
-    <x-header>Aviso aclaratorio</x-header>
+    <x-header>Revisión de aviso</x-header>
 
     <div class="tab-wrapper max-h-full" x-data="{ activeTab: 0 }">
 

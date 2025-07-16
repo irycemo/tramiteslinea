@@ -57,9 +57,9 @@ class ActoEscritura extends Component
 
             DB::transaction(function () use ($data){
 
-                $this->procesarPredio($data);
-
                 if(!isset($this->aviso)){
+
+                    $this->procesarPredio($data);
 
                     $this->aviso = Aviso::create([
                         'tipo' => 'aclaratorio',
@@ -76,12 +76,17 @@ class ActoEscritura extends Component
 
                 }else{
 
-                    $this->aviso->predio->delete();
+                    if($data['predio_sgc'] !== $this->aviso->predio_sgc){
+
+                        throw new GeneralException('El predio del avalúo no corresponde al predio de este aviso.');
+
+                    }
+
+                    $this->actualizarPredio($data);
 
                     $this->aviso->update([
                         'predio_sgc' => $data['predio_sgc'],
                         'avaluo_spe' => $data['id'],
-                        'predio_id' => $this->predio->id
                     ]);
 
                 }
@@ -213,6 +218,58 @@ class ActoEscritura extends Component
             ]);
 
         }
+
+    }
+
+    public function actualizarPredio($data){
+
+        $this->predio->update([
+            'estado' => $data['estado'],
+            'region_catastral' => $data['region_catastral'],
+            'municipio' => $data['municipio'],
+            'zona_catastral' => $data['zona_catastral'],
+            'localidad' => $data['localidad'],
+            'sector' => $data['sector'],
+            'manzana' => $data['manzana'],
+            'predio' => $data['predio'],
+            'edificio' => $data['edificio'],
+            'departamento' => $data['departamento'],
+            'oficina' => $data['oficina'],
+            'tipo_predio' => $data['tipo_predio'],
+            'numero_registro' => $data['numero_registro'],
+            'codigo_postal' => $data['codigo_postal'],
+            'nombre_asentamiento' => $data['nombre_asentamiento'],
+            'tipo_asentamiento' => $data['tipo_asentamiento'],
+            'tipo_vialidad' => $data['tipo_vialidad'],
+            'nombre_vialidad' => $data['nombre_vialidad'],
+            'numero_exterior' => $data['numero_exterior'],
+            'numero_exterior_2' => $data['numero_exterior_2'],
+            'numero_interior' => $data['numero_interior'],
+            'numero_adicional' => $data['numero_adicional'],
+            'numero_adicional_2' => $data['numero_adicional_2'],
+            'lote_fraccionador' => $data['lote_fraccionador'],
+            'manzana_fraccionador' => $data['manzana_fraccionador'],
+            'etapa_fraccionador' => $data['etapa_fraccionador'],
+            'nombre_edificio' => $data['nombre_edificio'],
+            'clave_edificio' => $data['clave_edificio'],
+            'departamento_edificio' => $data['departamento_edificio'],
+            'nombre_predio' => $data['nombre_predio'],
+            'xutm' => $data['xutm'],
+            'yutm' => $data['yutm'],
+            'zutm' => $data['zutm'],
+            'lon' => $data['lon'],
+            'lat' => $data['lat'],
+            'uso_1' => $data['uso_1'],
+            'uso_2' => $data['uso_2'],
+            'uso_3' => $data['uso_3'],
+            'superficie_terreno' => $data['superficie_terreno'],
+            'area_comun_terreno' => $data['area_comun_terreno'],
+            'superficie_construccion' => $data['superficie_construccion'],
+            'area_comun_construccion' => $data['area_comun_construccion'],
+            'valor_total_terreno' => $data['valor_total_terreno'],
+            'valor_total_construccion' => $data['valor_total_construccion'],
+            'valor_catastral' => $data['valor_catastral'],
+        ]);
 
     }
 
