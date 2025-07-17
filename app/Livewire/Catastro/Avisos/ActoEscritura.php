@@ -155,6 +155,8 @@ class ActoEscritura extends Component
             'area_comun_terreno' => $data['area_comun_terreno'],
             'superficie_construccion' => $data['superficie_construccion'],
             'area_comun_construccion' => $data['area_comun_construccion'],
+            'superficie_total_terreno' => $data['superficie_total_terreno'],
+            'superficie_total_construccion' => $data['superficie_total_construccion'],
             'valor_total_terreno' => $data['valor_total_terreno'],
             'valor_total_construccion' => $data['valor_total_construccion'],
             'valor_catastral' => $data['valor_catastral'],
