@@ -12,7 +12,7 @@
 
         <div class="bg-white rounded-lg p-3 flex flex-col lg:flex-row gap-3 mb-3 shadow-lg items-end">
 
-            <x-input-group for="aviso.predio.superficie_terreno" label="Superficie de terreno" class="w-full">
+            <x-input-group for="aviso.predio.superficie_terreno" label="Superficie de terreno (notarial)" class="w-full">
 
                 <x-input-text type="number" id="aviso.predio.superficie_terreno" value="{{ $aviso->predio->superficie_terreno }}" readonly/>
 

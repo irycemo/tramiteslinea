@@ -90,7 +90,7 @@
 
         <x-input-group for="predio.clave_edificio" label="Clave del edificio" class="w-full">
 
-            <x-input-text id="predio.clave_edificio" value="{{ $aviso->predio->nombre_edificio }}" readonly/>
+            <x-input-text id="predio.clave_edificio" value="{{ $aviso->predio->clave_edificio }}" readonly/>
 
         </x-input-group>
 
@@ -102,7 +102,7 @@
 
         <x-input-group for="predio.nombre_predio" label="Predio Rústico Denominado ó Antecedente" class="col-span-2">
 
-            <x-input-text id="predio.nombre_predio" value="{{ $aviso->predio->nombre_predio }}" readonly/>
+            <x-input-text id="predio.nombre_predio" value="{{ $aviso->predio->nombre_predio }}"/>
 
         </x-input-group>
 
