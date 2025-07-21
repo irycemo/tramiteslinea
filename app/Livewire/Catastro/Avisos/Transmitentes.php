@@ -83,10 +83,10 @@ class Transmitentes extends Component
             if(!$persona){
 
                 $persona = Persona::create([
-                    'nombre' => $propietario['persona']['nombre'],
-                    'ap_paterno' => $propietario['persona']['ap_paterno'],
-                    'ap_materno' => $propietario['persona']['ap_materno'],
-                    'razon_social' => $propietario['persona']['razon_social'],
+                    'nombre' => $propietario['nombre'],
+                    'ap_paterno' => $propietario['ap_paterno'],
+                    'ap_materno' => $propietario['ap_materno'],
+                    'razon_social' => $propietario['razon_social'],
                 ]);
 
             }

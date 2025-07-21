@@ -39,12 +39,12 @@ trait BuscarPersonaTrait
 
         }else{
 
-            if($tipo_persona == 'FISICA'){
+            if(in_array($tipo_persona, ['FISICA', 'FÍSICA'])){
 
                 $persona = Persona::query()
-                            ->where('nombre', $nombre)
-                            ->where('ap_paterno', $ap_paterno)
-                            ->where('ap_materno', $ap_materno)
+                            ->where('nombre', trim($nombre))
+                            ->where('ap_paterno', trim($ap_paterno))
+                            ->where('ap_materno', trim($ap_materno))
                             ->first();
 
             }else{
