@@ -128,7 +128,7 @@ class Certificados extends Component
 
             return response()->streamDownload(
                 fn () => print($pdf),
-                'certificado_de_registro.pdf'
+                $certificado['localidad'] . '-' . $certificado['oficina'] . '-' . $certificado['tipo_predio'] . '-' . $certificado['numero_registro'] . '-' . 'certificado_de_registro.pdf'
             );
 
         } catch (GeneralException $ex) {
