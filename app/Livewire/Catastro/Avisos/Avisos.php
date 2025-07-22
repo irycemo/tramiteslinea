@@ -134,7 +134,7 @@ class Avisos extends Component
 
             return response()->streamDownload(
                 fn () => print($pdf->output()),
-                'aviso.pdf'
+                $aviso->año . '-' . $aviso->folio . '-' . $aviso->usuario . '-aviso.pdf'
             );
 
         } catch (\Throwable $th) {
