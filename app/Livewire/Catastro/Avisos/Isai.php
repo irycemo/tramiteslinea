@@ -73,7 +73,7 @@ class Isai extends Component
 
         if($this->aviso->porcentaje_adquisicion === ''){
 
-            $this->aviso->porcentaje_adquisicion = 0;
+            $this->aviso->porcentaje_adquisicion = null;
 
         }
 
@@ -203,23 +203,33 @@ class Isai extends Component
 
             $this->aviso->valor_isai = ceil($this->aviso->valor_base * .02);
 
-            if($this->aviso->valor_isai < $this->cuota_minima->cuota_minima)
+            if($this->aviso->valor_isai < $this->cuota_minima->cuota_minima){
+
                 $this->aviso->valor_isai = $this->cuota_minima->cuota_minima;
+
+            }
 
         }
 
         if(! ($this->aviso->valor_adquisicion > $this->aviso->valor_catastral)){
 
-            $this->aviso->base_gravable = round(($this->aviso->base_gravable * $this->aviso->porcentaje_adquisicion) / 100, 2);
+            if($this->aviso->porcentaje_adquisicion > 0){
 
-            $this->aviso->reduccion = round(($this->aviso->reduccion * $this->aviso->porcentaje_adquisicion) / 100, 2);
+                $this->aviso->base_gravable = round(($this->aviso->base_gravable * $this->aviso->porcentaje_adquisicion) / 100, 2);
 
-            $this->aviso->valor_base = round(($this->aviso->valor_base * $this->aviso->porcentaje_adquisicion) / 100, 2);
+                $this->aviso->reduccion = round(($this->aviso->reduccion * $this->aviso->porcentaje_adquisicion) / 100, 2);
 
-            $this->aviso->valor_isai = ceil(($this->aviso->valor_isai * $this->aviso->porcentaje_adquisicion) / 100);
+                $this->aviso->valor_base = round(($this->aviso->valor_base * $this->aviso->porcentaje_adquisicion) / 100, 2);
 
-            if($this->aviso->valor_isai < $this->cuota_minima->cuota_minima)
+                $this->aviso->valor_isai = ceil(($this->aviso->valor_isai * $this->aviso->porcentaje_adquisicion) / 100);
+
+            }
+
+            if($this->aviso->valor_isai < $this->cuota_minima->cuota_minima){
+
                 $this->aviso->valor_isai = $this->cuota_minima->cuota_minima;
+
+            }
 
         }
 
