@@ -69,6 +69,16 @@ class Isai extends Component
         ];
     }
 
+    public function updatedAvisoPorcentajeAdquisicion($field, $value){
+
+        if($this->aviso->porcentaje_adquisicion === ''){
+
+            $this->aviso->porcentaje_adquisicion = 0;
+
+        }
+
+    }
+
     public function crearModeloVacio(){
         $this->aviso = Aviso::make([
             'sin_reduccion' => false,
@@ -94,9 +104,19 @@ class Isai extends Component
 
             $this->aviso->base_gravable = max($this->aviso->valor_catastral, $this->aviso->valor_adquisicion);
 
+            if($this->aviso->valor_adquisicion > $this->aviso->valor_catastral){
+
+                $this->aviso->base_gravable = $this->aviso->valor_adquisicion;
+
+            }
+
+        }else{
+
+            $this->aviso->base_gravable = $this->aviso->valor_catastral;
+
         }
 
-        $this->cuota_minima = CuotaMinima::where('municipio', 53)
+        $this->cuota_minima = CuotaMinima::where('municipio', $this->aviso->predio->municipio)
                                             ->where('fecha_inicial', '<=', $this->aviso->fecha_reduccion)
                                             ->where('fecha_final', '>=', $this->aviso->fecha_reduccion)
                                             ->first();
@@ -188,7 +208,7 @@ class Isai extends Component
 
         }
 
-        if($this->aviso->porcentaje_adquisicion){
+        if(! ($this->aviso->valor_adquisicion > $this->aviso->valor_catastral)){
 
             $this->aviso->base_gravable = round(($this->aviso->base_gravable * $this->aviso->porcentaje_adquisicion) / 100, 2);
 
