@@ -326,7 +326,7 @@
                                                     <strong>Valor de avalúo:</strong>
                                                 </td>
                                                 <td style="padding-right: 40px; text-align: right;">
-                                                    ${{ number_format($aviso->valor_catastral, 2) }}
+                                                    ${{ number_format($predio->valor_catastral, 2) }}
                                                 </td>
                                             </tr>
 
