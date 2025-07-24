@@ -62,6 +62,8 @@ class PredioResource extends JsonResource
             'area_comun_construccion' => $this->area_comun_construccion,
             'valor_total_terreno' => $this->valor_total_terreno,
             'valor_total_construccion' => $this->valor_total_construccion,
+            'superficie_total_terreno' => $this->superficie_total_terreno,
+            'superficie_total_construccion' => $this->superficie_total_construccion,
             'valor_catastral' => $this->valor_catastral,
             'colindancias' => ColindanciaResource::collection($this->colindancias),
             'transmitentes' => ActorResource::collection($this->transmitentes()),
