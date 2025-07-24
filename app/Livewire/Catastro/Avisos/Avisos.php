@@ -103,6 +103,8 @@ class Avisos extends Component
 
             (new SGCService())->inactivarTraslado($this->modelo_editar->traslado_sgc);
 
+            (new PeritosExternosService())->reactivarAvaluo($this->modelo_editar->avaluo_spe);
+
             $this->modelo_editar->update([
                                             'avaluo_spe' => null,
                                             'estado' => 'nuevo',
