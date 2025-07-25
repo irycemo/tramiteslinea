@@ -137,6 +137,12 @@
         margin: 0;
     }
 
+    .imagenes{
+
+        max-width: 100%;
+
+    }
+
 </style>
 
 <body>
@@ -255,7 +261,7 @@
                         <tbody>
 
                             <tr>
-                                <td style="padding-right: 40px;">
+                                <td style="padding-right: 20px;">
                                     <img class="imagenes" src="{{ public_path('avisos/' . $aviso->croquis->url) }}" alt="Croquis">
                                 </td>
 
@@ -361,7 +367,7 @@
 
         <div class="no-break">
 
-            <table style="width: 100%; margin-bottom: 20px;" class="caracteristicas-tabla">
+            <table style="width: 100%; margin-bottom: 20px; margin-top: 20px;" class="caracteristicas-tabla">
 
                 <thead>
 
