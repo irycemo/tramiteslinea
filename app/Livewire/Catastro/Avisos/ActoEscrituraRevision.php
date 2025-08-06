@@ -5,16 +5,13 @@ namespace App\Livewire\Catastro\Avisos;
 use App\Models\File;
 use App\Models\Aviso;
 use App\Models\Predio;
-use App\Models\Persona;
 use Livewire\Component;
-use Illuminate\Support\Str;
 use App\Constantes\Constantes;
 use App\Traits\BuscarPersonaTrait;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use App\Exceptions\GeneralException;
-use Illuminate\Support\Facades\Storage;
-use App\Services\PeritosExternosService;
+use App\Services\SGCService;
 
 class ActoEscrituraRevision extends Component
 {
@@ -35,6 +32,11 @@ class ActoEscrituraRevision extends Component
     public $folio_aviso;
     public $usuario_aviso;
     public $aviso_aclaratorio;
+
+    public $localidad;
+    public $oficina;
+    public $tipo_predio;
+    public $numero_registro;
 
     protected function rules(){
         return [
@@ -65,6 +67,7 @@ class ActoEscrituraRevision extends Component
                                         ->where('folio', $this->folio_aviso)
                                         ->where('usuario', $this->usuario_aviso)
                                         ->where('estado', 'operado')
+                                        ->where('entidad_id', auth()->user()->entidad_id)
                                         ->first();
 
             if(!$this->aviso_aclaratorio){
@@ -103,6 +106,33 @@ class ActoEscrituraRevision extends Component
         }catch (\Throwable $th) {
 
             Log::error("Error al consultar aviso aclaratorio por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+            $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
+
+        }
+
+    }
+
+    public function consultarCuentaPredial(){
+
+        $this->validate([
+            'localidad' => 'required',
+            'oficina' => 'required',
+            'tipo_predio' => 'required',
+            'numero_registro' => 'required',
+        ]);
+
+        try {
+
+            $data = (new SGCService())->consultarPredio($this->localidad, $this->oficina, $this->tipo_predio, $this->numero_registro);
+
+
+        } catch (GeneralException $ex) {
+
+            $this->dispatch('mostrarMensaje', ['warning', $ex->getMessage()]);
+
+        }catch (\Throwable $th) {
+
+            Log::error("Error al consultar predio por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
             $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
 
         }

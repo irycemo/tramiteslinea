@@ -1,5 +1,11 @@
 <div>
 
+    @push('styles')
+
+        <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
+
+    @endpush
+
     <x-header>Revisión de aviso</x-header>
 
     <div class="tab-wrapper max-h-full" x-data="{ activeTab: 0 }">
@@ -113,5 +119,13 @@
          </div>
 
     </div>
+
+    @push('scripts')
+
+        <script src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.js"></script>
+        <script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js"></script>
+        <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+
+    @endpush
 
 </div>

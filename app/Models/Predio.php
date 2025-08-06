@@ -24,23 +24,23 @@ class Predio extends Model
     }
 
     public function transmitentes(){
-        return $this->actores()->with('persona')->where('tipo', 'transmitente')->get();
+        return $this->actores()->with('persona')->where('tipo', 'transmitente')->get()->sortBy('persona.nombre');
     }
 
     public function adquirientes(){
-        return $this->actores()->with('persona')->where('tipo', 'adquiriente')->get();
+        return $this->actores()->with('persona')->where('tipo', 'adquiriente')->get()->sortBy('persona.nombre');
     }
 
     public function fideicomitentes(){
-        return $this->actores()->with('persona')->where('tipo', 'fideicomitente')->get();
+        return $this->actores()->with('persona')->where('tipo', 'fideicomitente')->get()->sortBy('persona.nombre');
     }
 
     public function fideicomisarios(){
-        return $this->actores()->with('persona')->where('tipo', 'fideicomisario')->get();
+        return $this->actores()->with('persona')->where('tipo', 'fideicomisario')->get()->sortBy('persona.nombre');
     }
 
     public function fiduciarias(){
-        return $this->actores()->with('persona')->where('tipo', 'fiduciaria')->get();
+        return $this->actores()->with('persona')->where('tipo', 'fiduciaria')->get()->sortBy('persona.nombre');
     }
 
     public function terrenosComun(){

@@ -44,6 +44,7 @@ return [
 
     'sgc' => [
         'token' => env('SGC_TOKEN'),
+        'consultar_predio' => env('SGC_CONSULTAR_PREDIO'),
         'consultar_cuenta_predial' => env('SGC_CONSULTAR_CUENTA_PREDIAL'),
         'consultar_certificado_catastral' => env('SGC_CONSULTAR_CERTIFICADO_CATASTRAL'),
         'consultar_propietarios' => env('SGC_CONSULTAR_PROPIETARIOS'),

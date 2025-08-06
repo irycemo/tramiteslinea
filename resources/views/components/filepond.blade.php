@@ -1,11 +1,5 @@
 <div>
 
-    @push('styles')
-
-        <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
-
-    @endpush
-
     <div
         wire:ignore
         x-data
