@@ -1,4 +1,4 @@
-<div class="no-break">
+<div >
 
     <p class="separador">transmitentes</p>
 

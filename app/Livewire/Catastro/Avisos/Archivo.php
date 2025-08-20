@@ -73,6 +73,12 @@ class Archivo extends Component
 
     public function revisarAvisoCompleto(){
 
+        if(!$this->aviso->acto){
+
+            throw new GeneralException("Debe ingresar el acto transmitivo de dominio.");
+
+        }
+
         if(!$this->aviso->avaluo_spe){
 
             throw new GeneralException("Debe ingresar el avalúo en el área Acto / Ecritura.");
