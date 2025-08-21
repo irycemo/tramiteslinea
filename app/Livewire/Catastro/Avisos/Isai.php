@@ -60,7 +60,8 @@ class Isai extends Component
             'aviso.fecha_reduccion' => [
                 Rule::requiredIf($this->aviso->no_genera_isai === 0),
                 'nullable',
-                'date'
+                'date',
+                'before:today'
             ],
             'aviso.no_genera_isai' => 'required',
             'aviso.valor_isai' => 'nullable|numeric',
@@ -120,6 +121,14 @@ class Isai extends Component
                                             ->where('fecha_inicial', '<=', $this->aviso->fecha_reduccion)
                                             ->where('fecha_final', '>=', $this->aviso->fecha_reduccion)
                                             ->first();
+
+        if(!$this->cuota_minima){
+
+            $this->dispatch('mostrarMensaje', ['warning', "La fecha de reducción no cuenta con cuota mínima."]);
+
+            return;
+
+        }
 
         if($this->aviso->uso_de_predio === 'vivienda'){
 

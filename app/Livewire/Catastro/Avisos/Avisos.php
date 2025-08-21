@@ -103,6 +103,36 @@ class Avisos extends Component
 
             (new SGCService())->inactivarTraslado($this->modelo_editar->traslado_sgc);
 
+            $this->modelo_editar->update([
+                                            'estado' => 'nuevo',
+                                            'actualizado_por' => auth()->id()
+                                        ]);
+
+            $this->dispatch('mostrarMensaje', ['success', 'El aviso han sido reactivado.']);
+
+        } catch (GeneralException $ex) {
+
+            $this->dispatch('mostrarMensaje', ['warning', $ex->getMessage()]);
+
+        }catch (\Throwable $th) {
+
+            $this->dispatch('mostrarMensaje', ['error', 'Hubo un error con']);
+
+            Log::error("Error al reactivar aviso por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+
+        }
+
+
+    }
+
+    public function reactivarAvisoYAvaluo(Aviso $aviso){
+
+        $this->modelo_editar = $aviso;
+
+        try {
+
+            (new SGCService())->inactivarTraslado($this->modelo_editar->traslado_sgc);
+
             (new PeritosExternosService())->reactivarAvaluo($this->modelo_editar->avaluo_spe);
 
             $this->modelo_editar->update([
@@ -127,6 +157,7 @@ class Avisos extends Component
 
 
     }
+
 
     public function imprimirAviso(Aviso $aviso){
 
