@@ -2,7 +2,7 @@
 
     <div class="mb-6">
 
-        <h1 class="text-3xl tracking-widest py-3 px-6 text-gray-600 rounded-xl border-b-2 border-gray-500 font-thin mb-6  bg-white">Aviso aclaratorio</h1>
+        <h1 class="text-3xl tracking-widest py-3 px-6 text-gray-600 rounded-xl border-b-2 border-gray-500 font-thin mb-6  bg-white">Revisión de aviso</h1>
 
         <div class="flex justify-between items-center ">
 
@@ -38,7 +38,7 @@
                 <a href="{{ route('revision') }}" class="bg-gray-500 hover:shadow-lg hover:bg-gray-700 text-sm py-2 px-4 text-white rounded-full hidden md:block items-center justify-center focus:outline-gray-400 focus:outline-offset-2">
 
                     <img wire:loading wire:target="abrirModalCrear" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
-                    Agregar nueva revisión
+                    Agregar nueva revision
 
                 </a>
 
@@ -196,6 +196,14 @@
                                             Reactivar aviso
                                         </button>
 
+                                        <button
+                                            wire:click="reactivarAvisoYAvaluo({{ $aviso->id }})"
+                                            wire:loading.attr="disabled"
+                                            class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                                            role="menuitem">
+                                            Reactivar aviso y avalúo
+                                        </button>
+
                                     @endif
 
                                     <button
@@ -260,6 +268,60 @@
 
     </div>
 
+    <x-dialog-modal wire:model="modalObservaciones" maxWidth="lg">
+
+        <x-slot name="title">
+
+            Observaciones
+
+        </x-slot>
+
+        <x-slot name="content">
+
+            @if($modalObservaciones)
+
+                @forelse ($modelo_editar->observacionesLista as $item)
+
+                    <div class="rounded-lg bg-gray-100 py-1 px-2 my-3">
+
+                        <p class="font-semibold text-gray-900">Observación</p>
+
+                        <p class="text-gray-500 text-sm leading-relaxed">{!!  $item->observacion !!}</p>
+
+                        <p class="font-semibold text-gray-900">Registrado el:</p>
+
+                        <p class="text-gray-500 text-sm leading-relaxed">{{  $item->created_at }}</p>
+
+                    </div>
+
+                @empty
+
+                    <p class="text-lg text-center">No hay requerimientos</p>
+
+                @endforelse
+
+            @endif
+
+        </x-slot>
+
+        <x-slot name="footer">
+
+            <div class="flex gap-3">
+
+                <x-button-red
+                    wire:click="$toggle('modalObservaciones')"
+                    wire:loading.attr="disabled"
+                    wire:target="$toggle('modalObservaciones')"
+                    type="button">
+                    Cerrar
+                </x-button-red>
+
+            </div>
+
+        </x-slot>
+
+    </x-dialog-modal>
+
     <x-dialog-modal wire:model="modalRechazos" maxWidth="sm">
 
         <x-slot name="title">
@@ -275,7 +337,7 @@
                 <div class="bg-gray-100 rounded-lg p-2 mb-2">
 
                     <div>
-                        <p class="text-xs mb-1">Ley de la Función Registral y Catastral del Estado de Michoacán de Ocampo</p>
+                        <p class="text-xs mb-1">Reglamento de la Ley de la Función Registral y Catastral del Estado de Michoacán de Ocampo</p>
                         {!! $rechazo['observaciones'] !!}
                     </div>
 

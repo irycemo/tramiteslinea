@@ -40,7 +40,7 @@ class PropietarioCrear extends Component
 
     }
 
-    #[On('cargarAviso')]
+    #[On('cargarModelo')]
     public function cargarPredio($id = null){
 
         $this->modelo = Aviso::find($id)->predio;

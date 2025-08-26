@@ -50,6 +50,20 @@
             <label
                 @click="activeTab = 5"
                 class="px-6 py-1 text-gray-600 rounded-xl border-b-2 border-gray-500 font-semibold mb-3 cursor-pointer bg-white"
+                :class="{'active  bg-gray-200 rounded-full px-3 py-1 text-gray-500 no-underline': activeTab === 5 }"
+            >Fideicomisos
+            </label>
+
+            <label
+                @click="activeTab = 6"
+                class="px-6 py-1 text-gray-600 rounded-xl border-b-2 border-gray-500 font-semibold mb-3 cursor-pointer bg-white"
+                :class="{'active  bg-gray-200 rounded-full px-3 py-1 text-gray-500 no-underline': activeTab === 6 }"
+            >ISAI
+            </label>
+
+            <label
+                @click="activeTab = 7"
+                class="px-6 py-1 text-gray-600 rounded-xl border-b-2 border-gray-500 font-semibold mb-3 cursor-pointer bg-white"
                 :class="{'active  bg-gray-200 rounded-full px-3 py-1 text-gray-500 no-underline': activeTab === 7 }"
             >Archivo
             </label>
@@ -58,19 +72,19 @@
 
         <div class="tab-panel" :class="{ 'active': activeTab === 0 }" x-show.transition.in.opacity.duration.800="activeTab === 0"  wire:key="tab-0">
 
-           @livewire('catastro.avisos.acto-escritura-revision', ['avisoId' => $aviso?->id])
+            @livewire('catastro.avisos.aviso-aclaratorio.acto-escritura', ['avisoId' => $aviso?->id])
 
         </div>
 
         <div x-cloak class="tab-panel" :class="{ 'active': activeTab === 1 }" x-show.transition.in.opacity.duration.800="activeTab === 1"  wire:key="tab-1">
 
-            @livewire('catastro.avisos.identificacion-inmueble-revision', ['avisoId' => $aviso?->id])
+            @livewire('catastro.avisos.aviso-aclaratorio.identificacion-inmueble', ['avisoId' => $aviso?->id])
 
         </div>
 
         <div x-cloak class="tab-panel" :class="{ 'active': activeTab === 2 }" x-show.transition.in.opacity.duration.800="activeTab === 2"  wire:key="tab-2">
 
-            @livewire('catastro.avisos.transmitentes', ['avisoId' => $aviso?->id])
+            @livewire('catastro.avisos.aviso-aclaratorio.transmitentes', ['avisoId' => $aviso?->id])
 
         </div>
 
@@ -78,19 +92,31 @@
 
             @livewire('catastro.avisos.adquirientes', ['avisoId' => $aviso?->id])
 
-         </div>
+        </div>
 
-         <div x-cloak class="tab-panel" :class="{ 'active': activeTab === 4 }" x-show.transition.in.opacity.duration.800="activeTab === 4"  wire:key="tab-4">
+        <div x-cloak class="tab-panel" :class="{ 'active': activeTab === 4 }" x-show.transition.in.opacity.duration.800="activeTab === 4"  wire:key="tab-4">
 
             @livewire('catastro.avisos.antecedentes', ['avisoId' => $aviso?->id])
 
-         </div>
+        </div>
 
-         <div x-cloak class="tab-panel" :class="{ 'active': activeTab === 5 }" x-show.transition.in.opacity.duration.800="activeTab === 5"  wire:key="tab-5">
+        <div x-cloak class="tab-panel" :class="{ 'active': activeTab === 5 }" x-show.transition.in.opacity.duration.800="activeTab === 5"  wire:key="tab-5">
 
-            @livewire('catastro.avisos.archivo-revision', ['avisoId' => $aviso?->id])
+            @livewire('catastro.avisos.fideicomisos', ['avisoId' => $aviso?->id])
 
-         </div>
+        </div>
+
+        <div x-cloak class="tab-panel" :class="{ 'active': activeTab === 6 }" x-show.transition.in.opacity.duration.800="activeTab === 6"  wire:key="tab-6">
+
+            @livewire('catastro.avisos.isai', ['avisoId' => $aviso?->id])
+
+        </div>
+
+        <div x-cloak class="tab-panel" :class="{ 'active': activeTab === 7 }" x-show.transition.in.opacity.duration.800="activeTab === 7"  wire:key="tab-7">
+
+            @livewire('catastro.avisos.aviso-aclaratorio.archivo', ['avisoId' => $aviso?->id])
+
+        </div>
 
     </div>
 

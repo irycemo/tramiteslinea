@@ -9,6 +9,7 @@ use Livewire\Attributes\On;
 use App\Constantes\Constantes;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Log;
+use App\Livewire\Comun\PropietarioCrear;
 
 class Antecedentes extends Component
 {
@@ -72,6 +73,8 @@ class Antecedentes extends Component
             $this->aviso = Aviso::with('predio')->find($id);
 
         }
+
+        $this->dispatch('cargarModelo', $this->aviso->id)->to(PropietarioCrear::class);
 
     }
 

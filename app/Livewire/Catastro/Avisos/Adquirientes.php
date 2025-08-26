@@ -35,8 +35,6 @@ class Adquirientes extends Component
 
         }
 
-        $this->dispatch('cargarAviso', $this->aviso->id)->to(PropietarioCrear::class);
-
     }
 
     public function borrarActor(Actor $actor){

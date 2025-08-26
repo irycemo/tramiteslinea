@@ -1,13 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Livewire\Catastro\Avisos\Avisos;
-use App\Livewire\Catastro\Avisos\Revsiones;
-use App\Livewire\Catastro\Avisos\NuevoAviso;
-use App\Livewire\Catastro\Avisos\NuevaRevision;
 use App\Livewire\Catastro\Tramites\MisTramites;
 use App\Livewire\Catastro\Tramites\Certificados;
 use App\Livewire\Catastro\Tramites\NuevoTramite;
+use App\Livewire\Catastro\Avisos\AvisoAclaratorio\Avisos;
+use App\Livewire\Catastro\Avisos\RevisionAviso\Revisiones;
+use App\Livewire\Catastro\Avisos\AvisoAclaratorio\NuevoAviso;
+use App\Livewire\Catastro\Avisos\Isai;
+use App\Livewire\Catastro\Avisos\RevisionAviso\NuevaRevision;
+use App\Livewire\Comun\CalculadoraIsai;
 
 Route::group([], function(){
 
@@ -17,12 +19,14 @@ Route::group([], function(){
 
     Route::get('mis_avisos', Avisos::class)->middleware('permission:Mis avisos')->name('mis_avisos');
 
-    Route::get('mis_revisiones', Revsiones::class)->middleware('permission:Mis revisiones')->name('mis_revisiones');
+    Route::get('mis_revisiones', Revisiones::class)->middleware('permission:Mis revisiones')->name('mis_revisiones');
 
     Route::get('tramites_catastro', MisTramites::class)->middleware('permission:Trámites catastro')->name('tramites_catastro');
 
     Route::get('tramite_nuevo_catastro', NuevoTramite::class)->middleware('permission:Trámite nuevo catastro')->name('tramite_nuevo_catastro');
 
     Route::get('certificados', Certificados::class)->middleware('permission:Certificados')->name('certificados');
+
+    Route::get('calculadora_isai', CalculadoraIsai::class)->middleware('permission:Certificados')->name('calculadora_isai');
 
 });

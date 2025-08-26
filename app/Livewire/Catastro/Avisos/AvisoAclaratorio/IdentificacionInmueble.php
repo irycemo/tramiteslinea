@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Catastro\Avisos;
+namespace App\Livewire\Catastro\Avisos\AvisoAclaratorio;
 
 use App\Models\Aviso;
 use Livewire\Component;
@@ -11,7 +11,7 @@ use App\Traits\CoordenadasTrait;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
-class IdentificacionInmuebleRevision extends Component
+class IdentificacionInmueble extends Component
 {
 
     use ColindanciasTrait;
@@ -125,6 +125,6 @@ class IdentificacionInmuebleRevision extends Component
 
     public function render()
     {
-        return view('livewire.catastro.avisos.identificacion-inmueble-revision');
+        return view('livewire.catastro.avisos.aviso-aclaratorio.identificacion-inmueble');
     }
 }

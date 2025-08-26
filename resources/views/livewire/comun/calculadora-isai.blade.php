@@ -2,22 +2,13 @@
 
     @if($aviso)
 
-        @include('livewire.catastro.avisos.comun.folio-aviso')
+        <x-header>Calculadora ISAI</x-header>
 
         <div class="space-y-2 mb-5 bg-white rounded-lg p-2 shadow-lg ">
 
             <div class="flex flex-col lg:flex-row gap-3">
 
                 <div class="w-full lg:w-1/4 mx-auto space-y-3">
-
-                    <div class="w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-
-                        <div class="flex items-center ps-3">
-                            <input type="checkbox" wire:model="aviso.no_genera_isai" name="sin reducción" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                            <label for="sin reducción" class="w-full p-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">No genera ISAI (fusiones, cuando las fracciones estan registradas al mismo propietario, divisiones, particiones y cuando no haya exedencia)</label>
-                        </div>
-
-                    </div>
 
                     <x-input-group for="aviso.valor_adquisicion" label="Valor de adquisición" :error="$errors->first('aviso.valor_adquisicion')" class="w-full">
 
@@ -87,14 +78,17 @@
 
                     </x-input-group>
 
-                    <div class="w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                    <x-input-group for="municipio" label="Municipio" :error="$errors->first('municipio')" class="w-full">
 
-                        <div class="flex items-center ps-3">
-                            <input type="checkbox" wire:model="aviso.sin_reduccion" name="sin reducción" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                            <label for="sin reducción" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Predio sin reducción</label>
-                        </div>
+                        <x-input-select id="municipio" wire:model="municipio" class="w-full">
 
-                    </div>
+                            <option value="">Seleccione una opción</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+
+                        </x-input-select>
+
+                    </x-input-group>
 
                     <button
                         wire:click="calcularIsai"
@@ -154,21 +148,6 @@
         </div>
 
         @include('livewire.catastro.avisos.comun.errores')
-
-        <div class="space-y-2 mb-5 bg-white rounded-lg p-2 shadow-lg flex justify-end">
-
-            <x-button-green
-                wire:click="guardar"
-                wire:loading.attr="disabled"
-                wire:target="guardar">
-
-                <img wire:loading wire:target="guardar" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
-
-                Guardar
-
-            </x-button-green>
-
-        </div>
 
     @endif
 

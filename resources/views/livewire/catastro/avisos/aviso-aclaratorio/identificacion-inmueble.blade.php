@@ -14,13 +14,13 @@
 
             <x-input-group for="aviso.predio.superficie_total_terreno" label="Superficie total de terreno (notarial)" class="w-full">
 
-                <x-input-text type="number" id="aviso.predio.superficie_total_terreno" value="{{ $aviso->predio->superficie_total_terreno }}" readonly/>
+                <x-input-text type="number" id="aviso.predio.superficie_total_terreno" value="{{ $aviso->predio->superficie_total_terreno }}" />
 
             </x-input-group>
 
             <x-input-group for="aviso.predio.superficie_construccion" label="Superficie total de construcción" class="w-full">
 
-                <x-input-text type="number" id="aviso.predio.superficie_construccion" value="{{ $aviso->predio->superficie_total_construccion }}" readonly/>
+                <x-input-text type="number" id="aviso.predio.superficie_construccion" value="{{ $aviso->predio->superficie_total_construccion }}" />
 
             </x-input-group>
 

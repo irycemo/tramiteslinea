@@ -1,19 +1,20 @@
 <?php
 
-namespace App\Livewire\Catastro\Avisos;
+namespace App\Livewire\Catastro\Avisos\RevisionAviso;
 
 use App\Models\Aviso;
 use Livewire\Component;
-use App\Services\SGCService;
 use Livewire\WithPagination;
 use App\Constantes\Constantes;
+use App\Exceptions\GeneralException;
+use App\Http\Controllers\ImprimirAvisosController;
+use App\Services\PeritosExternosService;
+use App\Services\SGCService;
 use App\Traits\ComponentesTrait;
 use Livewire\Attributes\Computed;
 use Illuminate\Support\Facades\Log;
-use App\Exceptions\GeneralException;
-use App\Http\Controllers\ImprimirAvisosController;
 
-class Revsiones extends Component
+class Revisiones extends Component
 {
 
     use WithPagination;
@@ -64,6 +65,36 @@ class Revsiones extends Component
 
     }
 
+    public function reactivarAvaluo(Aviso $aviso){
+
+        $this->modelo_editar = $aviso;
+
+        try {
+
+            (new PeritosExternosService())->reactivarAvaluo($this->modelo_editar->avaluo_spe);
+
+            $this->modelo_editar->update([
+                                            'avaluo_spe' => null,
+                                            'actualizado_por' => auth()->id()
+                                        ]);
+
+            $this->dispatch('mostrarMensaje', ['success', 'El avalúo ha sido reactivado.']);
+
+        } catch (GeneralException $ex) {
+
+            $this->dispatch('mostrarMensaje', ['warning', $ex->getMessage()]);
+
+        }catch (\Throwable $th) {
+
+            $this->dispatch('mostrarMensaje', ['error', 'Hubo un error con']);
+
+            Log::error("Error al reactivar aviso por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+
+        }
+
+
+    }
+
     public function reactivarAviso(Aviso $aviso){
 
         $this->modelo_editar = $aviso;
@@ -71,6 +102,38 @@ class Revsiones extends Component
         try {
 
             (new SGCService())->inactivarTraslado($this->modelo_editar->traslado_sgc);
+
+            $this->modelo_editar->update([
+                                            'estado' => 'nuevo',
+                                            'actualizado_por' => auth()->id()
+                                        ]);
+
+            $this->dispatch('mostrarMensaje', ['success', 'El aviso han sido reactivado.']);
+
+        } catch (GeneralException $ex) {
+
+            $this->dispatch('mostrarMensaje', ['warning', $ex->getMessage()]);
+
+        }catch (\Throwable $th) {
+
+            $this->dispatch('mostrarMensaje', ['error', 'Hubo un error con']);
+
+            Log::error("Error al reactivar aviso por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+
+        }
+
+
+    }
+
+    public function reactivarAvisoYAvaluo(Aviso $aviso){
+
+        $this->modelo_editar = $aviso;
+
+        try {
+
+            (new SGCService())->inactivarTraslado($this->modelo_editar->traslado_sgc);
+
+            (new PeritosExternosService())->reactivarAvaluo($this->modelo_editar->avaluo_spe);
 
             $this->modelo_editar->update([
                                             'avaluo_spe' => null,
@@ -84,7 +147,7 @@ class Revsiones extends Component
 
             $this->dispatch('mostrarMensaje', ['warning', $ex->getMessage()]);
 
-        } catch (\Throwable $th) {
+        }catch (\Throwable $th) {
 
             $this->dispatch('mostrarMensaje', ['error', 'Hubo un error con']);
 
@@ -95,6 +158,7 @@ class Revsiones extends Component
 
     }
 
+
     public function imprimirAviso(Aviso $aviso){
 
         try {
@@ -103,7 +167,7 @@ class Revsiones extends Component
 
             return response()->streamDownload(
                 fn () => print($pdf->output()),
-                'aviso.pdf'
+                $aviso->año . '-' . $aviso->folio . '-' . $aviso->usuario . '-aviso.pdf'
             );
 
         } catch (\Throwable $th) {
@@ -132,7 +196,7 @@ class Revsiones extends Component
                         ->when($this->filters['folio'], fn($q, $folio) => $q->where('folio', $folio))
                         ->when($this->filters['usuario'], fn($q, $usuario) => $q->where('usuario', $usuario))
                         ->where('entidad_id', auth()->user()->entidad_id)
-                        ->where('tipo', 'revision')
+                        ->where('tipo', 'aclaratorio')
                         ->orderBy($this->sort, $this->direction)
                         ->paginate($this->pagination);
 
@@ -140,6 +204,6 @@ class Revsiones extends Component
 
     public function render()
     {
-        return view('livewire.catastro.avisos.revsiones')->extends('layouts.admin');
+        return view('livewire.catastro.avisos.revision-aviso.revisiones')->extends('layouts.admin');
     }
 }

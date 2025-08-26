@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Catastro\Avisos;
+namespace App\Livewire\Catastro\Avisos\AvisoAclaratorio;
 
 use App\Models\Actor;
 use App\Models\Aviso;
@@ -8,8 +8,6 @@ use App\Models\Persona;
 use Livewire\Component;
 use Livewire\Attributes\On;
 use App\Services\SGCService;
-use App\Constantes\Constantes;
-use App\Traits\BuscarPersonaTrait;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use App\Exceptions\GeneralException;
@@ -17,15 +15,8 @@ use App\Exceptions\GeneralException;
 class Transmitentes extends Component
 {
 
-    use BuscarPersonaTrait;
-
     public Aviso $aviso;
     public $avisoId;
-
-    public $años;
-    public $año;
-    public $folio;
-    public $usuario;
 
     #[On('cargarAviso')]
     public function cargarAviso($id = null){
@@ -42,11 +33,11 @@ class Transmitentes extends Component
 
     }
 
-    public function buscarCertificado(){
+    public function cargarPropietarios(){
 
         try {
 
-            $data = (new SGCService())->consultarPropietarios($this->año, $this->folio, $this->usuario, $this->aviso->predio_sgc);
+            $data = (new SGCService())->consultarPropietariosPredioId($this->aviso->predio_sgc);
 
             DB::transaction(function () use ($data){
 
@@ -63,8 +54,8 @@ class Transmitentes extends Component
             Log::error("Error al consultar propietarios por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
             $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
 
-        }
 
+        }
 
     }
 
@@ -74,20 +65,20 @@ class Transmitentes extends Component
 
         foreach($data as $propietario){
 
-            $persona = Persona::where('nombre', $propietario['nombre'])
-                                ->where('ap_paterno', $propietario['ap_paterno'])
-                                ->where('ap_materno', $propietario['ap_materno'])
-                                ->where('razon_social', $propietario['razon_social'])
+            $persona = Persona::where('nombre', $propietario['persona']['nombre'])
+                                ->where('ap_paterno', $propietario['persona']['ap_paterno'])
+                                ->where('ap_materno', $propietario['persona']['ap_materno'])
+                                ->where('razon_social', $propietario['persona']['razon_social'])
                                 ->first();
 
             if(!$persona){
 
                 $persona = Persona::create([
-                    'tipo' => isset($propietario['nombre']) ? 'FÍSICA' : 'MORAL',
-                    'nombre' => $propietario['nombre'],
-                    'ap_paterno' => $propietario['ap_paterno'],
-                    'ap_materno' => $propietario['ap_materno'],
-                    'razon_social' => $propietario['razon_social'],
+                    'tipo' => isset($propietario['persona']['nombre']) ? 'FÍSICA' : 'MORAL',
+                    'nombre' => $propietario['persona']['nombre'],
+                    'ap_paterno' => $propietario['persona']['ap_paterno'],
+                    'ap_materno' => $propietario['persona']['ap_materno'],
+                    'razon_social' => $propietario['persona']['razon_social'],
                 ]);
 
             }
@@ -129,14 +120,11 @@ class Transmitentes extends Component
 
         }
 
-        $this->años = Constantes::AÑOS;
-
-        $this->año = now()->format('Y');
-
     }
 
     public function render()
     {
-        return view('livewire.catastro.avisos.transmitentes');
+        return view('livewire.catastro.avisos.aviso-aclaratorio.transmitentes');
     }
+
 }

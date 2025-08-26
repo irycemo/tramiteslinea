@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Catastro\Avisos;
+namespace App\Livewire\Catastro\Avisos\RevisionAviso;
 
 use App\Models\Aviso;
 use Livewire\Component;
@@ -93,6 +93,6 @@ class IdentificacionInmueble extends Component
 
     public function render()
     {
-        return view('livewire.catastro.avisos.identificacion-inmueble');
+        return view('livewire.catastro.avisos.revision-aviso.identificacion-inmueble');
     }
 }

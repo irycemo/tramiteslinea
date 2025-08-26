@@ -122,6 +122,41 @@ class SGCService {
 
     }
 
+    public function consultarPropietariosPredioId(int $sgc_predio):array
+    {
+
+        $response = Http::withToken(config('services.sgc.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.sgc.consultar_propietarios_predio_id'),
+                                [
+                                    'id' => $sgc_predio
+                                ]
+                            );
+
+        if($response->status() !== 200){
+
+            Log::error("Error al consultar propietarios. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al consultar propietarios.");
+
+        }else{
+
+            return json_decode($response, true)['data'];
+
+        }
+
+    }
+
     public function consultarTramieAviso(int $año, int $folio, int $usuario, int $sgc_predio):array
     {
 
@@ -151,6 +186,44 @@ class SGCService {
             }
 
             throw new GeneralException("Error al consultar trámite de aviso.");
+
+        }else{
+
+            return json_decode($response, true)['data'];
+
+        }
+
+    }
+
+    public function consultarTramieAvisoAclaratorio(int $año, int $folio, int $usuario, int | null $predio_id):array
+    {
+
+        $response = Http::withToken(config('services.sgc.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.sgc.consultar_tramite_aviso_aclaratorio'),
+                                [
+                                    'año' => $año,
+                                    'folio' => $folio,
+                                    'usuario' => $usuario,
+                                    'predio' => $predio_id,
+                                ]
+                            );
+
+        if($response->status() !== 200){
+
+            Log::error("Error al consultar trámite de revisión de aviso. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al consultar trámite de revisión de aviso.");
 
         }else{
 
@@ -198,14 +271,14 @@ class SGCService {
 
     }
 
-    public function ingresarAvisoAclaratorio(int $predio_id, int $tramite_id, int $certificado_id, int $avaluo_id, int $aviso_id, int $entidad_id, string $entidad_nombre):array
+    public function ingresarRevisionAviso(int $predio_id, int $tramite_id, int $certificado_id, int $avaluo_id, int $aviso_id, int $entidad_id, string $entidad_nombre):array
     {
 
         $response = Http::withToken(config('services.sgc.token'))
                             ->accept('application/json')
                             ->asForm()
                             ->post(
-                                config('services.sgc.ingresar_aviso_aclaratorio'),
+                                config('services.sgc.ingresar_revision_aviso'),
                                 [
                                     'predio_id' => $predio_id,
                                     'tramite_aviso' => $tramite_id,
@@ -239,14 +312,14 @@ class SGCService {
 
     }
 
-    public function ingresarRevisionAviso(int $predio_id, int $tramite_id, int $aviso_id, int $entidad_id, string $entidad_nombre):array
+    public function ingresarAvisoAclaratorio(int $predio_id, int $tramite_id, int $aviso_id, int $entidad_id, string $entidad_nombre):array
     {
 
         $response = Http::withToken(config('services.sgc.token'))
                             ->accept('application/json')
                             ->asForm()
                             ->post(
-                                config('services.sgc.ingresar_revision_aviso'),
+                                config('services.sgc.ingresar_aviso_aclaratorio'),
                                 [
                                     'predio_id' => $predio_id,
                                     'tramite_aviso' => $tramite_id,

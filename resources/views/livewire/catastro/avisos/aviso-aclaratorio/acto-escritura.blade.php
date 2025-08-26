@@ -4,6 +4,32 @@
 
     @if(!$aviso)
 
+        <div class="space-y-2 mb-5 bg-white rounded-lg shadow-lg p-4 text-center">
+
+            <div class="text-center">
+
+                <Label class="text-base tracking-widest rounded-xl border-gray-500">Trámite de aviso aclaratorio</Label>
+
+            </div>
+
+            <div class="inline-flex justify-center">
+
+                <select class="bg-white rounded-l text-sm border border-r-transparent  focus:ring-0" wire:model="aclaratorio_año">
+                    @foreach ($años as $año)
+
+                        <option value="{{ $año }}">{{ $año }}</option>
+
+                    @endforeach
+                </select>
+
+                <input type="number" class="bg-white text-sm w-20 focus:ring-0 @error('aclaratorio_folio') border-red-500 @enderror" wire:model="aclaratorio_folio">
+
+                <input type="number" class="bg-white text-sm w-20 border-l-0 rounded-r focus:ring-0 @error('aclaratorio_usuario') border-red-500 @enderror" wire:model="aclaratorio_usuario">
+
+            </div>
+
+        </div>
+
         <div class="space-y-2 mb-5 bg-white rounded-lg shadow-lg p-4">
 
             <ul class="grid w-full lg:w-1/2  mx-auto gap-6 md:grid-cols-2">
