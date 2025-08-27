@@ -280,6 +280,12 @@ class Isai extends Component
 
         try {
 
+            if($this->aviso->no_genera_isai === 0){
+
+                $this->aviso->valor_isai = 0;
+
+            }
+
             $this->aviso->actualizado_por = auth()->id();
             $this->aviso->save();
 
