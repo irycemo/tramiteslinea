@@ -88,7 +88,7 @@ class ActoEscritura extends Component
 
             if($this->revision_aviso->estado != 'operado'){
 
-                throw new GeneralException('El trámite del aviso no esta operado.');
+                throw new GeneralException('El trámite de la revisión de aviso no esta operado.');
 
             }
 
@@ -109,7 +109,7 @@ class ActoEscritura extends Component
                     'creado_por' => auth()->id(),
                     'predio_id' => $this->predio->id,
                     'entidad_id' => auth()->user()->entidad_id,
-                    'tramite_sgc' => $this->data_tramite_aviso
+                    'tramite_sgc' => $this->data_tramite_aviso['tramite_id']
                 ]);
 
                 $this->clonarRelaciones();
