@@ -13,7 +13,6 @@ use App\Traits\BuscarPersonaTrait;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use App\Exceptions\GeneralException;
-use App\Livewire\Comun\PropietarioCrear;
 
 class ActoEscritura extends Component
 {
@@ -100,7 +99,7 @@ class ActoEscritura extends Component
 
                 $this->aviso = Aviso::create([
                     'aviso_id' => $this->revision_aviso->id,
-                    'tipo' => 'revision',
+                    'tipo' => 'aclaratorio',
                     'estado' => 'nuevo',
                     'predio_sgc' => $this->revision_aviso->predio_sgc,
                     'año' => now()->format('Y'),
@@ -154,7 +153,7 @@ class ActoEscritura extends Component
                 $this->procesarPredio($data_predio);
 
                 $this->aviso = Aviso::create([
-                    'tipo' => 'revision',
+                    'tipo' => 'aclaratorio',
                     'estado' => 'nuevo',
                     'predio_sgc' => $data_predio['id'],
                     'año' => now()->format('Y'),

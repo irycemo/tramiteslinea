@@ -3,6 +3,7 @@
 namespace App\Http\Resources;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class AvisoResource extends JsonResource
@@ -47,7 +48,7 @@ class AvisoResource extends JsonResource
             'valor_isai' => $this->valor_isai,
             'anexos' => $this->anexos,
             'predio'=> new PredioResource($this->predio),
-            'archivo' => null
+            'archivo' => Storage::disk('avisos')->url($this->archivo->url)
         ];
 
     }

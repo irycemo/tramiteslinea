@@ -228,7 +228,7 @@ class Archivo extends Component
                 'estado' => 'cerrado'
             ]);
 
-            return to_route('mis_avisos');
+            return to_route('mis_revisiones');
 
         } catch (GeneralException $ex) {
 

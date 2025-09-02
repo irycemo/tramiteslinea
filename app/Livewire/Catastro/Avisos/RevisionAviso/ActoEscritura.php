@@ -62,7 +62,7 @@ class ActoEscritura extends Component
                     $this->procesarPredio($data);
 
                     $this->aviso = Aviso::create([
-                        'tipo' => 'aclaratorio',
+                        'tipo' => 'revision',
                         'estado' => 'nuevo',
                         'predio_sgc' => $data['predio_sgc'],
                         'avaluo_spe' => $data['id'],
