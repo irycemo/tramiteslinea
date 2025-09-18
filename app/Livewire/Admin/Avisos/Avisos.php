@@ -1,20 +1,20 @@
 <?php
 
-namespace App\Livewire\Catastro\Avisos\RevisionAviso;
+namespace App\Livewire\Admin\Avisos;
 
 use App\Models\Aviso;
+use App\Models\Entidad;
 use Livewire\Component;
+use App\Services\SGCService;
 use Livewire\WithPagination;
 use App\Constantes\Constantes;
-use App\Exceptions\GeneralException;
-use App\Http\Controllers\ImprimirAvisosController;
-use App\Services\PeritosExternosService;
-use App\Services\SGCService;
 use App\Traits\ComponentesTrait;
 use Livewire\Attributes\Computed;
 use Illuminate\Support\Facades\Log;
+use App\Exceptions\GeneralException;
+use App\Http\Controllers\ImprimirAvisosController;
 
-class Revisiones extends Component
+class Avisos extends Component
 {
 
     use WithPagination;
@@ -23,6 +23,7 @@ class Revisiones extends Component
     public $años;
     public $año;
     public $rechazos = [];
+    public $entidades;
 
     public $modalObservaciones = false;
     public $modalRechazos = false;
@@ -31,6 +32,12 @@ class Revisiones extends Component
         'año' => '',
         'folio' => '',
         'usuario' => '',
+        'entidad_id' => '',
+        'tipo' => '',
+        'localidad' => '',
+        'oficina' => '',
+        't_predio' => '',
+        'registro' => ''
     ];
 
     public Aviso $modelo_editar;
@@ -192,19 +199,41 @@ class Revisiones extends Component
 
         $this->años = Constantes::AÑOS;
 
-        $this->año = now()->format('Y');
+        $this->filters['año'] = now()->format('Y');
+
+        $this->entidades = Entidad::select('id','dependencia','numero_notaria')->orderBy('numero_notaria')->orderBy('dependencia')->get();
 
     }
 
     #[Computed]
     public function avisos(){
 
-        return Aviso::with('creadoPor', 'actualizadoPor', 'entidad', 'predio')
+        return Aviso::with('creadoPor:id,name', 'actualizadoPor:id,name', 'entidad:id,numero_notaria,dependencia', 'predio:id,localidad,oficina,tipo_predio,numero_registro')
                         ->when($this->filters['año'], fn($q, $año) => $q->where('año', $año))
                         ->when($this->filters['folio'], fn($q, $folio) => $q->where('folio', $folio))
                         ->when($this->filters['usuario'], fn($q, $usuario) => $q->where('usuario', $usuario))
-                        ->where('entidad_id', auth()->user()->entidad_id)
-                        ->where('tipo', 'aclaratorio')
+                        ->when($this->filters['entidad_id'], fn($q, $entidad_id) => $q->where('entidad_id', $entidad_id))
+                        ->when($this->filters['tipo'], fn($q, $tipo) => $q->where('tipo', $tipo))
+                        ->when($this->filters['localidad'], function($q, $localidad){
+                            $q->WhereHas('predio', function($q) use($localidad){
+                                $q->where('localidad', $localidad);
+                            });
+                        })
+                        ->when($this->filters['oficina'], function($q, $oficina){
+                            $q->WhereHas('predio', function($q) use($oficina){
+                                $q->where('oficina', $oficina);
+                            });
+                        })
+                        ->when($this->filters['t_predio'], function($q, $t_predio){
+                            $q->WhereHas('predio', function($q) use($t_predio){
+                                $q->where('tipo_predio', $t_predio);
+                            });
+                        })
+                        ->when($this->filters['registro'], function($q, $registro){
+                            $q->WhereHas('predio', function($q) use($registro){
+                                $q->where('numero_registro', $registro);
+                            });
+                        })
                         ->orderBy($this->sort, $this->direction)
                         ->paginate($this->pagination);
 
@@ -212,6 +241,6 @@ class Revisiones extends Component
 
     public function render()
     {
-        return view('livewire.catastro.avisos.revision-aviso.revisiones')->extends('layouts.admin');
+        return view('livewire.admin.avisos.avisos')->extends('layouts.admin');
     }
 }

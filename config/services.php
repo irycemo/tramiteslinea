@@ -39,7 +39,8 @@ return [
     'peritos_externos' => [
         'token' => env('SISTEMA_PERITOS_EXTERNOS_TOKEN'),
         'consultar_avaluo' => env('SISTEMA_PERITOS_EXTERNOS_CONSULTAR_AVALUO'),
-        'reactivar_avaluo' => env('SISTEMA_PERITOS_EXTERNOS_REACTIVAR_AVALUO')
+        'reactivar_avaluo' => env('SISTEMA_PERITOS_EXTERNOS_REACTIVAR_AVALUO'),
+        'generar_avaluo_pdf' => env('SISTEMA_PERITOS_EXTERNOS_GENERAR_AVALUO_PDF'),
     ],
 
     'sgc' => [
@@ -49,6 +50,7 @@ return [
         'consultar_certificado_catastral' => env('SGC_CONSULTAR_CERTIFICADO_CATASTRAL'),
         'consultar_propietarios' => env('SGC_CONSULTAR_PROPIETARIOS'),
         'consultar_propietarios_predio_id' => env('SGC_CONSULTAR_PROPIETARIOS_PREDIO_ID'),
+        'consultar_tramite_id' => env('SGC_CONSULTAR_TRAMITE_ID'),
         'consultar_tramite_aviso' => env('SGC_CONSULTAR_TRAMITE_AVISO'),
         'consultar_tramite_aviso_aclaratorio' => env('SGC_CONSULTAR_TRAMITE_AVISO_ACLARATORIO'),
         'consultar_certificado_aviso' => env('SGC_CONSULTAR_CERTIFICADO_AVISO'),
@@ -74,6 +76,17 @@ return [
     'sistema_tramites' => [
         'token' => env('SISTEMA_TRAMITES_TOKEN'),
         'acreditar_pago' => env('SISTEMA_TRAMITES_ACREDITAR_PAGO'),
+        'crear_tramite' => env('SISTEMA_TRAMITES_CREAR_TRAMITE'),
+        'consultar_servicios' => env('SISTEMA_TRAMITES_CONSULTAR_SERVICIOS'),
+        'consultar_tramites' => env('SISTEMA_TRAMITES_CONSULTAR_TRAMITES'),
+    ],
+
+    'sistema_rpp' => [
+        'token' => env('SISTEMA_RPP_TOKEN'),
+        'consultar_folio_real' => env('SISTEMA_RPP_CONSULTAR_FOLIO_REAL'),
+        'consultar_antecedentes' => env('SISTEMA_RPP_CONSULTAR_ANTECEDENTES'),
+        'generar_certificado_gravamen_pdf' => env('SISTEMA_RPP_GENERAR_CERTIFICADO_GRAVAMEN_PDF'),
+        'consultar_certificados' => env('SISTEMA_RPP_CONSULTAR_CERTIFICADOS_GRAVAMEN'),
     ],
 
 ];

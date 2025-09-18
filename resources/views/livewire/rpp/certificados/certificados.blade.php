@@ -25,9 +25,9 @@
                 <select class="bg-white rounded-full text-sm" wire:model.live="estado">
 
                     <option value="" selected>Estado</option>
-                    <option value="activo">Activo</option>
-                    <option value="cancelado">Cancelado</option>
-                    <option value="caducado">Caducado</option>
+                    <option value="nuevo">Nuevo</option>
+                    <option value="elaborado,finalizado,concluido">Elaborado</option>
+                    <option value="rechazado">Rechazado</option>
 
                 </select>
 
@@ -35,13 +35,7 @@
 
             <div class="flex-col gap-1 p-1 space-y-1">
 
-                <input type="number" wire:model.live.debounce.500ms="localidad" placeholder="Localidad" class="bg-white rounded-full text-sm w-24">
-
-                <input type="number" wire:model.live.debounce.500ms="oficina" placeholder="Oficina" class="bg-white rounded-full text-sm w-24">
-
-                <input type="number" wire:model.live.debounce.500ms="tipo_predio" placeholder="T. Predio" class="bg-white rounded-full text-sm w-24">
-
-                <input type="number" wire:model.live.debounce.500ms="numero_registro" placeholder="# Registro" class="bg-white rounded-full text-sm w-24">
+                <input type="number" wire:model.live.debounce.500ms="folio_real" placeholder="Folio real" class="bg-white rounded-full text-sm w-24">
 
                 <select class="bg-white rounded-full text-sm" wire:model.live="pagination">
 
@@ -64,12 +58,11 @@
 
             <x-slot name="head">
 
-                <x-table.heading>Tipo</x-table.heading>
-                <x-table.heading>Año</x-table.heading>
-                <x-table.heading>Folio</x-table.heading>
-                <x-table.heading>estado</x-table.heading>
-                <x-table.heading>Cuenta predial</x-table.heading>
+                <x-table.heading>Estado</x-table.heading>
+                <x-table.heading>Folio real</x-table.heading>
+                <x-table.heading>Distrito</x-table.heading>
                 <x-table.heading>Tramite</x-table.heading>
+                <x-table.heading>Tipo</x-table.heading>
                 <x-table.heading>Acciones</x-table.heading>
 
             </x-slot>
@@ -82,51 +75,33 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Tipo</span>
-
-                            {{ $certificado['tipo'] }}
-
-                        </x-table.cell>
-
-
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Año</span>
-
-                            {{ $certificado['año'] }}
-
-                        </x-table.cell>
-
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Folio</span>
-
-                            {{ $certificado['folio'] }}
-
-                        </x-table.cell>
-
-                        <x-table.cell>
-
                             <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Estado</span>
 
-                            @php
+                            @if(in_array($certificado['estado'], ['elaborado', 'finalizado', 'concluido']))
 
-                                $color = [
-                                    'activo' => 'green-400',
-                                    'cancelado' => 'red-400',
-                                ][$certificado['estado']] ?? 'gray-400';
+                                <span class="bg-green-400 py-1 px-2 rounded-full text-white text-xs">Elaborado</span>
 
-                            @endphp
+                            @else
 
-                            <span class="bg-{{ $color }} py-1 px-2 rounded-full text-white text-xs">{{ ucfirst($certificado['estado']) }}</span>
+                                <span class="bg-blue-400 py-1 px-2 rounded-full text-white text-xs">Nuevo</span>
+
+                            @endif
 
                         </x-table.cell>
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Cuenta predial</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Folio real</span>
 
-                            {{ $certificado['localidad'] }}- {{ $certificado['oficina'] }}- {{ $certificado['tipo_predio'] }}- {{ $certificado['numero_registro'] }}
+                            {{ $certificado['folio_real'] ?? 'Pendiente' }}
+
+                        </x-table.cell>
+
+                        <x-table.cell>
+
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Distrito</span>
+
+                            {{ $certificado['distrito'] }}
 
                         </x-table.cell>
 
@@ -134,7 +109,15 @@
 
                             <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Servicio</span>
 
-                            {{ $certificado['tramite_año'] }}-{{ $certificado['tramite_folio'] }}-11
+                            {{ $certificado['año'] }}-{{ $certificado['tramite'] }}-67
+
+                        </x-table.cell>
+
+                        <x-table.cell>
+
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Tipo</span>
+
+                            {{ $certificado['servicio_nombre'] }}
 
                         </x-table.cell>
 
@@ -166,7 +149,7 @@
                                         Ver
                                     </button>
 
-                                    @if($certificado['estado'] === 'activo')
+                                    @if(in_array($certificado['estado'], ['elaborado', 'finalizado', 'concluido']))
 
                                         <button
                                             wire:click="reimprimirCertificado({{ json_encode($certificado) }})"
@@ -175,26 +158,6 @@
                                             role="menuitem">
                                             Imprimir
                                         </button>
-
-                                        <button
-                                            wire:click="abrirModalRequerimiento({{ json_encode($certificado) }})"
-                                            wire:loading.attr="disabled"
-                                            class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                                            role="menuitem">
-                                            Hacer requerimiento
-                                        </button>
-
-                                        @if(count($certificado['requerimientos']))
-
-                                            <button
-                                                wire:click="abrirModalVerRequerimientos({{ json_encode($certificado) }})"
-                                                wire:loading.attr="disabled"
-                                                class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                                                role="menuitem">
-                                                Ver requerimientos
-                                            </button>
-
-                                        @endif
 
                                     @endif
 
@@ -297,7 +260,7 @@
 
                     <div class="rounded-lg bg-gray-100 py-1 px-2">
 
-                        <p>{{ $certificadoSeleccionado['tipo'] }}-{{ $certificadoSeleccionado['año'] }}-{{ $certificadoSeleccionado['folio'] }}</p>
+                        <p>{{ $certificadoSeleccionado['servicio_nombre'] }}</p>
 
                     </div>
 
@@ -309,13 +272,13 @@
 
                     <div class="rounded-lg bg-gray-100 py-1 px-2">
 
-                        <p><strong>Trámite:</strong> {{ $certificadoSeleccionado['tramite_año'] }}-{{ $certificadoSeleccionado['tramite_folio'] }}-11</p>
+                        <p><strong>Trámite:</strong> {{ $certificadoSeleccionado['año'] }}-{{ $certificadoSeleccionado['tramite'] }}-67</p>
 
                     </div>
 
                     <div class="rounded-lg bg-gray-100 py-1 px-2">
 
-                        <p><strong>Predio:</strong> {{ $certificadoSeleccionado['localidad'] }}-{{ $certificadoSeleccionado['oficina'] }}-{{ $certificadoSeleccionado['tipo_predio'] }}-{{ $certificadoSeleccionado['numero_registro'] }}</p>
+                        <p><strong>Folio real:</strong> {{ $certificadoSeleccionado['folio_real'] }}</p>
 
                     </div>
 
@@ -343,132 +306,6 @@
                     wire:click="$set('modal', false)"
                     wire:loading.attr="disabled"
                     wire:target="$set('modal'), false">
-                    Cerrar
-                </x-button-red>
-
-            </div>
-
-        </x-slot>
-
-    </x-dialog-modal>
-
-    <x-dialog-modal wire:model="modalRequerimiento" maxWidth="sm">
-
-        <x-slot name="title">
-            Hacer Requerimiento
-        </x-slot>
-
-        <x-slot name="content">
-
-            <x-input-group for="observacion" label="Observación" :error="$errors->first('observacion')">
-
-                <textarea class="bg-white rounded text-xs w-full " rows="4" wire:model="observacion" placeholder="Se lo más especifico sobre la corrección que solicitas"></textarea>
-
-            </x-input-group>
-
-            <div class="mt-5">
-
-                <div class="mb-5">
-
-                    <x-filepond wire:model.live="documento" accept="['application/pdf']"/>
-
-                </div>
-
-                <div>
-
-                    @error('documento') <span class="error text-sm text-red-500">{{ $message }}</span> @enderror
-
-                </div>
-
-            </div>
-
-        </x-slot>
-
-        <x-slot name="footer">
-
-            <div class="flex gap-3">
-
-                <x-button-blue
-                    wire:click="hacerRequerimiento"
-                    wire:loading.attr="disabled"
-                    wire:target="hacerRequerimiento">
-                    Solicitar corrección
-                </x-button-blue>
-
-                <x-button-red
-                    wire:click="$set('modalRequerimiento', false)"
-                    wire:loading.attr="disabled"
-                    wire:target="$set('modalRequerimiento', false">
-                    Cerrar
-                </x-button-red>
-
-            </div>
-
-        </x-slot>
-
-    </x-dialog-modal>
-
-    <x-dialog-modal wire:model="modalVerRequerimiento" maxWidth="sm">
-
-        <x-slot name="title">
-
-            Requerimientos
-
-        </x-slot>
-
-        <x-slot name="content">
-
-            @if(isset($certificadoSeleccionado['requerimientos']))
-
-                @forelse ($certificadoSeleccionado['requerimientos'] as $requerimiento)
-
-                    <div class="bg-gray-100 rounded-lg p-2 mb-2">
-
-                        <div>
-                            {{ $requerimiento['descripcion'] }}
-                        </div>
-
-                        <div class="text-xs text-right">
-
-                            @if(isset($requerimiento['usuario_stl']))
-
-                                <p>{{ $requerimiento['usuario_stl'] }}</p>
-
-                            @else
-
-                                <p>{{ $requerimiento['creado_por'] }}</p>
-
-                            @endif
-
-                            <p>{{ $requerimiento['created_at'] }}</p>
-
-                        </div>
-
-                    </div>
-
-                @empty
-
-                    <div class="bg-gray-100 rounded-lg p-4 text-center">
-
-                        <p>No hay requermientos</p>
-
-                    </div>
-
-                @endforelse
-
-            @endif
-
-        </x-slot>
-
-        <x-slot name="footer">
-
-            <div class="flex gap-3">
-
-                <x-button-red
-                    wire:click="$toggle('modalVerRequerimiento')"
-                    wire:loading.attr="disabled"
-                    wire:target="$toggle('modalVerRequerimiento')"
-                    type="button">
                     Cerrar
                 </x-button-red>
 

@@ -84,6 +84,8 @@ class Fideicomisos extends Component
             $this->aviso->actualizado_por = auth()->id();
             $this->aviso->save();
 
+            $this->aviso->audits()->latest()->first()->update(['tags' => 'Guardó fideicomiso']);
+
             $this->dispatch('mostrarMensaje', ['success', "La información se actualizó con éxito."]);
 
         } catch (\Throwable $th) {

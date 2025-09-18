@@ -174,6 +174,8 @@ class Archivo extends Component
                 'estado' => 'cerrado'
             ]);
 
+            $this->aviso->audits()->latest()->first()->update(['tags' => 'Cerró aviso']);
+
             return to_route('mis_avisos');
 
         } catch (GeneralException $ex) {
@@ -225,6 +227,8 @@ class Archivo extends Component
 
                 $this->aviso->actualizado_por = auth()->id();
                 $this->aviso->save();
+
+                $this->aviso->audits()->latest()->first()->update(['tags' => 'Guardó archivo']);
 
                 $this->dispatch('mostrarMensaje', ['success', "La información se guardó con éxito."]);
 

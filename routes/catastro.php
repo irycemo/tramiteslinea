@@ -25,7 +25,7 @@ Route::group([], function(){
 
     Route::get('tramite_nuevo_catastro', NuevoTramite::class)->middleware('permission:Trámite nuevo catastro')->name('tramite_nuevo_catastro');
 
-    Route::get('certificados', Certificados::class)->middleware('permission:Certificados')->name('certificados');
+    Route::get('certificados_catastro', Certificados::class)->middleware('permission:Certificados catastro')->name('certificados_catastro');
 
     Route::get('calculadora_isai', CalculadoraIsai::class)->middleware('permission:Certificados')->name('calculadora_isai');
 

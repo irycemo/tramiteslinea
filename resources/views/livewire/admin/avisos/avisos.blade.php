@@ -2,11 +2,29 @@
 
     <div class="mb-6">
 
-        <h1 class="text-3xl tracking-widest py-3 px-6 text-gray-600 rounded-xl border-b-2 border-gray-500 font-thin mb-6  bg-white">Revisión de aviso</h1>
+        <h1 class="text-3xl tracking-widest py-3 px-6 text-gray-600 rounded-xl border-b-2 border-gray-500 font-thin mb-6  bg-white">Avisos</h1>
 
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center ">
 
-            <div class="gap-2 space-y-1">
+            <div class="">
+
+                <select class="bg-white rounded-full text-sm" wire:model.live="filters.tipo">
+                    <option value="">Tipo</option>
+                    <option value="revision">Revisión</option>
+                    <option value="aclaratorio">Aclaratorio</option>
+
+                </select>
+
+                <select class="bg-white rounded-full text-sm" wire:model.live="filters.entidad_id">
+
+                    <option value="">Entidad</option>
+                    @foreach ($entidades as $entidad)
+
+                        <option value="{{ $entidad->id }}">{{ $entidad->numero_notaria ? 'Notaria ' . $entidad->numero_notaria : '' }}{{ $entidad->dependencia }}</option>
+
+                    @endforeach
+
+                </select>
 
                 <select class="bg-white rounded-full text-sm" wire:model.live="filters.año">
 
@@ -18,9 +36,9 @@
 
                 </select>
 
-                <input type="number" wire:model.live.debounce.500mse="filters.folio" placeholder="Folio" class="bg-white rounded-full text-sm">
+                <input type="number" wire:model.live.debounce.500mse="filters.folio" placeholder="Folio" class="bg-white rounded-full text-sm w-24">
 
-                <input type="number" wire:model.live.debounce.500mse="filters.usuario" placeholder="Usuario" class="bg-white rounded-full text-sm">
+                <input type="number" wire:model.live.debounce.500mse="filters.usuario" placeholder="Usuario" class="bg-white rounded-full text-sm w-24">
 
                 <select class="bg-white rounded-full text-sm" wire:model.live="pagination">
 
@@ -31,18 +49,17 @@
 
                 </select>
 
-            </div>
+                <div class="flex gap-1 mt-2">
 
-            <div class="">
+                    <input type="number" wire:model.live.debounce.500ms="filters.localidad" placeholder="Localidad" class="bg-white rounded-full text-sm w-24">
 
-                <a href="{{ route('revision') }}" class="bg-gray-500 hover:shadow-lg hover:bg-gray-700 text-sm py-2 px-4 text-white rounded-full hidden md:block items-center justify-center focus:outline-gray-400 focus:outline-offset-2">
+                    <input type="number" wire:model.live.debounce.500ms="filters.oficina" placeholder="Oficina" class="bg-white rounded-full text-sm w-24">
 
-                    <img wire:loading wire:target="abrirModalCrear" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
-                    Agregar nueva revision
+                    <input type="number" wire:model.live.debounce.500ms="filters.t_predio" placeholder="T. Predio" class="bg-white rounded-full text-sm w-24">
 
-                </a>
+                    <input type="number" wire:model.live.debounce.500ms="filters.registro" placeholder="# Registro" class="bg-white rounded-full text-sm w-24">
 
-                <a href="{{ route('revision') }}" class="bg-gray-500 hover:shadow-lg hover:bg-gray-700 float-right text-sm py-2 px-4 text-white rounded-full md:hidden focus:outline-gray-400 focus:outline-offset-2">+</a>
+                </div>
 
             </div>
 
@@ -56,6 +73,8 @@
 
             <x-slot name="head">
 
+                <x-table.heading sortable wire:click="sortBy('tipo')" :direction="$sort === 'tipo' ? $direction : null" >Tipo</x-table.heading>
+                <x-table.heading sortable wire:click="sortBy('entidad_id')" :direction="$sort === 'entidad_id' ? $direction : null" >Entidad</x-table.heading>
                 <x-table.heading sortable wire:click="sortBy('año')" :direction="$sort === 'año' ? $direction : null" >Año</x-table.heading>
                 <x-table.heading sortable wire:click="sortBy('folio')" :direction="$sort === 'folio' ? $direction : null" >Folio</x-table.heading>
                 <x-table.heading sortable wire:click="sortBy('usuario')" :direction="$sort === 'usuario' ? $direction : null" >Usuario</x-table.heading>
@@ -73,6 +92,22 @@
                 @forelse ($this->avisos as $aviso)
 
                     <x-table.row wire:loading.class.delaylongest="opacity-50" wire:key="row-{{ $aviso->id }}">
+
+                        <x-table.cell>
+
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Tipo</span>
+
+                            {{ ucfirst($aviso->tipo) }}
+
+                        </x-table.cell>
+
+                        <x-table.cell>
+
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Notaria</span>
+
+                            <span class="whitespace-nowrap">{{ $entidad->numero_notaria ? 'Notaria ' . $entidad->numero_notaria : '' }}{{ $entidad->dependencia }}</span>
+
+                        </x-table.cell>
 
                         <x-table.cell>
 
@@ -161,32 +196,16 @@
 
                                 <div x-cloak x-show="open_drop_down" x-on:click="open_drop_down=false" x-on:click.away="open_drop_down=false" class="z-50 origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
 
-                                    @if($aviso->estado === 'nuevo')
+                                    <a
+                                        href="{{ route('ver_aviso', $aviso->id) }}"
+                                        class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                                        role="menuitem">
 
-                                        <a
-                                            href="{{ route('revision', $aviso->id) }}"
-                                            class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                                            role="menuitem">
+                                        <span>Ver</span>
 
-                                            <span>Ver</span>
+                                    </a>
 
-                                        </a>
-
-                                        @if($aviso->avaluo_spe)
-
-                                            <button
-                                                wire:click="reactivarAvaluo({{ $aviso->id }})"
-                                                wire:loading.attr="disabled"
-                                                class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                                                role="menuitem">
-                                                Reactivar avalúo
-                                            </button>
-
-                                        @endif
-
-                                    @endif
-
-                                    @if($aviso->estado != 'operado')
+                                    {{-- @if($aviso->estado != 'operado')
 
                                         <button
                                             wire:click="reactivarAviso({{ $aviso->id }})"
@@ -204,7 +223,7 @@
                                             Reactivar aviso y avalúo
                                         </button>
 
-                                    @endif
+                                    @endif --}}
 
                                     <button
                                         wire:click="imprimirAviso({{ $aviso->id }})"
@@ -234,7 +253,7 @@
 
                     <x-table.row>
 
-                        <x-table.cell colspan="10">
+                        <x-table.cell colspan="15">
 
                             <div class="bg-white text-gray-500 text-center p-5 rounded-full text-lg">
 
@@ -254,7 +273,7 @@
 
                 <x-table.row>
 
-                    <x-table.cell colspan="10" class="bg-gray-50">
+                    <x-table.cell colspan="15" class="bg-gray-50">
 
                         {{ $this->avisos->links()}}
 

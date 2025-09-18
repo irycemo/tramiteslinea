@@ -366,6 +366,8 @@ class ActoEscritura extends Component
             $this->aviso->creado_por = auth()->id();
             $this->aviso->save();
 
+            $this->aviso->audits()->latest()->first()->update(['tags' => 'Guardó acto de escritura']);
+
             $this->dispatch('cargarAviso', $this->aviso->id);
 
             $this->dispatch('mostrarMensaje', ['success', "El aviso se guardó correctamente."]);
@@ -390,6 +392,8 @@ class ActoEscritura extends Component
 
             $this->aviso->actualizado_por = auth()->id();
             $this->aviso->save();
+
+            $this->aviso->audits()->latest()->first()->update(['tags' => 'actualizó acto de escritura']);
 
             $this->dispatch('mostrarMensaje', ['success', "El aviso se actualizó correctamente."]);
 

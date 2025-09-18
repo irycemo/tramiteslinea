@@ -65,6 +65,8 @@ class IdentificacionInmueble extends Component
                 $this->aviso->actualizado_por = auth()->id();
                 $this->aviso->save();
 
+                $this->aviso->audits()->latest()->first()->update(['tags' => 'Guardó identificacón del inmueble']);
+
             });
 
             $this->dispatch('mostrarMensaje', ['success', "La información se actualizó con éxito."]);

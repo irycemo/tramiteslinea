@@ -22,13 +22,13 @@
 
                     <div class="flex gap-2">
 
-                        <select class="bg-white rounded-full text-sm" wire:model.live="tipo_servicio">
+                        {{-- <select class="bg-white rounded-full text-sm" wire:model.live="tipo_servicio">
 
                             <option value="ordinario" selected>Ordinario</option>
                             <option value="urgente">Urgente</option>
                             <option value="extra_urgente">Extra urgente</option>
 
-                        </select>
+                        </select> --}}
 
                         @if(auth()->user()->hasRole('Dependencia'))
 

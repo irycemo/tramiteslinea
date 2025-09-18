@@ -51,6 +51,12 @@ class ActoEscritura extends Component
 
     public function consultarAvaluo(){
 
+        $this->validate([
+            'año_avaluo' => 'required',
+            'folio_avaluo' => 'required',
+            'usuario_avaluo' => 'required',
+        ]);
+
         try {
 
             $data = (new PeritosExternosService())->consultarAvaluo($this->año_avaluo, $this->folio_avaluo, $this->usuario_avaluo);
@@ -319,6 +325,8 @@ class ActoEscritura extends Component
             $this->aviso->creado_por = auth()->id();
             $this->aviso->save();
 
+            $this->aviso->audits()->latest()->first()->update(['tags' => 'Guardó acto de escritura']);
+
             $this->dispatch('cargarAviso', $this->aviso->id);
 
             $this->dispatch('mostrarMensaje', ['success', "El aviso se guardó correctamente."]);
@@ -343,6 +351,8 @@ class ActoEscritura extends Component
 
             $this->aviso->actualizado_por = auth()->id();
             $this->aviso->save();
+
+            $this->aviso->audits()->latest()->first()->update(['tags' => 'Actualizó acto de escritura']);
 
             $this->dispatch('mostrarMensaje', ['success', "El aviso se actualizó correctamente."]);
 

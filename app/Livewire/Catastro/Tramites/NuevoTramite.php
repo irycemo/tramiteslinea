@@ -62,7 +62,7 @@ class NuevoTramite extends Component
 
     }
 
-    public function updatedTipoServicio(){
+    /* public function updatedTipoServicio(){
 
         if($this->tipo_servicio != 'ordinario' && $this->servicioSeleccionado['urgente'] === '0.00'){
 
@@ -78,7 +78,7 @@ class NuevoTramite extends Component
 
         $this->total = count($this->predios) * $costo;
 
-    }
+    } */
 
     public function resetearTodo(){
 
@@ -210,9 +210,9 @@ class NuevoTramite extends Component
 
         try {
 
-            $servicios = (new SGCService())->consultarServicios(['DM31', 'DM32', 'DM34', 'DM35', 'D728', 'D729', 'D730']);
+            $servicios = (new SGCService())->consultarServicios(['DM32', 'DM34', 'DM35', 'D728', 'D729', 'D730', 'DM31']);
 
-            $this->servicios = collect($servicios['data']);
+            $this->servicios = collect($servicios['data'])->sortBy('nombre');
 
         } catch (GeneralException $ex) {
 

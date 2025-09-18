@@ -157,6 +157,41 @@ class SGCService {
 
     }
 
+    public function consultarTramieId(int $id):array
+    {
+
+        $response = Http::withToken(config('services.sgc.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.sgc.consultar_tramite_id'),
+                                [
+                                    'id' => $id,
+                                ]
+                            );
+
+        if($response->status() !== 200){
+
+            Log::error("Error al consultar trámite. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al consultar trámite.");
+
+        }else{
+
+            return json_decode($response, true)['data'];
+
+        }
+
+    }
+
     public function consultarTramieAviso(int $año, int $folio, int $usuario, int $sgc_predio):array
     {
 

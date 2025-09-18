@@ -41,7 +41,7 @@
                     type="button"
                     class="bg-blue-400 mb-3 hover:shadow-lg text-white font-bold px-4 py-2 rounded text-xs hover:bg-blue-700 focus:outline-none flex items-center justify-center focus:outline-blue-400 focus:outline-offset-2">
 
-                    <img wire:loading wire:target="consultarAvaluo" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                    <img wire:loading wire:target="consultarAvaluo" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
                     Consultar avalúo
 
@@ -167,13 +167,13 @@
 
             </x-input-group>
 
-            <x-input-group for="aviso.numero_escritura" label="Número de escritura" :error="$errors->first('aviso.numero_escritura')" class="w-fit">
+            <x-input-group for="aviso.numero_escritura" label="Número de escritura" :error="$errors->first('aviso.numero_escritura')" class="lg:w-fit w-full">
 
                 <x-input-text type="number" id="aviso.numero_escritura" wire:model="aviso.numero_escritura" />
 
             </x-input-group>
 
-            <x-input-group for="aviso.volumen_escritura" label="Volumen" :error="$errors->first('aviso.volumen_escritura')" class="w-fit">
+            <x-input-group for="aviso.volumen_escritura" label="Volumen" :error="$errors->first('aviso.volumen_escritura')" class="lg:w-fit w-full">
 
                 <x-input-text type="number" id="aviso.volumen_escritura" wire:model="aviso.volumen_escritura" />
 
@@ -191,7 +191,7 @@
 
                 </x-input-group>
 
-                <x-input-group for="aviso.fecha_otorgamiento" label="Fecha de otorgamiento" :error="$errors->first('aviso.fecha_otorgamiento')" class="w-fit">
+                <x-input-group for="aviso.fecha_otorgamiento" label="Fecha de otorgamiento" :error="$errors->first('aviso.fecha_otorgamiento')" class="lg:w-fit w-full">
 
                     <x-input-text type="date" id="aviso.fecha_otorgamiento" wire:model="aviso.fecha_otorgamiento" />
 
@@ -207,7 +207,7 @@
 
                 </x-input-group>
 
-                <x-input-group for="aviso.fecha_firma" label="Fecha de firma" :error="$errors->first('aviso.fecha_firma')" class="w-fit">
+                <x-input-group for="aviso.fecha_firma" label="Fecha de firma" :error="$errors->first('aviso.fecha_firma')" class="lg:w-fit w-full">
 
                     <x-input-text type="date" id="aviso.fecha_firma" wire:model="aviso.fecha_firma" />
 

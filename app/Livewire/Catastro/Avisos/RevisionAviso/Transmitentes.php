@@ -44,6 +44,12 @@ class Transmitentes extends Component
 
     public function buscarCertificado(){
 
+        $this->validate([
+            'año' => 'required',
+            'folio' => 'required',
+            'usuario' => 'required',
+        ]);
+
         try {
 
             $data = (new SGCService())->consultarPropietarios($this->año, $this->folio, $this->usuario, $this->aviso->predio_sgc);

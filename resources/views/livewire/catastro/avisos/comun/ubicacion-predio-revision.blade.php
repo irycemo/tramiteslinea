@@ -2,7 +2,7 @@
 
     <h4 class="text-lg mb-5 text-center">Ubicación del predio</h4>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3 items-start">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3 items-end">
 
         <x-input-group for="aviso.predio.tipo_asentamiento" label="Tipo de asentamiento" :error="$errors->first('aviso.predio.tipo_asentamiento')" class="w-full">
 

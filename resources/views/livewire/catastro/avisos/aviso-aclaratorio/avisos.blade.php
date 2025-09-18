@@ -6,7 +6,7 @@
 
         <div class="flex justify-between items-center ">
 
-            <div class="gap-2">
+            <div class="gap-2  space-y-1">
 
                 <select class="bg-white rounded-full text-sm" wire:model.live="filters.año">
 

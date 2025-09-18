@@ -80,4 +80,39 @@ class PeritosExternosService{
 
     }
 
+    public function generarAvaluoPdf(int $aviso_id):array
+    {
+
+        $response = Http::withToken(config('services.peritos_externos.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.peritos_externos.generar_avaluo_pdf'),
+                                [
+                                    'id' => $aviso_id,
+                                ]
+                            );
+
+        if($response->status() !== 200){
+
+            Log::error("Error al generar pdf del avalúo. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al generar pdf del avalúo.");
+
+        }else{
+
+            return json_decode($response, true);
+
+        }
+
+    }
+
 }

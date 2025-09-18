@@ -228,6 +228,8 @@ class Archivo extends Component
                 'estado' => 'cerrado'
             ]);
 
+            $this->aviso->audits()->latest()->first()->update(['tags' => 'Cerro aviso']);
+
             return to_route('mis_revisiones');
 
         } catch (GeneralException $ex) {

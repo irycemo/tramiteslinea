@@ -44,6 +44,14 @@ class Avisos extends Component
 
         $this->modelo_editar = $aviso;
 
+        if(!$this->modelo_editar->traslado_sgc){
+
+            $this->dispatch('mostrarMensaje', ['warning', 'No hay rechazos']);
+
+            return;
+
+        }
+
         try {
 
             $this->rechazos = (new SGCService())->consultarRechazos($this->modelo_editar->traslado_sgc)['data'];
