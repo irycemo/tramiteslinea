@@ -48,9 +48,7 @@ class AcreditarPagoController extends Controller
 
             }
 
-            return response()->json([
-                'result' => 'success',
-            ], 200);
+            return redirect('dashboard');
 
         } catch (GeneralException $ex) {
 
