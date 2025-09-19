@@ -13,6 +13,8 @@ class AcreditarPagoController extends Controller
     public function __invoke(Request $request)
     {
 
+        info($request);
+
         $validated['linea_de_captura'] = $request['c_referencia'];
 
         try {
