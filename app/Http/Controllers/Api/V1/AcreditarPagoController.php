@@ -16,7 +16,12 @@ class AcreditarPagoController extends Controller
 
         try {
 
-            $validated = $request->validate(['c_referencia' => 'required']);
+            $validated = $request->validate([
+                'referencia' => 'required',
+                'folio_acreditacion' => 'required',
+                'estatus' => 'required',
+                'forma_pago' => 'required'
+            ]);
 
             $response = Http::withToken(config('services.sgc.token'))
                             ->accept('application/json')
@@ -24,7 +29,7 @@ class AcreditarPagoController extends Controller
                             ->post(
                                 config('services.sgc.acreditar_pago'),
                                 [
-                                    'linea_captura' => $validated['c_referencia'],
+                                    'linea_captura' => $validated['referencia'],
                                 ]
                             );
 
@@ -36,19 +41,26 @@ class AcreditarPagoController extends Controller
                             ->post(
                                 config('services.sistema_tramites.acreditar_pago'),
                                 [
-                                    'linea_captura' => $validated['c_referencia'],
+                                    'linea_captura' => $validated['referencia'],
                                 ]
                             );
 
+
+                if($response->status() !== 200){
+
+                    info($response);
+
+                    throw new GeneralException('Error al validar pago en línea.');
+
+                }
+
             }
 
-            if($response->status() !== 200){
+            return redirect('login');
 
-                throw new GeneralException('Error al validar pago en línea.');
-
-            }
-
-            return redirect('dashboard');
+            return response()->json([
+                'result' => 'success',
+            ], 200);
 
         } catch (GeneralException $ex) {
 
