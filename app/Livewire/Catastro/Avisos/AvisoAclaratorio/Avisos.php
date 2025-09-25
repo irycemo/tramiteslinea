@@ -128,7 +128,7 @@ class Avisos extends Component
 
         $this->años = Constantes::AÑOS;
 
-        $this->año = now()->format('Y');
+        $this->filters['año'] = now()->format('Y');
 
     }
 
@@ -140,7 +140,7 @@ class Avisos extends Component
                         ->when($this->filters['folio'], fn($q, $folio) => $q->where('folio', $folio))
                         ->when($this->filters['usuario'], fn($q, $usuario) => $q->where('usuario', $usuario))
                         ->where('entidad_id', auth()->user()->entidad_id)
-                        ->where('tipo', 'revision')
+                        ->where('tipo', 'aclaratorio')
                         ->orderBy($this->sort, $this->direction)
                         ->paginate($this->pagination);
 

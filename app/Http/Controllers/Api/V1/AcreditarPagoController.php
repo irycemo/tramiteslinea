@@ -3,25 +3,22 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Exceptions\GeneralException;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\AcreditarPagoRequest;
 use Illuminate\Support\Facades\Http;
 
 class AcreditarPagoController extends Controller
 {
 
-    public function __invoke(Request $request)
+    public function __invoke(AcreditarPagoRequest $request)
     {
 
-        try {
+        $validated = $request->validated();
 
-            $validated = $request->validate([
-                'referencia' => 'required',
-                'folio_acreditacion' => 'required',
-                'estatus' => 'required',
-                'forma_pago' => 'required'
-            ]);
+        info($validated);
+
+        try {
 
             $response = Http::withToken(config('services.sgc.token'))
                             ->accept('application/json')

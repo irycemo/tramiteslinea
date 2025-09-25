@@ -192,7 +192,7 @@ class Revisiones extends Component
 
         $this->años = Constantes::AÑOS;
 
-        $this->año = now()->format('Y');
+        $this->filters['año'] = now()->format('Y');
 
     }
 
@@ -204,7 +204,7 @@ class Revisiones extends Component
                         ->when($this->filters['folio'], fn($q, $folio) => $q->where('folio', $folio))
                         ->when($this->filters['usuario'], fn($q, $usuario) => $q->where('usuario', $usuario))
                         ->where('entidad_id', auth()->user()->entidad_id)
-                        ->where('tipo', 'aclaratorio')
+                        ->where('tipo', 'revision')
                         ->orderBy($this->sort, $this->direction)
                         ->paginate($this->pagination);
 
