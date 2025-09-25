@@ -53,6 +53,8 @@ class AcreditarPagoController extends Controller
 
         } catch (GeneralException $ex) {
 
+            Log::error("Error al acreditar pago desde servicio de pago en línea. " . $ex);
+
             Log::error("Error al acreditar pago desde servicio de pago en línea.");
 
             return response()->json([
