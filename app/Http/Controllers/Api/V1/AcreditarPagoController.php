@@ -15,6 +15,8 @@ class AcreditarPagoController extends Controller
 
         $validated = $request->validated();
 
+        info($validated);
+
         try {
 
             $response = Http::withToken(config('services.sgc.token'))
@@ -42,7 +44,7 @@ class AcreditarPagoController extends Controller
 
                 if($response->status() !== 200){
 
-                    Log::warning("Error al acreditar pago línea de captura: " . $validated['referencia']);
+                    Log::warning("Error al acreditar pago, línea de captura: " . $validated['referencia']);
 
                 }
 

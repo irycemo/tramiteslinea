@@ -33,9 +33,20 @@ trait ModelosTrait{
 
                 if(is_null($value)) continue;
 
-                $model->{$key} = trim($value);
+                if(is_string($value)){
 
-                $model->{$key} = $value === '' ? null : $value;
+                    if($value === ''){
+
+                        $model->{$key} = null;
+
+                    }else{
+
+                        $model->{$key} = trim($value);
+
+                    }
+
+                }
+
             }
 
         });
@@ -46,9 +57,20 @@ trait ModelosTrait{
 
                 if(is_null($value)) continue;
 
-                $model->{$key} = trim($value);
+                if(is_string($value)){
 
-                $model->{$key} = $value === '' ? null : $value;
+                    if($value === ''){
+
+                        $model->{$key} = null;
+
+                    }else{
+
+                        $model->{$key} = trim($value);
+
+                    }
+
+                }
+
             }
 
         });

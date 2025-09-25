@@ -55,6 +55,18 @@ class Archivo extends Component
 
     public function revisarAvisoCompleto(){
 
+        if(!$this->aviso->tipo_escritura){
+
+            throw new GeneralException("Debe ingresar la información de Acto / Escritura.");
+
+        }
+
+        if(!$this->aviso->cantidad_tramitada){
+
+            throw new GeneralException("Debe ingresar la información de identificación del inmueble.");
+
+        }
+
         if(!$this->aviso->predio->colindancias->count()){
 
             throw new GeneralException("Debe ingresar las colindancias.");
@@ -71,25 +83,23 @@ class Archivo extends Component
 
         }
 
-        if(!$this->aviso->predio->adquirientes()->count()){
-
-            throw new GeneralException("Debe ingresar la información de adquirientes.");
-
-        }
-
         if(!$this->aviso->archivo()->first()){
 
             throw new GeneralException("Debe subir el archivo.");
 
         }
 
-        if($this->aviso->aviso_id){
+        if($this->aviso->predio->adquirientes()->count()){
 
-            $this->revisarPorcentajesConTransmitentes();
+            if($this->aviso->aviso_id){
 
-        }else{
+                $this->revisarPorcentajesConTransmitentes();
 
-            $this->revisarPorcentajesSinTransmitentes();
+            }else{
+
+                $this->revisarPorcentajesSinTransmitentes();
+
+            }
 
         }
 

@@ -42,7 +42,7 @@
 
                         <div class="block">
 
-                            <div class="w-full font-semibold">Ingresar aviso aclaratorio</div>
+                            <div class="w-full font-semibold">Ingresar revisión de aviso</div>
 
                         </div>
 

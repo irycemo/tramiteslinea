@@ -153,6 +153,20 @@ class PropietarioCrear extends Component
 
         }
 
+        if(is_string($value)){
+
+            if($value === ''){
+
+                $this->{$property} = null;
+
+            }else{
+
+                $this->{$property} = trim($value);
+
+            }
+
+        }
+
     }
 
     public function validaciones(){
