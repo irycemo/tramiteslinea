@@ -24,4 +24,5 @@ Route::middleware('auth:sanctum')->group(function () {
 
 });
 
-Route::post('acreditar_pago', AcreditarPagoController::class);
+
+Route::post('acreditar_pago', AcreditarPagoController::class)->name('acredita_pago');

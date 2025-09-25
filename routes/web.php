@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ManualController;
 use App\Http\Controllers\SetPasswordController;
-use App\Http\Controllers\AcreditarPagoController;
+use App\Http\Controllers\Api\V1\AcreditarPagoController;
 
 Route::get('/', function () {
     return redirect('login');
@@ -13,3 +13,5 @@ Route::get('setpassword/{email}', [SetPasswordController::class, 'create'])->nam
 Route::post('setpassword', [SetPasswordController::class, 'store'])->name('setpassword.store');
 
 Route::get('manual', ManualController::class)->name('manual');
+
+/* Route::post('api/v1/acreditar_pago', AcreditarPagoController::class)->name('acredita_pago'); */
