@@ -45,21 +45,13 @@ class AcreditarPagoController extends Controller
 
                     Log::info("Error al acreditar pago línea de captura: " . $validated['referencia']);
 
+                    info($response);
+
                 }
 
             }
 
             return redirect('login');
-
-        } catch (GeneralException $ex) {
-
-            Log::error("Error al acreditar pago desde servicio de pago en línea. " . $ex);
-
-            Log::error("Error al acreditar pago desde servicio de pago en línea.");
-
-            return response()->json([
-                'result' => 'error',
-            ], 500);
 
         } catch (\Throwable $th) {
 
