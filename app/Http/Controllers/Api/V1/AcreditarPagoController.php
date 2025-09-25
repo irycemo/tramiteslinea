@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Api\V1;
 
-use App\Exceptions\GeneralException;
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\AcreditarPagoRequest;
@@ -43,9 +42,7 @@ class AcreditarPagoController extends Controller
 
                 if($response->status() !== 200){
 
-                    Log::info("Error al acreditar pago línea de captura: " . $validated['referencia']);
-
-                    info($response);
+                    Log::warning("Error al acreditar pago línea de captura: " . $validated['referencia']);
 
                 }
 
