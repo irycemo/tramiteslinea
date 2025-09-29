@@ -26,7 +26,7 @@ class AcreditarPagoRequest extends FormRequest
             'folio_acreditacion' => 'required',
             'estatus' => 'required',
             'forma_pago' => 'required',
-            'tkn' => 'required',
+            'tkn' => 'nullable',
         ];
     }
 }
