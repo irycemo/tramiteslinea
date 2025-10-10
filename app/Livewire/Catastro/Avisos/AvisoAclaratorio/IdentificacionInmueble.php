@@ -8,6 +8,7 @@ use Livewire\Component;
 use Livewire\Attributes\On;
 use Livewire\WithFileUploads;
 use App\Constantes\Constantes;
+use App\Exceptions\GeneralException;
 use App\Traits\CoordenadasTrait;
 use App\Traits\ColindanciasTrait;
 use Illuminate\Support\Facades\DB;
@@ -68,11 +69,14 @@ class IdentificacionInmueble extends Component
 
         return [
             'aviso.cantidad_tramitada' => 'cantidad tramitada',
+            'aviso.predio.superficie_total_terreno' => 'superficie total de terreno'
         ] + $this->validationAttributesColindancias;
 
     }
 
     public function guardarCroquis(){
+
+        if(!$this->aviso->croquis && !$this->croquis) throw new GeneralException('Debe subir el croquis.');
 
         if($this->aviso->croquis){
 
@@ -136,6 +140,10 @@ class IdentificacionInmueble extends Component
             });
 
             $this->dispatch('mostrarMensaje', ['success', "La información se actualizó con éxito."]);
+
+        } catch (GeneralException $ex) {
+
+            $this->dispatch('mostrarMensaje', ['warning', $ex->getMessage()]);
 
         } catch (\Throwable $th) {
 

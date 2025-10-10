@@ -239,93 +239,93 @@
 
         @endif
 
-        @if($aviso->valor_isai)
+        <div class="no-break">
 
-            <div class="no-break">
+            <p class="separador">Croquis / I.S.A.I.</p>
 
-                <p class="separador">Croquis / I.S.A.I.</p>
+            <div class="informacion">
 
-                <div class="informacion">
+                <table style="width: 100%">
 
-                    <table style="width: 100%">
+                    <thead>
 
-                        <thead>
+                        <tr>
+                            <th style="text-align: center;">Croquis</th>
+                            <th style="text-align: center;">I.S.A.I.</th>
+                        </tr>
 
-                            <tr>
-                                <th style="text-align: center;">Croquis</th>
-                                <th style="text-align: center;">I.S.A.I.</th>
-                            </tr>
+                    </thead>
 
-                        </thead>
+                    <tbody>
 
-                        <tbody>
+                        <tr>
+                            <td style="padding-right: 20px;">
+                                <img class="imagenes" src="{{ public_path('avisos/' . $aviso->croquis->url) }}" alt="Croquis">
+                            </td>
 
-                            <tr>
-                                <td style="padding-right: 20px;">
-                                    <img class="imagenes" src="{{ public_path('avisos/' . $aviso->croquis->url) }}" alt="Croquis">
-                                </td>
+                            <td style="padding-right: 40px;">
 
-                                <td style="padding-right: 40px;">
+                                <table style="width: 100%">
 
-                                    <table style="width: 100%">
+                                    <thead>
 
-                                        <thead>
+                                        <tr>
+                                            <th style="text-align: left;"></th>
+                                            <th style="text-align: left;"></th>
+                                        </tr>
 
-                                            <tr>
-                                                <th style="text-align: left;"></th>
-                                                <th style="text-align: left;"></th>
-                                            </tr>
+                                    </thead>
 
-                                        </thead>
+                                    <tbody>
 
-                                        <tbody>
+                                        <tr>
+                                            <td style="text-align: right;">
+                                                <strong>Base gravable:</strong>
+                                            </td>
+                                            <td style="padding-right: 40px; text-align: right;">
+                                                ${{ number_format($aviso->base_gravable, 2) }}
+                                            </td>
+                                        </tr>
 
-                                            <tr>
-                                                <td style="text-align: right;">
-                                                    <strong>Base gravable:</strong>
-                                                </td>
-                                                <td style="padding-right: 40px; text-align: right;">
-                                                    ${{ number_format($aviso->base_gravable, 2) }}
-                                                </td>
-                                            </tr>
+                                        <tr>
+                                            <td style="text-align: right;">
+                                                <strong>Reducción:</strong>
+                                            </td>
+                                            <td style="padding-right: 40px; text-align: right;">
+                                                ${{ number_format($aviso->reduccion, 2) }}
+                                            </td>
+                                        </tr>
 
-                                            <tr>
-                                                <td style="text-align: right;">
-                                                    <strong>Reducción:</strong>
-                                                </td>
-                                                <td style="padding-right: 40px; text-align: right;">
-                                                    ${{ number_format($aviso->reduccion, 2) }}
-                                                </td>
-                                            </tr>
+                                        <tr>
+                                            <td style="text-align: right;">
+                                                <strong>Valor base:</strong>
+                                            </td>
+                                            <td style="padding-right: 40px; text-align: right;">
+                                                ${{ number_format($aviso->valor_base, 2) }}
+                                            </td>
+                                        </tr>
 
-                                            <tr>
-                                                <td style="text-align: right;">
-                                                    <strong>Valor base:</strong>
-                                                </td>
-                                                <td style="padding-right: 40px; text-align: right;">
-                                                    ${{ number_format($aviso->valor_base, 2) }}
-                                                </td>
-                                            </tr>
+                                        <tr>
+                                            <td style="text-align: right;">
+                                                <strong>Valor isai:</strong>
+                                            </td>
+                                            <td style="padding-right: 40px; text-align: right;">
+                                                ${{ number_format($aviso->valor_isai, 2) }}
+                                            </td>
+                                        </tr>
 
-                                            <tr>
-                                                <td style="text-align: right;">
-                                                    <strong>Valor isai:</strong>
-                                                </td>
-                                                <td style="padding-right: 40px; text-align: right;">
-                                                    ${{ number_format($aviso->valor_isai, 2) }}
-                                                </td>
-                                            </tr>
+                                        <tr></tr>
 
-                                            <tr></tr>
+                                        <tr>
+                                            <td style="text-align: right;">
+                                                <strong>Valor de adquisición:</strong>
+                                            </td>
+                                            <td style="padding-right: 40px; text-align: right;">
+                                                ${{ number_format($aviso->valor_adquisicion, 2) }}
+                                            </td>
+                                        </tr>
 
-                                            <tr>
-                                                <td style="text-align: right;">
-                                                    <strong>Valor de adquisición:</strong>
-                                                </td>
-                                                <td style="padding-right: 40px; text-align: right;">
-                                                    ${{ number_format($aviso->valor_adquisicion, 2) }}
-                                                </td>
-                                            </tr>
+                                        @if($aviso->tipo == 'revision')
 
                                             <tr>
                                                 <td style="text-align: right;">
@@ -336,22 +336,22 @@
                                                 </td>
                                             </tr>
 
-                                        </tbody>
+                                        @endif
 
-                                    </table>
+                                    </tbody>
 
-                                </td>
-                            </tr>
+                                </table>
 
-                        </tbody>
+                            </td>
+                        </tr>
 
-                    </table>
+                    </tbody>
 
-                </div>
+                </table>
 
             </div>
 
-        @endif
+        </div>
 
         @if($aviso->observaciones)
 
