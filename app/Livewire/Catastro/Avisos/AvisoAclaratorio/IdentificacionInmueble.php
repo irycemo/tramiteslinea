@@ -2,26 +2,32 @@
 
 namespace App\Livewire\Catastro\Avisos\AvisoAclaratorio;
 
+use App\Models\File;
 use App\Models\Aviso;
 use Livewire\Component;
 use Livewire\Attributes\On;
+use Livewire\WithFileUploads;
 use App\Constantes\Constantes;
-use App\Traits\ColindanciasTrait;
 use App\Traits\CoordenadasTrait;
+use App\Traits\ColindanciasTrait;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
 
 class IdentificacionInmueble extends Component
 {
 
     use ColindanciasTrait;
     use CoordenadasTrait;
+    use WithFileUploads;
 
     public Aviso $aviso;
     public $avisoId;
 
     public $tipoAsentamientos;
     public $tipoVialidades;
+
+    public $croquis;
 
     protected function rules(){
 
@@ -52,6 +58,7 @@ class IdentificacionInmueble extends Component
             'aviso.predio.superficie_total_terreno' => 'required|numeric',
             'aviso.predio.superficie_construccion' => 'nullable|numeric',
             'aviso.predio.valor_catastral' => 'required|numeric',
+            'croquis' => 'nullable|mimes:png,jpg,jpge'
          ] + $this->rulesColindancias;
 
     }
@@ -62,6 +69,32 @@ class IdentificacionInmueble extends Component
         return [
             'aviso.cantidad_tramitada' => 'cantidad tramitada',
         ] + $this->validationAttributesColindancias;
+
+    }
+
+    public function guardarCroquis(){
+
+        if($this->aviso->croquis){
+
+            $file = File::where('fileable_id', $this->aviso->id)
+                        ->where('fileable_type', 'App\Models\Aviso')
+                        ->where('descripcion', 'croquis')
+                        ->first();
+
+            Storage::disk('avisos')->delete($file->url);
+
+            $file->delete();
+
+        }
+
+        $pdf = $this->croquis->store('/', 'avisos');
+
+        File::create([
+            'fileable_id' => $this->aviso->id,
+            'fileable_type' => 'App\Models\Aviso',
+            'descripcion' => 'croquis',
+            'url' => $pdf
+        ]);
 
     }
 
@@ -89,6 +122,8 @@ class IdentificacionInmueble extends Component
         try {
 
             DB::transaction(function () {
+
+                $this->guardarCroquis();
 
                 $this->guardarColindancias($this->aviso->predio);
 

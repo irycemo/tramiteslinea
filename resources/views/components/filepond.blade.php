@@ -57,13 +57,13 @@
         <input type="file" x-ref="input">
 
     </div>
-
+{{--
     @push('scripts')
 
         <script src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.js"></script>
         <script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js"></script>
         <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
 
-    @endpush
+    @endpush --}}
 
 </div>
