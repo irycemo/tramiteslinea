@@ -14,19 +14,19 @@
 
             <x-input-group for="aviso.predio.superficie_total_terreno" label="Superficie total de terreno" class="w-full">
 
-                <x-input-text type="number" id="aviso.predio.superficie_total_terreno" value="{{ $aviso->predio->superficie_total_terreno }}" />
+                <x-input-text type="number" id="aviso.predio.superficie_total_terreno" wire:model="aviso.predio.superficie_total_terreno" />
 
             </x-input-group>
 
             <x-input-group for="aviso.predio.superficie_construccion" label="Superficie total de construcción" class="w-full">
 
-                <x-input-text type="number" id="aviso.predio.superficie_construccion" value="{{ $aviso->predio->superficie_total_construccion }}" />
+                <x-input-text type="number" id="aviso.predio.superficie_construccion" wire:model="aviso.predio.superficie_construccion" />
 
             </x-input-group>
 
             <x-input-group for="aviso.predio.valor_catastral" label="Valor catastral" class="w-full">
 
-                <x-input-text type="number" id="aviso.predio.valor_catastral" value="{{ $aviso->predio->valor_catastral }}" readonly/>
+                <x-input-text type="number" id="aviso.predio.valor_catastral" wire:model="aviso.predio.valor_catastral" readonly/>
 
             </x-input-group>
 
