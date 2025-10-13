@@ -78,27 +78,31 @@ class IdentificacionInmueble extends Component
 
         if(!$this->aviso->croquis && !$this->croquis) throw new GeneralException('Debe subir el croquis.');
 
-        if($this->aviso->croquis){
+        if($this->croquis){
 
-            $file = File::where('fileable_id', $this->aviso->id)
-                        ->where('fileable_type', 'App\Models\Aviso')
-                        ->where('descripcion', 'croquis')
-                        ->first();
+            if($this->aviso->croquis){
 
-            Storage::disk('avisos')->delete($file->url);
+                $file = File::where('fileable_id', $this->aviso->id)
+                            ->where('fileable_type', 'App\Models\Aviso')
+                            ->where('descripcion', 'croquis')
+                            ->first();
 
-            $file->delete();
+                Storage::disk('avisos')->delete($file->url);
+
+                $file->delete();
+
+            }
+
+            $pdf = $this->croquis->store('/', 'avisos');
+
+            File::create([
+                'fileable_id' => $this->aviso->id,
+                'fileable_type' => 'App\Models\Aviso',
+                'descripcion' => 'croquis',
+                'url' => $pdf
+            ]);
 
         }
-
-        $pdf = $this->croquis->store('/', 'avisos');
-
-        File::create([
-            'fileable_id' => $this->aviso->id,
-            'fileable_type' => 'App\Models\Aviso',
-            'descripcion' => 'croquis',
-            'url' => $pdf
-        ]);
 
     }
 
