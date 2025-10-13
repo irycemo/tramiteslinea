@@ -57,7 +57,7 @@ class IdentificacionInmueble extends Component
             'aviso.predio.lat' => 'required|numeric',
             'aviso.predio.lon' => 'required|numeric',
             'aviso.predio.superficie_total_terreno' => 'required|numeric',
-            'aviso.predio.superficie_construccion' => 'nullable|numeric',
+            'aviso.predio.superficie_total_construccion' => 'nullable|numeric',
             'aviso.predio.valor_catastral' => 'required|numeric',
             'croquis' => 'nullable|mimes:png,jpg,jpge'
          ] + $this->rulesColindancias;
