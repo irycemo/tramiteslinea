@@ -75,9 +75,9 @@
 
             </x-input-group>
 
-            <x-input-group for="aviso.predio.superficie_construccion" label="Superficie total de construcción" class="w-full">
+            <x-input-group for="aviso.predio.superficie_total_construccion" label="Superficie total de construcción" class="w-full">
 
-                <x-input-text type="number" id="aviso.predio.superficie_construccion" wire:model="aviso.predio.superficie_construccion" />
+                <x-input-text type="number" id="aviso.predio.superficie_total_construccion" wire:model="aviso.predio.superficie_total_construccion" />
 
             </x-input-group>
 
