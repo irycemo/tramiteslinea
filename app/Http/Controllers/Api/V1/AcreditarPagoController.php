@@ -21,7 +21,7 @@ class AcreditarPagoController extends Controller
 
         $validated = $request->validated();
 
-        info(($validated));
+        /* info(($validated)); */
 
         try {
 
