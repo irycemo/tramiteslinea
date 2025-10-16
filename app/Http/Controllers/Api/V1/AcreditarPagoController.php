@@ -14,10 +14,10 @@ class AcreditarPagoController extends Controller
     public function __invoke(AcreditarPagoRequest $request)
     {
 
-        /* Log::info('Request received', [
+        Log::info('Request received', [
             'ipAddresses' => $request->ips(),
             'parameters' =>  $request->all()
-        ]); */
+        ]);
 
         $validated = $request->validated();
 
