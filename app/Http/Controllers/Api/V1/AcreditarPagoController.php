@@ -15,7 +15,7 @@ class AcreditarPagoController extends Controller
     {
 
         Log::info('Request received', [
-            'ipAddresses' => $request->ips(),
+            'ipAddresses' => $request->getClientIps(),
             'parameters' =>  $request->all()
         ]);
 
