@@ -30,9 +30,9 @@ class AcreditarPagoRequest extends FormRequest
         ];
     }
 
-    public function getClientIps():array
+    public function getClientIpAddresses():array
     {
-        return $this->ip();
+        return $this->ips();
     }
 
 }
