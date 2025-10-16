@@ -16,8 +16,6 @@ class AcreditarPagoController extends Controller
 
         Log::info('Request received', [
             'url' => $request->fullUrl(),
-            'ip' => $request->ip(),
-            'ip_f' => $request->header('X-Forwarded-For'),
             'ipAddresses' => $request->ips(),
             'user_agent' => $request->header('User-Agent'),
             'parameters' =>  $request->all()
