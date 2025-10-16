@@ -32,7 +32,7 @@ class AcreditarPagoRequest extends FormRequest
 
     public function getClientIps()
     {
-        return $this->ips();
+        return $this->ip();
     }
 
 }
