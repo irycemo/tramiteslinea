@@ -14,11 +14,17 @@ class AcreditarPagoController extends Controller
     public function __invoke(Request $request)
     {
 
-        info(json_decode($request));
+        Log::info('Request received', [
+            'method' => $request->method(),
+            'url' => $request->fullUrl(),
+            'ip' => $request->ip(),
+            'user_agent' => $request->header('User-Agent'),
+            'parameters' =>  $request->all()
+        ]);
 
         $validated = $request->validated();
 
-        info($validated);
+        info(($validated));
 
         try {
 
