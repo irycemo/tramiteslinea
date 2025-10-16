@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers\Api\V1;
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Request;
 use App\Http\Requests\AcreditarPagoRequest;
 
 class AcreditarPagoController extends Controller
@@ -15,6 +15,7 @@ class AcreditarPagoController extends Controller
     {
 
         Log::info('Request received', [
+            'url' => $request->fullUrl(),
             'ip' => $request->ip(),
             'ip_f' => $request->header('X-Forwarded-For'),
             'ipAddresses' => $request->ips(),
