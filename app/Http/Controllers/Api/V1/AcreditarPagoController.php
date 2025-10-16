@@ -4,14 +4,17 @@ namespace App\Http\Controllers\Api\V1;
 
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\AcreditarPagoRequest;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Request;
+use App\Http\Requests\AcreditarPagoRequest;
 
 class AcreditarPagoController extends Controller
 {
 
-    public function __invoke(AcreditarPagoRequest $request)
+    public function __invoke(Request $request)
     {
+
+        info($request);
 
         $validated = $request->validated();
 
