@@ -14,11 +14,11 @@ class AcreditarPagoController extends Controller
     public function __invoke(Request $request)
     {
 
-        info($request);
+        info(json_decode($request));
 
         $validated = $request->validated();
 
-        info(json_decode($validated));
+        info($validated);
 
         try {
 
