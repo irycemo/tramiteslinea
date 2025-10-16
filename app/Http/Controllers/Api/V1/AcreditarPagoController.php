@@ -11,13 +11,11 @@ use App\Http\Requests\AcreditarPagoRequest;
 class AcreditarPagoController extends Controller
 {
 
-    public function __invoke(Request $request)
+    public function __invoke(AcreditarPagoRequest $request)
     {
 
         Log::info('Request received', [
-            'url' => $request->fullUrl(),
             'ipAddresses' => $request->ips(),
-            'user_agent' => $request->header('User-Agent'),
             'parameters' =>  $request->all()
         ]);
 

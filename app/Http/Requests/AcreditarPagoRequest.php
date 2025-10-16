@@ -29,4 +29,10 @@ class AcreditarPagoRequest extends FormRequest
             'tkn' => 'nullable',
         ];
     }
+
+    public function getClientIps(): string
+    {
+        return $this->ips();
+    }
+
 }
