@@ -117,7 +117,7 @@
 
                             <img wire:loading wire:target="consultarAviso" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-                            Consultar aviso
+                            Consultar avisos
 
                         </button>
 

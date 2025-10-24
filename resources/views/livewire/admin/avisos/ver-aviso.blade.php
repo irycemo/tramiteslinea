@@ -644,9 +644,6 @@
 
                     <th class="px-2">Tipo de persona</th>
                     <th class="px-2">Nombre / Razón social</th>
-                    <th class="px-2">Porcentaje de propiedad</th>
-                    <th class="px-2">Porcentaje de nuda</th>
-                    <th class="px-2">Porcentaje de usufructo</th>
 
                 </tr>
 
@@ -659,9 +656,6 @@
                     <tr class="text-gray-500 text-sm leading-relaxed">
                         <td class=" px-2 w-full ">{{ $fideicomitente->persona->tipo }}</td>
                         <td class=" px-2 w-full ">{{ $fideicomitente->persona->nombre }} {{ $fideicomitente->persona->ap_paterno }} {{ $fideicomitente->persona->ap_materno }} {{ $fideicomitente->persona->razon_social }}</td>
-                        <td class=" px-2 w-full ">{{ $fideicomitente->porcentaje_propiedad }}%</td>
-                        <td class=" px-2 w-full ">{{ $fideicomitente->porcentaje_nuda }}%</td>
-                        <td class=" px-2 w-full ">{{ $fideicomitente->porcentaje_usufructo }}%</td>
                     </tr>
 
                 @endforeach
@@ -684,9 +678,6 @@
 
                     <th class="px-2">Tipo de persona</th>
                     <th class="px-2">Nombre / Razón social</th>
-                    <th class="px-2">Porcentaje de propiedad</th>
-                    <th class="px-2">Porcentaje de nuda</th>
-                    <th class="px-2">Porcentaje de usufructo</th>
 
                 </tr>
 
@@ -699,9 +690,6 @@
                     <tr class="text-gray-500 text-sm leading-relaxed">
                         <td class=" px-2 w-full ">{{ $fideicomisario->persona->tipo }}</td>
                         <td class=" px-2 w-full ">{{ $fideicomisario->persona->nombre }} {{ $fideicomisario->persona->ap_paterno }} {{ $fideicomisario->persona->ap_materno }} {{ $fideicomisario->persona->razon_social }}</td>
-                        <td class=" px-2 w-full ">{{ $fideicomisario->porcentaje_propiedad }}%</td>
-                        <td class=" px-2 w-full ">{{ $fideicomisario->porcentaje_nuda }}%</td>
-                        <td class=" px-2 w-full ">{{ $fideicomisario->porcentaje_usufructo }}%</td>
                     </tr>
 
                 @endforeach
@@ -724,9 +712,6 @@
 
                     <th class="px-2">Tipo de persona</th>
                     <th class="px-2">Nombre / Razón social</th>
-                    <th class="px-2">Porcentaje de propiedad</th>
-                    <th class="px-2">Porcentaje de nuda</th>
-                    <th class="px-2">Porcentaje de usufructo</th>
 
                 </tr>
 
@@ -739,9 +724,6 @@
                     <tr class="text-gray-500 text-sm leading-relaxed">
                         <td class=" px-2 w-full ">{{ $fiduciaria->persona->tipo }}</td>
                         <td class=" px-2 w-full ">{{ $fiduciaria->persona->nombre }} {{ $fiduciaria->persona->ap_paterno }} {{ $fiduciaria->persona->ap_materno }} {{ $fiduciaria->persona->razon_social }}</td>
-                        <td class=" px-2 w-full ">{{ $fiduciaria->porcentaje_propiedad }}%</td>
-                        <td class=" px-2 w-full ">{{ $fiduciaria->porcentaje_nuda }}%</td>
-                        <td class=" px-2 w-full ">{{ $fiduciaria->porcentaje_usufructo }}%</td>
                     </tr>
 
                 @endforeach

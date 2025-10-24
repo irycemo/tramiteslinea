@@ -7,7 +7,6 @@ use App\Livewire\Catastro\Tramites\NuevoTramite;
 use App\Livewire\Catastro\Avisos\AvisoAclaratorio\Avisos;
 use App\Livewire\Catastro\Avisos\RevisionAviso\Revisiones;
 use App\Livewire\Catastro\Avisos\AvisoAclaratorio\NuevoAviso;
-use App\Livewire\Catastro\Avisos\Isai;
 use App\Livewire\Catastro\Avisos\RevisionAviso\NuevaRevision;
 use App\Livewire\Comun\CalculadoraIsai;
 
