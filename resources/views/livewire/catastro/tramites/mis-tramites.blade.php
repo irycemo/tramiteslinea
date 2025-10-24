@@ -4,54 +4,50 @@
 
         <x-header>Trámites</x-header>
 
-        <div class="flex justify-between items-center">
+        <div class="flex gap-3 overflow-auto p-1">
 
-            <div class="space-y-2">
+            <select class="bg-white rounded-full text-sm" wire:model.live="año">
 
-                <select class="bg-white rounded-full text-sm" wire:model.live="año">
+                @foreach ($años as $item)
 
-                    @foreach ($años as $item)
+                    <option value="{{ $item }}">{{ $item }}</option>
 
-                        <option value="{{ $item }}">{{ $item }}</option>
+                @endforeach
 
-                    @endforeach
+            </select>
 
-                </select>
+            <input type="number" wire:model.live.debounce.500mse="folio" placeholder="Folio" class="bg-white rounded-full text-sm w-24">
 
-                <input type="number" wire:model.live.debounce.500mse="folio" placeholder="Folio" class="bg-white rounded-full text-sm w-24">
+            <select class="bg-white rounded-full text-sm" wire:model.live="estado">
 
-                <select class="bg-white rounded-full text-sm" wire:model.live="estado">
+                <option value="" selected>Estado</option>
+                <option value="nuevo">Nuevo</option>
+                <option value="pagado">Pagado</option>
+                <option value="concluido">Concluido</option>
+                <option value="expirado">Expirado</option>
 
-                    <option value="" selected>Estado</option>
-                    <option value="nuevo">Nuevo</option>
-                    <option value="pagado">Pagado</option>
-                    <option value="concluido">Concluido</option>
-                    <option value="expirado">Expirado</option>
+            </select>
 
-                </select>
+            <select class="bg-white rounded-full text-sm w-60" wire:model.live="servicio">
 
-                <select class="bg-white rounded-full text-sm w-60" wire:model.live="servicio">
+                <option value="" selected>Servicio</option>
 
-                    <option value="" selected>Servicio</option>
+                @foreach ($servicios as $servicio)
 
-                    @foreach ($servicios as $servicio)
+                    <option value="{{ $servicio['id'] }}" class="truncate">{{ $servicio['nombre'] }}</option>
 
-                        <option value="{{ $servicio['id'] }}" class="truncate">{{ $servicio['nombre'] }}</option>
+                @endforeach
 
-                    @endforeach
+            </select>
 
-                </select>
+            <select class="bg-white rounded-full text-sm" wire:model.live="pagination">
 
-                <select class="bg-white rounded-full text-sm" wire:model.live="pagination">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
 
-                    <option value="10">10</option>
-                    <option value="25">25</option>
-                    <option value="50">50</option>
-                    <option value="100">100</option>
-
-                </select>
-
-            </div>
+            </select>
 
         </div>
 

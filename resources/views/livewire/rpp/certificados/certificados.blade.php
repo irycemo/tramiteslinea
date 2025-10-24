@@ -4,46 +4,42 @@
 
         <x-header>Certificados</x-header>
 
-        <div class="flex items-center">
+        <div class="flex gap-3 overflow-auto p-1">
 
-            <div class="space-y-1">
+            <select class="bg-white rounded-full text-sm" wire:model.live="año">
 
-                <select class="bg-white rounded-full text-sm" wire:model.live="año">
+                <option value="" selected>Año</option>
 
-                    <option value="" selected>Año</option>
+                @foreach ($años as $item)
 
-                    @foreach ($años as $item)
+                    <option value="{{ $item }}">{{ $item }}</option>
 
-                        <option value="{{ $item }}">{{ $item }}</option>
+                @endforeach
 
-                    @endforeach
+            </select>
 
-                </select>
+            <input type="number" wire:model.live.debounce.500mse="folio" placeholder="Folio trám." class="bg-white rounded-full text-sm w-24">
 
-                <input type="number" wire:model.live.debounce.500mse="folio" placeholder="Folio trám." class="bg-white rounded-full text-sm w-24">
+            <select class="bg-white rounded-full text-sm" wire:model.live="estado">
 
-                <select class="bg-white rounded-full text-sm" wire:model.live="estado">
+                <option value="" selected>Estado</option>
+                <option value="nuevo">Nuevo</option>
+                <option value="elaborado,finalizado,concluido">Elaborado</option>
+                <option value="rechazado">Rechazado</option>
 
-                    <option value="" selected>Estado</option>
-                    <option value="nuevo">Nuevo</option>
-                    <option value="elaborado,finalizado,concluido">Elaborado</option>
-                    <option value="rechazado">Rechazado</option>
-
-                </select>
+            </select>
 
 
-                <input type="number" wire:model.live.debounce.500ms="folio_real" placeholder="Folio real" class="bg-white rounded-full text-sm w-24">
+            <input type="number" wire:model.live.debounce.500ms="folio_real" placeholder="Folio real" class="bg-white rounded-full text-sm w-24">
 
-                <select class="bg-white rounded-full text-sm" wire:model.live="pagination">
+            <select class="bg-white rounded-full text-sm" wire:model.live="pagination">
 
-                    <option value="10">10</option>
-                    <option value="25">25</option>
-                    <option value="50">50</option>
-                    <option value="100">100</option>
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
 
-                </select>
-
-            </div>
+            </select>
 
         </div>
 
