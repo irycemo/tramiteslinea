@@ -36,4 +36,17 @@
             {{ __('Save') }}
         </x-button>
     </x-slot>
+
+    @script
+    <script>
+
+        $wire.on('saved', () => {
+
+            $wire.dispatch('mostrarMensaje', [['success', "Se actualizó la información con éxito."]]);
+
+        });
+
+    </script>
+    @endscript
+
 </x-form-section>

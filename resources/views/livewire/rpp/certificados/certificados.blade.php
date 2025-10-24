@@ -31,9 +31,6 @@
 
                 </select>
 
-            </div>
-
-            <div class="flex-col gap-1 p-1 space-y-1">
 
                 <input type="number" wire:model.live.debounce.500ms="folio_real" placeholder="Folio real" class="bg-white rounded-full text-sm w-24">
 

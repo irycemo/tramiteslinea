@@ -4,106 +4,106 @@
 
     <div class="bg-white shadow-lg  rounded-lg p-4">
 
-            <div class="lg:w-1/2 mx-auto flex flex-col justify-center items-center gap-3">
+        <div class="lg:w-1/2 mx-auto flex flex-col justify-center items-center gap-3">
 
-                <select class="bg-white rounded-full text-sm w-full" wire:model.live="servicio_id">
+            <select class="bg-white rounded-full text-sm w-full" wire:model.live="servicio_id">
 
-                    <option value="" selected>Seleccione un servicio</option>
+                <option value="" selected>Seleccione un servicio</option>
 
-                    @foreach ($servicios as $item)
+                @foreach ($servicios as $item)
 
-                        <option value="{{ $item['id'] }}" class="truncate">{{ $item['nombre'] }}</option>
+                    <option value="{{ $item['id'] }}" class="truncate">{{ $item['nombre'] }}</option>
 
-                    @endforeach
+                @endforeach
 
-                </select>
+            </select>
 
-                @if($servicio_id != '')
+            @if($servicio_id != '')
 
-                    <div class="flex gap-2 w-full">
+                <div class="flex gap-2 w-full">
 
-                        @if(auth()->user()->hasRole('Dependencia'))
+                    @if(auth()->user()->hasRole('Dependencia'))
 
-                            <input type="text" class="bg-white rounded-full text-sm @error('numero_oficio') border-red-500 @enderror" wire:model.live="numero_oficio" placeholder="Número de oficio">
-
-                        @endif
-
-                    </div>
-
-                    @if(in_array($servicioSeleccionado['clave_ingreso'], ['DL07']))
-
-                        @include('livewire.rpp.tramites.antecedente')
+                        <input type="text" class="bg-white rounded-full text-sm @error('numero_oficio') border-red-500 @enderror" wire:model.live="numero_oficio" placeholder="Número de oficio">
 
                     @endif
+
+                </div>
+
+                @if(in_array($servicioSeleccionado['clave_ingreso'], ['DL07']))
+
+                    @include('livewire.rpp.tramites.antecedente')
 
                 @endif
 
-                @if($servicioSeleccionado != null && !in_array($servicioSeleccionado['clave_ingreso'], ['DL07']) || count($predio))
+            @endif
 
-                    <p class="text-center font-semibold text-xl">Total: ${{ number_format($total, 2) }}</p>
+            @if($servicioSeleccionado != null && !in_array($servicioSeleccionado['clave_ingreso'], ['DL07']) || count($predio))
 
-                    @if(!$this->tramite)
+                <p class="text-center font-semibold text-xl">Total: ${{ number_format($total, 2) }}</p>
 
-                        <button
-                            wire:click="crearTramite"
-                            wire:loading.attr="disabled"
-                            wire:target="crearTramite"
-                            type="button"
+                @if(!$this->tramite)
 
-                            class="bg-green-500 hover:shadow-lg text-white font-bold px-4 py-2 rounded text-sm hover:bg-green-700 focus:outline-none flex justify-center items-center w-full focus:outline-green-400 focus:outline-offset-2">
+                    <button
+                        wire:click="crearTramite"
+                        wire:loading.attr="disabled"
+                        wire:target="crearTramite"
+                        type="button"
 
-                            <img wire:loading wire:target="crearTramite" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                        class="bg-green-500 hover:shadow-lg text-white font-bold px-4 py-2 rounded text-sm hover:bg-green-700 focus:outline-none flex justify-center items-center w-full focus:outline-green-400 focus:outline-offset-2">
 
-                            <p>Generar trámite</p>
+                        <img wire:loading wire:target="crearTramite" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-                        </button>
+                        <p>Generar trámite</p>
 
-                    @endif
-
-                    @if($tramite)
-
-                        <button
-                            wire:click="pagarVentanilla"
-                            wire:loading.attr="disabled"
-                            wire:target="pagarVentanilla"
-                            type="button"
-                            class="bg-blue-400 hover:shadow-lg text-white font-bold px-4 py-2 rounded text-sm hover:bg-blue-700 focus:outline-none flex justify-center items-center w-full focus:outline-blue-400 focus:outline-offset-2">
-
-                            <img wire:loading wire:target="pagarVentanilla" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
-
-                            <p>Pagar en ventanilla</p>
-
-                        </button>
-
-                        <form action="{{ $link_pago_linea }}" method="post" class="w-full">
-
-                            <input type="hidden" name="concepto" value="IRYCEM">
-                            <input type="hidden" name="lcaptura" value="{{ $tramite['linea_de_captura'] }}">
-                            <input type="hidden" name="monto" value="{{ $tramite['monto'] }}">
-                            <input type="hidden" name="urlRetorno" value="{{ route('acredita_pago') }}">
-                            <input type="hidden" name="fecha_vencimiento" value="{{ $tramite['fecha_vencimiento'] }}">
-                            <input type="hidden" name="tkn" value="{{ $token }}">
-
-                            <button
-                                wire:loading.attr="disabled"
-                                type="submit"
-                                class="bg-red-400 hover:shadow-lg text-white font-bold px-4 py-2 rounded text-sm hover:bg-red-700 focus:outline-none flex justify-center items-center w-full focus:outline-bg-red-400 focus:outline-offset-2">
-
-                                <img wire:loading wire:target="pagarEnLinea" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
-
-                                <p>Pagar en linea</p>
-
-                            </button>
-
-                        </form>
-
-                    @endif
+                    </button>
 
                 @endif
 
-            </div>
+                @if($tramite)
+
+                    <button
+                        wire:click="pagarVentanilla"
+                        wire:loading.attr="disabled"
+                        wire:target="pagarVentanilla"
+                        type="button"
+                        class="bg-blue-400 hover:shadow-lg text-white font-bold px-4 py-2 rounded text-sm hover:bg-blue-700 focus:outline-none flex justify-center items-center w-full focus:outline-blue-400 focus:outline-offset-2">
+
+                        <img wire:loading wire:target="pagarVentanilla" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+
+                        <p>Pagar en ventanilla</p>
+
+                    </button>
+
+                    <form action="{{ $link_pago_linea }}" method="post" class="w-full">
+
+                        <input type="hidden" name="concepto" value="IRYCEM">
+                        <input type="hidden" name="lcaptura" value="{{ $tramite['linea_de_captura'] }}">
+                        <input type="hidden" name="monto" value="{{ $tramite['monto'] }}">
+                        <input type="hidden" name="urlRetorno" value="{{ route('acredita_pago') }}">
+                        <input type="hidden" name="fecha_vencimiento" value="{{ $tramite['fecha_vencimiento'] }}">
+                        <input type="hidden" name="tkn" value="{{ $token }}">
+
+                        <button
+                            wire:loading.attr="disabled"
+                            type="submit"
+                            class="bg-red-400 hover:shadow-lg text-white font-bold px-4 py-2 rounded text-sm hover:bg-red-700 focus:outline-none flex justify-center items-center w-full focus:outline-bg-red-400 focus:outline-offset-2">
+
+                            <img wire:loading wire:target="pagarEnLinea" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+
+                            <p>Pagar en linea</p>
+
+                        </button>
+
+                    </form>
+
+                @endif
+
+            @endif
 
         </div>
+
+    </div>
 
     </div>
 

@@ -51,6 +51,7 @@
         <script>
 
             window.addEventListener('mostrarMensaje', event => {
+
                 const Toast = Swal.mixin({
                     toast: true,
                     position: 'top-end',

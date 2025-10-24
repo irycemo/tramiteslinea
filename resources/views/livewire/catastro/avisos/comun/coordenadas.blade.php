@@ -16,13 +16,13 @@
 
                 <div class="space-y-1">
 
-                    <input placeholder="X" type="text" class="bg-white rounded text-xs w-40" value="{{ $aviso->predio->xutm }}" readonly>
+                    <input placeholder="X" type="text" class="bg-white rounded text-xs lg:w-40" value="{{ $aviso->predio->xutm }}" readonly>
 
-                    <input placeholder="Y" type="text" class="bg-white rounded text-xs w-40" value="{{ $aviso->predio->yutm }}" readonly>
+                    <input placeholder="Y" type="text" class="bg-white rounded text-xs lg:w-40" value="{{ $aviso->predio->yutm }}" readonly>
 
-                    <input placeholder="Z" type="text" class="bg-white rounded text-xs w-40" value="{{ $aviso->predio->zutm }}" readonly>
+                    <input placeholder="Z" type="text" class="bg-white rounded text-xs lg:w-40" value="{{ $aviso->predio->zutm }}" readonly>
 
-                    <input placeholder="Norte" type="text" class="bg-white rounded text-xs w-40" readonly>
+                    <input placeholder="Norte" type="text" class="bg-white rounded text-xs lg:w-40" readonly>
 
                 </div>
 
@@ -42,9 +42,9 @@
 
                 <div class="space-y-1">
 
-                    <input placeholder="Lat" type="number" class="bg-white rounded text-xs w-40" value="{{ $aviso->predio->lat }}" readonly>
+                    <input placeholder="Lat" type="number" class="bg-white rounded text-xs lg:w-40" value="{{ $aviso->predio->lat }}" readonly>
 
-                    <input placeholder="Lon" type="number" class="bg-white rounded text-xs w-40" value="{{ $aviso->predio->lon }}" readonly>
+                    <input placeholder="Lon" type="number" class="bg-white rounded text-xs lg:w-40" value="{{ $aviso->predio->lon }}" readonly>
 
                 </div>
 

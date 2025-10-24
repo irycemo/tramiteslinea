@@ -8,6 +8,16 @@
 
             <div class="">
 
+                <select class="bg-white rounded-full text-sm" wire:model.live="filters.estado">
+                    <option value="">Estado</option>
+                    <option value="nuevo">Nuevo</option>
+                    <option value="cerrado">Cerrado</option>
+                    <option value="autorizado">Autorizado</option>
+                    <option value="operado">Operado</option>
+                    <option value="rechazado">Rechazado</option>
+
+                </select>
+
                 <select class="bg-white rounded-full text-sm" wire:model.live="filters.tipo">
                     <option value="">Tipo</option>
                     <option value="revision">Revisión</option>

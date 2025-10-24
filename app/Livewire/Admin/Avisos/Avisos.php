@@ -12,6 +12,7 @@ use App\Traits\ComponentesTrait;
 use Livewire\Attributes\Computed;
 use Illuminate\Support\Facades\Log;
 use App\Exceptions\GeneralException;
+use App\Services\PeritosExternosService;
 use App\Http\Controllers\ImprimirAvisosController;
 
 class Avisos extends Component
@@ -37,7 +38,8 @@ class Avisos extends Component
         'localidad' => '',
         'oficina' => '',
         't_predio' => '',
-        'registro' => ''
+        'registro' => '',
+        'estado' => ''
     ];
 
     public Aviso $modelo_editar;
@@ -201,6 +203,8 @@ class Avisos extends Component
 
         $this->filters['año'] = now()->format('Y');
 
+        $this->filters['estado'] = request()->query('estado');
+
         $this->entidades = Entidad::select('id','dependencia','numero_notaria')->orderBy('numero_notaria')->orderBy('dependencia')->get();
 
     }
@@ -214,6 +218,7 @@ class Avisos extends Component
                         ->when($this->filters['usuario'], fn($q, $usuario) => $q->where('usuario', $usuario))
                         ->when($this->filters['entidad_id'], fn($q, $entidad_id) => $q->where('entidad_id', $entidad_id))
                         ->when($this->filters['tipo'], fn($q, $tipo) => $q->where('tipo', $tipo))
+                        ->when($this->filters['estado'], fn($q, $estado) => $q->where('estado', $estado))
                         ->when($this->filters['localidad'], function($q, $localidad){
                             $q->WhereHas('predio', function($q) use($localidad){
                                 $q->where('localidad', $localidad);

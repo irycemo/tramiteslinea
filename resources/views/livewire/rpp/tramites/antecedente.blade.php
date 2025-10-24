@@ -4,7 +4,7 @@
 
         <x-h4>Antecedente de propiedad</x-h4>
 
-        <div class=" p-4 rounded-lg mb-3" wire:loading.class.delay.longest="opacity-50">
+        <div class="" wire:loading.class.delay.longest="opacity-50">
 
             <div class="grid grid-cols-1 md:grid-cols-4 mb-3 gap-4">
 

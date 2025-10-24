@@ -2,6 +2,8 @@
 
     @if($aviso)
 
+        @include('livewire.catastro.avisos.comun.folio-aviso')
+
         <div class="space-y-2 mb-5 bg-white rounded-lg p-2 shadow-lg">
 
             <div class="flex-auto text-center mb-3">
@@ -74,7 +76,7 @@
 
                                 <x-table.cell>
 
-                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Tipo de persona</span>
+                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Tipo de persona</span>
 
                                     {{ $transmitente->persona->tipo }}
 
@@ -82,7 +84,7 @@
 
                                 <x-table.cell>
 
-                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Nombre / Razón social</span>
+                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Nombre / Razón social</span>
 
                                     <p class="pt-4">{{ $transmitente->persona->nombre }} {{ $transmitente->persona->ap_paterno }} {{ $transmitente->persona->ap_materno }} {{ $transmitente->persona->razon_social }}</p>
 
@@ -90,7 +92,7 @@
 
                                 <x-table.cell>
 
-                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">% de propiedad</span>
+                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">% de propiedad</span>
 
                                     {{ number_format($transmitente->porcentaje_propiedad, 4) }}%
 
@@ -98,14 +100,14 @@
 
                                 <x-table.cell>
 
-                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">% de nuda</span>
+                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">% de nuda</span>
 
                                     {{ number_format($transmitente->porcentaje_nuda, 4) }}%
 
                                 </x-table.cell>
                                 <x-table.cell>
 
-                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">% de usufructo</span>
+                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">% de usufructo</span>
 
                                     {{ number_format($transmitente->porcentaje_usufructo, 4) }}%
 

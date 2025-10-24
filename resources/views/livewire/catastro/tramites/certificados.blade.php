@@ -20,7 +20,7 @@
 
                 </select>
 
-                <input type="number" wire:model.live.debounce.500mse="folio" placeholder="Folio trám." class="bg-white rounded-full text-sm w-24">
+                <input type="number" wire:model.live.debounce.500mse="folio" placeholder="Folio cert." class="bg-white rounded-full text-sm w-24">
 
                 <select class="bg-white rounded-full text-sm" wire:model.live="estado">
 
@@ -30,10 +30,6 @@
                     <option value="caducado">Caducado</option>
 
                 </select>
-
-            </div>
-
-            <div class="flex-col gap-1 p-1 space-y-1">
 
                 <input type="number" wire:model.live.debounce.500ms="localidad" placeholder="Localidad" class="bg-white rounded-full text-sm w-24">
 
@@ -82,7 +78,7 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Tipo</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Tipo</span>
 
                             {{ $certificado['tipo'] }}
 
@@ -91,7 +87,7 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Año</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Año</span>
 
                             {{ $certificado['año'] }}
 
@@ -99,7 +95,7 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Folio</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Folio</span>
 
                             {{ $certificado['folio'] }}
 
@@ -107,7 +103,7 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Estado</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Estado</span>
 
                             @php
 
@@ -124,7 +120,7 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Cuenta predial</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Cuenta predial</span>
 
                             {{ $certificado['localidad'] }}- {{ $certificado['oficina'] }}- {{ $certificado['tipo_predio'] }}- {{ $certificado['numero_registro'] }}
 
@@ -132,7 +128,7 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Servicio</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Servicio</span>
 
                             {{ $certificado['tramite_año'] }}-{{ $certificado['tramite_folio'] }}-11
 
@@ -140,7 +136,7 @@
 
                         <x-table.cell>
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Acciones</span>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Acciones</span>
 
                             <div class="ml-3 relative" x-data="{ open_drop_down:false }">
 
