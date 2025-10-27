@@ -86,6 +86,8 @@ class MisTramites extends Component
 
         $this->año = now()->format('Y');
 
+        $this->estado = request()->query('estado');
+
         $this->link_pago_linea = config('services.sap.link_pago_linea');
 
         try {

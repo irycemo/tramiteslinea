@@ -58,6 +58,7 @@ return [
         'consultar_tramites' => env('SGC_CONSULTAR_TRAMITES'),
         'consultar_servicios' => env('SGC_CONSULTAR_SERVICIOS'),
         'consultar_certificados' => env('SGC_CONSULTAR_CERTIFICADOS'),
+        'consultar_estadisticas' => env('SGC_CONSULTAR_ESTADISTICAS'),
         'ingresar_aviso_aclaratorio' => env('SGC_INGRESAR_AVISO_ACLARATORIO'),
         'ingresar_revision_aviso' => env('SGC_INGRESAR_REVISION_AVISO'),
         'inactivarTraslado' => env('SGC_INACTIVAR_TRASLADO'),
@@ -87,6 +88,7 @@ return [
         'consultar_antecedentes' => env('SISTEMA_RPP_CONSULTAR_ANTECEDENTES'),
         'generar_certificado_gravamen_pdf' => env('SISTEMA_RPP_GENERAR_CERTIFICADO_GRAVAMEN_PDF'),
         'consultar_certificados' => env('SISTEMA_RPP_CONSULTAR_CERTIFICADOS_GRAVAMEN'),
+        'consultar_estadisticas' => env('SISTEMA_RPP_CONSULTAR_ESTADISTICAS'),
     ],
 
 ];

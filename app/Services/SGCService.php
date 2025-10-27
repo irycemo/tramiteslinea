@@ -693,4 +693,39 @@ class SGCService {
 
     }
 
+    public function consultarEstadisticas(int $entidad_id):array
+    {
+
+        $response = Http::withToken(config('services.sgc.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.sgc.consultar_estadisticas'),
+                                [
+                                    'entidad_id' => $entidad_id,
+                                ]
+                            );
+
+        if($response->status() !== 200){
+
+            Log::error("Error al consultar estadisticas. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al consultar estadisticas.");
+
+        }else{
+
+            return json_decode($response, true)['data'];
+
+        }
+
+    }
+
 }

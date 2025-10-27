@@ -102,7 +102,7 @@
 
     <x-header>Revisiones de avisos</x-header>
 
-    <div>
+    <div class="mb-5">
 
         <div class="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-5 gap-4">
 
@@ -197,6 +197,70 @@
             </div>
 
         </div>
+
+    </div>
+
+    <x-header>Certificados catastrales</x-header>
+
+    <div class="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-5 gap-4 mb-5">
+
+        @foreach ($certificados_catastrales as $certificado_catastral)
+
+            <div class="flex:col md:block justify-evenly items-center space-x-2 border-t-4 border-{{ $certificado_catastral['color'] }}-400 p-4 shadow-xl text-gray-600 rounded-xl bg-white text-center">
+
+                <div class="  mb-2 items-center">
+
+                    <span class="font-semibold text-2xl text-blueGray-600 mb-2">
+
+                        <p>{{ $certificado_catastral['total'] }}</p>
+
+                    </span>
+
+                    <h5 class="text-blueGray-400 uppercase text-sm text-center  tracking-widest md:tracking-normal">{{ $certificado_catastral['estado'] == 'A' ? 'Pendientes' : ucfirst($certificado_catastral['estado']) }}</h5>
+
+                </div>
+
+                @if($certificado_catastral['estado'] == 'A')
+
+                    <a href="{{ route('tramites_catastro') . "?estado=pagado" }}" class="mx-auto rounded-full border border-{{ $certificado_catastral['color'] }}-600 py-1 px-4 text-{{ $certificado_catastral['color'] }}-500 hover:bg-{{ $certificado_catastral['color'] }}-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
+
+                @else
+
+                    <a href="{{ route('certificados_catastro') . "?estado=" . $certificado_catastral['estado'] }}" class="mx-auto rounded-full border border-{{ $certificado_catastral['color'] }}-600 py-1 px-4 text-{{ $certificado_catastral['color'] }}-500 hover:bg-{{ $certificado_catastral['color'] }}-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
+
+                @endif
+
+            </div>
+
+        @endforeach
+
+    </div>
+
+    <x-header>Certificados de gravamen</x-header>
+
+    <div class="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-5 gap-4">
+
+        @foreach ($certificados_gravamen as $certificado_gravamen)
+
+            <div class="flex:col md:block justify-evenly items-center space-x-2 border-t-4 border-{{ $certificado_gravamen['color'] }}-400 p-4 shadow-xl text-gray-600 rounded-xl bg-white text-center">
+
+                <div class="  mb-2 items-center">
+
+                    <span class="font-semibold text-2xl text-blueGray-600 mb-2">
+
+                        <p>{{ $certificado_gravamen['total'] }}</p>
+
+                    </span>
+
+                    <h5 class="text-blueGray-400 uppercase text-sm text-center  tracking-widest md:tracking-normal">{{ $certificado_gravamen['estado'] == 'A' ? 'Pendientes' : ucfirst($certificado_gravamen['estado']) }}</h5>
+
+                </div>
+
+                <a href="{{ route('certificados_rpp') . "?estado=" . $certificado_gravamen['estado'] }}" class="mx-auto rounded-full border border-{{ $certificado_gravamen['color'] }}-600 py-1 px-4 text-{{ $certificado_gravamen['color'] }}-500 hover:bg-{{ $certificado_catastral['color'] }}-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
+
+            </div>
+
+        @endforeach
 
     </div>
 

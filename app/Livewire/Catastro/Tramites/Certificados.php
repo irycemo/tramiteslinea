@@ -151,6 +151,8 @@ class Certificados extends Component
 
         $this->año = now()->format('Y');
 
+        $this->estado = request()->query('estado');
+
     }
 
     public function render()
