@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Api\V1;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Http;
@@ -20,8 +19,6 @@ class AcreditarPagoController extends Controller
         ]);
 
         $validated = $request->validated();
-
-        /* info(($validated)); */
 
         try {
 
@@ -47,16 +44,23 @@ class AcreditarPagoController extends Controller
                                 ]
                             );
 
-
                 if($response->status() !== 200){
 
                     Log::warning("Error al acreditar pago, línea de captura: " . $validated['referencia']);
 
+                    return redirect()->route('dashboard', ['error' => 'No fue posible acreditar el trámite.']);
+
+                }else{
+
+                    return redirect('dashboard', ['success' => 'El trámite fue acreditado con éxito.']);
+
                 }
 
-            }
+            }else{
 
-            return redirect('login');
+                return redirect('dashboard', ['success' => 'El trámite fue acreditado con éxito.']);
+
+            }
 
         } catch (\Throwable $th) {
 
