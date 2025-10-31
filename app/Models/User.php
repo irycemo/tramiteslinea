@@ -5,6 +5,7 @@ namespace App\Models;
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 
 use App\Models\Entidad;
+use App\Models\Pregunta;
 use App\Traits\ModelosTrait;
 use Laravel\Sanctum\HasApiTokens;
 use Laravel\Jetstream\HasProfilePhoto;
@@ -75,6 +76,10 @@ class User extends Authenticatable implements Auditable
 
     public function entidad(){
         return $this->belongsTo(Entidad::class);
+    }
+
+    public function preguntasLeidas(){
+        return $this->belongsToMany(Pregunta::class);
     }
 
 }

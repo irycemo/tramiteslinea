@@ -73,5 +73,7 @@ class RoleSeeder extends Seeder
 
         Permission::create(['name' => 'Usuarios notaria', 'area' => 'RPP'])->syncRoles([$role1, $role2,$role4]);
 
+        Permission::create(['name' => 'Preguntas', 'area' => 'Consultas'])->syncRoles([$role1, $role2,$role4]);
+
     }
 }

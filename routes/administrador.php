@@ -7,9 +7,12 @@ use App\Livewire\Admin\Auditoria;
 use App\Livewire\Admin\Entidades;
 use App\Livewire\Admin\Avisos\Avisos;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\TramiteReciboController;
 use App\Livewire\Admin\Avisos\VerAviso;
+use App\Http\Controllers\DashboardController;
+use App\Livewire\Consultas\Preguntas\Preguntas;
+use App\Http\Controllers\TramiteReciboController;
+use App\Livewire\Consultas\Preguntas\NuevaPregunta;
+use App\Http\Controllers\Preguntas\PreguntasController;
 
 Route::group([], function(){
 
@@ -30,5 +33,11 @@ Route::group([], function(){
     Route::get('auditoria', Auditoria::class)->middleware('permission:Auditoria')->name('auditoria');
 
     Route::get('orden_pago', [TramiteReciboController::class, 'imprimir'])->name('orden_pago');
+
+    Route::get('preguntas_frecuentes', Preguntas::class)->middleware('permission:Preguntas')->name('preguntas_frecuentes');
+
+    Route::get('nueva_pregunta/{pregunta?}', NuevaPregunta::class)->middleware('permission:Preguntas')->name('nueva_pregunta');
+
+    Route::post('image-upload', [PreguntasController::class, 'storeImage'])->name('ckImage');
 
 });

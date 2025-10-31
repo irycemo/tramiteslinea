@@ -47,6 +47,8 @@
 
                 @endcan
 
+                @include('layouts.sidebar-consultas')
+
             </nav>
 
         </div>

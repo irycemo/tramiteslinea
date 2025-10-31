@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Pregunta;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -12,7 +13,9 @@ class DashboardController extends Controller
 
         $query = $request->query();
 
-        return view('dashboard', compact('query'));
+        $preguntas = Pregunta::latest()->take(5)->get();
+
+        return view('dashboard', compact('query', 'preguntas'));
 
     }
 
