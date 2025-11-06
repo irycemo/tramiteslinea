@@ -40,32 +40,51 @@ class PropietarioActualizar extends Component
 
     public function revisarProcentajes(){
 
-        $pp = 0;
+        $porcentaje_propiedad_adquirientes = 0;
 
-        $pn = 0;
+        $porcentaje_nuda_adquirientes = 0;
 
-        $pu = 0;
+        $porcentaje_usufructo_adquirientes = 0;
+
+        $porcentaje_propiedad_transmitentes = $this->predio->actores()->where('tipo', 'transmitente')->sum('porcentaje_propiedad');
+
+        $porcentaje_nuda_transmitentes = $this->predio->actores()->where('tipo', 'transmitente')->sum('porcentaje_nuda');
+
+        $porcentaje_usufructo_transmitentes = $this->predio->actores()->where('tipo', 'transmitente')->sum('porcentaje_usufructo');
 
         foreach($this->predio->adquirientes() as $adquiriente){
 
-            if($this->actor->id == $adquiriente->id)
-                continue;
+            if($this->actor->id == $adquiriente->id){
 
-            $pn = $pn + $adquiriente->porcentaje_nuda;
+                $porcentaje_nuda_adquirientes = $porcentaje_nuda_adquirientes + $this->porcentaje_nuda;
 
-            $pu = $pu + $adquiriente->porcentaje_usufructo;
+                $porcentaje_usufructo_adquirientes = $porcentaje_usufructo_adquirientes + $this->porcentaje_usufructo;
 
-            $pp = $pp + $adquiriente->porcentaje_propiedad;
+                $porcentaje_propiedad_adquirientes = $porcentaje_propiedad_adquirientes + $this->porcentaje_propiedad;
+
+            }else{
+
+                $porcentaje_nuda_adquirientes = $porcentaje_nuda_adquirientes + $adquiriente->porcentaje_nuda;
+
+                $porcentaje_usufructo_adquirientes = $porcentaje_usufructo_adquirientes + $adquiriente->porcentaje_usufructo;
+
+                $porcentaje_propiedad_adquirientes = $porcentaje_propiedad_adquirientes + $adquiriente->porcentaje_propiedad;
+
+            }
 
         }
 
-        $pp = $pp + (float)$this->porcentaje_propiedad;
+        if(($porcentaje_propiedad_adquirientes + $porcentaje_nuda_adquirientes) > ($porcentaje_propiedad_transmitentes + $porcentaje_nuda_transmitentes)){
 
-        $pn = $pn + (float)$this->porcentaje_nuda + $pp;
+            throw new GeneralException("Revisar los porcentajes de de los adquirientes.");
 
-        $pu = $pu + (float)$this->porcentaje_usufructo + $pp;
+        }
 
-        if((int)$pn > 100 || (int)$pu > 100) throw new GeneralException("La suma de los porcentajes no puede exceder el 100%.");
+        if(($porcentaje_propiedad_adquirientes + $porcentaje_usufructo_adquirientes) > ($porcentaje_propiedad_transmitentes + $porcentaje_usufructo_transmitentes)){
+
+            throw new GeneralException("Revisar los porcentajes de de los adquirientes.");
+
+        }
 
     }
 
@@ -153,7 +172,7 @@ class PropietarioActualizar extends Component
 
         } catch (GeneralException $ex) {
 
-            $this->dispatch('mostrarMensaje', ['error', $ex->getMessage()]);
+            $this->dispatch('mostrarMensaje', ['warning', $ex->getMessage()]);
 
         } catch (\Throwable $th) {
 

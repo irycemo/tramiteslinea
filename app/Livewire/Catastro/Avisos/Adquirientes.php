@@ -2,7 +2,6 @@
 
 namespace App\Livewire\Catastro\Avisos;
 
-use App\Livewire\Comun\PropietarioCrear;
 use App\Models\Actor;
 use App\Models\Aviso;
 use Livewire\Component;
