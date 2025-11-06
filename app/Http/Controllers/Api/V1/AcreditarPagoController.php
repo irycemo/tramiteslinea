@@ -52,13 +52,13 @@ class AcreditarPagoController extends Controller
 
                 }else{
 
-                    return redirect('dashboard', ['success' => 'El trámite fue acreditado con éxito.']);
+                    return redirect()->route('dashboard', ['success' => 'El trámite fue acreditado con éxito.']);
 
                 }
 
             }else{
 
-                return redirect('dashboard', ['success' => 'El trámite fue acreditado con éxito.']);
+                return redirect()->route('dashboard', ['success' => 'El trámite fue acreditado con éxito.']);
 
             }
 

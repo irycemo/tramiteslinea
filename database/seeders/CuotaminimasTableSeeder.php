@@ -30,8 +30,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             1 =>
             array (
@@ -44,8 +44,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             2 =>
             array (
@@ -58,8 +58,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             3 =>
             array (
@@ -72,8 +72,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             4 =>
             array (
@@ -86,8 +86,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             5 =>
             array (
@@ -100,8 +100,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             6 =>
             array (
@@ -114,8 +114,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             7 =>
             array (
@@ -128,8 +128,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             8 =>
             array (
@@ -142,8 +142,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             9 =>
             array (
@@ -156,8 +156,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             10 =>
             array (
@@ -170,8 +170,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             11 =>
             array (
@@ -184,8 +184,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             12 =>
             array (
@@ -198,8 +198,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             13 =>
             array (
@@ -212,8 +212,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             14 =>
             array (
@@ -226,8 +226,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             15 =>
             array (
@@ -240,8 +240,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             16 =>
             array (
@@ -254,8 +254,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             17 =>
             array (
@@ -268,8 +268,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             18 =>
             array (
@@ -282,8 +282,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             19 =>
             array (
@@ -296,8 +296,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             20 =>
             array (
@@ -310,8 +310,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             21 =>
             array (
@@ -324,8 +324,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             22 =>
             array (
@@ -338,8 +338,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             23 =>
             array (
@@ -352,8 +352,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             24 =>
             array (
@@ -366,8 +366,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             25 =>
             array (
@@ -380,8 +380,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             26 =>
             array (
@@ -394,8 +394,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             27 =>
             array (
@@ -408,8 +408,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             28 =>
             array (
@@ -422,8 +422,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             29 =>
             array (
@@ -436,8 +436,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             30 =>
             array (
@@ -450,8 +450,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             31 =>
             array (
@@ -464,8 +464,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             32 =>
             array (
@@ -478,8 +478,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             33 =>
             array (
@@ -492,8 +492,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             34 =>
             array (
@@ -506,8 +506,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '170.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             35 =>
             array (
@@ -520,8 +520,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '177.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             36 =>
             array (
@@ -534,8 +534,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '184.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             37 =>
             array (
@@ -548,8 +548,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             38 =>
             array (
@@ -562,8 +562,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '210.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             39 =>
             array (
@@ -576,8 +576,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             40 =>
             array (
@@ -590,8 +590,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             41 =>
             array (
@@ -604,8 +604,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             42 =>
             array (
@@ -618,8 +618,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '177.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             43 =>
             array (
@@ -632,8 +632,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             44 =>
             array (
@@ -646,8 +646,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '184.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             45 =>
             array (
@@ -660,8 +660,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             46 =>
             array (
@@ -674,8 +674,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             47 =>
             array (
@@ -688,8 +688,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             48 =>
             array (
@@ -702,8 +702,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             49 =>
             array (
@@ -716,8 +716,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             50 =>
             array (
@@ -730,8 +730,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             51 =>
             array (
@@ -744,8 +744,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             52 =>
             array (
@@ -758,8 +758,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             53 =>
             array (
@@ -772,8 +772,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             54 =>
             array (
@@ -786,8 +786,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '210.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             55 =>
             array (
@@ -800,8 +800,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             56 =>
             array (
@@ -814,8 +814,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             57 =>
             array (
@@ -828,8 +828,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             58 =>
             array (
@@ -842,8 +842,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             59 =>
             array (
@@ -856,8 +856,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             60 =>
             array (
@@ -870,8 +870,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             61 =>
             array (
@@ -884,8 +884,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             62 =>
             array (
@@ -898,8 +898,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             63 =>
             array (
@@ -912,8 +912,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             64 =>
             array (
@@ -926,8 +926,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             65 =>
             array (
@@ -940,8 +940,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             66 =>
             array (
@@ -954,8 +954,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             67 =>
             array (
@@ -968,8 +968,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             68 =>
             array (
@@ -982,8 +982,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             69 =>
             array (
@@ -996,8 +996,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             70 =>
             array (
@@ -1010,8 +1010,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             71 =>
             array (
@@ -1024,8 +1024,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             72 =>
             array (
@@ -1038,8 +1038,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             73 =>
             array (
@@ -1052,8 +1052,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             74 =>
             array (
@@ -1066,8 +1066,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             75 =>
             array (
@@ -1080,8 +1080,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             76 =>
             array (
@@ -1094,8 +1094,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             77 =>
             array (
@@ -1108,8 +1108,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             78 =>
             array (
@@ -1122,8 +1122,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             79 =>
             array (
@@ -1136,8 +1136,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '210.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             80 =>
             array (
@@ -1150,8 +1150,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             81 =>
             array (
@@ -1164,8 +1164,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             82 =>
             array (
@@ -1178,8 +1178,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             83 =>
             array (
@@ -1192,8 +1192,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             84 =>
             array (
@@ -1206,8 +1206,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             85 =>
             array (
@@ -1220,8 +1220,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             86 =>
             array (
@@ -1234,8 +1234,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             87 =>
             array (
@@ -1248,8 +1248,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '266.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             88 =>
             array (
@@ -1262,8 +1262,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             89 =>
             array (
@@ -1276,8 +1276,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '301.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             90 =>
             array (
@@ -1290,8 +1290,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             91 =>
             array (
@@ -1304,8 +1304,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             92 =>
             array (
@@ -1318,8 +1318,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             93 =>
             array (
@@ -1332,8 +1332,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             94 =>
             array (
@@ -1346,8 +1346,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             95 =>
             array (
@@ -1360,8 +1360,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             96 =>
             array (
@@ -1374,8 +1374,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             97 =>
             array (
@@ -1388,8 +1388,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             98 =>
             array (
@@ -1402,8 +1402,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             99 =>
             array (
@@ -1416,8 +1416,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             100 =>
             array (
@@ -1430,8 +1430,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             101 =>
             array (
@@ -1444,8 +1444,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             102 =>
             array (
@@ -1458,8 +1458,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             103 =>
             array (
@@ -1472,8 +1472,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             104 =>
             array (
@@ -1486,8 +1486,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             105 =>
             array (
@@ -1500,8 +1500,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             106 =>
             array (
@@ -1514,8 +1514,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             107 =>
             array (
@@ -1528,8 +1528,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             108 =>
             array (
@@ -1542,8 +1542,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             109 =>
             array (
@@ -1556,8 +1556,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             110 =>
             array (
@@ -1570,8 +1570,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             111 =>
             array (
@@ -1584,8 +1584,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             112 =>
             array (
@@ -1598,8 +1598,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             113 =>
             array (
@@ -1612,8 +1612,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             114 =>
             array (
@@ -1626,8 +1626,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             115 =>
             array (
@@ -1640,8 +1640,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             116 =>
             array (
@@ -1654,8 +1654,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             117 =>
             array (
@@ -1668,8 +1668,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             118 =>
             array (
@@ -1682,8 +1682,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             119 =>
             array (
@@ -1696,8 +1696,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             120 =>
             array (
@@ -1710,8 +1710,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '133.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             121 =>
             array (
@@ -1724,8 +1724,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '146.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             122 =>
             array (
@@ -1738,8 +1738,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             123 =>
             array (
@@ -1752,8 +1752,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             124 =>
             array (
@@ -1766,8 +1766,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             125 =>
             array (
@@ -1780,8 +1780,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             126 =>
             array (
@@ -1794,8 +1794,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             127 =>
             array (
@@ -1808,8 +1808,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '128.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             128 =>
             array (
@@ -1822,8 +1822,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '146.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             129 =>
             array (
@@ -1836,8 +1836,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             130 =>
             array (
@@ -1850,8 +1850,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             131 =>
             array (
@@ -1864,8 +1864,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '140.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             132 =>
             array (
@@ -1878,8 +1878,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             133 =>
             array (
@@ -1892,8 +1892,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             134 =>
             array (
@@ -1906,8 +1906,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             135 =>
             array (
@@ -1920,8 +1920,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             136 =>
             array (
@@ -1934,8 +1934,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             137 =>
             array (
@@ -1948,8 +1948,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             138 =>
             array (
@@ -1962,8 +1962,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             139 =>
             array (
@@ -1976,8 +1976,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             140 =>
             array (
@@ -1990,8 +1990,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             141 =>
             array (
@@ -2004,8 +2004,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             142 =>
             array (
@@ -2018,8 +2018,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             143 =>
             array (
@@ -2032,8 +2032,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             144 =>
             array (
@@ -2046,8 +2046,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             145 =>
             array (
@@ -2060,8 +2060,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             146 =>
             array (
@@ -2074,8 +2074,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             147 =>
             array (
@@ -2088,8 +2088,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             148 =>
             array (
@@ -2102,8 +2102,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             149 =>
             array (
@@ -2116,8 +2116,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             150 =>
             array (
@@ -2130,8 +2130,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             151 =>
             array (
@@ -2144,8 +2144,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             152 =>
             array (
@@ -2158,8 +2158,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             153 =>
             array (
@@ -2172,8 +2172,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             154 =>
             array (
@@ -2186,8 +2186,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             155 =>
             array (
@@ -2200,8 +2200,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             156 =>
             array (
@@ -2214,8 +2214,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             157 =>
             array (
@@ -2228,8 +2228,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             158 =>
             array (
@@ -2242,8 +2242,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             159 =>
             array (
@@ -2256,8 +2256,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             160 =>
             array (
@@ -2270,8 +2270,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             161 =>
             array (
@@ -2284,8 +2284,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             162 =>
             array (
@@ -2298,8 +2298,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '210.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             163 =>
             array (
@@ -2312,8 +2312,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             164 =>
             array (
@@ -2326,8 +2326,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '301.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             165 =>
             array (
@@ -2340,8 +2340,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             166 =>
             array (
@@ -2354,8 +2354,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             167 =>
             array (
@@ -2368,8 +2368,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             168 =>
             array (
@@ -2382,8 +2382,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             169 =>
             array (
@@ -2396,8 +2396,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             170 =>
             array (
@@ -2410,8 +2410,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             171 =>
             array (
@@ -2424,8 +2424,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             172 =>
             array (
@@ -2438,8 +2438,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             173 =>
             array (
@@ -2452,8 +2452,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             174 =>
             array (
@@ -2466,8 +2466,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             175 =>
             array (
@@ -2480,8 +2480,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             176 =>
             array (
@@ -2494,8 +2494,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             177 =>
             array (
@@ -2508,8 +2508,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             178 =>
             array (
@@ -2522,8 +2522,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '255.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             179 =>
             array (
@@ -2536,8 +2536,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '266.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             180 =>
             array (
@@ -2550,8 +2550,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             181 =>
             array (
@@ -2564,8 +2564,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '301.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             182 =>
             array (
@@ -2578,8 +2578,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             183 =>
             array (
@@ -2592,8 +2592,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             184 =>
             array (
@@ -2606,8 +2606,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             185 =>
             array (
@@ -2620,8 +2620,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             186 =>
             array (
@@ -2634,8 +2634,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             187 =>
             array (
@@ -2648,8 +2648,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             188 =>
             array (
@@ -2662,8 +2662,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             189 =>
             array (
@@ -2676,8 +2676,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             190 =>
             array (
@@ -2690,8 +2690,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             191 =>
             array (
@@ -2704,8 +2704,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             192 =>
             array (
@@ -2718,8 +2718,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             193 =>
             array (
@@ -2732,8 +2732,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             194 =>
             array (
@@ -2746,8 +2746,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             195 =>
             array (
@@ -2760,8 +2760,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             196 =>
             array (
@@ -2774,8 +2774,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             197 =>
             array (
@@ -2788,8 +2788,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             198 =>
             array (
@@ -2802,8 +2802,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             199 =>
             array (
@@ -2816,8 +2816,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             200 =>
             array (
@@ -2830,8 +2830,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             201 =>
             array (
@@ -2844,8 +2844,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             202 =>
             array (
@@ -2858,8 +2858,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '170.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             203 =>
             array (
@@ -2872,8 +2872,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '177.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             204 =>
             array (
@@ -2886,8 +2886,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '184.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             205 =>
             array (
@@ -2900,8 +2900,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             206 =>
             array (
@@ -2914,8 +2914,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '210.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             207 =>
             array (
@@ -2928,8 +2928,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             208 =>
             array (
@@ -2942,8 +2942,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '240.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             209 =>
             array (
@@ -2956,8 +2956,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             210 =>
             array (
@@ -2970,8 +2970,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             211 =>
             array (
@@ -2984,8 +2984,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             212 =>
             array (
@@ -2998,8 +2998,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             213 =>
             array (
@@ -3012,8 +3012,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '210.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             214 =>
             array (
@@ -3026,8 +3026,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             215 =>
             array (
@@ -3040,8 +3040,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             216 =>
             array (
@@ -3054,8 +3054,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             217 =>
             array (
@@ -3068,8 +3068,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             218 =>
             array (
@@ -3082,8 +3082,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             219 =>
             array (
@@ -3096,8 +3096,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             220 =>
             array (
@@ -3110,8 +3110,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             221 =>
             array (
@@ -3124,8 +3124,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             222 =>
             array (
@@ -3138,8 +3138,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             223 =>
             array (
@@ -3152,8 +3152,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             224 =>
             array (
@@ -3166,8 +3166,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             225 =>
             array (
@@ -3180,8 +3180,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             226 =>
             array (
@@ -3194,8 +3194,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             227 =>
             array (
@@ -3208,8 +3208,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             228 =>
             array (
@@ -3222,8 +3222,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             229 =>
             array (
@@ -3236,8 +3236,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             230 =>
             array (
@@ -3250,8 +3250,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             231 =>
             array (
@@ -3264,8 +3264,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             232 =>
             array (
@@ -3278,8 +3278,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '210.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             233 =>
             array (
@@ -3292,8 +3292,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             234 =>
             array (
@@ -3306,8 +3306,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             235 =>
             array (
@@ -3320,8 +3320,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             236 =>
             array (
@@ -3334,8 +3334,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             237 =>
             array (
@@ -3348,8 +3348,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '210.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             238 =>
             array (
@@ -3362,8 +3362,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             239 =>
             array (
@@ -3376,8 +3376,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             240 =>
             array (
@@ -3390,8 +3390,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             241 =>
             array (
@@ -3404,8 +3404,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             242 =>
             array (
@@ -3418,8 +3418,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             243 =>
             array (
@@ -3432,8 +3432,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             244 =>
             array (
@@ -3446,8 +3446,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '184.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             245 =>
             array (
@@ -3460,8 +3460,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             246 =>
             array (
@@ -3474,8 +3474,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             247 =>
             array (
@@ -3488,8 +3488,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             248 =>
             array (
@@ -3502,8 +3502,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             249 =>
             array (
@@ -3516,8 +3516,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             250 =>
             array (
@@ -3530,8 +3530,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             251 =>
             array (
@@ -3544,8 +3544,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             252 =>
             array (
@@ -3558,8 +3558,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             253 =>
             array (
@@ -3572,8 +3572,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             254 =>
             array (
@@ -3586,8 +3586,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             255 =>
             array (
@@ -3600,8 +3600,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             256 =>
             array (
@@ -3614,8 +3614,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             257 =>
             array (
@@ -3628,8 +3628,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             258 =>
             array (
@@ -3642,8 +3642,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             259 =>
             array (
@@ -3656,8 +3656,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             260 =>
             array (
@@ -3670,8 +3670,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             261 =>
             array (
@@ -3684,8 +3684,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             262 =>
             array (
@@ -3698,8 +3698,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             263 =>
             array (
@@ -3712,8 +3712,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             264 =>
             array (
@@ -3726,8 +3726,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             265 =>
             array (
@@ -3740,8 +3740,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '282.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             266 =>
             array (
@@ -3754,8 +3754,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             267 =>
             array (
@@ -3768,8 +3768,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             268 =>
             array (
@@ -3782,8 +3782,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             269 =>
             array (
@@ -3796,8 +3796,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             270 =>
             array (
@@ -3810,8 +3810,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             271 =>
             array (
@@ -3824,8 +3824,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             272 =>
             array (
@@ -3838,8 +3838,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             273 =>
             array (
@@ -3852,8 +3852,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             274 =>
             array (
@@ -3866,8 +3866,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             275 =>
             array (
@@ -3880,8 +3880,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             276 =>
             array (
@@ -3894,8 +3894,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             277 =>
             array (
@@ -3908,8 +3908,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             278 =>
             array (
@@ -3922,8 +3922,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '255.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             279 =>
             array (
@@ -3936,8 +3936,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '266.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             280 =>
             array (
@@ -3950,8 +3950,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '266.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             281 =>
             array (
@@ -3964,8 +3964,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '266.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             282 =>
             array (
@@ -3978,8 +3978,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             283 =>
             array (
@@ -3992,8 +3992,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             284 =>
             array (
@@ -4006,8 +4006,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             285 =>
             array (
@@ -4020,8 +4020,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '170.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             286 =>
             array (
@@ -4034,8 +4034,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             287 =>
             array (
@@ -4048,8 +4048,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             288 =>
             array (
@@ -4062,8 +4062,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             289 =>
             array (
@@ -4076,8 +4076,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             290 =>
             array (
@@ -4090,8 +4090,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             291 =>
             array (
@@ -4104,8 +4104,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             292 =>
             array (
@@ -4118,8 +4118,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             293 =>
             array (
@@ -4132,8 +4132,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             294 =>
             array (
@@ -4146,8 +4146,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             295 =>
             array (
@@ -4160,8 +4160,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             296 =>
             array (
@@ -4174,8 +4174,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             297 =>
             array (
@@ -4188,8 +4188,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             298 =>
             array (
@@ -4202,8 +4202,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             299 =>
             array (
@@ -4216,8 +4216,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             300 =>
             array (
@@ -4230,8 +4230,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             301 =>
             array (
@@ -4244,8 +4244,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             302 =>
             array (
@@ -4258,8 +4258,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             303 =>
             array (
@@ -4272,8 +4272,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '403.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             304 =>
             array (
@@ -4286,8 +4286,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '403.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             305 =>
             array (
@@ -4300,8 +4300,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             306 =>
             array (
@@ -4314,8 +4314,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             307 =>
             array (
@@ -4328,8 +4328,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             308 =>
             array (
@@ -4342,8 +4342,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             309 =>
             array (
@@ -4356,8 +4356,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             310 =>
             array (
@@ -4370,8 +4370,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             311 =>
             array (
@@ -4384,8 +4384,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             312 =>
             array (
@@ -4398,8 +4398,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             313 =>
             array (
@@ -4412,8 +4412,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             314 =>
             array (
@@ -4426,8 +4426,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             315 =>
             array (
@@ -4440,8 +4440,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             316 =>
             array (
@@ -4454,8 +4454,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             317 =>
             array (
@@ -4468,8 +4468,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             318 =>
             array (
@@ -4482,8 +4482,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             319 =>
             array (
@@ -4496,8 +4496,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             320 =>
             array (
@@ -4510,8 +4510,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             321 =>
             array (
@@ -4524,8 +4524,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             322 =>
             array (
@@ -4538,8 +4538,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             323 =>
             array (
@@ -4552,8 +4552,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '118.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             324 =>
             array (
@@ -4566,8 +4566,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             325 =>
             array (
@@ -4580,8 +4580,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             326 =>
             array (
@@ -4594,8 +4594,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             327 =>
             array (
@@ -4608,8 +4608,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             328 =>
             array (
@@ -4622,8 +4622,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             329 =>
             array (
@@ -4636,8 +4636,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             330 =>
             array (
@@ -4650,8 +4650,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             331 =>
             array (
@@ -4664,8 +4664,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             332 =>
             array (
@@ -4678,8 +4678,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             333 =>
             array (
@@ -4692,8 +4692,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             334 =>
             array (
@@ -4706,8 +4706,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             335 =>
             array (
@@ -4720,8 +4720,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             336 =>
             array (
@@ -4734,8 +4734,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             337 =>
             array (
@@ -4748,8 +4748,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             338 =>
             array (
@@ -4762,8 +4762,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             339 =>
             array (
@@ -4776,8 +4776,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             340 =>
             array (
@@ -4790,8 +4790,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             341 =>
             array (
@@ -4804,8 +4804,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             342 =>
             array (
@@ -4818,8 +4818,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             343 =>
             array (
@@ -4832,8 +4832,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             344 =>
             array (
@@ -4846,8 +4846,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             345 =>
             array (
@@ -4860,8 +4860,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             346 =>
             array (
@@ -4874,8 +4874,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             347 =>
             array (
@@ -4888,8 +4888,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             348 =>
             array (
@@ -4902,8 +4902,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             349 =>
             array (
@@ -4916,8 +4916,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             350 =>
             array (
@@ -4930,8 +4930,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             351 =>
             array (
@@ -4944,8 +4944,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '266.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             352 =>
             array (
@@ -4958,8 +4958,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             353 =>
             array (
@@ -4972,8 +4972,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             354 =>
             array (
@@ -4986,8 +4986,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             355 =>
             array (
@@ -5000,8 +5000,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '170.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             356 =>
             array (
@@ -5014,8 +5014,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '177.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             357 =>
             array (
@@ -5028,8 +5028,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '184.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             358 =>
             array (
@@ -5042,8 +5042,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             359 =>
             array (
@@ -5056,8 +5056,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '205.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             360 =>
             array (
@@ -5070,8 +5070,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             361 =>
             array (
@@ -5084,8 +5084,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             362 =>
             array (
@@ -5098,8 +5098,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             363 =>
             array (
@@ -5112,8 +5112,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             364 =>
             array (
@@ -5126,8 +5126,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             365 =>
             array (
@@ -5140,8 +5140,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             366 =>
             array (
@@ -5154,8 +5154,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '255.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             367 =>
             array (
@@ -5168,8 +5168,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '266.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             368 =>
             array (
@@ -5182,8 +5182,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             369 =>
             array (
@@ -5196,8 +5196,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             370 =>
             array (
@@ -5210,8 +5210,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             371 =>
             array (
@@ -5224,8 +5224,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             372 =>
             array (
@@ -5238,8 +5238,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             373 =>
             array (
@@ -5252,8 +5252,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             374 =>
             array (
@@ -5266,8 +5266,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             375 =>
             array (
@@ -5280,8 +5280,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             376 =>
             array (
@@ -5294,8 +5294,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             377 =>
             array (
@@ -5308,8 +5308,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             378 =>
             array (
@@ -5322,8 +5322,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             379 =>
             array (
@@ -5336,8 +5336,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             380 =>
             array (
@@ -5350,8 +5350,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             381 =>
             array (
@@ -5364,8 +5364,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             382 =>
             array (
@@ -5378,8 +5378,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             383 =>
             array (
@@ -5392,8 +5392,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             384 =>
             array (
@@ -5406,8 +5406,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             385 =>
             array (
@@ -5420,8 +5420,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             386 =>
             array (
@@ -5434,8 +5434,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             387 =>
             array (
@@ -5448,8 +5448,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             388 =>
             array (
@@ -5462,8 +5462,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             389 =>
             array (
@@ -5476,8 +5476,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '170.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             390 =>
             array (
@@ -5490,8 +5490,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '177.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             391 =>
             array (
@@ -5504,8 +5504,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '184.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             392 =>
             array (
@@ -5518,8 +5518,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             393 =>
             array (
@@ -5532,8 +5532,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '210.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             394 =>
             array (
@@ -5546,8 +5546,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             395 =>
             array (
@@ -5560,8 +5560,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             396 =>
             array (
@@ -5574,8 +5574,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             397 =>
             array (
@@ -5588,8 +5588,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             398 =>
             array (
@@ -5602,8 +5602,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             399 =>
             array (
@@ -5616,8 +5616,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             400 =>
             array (
@@ -5630,8 +5630,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             401 =>
             array (
@@ -5644,8 +5644,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             402 =>
             array (
@@ -5658,8 +5658,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             403 =>
             array (
@@ -5672,8 +5672,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             404 =>
             array (
@@ -5686,8 +5686,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             405 =>
             array (
@@ -5700,8 +5700,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             406 =>
             array (
@@ -5714,8 +5714,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             407 =>
             array (
@@ -5728,8 +5728,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             408 =>
             array (
@@ -5742,8 +5742,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             409 =>
             array (
@@ -5756,8 +5756,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             410 =>
             array (
@@ -5770,8 +5770,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             411 =>
             array (
@@ -5784,8 +5784,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             412 =>
             array (
@@ -5798,8 +5798,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             413 =>
             array (
@@ -5812,8 +5812,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             414 =>
             array (
@@ -5826,8 +5826,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             415 =>
             array (
@@ -5840,8 +5840,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             416 =>
             array (
@@ -5854,8 +5854,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '255.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             417 =>
             array (
@@ -5868,8 +5868,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '266.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             418 =>
             array (
@@ -5882,8 +5882,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             419 =>
             array (
@@ -5896,8 +5896,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             420 =>
             array (
@@ -5910,8 +5910,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             421 =>
             array (
@@ -5924,8 +5924,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             422 =>
             array (
@@ -5938,8 +5938,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             423 =>
             array (
@@ -5952,8 +5952,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             424 =>
             array (
@@ -5966,8 +5966,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             425 =>
             array (
@@ -5980,8 +5980,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             426 =>
             array (
@@ -5994,8 +5994,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             427 =>
             array (
@@ -6008,8 +6008,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             428 =>
             array (
@@ -6022,8 +6022,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             429 =>
             array (
@@ -6036,8 +6036,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             430 =>
             array (
@@ -6050,8 +6050,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             431 =>
             array (
@@ -6064,8 +6064,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             432 =>
             array (
@@ -6078,8 +6078,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             433 =>
             array (
@@ -6092,8 +6092,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             434 =>
             array (
@@ -6106,8 +6106,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             435 =>
             array (
@@ -6120,8 +6120,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             436 =>
             array (
@@ -6134,8 +6134,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             437 =>
             array (
@@ -6148,8 +6148,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             438 =>
             array (
@@ -6162,8 +6162,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             439 =>
             array (
@@ -6176,8 +6176,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             440 =>
             array (
@@ -6190,8 +6190,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             441 =>
             array (
@@ -6204,8 +6204,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             442 =>
             array (
@@ -6218,8 +6218,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             443 =>
             array (
@@ -6232,8 +6232,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             444 =>
             array (
@@ -6246,8 +6246,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             445 =>
             array (
@@ -6260,8 +6260,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             446 =>
             array (
@@ -6274,8 +6274,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             447 =>
             array (
@@ -6288,8 +6288,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             448 =>
             array (
@@ -6302,8 +6302,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             449 =>
             array (
@@ -6316,8 +6316,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             450 =>
             array (
@@ -6330,8 +6330,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             451 =>
             array (
@@ -6344,8 +6344,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             452 =>
             array (
@@ -6358,8 +6358,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             453 =>
             array (
@@ -6372,8 +6372,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             454 =>
             array (
@@ -6386,8 +6386,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             455 =>
             array (
@@ -6400,8 +6400,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             456 =>
             array (
@@ -6414,8 +6414,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             457 =>
             array (
@@ -6428,8 +6428,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             458 =>
             array (
@@ -6442,8 +6442,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             459 =>
             array (
@@ -6456,8 +6456,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             460 =>
             array (
@@ -6470,8 +6470,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             461 =>
             array (
@@ -6484,8 +6484,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             462 =>
             array (
@@ -6498,8 +6498,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             463 =>
             array (
@@ -6512,8 +6512,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '484.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             464 =>
             array (
@@ -6526,8 +6526,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             465 =>
             array (
@@ -6540,8 +6540,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             466 =>
             array (
@@ -6554,8 +6554,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             467 =>
             array (
@@ -6568,8 +6568,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             468 =>
             array (
@@ -6582,8 +6582,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             469 =>
             array (
@@ -6596,8 +6596,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             470 =>
             array (
@@ -6610,8 +6610,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             471 =>
             array (
@@ -6624,8 +6624,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             472 =>
             array (
@@ -6638,8 +6638,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             473 =>
             array (
@@ -6652,8 +6652,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             474 =>
             array (
@@ -6666,8 +6666,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             475 =>
             array (
@@ -6680,8 +6680,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             476 =>
             array (
@@ -6694,8 +6694,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             477 =>
             array (
@@ -6708,8 +6708,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             478 =>
             array (
@@ -6722,8 +6722,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             479 =>
             array (
@@ -6736,8 +6736,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             480 =>
             array (
@@ -6750,8 +6750,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             481 =>
             array (
@@ -6764,8 +6764,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             482 =>
             array (
@@ -6778,8 +6778,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             483 =>
             array (
@@ -6792,8 +6792,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             484 =>
             array (
@@ -6806,8 +6806,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             485 =>
             array (
@@ -6820,8 +6820,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             486 =>
             array (
@@ -6834,8 +6834,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             487 =>
             array (
@@ -6848,8 +6848,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             488 =>
             array (
@@ -6862,8 +6862,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             489 =>
             array (
@@ -6876,8 +6876,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             490 =>
             array (
@@ -6890,8 +6890,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             491 =>
             array (
@@ -6904,8 +6904,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '255.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             492 =>
             array (
@@ -6918,8 +6918,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '332.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             493 =>
             array (
@@ -6932,8 +6932,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '365.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             494 =>
             array (
@@ -6946,8 +6946,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '377.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             495 =>
             array (
@@ -6960,8 +6960,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '403.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             496 =>
             array (
@@ -6974,8 +6974,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             497 =>
             array (
@@ -6988,8 +6988,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             498 =>
             array (
@@ -7002,8 +7002,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '170.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             499 =>
             array (
@@ -7016,8 +7016,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '177.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
         ));
         \DB::table('cuota_minimas')->insert(array (
@@ -7032,8 +7032,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '184.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             1 =>
             array (
@@ -7046,8 +7046,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             2 =>
             array (
@@ -7060,8 +7060,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             3 =>
             array (
@@ -7074,8 +7074,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             4 =>
             array (
@@ -7088,8 +7088,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             5 =>
             array (
@@ -7102,8 +7102,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             6 =>
             array (
@@ -7116,8 +7116,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             7 =>
             array (
@@ -7130,8 +7130,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             8 =>
             array (
@@ -7144,8 +7144,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '255.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             9 =>
             array (
@@ -7158,8 +7158,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             10 =>
             array (
@@ -7172,8 +7172,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             11 =>
             array (
@@ -7186,8 +7186,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             12 =>
             array (
@@ -7200,8 +7200,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '266.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             13 =>
             array (
@@ -7214,8 +7214,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             14 =>
             array (
@@ -7228,8 +7228,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             15 =>
             array (
@@ -7242,8 +7242,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             16 =>
             array (
@@ -7256,8 +7256,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             17 =>
             array (
@@ -7270,8 +7270,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             18 =>
             array (
@@ -7284,8 +7284,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             19 =>
             array (
@@ -7298,8 +7298,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             20 =>
             array (
@@ -7312,8 +7312,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             21 =>
             array (
@@ -7326,8 +7326,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             22 =>
             array (
@@ -7340,8 +7340,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             23 =>
             array (
@@ -7354,8 +7354,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             24 =>
             array (
@@ -7368,8 +7368,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             25 =>
             array (
@@ -7382,8 +7382,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             26 =>
             array (
@@ -7396,8 +7396,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             27 =>
             array (
@@ -7410,8 +7410,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             28 =>
             array (
@@ -7424,8 +7424,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             29 =>
             array (
@@ -7438,8 +7438,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             30 =>
             array (
@@ -7452,8 +7452,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             31 =>
             array (
@@ -7466,8 +7466,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             32 =>
             array (
@@ -7480,8 +7480,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             33 =>
             array (
@@ -7494,8 +7494,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             34 =>
             array (
@@ -7508,8 +7508,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             35 =>
             array (
@@ -7522,8 +7522,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             36 =>
             array (
@@ -7536,8 +7536,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             37 =>
             array (
@@ -7550,8 +7550,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             38 =>
             array (
@@ -7564,8 +7564,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             39 =>
             array (
@@ -7578,8 +7578,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '170.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             40 =>
             array (
@@ -7592,8 +7592,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '177.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             41 =>
             array (
@@ -7606,8 +7606,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '184.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             42 =>
             array (
@@ -7620,8 +7620,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             43 =>
             array (
@@ -7634,8 +7634,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             44 =>
             array (
@@ -7648,8 +7648,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             45 =>
             array (
@@ -7662,8 +7662,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             46 =>
             array (
@@ -7676,8 +7676,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             47 =>
             array (
@@ -7690,8 +7690,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             48 =>
             array (
@@ -7704,8 +7704,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             49 =>
             array (
@@ -7718,8 +7718,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             50 =>
             array (
@@ -7732,8 +7732,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             51 =>
             array (
@@ -7746,8 +7746,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             52 =>
             array (
@@ -7760,8 +7760,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             53 =>
             array (
@@ -7774,8 +7774,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             54 =>
             array (
@@ -7788,8 +7788,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             55 =>
             array (
@@ -7802,8 +7802,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             56 =>
             array (
@@ -7816,8 +7816,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             57 =>
             array (
@@ -7830,8 +7830,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             58 =>
             array (
@@ -7844,8 +7844,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             59 =>
             array (
@@ -7858,8 +7858,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '255.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             60 =>
             array (
@@ -7872,8 +7872,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             61 =>
             array (
@@ -7886,8 +7886,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '377.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             62 =>
             array (
@@ -7900,8 +7900,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '403.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             63 =>
             array (
@@ -7914,8 +7914,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '266.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             64 =>
             array (
@@ -7928,8 +7928,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             65 =>
             array (
@@ -7942,8 +7942,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             66 =>
             array (
@@ -7956,8 +7956,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             67 =>
             array (
@@ -7970,8 +7970,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             68 =>
             array (
@@ -7984,8 +7984,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             69 =>
             array (
@@ -7998,8 +7998,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             70 =>
             array (
@@ -8012,8 +8012,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '377.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             71 =>
             array (
@@ -8026,8 +8026,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             72 =>
             array (
@@ -8040,8 +8040,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             73 =>
             array (
@@ -8054,8 +8054,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             74 =>
             array (
@@ -8068,8 +8068,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             75 =>
             array (
@@ -8082,8 +8082,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             76 =>
             array (
@@ -8096,8 +8096,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             77 =>
             array (
@@ -8110,8 +8110,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             78 =>
             array (
@@ -8124,8 +8124,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             79 =>
             array (
@@ -8138,8 +8138,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             80 =>
             array (
@@ -8152,8 +8152,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             81 =>
             array (
@@ -8166,8 +8166,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             82 =>
             array (
@@ -8180,8 +8180,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             83 =>
             array (
@@ -8194,8 +8194,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '266.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             84 =>
             array (
@@ -8208,8 +8208,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             85 =>
             array (
@@ -8222,8 +8222,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             86 =>
             array (
@@ -8236,8 +8236,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             87 =>
             array (
@@ -8250,8 +8250,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             88 =>
             array (
@@ -8264,8 +8264,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             89 =>
             array (
@@ -8278,8 +8278,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             90 =>
             array (
@@ -8292,8 +8292,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             91 =>
             array (
@@ -8306,8 +8306,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             92 =>
             array (
@@ -8320,8 +8320,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             93 =>
             array (
@@ -8334,8 +8334,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             94 =>
             array (
@@ -8348,8 +8348,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             95 =>
             array (
@@ -8362,8 +8362,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             96 =>
             array (
@@ -8376,8 +8376,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             97 =>
             array (
@@ -8390,8 +8390,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             98 =>
             array (
@@ -8404,8 +8404,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             99 =>
             array (
@@ -8418,8 +8418,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             100 =>
             array (
@@ -8432,8 +8432,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             101 =>
             array (
@@ -8446,8 +8446,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             102 =>
             array (
@@ -8460,8 +8460,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             103 =>
             array (
@@ -8474,8 +8474,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             104 =>
             array (
@@ -8488,8 +8488,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             105 =>
             array (
@@ -8502,8 +8502,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             106 =>
             array (
@@ -8516,8 +8516,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             107 =>
             array (
@@ -8530,8 +8530,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '255.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             108 =>
             array (
@@ -8544,8 +8544,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             109 =>
             array (
@@ -8558,8 +8558,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             110 =>
             array (
@@ -8572,8 +8572,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             111 =>
             array (
@@ -8586,8 +8586,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '266.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             112 =>
             array (
@@ -8600,8 +8600,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             113 =>
             array (
@@ -8614,8 +8614,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             114 =>
             array (
@@ -8628,8 +8628,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             115 =>
             array (
@@ -8642,8 +8642,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '255.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             116 =>
             array (
@@ -8656,8 +8656,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             117 =>
             array (
@@ -8670,8 +8670,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             118 =>
             array (
@@ -8684,8 +8684,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             119 =>
             array (
@@ -8698,8 +8698,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             120 =>
             array (
@@ -8712,8 +8712,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             121 =>
             array (
@@ -8726,8 +8726,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '266.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             122 =>
             array (
@@ -8740,8 +8740,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             123 =>
             array (
@@ -8754,8 +8754,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             124 =>
             array (
@@ -8768,8 +8768,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             125 =>
             array (
@@ -8782,8 +8782,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             126 =>
             array (
@@ -8796,8 +8796,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             127 =>
             array (
@@ -8810,8 +8810,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             128 =>
             array (
@@ -8824,8 +8824,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             129 =>
             array (
@@ -8838,8 +8838,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             130 =>
             array (
@@ -8852,8 +8852,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             131 =>
             array (
@@ -8866,8 +8866,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             132 =>
             array (
@@ -8880,8 +8880,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             133 =>
             array (
@@ -8894,8 +8894,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             134 =>
             array (
@@ -8908,8 +8908,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             135 =>
             array (
@@ -8922,8 +8922,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             136 =>
             array (
@@ -8936,8 +8936,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             137 =>
             array (
@@ -8950,8 +8950,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             138 =>
             array (
@@ -8964,8 +8964,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             139 =>
             array (
@@ -8978,8 +8978,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             140 =>
             array (
@@ -8992,8 +8992,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '170.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             141 =>
             array (
@@ -9006,8 +9006,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '177.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             142 =>
             array (
@@ -9020,8 +9020,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '184.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             143 =>
             array (
@@ -9034,8 +9034,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             144 =>
             array (
@@ -9048,8 +9048,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             145 =>
             array (
@@ -9062,8 +9062,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             146 =>
             array (
@@ -9076,8 +9076,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             147 =>
             array (
@@ -9090,8 +9090,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             148 =>
             array (
@@ -9104,8 +9104,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             149 =>
             array (
@@ -9118,8 +9118,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             150 =>
             array (
@@ -9132,8 +9132,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             151 =>
             array (
@@ -9146,8 +9146,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             152 =>
             array (
@@ -9160,8 +9160,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             153 =>
             array (
@@ -9174,8 +9174,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             154 =>
             array (
@@ -9188,8 +9188,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             155 =>
             array (
@@ -9202,8 +9202,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '170.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             156 =>
             array (
@@ -9216,8 +9216,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '177.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             157 =>
             array (
@@ -9230,8 +9230,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '184.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             158 =>
             array (
@@ -9244,8 +9244,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             159 =>
             array (
@@ -9258,8 +9258,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             160 =>
             array (
@@ -9272,8 +9272,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             161 =>
             array (
@@ -9286,8 +9286,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             162 =>
             array (
@@ -9300,8 +9300,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             163 =>
             array (
@@ -9314,8 +9314,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             164 =>
             array (
@@ -9328,8 +9328,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             165 =>
             array (
@@ -9342,8 +9342,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             166 =>
             array (
@@ -9356,8 +9356,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             167 =>
             array (
@@ -9370,8 +9370,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             168 =>
             array (
@@ -9384,8 +9384,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             169 =>
             array (
@@ -9398,8 +9398,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             170 =>
             array (
@@ -9412,8 +9412,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             171 =>
             array (
@@ -9426,8 +9426,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             172 =>
             array (
@@ -9440,8 +9440,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             173 =>
             array (
@@ -9454,8 +9454,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             174 =>
             array (
@@ -9468,8 +9468,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             175 =>
             array (
@@ -9482,8 +9482,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             176 =>
             array (
@@ -9496,8 +9496,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             177 =>
             array (
@@ -9510,8 +9510,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             178 =>
             array (
@@ -9524,8 +9524,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             179 =>
             array (
@@ -9538,8 +9538,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             180 =>
             array (
@@ -9552,8 +9552,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             181 =>
             array (
@@ -9566,8 +9566,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             182 =>
             array (
@@ -9580,8 +9580,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             183 =>
             array (
@@ -9594,8 +9594,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '128.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             184 =>
             array (
@@ -9608,8 +9608,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             185 =>
             array (
@@ -9622,8 +9622,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             186 =>
             array (
@@ -9636,8 +9636,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             187 =>
             array (
@@ -9650,8 +9650,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             188 =>
             array (
@@ -9664,8 +9664,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             189 =>
             array (
@@ -9678,8 +9678,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             190 =>
             array (
@@ -9692,8 +9692,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             191 =>
             array (
@@ -9706,8 +9706,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             192 =>
             array (
@@ -9720,8 +9720,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             193 =>
             array (
@@ -9734,8 +9734,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             194 =>
             array (
@@ -9748,8 +9748,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             195 =>
             array (
@@ -9762,8 +9762,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             196 =>
             array (
@@ -9776,8 +9776,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             197 =>
             array (
@@ -9790,8 +9790,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             198 =>
             array (
@@ -9804,8 +9804,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             199 =>
             array (
@@ -9818,8 +9818,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             200 =>
             array (
@@ -9832,8 +9832,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             201 =>
             array (
@@ -9846,8 +9846,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             202 =>
             array (
@@ -9860,8 +9860,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             203 =>
             array (
@@ -9874,8 +9874,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             204 =>
             array (
@@ -9888,8 +9888,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             205 =>
             array (
@@ -9902,8 +9902,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '170.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             206 =>
             array (
@@ -9916,8 +9916,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '177.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             207 =>
             array (
@@ -9930,8 +9930,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '184.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             208 =>
             array (
@@ -9944,8 +9944,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             209 =>
             array (
@@ -9958,8 +9958,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             210 =>
             array (
@@ -9972,8 +9972,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '438.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             211 =>
             array (
@@ -9986,8 +9986,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             212 =>
             array (
@@ -10000,8 +10000,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             213 =>
             array (
@@ -10014,8 +10014,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             214 =>
             array (
@@ -10028,8 +10028,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             215 =>
             array (
@@ -10042,8 +10042,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             216 =>
             array (
@@ -10056,8 +10056,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             217 =>
             array (
@@ -10070,8 +10070,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             218 =>
             array (
@@ -10084,8 +10084,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             219 =>
             array (
@@ -10098,8 +10098,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             220 =>
             array (
@@ -10112,8 +10112,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             221 =>
             array (
@@ -10126,8 +10126,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             222 =>
             array (
@@ -10140,8 +10140,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             223 =>
             array (
@@ -10154,8 +10154,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             224 =>
             array (
@@ -10168,8 +10168,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             225 =>
             array (
@@ -10182,8 +10182,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             226 =>
             array (
@@ -10196,8 +10196,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             227 =>
             array (
@@ -10210,8 +10210,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             228 =>
             array (
@@ -10224,8 +10224,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             229 =>
             array (
@@ -10238,8 +10238,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             230 =>
             array (
@@ -10252,8 +10252,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             231 =>
             array (
@@ -10266,8 +10266,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             232 =>
             array (
@@ -10280,8 +10280,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             233 =>
             array (
@@ -10294,8 +10294,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             234 =>
             array (
@@ -10308,8 +10308,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             235 =>
             array (
@@ -10322,8 +10322,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             236 =>
             array (
@@ -10336,8 +10336,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             237 =>
             array (
@@ -10350,8 +10350,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             238 =>
             array (
@@ -10364,8 +10364,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             239 =>
             array (
@@ -10378,8 +10378,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             240 =>
             array (
@@ -10392,8 +10392,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             241 =>
             array (
@@ -10406,8 +10406,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             242 =>
             array (
@@ -10420,8 +10420,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             243 =>
             array (
@@ -10434,8 +10434,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             244 =>
             array (
@@ -10448,8 +10448,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             245 =>
             array (
@@ -10462,8 +10462,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             246 =>
             array (
@@ -10476,8 +10476,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             247 =>
             array (
@@ -10490,8 +10490,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             248 =>
             array (
@@ -10504,8 +10504,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             249 =>
             array (
@@ -10518,8 +10518,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             250 =>
             array (
@@ -10532,8 +10532,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             251 =>
             array (
@@ -10546,8 +10546,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             252 =>
             array (
@@ -10560,8 +10560,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             253 =>
             array (
@@ -10574,8 +10574,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             254 =>
             array (
@@ -10588,8 +10588,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             255 =>
             array (
@@ -10602,8 +10602,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             256 =>
             array (
@@ -10616,8 +10616,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             257 =>
             array (
@@ -10630,8 +10630,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             258 =>
             array (
@@ -10644,8 +10644,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             259 =>
             array (
@@ -10658,8 +10658,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             260 =>
             array (
@@ -10672,8 +10672,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             261 =>
             array (
@@ -10686,8 +10686,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             262 =>
             array (
@@ -10700,8 +10700,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             263 =>
             array (
@@ -10714,8 +10714,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             264 =>
             array (
@@ -10728,8 +10728,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             265 =>
             array (
@@ -10742,8 +10742,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             266 =>
             array (
@@ -10756,8 +10756,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             267 =>
             array (
@@ -10770,8 +10770,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             268 =>
             array (
@@ -10784,8 +10784,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             269 =>
             array (
@@ -10798,8 +10798,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             270 =>
             array (
@@ -10812,8 +10812,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             271 =>
             array (
@@ -10826,8 +10826,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             272 =>
             array (
@@ -10840,8 +10840,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             273 =>
             array (
@@ -10854,8 +10854,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             274 =>
             array (
@@ -10868,8 +10868,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             275 =>
             array (
@@ -10882,8 +10882,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             276 =>
             array (
@@ -10896,8 +10896,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             277 =>
             array (
@@ -10910,8 +10910,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             278 =>
             array (
@@ -10924,8 +10924,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             279 =>
             array (
@@ -10938,8 +10938,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             280 =>
             array (
@@ -10952,8 +10952,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             281 =>
             array (
@@ -10966,8 +10966,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             282 =>
             array (
@@ -10980,8 +10980,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             283 =>
             array (
@@ -10994,8 +10994,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             284 =>
             array (
@@ -11008,8 +11008,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             285 =>
             array (
@@ -11022,8 +11022,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '170.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             286 =>
             array (
@@ -11036,8 +11036,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '177.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             287 =>
             array (
@@ -11050,8 +11050,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '184.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             288 =>
             array (
@@ -11064,8 +11064,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             289 =>
             array (
@@ -11078,8 +11078,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             290 =>
             array (
@@ -11092,8 +11092,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             291 =>
             array (
@@ -11106,8 +11106,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             292 =>
             array (
@@ -11120,8 +11120,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             293 =>
             array (
@@ -11134,8 +11134,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             294 =>
             array (
@@ -11148,8 +11148,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             295 =>
             array (
@@ -11162,8 +11162,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             296 =>
             array (
@@ -11176,8 +11176,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             297 =>
             array (
@@ -11190,8 +11190,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             298 =>
             array (
@@ -11204,8 +11204,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             299 =>
             array (
@@ -11218,8 +11218,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             300 =>
             array (
@@ -11232,8 +11232,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             301 =>
             array (
@@ -11246,8 +11246,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             302 =>
             array (
@@ -11260,8 +11260,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             303 =>
             array (
@@ -11274,8 +11274,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             304 =>
             array (
@@ -11288,8 +11288,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             305 =>
             array (
@@ -11302,8 +11302,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             306 =>
             array (
@@ -11316,8 +11316,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             307 =>
             array (
@@ -11330,8 +11330,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             308 =>
             array (
@@ -11344,8 +11344,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             309 =>
             array (
@@ -11358,8 +11358,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             310 =>
             array (
@@ -11372,8 +11372,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             311 =>
             array (
@@ -11386,8 +11386,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             312 =>
             array (
@@ -11400,8 +11400,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             313 =>
             array (
@@ -11414,8 +11414,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             314 =>
             array (
@@ -11428,8 +11428,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             315 =>
             array (
@@ -11442,8 +11442,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             316 =>
             array (
@@ -11456,8 +11456,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             317 =>
             array (
@@ -11470,8 +11470,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             318 =>
             array (
@@ -11484,8 +11484,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             319 =>
             array (
@@ -11498,8 +11498,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             320 =>
             array (
@@ -11512,8 +11512,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             321 =>
             array (
@@ -11526,8 +11526,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             322 =>
             array (
@@ -11540,8 +11540,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             323 =>
             array (
@@ -11554,8 +11554,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             324 =>
             array (
@@ -11568,8 +11568,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             325 =>
             array (
@@ -11582,8 +11582,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             326 =>
             array (
@@ -11596,8 +11596,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             327 =>
             array (
@@ -11610,8 +11610,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             328 =>
             array (
@@ -11624,8 +11624,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             329 =>
             array (
@@ -11638,8 +11638,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             330 =>
             array (
@@ -11652,8 +11652,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             331 =>
             array (
@@ -11666,8 +11666,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             332 =>
             array (
@@ -11680,8 +11680,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             333 =>
             array (
@@ -11694,8 +11694,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             334 =>
             array (
@@ -11708,8 +11708,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             335 =>
             array (
@@ -11722,8 +11722,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             336 =>
             array (
@@ -11736,8 +11736,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             337 =>
             array (
@@ -11750,8 +11750,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             338 =>
             array (
@@ -11764,8 +11764,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             339 =>
             array (
@@ -11778,8 +11778,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             340 =>
             array (
@@ -11792,8 +11792,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '255.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             341 =>
             array (
@@ -11806,8 +11806,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '266.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             342 =>
             array (
@@ -11820,8 +11820,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             343 =>
             array (
@@ -11834,8 +11834,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             344 =>
             array (
@@ -11848,8 +11848,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             345 =>
             array (
@@ -11862,8 +11862,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             346 =>
             array (
@@ -11876,8 +11876,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             347 =>
             array (
@@ -11890,8 +11890,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             348 =>
             array (
@@ -11904,8 +11904,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '255.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             349 =>
             array (
@@ -11918,8 +11918,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '266.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             350 =>
             array (
@@ -11932,8 +11932,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             351 =>
             array (
@@ -11946,8 +11946,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             352 =>
             array (
@@ -11960,8 +11960,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             353 =>
             array (
@@ -11974,8 +11974,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             354 =>
             array (
@@ -11988,8 +11988,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             355 =>
             array (
@@ -12002,8 +12002,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             356 =>
             array (
@@ -12016,8 +12016,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             357 =>
             array (
@@ -12030,8 +12030,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             358 =>
             array (
@@ -12044,8 +12044,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             359 =>
             array (
@@ -12058,8 +12058,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '453.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             360 =>
             array (
@@ -12072,8 +12072,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '484.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             361 =>
             array (
@@ -12086,8 +12086,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             362 =>
             array (
@@ -12100,8 +12100,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             363 =>
             array (
@@ -12114,8 +12114,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             364 =>
             array (
@@ -12128,8 +12128,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             365 =>
             array (
@@ -12142,8 +12142,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             366 =>
             array (
@@ -12156,8 +12156,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             367 =>
             array (
@@ -12170,8 +12170,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             368 =>
             array (
@@ -12184,8 +12184,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             369 =>
             array (
@@ -12198,8 +12198,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             370 =>
             array (
@@ -12212,8 +12212,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             371 =>
             array (
@@ -12226,8 +12226,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             372 =>
             array (
@@ -12240,8 +12240,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             373 =>
             array (
@@ -12254,8 +12254,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '255.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             374 =>
             array (
@@ -12268,8 +12268,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '266.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             375 =>
             array (
@@ -12282,8 +12282,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             376 =>
             array (
@@ -12296,8 +12296,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             377 =>
             array (
@@ -12310,8 +12310,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             378 =>
             array (
@@ -12324,8 +12324,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             379 =>
             array (
@@ -12338,8 +12338,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             380 =>
             array (
@@ -12352,8 +12352,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             381 =>
             array (
@@ -12366,8 +12366,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '191.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             382 =>
             array (
@@ -12380,8 +12380,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             383 =>
             array (
@@ -12394,8 +12394,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             384 =>
             array (
@@ -12408,8 +12408,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             385 =>
             array (
@@ -12422,8 +12422,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             386 =>
             array (
@@ -12436,8 +12436,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '302.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             387 =>
             array (
@@ -12450,8 +12450,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '322.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             388 =>
             array (
@@ -12464,8 +12464,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '170.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             389 =>
             array (
@@ -12478,8 +12478,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '177.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             390 =>
             array (
@@ -12492,8 +12492,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '184.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             391 =>
             array (
@@ -12506,8 +12506,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '255.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             392 =>
             array (
@@ -12520,8 +12520,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '266.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             393 =>
             array (
@@ -12534,8 +12534,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '292.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             394 =>
             array (
@@ -12548,8 +12548,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '507.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             395 =>
             array (
@@ -12562,8 +12562,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             396 =>
             array (
@@ -12576,8 +12576,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             397 =>
             array (
@@ -12590,8 +12590,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '399.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             398 =>
             array (
@@ -12604,8 +12604,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '410.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             399 =>
             array (
@@ -12618,8 +12618,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '421.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             400 =>
             array (
@@ -12632,8 +12632,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '403.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             401 =>
             array (
@@ -12646,8 +12646,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             402 =>
             array (
@@ -12660,8 +12660,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '484.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             403 =>
             array (
@@ -12674,8 +12674,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '440.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             404 =>
             array (
@@ -12688,8 +12688,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '295.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             405 =>
             array (
@@ -12702,8 +12702,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             406 =>
             array (
@@ -12716,8 +12716,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => NULL,
                 'cuota_minima' => '421.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             407 =>
             array (
@@ -12730,8 +12730,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '260.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             408 =>
             array (
@@ -12744,8 +12744,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             409 =>
             array (
@@ -12758,8 +12758,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             410 =>
             array (
@@ -12772,8 +12772,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             411 =>
             array (
@@ -12786,8 +12786,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             412 =>
             array (
@@ -12800,8 +12800,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             413 =>
             array (
@@ -12814,8 +12814,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             414 =>
             array (
@@ -12828,8 +12828,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             415 =>
             array (
@@ -12842,8 +12842,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             416 =>
             array (
@@ -12856,8 +12856,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             417 =>
             array (
@@ -12870,8 +12870,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             418 =>
             array (
@@ -12884,8 +12884,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             419 =>
             array (
@@ -12898,8 +12898,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             420 =>
             array (
@@ -12912,8 +12912,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             421 =>
             array (
@@ -12926,8 +12926,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             422 =>
             array (
@@ -12940,8 +12940,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             423 =>
             array (
@@ -12954,8 +12954,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             424 =>
             array (
@@ -12968,8 +12968,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             425 =>
             array (
@@ -12982,8 +12982,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             426 =>
             array (
@@ -12996,8 +12996,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             427 =>
             array (
@@ -13010,8 +13010,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             428 =>
             array (
@@ -13024,8 +13024,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             429 =>
             array (
@@ -13038,8 +13038,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             430 =>
             array (
@@ -13052,8 +13052,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             431 =>
             array (
@@ -13066,8 +13066,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             432 =>
             array (
@@ -13080,8 +13080,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             433 =>
             array (
@@ -13094,8 +13094,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             434 =>
             array (
@@ -13108,8 +13108,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             435 =>
             array (
@@ -13122,8 +13122,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             436 =>
             array (
@@ -13136,8 +13136,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             437 =>
             array (
@@ -13150,8 +13150,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             438 =>
             array (
@@ -13164,8 +13164,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             439 =>
             array (
@@ -13178,8 +13178,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             440 =>
             array (
@@ -13192,8 +13192,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             441 =>
             array (
@@ -13206,8 +13206,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             442 =>
             array (
@@ -13220,8 +13220,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             443 =>
             array (
@@ -13234,8 +13234,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             444 =>
             array (
@@ -13248,8 +13248,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             445 =>
             array (
@@ -13262,8 +13262,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             446 =>
             array (
@@ -13276,8 +13276,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             447 =>
             array (
@@ -13290,8 +13290,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             448 =>
             array (
@@ -13304,8 +13304,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             449 =>
             array (
@@ -13318,8 +13318,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             450 =>
             array (
@@ -13332,8 +13332,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             451 =>
             array (
@@ -13346,8 +13346,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             452 =>
             array (
@@ -13360,8 +13360,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             453 =>
             array (
@@ -13374,8 +13374,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             454 =>
             array (
@@ -13388,8 +13388,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             455 =>
             array (
@@ -13402,8 +13402,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             456 =>
             array (
@@ -13416,8 +13416,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             457 =>
             array (
@@ -13430,8 +13430,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             458 =>
             array (
@@ -13444,8 +13444,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             459 =>
             array (
@@ -13458,8 +13458,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             460 =>
             array (
@@ -13472,8 +13472,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             461 =>
             array (
@@ -13486,8 +13486,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             462 =>
             array (
@@ -13500,8 +13500,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             463 =>
             array (
@@ -13514,8 +13514,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '521.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             464 =>
             array (
@@ -13528,8 +13528,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             465 =>
             array (
@@ -13542,8 +13542,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             466 =>
             array (
@@ -13556,8 +13556,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             467 =>
             array (
@@ -13570,8 +13570,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             468 =>
             array (
@@ -13584,8 +13584,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             469 =>
             array (
@@ -13598,8 +13598,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             470 =>
             array (
@@ -13612,8 +13612,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             471 =>
             array (
@@ -13626,8 +13626,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             472 =>
             array (
@@ -13640,8 +13640,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             473 =>
             array (
@@ -13654,8 +13654,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             474 =>
             array (
@@ -13668,8 +13668,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             475 =>
             array (
@@ -13682,8 +13682,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             476 =>
             array (
@@ -13696,8 +13696,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             477 =>
             array (
@@ -13710,8 +13710,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             478 =>
             array (
@@ -13724,8 +13724,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             479 =>
             array (
@@ -13738,8 +13738,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             480 =>
             array (
@@ -13752,8 +13752,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             481 =>
             array (
@@ -13766,8 +13766,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             482 =>
             array (
@@ -13780,8 +13780,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             483 =>
             array (
@@ -13794,8 +13794,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             484 =>
             array (
@@ -13808,8 +13808,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '422.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             485 =>
             array (
@@ -13822,8 +13822,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             486 =>
             array (
@@ -13836,8 +13836,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             487 =>
             array (
@@ -13850,8 +13850,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             488 =>
             array (
@@ -13864,8 +13864,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             489 =>
             array (
@@ -13878,8 +13878,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             490 =>
             array (
@@ -13892,8 +13892,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             491 =>
             array (
@@ -13906,8 +13906,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             492 =>
             array (
@@ -13920,8 +13920,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             493 =>
             array (
@@ -13934,8 +13934,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             494 =>
             array (
@@ -13948,8 +13948,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             495 =>
             array (
@@ -13962,8 +13962,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             496 =>
             array (
@@ -13976,8 +13976,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             497 =>
             array (
@@ -13990,8 +13990,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             498 =>
             array (
@@ -14004,8 +14004,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             499 =>
             array (
@@ -14018,8 +14018,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
         ));
         \DB::table('cuota_minimas')->insert(array (
@@ -14034,8 +14034,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             1 =>
             array (
@@ -14048,8 +14048,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             2 =>
             array (
@@ -14062,8 +14062,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             3 =>
             array (
@@ -14076,8 +14076,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             4 =>
             array (
@@ -14090,8 +14090,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '422.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             5 =>
             array (
@@ -14104,8 +14104,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             6 =>
             array (
@@ -14118,8 +14118,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '422.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             7 =>
             array (
@@ -14132,8 +14132,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             8 =>
             array (
@@ -14146,8 +14146,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             9 =>
             array (
@@ -14160,8 +14160,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             10 =>
             array (
@@ -14174,8 +14174,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             11 =>
             array (
@@ -14188,8 +14188,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             12 =>
             array (
@@ -14202,8 +14202,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             13 =>
             array (
@@ -14216,8 +14216,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             14 =>
             array (
@@ -14230,8 +14230,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             15 =>
             array (
@@ -14244,8 +14244,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             16 =>
             array (
@@ -14258,8 +14258,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '422.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             17 =>
             array (
@@ -14272,8 +14272,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             18 =>
             array (
@@ -14286,8 +14286,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             19 =>
             array (
@@ -14300,8 +14300,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             20 =>
             array (
@@ -14314,8 +14314,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             21 =>
             array (
@@ -14328,8 +14328,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             22 =>
             array (
@@ -14342,8 +14342,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             23 =>
             array (
@@ -14356,8 +14356,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             24 =>
             array (
@@ -14370,8 +14370,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             25 =>
             array (
@@ -14384,8 +14384,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             26 =>
             array (
@@ -14398,8 +14398,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             27 =>
             array (
@@ -14412,8 +14412,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '507.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             28 =>
             array (
@@ -14426,8 +14426,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             29 =>
             array (
@@ -14440,8 +14440,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             30 =>
             array (
@@ -14454,8 +14454,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             31 =>
             array (
@@ -14468,8 +14468,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             32 =>
             array (
@@ -14482,8 +14482,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '422.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             33 =>
             array (
@@ -14496,8 +14496,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             34 =>
             array (
@@ -14510,8 +14510,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             35 =>
             array (
@@ -14524,8 +14524,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             36 =>
             array (
@@ -14538,8 +14538,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             37 =>
             array (
@@ -14552,8 +14552,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             38 =>
             array (
@@ -14566,8 +14566,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             39 =>
             array (
@@ -14580,8 +14580,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             40 =>
             array (
@@ -14594,8 +14594,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '422.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             41 =>
             array (
@@ -14608,8 +14608,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             42 =>
             array (
@@ -14622,8 +14622,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             43 =>
             array (
@@ -14636,8 +14636,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '380.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             44 =>
             array (
@@ -14650,8 +14650,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             45 =>
             array (
@@ -14664,8 +14664,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             46 =>
             array (
@@ -14678,8 +14678,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             47 =>
             array (
@@ -14692,8 +14692,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             48 =>
             array (
@@ -14706,8 +14706,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             49 =>
             array (
@@ -14720,8 +14720,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             50 =>
             array (
@@ -14734,8 +14734,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             51 =>
             array (
@@ -14748,8 +14748,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             52 =>
             array (
@@ -14762,8 +14762,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             53 =>
             array (
@@ -14776,8 +14776,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             54 =>
             array (
@@ -14790,8 +14790,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             55 =>
             array (
@@ -14804,8 +14804,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             56 =>
             array (
@@ -14818,8 +14818,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             57 =>
             array (
@@ -14832,8 +14832,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             58 =>
             array (
@@ -14846,8 +14846,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             59 =>
             array (
@@ -14860,8 +14860,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             60 =>
             array (
@@ -14874,8 +14874,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             61 =>
             array (
@@ -14888,8 +14888,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             62 =>
             array (
@@ -14902,8 +14902,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '507.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             63 =>
             array (
@@ -14916,8 +14916,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             64 =>
             array (
@@ -14930,8 +14930,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             65 =>
             array (
@@ -14944,8 +14944,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             66 =>
             array (
@@ -14958,8 +14958,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             67 =>
             array (
@@ -14972,8 +14972,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             68 =>
             array (
@@ -14986,8 +14986,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             69 =>
             array (
@@ -15000,8 +15000,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             70 =>
             array (
@@ -15014,8 +15014,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             71 =>
             array (
@@ -15028,8 +15028,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             72 =>
             array (
@@ -15042,8 +15042,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             73 =>
             array (
@@ -15056,8 +15056,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             74 =>
             array (
@@ -15070,8 +15070,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             75 =>
             array (
@@ -15084,8 +15084,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             76 =>
             array (
@@ -15098,8 +15098,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '422.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             77 =>
             array (
@@ -15112,8 +15112,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             78 =>
             array (
@@ -15126,8 +15126,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             79 =>
             array (
@@ -15140,8 +15140,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             80 =>
             array (
@@ -15154,8 +15154,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             81 =>
             array (
@@ -15168,8 +15168,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '507.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             82 =>
             array (
@@ -15182,8 +15182,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             83 =>
             array (
@@ -15196,8 +15196,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             84 =>
             array (
@@ -15210,8 +15210,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             85 =>
             array (
@@ -15224,8 +15224,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             86 =>
             array (
@@ -15238,8 +15238,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '338.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             87 =>
             array (
@@ -15252,8 +15252,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '30822.00',
                 'umas' => NULL,
                 'cuota_minima' => '253.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             88 =>
             array (
@@ -15266,8 +15266,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => NULL,
                 'cuota_minima' => '453.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             89 =>
             array (
@@ -15280,8 +15280,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             90 =>
             array (
@@ -15294,8 +15294,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             91 =>
             array (
@@ -15308,8 +15308,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             92 =>
             array (
@@ -15322,8 +15322,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             93 =>
             array (
@@ -15336,8 +15336,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             94 =>
             array (
@@ -15350,8 +15350,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             95 =>
             array (
@@ -15364,8 +15364,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             96 =>
             array (
@@ -15378,8 +15378,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             97 =>
             array (
@@ -15392,8 +15392,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             98 =>
             array (
@@ -15406,8 +15406,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             99 =>
             array (
@@ -15420,8 +15420,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             100 =>
             array (
@@ -15434,8 +15434,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             101 =>
             array (
@@ -15448,8 +15448,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             102 =>
             array (
@@ -15462,8 +15462,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             103 =>
             array (
@@ -15476,8 +15476,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             104 =>
             array (
@@ -15490,8 +15490,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             105 =>
             array (
@@ -15504,8 +15504,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             106 =>
             array (
@@ -15518,8 +15518,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             107 =>
             array (
@@ -15532,8 +15532,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             108 =>
             array (
@@ -15546,8 +15546,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             109 =>
             array (
@@ -15560,8 +15560,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             110 =>
             array (
@@ -15574,8 +15574,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             111 =>
             array (
@@ -15588,8 +15588,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             112 =>
             array (
@@ -15602,8 +15602,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             113 =>
             array (
@@ -15616,8 +15616,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '521.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             114 =>
             array (
@@ -15630,8 +15630,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             115 =>
             array (
@@ -15644,8 +15644,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             116 =>
             array (
@@ -15658,8 +15658,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             117 =>
             array (
@@ -15672,8 +15672,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             118 =>
             array (
@@ -15686,8 +15686,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             119 =>
             array (
@@ -15700,8 +15700,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             120 =>
             array (
@@ -15714,8 +15714,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             121 =>
             array (
@@ -15728,8 +15728,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             122 =>
             array (
@@ -15742,8 +15742,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             123 =>
             array (
@@ -15756,8 +15756,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             124 =>
             array (
@@ -15770,8 +15770,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             125 =>
             array (
@@ -15784,8 +15784,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             126 =>
             array (
@@ -15798,8 +15798,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             127 =>
             array (
@@ -15812,8 +15812,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             128 =>
             array (
@@ -15826,8 +15826,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             129 =>
             array (
@@ -15840,8 +15840,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             130 =>
             array (
@@ -15854,8 +15854,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             131 =>
             array (
@@ -15868,8 +15868,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             132 =>
             array (
@@ -15882,8 +15882,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '521.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             133 =>
             array (
@@ -15896,8 +15896,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '521.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             134 =>
             array (
@@ -15910,8 +15910,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             135 =>
             array (
@@ -15924,8 +15924,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             136 =>
             array (
@@ -15938,8 +15938,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             137 =>
             array (
@@ -15952,8 +15952,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             138 =>
             array (
@@ -15966,8 +15966,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '348.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             139 =>
             array (
@@ -15980,8 +15980,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '31693.80',
                 'umas' => NULL,
                 'cuota_minima' => '261.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             140 =>
             array (
@@ -15994,8 +15994,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             141 =>
             array (
@@ -16008,8 +16008,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             142 =>
             array (
@@ -16022,8 +16022,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             143 =>
             array (
@@ -16036,8 +16036,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             144 =>
             array (
@@ -16050,8 +16050,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             145 =>
             array (
@@ -16064,8 +16064,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             146 =>
             array (
@@ -16078,8 +16078,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             147 =>
             array (
@@ -16092,8 +16092,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             148 =>
             array (
@@ -16106,8 +16106,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             149 =>
             array (
@@ -16120,8 +16120,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             150 =>
             array (
@@ -16134,8 +16134,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             151 =>
             array (
@@ -16148,8 +16148,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             152 =>
             array (
@@ -16162,8 +16162,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             153 =>
             array (
@@ -16176,8 +16176,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             154 =>
             array (
@@ -16190,8 +16190,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             155 =>
             array (
@@ -16204,8 +16204,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             156 =>
             array (
@@ -16218,8 +16218,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             157 =>
             array (
@@ -16232,8 +16232,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             158 =>
             array (
@@ -16246,8 +16246,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             159 =>
             array (
@@ -16260,8 +16260,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             160 =>
             array (
@@ -16274,8 +16274,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             161 =>
             array (
@@ -16288,8 +16288,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             162 =>
             array (
@@ -16302,8 +16302,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             163 =>
             array (
@@ -16316,8 +16316,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             164 =>
             array (
@@ -16330,8 +16330,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             165 =>
             array (
@@ -16344,8 +16344,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             166 =>
             array (
@@ -16358,8 +16358,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             167 =>
             array (
@@ -16372,8 +16372,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             168 =>
             array (
@@ -16386,8 +16386,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             169 =>
             array (
@@ -16400,8 +16400,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             170 =>
             array (
@@ -16414,8 +16414,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             171 =>
             array (
@@ -16428,8 +16428,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             172 =>
             array (
@@ -16442,8 +16442,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             173 =>
             array (
@@ -16456,8 +16456,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             174 =>
             array (
@@ -16470,8 +16470,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             175 =>
             array (
@@ -16484,8 +16484,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             176 =>
             array (
@@ -16498,8 +16498,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             177 =>
             array (
@@ -16512,8 +16512,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             178 =>
             array (
@@ -16526,8 +16526,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             179 =>
             array (
@@ -16540,8 +16540,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             180 =>
             array (
@@ -16554,8 +16554,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             181 =>
             array (
@@ -16568,8 +16568,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             182 =>
             array (
@@ -16582,8 +16582,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             183 =>
             array (
@@ -16596,8 +16596,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             184 =>
             array (
@@ -16610,8 +16610,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             185 =>
             array (
@@ -16624,8 +16624,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             186 =>
             array (
@@ -16638,8 +16638,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             187 =>
             array (
@@ -16652,8 +16652,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             188 =>
             array (
@@ -16666,8 +16666,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             189 =>
             array (
@@ -16680,8 +16680,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             190 =>
             array (
@@ -16694,8 +16694,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             191 =>
             array (
@@ -16708,8 +16708,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '433.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             192 =>
             array (
@@ -16722,8 +16722,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             193 =>
             array (
@@ -16736,8 +16736,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             194 =>
             array (
@@ -16750,8 +16750,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             195 =>
             array (
@@ -16764,8 +16764,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '537.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             196 =>
             array (
@@ -16778,8 +16778,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             197 =>
             array (
@@ -16792,8 +16792,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             198 =>
             array (
@@ -16806,8 +16806,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             199 =>
             array (
@@ -16820,8 +16820,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             200 =>
             array (
@@ -16834,8 +16834,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             201 =>
             array (
@@ -16848,8 +16848,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             202 =>
             array (
@@ -16862,8 +16862,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             203 =>
             array (
@@ -16876,8 +16876,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             204 =>
             array (
@@ -16890,8 +16890,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             205 =>
             array (
@@ -16904,8 +16904,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             206 =>
             array (
@@ -16918,8 +16918,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             207 =>
             array (
@@ -16932,8 +16932,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             208 =>
             array (
@@ -16946,8 +16946,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             209 =>
             array (
@@ -16960,8 +16960,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             210 =>
             array (
@@ -16974,8 +16974,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             211 =>
             array (
@@ -16988,8 +16988,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             212 =>
             array (
@@ -17002,8 +17002,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             213 =>
             array (
@@ -17016,8 +17016,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             214 =>
             array (
@@ -17030,8 +17030,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             215 =>
             array (
@@ -17044,8 +17044,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             216 =>
             array (
@@ -17058,8 +17058,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             217 =>
             array (
@@ -17072,8 +17072,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             218 =>
             array (
@@ -17086,8 +17086,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             219 =>
             array (
@@ -17100,8 +17100,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             220 =>
             array (
@@ -17114,8 +17114,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             221 =>
             array (
@@ -17128,8 +17128,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             222 =>
             array (
@@ -17142,8 +17142,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             223 =>
             array (
@@ -17156,8 +17156,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             224 =>
             array (
@@ -17170,8 +17170,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             225 =>
             array (
@@ -17184,8 +17184,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             226 =>
             array (
@@ -17198,8 +17198,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             227 =>
             array (
@@ -17212,8 +17212,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             228 =>
             array (
@@ -17226,8 +17226,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             229 =>
             array (
@@ -17240,8 +17240,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             230 =>
             array (
@@ -17254,8 +17254,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '537.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             231 =>
             array (
@@ -17268,8 +17268,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             232 =>
             array (
@@ -17282,8 +17282,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             233 =>
             array (
@@ -17296,8 +17296,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             234 =>
             array (
@@ -17310,8 +17310,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             235 =>
             array (
@@ -17324,8 +17324,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             236 =>
             array (
@@ -17338,8 +17338,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             237 =>
             array (
@@ -17352,8 +17352,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             238 =>
             array (
@@ -17366,8 +17366,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             239 =>
             array (
@@ -17380,8 +17380,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             240 =>
             array (
@@ -17394,8 +17394,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             241 =>
             array (
@@ -17408,8 +17408,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             242 =>
             array (
@@ -17422,8 +17422,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             243 =>
             array (
@@ -17436,8 +17436,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             244 =>
             array (
@@ -17450,8 +17450,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             245 =>
             array (
@@ -17464,8 +17464,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             246 =>
             array (
@@ -17478,8 +17478,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             247 =>
             array (
@@ -17492,8 +17492,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             248 =>
             array (
@@ -17506,8 +17506,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             249 =>
             array (
@@ -17520,8 +17520,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '537.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             250 =>
             array (
@@ -17534,8 +17534,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             251 =>
             array (
@@ -17548,8 +17548,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             252 =>
             array (
@@ -17562,8 +17562,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             253 =>
             array (
@@ -17576,8 +17576,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             254 =>
             array (
@@ -17590,8 +17590,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             255 =>
             array (
@@ -17604,8 +17604,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '359.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             256 =>
             array (
@@ -17618,8 +17618,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             257 =>
             array (
@@ -17632,8 +17632,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '32693.40',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             258 =>
             array (
@@ -17646,8 +17646,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '358.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             259 =>
             array (
@@ -17660,8 +17660,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             260 =>
             array (
@@ -17674,8 +17674,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '358.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             261 =>
             array (
@@ -17688,8 +17688,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '493.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             262 =>
             array (
@@ -17702,8 +17702,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             263 =>
             array (
@@ -17716,8 +17716,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '627.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             264 =>
             array (
@@ -17730,8 +17730,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '627.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             265 =>
             array (
@@ -17744,8 +17744,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '358.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             266 =>
             array (
@@ -17758,8 +17758,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '403.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             267 =>
             array (
@@ -17772,8 +17772,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '358.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             268 =>
             array (
@@ -17786,8 +17786,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             269 =>
             array (
@@ -17800,8 +17800,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '358.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             270 =>
             array (
@@ -17814,8 +17814,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             271 =>
             array (
@@ -17828,8 +17828,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '538.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             272 =>
             array (
@@ -17842,8 +17842,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             273 =>
             array (
@@ -17856,8 +17856,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             274 =>
             array (
@@ -17870,8 +17870,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '269.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             275 =>
             array (
@@ -17884,8 +17884,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '358.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             276 =>
             array (
@@ -17898,8 +17898,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '403.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             277 =>
             array (
@@ -17912,8 +17912,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             278 =>
             array (
@@ -17926,8 +17926,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '538.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             279 =>
             array (
@@ -17940,8 +17940,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             280 =>
             array (
@@ -17954,8 +17954,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             281 =>
             array (
@@ -17968,8 +17968,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             282 =>
             array (
@@ -17982,8 +17982,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '538.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             283 =>
             array (
@@ -17996,8 +17996,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '448.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             284 =>
             array (
@@ -18010,8 +18010,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '358.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             285 =>
             array (
@@ -18024,8 +18024,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             286 =>
             array (
@@ -18038,8 +18038,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             287 =>
             array (
@@ -18052,8 +18052,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             288 =>
             array (
@@ -18066,8 +18066,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             289 =>
             array (
@@ -18080,8 +18080,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             290 =>
             array (
@@ -18094,8 +18094,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             291 =>
             array (
@@ -18108,8 +18108,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             292 =>
             array (
@@ -18122,8 +18122,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             293 =>
             array (
@@ -18136,8 +18136,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             294 =>
             array (
@@ -18150,8 +18150,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             295 =>
             array (
@@ -18164,8 +18164,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '7.00',
                 'cuota_minima' => '674.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             296 =>
             array (
@@ -18178,8 +18178,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             297 =>
             array (
@@ -18192,8 +18192,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             298 =>
             array (
@@ -18206,8 +18206,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             299 =>
             array (
@@ -18220,8 +18220,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             300 =>
             array (
@@ -18234,8 +18234,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.50',
                 'cuota_minima' => '337.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             301 =>
             array (
@@ -18248,8 +18248,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             302 =>
             array (
@@ -18262,8 +18262,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             303 =>
             array (
@@ -18276,8 +18276,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             304 =>
             array (
@@ -18290,8 +18290,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '6.00',
                 'cuota_minima' => '577.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             305 =>
             array (
@@ -18304,8 +18304,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             306 =>
             array (
@@ -18318,8 +18318,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             307 =>
             array (
@@ -18332,8 +18332,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             308 =>
             array (
@@ -18346,8 +18346,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             309 =>
             array (
@@ -18360,8 +18360,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             310 =>
             array (
@@ -18374,8 +18374,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             311 =>
             array (
@@ -18388,8 +18388,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             312 =>
             array (
@@ -18402,8 +18402,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             313 =>
             array (
@@ -18416,8 +18416,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             314 =>
             array (
@@ -18430,8 +18430,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             315 =>
             array (
@@ -18444,8 +18444,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             316 =>
             array (
@@ -18458,8 +18458,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             317 =>
             array (
@@ -18472,8 +18472,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             318 =>
             array (
@@ -18486,8 +18486,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             319 =>
             array (
@@ -18500,8 +18500,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             320 =>
             array (
@@ -18514,8 +18514,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             321 =>
             array (
@@ -18528,8 +18528,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             322 =>
             array (
@@ -18542,8 +18542,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             323 =>
             array (
@@ -18556,8 +18556,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             324 =>
             array (
@@ -18570,8 +18570,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             325 =>
             array (
@@ -18584,8 +18584,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             326 =>
             array (
@@ -18598,8 +18598,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             327 =>
             array (
@@ -18612,8 +18612,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             328 =>
             array (
@@ -18626,8 +18626,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             329 =>
             array (
@@ -18640,8 +18640,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             330 =>
             array (
@@ -18654,8 +18654,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             331 =>
             array (
@@ -18668,8 +18668,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             332 =>
             array (
@@ -18682,8 +18682,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             333 =>
             array (
@@ -18696,8 +18696,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '6.00',
                 'cuota_minima' => '577.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             334 =>
             array (
@@ -18710,8 +18710,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             335 =>
             array (
@@ -18724,8 +18724,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             336 =>
             array (
@@ -18738,8 +18738,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             337 =>
             array (
@@ -18752,8 +18752,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             338 =>
             array (
@@ -18766,8 +18766,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '6.00',
                 'cuota_minima' => '577.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             339 =>
             array (
@@ -18780,8 +18780,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             340 =>
             array (
@@ -18794,8 +18794,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             341 =>
             array (
@@ -18808,8 +18808,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             342 =>
             array (
@@ -18822,8 +18822,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             343 =>
             array (
@@ -18836,8 +18836,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             344 =>
             array (
@@ -18850,8 +18850,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             345 =>
             array (
@@ -18864,8 +18864,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             346 =>
             array (
@@ -18878,8 +18878,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             347 =>
             array (
@@ -18892,8 +18892,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             348 =>
             array (
@@ -18906,8 +18906,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             349 =>
             array (
@@ -18920,8 +18920,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.50',
                 'cuota_minima' => '433.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             350 =>
             array (
@@ -18934,8 +18934,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             351 =>
             array (
@@ -18948,8 +18948,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             352 =>
             array (
@@ -18962,8 +18962,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             353 =>
             array (
@@ -18976,8 +18976,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             354 =>
             array (
@@ -18990,8 +18990,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             355 =>
             array (
@@ -19004,8 +19004,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             356 =>
             array (
@@ -19018,8 +19018,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             357 =>
             array (
@@ -19032,8 +19032,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             358 =>
             array (
@@ -19046,8 +19046,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             359 =>
             array (
@@ -19060,8 +19060,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             360 =>
             array (
@@ -19074,8 +19074,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             361 =>
             array (
@@ -19088,8 +19088,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             362 =>
             array (
@@ -19102,8 +19102,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             363 =>
             array (
@@ -19116,8 +19116,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             364 =>
             array (
@@ -19130,8 +19130,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             365 =>
             array (
@@ -19144,8 +19144,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             366 =>
             array (
@@ -19158,8 +19158,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '5.00',
                 'cuota_minima' => '577.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             367 =>
             array (
@@ -19172,8 +19172,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             368 =>
             array (
@@ -19186,8 +19186,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '6.00',
                 'cuota_minima' => '577.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             369 =>
             array (
@@ -19200,8 +19200,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             370 =>
             array (
@@ -19214,8 +19214,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             371 =>
             array (
@@ -19228,8 +19228,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             372 =>
             array (
@@ -19242,8 +19242,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             373 =>
             array (
@@ -19256,8 +19256,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             374 =>
             array (
@@ -19270,8 +19270,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             375 =>
             array (
@@ -19284,8 +19284,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             376 =>
             array (
@@ -19298,8 +19298,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             377 =>
             array (
@@ -19312,8 +19312,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             378 =>
             array (
@@ -19326,8 +19326,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             379 =>
             array (
@@ -19340,8 +19340,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             380 =>
             array (
@@ -19354,8 +19354,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             381 =>
             array (
@@ -19368,8 +19368,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             382 =>
             array (
@@ -19382,8 +19382,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             383 =>
             array (
@@ -19396,8 +19396,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             384 =>
             array (
@@ -19410,8 +19410,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             385 =>
             array (
@@ -19424,8 +19424,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             386 =>
             array (
@@ -19438,8 +19438,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             387 =>
             array (
@@ -19452,8 +19452,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             388 =>
             array (
@@ -19466,8 +19466,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '6.00',
                 'cuota_minima' => '577.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             389 =>
             array (
@@ -19480,8 +19480,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             390 =>
             array (
@@ -19494,8 +19494,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             391 =>
             array (
@@ -19508,8 +19508,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             392 =>
             array (
@@ -19522,8 +19522,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             393 =>
             array (
@@ -19536,8 +19536,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             394 =>
             array (
@@ -19550,8 +19550,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             395 =>
             array (
@@ -19564,8 +19564,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             396 =>
             array (
@@ -19578,8 +19578,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             397 =>
             array (
@@ -19592,8 +19592,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             398 =>
             array (
@@ -19606,8 +19606,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             399 =>
             array (
@@ -19620,8 +19620,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '255.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             400 =>
             array (
@@ -19634,8 +19634,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             401 =>
             array (
@@ -19648,8 +19648,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             402 =>
             array (
@@ -19662,8 +19662,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             403 =>
             array (
@@ -19676,8 +19676,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             404 =>
             array (
@@ -19690,8 +19690,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             405 =>
             array (
@@ -19704,8 +19704,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             406 =>
             array (
@@ -19718,8 +19718,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             407 =>
             array (
@@ -19732,8 +19732,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             408 =>
             array (
@@ -19746,8 +19746,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             409 =>
             array (
@@ -19760,8 +19760,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             410 =>
             array (
@@ -19774,8 +19774,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             411 =>
             array (
@@ -19788,8 +19788,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             412 =>
             array (
@@ -19802,8 +19802,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             413 =>
             array (
@@ -19816,8 +19816,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             414 =>
             array (
@@ -19830,8 +19830,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             415 =>
             array (
@@ -19844,8 +19844,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             416 =>
             array (
@@ -19858,8 +19858,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             417 =>
             array (
@@ -19872,8 +19872,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             418 =>
             array (
@@ -19886,8 +19886,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             419 =>
             array (
@@ -19900,8 +19900,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             420 =>
             array (
@@ -19914,8 +19914,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             421 =>
             array (
@@ -19928,8 +19928,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             422 =>
             array (
@@ -19942,8 +19942,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             423 =>
             array (
@@ -19956,8 +19956,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             424 =>
             array (
@@ -19970,8 +19970,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '235.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             425 =>
             array (
@@ -19984,8 +19984,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '273.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             426 =>
             array (
@@ -19998,8 +19998,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             427 =>
             array (
@@ -20012,8 +20012,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             428 =>
             array (
@@ -20026,8 +20026,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             429 =>
             array (
@@ -20040,8 +20040,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             430 =>
             array (
@@ -20054,8 +20054,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '6.00',
                 'cuota_minima' => '577.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             431 =>
             array (
@@ -20068,8 +20068,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             432 =>
             array (
@@ -20082,8 +20082,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             433 =>
             array (
@@ -20096,8 +20096,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             434 =>
             array (
@@ -20110,8 +20110,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             435 =>
             array (
@@ -20124,8 +20124,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             436 =>
             array (
@@ -20138,8 +20138,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             437 =>
             array (
@@ -20152,8 +20152,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             438 =>
             array (
@@ -20166,8 +20166,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => NULL,
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             439 =>
             array (
@@ -20180,8 +20180,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => NULL,
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             440 =>
             array (
@@ -20194,8 +20194,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             441 =>
             array (
@@ -20208,8 +20208,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             442 =>
             array (
@@ -20222,8 +20222,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             443 =>
             array (
@@ -20236,8 +20236,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             444 =>
             array (
@@ -20250,8 +20250,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             445 =>
             array (
@@ -20264,8 +20264,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             446 =>
             array (
@@ -20278,8 +20278,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             447 =>
             array (
@@ -20292,8 +20292,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             448 =>
             array (
@@ -20306,8 +20306,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             449 =>
             array (
@@ -20320,8 +20320,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             450 =>
             array (
@@ -20334,8 +20334,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             451 =>
             array (
@@ -20348,8 +20348,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             452 =>
             array (
@@ -20362,8 +20362,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             453 =>
             array (
@@ -20376,8 +20376,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             454 =>
             array (
@@ -20390,8 +20390,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             455 =>
             array (
@@ -20404,8 +20404,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => '3.00',
                 'cuota_minima' => '226.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             456 =>
             array (
@@ -20418,8 +20418,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => '3.00',
                 'cuota_minima' => '453.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             457 =>
             array (
@@ -20432,8 +20432,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => '3.00',
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             458 =>
             array (
@@ -20446,8 +20446,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => '3.00',
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             459 =>
             array (
@@ -20460,8 +20460,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             460 =>
             array (
@@ -20474,8 +20474,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '255.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             461 =>
             array (
@@ -20488,8 +20488,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             462 =>
             array (
@@ -20502,8 +20502,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             463 =>
             array (
@@ -20516,8 +20516,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             464 =>
             array (
@@ -20530,8 +20530,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             465 =>
             array (
@@ -20544,8 +20544,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '27538.80',
                 'umas' => '3.00',
                 'cuota_minima' => '453.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             466 =>
             array (
@@ -20558,8 +20558,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             467 =>
             array (
@@ -20572,8 +20572,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             468 =>
             array (
@@ -20586,8 +20586,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             469 =>
             array (
@@ -20600,8 +20600,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             470 =>
             array (
@@ -20614,8 +20614,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             471 =>
             array (
@@ -20628,8 +20628,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             472 =>
             array (
@@ -20642,8 +20642,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             473 =>
             array (
@@ -20656,8 +20656,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             474 =>
             array (
@@ -20670,8 +20670,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             475 =>
             array (
@@ -20684,8 +20684,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             476 =>
             array (
@@ -20698,8 +20698,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             477 =>
             array (
@@ -20712,8 +20712,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             478 =>
             array (
@@ -20726,8 +20726,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             479 =>
             array (
@@ -20740,8 +20740,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             480 =>
             array (
@@ -20754,8 +20754,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             481 =>
             array (
@@ -20768,8 +20768,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             482 =>
             array (
@@ -20782,8 +20782,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             483 =>
             array (
@@ -20796,8 +20796,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             484 =>
             array (
@@ -20810,8 +20810,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             485 =>
             array (
@@ -20824,8 +20824,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             486 =>
             array (
@@ -20838,8 +20838,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             487 =>
             array (
@@ -20852,8 +20852,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             488 =>
             array (
@@ -20866,8 +20866,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             489 =>
             array (
@@ -20880,8 +20880,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             490 =>
             array (
@@ -20894,8 +20894,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             491 =>
             array (
@@ -20908,8 +20908,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             492 =>
             array (
@@ -20922,8 +20922,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => '3.00',
                 'cuota_minima' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             493 =>
             array (
@@ -20936,8 +20936,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => NULL,
                 'cuota_minima' => '289.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             494 =>
             array (
@@ -20950,8 +20950,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             495 =>
             array (
@@ -20964,8 +20964,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '7.00',
                 'cuota_minima' => '677.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             496 =>
             array (
@@ -20978,8 +20978,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             497 =>
             array (
@@ -20992,8 +20992,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             498 =>
             array (
@@ -21006,8 +21006,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             499 =>
             array (
@@ -21020,8 +21020,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
         ));
         \DB::table('cuota_minimas')->insert(array (
@@ -21036,8 +21036,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             1 =>
             array (
@@ -21050,8 +21050,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '6.00',
                 'cuota_minima' => '577.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             2 =>
             array (
@@ -21064,8 +21064,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             3 =>
             array (
@@ -21078,8 +21078,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '8.00',
                 'cuota_minima' => '770.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             4 =>
             array (
@@ -21092,8 +21092,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '35101.08',
                 'umas' => '3.00',
                 'cuota_minima' => '674.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             5 =>
             array (
@@ -21106,8 +21106,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             6 =>
             array (
@@ -21120,8 +21120,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '481.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             7 =>
             array (
@@ -21134,8 +21134,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '385.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             8 =>
             array (
@@ -21148,8 +21148,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '29402.88',
                 'umas' => '3.00',
                 'cuota_minima' => '242.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             9 =>
             array (
@@ -21162,8 +21162,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             10 =>
             array (
@@ -21176,8 +21176,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             11 =>
             array (
@@ -21190,8 +21190,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             12 =>
             array (
@@ -21204,8 +21204,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             13 =>
             array (
@@ -21218,8 +21218,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             14 =>
             array (
@@ -21232,8 +21232,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             15 =>
             array (
@@ -21246,8 +21246,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             16 =>
             array (
@@ -21260,8 +21260,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             17 =>
             array (
@@ -21274,8 +21274,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             18 =>
             array (
@@ -21288,8 +21288,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             19 =>
             array (
@@ -21302,8 +21302,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             20 =>
             array (
@@ -21316,8 +21316,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             21 =>
             array (
@@ -21330,8 +21330,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             22 =>
             array (
@@ -21344,8 +21344,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             23 =>
             array (
@@ -21358,8 +21358,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             24 =>
             array (
@@ -21372,8 +21372,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '7.00',
                 'cuota_minima' => '726.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             25 =>
             array (
@@ -21386,8 +21386,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             26 =>
             array (
@@ -21400,8 +21400,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             27 =>
             array (
@@ -21414,8 +21414,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             28 =>
             array (
@@ -21428,8 +21428,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             29 =>
             array (
@@ -21442,8 +21442,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.50',
                 'cuota_minima' => '363.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             30 =>
             array (
@@ -21456,8 +21456,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             31 =>
             array (
@@ -21470,8 +21470,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             32 =>
             array (
@@ -21484,8 +21484,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             33 =>
             array (
@@ -21498,8 +21498,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '6.00',
                 'cuota_minima' => '622.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             34 =>
             array (
@@ -21512,8 +21512,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             35 =>
             array (
@@ -21526,8 +21526,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             36 =>
             array (
@@ -21540,8 +21540,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             37 =>
             array (
@@ -21554,8 +21554,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             38 =>
             array (
@@ -21568,8 +21568,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             39 =>
             array (
@@ -21582,8 +21582,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             40 =>
             array (
@@ -21596,8 +21596,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             41 =>
             array (
@@ -21610,8 +21610,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             42 =>
             array (
@@ -21624,8 +21624,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             43 =>
             array (
@@ -21638,8 +21638,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             44 =>
             array (
@@ -21652,8 +21652,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '8.00',
                 'cuota_minima' => '830.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             45 =>
             array (
@@ -21666,8 +21666,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             46 =>
             array (
@@ -21680,8 +21680,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             47 =>
             array (
@@ -21694,8 +21694,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             48 =>
             array (
@@ -21708,8 +21708,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             49 =>
             array (
@@ -21722,8 +21722,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             50 =>
             array (
@@ -21736,8 +21736,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             51 =>
             array (
@@ -21750,8 +21750,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             52 =>
             array (
@@ -21764,8 +21764,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             53 =>
             array (
@@ -21778,8 +21778,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             54 =>
             array (
@@ -21792,8 +21792,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             55 =>
             array (
@@ -21806,8 +21806,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             56 =>
             array (
@@ -21820,8 +21820,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             57 =>
             array (
@@ -21834,8 +21834,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '7.00',
                 'cuota_minima' => '726.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             58 =>
             array (
@@ -21848,8 +21848,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             59 =>
             array (
@@ -21862,8 +21862,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             60 =>
             array (
@@ -21876,8 +21876,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             61 =>
             array (
@@ -21890,8 +21890,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             62 =>
             array (
@@ -21904,8 +21904,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             63 =>
             array (
@@ -21918,8 +21918,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             64 =>
             array (
@@ -21932,8 +21932,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             65 =>
             array (
@@ -21946,8 +21946,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             66 =>
             array (
@@ -21960,8 +21960,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             67 =>
             array (
@@ -21974,8 +21974,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '6.00',
                 'cuota_minima' => '622.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             68 =>
             array (
@@ -21988,8 +21988,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             69 =>
             array (
@@ -22002,8 +22002,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             70 =>
             array (
@@ -22016,8 +22016,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             71 =>
             array (
@@ -22030,8 +22030,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             72 =>
             array (
@@ -22044,8 +22044,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '6.00',
                 'cuota_minima' => '622.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             73 =>
             array (
@@ -22058,8 +22058,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             74 =>
             array (
@@ -22072,8 +22072,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             75 =>
             array (
@@ -22086,8 +22086,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             76 =>
             array (
@@ -22100,8 +22100,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             77 =>
             array (
@@ -22114,8 +22114,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             78 =>
             array (
@@ -22128,8 +22128,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             79 =>
             array (
@@ -22142,8 +22142,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             80 =>
             array (
@@ -22156,8 +22156,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '6.00',
                 'cuota_minima' => '622.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             81 =>
             array (
@@ -22170,8 +22170,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             82 =>
             array (
@@ -22184,8 +22184,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             83 =>
             array (
@@ -22198,8 +22198,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.50',
                 'cuota_minima' => '467.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             84 =>
             array (
@@ -22212,8 +22212,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             85 =>
             array (
@@ -22226,8 +22226,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             86 =>
             array (
@@ -22240,8 +22240,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             87 =>
             array (
@@ -22254,8 +22254,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             88 =>
             array (
@@ -22268,8 +22268,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             89 =>
             array (
@@ -22282,8 +22282,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             90 =>
             array (
@@ -22296,8 +22296,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             91 =>
             array (
@@ -22310,8 +22310,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             92 =>
             array (
@@ -22324,8 +22324,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             93 =>
             array (
@@ -22338,8 +22338,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             94 =>
             array (
@@ -22352,8 +22352,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             95 =>
             array (
@@ -22366,8 +22366,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             96 =>
             array (
@@ -22380,8 +22380,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             97 =>
             array (
@@ -22394,8 +22394,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             98 =>
             array (
@@ -22408,8 +22408,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             99 =>
             array (
@@ -22422,8 +22422,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             100 =>
             array (
@@ -22436,8 +22436,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '6.00',
                 'cuota_minima' => '622.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             101 =>
             array (
@@ -22450,8 +22450,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             102 =>
             array (
@@ -22464,8 +22464,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '6.00',
                 'cuota_minima' => '622.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             103 =>
             array (
@@ -22478,8 +22478,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             104 =>
             array (
@@ -22492,8 +22492,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             105 =>
             array (
@@ -22506,8 +22506,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             106 =>
             array (
@@ -22520,8 +22520,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             107 =>
             array (
@@ -22534,8 +22534,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             108 =>
             array (
@@ -22548,8 +22548,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             109 =>
             array (
@@ -22562,8 +22562,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             110 =>
             array (
@@ -22576,8 +22576,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             111 =>
             array (
@@ -22590,8 +22590,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             112 =>
             array (
@@ -22604,8 +22604,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '6.00',
                 'cuota_minima' => '622.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             113 =>
             array (
@@ -22618,8 +22618,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             114 =>
             array (
@@ -22632,8 +22632,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             115 =>
             array (
@@ -22646,8 +22646,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             116 =>
             array (
@@ -22660,8 +22660,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             117 =>
             array (
@@ -22674,8 +22674,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             118 =>
             array (
@@ -22688,8 +22688,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             119 =>
             array (
@@ -22702,8 +22702,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             120 =>
             array (
@@ -22716,8 +22716,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             121 =>
             array (
@@ -22730,8 +22730,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '6.00',
                 'cuota_minima' => '622.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             122 =>
             array (
@@ -22744,8 +22744,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             123 =>
             array (
@@ -22758,8 +22758,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             124 =>
             array (
@@ -22772,8 +22772,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '3.00',
                 'cuota_minima' => '311.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             125 =>
             array (
@@ -22786,8 +22786,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '5.00',
                 'cuota_minima' => '519.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             126 =>
             array (
@@ -22800,8 +22800,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '37844.40',
                 'umas' => '4.00',
                 'cuota_minima' => '415.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             127 =>
             array (
@@ -22814,8 +22814,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '0.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             128 =>
             array (
@@ -22828,8 +22828,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             129 =>
             array (
@@ -22842,8 +22842,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             130 =>
             array (
@@ -22856,8 +22856,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             131 =>
             array (
@@ -22870,8 +22870,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             132 =>
             array (
@@ -22884,8 +22884,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             133 =>
             array (
@@ -22898,8 +22898,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             134 =>
             array (
@@ -22912,8 +22912,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             135 =>
             array (
@@ -22926,8 +22926,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             136 =>
             array (
@@ -22940,8 +22940,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '26645.04',
                 'umas' => '3.00',
                 'cuota_minima' => '219.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             137 =>
             array (
@@ -22954,8 +22954,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             138 =>
             array (
@@ -22968,8 +22968,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             139 =>
             array (
@@ -22982,8 +22982,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             140 =>
             array (
@@ -22996,8 +22996,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             141 =>
             array (
@@ -23010,8 +23010,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             142 =>
             array (
@@ -23024,8 +23024,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             143 =>
             array (
@@ -23038,8 +23038,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '199.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             144 =>
             array (
@@ -23052,8 +23052,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => NULL,
                 'umas' => '3.00',
                 'cuota_minima' => '0.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             145 =>
             array (
@@ -23066,8 +23066,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             146 =>
             array (
@@ -23080,8 +23080,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             147 =>
             array (
@@ -23094,8 +23094,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             148 =>
             array (
@@ -23108,8 +23108,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             149 =>
             array (
@@ -23122,8 +23122,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             150 =>
             array (
@@ -23136,8 +23136,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             151 =>
             array (
@@ -23150,8 +23150,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             152 =>
             array (
@@ -23164,8 +23164,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             153 =>
             array (
@@ -23178,8 +23178,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             154 =>
             array (
@@ -23192,8 +23192,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '7.00',
                 'cuota_minima' => '760.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             155 =>
             array (
@@ -23206,8 +23206,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             156 =>
             array (
@@ -23220,8 +23220,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             157 =>
             array (
@@ -23234,8 +23234,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             158 =>
             array (
@@ -23248,8 +23248,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             159 =>
             array (
@@ -23262,8 +23262,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.50',
                 'cuota_minima' => '380.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             160 =>
             array (
@@ -23276,8 +23276,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             161 =>
             array (
@@ -23290,8 +23290,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             162 =>
             array (
@@ -23304,8 +23304,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             163 =>
             array (
@@ -23318,8 +23318,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '6.00',
                 'cuota_minima' => '651.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             164 =>
             array (
@@ -23332,8 +23332,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             165 =>
             array (
@@ -23346,8 +23346,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             166 =>
             array (
@@ -23360,8 +23360,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             167 =>
             array (
@@ -23374,8 +23374,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             168 =>
             array (
@@ -23388,8 +23388,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             169 =>
             array (
@@ -23402,8 +23402,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             170 =>
             array (
@@ -23416,8 +23416,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             171 =>
             array (
@@ -23430,8 +23430,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             172 =>
             array (
@@ -23444,8 +23444,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             173 =>
             array (
@@ -23458,8 +23458,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             174 =>
             array (
@@ -23472,8 +23472,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '8.00',
                 'cuota_minima' => '869.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             175 =>
             array (
@@ -23486,8 +23486,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             176 =>
             array (
@@ -23500,8 +23500,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             177 =>
             array (
@@ -23514,8 +23514,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             178 =>
             array (
@@ -23528,8 +23528,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             179 =>
             array (
@@ -23542,8 +23542,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             180 =>
             array (
@@ -23556,8 +23556,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             181 =>
             array (
@@ -23570,8 +23570,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             182 =>
             array (
@@ -23584,8 +23584,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             183 =>
             array (
@@ -23598,8 +23598,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             184 =>
             array (
@@ -23612,8 +23612,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             185 =>
             array (
@@ -23626,8 +23626,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             186 =>
             array (
@@ -23640,8 +23640,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             187 =>
             array (
@@ -23654,8 +23654,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '7.00',
                 'cuota_minima' => '760.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             188 =>
             array (
@@ -23668,8 +23668,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             189 =>
             array (
@@ -23682,8 +23682,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             190 =>
             array (
@@ -23696,8 +23696,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             191 =>
             array (
@@ -23710,8 +23710,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             192 =>
             array (
@@ -23724,8 +23724,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             193 =>
             array (
@@ -23738,8 +23738,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             194 =>
             array (
@@ -23752,8 +23752,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             195 =>
             array (
@@ -23766,8 +23766,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             196 =>
             array (
@@ -23780,8 +23780,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             197 =>
             array (
@@ -23794,8 +23794,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '6.00',
                 'cuota_minima' => '651.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             198 =>
             array (
@@ -23808,8 +23808,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             199 =>
             array (
@@ -23822,8 +23822,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             200 =>
             array (
@@ -23836,8 +23836,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             201 =>
             array (
@@ -23850,8 +23850,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '6.00',
                 'cuota_minima' => '651.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             202 =>
             array (
@@ -23864,8 +23864,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             203 =>
             array (
@@ -23878,8 +23878,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             204 =>
             array (
@@ -23892,8 +23892,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             205 =>
             array (
@@ -23906,8 +23906,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             206 =>
             array (
@@ -23920,8 +23920,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             207 =>
             array (
@@ -23934,8 +23934,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             208 =>
             array (
@@ -23948,8 +23948,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             209 =>
             array (
@@ -23962,8 +23962,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '6.00',
                 'cuota_minima' => '651.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             210 =>
             array (
@@ -23976,8 +23976,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             211 =>
             array (
@@ -23990,8 +23990,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             212 =>
             array (
@@ -24004,8 +24004,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.50',
                 'cuota_minima' => '489.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             213 =>
             array (
@@ -24018,8 +24018,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             214 =>
             array (
@@ -24032,8 +24032,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             215 =>
             array (
@@ -24046,8 +24046,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             216 =>
             array (
@@ -24060,8 +24060,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             217 =>
             array (
@@ -24074,8 +24074,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             218 =>
             array (
@@ -24088,8 +24088,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             219 =>
             array (
@@ -24102,8 +24102,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             220 =>
             array (
@@ -24116,8 +24116,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             221 =>
             array (
@@ -24130,8 +24130,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             222 =>
             array (
@@ -24144,8 +24144,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             223 =>
             array (
@@ -24158,8 +24158,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             224 =>
             array (
@@ -24172,8 +24172,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             225 =>
             array (
@@ -24186,8 +24186,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             226 =>
             array (
@@ -24200,8 +24200,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             227 =>
             array (
@@ -24214,8 +24214,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             228 =>
             array (
@@ -24228,8 +24228,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             229 =>
             array (
@@ -24242,8 +24242,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '6.00',
                 'cuota_minima' => '651.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             230 =>
             array (
@@ -24256,8 +24256,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             231 =>
             array (
@@ -24270,8 +24270,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '6.00',
                 'cuota_minima' => '651.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             232 =>
             array (
@@ -24284,8 +24284,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             233 =>
             array (
@@ -24298,8 +24298,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             234 =>
             array (
@@ -24312,8 +24312,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             235 =>
             array (
@@ -24326,8 +24326,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             236 =>
             array (
@@ -24340,8 +24340,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             237 =>
             array (
@@ -24354,8 +24354,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             238 =>
             array (
@@ -24368,8 +24368,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             239 =>
             array (
@@ -24382,8 +24382,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             240 =>
             array (
@@ -24396,8 +24396,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             241 =>
             array (
@@ -24410,8 +24410,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             242 =>
             array (
@@ -24424,8 +24424,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '6.00',
                 'cuota_minima' => '651.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             243 =>
             array (
@@ -24438,8 +24438,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             244 =>
             array (
@@ -24452,8 +24452,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             245 =>
             array (
@@ -24466,8 +24466,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             246 =>
             array (
@@ -24480,8 +24480,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             247 =>
             array (
@@ -24494,8 +24494,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             248 =>
             array (
@@ -24508,8 +24508,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             249 =>
             array (
@@ -24522,8 +24522,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             250 =>
             array (
@@ -24536,8 +24536,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             251 =>
             array (
@@ -24550,8 +24550,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '6.00',
                 'cuota_minima' => '651.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             252 =>
             array (
@@ -24564,8 +24564,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             253 =>
             array (
@@ -24578,8 +24578,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             254 =>
             array (
@@ -24592,8 +24592,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             255 =>
             array (
@@ -24606,8 +24606,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '5.00',
                 'cuota_minima' => '543.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             256 =>
             array (
@@ -24620,8 +24620,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '4.00',
                 'cuota_minima' => '434.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
             257 =>
             array (
@@ -24634,8 +24634,8 @@ class CuotaminimasTableSeeder extends Seeder
                 'anual' => '39606.36',
                 'umas' => '3.00',
                 'cuota_minima' => '326.00',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'created_at' => now(),
+                'updated_at' => now(),
             ),
         ));
 

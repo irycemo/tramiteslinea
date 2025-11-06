@@ -17,11 +17,11 @@ return Application::configure(basePath: dirname(__DIR__))
         apiPrefix: 'api/v1',
         then: function(){
 
-            Route::middleware(['web', 'auth', 'esta.activo'])->group(base_path('routes/administrador.php'));
+            Route::middleware(['web', 'auth', 'esta.activo', 'verified'])->group(base_path('routes/administrador.php'));
 
-            Route::middleware(['web', 'auth', 'esta.activo'])->group(base_path('routes/catastro.php'));
+            Route::middleware(['web', 'auth', 'esta.activo', 'verified'])->group(base_path('routes/catastro.php'));
 
-            Route::middleware(['web', 'auth', 'esta.activo'])->group(base_path('routes/rpp.php'));
+            Route::middleware(['web', 'auth', 'esta.activo', 'verified'])->group(base_path('routes/rpp.php'));
 
         }
     )

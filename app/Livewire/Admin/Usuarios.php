@@ -16,6 +16,7 @@ use Livewire\Attributes\Computed;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Auth\Events\Registered;
 
 class Usuarios extends Component
 {
@@ -154,17 +155,13 @@ class Usuarios extends Component
 
             DB::transaction(function () {
 
-                if(app()->isProduction()){
+                if(!app()->isProduction()){
 
-                    $password = Str::password(12);
-
-                }else{
-
-                    $password = 'sistema';
+                    $this->modelo_editar->email_verified_at = now()->toDateString();
 
                 }
 
-                $this->modelo_editar->password = bcrypt($password);
+                $this->modelo_editar->password = bcrypt('sistema');
                 $this->modelo_editar->creado_por = auth()->id();
                 $this->modelo_editar->clave = User::max('clave') + 1;
                 $this->modelo_editar->save();
@@ -179,10 +176,15 @@ class Usuarios extends Component
 
                     $this->modelo_editar->entidad->update(['adscrito' => $this->modelo_editar->id]);
 
-
                 }
 
-                Mail::to($this->modelo_editar->email)->send(new RegistroUsuarioMail($this->modelo_editar, $password));
+                Mail::to($this->modelo_editar->email)->send(new RegistroUsuarioMail($this->modelo_editar));
+
+                if(app()->isProduction()){
+
+                    event(new Registered($this->modelo_editar));
+
+                }
 
                 $this->resetearTodo();
 
@@ -266,17 +268,11 @@ class Usuarios extends Component
 
             $usuario = User::find($id);
 
+            $usuario->password = bcrypt('sistema');
+
             if(app()->isProduction()){
 
-                $password = Str::password(12);
-
-                $usuario->password = bcrypt($password);
-
-                Mail::to($usuario->email)->send(new RegistroUsuarioMail($usuario, $password));
-
-            }else{
-
-                $usuario->password = bcrypt('sistema');
+                Mail::to($usuario->email)->send(new RegistroUsuarioMail($usuario));
 
             }
 
