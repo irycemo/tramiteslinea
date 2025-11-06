@@ -89,7 +89,7 @@ class Archivo extends Component
 
         }
 
-        if($this->aviso->predio->adquirientes()->count()){
+        /* if($this->aviso->predio->adquirientes()->count()){
 
             if($this->aviso->aviso_id){
 
@@ -101,7 +101,7 @@ class Archivo extends Component
 
             }
 
-        }
+        } */
 
     }
 
