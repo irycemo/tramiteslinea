@@ -10,7 +10,7 @@ use App\Http\Controllers\Controller;
 class RevertirAvisoController extends Controller
 {
 
-    public function rechazarAviso(Request $request){
+    public function revertirAviso(Request $request){
 
         $validated = $request->validate(['id' => 'required|numeric|min:1']);
 
