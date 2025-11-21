@@ -298,4 +298,6 @@ class Constantes{
         'FIDEICOMISARIO',
     ];
 
+    const MUNICIPIOS = [];
+
 }

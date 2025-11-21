@@ -83,8 +83,12 @@
                         <x-input-select id="municipio" wire:model="municipio" class="w-full">
 
                             <option value="">Seleccione una opción</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
+
+                            @foreach ($municipios as $item)
+
+                                <option value="{{ $item }}">{{ $item }}</option>
+
+                            @endforeach
 
                         </x-input-select>
 
@@ -136,6 +140,50 @@
                         <x-input-group for="aviso.valor_isai" label="ISAI" :error="$errors->first('aviso.valor_isai')" class="w-full">
 
                             <x-input-text type="text" id="aviso.valor_isai" value="{{ number_format($aviso->valor_isai, 2) }}" readonly/>
+
+                        </x-input-group>
+
+                    </div>
+
+                @endif
+
+                @if($aviso->uso_de_predio === 'mixto')
+
+                    <div class="w-full lg:w-1/6 mx-auto space-y-3">
+
+                        <x-input-group for="porcentaje_vivienda" label="Porcentaje de vivienda" :error="$errors->first('porcentaje_vivienda')" class="w-full">
+
+                            <x-input-text type="text" id="porcentaje_vivienda" value="{{ number_format($porcentaje_vivienda, 2) }}" readonly/>
+
+                        </x-input-group>
+
+                        <x-input-group for="porcentaje_otro_uso" label="Porcentaje de otro uso" :error="$errors->first('porcentaje_otro_uso')" class="w-full">
+
+                            <x-input-text type="text" id="porcentaje_otro_uso" value="{{ number_format($porcentaje_otro_uso, 2) }}" readonly/>
+
+                        </x-input-group>
+
+                        <x-input-group for="valor_total_vivienda" label="Valor de vivienda de acuerdo al porcentaje" :error="$errors->first('valor_total_vivienda')" class="w-full">
+
+                            <x-input-text type="text" id="valor_total_vivienda" value="{{ number_format($valor_total_vivienda, 2) }}" readonly/>
+
+                        </x-input-group>
+
+                        <x-input-group for="valor_total_otro_uso" label="Valor de otro uso de acuerdo al porcentaje" :error="$errors->first('valor_total_otro_uso')" class="w-full">
+
+                            <x-input-text type="text" id="valor_total_otro_uso" value="{{ number_format($valor_total_otro_uso, 2) }}" readonly/>
+
+                        </x-input-group>
+
+                        <x-input-group for="reduccion_vivienda" label="Reducción de vivienda deacuerdo al porcentaje" :error="$errors->first('reduccion_vivienda')" class="w-full">
+
+                            <x-input-text type="text" id="reduccion_vivienda" value="{{ number_format($reduccion_vivienda, 2) }}" readonly/>
+
+                        </x-input-group>
+
+                        <x-input-group for="reduccion_otro_uso" label="Reducción de otro uso deacuerdo al porcentaje" :error="$errors->first('reduccion_otro_uso')" class="w-full">
+
+                            <x-input-text type="text" id="reduccion_otro_uso" value="{{ number_format($reduccion_otro_uso, 2) }}" readonly/>
 
                         </x-input-group>
 

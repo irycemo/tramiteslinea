@@ -1,75 +1,71 @@
 <div class="">
 
-    <div class="mb-6">
+    <div class="mb-2 lg:mb-5">
 
-        <h1 class="text-3xl tracking-widest py-3 px-6 text-gray-600 rounded-xl border-b-2 border-gray-500 font-thin mb-6  bg-white">Avisos</h1>
+        <x-header>Avisos</x-header>
 
         <div class="flex gap-3 overflow-auto p-1">
 
-            <div class="">
+            <select class="bg-white rounded-full text-sm" wire:model.live="filters.estado">
+                <option value="">Estado</option>
+                <option value="nuevo">Nuevo</option>
+                <option value="cerrado">Cerrado</option>
+                <option value="autorizado">Autorizado</option>
+                <option value="operado">Operado</option>
+                <option value="rechazado">Rechazado</option>
 
-                <select class="bg-white rounded-full text-sm" wire:model.live="filters.estado">
-                    <option value="">Estado</option>
-                    <option value="nuevo">Nuevo</option>
-                    <option value="cerrado">Cerrado</option>
-                    <option value="autorizado">Autorizado</option>
-                    <option value="operado">Operado</option>
-                    <option value="rechazado">Rechazado</option>
+            </select>
 
-                </select>
+            <select class="bg-white rounded-full text-sm" wire:model.live="filters.tipo">
+                <option value="">Tipo</option>
+                <option value="revision">Revisión</option>
+                <option value="aclaratorio">Aclaratorio</option>
 
-                <select class="bg-white rounded-full text-sm" wire:model.live="filters.tipo">
-                    <option value="">Tipo</option>
-                    <option value="revision">Revisión</option>
-                    <option value="aclaratorio">Aclaratorio</option>
+            </select>
 
-                </select>
+            <select class="bg-white rounded-full text-sm" wire:model.live="filters.entidad_id">
 
-                <select class="bg-white rounded-full text-sm" wire:model.live="filters.entidad_id">
+                <option value="">Entidad</option>
+                @foreach ($entidades as $entidad)
 
-                    <option value="">Entidad</option>
-                    @foreach ($entidades as $entidad)
+                    <option value="{{ $entidad->id }}">{{ $entidad->numero_notaria ? 'Notaria ' . $entidad->numero_notaria : '' }}{{ $entidad->dependencia }}</option>
 
-                        <option value="{{ $entidad->id }}">{{ $entidad->numero_notaria ? 'Notaria ' . $entidad->numero_notaria : '' }}{{ $entidad->dependencia }}</option>
+                @endforeach
 
-                    @endforeach
+            </select>
 
-                </select>
+            <select class="bg-white rounded-full text-sm" wire:model.live="filters.año">
 
-                <select class="bg-white rounded-full text-sm" wire:model.live="filters.año">
+                @foreach ($años as $año)
 
-                    @foreach ($años as $año)
+                    <option value="{{ $año }}">{{ $año }}</option>
 
-                        <option value="{{ $año }}">{{ $año }}</option>
+                @endforeach
 
-                    @endforeach
+            </select>
 
-                </select>
+            <input type="number" wire:model.live.debounce.500mse="filters.folio" placeholder="Folio" class="bg-white rounded-full text-sm w-24">
 
-                <input type="number" wire:model.live.debounce.500mse="filters.folio" placeholder="Folio" class="bg-white rounded-full text-sm w-24">
+            <input type="number" wire:model.live.debounce.500mse="filters.usuario" placeholder="Usuario" class="bg-white rounded-full text-sm w-24">
 
-                <input type="number" wire:model.live.debounce.500mse="filters.usuario" placeholder="Usuario" class="bg-white rounded-full text-sm w-24">
+            <select class="bg-white rounded-full text-sm" wire:model.live="pagination">
 
-                <select class="bg-white rounded-full text-sm" wire:model.live="pagination">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
 
-                    <option value="10">10</option>
-                    <option value="25">25</option>
-                    <option value="50">50</option>
-                    <option value="100">100</option>
+            </select>
 
-                </select>
+            <div class="flex gap-1">
 
-                <div class="flex gap-1 mt-2">
+                <input type="number" wire:model.live.debounce.500ms="filters.localidad" placeholder="Localidad" class="bg-white rounded-full text-sm w-24">
 
-                    <input type="number" wire:model.live.debounce.500ms="filters.localidad" placeholder="Localidad" class="bg-white rounded-full text-sm w-24">
+                <input type="number" wire:model.live.debounce.500ms="filters.oficina" placeholder="Oficina" class="bg-white rounded-full text-sm w-24">
 
-                    <input type="number" wire:model.live.debounce.500ms="filters.oficina" placeholder="Oficina" class="bg-white rounded-full text-sm w-24">
+                <input type="number" wire:model.live.debounce.500ms="filters.t_predio" placeholder="T. Predio" class="bg-white rounded-full text-sm w-24">
 
-                    <input type="number" wire:model.live.debounce.500ms="filters.t_predio" placeholder="T. Predio" class="bg-white rounded-full text-sm w-24">
-
-                    <input type="number" wire:model.live.debounce.500ms="filters.registro" placeholder="# Registro" class="bg-white rounded-full text-sm w-24">
-
-                </div>
+                <input type="number" wire:model.live.debounce.500ms="filters.registro" placeholder="# Registro" class="bg-white rounded-full text-sm w-24">
 
             </div>
 

@@ -26,7 +26,7 @@ class AvisoOperadoMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Rechazo de aviso',
+            subject: 'Aviso operado',
         );
     }
 

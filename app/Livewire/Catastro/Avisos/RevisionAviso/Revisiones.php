@@ -79,6 +79,8 @@ class Revisiones extends Component
 
         try {
 
+            if($this->modelo_editar->estado == 'operado') throw new GeneralException('El aviso esta operado no es posible reactivarlo.');
+
             (new PeritosExternosService())->reactivarAvaluo($this->modelo_editar->avaluo_spe);
 
             $this->modelo_editar->update([

@@ -2,13 +2,13 @@
 
 namespace App\Livewire\Comun;
 
+use App\Constantes\Constantes;
 use Carbon\Carbon;
 use App\Models\Aviso;
 use Livewire\Component;
 use App\Models\CuotaMinima;
 use Livewire\Attributes\On;
 use Illuminate\Validation\Rule;
-use Illuminate\Support\Facades\Log;
 
 class CalculadoraIsai extends Component
 {
@@ -27,6 +27,7 @@ class CalculadoraIsai extends Component
     public $reduccion_otro_uso;
     public $fecha_reduccion;
     public $municipio;
+    public $municipios;
 
     protected $listeners = ['cargarAviso'];
 
@@ -289,6 +290,8 @@ class CalculadoraIsai extends Component
             $this->crearModeloVacio();
 
         }
+
+        $this->municipios = Constantes::MUNICIPIOS;
 
     }
 

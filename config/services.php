@@ -59,6 +59,7 @@ return [
         'consultar_servicios' => env('SGC_CONSULTAR_SERVICIOS'),
         'consultar_certificados' => env('SGC_CONSULTAR_CERTIFICADOS'),
         'consultar_estadisticas' => env('SGC_CONSULTAR_ESTADISTICAS'),
+        'consultar_oficinas' => env('SGC_CONSULTAR_OFICINAS'),
         'ingresar_aviso_aclaratorio' => env('SGC_INGRESAR_AVISO_ACLARATORIO'),
         'ingresar_revision_aviso' => env('SGC_INGRESAR_REVISION_AVISO'),
         'inactivarTraslado' => env('SGC_INACTIVAR_TRASLADO'),

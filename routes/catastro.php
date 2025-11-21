@@ -9,6 +9,7 @@ use App\Livewire\Catastro\Avisos\RevisionAviso\Revisiones;
 use App\Livewire\Catastro\Avisos\AvisoAclaratorio\NuevoAviso;
 use App\Livewire\Catastro\Avisos\RevisionAviso\NuevaRevision;
 use App\Livewire\Comun\CalculadoraIsai;
+use App\Livewire\Comun\OficinasCatastro;
 
 Route::group([], function(){
 
@@ -26,6 +27,8 @@ Route::group([], function(){
 
     Route::get('certificados_catastro', Certificados::class)->middleware('permission:Certificados catastro')->name('certificados_catastro');
 
-    Route::get('calculadora_isai', CalculadoraIsai::class)->middleware('permission:Certificados')->name('calculadora_isai');
+    Route::get('calculadora_isai', CalculadoraIsai::class)->name('calculadora_isai');
+
+    Route::get('oficinas_catastro', OficinasCatastro::class)->name('oficinas_catastro');
 
 });

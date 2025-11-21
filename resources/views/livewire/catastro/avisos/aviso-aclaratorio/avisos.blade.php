@@ -20,7 +20,7 @@
 
                 <input type="number" wire:model.live.debounce.500mse="filters.folio" placeholder="Folio" class="bg-white rounded-full text-sm">
 
-                <input type="number" wire:model.live.debounce.500mse="filters.usuario" placeholder="Usuario" class="bg-white rounded-full text-sm">
+                <input type="number" wire:model.live.debounce.500mse="filter.usuario" placeholder="Usuario" class="bg-white rounded-full text-sm">
 
                 <select class="bg-white rounded-full text-sm" wire:model.live="pagination">
 

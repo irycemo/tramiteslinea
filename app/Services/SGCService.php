@@ -728,4 +728,41 @@ class SGCService {
 
     }
 
+    public function consultarOficinas(null | string $search, int $pagina_actual, int $pagination):array
+    {
+
+        $response = Http::withToken(config('services.sgc.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.sgc.consultar_oficinas'),
+                                [
+                                    'search' => $search,
+                                    'pagina' => $pagina_actual,
+                                    'pagination' => $pagination,
+                                ]
+                            );
+
+        if($response->status() !== 200){
+
+            Log::error("Error al consultar oficinas. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al consultar oficinas.");
+
+        }else{
+
+            return json_decode($response, true);
+
+        }
+
+    }
+
 }

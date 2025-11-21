@@ -78,6 +78,8 @@ class Avisos extends Component
 
         try {
 
+            if($this->modelo_editar->estado == 'operado') throw new GeneralException('El aviso esta operado no es posible reactivarlo.');
+
             (new SGCService())->inactivarTraslado($this->modelo_editar->traslado_sgc);
 
             $this->modelo_editar->update([
