@@ -392,7 +392,7 @@
                             </p>
                             @if($aviso->entidad->numero_notaria)
                                 <p style="text-align: center; margin: 0" >Notaria {{ $aviso->entidad->numero_notaria }}</p>
-                                {{-- <p style="text-align: center; margin: 0" >{{ $aviso->entidad->titular->rfc }}</p> --}}
+                                <p style="text-align: center; margin: 0" >{{ $aviso->entidad->titular->rfc }}</p>
                             @endif
                         </td>
                     </tr>
