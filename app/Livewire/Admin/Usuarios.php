@@ -173,7 +173,10 @@ class Usuarios extends Component
 
                 if($this->role == 2){
 
-                    $this->modelo_editar->entidad->update(['notario' => $this->modelo_editar->id]);
+                    $this->modelo_editar->entidad->update([
+                        'notario' => $this->modelo_editar->id,
+                        'email' => $this->modelo_editar->email
+                    ]);
 
                 }elseif($this->role == 3){
 
