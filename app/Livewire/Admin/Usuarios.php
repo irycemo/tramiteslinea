@@ -47,7 +47,7 @@ class Usuarios extends Component
             'modelo_editar.estado' => 'required|in:activo,inactivo',
             'modelo_editar.entidad_id' => Rule::requiredIf($this->role != 8),
             'role' => 'required',
-            'rfc' => [
+            'modelo_editar.rfc' => [
                 'nullable',
                 'regex:/^([A-ZÑ&]{3,4}) ?(?:- ?)?(\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])) ?(?:- ?)?([A-Z\d]{2})([A\d])$/'
             ],
