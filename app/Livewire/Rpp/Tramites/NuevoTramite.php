@@ -323,7 +323,8 @@ class NuevoTramite extends Component
 
         $this->distritos = [
             18 => '18 Ario De Rosales',
-            19 => '19 Tanhuato'
+            19 => '19 Tanhuato',
+            2 => '02 Uruapan'
         ];
 
     }
