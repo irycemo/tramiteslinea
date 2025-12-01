@@ -120,6 +120,21 @@
                                         Ver
                                     </button>
 
+                                    <a
+                                        href="{{ route('requerimientos_oficina') . "?oficina=" . $oficina['id'] }}"
+                                        class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                                        role="menuitem">
+                                        Ver requerimientos
+                                    </a>
+
+                                    {{-- <button
+                                        wire:click="abrirModalRequerimiento({{ json_encode($oficina) }})"
+                                        wire:loading.attr="disabled"
+                                        class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                                        role="menuitem">
+                                        Hacer requerimiento
+                                    </button> --}}
+
                                 </div>
 
                             </div>
@@ -304,6 +319,62 @@
                     wire:click="$set('modal', false)"
                     wire:loading.attr="disabled"
                     wire:target="$set('modal'), false">
+                    Cerrar
+                </x-button-red>
+
+            </div>
+
+        </x-slot>
+
+    </x-dialog-modal>
+
+    <x-dialog-modal wire:model="modalRequerimiento" maxWidth="sm">
+
+        <x-slot name="title">
+            Hacer Requerimiento
+        </x-slot>
+
+        <x-slot name="content">
+
+            <x-input-group for="observacion" label="Observación" :error="$errors->first('observacion')">
+
+                <textarea class="bg-white rounded text-xs w-full " rows="4" wire:model="observacion" placeholder="Se lo más especifico sobre la corrección que solicitas"></textarea>
+
+            </x-input-group>
+
+            <div class="mt-5">
+
+                <div class="mb-5">
+
+                    <x-filepond wire:model.live="documento" accept="['application/pdf']"/>
+
+                </div>
+
+                <div>
+
+                    @error('documento') <span class="error text-sm text-red-500">{{ $message }}</span> @enderror
+
+                </div>
+
+            </div>
+
+        </x-slot>
+
+        <x-slot name="footer">
+
+            <div class="flex gap-3">
+
+                <x-button-blue
+                    wire:click="hacerRequerimiento"
+                    wire:loading.attr="disabled"
+                    wire:target="hacerRequerimiento">
+                    Requerir
+                </x-button-blue>
+
+                <x-button-red
+                    wire:click="$set('modalRequerimiento', false)"
+                    wire:loading.attr="disabled"
+                    wire:target="$set('modalRequerimiento', false">
                     Cerrar
                 </x-button-red>
 

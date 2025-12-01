@@ -658,6 +658,87 @@ class SGCService {
 
     }
 
+    public function crearRequerimientoOficina(string $observacion, string | null $file, int $oficina_id, string $name, int $entidad_id):array
+    {
+
+        $response = Http::withToken(config('services.sgc.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.sgc.crear_requerimiento_oficina'),
+                                [
+                                    'observacion' => $observacion,
+                                    'file' => $file,
+                                    'oficina_id' => $oficina_id,
+                                    'usuario' => $name,
+                                    'archivo_url' => $file,
+                                    'entidad_id' => $entidad_id
+                                ]
+                            );
+
+        if($response->status() !== 200){
+
+            Log::error("Error al crear requerimiento a oficina. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al crear requerimiento a oficina.");
+
+        }else{
+
+            return json_decode($response, true)['data'];
+
+        }
+
+    }
+
+    public function responderRequerimiento(string $observacion, string | null $file, int $requerimiento_id, int $oficina_id, string $name, int $entidad_id):array
+    {
+
+        $response = Http::withToken(config('services.sgc.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.sgc.responder_requerimiento'),
+                                [
+                                    'observacion' => $observacion,
+                                    'file' => $file,
+                                    'requerimiento_id' => $requerimiento_id,
+                                    'oficina_id' => $oficina_id,
+                                    'usuario' => $name,
+                                    'archivo_url' => $file,
+                                    'entidad_id' => $entidad_id
+                                ]
+                            );
+
+        if($response->status() !== 200){
+
+            Log::error("Error al responder requerimiento. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al responder requerimiento.");
+
+        }else{
+
+            return json_decode($response, true)['data'];
+
+        }
+
+    }
+
     public function generarCertificadoPdf(int $certificacion_id):array
     {
 
@@ -760,6 +841,77 @@ class SGCService {
         }else{
 
             return json_decode($response, true);
+
+        }
+
+    }
+
+    public function consultarRequerimientosOficina(int $oficina_id, int $entidad_id):array
+    {
+
+        $response = Http::withToken(config('services.sgc.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.sgc.consultar_requerimientos_oficinas'),
+                                [
+                                    'oficina_id' => $oficina_id,
+                                    'entidad_id' => $entidad_id
+                                ]
+                            );
+
+        if($response->status() !== 200){
+
+            Log::error("Error al consultar requerimientos de oficina. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al consultar requerimientos de oficina.");
+
+        }else{
+
+            return json_decode($response, true)['data'];
+
+        }
+
+    }
+
+    public function consultarRequerimiento(int $requerimiento_id):array
+    {
+
+        $response = Http::withToken(config('services.sgc.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.sgc.consultar_requerimiento'),
+                                [
+                                    'id' => $requerimiento_id,
+                                ]
+                            );
+
+        if($response->status() !== 200){
+
+            Log::error("Error al consultar requerimiento. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al consultar requerimiento.");
+
+        }else{
+
+            return json_decode($response, true)['data'];
 
         }
 

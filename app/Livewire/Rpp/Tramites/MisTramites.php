@@ -54,7 +54,7 @@ class MisTramites extends Component
 
         if($this->tramiteSeleccionado['estado'] === 'nuevo'){
 
-            $this->token = $this->encrypt_decrypt("encrypt", $this->tramiteSeleccionado['linea_de_captura'] . $this->tramiteSeleccionado['monto'] . "IRYCEM" . $this->tramiteSeleccionado['fecha_vencimiento']);
+            $this->token = $this->encrypt_decrypt("encrypt", $this->tramiteSeleccionado['linea_de_captura'] . $this->tramiteSeleccionado['monto'] . config('services.sap.concepto') . $this->tramiteSeleccionado['fecha_vencimiento']);
 
         }
 

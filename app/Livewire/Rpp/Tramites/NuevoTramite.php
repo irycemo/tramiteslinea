@@ -222,7 +222,7 @@ class NuevoTramite extends Component
 
             $this->dispatch('mostrarMensaje', ['success', 'Trámite ' . $this->tramite['año'] . '-' . $this->tramite['folio'] . '-' . $this->tramite['usuario'] . ' se registró con éxito']);
 
-            $this->token = $this->encrypt_decrypt("encrypt", $this->tramite['linea_de_captura'] . $this->tramite['monto'] . "IRYCEM" . $this->tramite['fecha_vencimiento']);
+            $this->token = $this->encrypt_decrypt("encrypt", $this->tramite['linea_de_captura'] . $this->tramite['monto'] . config('services.sap.concepto') . $this->tramite['fecha_vencimiento']);
 
         } catch (GeneralException $ex) {
 

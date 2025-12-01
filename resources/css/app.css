@@ -22,6 +22,10 @@ input[type=number] {
     max-height: calc(100vh - 80px);
 }
 
+.h-menu2{
+    max-height: calc(100vh - 200px);
+}
+
 ::-webkit-scrollbar {
     width: 20px;
   }

@@ -4,9 +4,9 @@
 
         <h1 class="text-3xl tracking-widest py-3 px-6 text-gray-600 rounded-xl border-b-2 border-gray-500 font-thin mb-6  bg-white">Usuarios</h1>
 
-        <div class="lex gap-3 overflow-auto p-1">
+        <div class="flex gap-3 justify-between overflow-auto p-1">
 
-            <div class="space-y-2">
+            <div >
 
                 <input type="text" wire:model.live.debounce.500ms="search" placeholder="Buscar" class="bg-white rounded-full text-sm ">
 
