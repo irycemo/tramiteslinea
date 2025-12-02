@@ -82,6 +82,12 @@ class MisTramites extends Component
 
     public function mount(){
 
+        if(auth()->user()->hasRole('Administrador')){
+
+            abort(403, 'Esta área no esta disponible para usuarios con rol Administrador para ver los tramites dirigase al Sistema de Gestión Catastral.');
+
+        }
+
         $this->años = Constantes::AÑOS;
 
         $this->año = now()->format('Y');

@@ -20,7 +20,7 @@
 
                 </div>
 
-                <a href="{{ route('lista_avisos') . "?estado=nuevo" }}" class="mx-auto rounded-full border border-blue-600 py-1 px-4 text-blue-500 hover:bg-blue-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
+                <a href="{{ route('mis_avisos') . "?estado=nuevo" }}" class="mx-auto rounded-full border border-blue-600 py-1 px-4 text-blue-500 hover:bg-blue-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
 
             </div>
 
@@ -38,7 +38,7 @@
 
                 </div>
 
-                <a href="{{ route('lista_avisos') . "?estado=cerrado" }}" class="mx-auto rounded-full border border-green-600 py-1 px-4 text-green-500 hover:bg-green-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
+                <a href="{{ route('mis_avisos') . "?estado=cerrado" }}" class="mx-auto rounded-full border border-green-600 py-1 px-4 text-green-500 hover:bg-green-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
 
             </div>
 
@@ -56,7 +56,7 @@
 
                 </div>
 
-                <a href="{{ route('lista_avisos') . "?estado=autorizado" }}" class="mx-auto rounded-full border border-indigo-600 py-1 px-4 text-indigo-500 hover:bg-indigo-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
+                <a href="{{ route('mis_avisos') . "?estado=autorizado" }}" class="mx-auto rounded-full border border-indigo-600 py-1 px-4 text-indigo-500 hover:bg-indigo-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
 
             </div>
 
@@ -74,7 +74,7 @@
 
                 </div>
 
-                <a href="{{ route('lista_avisos') . "?estado=operado" }}" class="mx-auto rounded-full border border-gray-600 py-1 px-4 text-gray-500 hover:bg-gray-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
+                <a href="{{ route('mis_avisos') . "?estado=operado" }}" class="mx-auto rounded-full border border-gray-600 py-1 px-4 text-gray-500 hover:bg-gray-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
 
             </div>
 
@@ -92,7 +92,7 @@
 
                 </div>
 
-                <a href="{{ route('lista_avisos') . "?estado=rechazado" }}" class="mx-auto rounded-full border border-red-600 py-1 px-4 text-red-500 hover:bg-red-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
+                <a href="{{ route('mis_avisos') . "?estado=rechazado" }}" class="mx-auto rounded-full border border-red-600 py-1 px-4 text-red-500 hover:bg-red-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
 
             </div>
 
@@ -120,7 +120,7 @@
 
                 </div>
 
-                <a href="{{ route('lista_avisos') . "?estado=nuevo" }}" class="mx-auto rounded-full border border-blue-600 py-1 px-4 text-blue-500 hover:bg-blue-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
+                <a href="{{ route('mis_revisiones') . "?estado=nuevo" }}" class="mx-auto rounded-full border border-blue-600 py-1 px-4 text-blue-500 hover:bg-blue-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
 
             </div>
 
@@ -138,7 +138,7 @@
 
                 </div>
 
-                <a href="{{ route('lista_avisos') . "?estado=cerrado" }}" class="mx-auto rounded-full border border-green-600 py-1 px-4 text-green-500 hover:bg-green-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
+                <a href="{{ route('mis_revisiones') . "?estado=cerrado" }}" class="mx-auto rounded-full border border-green-600 py-1 px-4 text-green-500 hover:bg-green-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
 
             </div>
 
@@ -156,7 +156,7 @@
 
                 </div>
 
-                <a href="{{ route('lista_avisos') . "?estado=autorizado" }}" class="mx-auto rounded-full border border-indigo-600 py-1 px-4 text-indigo-500 hover:bg-indigo-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
+                <a href="{{ route('mis_revisiones') . "?estado=autorizado" }}" class="mx-auto rounded-full border border-indigo-600 py-1 px-4 text-indigo-500 hover:bg-indigo-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
 
             </div>
 
@@ -174,7 +174,7 @@
 
                 </div>
 
-                <a href="{{ route('lista_avisos') . "?estado=operado" }}" class="mx-auto rounded-full border border-gray-600 py-1 px-4 text-gray-500 hover:bg-gray-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
+                <a href="{{ route('mis_revisiones') . "?estado=operado" }}" class="mx-auto rounded-full border border-gray-600 py-1 px-4 text-gray-500 hover:bg-gray-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
 
             </div>
 
@@ -192,7 +192,7 @@
 
                 </div>
 
-                <a href="{{ route('lista_avisos') . "?estado=rechazado" }}" class="mx-auto rounded-full border border-red-600 py-1 px-4 text-red-500 hover:bg-red-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
+                <a href="{{ route('mis_revisiones') . "?estado=rechazado" }}" class="mx-auto rounded-full border border-red-600 py-1 px-4 text-red-500 hover:bg-red-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
 
             </div>
 

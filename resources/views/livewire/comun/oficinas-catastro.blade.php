@@ -120,12 +120,16 @@
                                         Ver
                                     </button>
 
-                                    <a
-                                        href="{{ route('requerimientos_oficina') . "?oficina=" . $oficina['id'] }}"
-                                        class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                                        role="menuitem">
-                                        Ver requerimientos
-                                    </a>
+                                    @if(!auth()->user()->hasRole('Administrador'))
+
+                                        <a
+                                            href="{{ route('requerimientos_oficina') . "?oficina=" . $oficina['id'] }}"
+                                            class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                                            role="menuitem">
+                                            Ver requerimientos
+                                        </a>
+
+                                    @endif
 
                                     {{-- <button
                                         wire:click="abrirModalRequerimiento({{ json_encode($oficina) }})"
