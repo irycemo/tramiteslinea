@@ -140,7 +140,7 @@ class Entidades extends Component
                                     ->get();
 
         $this->notarios_adscritos = User::whereHas('roles', function($q){
-                                        $q->where('name', 'Notario');
+                                        $q->where('name', 'Notario adscrito');
                                     })
                                     ->orderBy('name')
                                     ->get();
