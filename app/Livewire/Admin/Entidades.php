@@ -36,7 +36,7 @@ class Entidades extends Component
 
         if($value === ''){
 
-            $this->reset($property);
+           $property = null;
 
         }
 
