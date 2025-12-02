@@ -338,47 +338,39 @@
 
                     @if(in_array($role , [2,3,4]))
 
-                        <div class="flex flex-col md:flex-row justify-between md:space-x-3 mb-5">
+                    <x-input-group for="modelo_editar.entidad_id" label="Notaria" :error="$errors->first('modelo_editar.entidad_id')" class="w-full">
 
-                            <x-input-group for="modelo_editar.entidad_id" label="Notaria" :error="$errors->first('modelo_editar.entidad_id')" class="w-full">
+                            <x-input-select id="modelo_editar.entidad_id" wire:model="modelo_editar.entidad_id" class="w-full">
 
-                                <x-input-select id="modelo_editar.entidad_id" wire:model="modelo_editar.entidad_id" class="w-full">
+                                <option value="">Seleccione una opción</option>
 
-                                    <option value="">Seleccione una opción</option>
+                                @foreach ($notarias as $notaria)
 
-                                    @foreach ($notarias as $notaria)
+                                    <option value="{{ $notaria->id }}">Notaria {{ $notaria->numero_notaria }}</option>
 
-                                        <option value="{{ $notaria->id }}">Notaria {{ $notaria->numero_notaria }}</option>
+                                @endforeach
 
-                                    @endforeach
+                            </x-input-select>
 
-                                </x-input-select>
-
-                            </x-input-group>
-
-                        </div>
+                        </x-input-group>
 
                     @elseif($role === "5")
 
-                        <div class="flex flex-col md:flex-row justify-between md:space-x-3 mb-5">
+                        <x-input-group for="modelo_editar.entidad_id" label="Dependencia" :error="$errors->first('modelo_editar.entidad_id')" class="w-full">
 
-                            <x-input-group for="modelo_editar.entidad_id" label="Dependencia" :error="$errors->first('modelo_editar.entidad_id')" class="w-full">
+                            <x-input-select id="modelo_editar.entidad_id" wire:model="modelo_editar.entidad_id" class="w-full">
 
-                                <x-input-select id="modelo_editar.entidad_id" wire:model="modelo_editar.entidad_id" class="w-full">
+                                <option value="">Seleccione una opción</option>
 
-                                    <option value="">Seleccione una opción</option>
+                                @foreach ($dependencias as $dependencia)
 
-                                    @foreach ($dependencias as $dependencia)
+                                    <option value="{{ $dependencia->id }}">{{ $dependencia->dependencia }}</option>
 
-                                        <option value="{{ $dependencia->id }}">{{ $dependencia->dependencia }}</option>
+                                @endforeach
 
-                                    @endforeach
+                            </x-input-select>
 
-                                </x-input-select>
-
-                            </x-input-group>
-
-                        </div>
+                        </x-input-group>
 
                     @endif
 
