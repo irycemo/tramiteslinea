@@ -277,7 +277,7 @@
 
                         <option value="" selected>Seleccione una opción</option>
 
-                        @foreach ($notarios as $item)
+                        @foreach ($notarios_adscritos as $item)
 
                             <option value="{{ $item->id }}">{{ $item->name }}</option>
 

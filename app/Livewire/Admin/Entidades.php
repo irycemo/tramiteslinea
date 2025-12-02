@@ -19,6 +19,7 @@ class Entidades extends Component
     public Entidad $modelo_editar;
 
     public $notarios;
+    public $notarios_adscritos;
 
     protected function rules(){
         return [
@@ -133,6 +134,12 @@ class Entidades extends Component
         $this->crearModeloVacio();
 
         $this->notarios = User::whereHas('roles', function($q){
+                                        $q->where('name', 'Notario');
+                                    })
+                                    ->orderBy('name')
+                                    ->get();
+
+        $this->notarios_adscritos = User::whereHas('roles', function($q){
                                         $q->where('name', 'Notario');
                                     })
                                     ->orderBy('name')
