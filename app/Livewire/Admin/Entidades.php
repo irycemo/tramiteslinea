@@ -6,7 +6,6 @@ use App\Models\User;
 use App\Models\Entidad;
 use Livewire\Component;
 use Livewire\WithPagination;
-use Illuminate\Validation\Rule;
 use App\Traits\ComponentesTrait;
 use Livewire\Attributes\Computed;
 use Illuminate\Support\Facades\Log;
@@ -25,8 +24,8 @@ class Entidades extends Component
         return [
             'modelo_editar.dependencia' => 'nullable|regex:/^[a-zA-Z0-9\s]+$/',
             'modelo_editar.numero_notaria' => 'nullable|numeric',
-            'modelo_editar.email' => 'required|email|unique:entidads,email,' . $this->modelo_editar->id,
-            'modelo_editar.notario' => Rule::requiredIf($this->modelo_editar->numero_notaria != null),
+            'modelo_editar.email' => 'nullable',
+            'modelo_editar.notario' => 'nullable',
             'modelo_editar.adscrito' => 'nullable|numeric',
             'modelo_editar.estado' => 'required',
          ];
