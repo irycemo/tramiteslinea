@@ -150,6 +150,16 @@ class NuevoTramite extends Component
 
     public function consultarAntecedentes(){
 
+        $this->resetErrorBag();
+        $this->resetValidation();
+
+        $this->validate([
+            'tomo' => [Rule::requiredIf(!$this->folio_real), 'nullable', 'numeric'],
+            'registro' => [Rule::requiredIf(!$this->folio_real), 'nullable', 'numeric'],
+            'distrito' => [Rule::requiredIf(!$this->folio_real), 'nullable', 'numeric'],
+            'folio_real' => [Rule::requiredIf(!$this->tomo && !$this->registro && !$this->distrito), 'nullable', 'numeric'],
+        ]);
+
         try {
 
             $this->reset('antecedentes');
