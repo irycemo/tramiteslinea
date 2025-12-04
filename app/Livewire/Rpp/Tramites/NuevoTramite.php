@@ -278,6 +278,12 @@ class NuevoTramite extends Component
 
     }
 
+    public function descargarFicha(){
+
+        return response()->download(storage_path('app/public/img/RPC.xlsx'));
+
+    }
+
     public function mount(){
 
         try {
