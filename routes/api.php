@@ -11,6 +11,8 @@ use App\Http\Controllers\Api\V1\RevertirAvisoController;
 
 Route::middleware('auth:sanctum')->group(function () {
 
+    Route::post('consultar_avisos', [ConsultarAvisoController::class, 'consultarAvisos']);
+
     Route::post('consultar_aviso', [ConsultarAvisoController::class, 'consultarAviso']);
 
     Route::post('consultar_aviso_con_folio', [ConsultarAvisoController::class, 'consultarAvisoConFolio']);

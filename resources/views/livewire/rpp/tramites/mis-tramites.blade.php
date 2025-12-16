@@ -436,7 +436,7 @@
 
                     <form action="{{ $link_pago_linea }}" method="post" class="w-full">
 
-                        <input type="hidden" name="concepto" value="Instituto Registral y Catastral">
+                        <input type="hidden" name="concepto" value="{{ config('services.sap.secret_iv') }}">
                         <input type="hidden" name="lcaptura" value="{{ $tramiteSeleccionado['linea_de_captura'] }}">
                         <input type="hidden" name="monto" value="{{ $tramiteSeleccionado['monto'] }}">
                         <input type="hidden" name="urlRetorno" value="{{ route('acredita_pago') }}">

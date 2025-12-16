@@ -41,7 +41,7 @@ trait SapTrait
 
         $output = false;
 
-        $string = $linea_captura . $monto . "IRYCEM" . $fecha_vencimiento;
+        $string = $linea_captura . $monto . config('services.sap.concepto') . $fecha_vencimiento;
 
         $encrypt_method = "AES-256-CBC";
 
