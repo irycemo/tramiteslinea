@@ -84,9 +84,9 @@
 
                             <option value="">Seleccione una opción</option>
 
-                            @foreach ($municipios as $item)
+                            @foreach ($municipios as $key => $item)
 
-                                <option value="{{ $item }}">{{ $item }}</option>
+                                <option value="{{ $item }}">{{ $key }}</option>
 
                             @endforeach
 

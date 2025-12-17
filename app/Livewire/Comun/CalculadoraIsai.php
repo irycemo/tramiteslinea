@@ -293,6 +293,8 @@ class CalculadoraIsai extends Component
 
         $this->municipios = Constantes::MUNICIPIOS;
 
+        ksort($this->municipios);
+
     }
 
     public function render()
