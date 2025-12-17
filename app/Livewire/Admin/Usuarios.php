@@ -222,13 +222,16 @@ class Usuarios extends Component
 
                 if($this->role == 2){
 
-                    $this->modelo_editar->entidad->update(['notario' => $this->modelo_editar->id]);
+                    $this->modelo_editar->entidad->update(['notario' => $this->modelo_editar->id, 'adscrito' => null]);
 
                 }
 
                 if($this->esNotarioAdsqcrito && $this->entidadId !== $this->modelo_editar->entidad_id){
 
-                    Entidad::find($this->entidadId)->update(['notario' => null]);
+                    Entidad::find($this->entidadId)->update([
+                        'notario' => null,
+                        'adscrito' => $this->modelo_editar->id
+                    ]);
 
                 }
 
