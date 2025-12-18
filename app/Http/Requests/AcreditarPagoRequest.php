@@ -26,17 +26,12 @@ class AcreditarPagoRequest extends FormRequest
 
             return [
                 'c_referencia' => 'required',
-                'n_autoriz' => 'required',
             ];
 
         }else{
 
             return [
                 'referencia' => 'required',
-                'folio_acreditacion' => 'required',
-                'estatus' => 'required',
-                'forma_pago' => 'required',
-                'tkn' => 'nullable',
             ];
 
         }
