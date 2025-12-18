@@ -21,13 +21,25 @@ class AcreditarPagoRequest extends FormRequest
      */
     public function rules(): array
     {
-        return [
-            'referencia' => 'required',
-            'folio_acreditacion' => 'required',
-            'estatus' => 'required',
-            'forma_pago' => 'required',
-            'tkn' => 'nullable',
-        ];
+
+        if(app()->isProduction()){
+
+            return [
+                'c_referencia' => 'required',
+                'n_autoriz' => 'required',
+            ];
+
+        }else{
+
+            return [
+                'referencia' => 'required',
+                'folio_acreditacion' => 'required',
+                'estatus' => 'required',
+                'forma_pago' => 'required',
+                'tkn' => 'nullable',
+            ];
+
+        }
     }
 
     public function getClientIpAddresses():array

@@ -20,6 +20,8 @@ class AcreditarPagoController extends Controller
 
         $validated = $request->validated();
 
+        $linea_de_captura = app()->isProduction() ? $validated['c_referencia'] : $validated['referencia'];
+
         try {
 
             $response = Http::withToken(config('services.sgc.token'))
@@ -28,7 +30,7 @@ class AcreditarPagoController extends Controller
                             ->post(
                                 config('services.sgc.acreditar_pago'),
                                 [
-                                    'linea_captura' => $validated['referencia'],
+                                    'linea_captura' => $linea_de_captura
                                 ]
                             );
 
@@ -40,13 +42,13 @@ class AcreditarPagoController extends Controller
                             ->post(
                                 config('services.sistema_tramites.acreditar_pago'),
                                 [
-                                    'linea_captura' => $validated['referencia'],
+                                    'linea_captura' => $linea_de_captura
                                 ]
                             );
 
                 if($response->status() !== 200){
 
-                    Log::warning("Error al acreditar pago, línea de captura: " . $validated['referencia']);
+                    Log::warning("Error al acreditar pago, línea de captura: " . $linea_de_captura);
 
                     return redirect()->route('dashboard', ['error' => 'No fue posible acreditar el trámite.']);
 
