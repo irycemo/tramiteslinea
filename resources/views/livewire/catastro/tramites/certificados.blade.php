@@ -76,6 +76,12 @@
 
                             <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Tipo</span>
 
+                            @if(count($certificado['requerimientos']))
+
+                                <span class="bg-red-400 rounded-full text-white px-1">R</span>
+
+                            @endif
+
                             {{ $certificado['tipo'] }}
 
                         </x-table.cell>

@@ -114,21 +114,21 @@ class PropietarioCrear extends Component
             /* if(($this->porcentaje_propiedad + $pp_adquirientes - 0.01) > $pp_transmitentes)
                 throw new ActoresException("La suma de los porcentajes de propiedad no puede exceder el " . $pp_transmitentes . '%.'); */
 
-            if(($this->porcentaje_nuda + $pn_adquirientes - 0.01) > $pn_transmitentes)
+            if(($this->porcentaje_nuda + $pn_adquirientes - 0.001) > $pn_transmitentes)
                 throw new GeneralException("La suma de los porcentajes de nuda no puede exceder el " . $pn_transmitentes . '%.');
 
-            if(($this->porcentaje_usufructo + $pu_adquirientes - 0.01) > $pu_transmitentes)
+            if(($this->porcentaje_usufructo + $pu_adquirientes - 0.001) > $pu_transmitentes)
                 throw new GeneralException("La suma de los porcentajes de usufructo no puede exceder el " . $pu_transmitentes . '%.');
 
         }else{
 
-            if(($this->porcentaje_propiedad + $pp_adquirientes - 0.01) > $pp_transmitentes)
+            if(($this->porcentaje_propiedad + $pp_adquirientes - 0.001) > $pp_transmitentes)
                 throw new GeneralException("La suma de los porcentajes de propiedad no puede exceder el " . $pp_transmitentes . '%.');
 
-            if(($this->porcentaje_nuda + $pn_adquirientes + $pp_adquirientes - 0.01) > $pp_transmitentes)
+            if(($this->porcentaje_nuda + $pn_adquirientes + $pp_adquirientes - 0.001) > $pp_transmitentes)
                 throw new GeneralException("La suma de los porcentajes de propiedad no puede exceder el " . $pp_transmitentes . '%.');
 
-            if(($this->porcentaje_usufructo + $pu_adquirientes + $pp_adquirientes - 0.01) > $pp_transmitentes)
+            if(($this->porcentaje_usufructo + $pu_adquirientes + $pp_adquirientes - 0.001) > $pp_transmitentes)
                 throw new GeneralException("La suma de los porcentajes de usufructo no puede exceder el " . $pu_transmitentes . '%.');
 
         }

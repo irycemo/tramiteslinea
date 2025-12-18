@@ -70,6 +70,10 @@ class Isai extends Component
         ];
     }
 
+    protected $messages = [
+        'aviso.fecha_reduccion.before' => 'La fecha debe ser anterior al día de hoy.'
+    ];
+
     public function updatedAvisoPorcentajeAdquisicion($field, $value){
 
         if($this->aviso->porcentaje_adquisicion === ''){
