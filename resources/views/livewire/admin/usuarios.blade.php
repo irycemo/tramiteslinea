@@ -1,37 +1,33 @@
 <div class="">
 
-    <div class="mb-6">
+    <div class="mb-2 lg:mb-5">
 
-        <h1 class="text-3xl tracking-widest py-3 px-6 text-gray-600 rounded-xl border-b-2 border-gray-500 font-thin mb-6  bg-white">Usuarios</h1>
+        <x-header>Usuarios</x-header>
 
-        <div class="flex gap-3 justify-between overflow-auto p-1">
+        <div class="flex justify-between gap-3 overflow-auto p-1">
 
-            <div >
+            <input type="text" wire:model.live.debounce.500ms="search" placeholder="Buscar" class="bg-white rounded-full text-sm ">
 
-                <input type="text" wire:model.live.debounce.500ms="search" placeholder="Buscar" class="bg-white rounded-full text-sm ">
+            <select class="bg-white rounded-full text-sm" wire:model.live="filters.rol">
 
-                <select class="bg-white rounded-full text-sm" wire:model.live="filters.rol">
+                <option value="">Seleccione un rol</option>
 
-                    <option value="">Seleccione un rol</option>
+                @foreach ($roles as $rolitem)
 
-                    @foreach ($roles as $rolitem)
+                    <option value="{{ $rolitem->name }}">{{ $rolitem->name }}</option>
 
-                        <option value="{{ $rolitem->name }}">{{ $rolitem->name }}</option>
+                @endforeach
 
-                    @endforeach
+            </select>
 
-                </select>
+            <select class="bg-white rounded-full text-sm" wire:model.live="pagination">
 
-                <select class="bg-white rounded-full text-sm" wire:model.live="pagination">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
 
-                    <option value="10">10</option>
-                    <option value="25">25</option>
-                    <option value="50">50</option>
-                    <option value="100">100</option>
-
-                </select>
-
-            </div>
+            </select>
 
             @can('Crear usuario')
 

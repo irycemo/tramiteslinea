@@ -40,6 +40,7 @@ class Usuarios extends Component
     public $filters = [
         'rol' => '',
     ];
+
     protected function rules(){
         return [
             'modelo_editar.name' => 'required',
