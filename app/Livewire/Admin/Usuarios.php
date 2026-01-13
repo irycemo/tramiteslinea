@@ -219,6 +219,20 @@ class Usuarios extends Component
                 $this->modelo_editar->actualizado_por = auth()->user()->id;
                 $this->modelo_editar->save();
 
+                if($this->modelo_editar->wasChanged('email')){
+
+                    $this->modelo_editar->update(['password' => bcrypt('sistema')]);
+
+                    Mail::to($this->modelo_editar->email)->send(new RegistroUsuarioMail($this->modelo_editar));
+
+                    if(app()->isProduction()){
+
+                        event(new Registered($this->modelo_editar));
+
+                    }
+
+                }
+
                 $this->modelo_editar->auditSync('roles', $this->role);
 
                 if($this->role == 2){
