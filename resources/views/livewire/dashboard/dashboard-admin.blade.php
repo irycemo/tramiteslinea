@@ -1,6 +1,6 @@
 <div>
 
-    <h2 class="text-2xl tracking-widest py-3 px-6 text-gray-600 rounded-xl border-b-2 border-gray-500  mb-6  bg-white">Estadísticas de avisos</h2>
+    <x-header>Estadísticas de avisos</x-header>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-4">
 

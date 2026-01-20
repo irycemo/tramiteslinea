@@ -7,11 +7,13 @@ use Livewire\Component;
 use App\Models\Permission;
 use Livewire\WithPagination;
 use App\Traits\ComponentesTrait;
+use Livewire\Attributes\Computed;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
 class Roles extends Component
 {
+
     use WithPagination;
     use ComponentesTrait;
 
@@ -117,7 +119,7 @@ class Roles extends Component
 
             $this->resetearTodo($borrado = true);
 
-            $this->dispatch('mostrarMensaje', ['success', "El rol se eliminó con éxito."]);
+            $this->dispatch('mostrarMensaje', ['success', "El rol se eliminó con exito."]);
 
         } catch (\Throwable $th) {
 
@@ -126,6 +128,17 @@ class Roles extends Component
             $this->resetearTodo();
 
         }
+
+    }
+
+    #[Computed]
+    public function roles(){
+
+        return Role::select('id','name', 'creado_por', 'actualizado_por', 'created_at', 'updated_at')
+                        ->with('creadoPor:id,name', 'actualizadoPor:id,name')
+                        ->where('name', 'LIKE', '%' . $this->search . '%')
+                        ->orderBy($this->sort, $this->direction)
+                        ->paginate($this->pagination);
 
     }
 
@@ -145,13 +158,7 @@ class Roles extends Component
 
     public function render()
     {
-
-        $roles = Role::with('creadoPor', 'actualizadoPor', 'permissions')
-                            ->where('name', 'LIKE', '%' . $this->search . '%')
-                            ->orderBy($this->sort, $this->direction)
-                            ->paginate($this->pagination);
-
-        return view('livewire.admin.roles', compact('roles'))->extends('layouts.admin');
+        return view('livewire.admin.roles')->extends('layouts.admin');
     }
 
 }

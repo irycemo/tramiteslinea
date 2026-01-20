@@ -7,6 +7,7 @@ use App\Models\Permission;
 use Livewire\WithPagination;
 use App\Constantes\Constantes;
 use App\Traits\ComponentesTrait;
+use Livewire\Attributes\Computed;
 use Illuminate\Support\Facades\Log;
 
 class Permisos extends Component
@@ -113,6 +114,18 @@ class Permisos extends Component
 
     }
 
+    #[Computed]
+    public function permisos(){
+
+        return Permission::select('id', 'name', 'area', 'creado_por', 'actualizado_por', 'created_at', 'updated_at')
+                        ->with('creadoPor:id,name', 'actualizadoPor:id,name')
+                        ->where('name', 'LIKE', '%' . $this->search . '%')
+                        ->orWhere('area', 'LIKE', '%' . $this->search . '%')
+                        ->orderBy($this->sort, $this->direction)
+                        ->paginate($this->pagination);
+
+    }
+
     public function mount(){
 
         $this->crearModeloVacio();
@@ -125,15 +138,7 @@ class Permisos extends Component
 
     public function render()
     {
-
-        $permisos = Permission::with('creadoPor', 'actualizadoPor')
-                                ->where('name', 'LIKE', '%' . $this->search . '%')
-                                ->orWhere('area', 'LIKE', '%' . $this->search . '%')
-                                ->orderBy($this->sort, $this->direction)
-                                ->paginate($this->pagination);
-
-        return view('livewire.admin.permisos', compact('permisos'))->extends('layouts.admin');
-
+        return view('livewire.admin.permisos')->extends('layouts.admin');
     }
 
 }

@@ -1,10 +1,10 @@
 <div class="">
 
-    <div class="mb-6">
+    <div class="mb-2 lg:mb-5">
 
-        <h1 class="text-3xl tracking-widest py-3 px-6 text-gray-600 rounded-xl border-b-2 border-gray-500 font-thin mb-6  bg-white">Aviso aclaratorio</h1>
+        <x-header>Aviso aclaratorio</x-header>
 
-        <div class="flex justify-between items-center gap-1">
+        <div class="flex justify-between gap-3 overflow-auto p-1">
 
             <div class="flex gap-3 overflow-auto p-1">
 
@@ -102,7 +102,7 @@
 
                             <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Cuenta predial</span>
 
-                            {{ $aviso->predio->cuentaPredial() }}
+                            <p class="mt-3">{{ $aviso->predio->cuentaPredial() }}</p>
 
                         </x-table.cell>
 
@@ -126,18 +126,27 @@
 
                             <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Registrado</span>
 
+                            <p class="mt-3">
 
-                            <span class="font-semibold">@if($aviso->creadoPor != null)Registrado por: {{$aviso->creadoPor->name}} @else Registro: @endif</span> <br>
+                                <span class="font-semibold">@if($aviso->creadoPor != null)Registrado por: {{$aviso->creadoPor->name}} @else Registro: @endif</span> <br>
 
-                            {{ $aviso->created_at }}
+                                {{ $aviso->created_at }}
+
+                            </p>
 
                         </x-table.cell>
 
                         <x-table.cell>
 
-                            <span class="font-semibold">@if($aviso->actualizadoPor != null)Actualizado por: {{$aviso->actualizadoPor->name}} @else Actualizado: @endif</span> <br>
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Registrado</span>
 
-                            {{ $aviso->updated_at }}
+                            <p class="mt-3">
+
+                                <span class="font-semibold">@if($aviso->actualizadoPor != null)Actualizado por: {{$aviso->actualizadoPor->name}} @else Actualizado: @endif</span> <br>
+
+                                {{ $aviso->updated_at }}
+
+                            </p>
 
                         </x-table.cell>
 

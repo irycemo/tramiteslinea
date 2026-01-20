@@ -1,10 +1,10 @@
 <div x-ref="tramites">
 
-    <div class="mb-6">
+    <div class="mb-2 lg:mb-5">
 
         <x-header>Trámites</x-header>
 
-        <div class="flex gap-3 overflow-auto p-1">
+        <div class="flex justify-between gap-3 overflow-auto p-1">
 
             <select class="bg-white rounded-full text-sm" wire:model.live="año">
 

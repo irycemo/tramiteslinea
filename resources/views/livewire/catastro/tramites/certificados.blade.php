@@ -1,10 +1,10 @@
 <div x-ref="tramites">
 
-    <div class="mb-6">
+    <div class="mb-2 lg:mb-5">
 
         <x-header>Certificados</x-header>
 
-        <div class="flex gap-3 overflow-auto p-1">
+        <div class="flex justify-between gap-3 overflow-auto p-1">
 
             <select class="bg-white rounded-full text-sm" wire:model.live="año">
 
@@ -124,7 +124,7 @@
 
                             <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Cuenta predial</span>
 
-                            {{ $certificado['localidad'] }}- {{ $certificado['oficina'] }}- {{ $certificado['tipo_predio'] }}- {{ $certificado['numero_registro'] }}
+                            <p class="mt-2">{{ $certificado['localidad'] }}- {{ $certificado['oficina'] }}- {{ $certificado['tipo_predio'] }}- {{ $certificado['numero_registro'] }}</p>
 
                         </x-table.cell>
 
@@ -132,7 +132,7 @@
 
                             <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Servicio</span>
 
-                            {{ $certificado['tramite_año'] }}-{{ $certificado['tramite_folio'] }}-11
+                            <p class="mt-2">{{ $certificado['tramite_año'] }}-{{ $certificado['tramite_folio'] }}-11</p>
 
                         </x-table.cell>
 

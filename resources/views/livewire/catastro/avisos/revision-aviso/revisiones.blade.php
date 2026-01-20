@@ -1,10 +1,10 @@
 <div class="">
 
-    <div class="mb-6">
+    <div class="mb-2 lg:mb-5">
 
         <x-header>Revisión de aviso</x-header>
 
-        <div class="flex justify-between items-center gap-1">
+        <div class="flex justify-between gap-3 overflow-auto p-1">
 
             <div class="flex gap-3 overflow-auto p-1">
 

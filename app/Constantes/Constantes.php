@@ -13,7 +13,8 @@ class Constantes{
         'Catastro',
         'RPP',
         'Administración',
-        'Consultas'
+        'Consultas',
+        'Preguntas'
     ];
 
     const TIPO_VIALIDADES = [
