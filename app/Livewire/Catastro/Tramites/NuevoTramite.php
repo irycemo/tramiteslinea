@@ -60,25 +60,20 @@ class NuevoTramite extends Component
 
         $this->resetearTodo();
 
-    }
+        if(in_array($this->servicioSeleccionado['clave_ingreso'], ['DÑ34', 'D729'])){
 
-    /* public function updatedTipoServicio(){
+            $this->tipo = 1;
 
-        if($this->tipo_servicio != 'ordinario' && $this->servicioSeleccionado['urgente'] === '0.00'){
+        }elseif(in_array($this->servicioSeleccionado['clave_ingreso'], ['DÑ33', 'D728'])){
 
-            $this->reset('tipo_servicio');
+            $this->tipo = 2;
 
-            $this->dispatch('mostrarMensaje', ['warning', 'El trámite solo tiene servicio ordinario']);
+        }else{
 
-            return;
-
+            $this->tipo = null;
         }
 
-        $costo = (float)$this->servicioSeleccionado[$this->tipo_servicio];
-
-        $this->total = count($this->predios) * $costo;
-
-    } */
+    }
 
     public function resetearTodo(){
 
@@ -210,7 +205,7 @@ class NuevoTramite extends Component
 
         try {
 
-            $servicios = (new SGCService())->consultarServicios(['DM32', 'DM34', 'DM35', 'D728', 'D729', 'D730', 'DM31']);
+            $servicios = (new SGCService())->consultarServicios(['DM32', 'D728', 'D729', 'DM31', 'DÑ34', 'DÑ33']);
 
             $this->servicios = collect($servicios['data'])->sortBy('nombre');
 

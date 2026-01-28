@@ -6,28 +6,32 @@
 
         <div class="flex justify-between gap-3 overflow-auto p-1">
 
-            <input type="text" wire:model.live.debounce.500ms="search" placeholder="Buscar" class="bg-white rounded-full text-sm ">
+            <div class="flex gap-3">
 
-            <select class="bg-white rounded-full text-sm" wire:model.live="filters.rol">
+                <input type="text" wire:model.live.debounce.500ms="search" placeholder="Buscar" class="bg-white rounded-full text-sm ">
 
-                <option value="">Seleccione un rol</option>
+                <select class="bg-white rounded-full text-sm" wire:model.live="filters.rol">
 
-                @foreach ($roles as $rolitem)
+                    <option value="">Seleccione un rol</option>
 
-                    <option value="{{ $rolitem->name }}">{{ $rolitem->name }}</option>
+                    @foreach ($roles as $rolitem)
 
-                @endforeach
+                        <option value="{{ $rolitem->name }}">{{ $rolitem->name }}</option>
 
-            </select>
+                    @endforeach
 
-            <select class="bg-white rounded-full text-sm" wire:model.live="pagination">
+                </select>
 
-                <option value="10">10</option>
-                <option value="25">25</option>
-                <option value="50">50</option>
-                <option value="100">100</option>
+                <select class="bg-white rounded-full text-sm" wire:model.live="pagination">
 
-            </select>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+
+                </select>
+
+            </div>
 
             @can('Crear usuario')
 
@@ -61,6 +65,7 @@
                 <x-table.heading sortable wire:click="sortBy('email')" :direction="$sort === 'email' ? $direction : null" >Correo</x-table.heading>
                 <x-table.heading >Rol</x-table.heading>
                 <x-table.heading sortable wire:click="sortBy('estado')" :direction="$sort === 'estado' ? $direction : null" >Estado</x-table.heading>
+                <x-table.heading sortable wire:click="sortBy('entidad_id')" :direction="$sort === 'entidad_id' ? $direction : null" >Entidad</x-table.heading>
                 <x-table.heading sortable wire:click="sortBy('created_at')" :direction="$sort === 'created_at' ? $direction : null">Registro</x-table.heading>
                 <x-table.heading sortable wire:click="sortBy('updated_at')" :direction="$sort === 'updated_at' ? $direction : null">Actualizado</x-table.heading>
                 <x-table.heading >Acciones</x-table.heading>
@@ -136,6 +141,14 @@
                                 <span class="bg-red-400 py-1 px-2 rounded-full text-white text-xs">{{ ucfirst($usuario->estado) }}</span>
 
                             @endif
+
+                        </x-table.cell>
+
+                        <x-table.cell>
+
+                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Entidad</span>
+
+                            <p class="mt-2">{{ $usuario->entidad?->dependencia ?? 'Notaria: ' . $usuario->entidad?->numero_notaria  }}</p>
 
                         </x-table.cell>
 

@@ -344,7 +344,8 @@ class Usuarios extends Component
     #[Computed]
     public function usuarios(){
 
-        return User::with('creadoPor:id,name', 'actualizadoPor:id,name')
+        return User::select('id', 'name', 'email', 'estado', 'entidad_id', 'clave', 'creado_por', 'actualizado_por', 'created_at', 'updated_at', 'profile_photo_path')
+                        ->with('creadoPor:id,name', 'actualizadoPor:id,name', 'entidad:id,dependencia,numero_notaria')
                         ->where(function($q){
                             $q->where('name', 'LIKE', '%' . $this->search . '%')
                                 ->orWhere('clave', 'LIKE', '%' . $this->search . '%')

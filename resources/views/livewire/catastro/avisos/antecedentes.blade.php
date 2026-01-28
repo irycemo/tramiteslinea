@@ -29,7 +29,6 @@
 
                 <x-slot name="head">
                     <x-table.heading >Folio real</x-table.heading>
-                    <x-table.heading >Movimiento registral</x-table.heading>
                     <x-table.heading >Tomo</x-table.heading>
                     <x-table.heading >Registro</x-table.heading>
                     <x-table.heading >Sección</x-table.heading>
@@ -51,13 +50,6 @@
                                     <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Folio real</span>
 
                                     {{ $antecedente->folio_real ?? 'N/A' }}
-
-                                </x-table.cell>
-                                <x-table.cell>
-
-                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Movimiento registral</span>
-
-                                    {{ $antecedente->movimiento_registral ?? 'N/A' }}
 
                                 </x-table.cell>
                                 <x-table.cell>
@@ -130,7 +122,7 @@
 
     @endif
 
-    <x-dialog-modal wire:model="modal" maxWidth="md">
+    <x-dialog-modal wire:model="modal" maxWidth="sm">
 
         <x-slot name="title">
 
@@ -149,12 +141,6 @@
                 <x-input-group for="folio_real" label="Folio real" :error="$errors->first('folio_real')" class="w-full" >
 
                     <x-input-text type="number" id="folio_real" wire:model.lazy="folio_real" :readonly="$tomo != null || $registro != null" />
-
-                </x-input-group>
-
-                <x-input-group for="movimiento_registral" label="Movimiento registral" :error="$errors->first('movimiento_registral')" class="w-full">
-
-                    <x-input-text type="number" id="movimiento_registral" wire:model.lazy="movimiento_registral" :readonly="$tomo != null || $registro != null"/>
 
                 </x-input-group>
 

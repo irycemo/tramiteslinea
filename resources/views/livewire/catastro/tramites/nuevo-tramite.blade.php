@@ -54,11 +54,31 @@
 
                         </div>
 
-                        <div >
+                        @if($servicioSeleccionado && in_array($servicioSeleccionado['clave_ingreso'], ['DÑ34', 'D729']))
 
-                            <input placeholder="Tipo" type="number"  class="bg-white rounded text-sm lg:w-24 @error('tipo') border-red-500 @enderror" wire:model="tipo">
+                            <div >
 
-                        </div>
+                                <input type="number" readonly class="bg-white rounded text-sm lg:w-24 @error('tipo') border-red-500 @enderror" wire:model="tipo">
+
+                            </div>
+
+                        @elseif($servicioSeleccionado && in_array($servicioSeleccionado['clave_ingreso'], ['DÑ33', 'D728']))
+
+                            <div >
+
+                                <input type="number" readonly class="bg-white rounded text-sm lg:w-24 @error('tipo') border-red-500 @enderror" wire:model="tipo">
+
+                            </div>
+
+                        @else
+
+                            <div >
+
+                                <input placeholder="Tipo" type="number"  class="bg-white rounded text-sm lg:w-24 @error('tipo') border-red-500 @enderror" wire:model="tipo">
+
+                            </div>
+
+                        @endif
 
                         <div>
 

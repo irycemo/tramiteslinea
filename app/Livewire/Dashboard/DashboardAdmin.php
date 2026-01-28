@@ -16,11 +16,11 @@ class DashboardAdmin extends Component
 
     public function mount(){
 
-        $this->avisos_nuevos = Aviso::select('id','esatado', 'entidad_id', 'created_at')->where('estado', 'nuevo')->where('created_at', '>', now()->startOfMonth())->count();
-        $this->avisos_cerrados = Aviso::select('id','esatado', 'entidad_id', 'created_at')->where('estado', 'cerrado')->where('created_at', '>', now()->startOfMonth())->count();
-        $this->avisos_operados = Aviso::select('id','esatado', 'entidad_id', 'created_at')->where('estado', 'operado')->where('created_at', '>', now()->startOfMonth())->count();
-        $this->avisos_autorizados = Aviso::select('id','esatado', 'entidad_id', 'created_at')->where('estado', 'autorizado')->where('created_at', '>', now()->startOfMonth())->count();
-        $this->avisos_rechazados = Aviso::select('id','esatado', 'entidad_id', 'created_at')->where('estado', 'rechazado')->where('created_at', '>', now()->startOfMonth())->count();
+        $this->avisos_nuevos = Aviso::select('id','estado', 'entidad_id', 'created_at')->where('estado', 'nuevo')->where('created_at', '>', now()->startOfMonth())->count();
+        $this->avisos_cerrados = Aviso::select('id','estado', 'entidad_id', 'created_at')->where('estado', 'cerrado')->where('created_at', '>', now()->startOfMonth())->count();
+        $this->avisos_operados = Aviso::select('id','estado', 'entidad_id', 'created_at')->where('estado', 'operado')->where('created_at', '>', now()->startOfMonth())->count();
+        $this->avisos_autorizados = Aviso::select('id','estado', 'entidad_id', 'created_at')->where('estado', 'autorizado')->where('created_at', '>', now()->startOfMonth())->count();
+        $this->avisos_rechazados = Aviso::select('id','estado', 'entidad_id', 'created_at')->where('estado', 'rechazado')->where('created_at', '>', now()->startOfMonth())->count();
 
     }
 

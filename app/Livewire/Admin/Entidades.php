@@ -23,7 +23,7 @@ class Entidades extends Component
 
     protected function rules(){
         return [
-            'modelo_editar.dependencia' => 'nullable|regex:/^[a-zA-Z0-9\s]+$/',
+            'modelo_editar.dependencia' => 'nullable',
             'modelo_editar.numero_notaria' => 'nullable|numeric',
             'modelo_editar.email' => 'nullable',
             'modelo_editar.notario' => 'nullable',

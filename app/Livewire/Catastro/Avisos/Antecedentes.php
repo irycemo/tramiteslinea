@@ -35,8 +35,7 @@ class Antecedentes extends Component
 
     protected function rules(){
         return [
-            'folio_real' => Rule::requiredIf($this->movimiento_registral != null),
-            'movimiento_registral' => Rule::requiredIf($this->folio_real != null),
+            'folio_real' => Rule::requiredIf($this->registro === null && $this->tomo == null),
             'tomo' => Rule::requiredIf($this->registro != null),
             'registro' => Rule::requiredIf($this->tomo != null),
             'seccion' => 'required',
@@ -47,7 +46,7 @@ class Antecedentes extends Component
 
     public function updated($property, $value){
 
-        if(in_array($property, ['folio_real', 'movimiento_registral'])){
+        if(in_array($property, ['folio_real'])){
 
             $this->reset('tomo', 'registro');
 
@@ -55,7 +54,7 @@ class Antecedentes extends Component
 
         if(in_array($property, ['tomo', 'registro'])){
 
-            $this->reset('folio_real', 'movimiento_registral');
+            $this->reset('folio_real');
 
         }
 
@@ -82,7 +81,6 @@ class Antecedentes extends Component
 
         $this->reset([
             'folio_real',
-            'movimiento_registral',
             'tomo',
             'registro',
             'acto',
@@ -113,7 +111,6 @@ class Antecedentes extends Component
     public function editarAntecedente(Antecedente $antecedente){
 
         $this->folio_real = $antecedente->folio_real;
-        $this->movimiento_registral = $antecedente->movimiento_registral;
         $this->tomo = $antecedente->tomo;
         $this->registro = $antecedente->registro;
         $this->seccion = $antecedente->seccion;
@@ -136,7 +133,6 @@ class Antecedentes extends Component
 
             $this->aviso->antecedentes()->where('id', $this->selected_id)->first()->update([
                 'folio_real' => $this->folio_real,
-                'movimiento_registral' => $this->movimiento_registral,
                 'tomo' => $this->tomo,
                 'registro' => $this->registro,
                 'seccion' => $this->seccion,
@@ -168,7 +164,6 @@ class Antecedentes extends Component
 
             $this->aviso->antecedentes()->create([
                 'folio_real' => $this->folio_real,
-                'movimiento_registral' => $this->movimiento_registral,
                 'tomo' => $this->tomo,
                 'registro' => $this->registro,
                 'seccion' => $this->seccion,
