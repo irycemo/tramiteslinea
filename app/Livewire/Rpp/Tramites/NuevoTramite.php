@@ -49,11 +49,7 @@ class NuevoTramite extends Component
     public function rules(){
 
         return [
-            'tomo' => [Rule::requiredIf(in_array($this->servicioSeleccionado['clave_ingreso'], ['DL07']) && !$this->folio_real), 'nullable', 'numeric'],
-            'registro' => [Rule::requiredIf(in_array($this->servicioSeleccionado['clave_ingreso'], ['DL07']) && !$this->folio_real), 'nullable', 'numeric'],
-            'distrito' => [Rule::requiredIf(in_array($this->servicioSeleccionado['clave_ingreso'], ['DL07']) && !$this->folio_real), 'nullable', 'numeric'],
-            'numero_propiedad' => [Rule::requiredIf(in_array($this->servicioSeleccionado['clave_ingreso'], ['DL07']) && !$this->folio_real), 'nullable', 'numeric'],
-            'folio_real' => 'nullable',
+            'folio_real' => Rule::requiredIf($this->servicioSeleccionado['clave_ingreso'] === 'DL07'),
         ];
 
     }
@@ -187,26 +183,7 @@ class NuevoTramite extends Component
         $this->resetErrorBag();
         $this->resetValidation();
 
-        $this->validate([
-            'tomo' => ['nullable', Rule::requiredIf(!$this->folio_real), 'numeric'],
-            'registro' => [Rule::requiredIf(!$this->folio_real), 'nullable', 'numeric'],
-            'distrito' => [Rule::requiredIf(!$this->folio_real), 'nullable', 'numeric'],
-            'folio_real' => [Rule::requiredIf(!$this->tomo && !$this->registro && !$this->distrito), 'nullable', 'numeric'],
-        ]);
-
-        $folio_real = (new SrppService())->consultarFolioReal($this->folio_real, $this->tomo, $this->registro, $this->numero_propiedad, $this->distrito);
-
-        if(empty($folio_real)) {
-
-            return;
-
-        }
-
-        $this->folio_real = $folio_real['folio'];
-        $this->tomo = $folio_real['tomo'];
-        $this->registro = $folio_real['registro'];
-        $this->distrito = $folio_real['distrito'];
-        $this->numero_propiedad = $folio_real['numero_propiedad'];
+        $folio_real = (new SrppService())->consultarFolioReal($this->folio_real);
 
         $this->predio = [
             'folio_real' => $folio_real['folio'],
@@ -224,7 +201,7 @@ class NuevoTramite extends Component
 
         try {
 
-            if($this->folio_real || $this->tomo || $this->registro || $this->distrito || $this->numero_propiedad){
+            if($this->folio_real){
 
                 $this->consultarFolioReal();
 

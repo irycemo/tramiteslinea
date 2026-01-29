@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Http;
 
 class SrppService {
 
-    public function consultarFolioReal(int|null $folio_real, int|null $tomo, int|null $registro, int|null $numero_propiedad, int|null $distrito):array
+    public function consultarFolioReal(int|null $folio_real):array
     {
 
         $response = Http::withToken(config('services.sistema_rpp.token'))
@@ -18,10 +18,10 @@ class SrppService {
                                 config('services.sistema_rpp.consultar_folio_real'),
                                 [
                                     'folio_real' => $folio_real,
-                                    'tomo' => $tomo,
-                                    'registro' => $registro,
-                                    'numero_propiedad' => $numero_propiedad,
-                                    'distrito' => $distrito,
+                                    'tomo' => null,
+                                    'registro' => null,
+                                    'numero_propiedad' => null,
+                                    'distrito' => null,
                                     'seccion' => 'propiedad',
                                 ]
                             );

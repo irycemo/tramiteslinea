@@ -24,7 +24,7 @@
 
     <div class="bg-white shadow-lg  rounded-lg p-4">
 
-        <div class="lg:w-1/2 mx-auto flex flex-col justify-center items-center gap-3">
+        <div class="lg:w-1/3 mx-auto flex flex-col justify-center items-center gap-3">
 
             <select class="bg-white rounded-full text-sm w-full" wire:model.live="servicio_id">
 
@@ -58,7 +58,7 @@
 
             @endif
 
-            @if($servicioSeleccionado != null && !in_array($servicioSeleccionado['clave_ingreso'], ['DL07']) || count($predio))
+            @if($servicioSeleccionado != null)
 
                 <p class="text-center font-semibold text-xl">Total: ${{ number_format($total, 2) }}</p>
 
