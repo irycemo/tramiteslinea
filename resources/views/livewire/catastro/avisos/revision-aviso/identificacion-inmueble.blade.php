@@ -32,7 +32,7 @@
 
             <x-input-group for="aviso.cantidad_tramitada" label="Lo tramitado constituye en relación con el título inmediato anterior" :error="$errors->first('aviso.cantidad_tramitada')" class="w-full">
 
-                <x-input-select id="aviso.cantidad_tramitada" wire:model="aviso.cantidad_tramitada">
+                <x-input-select id="aviso.cantidad_tramitada" wire:model="aviso.cantidad_tramitada" :disabled="(auth()->user()->entidad->dependencia === 'Secretaría de gobernación')">
 
                     <option value="">Seleccione una opción</option>
                     <option value="LA TOTALIDAD">LA TOTALIDAD</option>

@@ -168,7 +168,6 @@ class Revisiones extends Component
 
     }
 
-
     public function imprimirAviso(Aviso $aviso){
 
         try {

@@ -105,11 +105,21 @@ class ActoEscritura extends Component
 
                 $this->porcesarCroquis($data['croquis']);
 
+                if(auth()->user()->entidad->dependencia === 'Secretaría de gobernación'){
+
+                    $this->aviso->acto = 'ADQUISICIÓN PARA VÍAS DE COMUNICACIÓN';
+
+                    $this->procesarAdquirienteGobierno();
+
+                }
+
             });
 
             $this->dispatch('cargarAviso', $this->aviso->id);
 
         } catch (GeneralException $ex) {
+
+            $this->reset('aviso', 'predio');
 
             $this->dispatch('mostrarMensaje', ['warning', $ex->getMessage()]);
 
@@ -321,6 +331,22 @@ class ActoEscritura extends Component
 
     }
 
+    public function procesarAdquirienteGobierno(){
+
+        $persona = Persona::where('razon_social', 'Gobierno del estado de Michoacán')->first();
+
+        if(!$persona) throw new GeneralException('No esta registrado el gobierno del estado como persona moral.');
+
+        $this->predio->actores()->create([
+            'tipo' => 'adquiriente',
+            'porcentaje_propiedad' => 100,
+            'porcentaje_nuda' => 0,
+            'porcentaje_usufructo' => 0,
+            'persona_id' => $persona->id
+        ]);
+
+    }
+
     public function guardar(){
 
         $this->validate();
@@ -385,6 +411,12 @@ class ActoEscritura extends Component
             $this->predio = $this->aviso->predio;
 
             $this->actualizacion = true;
+
+            if(auth()->user()->entidad->dependencia === 'Secretaría de gobernación'){
+
+                $this->aviso->acto = 'ADQUISICIÓN PARA VÍAS DE COMUNICACIÓN';
+
+            }
 
         }
 

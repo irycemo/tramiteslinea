@@ -167,9 +167,19 @@
 
             <p class="titulo">Aviso de modificación de inmuebles</p>
 
-            <p class="fundamento">
-                c.c. tesorero municipal y/o autoridad catastral de {{ $predio->municipio }}, michoacán en cumplimiento de lo dispuesto en el artículo 56 y demas relativos a la ley de hacienda municipal vigente del estado. asi como el artículo 85 de la ley de la función registral y catastral de estado de michoacán, manifiesto a usted:
-            </p>
+            @if($aviso->entidad->dependencia === 'Secretaría de gobernación')
+
+                <p class="fundamento">
+                    en cumplimiento de lo dispuesto por el artículo 85 de la ley de función registral y catastral del estado de michoacán, en relación con el artículo septimo transitoriio de la ley de ingresos para el ejercicio fiscal 2025 del estado de michoacán, manifiesto a usted:
+                </p>
+
+            @else
+
+                <p class="fundamento">
+                    c.c. tesorero municipal y/o autoridad catastral de {{ $predio->municipio }}, michoacán en cumplimiento de lo dispuesto en el artículo 56 y demas relativos a la ley de hacienda municipal vigente del estado. asi como el artículo 85 de la ley de la función registral y catastral de estado de michoacán, manifiesto a usted:
+                </p>
+
+            @endif
 
         </div>
 

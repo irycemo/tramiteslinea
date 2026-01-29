@@ -50,6 +50,12 @@ class IdentificacionInmueble extends Component
 
         $this->cargarColindancias($this->aviso->predio);
 
+        if(auth()->user()->entidad->dependencia === 'Secretaría de gobernación'){
+
+            $this->aviso->cantidad_tramitada = 'LA TOTALIDAD';
+
+        }
+
     }
 
     public function guardar(){

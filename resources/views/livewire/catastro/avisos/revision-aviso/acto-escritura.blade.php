@@ -127,7 +127,7 @@
 
             <x-input-group for="aviso.acto" label="Acto transmitivo de dominio" :error="$errors->first('aviso.acto')" class="w-fit mx-auto">
 
-                <x-input-select id="aviso.acto" wire:model.live="aviso.acto">
+                <x-input-select id="aviso.acto" wire:model.live="aviso.acto" :disabled="(auth()->user()->entidad->dependencia === 'Secretaría de gobernación')">
 
                     <option value="">Seleccione una opción</option>
 

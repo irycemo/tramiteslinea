@@ -14,13 +14,17 @@
 
                     <div class="flex justify-end mb-2">
 
-                        @if($aviso->tipo == 'revision' && !$aviso->aviso_id)
+                        @if(auth()->user()->entidad->dependencia !== 'Secretaría de gobernación')
 
-                            @livewire('comun.propietario-crear', ['sin_transmitentes_flag' => true])
+                            @if($aviso->tipo == 'revision' && !$aviso->aviso_id)
 
-                        @else
+                                @livewire('comun.propietario-crear', ['sin_transmitentes_flag' => true])
 
-                            @livewire('comun.propietario-crear')
+                            @else
+
+                                @livewire('comun.propietario-crear')
+
+                            @endif
 
                         @endif
 
@@ -52,24 +56,30 @@
                                     <x-table.cell>{{ $adquiriente->porcentaje_usufructo }}%</x-table.cell>
                                     <x-table.cell>
                                         <div class="flex items-center gap-3">
-                                            <div>
 
-                                                @if($aviso->tipo == 'revision' && !$aviso->aviso_id)
+                                            @if( auth()->user()->entidad->dependencia !== 'Secretaría de gobernación')
 
-                                                    <livewire:comun.propietario-actualizar :actor="$adquiriente" :predio="$aviso->predio" :sin_transmitentes_flag="true" wire:key="button-propietario-{{ $adquiriente->id }}" />
+                                                <div>
 
-                                                @else
+                                                    @if($aviso->tipo == 'revision' && !$aviso->aviso_id)
 
-                                                    <livewire:comun.propietario-actualizar :actor="$adquiriente" :predio="$aviso->predio" wire:key="button-propietario-{{ $adquiriente->id }}" />
+                                                        <livewire:comun.propietario-actualizar :actor="$adquiriente" :predio="$aviso->predio" :sin_transmitentes_flag="true" wire:key="button-propietario-{{ $adquiriente->id }}" />
 
-                                                @endif
+                                                    @else
 
-                                            </div>
-                                            <x-button-red
-                                                wire:click="borrarActor({{ $adquiriente->id }})"
-                                                wire:loading.attr="disabled">
-                                                Borrar
-                                            </x-button-red>
+                                                        <livewire:comun.propietario-actualizar :actor="$adquiriente" :predio="$aviso->predio" wire:key="button-propietario-{{ $adquiriente->id }}" />
+
+                                                    @endif
+
+                                                </div>
+                                                <x-button-red
+                                                    wire:click="borrarActor({{ $adquiriente->id }})"
+                                                    wire:loading.attr="disabled">
+                                                    Borrar
+                                                </x-button-red>
+
+                                            @endif
+
                                         </div>
                                     </x-table.cell>
 
