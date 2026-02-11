@@ -148,6 +148,14 @@ class NuevoTramite extends Component
 
     public function crearTramite(){
 
+        if(auth()->user()->hasRole('Administrador')){
+
+            $this->dispatch('mostrarMensaje', ['warning', 'Los administradores no pueden generar traámites.']);
+
+            return;
+
+        }
+
         $this->validate();
 
         try {

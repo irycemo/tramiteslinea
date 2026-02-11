@@ -18,6 +18,12 @@ class EntidadCompletaMiddleware
 
         if(! auth()->user()->hasRole(['Administrador'])){
 
+            if(! auth()->user()->entidad){
+
+                abort(403, 'El usuario no esta asociado a una entidad.');
+
+            }
+
             if(auth()->user()->entidad->estado != 'activo'){
 
                 abort(403, 'La entidad a la que pertenece no esta activa.');
@@ -26,10 +32,13 @@ class EntidadCompletaMiddleware
 
                 if(
                     auth()->user()->hasRole(['Notario', 'Notario adscrito', 'Gestor']) &&
-                    (auth()->user()->entidad->notario === null || auth()->user()->entidad->adscrito === null)
+                    (
+                        (auth()->user()->entidad->notario === null && auth()->user()->entidad->adscrito === null) ||
+                        auth()->user()->entidad->numero_notaria === null
+                    )
                 ){
 
-                    abort(403, 'La entidad a la que pertenece tiene asociado al titular.');
+                    abort(403, 'La entidad a la que pertenece no tiene sus datos completos.');
 
                 }
 

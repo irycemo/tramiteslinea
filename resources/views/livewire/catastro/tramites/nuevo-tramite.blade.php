@@ -22,14 +22,6 @@
 
                     <div class="flex gap-2">
 
-                        {{-- <select class="bg-white rounded-full text-sm" wire:model.live="tipo_servicio">
-
-                            <option value="ordinario" selected>Ordinario</option>
-                            <option value="urgente">Urgente</option>
-                            <option value="extra_urgente">Extra urgente</option>
-
-                        </select> --}}
-
                         @if(auth()->user()->hasRole('Dependencia'))
 
                             <input type="text" class="bg-white rounded-full text-sm @error('numero_oficio') border-red-500 @enderror" wire:model.live="numero_oficio" placeholder="Número de oficio">
