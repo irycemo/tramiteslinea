@@ -28,6 +28,13 @@ class Auditoria extends Component
     public $newValues;
     public $modelos = [
         'User' => 'App\Models\User',
+        'Aviso' => 'App\Models\Aviso',
+        'Pregunta' => 'App\Models\Pregunta',
+        'Role' => 'App\Models\Role',
+        'Permiso' => 'App\Models\Permission',
+        'Predio' => 'App\Models\Predio',
+        'Cuota minima' => 'App\Models\CuotaMinima',
+        'Entidad' => 'App\Models\Entidad',
     ];
 
     public function ver(Audit $audit){

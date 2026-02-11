@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\EntidadCompletaMiddleware;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
 use App\Http\Middleware\EstaActivoMiddleware;
@@ -17,11 +18,11 @@ return Application::configure(basePath: dirname(__DIR__))
         apiPrefix: 'api/v1',
         then: function(){
 
-            Route::middleware(['web', 'auth', 'esta.activo', 'verified'])->group(base_path('routes/administrador.php'));
+            Route::middleware(['web', 'auth', 'esta.activo', 'verified', 'entidad'])->group(base_path('routes/administrador.php'));
 
-            Route::middleware(['web', 'auth', 'esta.activo', 'verified'])->group(base_path('routes/catastro.php'));
+            Route::middleware(['web', 'auth', 'esta.activo', 'verified', 'entidad'])->group(base_path('routes/catastro.php'));
 
-            Route::middleware(['web', 'auth', 'esta.activo', 'verified'])->group(base_path('routes/rpp.php'));
+            Route::middleware(['web', 'auth', 'esta.activo', 'verified', 'entidad'])->group(base_path('routes/rpp.php'));
 
         }
     )
@@ -30,7 +31,8 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->alias([
             'esta.activo' => EstaActivoMiddleware::class,
             'role'=> RoleMiddleware::class,
-            'permission' => PermissionMiddleware::class
+            'permission' => PermissionMiddleware::class,
+            'entidad' => EntidadCompletaMiddleware::class
         ]);
 
         $middleware->validateCsrfTokens(except: [
