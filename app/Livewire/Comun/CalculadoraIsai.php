@@ -2,13 +2,16 @@
 
 namespace App\Livewire\Comun;
 
-use App\Constantes\Constantes;
 use Carbon\Carbon;
 use App\Models\Aviso;
 use Livewire\Component;
 use App\Models\CuotaMinima;
 use Livewire\Attributes\On;
+use App\Services\SGCService;
+use App\Constantes\Constantes;
 use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\Log;
+use App\Exceptions\GeneralException;
 
 class CalculadoraIsai extends Component
 {
@@ -291,9 +294,23 @@ class CalculadoraIsai extends Component
 
         }
 
-        $this->municipios = Constantes::MUNICIPIOS;
+        try {
 
-        ksort($this->municipios);
+            $data = (new SGCService())->consultarOficinasCabeceras();
+
+            $this->municipios = collect($data['data']);
+
+        } catch (GeneralException $ex) {
+
+            abort(403, message:$ex->getMessage());
+
+        } catch (\Throwable $th) {
+
+            Log::error("Error al consultar consultar oficinas cabeceras en SGC. " . $th);
+
+            abort(403, message:"Error al consultar oficinas");
+
+        }
 
     }
 

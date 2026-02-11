@@ -60,6 +60,7 @@ return [
         'consultar_certificados' => env('SGC_CONSULTAR_CERTIFICADOS'),
         'consultar_estadisticas' => env('SGC_CONSULTAR_ESTADISTICAS'),
         'consultar_oficinas' => env('SGC_CONSULTAR_OFICINAS'),
+        'consultar_oficinas_cabeceras' => env('SGC_CONSULTAR_OFICINAS_CABECERAS'),
         'consultar_requerimiento' => env('SGC_CONSULTAR_REQUERIMIENTO'),
         'consultar_requerimientos_oficinas' => env('SGC_CONSULTAR_REQUERIMIENTOS_OFICINA'),
         'ingresar_aviso_aclaratorio' => env('SGC_INGRESAR_AVISO_ACLARATORIO'),

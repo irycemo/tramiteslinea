@@ -294,11 +294,7 @@ class Usuarios extends Component
 
             $usuario->password = bcrypt('sistema');
 
-            if(app()->isProduction()){
-
-                Mail::to($usuario->email)->send(new RegistroUsuarioMail($usuario));
-
-            }
+            Mail::to($usuario->email)->send(new RegistroUsuarioMail($usuario));
 
             $usuario->save();
 

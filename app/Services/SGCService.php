@@ -846,6 +846,36 @@ class SGCService {
 
     }
 
+    public function consultarOficinasCabeceras():array
+    {
+
+        $response = Http::withToken(config('services.sgc.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->get(config('services.sgc.consultar_oficinas_cabeceras'));
+
+        if($response->status() !== 200){
+
+            Log::error("Error al consultar oficinas cabeceras. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al consultar oficinas cabeceras.");
+
+        }else{
+
+            return json_decode($response, true);
+
+        }
+
+    }
+
     public function consultarRequerimientosOficina(int $oficina_id, int $entidad_id):array
     {
 
