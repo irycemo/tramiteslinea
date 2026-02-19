@@ -66,9 +66,7 @@
 
                     <x-table.row wire:loading.class.delaylongest="opacity-50" wire:key="row-{{ $certificado['id'] }}">
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Estado</span>
+                        <x-table.cell title="Estado">
 
                             @if(in_array($certificado['estado'], ['elaborado', 'finalizado', 'concluido']))
 
@@ -82,41 +80,31 @@
 
                         </x-table.cell>
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Folio real</span>
+                        <x-table.cell title="Folio real">
 
                             {{ $certificado['folio_real'] ?? 'Pendiente' }}
 
                         </x-table.cell>
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Distrito</span>
+                        <x-table.cell title="Distrito">
 
                             {{ $certificado['distrito'] }}
 
                         </x-table.cell>
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Servicio</span>
+                        <x-table.cell title="Servicio">
 
                             {{ $certificado['año'] }}-{{ $certificado['tramite'] }}-67
 
                         </x-table.cell>
 
-                        <x-table.cell>
+                        <x-table.cell title="Tipo">
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Tipo</span>
-
-                            <p class="mt-3">{{ $certificado['servicio_nombre'] }}</p>
+                            {{ $certificado['servicio_nombre'] }}
 
                         </x-table.cell>
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Acciones</span>
+                        <x-table.cell  title="Acciones">
 
                             <div class="ml-3 relative" x-data="{ open_drop_down:false }">
 

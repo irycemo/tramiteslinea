@@ -78,59 +78,41 @@
 
                     <x-table.row wire:loading.class.delaylongest="opacity-50" wire:key="row-{{ $usuario->id }}">
 
-                        <x-table.cell>
+                        <x-table.cell title="Nombre">
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Nombre</span>
+                            <div class="flex items-center justify-center lg:justify-start">
 
-                            <p class="mt-2">
+                                <img class="h-10 w-10 rounded-full" src="{{ $usuario->profile_photo_url }}" alt="{{ $usuario->name }}">
 
-                                <div class="flex items-center justify-center lg:justify-start">
+                                <span class="text-sm text-gray-900 ml-4">{{ $usuario->name }}</span>
 
-                                    <img class="h-10 w-10 rounded-full" src="{{ $usuario->profile_photo_url }}" alt="{{ $usuario->name }}">
-
-                                    <span class="text-sm text-gray-900 ml-4">{{ $usuario->name }}</span>
-
-                                </div>
-
-                            </p>
+                            </div>
 
                         </x-table.cell>
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Clave</span>
+                        <x-table.cell title="Clave">
 
                             {{ $usuario->clave }}
 
                         </x-table.cell>
 
-                        <x-table.cell>
+                        <x-table.cell title="Email">
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Email</span>
-
-                            <p class="mt-2">{{ $usuario->email }}</p>
+                            {{ $usuario->email }}
 
                         </x-table.cell>
 
-                        <x-table.cell>
+                        <x-table.cell title="Role">
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Role</span>
+                            @if ($usuario->roles()->count())
 
-                            <p class="mt-2">
+                                {{ $usuario->getRoleNames()->first() }}
 
-                                @if ($usuario->roles()->count())
-
-                                    {{ $usuario->getRoleNames()->first() }}
-
-                                @endif
-
-                            </p>
+                            @endif
 
                         </x-table.cell>
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Estado</span>
+                        <x-table.cell title="Estado">
 
                             @if($usuario->estado == 'activo')
 
@@ -144,45 +126,29 @@
 
                         </x-table.cell>
 
-                        <x-table.cell>
+                        <x-table.cell title="Entidad">
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Entidad</span>
-
-                            <p class="mt-2">{{ $usuario->entidad?->dependencia ?? 'Notaria: ' . $usuario->entidad?->numero_notaria  }}</p>
+                            {{ $usuario->entidad?->dependencia ?? 'Notaria: ' . $usuario->entidad?->numero_notaria  }}
 
                         </x-table.cell>
 
-                        <x-table.cell>
+                        <x-table.cell title="Registrado">
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Registrado</span>
+                            <span class="font-semibold">@if($usuario->creadoPor != null)Registrado por: {{$usuario->creadoPor->name}} @else Registro: @endif</span> <br>
 
-                            <p class="mt-2">
-
-                                <span class="font-semibold">@if($usuario->creadoPor != null)Registrado por: {{$usuario->creadoPor->name}} @else Registro: @endif</span> <br>
-
-                                {{ $usuario->created_at }}
-
-                            </p>
+                            {{ $usuario->created_at }}
 
                         </x-table.cell>
 
-                        <x-table.cell>
+                        <x-table.cell title="Actualizado">
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Actualizado</span>
+                            <span class="font-semibold">@if($usuario->actualizadoPor != null)Actualizado por: {{$usuario->actualizadoPor->name}} @else Actualizado: @endif</span> <br>
 
-                            <p class="mt-2">
-
-                                <span class="font-semibold">@if($usuario->actualizadoPor != null)Actualizado por: {{$usuario->actualizadoPor->name}} @else Actualizado: @endif</span> <br>
-
-                                {{ $usuario->updated_at }}
-
-                            </p>
+                            {{ $usuario->updated_at }}
 
                         </x-table.cell>
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Acciones</span>
+                        <x-table.cell title="Acciones">
 
                             <div class="ml-3 relative" x-data="{ open_drop_down:false }">
 

@@ -24,6 +24,8 @@ return Application::configure(basePath: dirname(__DIR__))
 
             Route::middleware(['web', 'auth', 'esta.activo', 'verified', 'entidad'])->group(base_path('routes/rpp.php'));
 
+            Route::middleware(['web', 'auth', 'esta.activo', 'verified', 'entidad'])->group(base_path('routes/consultas.php'));
+
         }
     )
     ->withMiddleware(function (Middleware $middleware) {

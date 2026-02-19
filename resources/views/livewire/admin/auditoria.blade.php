@@ -77,17 +77,13 @@
 
                     <x-table.row wire:loading.class.delaylongest="opacity-50" wire:key="row-{{ $audit->id }}">
 
-                        <x-table.cell>
+                        <x-table.cell title="Usuario">
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Usuario</span>
-
-                           <p class="mt-2">{{ $audit->user->name ?? 'N/A' }}</p>
+                            {{ $audit->user->name ?? 'N/A' }}
 
                         </x-table.cell>
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Evento</span>
+                        <x-table.cell title="Evento">
 
                             @if( $audit->event  == 'updated')
                                 Actualización
@@ -103,47 +99,37 @@
 
                         </x-table.cell>
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Modelo</span>
+                        <x-table.cell title="Modelo">
 
                             {{ Str::substr($audit->auditable_type, 11) }}
 
                         </x-table.cell>
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">ID</span>
+                        <x-table.cell title="ID">
 
                             {{ $audit->auditable_id }}
 
                         </x-table.cell>
 
-                        <x-table.cell>
+                        <x-table.cell title="IP">
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">IP</span>
-
-                            <p class="mt-2">{{ $audit->ip_address }}</p>
+                            {{ $audit->ip_address }}
 
                         </x-table.cell>
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Registrado</span>
+                        <x-table.cell title="Registrado">
 
                             {{ $audit->created_at }}
 
                         </x-table.cell>
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Actualizado</span>
+                        <x-table.cell  title="Actualizado">
 
                             {{ $audit->updated_at }}
 
                         </x-table.cell>
 
-                        <x-table.cell>
+                        <x-table.cell title="Acciones">
 
                             <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Acciones</span>
 

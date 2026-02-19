@@ -72,9 +72,7 @@
 
                     <x-table.row wire:loading.class.delaylongest="opacity-50" wire:key="row-{{ $certificado['id'] }}">
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Tipo</span>
+                        <x-table.cell title="Tipo">
 
                             @if(count($certificado['requerimientos']))
 
@@ -87,25 +85,19 @@
                         </x-table.cell>
 
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Año</span>
+                        <x-table.cell title="Año">
 
                             {{ $certificado['año'] }}
 
                         </x-table.cell>
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Folio</span>
+                        <x-table.cell title="Folio">
 
                             {{ $certificado['folio'] }}
 
                         </x-table.cell>
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Estado</span>
+                        <x-table.cell title="Estado">
 
                             @php
 
@@ -120,25 +112,19 @@
 
                         </x-table.cell>
 
-                        <x-table.cell>
+                        <x-table.cell title="Cuenta predial">
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Cuenta predial</span>
-
-                            <p class="mt-2">{{ $certificado['localidad'] }}- {{ $certificado['oficina'] }}- {{ $certificado['tipo_predio'] }}- {{ $certificado['numero_registro'] }}</p>
+                            {{ $certificado['localidad'] }}- {{ $certificado['oficina'] }}- {{ $certificado['tipo_predio'] }}- {{ $certificado['numero_registro'] }}
 
                         </x-table.cell>
 
-                        <x-table.cell>
+                        <x-table.cell title="Servicio">
 
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Servicio</span>
-
-                            <p class="mt-2">{{ $certificado['tramite_año'] }}-{{ $certificado['tramite_folio'] }}-11</p>
+                            {{ $certificado['tramite_año'] }}-{{ $certificado['tramite_folio'] }}-11
 
                         </x-table.cell>
 
-                        <x-table.cell>
-
-                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Acciones</span>
+                        <x-table.cell title="Acciones">
 
                             <div class="ml-3 relative" x-data="{ open_drop_down:false }">
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api\V1;
 
+use App\Exceptions\GeneralException;
 use App\Models\Aviso;
 use App\Mail\AvisoAutorizadoMail;
 use Illuminate\Support\Facades\DB;
@@ -42,6 +43,12 @@ class AutorizarAvisoController extends Controller
 
                 $aviso->update(['estado' => 'autorizado']);
 
+                if(! $aviso->entidad->email){
+
+                    throw new GeneralException('La entidad no tiene correo registrado.');
+
+                }
+
                 Mail::to($aviso->entidad->email)->send(new AvisoAutorizadoMail($aviso, $validated['observaciones'] ?? null));
 
             });
@@ -49,6 +56,12 @@ class AutorizarAvisoController extends Controller
             return response()->json([
                 'data' => "El aviso se autorizó con éxito.",
             ], 200);
+
+        } catch (GeneralException $ex) {
+
+            return response()->json([
+                'error' => $ex->getMessage(),
+            ], 500);
 
         } catch (\Throwable $th) {
 

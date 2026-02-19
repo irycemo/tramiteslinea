@@ -256,7 +256,7 @@
 
                 </div>
 
-                <a href="{{ route('certificados_rpp') . "?estado=" . $certificado_gravamen['estado'] }}" class="mx-auto rounded-full border border-{{ $certificado_gravamen['color'] }}-600 py-1 px-4 text-{{ $certificado_gravamen['color'] }}-500 hover:bg-{{ $certificado_catastral['color'] }}-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
+                <a href="{{ route('certificados_rpp') . "?estado=" . $certificado_gravamen['estado'] }}" class="mx-auto rounded-full border border-{{ $certificado_gravamen['color'] }}-600 py-1 px-4 text-{{ $certificado_gravamen['color'] }}-500 hover:bg-{{ $certificado_gravamen['color'] }}-600 hover:text-white transition-all ease-in-out text-sm"> Ver avisos</a>
 
             </div>
 

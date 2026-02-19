@@ -187,6 +187,23 @@ class Antecedentes extends Component
 
     }
 
+    public function borrarAntecedente(Antecedente $antecedente){
+
+        try {
+
+            $antecedente->delete();
+
+            $this->aviso->refresh();
+
+            $this->dispatch('mostrarMensaje', ['success', "El antecedente se eliminó con éxito."]);
+
+        } catch (\Throwable $th) {
+            Log::error("Error al eliminar antecedente por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+            $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
+        }
+
+    }
+
     public function mount(){
 
         if($this->avisoId){

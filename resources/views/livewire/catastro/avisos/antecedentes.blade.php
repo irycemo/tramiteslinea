@@ -45,48 +45,42 @@
 
                             <x-table.row >
 
-                                <x-table.cell>
-
-                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Folio real</span>
+                                <x-table.cell title="Folio real">
 
                                     {{ $antecedente->folio_real ?? 'N/A' }}
 
                                 </x-table.cell>
-                                <x-table.cell>
 
-                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Tomo</span>
+                                <x-table.cell title="Tomo">
 
                                     {{ $antecedente->tomo ?? 'N/A' }}
 
                                 </x-table.cell>
-                                <x-table.cell>
 
-                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Registro</span>
+                                <x-table.cell title="Registro">
 
                                     {{ $antecedente->registro ?? 'N/A' }}
 
                                 </x-table.cell>
-                                <x-table.cell>
 
-                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Sección</span>
+                                <x-table.cell title="Sección">
 
                                     {{ $antecedente->seccion }}
 
                                 </x-table.cell>
-                                <x-table.cell>
 
-                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Distrito</span>
+                                <x-table.cell title="Distrito">
 
                                     {{ $antecedente->distrito }}
 
                                 </x-table.cell>
-                                <x-table.cell>
 
-                                    <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 py-1 text-xs text-white font-bold uppercase rounded-br-xl">Acto</span>
+                                <x-table.cell title="Acto">
 
                                     {{ $antecedente->acto }}
 
                                 </x-table.cell>
+
                                 <x-table.cell>
                                     @if($aviso->estado === 'nuevo')
 
@@ -97,7 +91,7 @@
                                                 Editar
                                             </x-button-blue>
                                             <x-button-red
-                                                wire:click="borrarAdquiriente({{ $antecedente->id }})"
+                                                wire:click="borrarAntecedente({{ $antecedente->id }})"
                                                 wire:loading.attr="disabled">
                                                 Borrar
                                             </x-button-red>

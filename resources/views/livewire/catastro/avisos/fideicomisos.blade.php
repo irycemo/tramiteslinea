@@ -33,13 +33,12 @@
 
                                     <x-table.row wire:loading.class.delaylongest="opacity-50" wire:key="row-{{ $fiduciariaItem->id }}">
 
-                                        <x-table.cell>
+                                        <x-table.cell title="Nombre / Razón social">
 
-                                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Nombre / Razón social</span>
-
-                                            <p class="pt-4">{{ $fiduciariaItem->persona->nombre }} {{ $fiduciariaItem->persona->ap_paterno }} {{ $fiduciariaItem->persona->ap_materno }} {{ $fiduciariaItem->persona->razon_social }}</p>
+                                            {{ $fiduciariaItem->persona->nombre }} {{ $fiduciariaItem->persona->ap_paterno }} {{ $fiduciariaItem->persona->ap_materno }} {{ $fiduciariaItem->persona->razon_social }}
 
                                         </x-table.cell>
+
                                         <x-table.cell>
                                             <div class="flex flex-row justify-center items-center gap-3">
                                                 <div>
@@ -91,11 +90,9 @@
 
                                     <x-table.row wire:loading.class.delaylongest="opacity-50" wire:key="row-{{ $fideicomitenteItem->id }}">
 
-                                        <x-table.cell>
+                                        <x-table.cell title="Nombre / Razón social">
 
-                                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Nombre / Razón social</span>
-
-                                            <p class="pt-4">{{ $fideicomitenteItem->persona->nombre }} {{ $fideicomitenteItem->persona->ap_paterno }} {{ $fideicomitenteItem->persona->ap_materno }} {{ $fideicomitenteItem->persona->razon_social }}</p>
+                                            {{ $fideicomitenteItem->persona->nombre }} {{ $fideicomitenteItem->persona->ap_paterno }} {{ $fideicomitenteItem->persona->ap_materno }} {{ $fideicomitenteItem->persona->razon_social }}
 
                                         </x-table.cell>
                                         <x-table.cell>
@@ -151,11 +148,9 @@
 
                                     <x-table.row wire:loading.class.delaylongest="opacity-50" wire:key="row-{{ $fideicomisarioItem->id }}">
 
-                                        <x-table.cell>
+                                        <x-table.cell title="Nombre / Razón social">
 
-                                            <span class="lg:hidden absolute top-0 left-0 bg-blue-300 px-2 text-[10px] text-white font-bold uppercase rounded-br-xl">Nombre / Razón social</span>
-
-                                            <p class="pt-4">{{ $fideicomisarioItem->persona->nombre }} {{ $fideicomisarioItem->persona->ap_paterno }} {{ $fideicomisarioItem->persona->ap_materno }} {{ $fideicomisarioItem->persona->razon_social }}</p>
+                                            {{ $fideicomisarioItem->persona->nombre }} {{ $fideicomisarioItem->persona->ap_paterno }} {{ $fideicomisarioItem->persona->ap_materno }} {{ $fideicomisarioItem->persona->razon_social }}
 
                                         </x-table.cell>
                                         <x-table.cell>
