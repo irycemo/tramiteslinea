@@ -200,7 +200,7 @@ class Revisiones extends Component
     #[Computed]
     public function avisos(){
 
-        return Aviso::select('id', 'predio_id', 'tipo', 'entidad_id', 'año', 'folio', 'usuario', 'estado', 'acto', 'creado_por', 'actualizado_por', 'created_at', 'updated_at')
+        return Aviso::select('id', 'predio_id', 'tipo', 'entidad_id', 'año', 'avaluo_spe', 'folio', 'usuario', 'estado', 'acto', 'creado_por', 'actualizado_por', 'created_at', 'updated_at')
                         ->with('creadoPor:id,name', 'actualizadoPor:id,name', 'entidad:id,numero_notaria,dependencia', 'predio:id,localidad,oficina,tipo_predio,numero_registro')
                         ->when($this->filters['año'], fn($q, $año) => $q->where('año', $año))
                         ->when($this->filters['folio'], fn($q, $folio) => $q->where('folio', $folio))
