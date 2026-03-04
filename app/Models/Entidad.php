@@ -28,6 +28,20 @@ class Entidad extends Model
         return $this->belongsTo(User::class, 'adscrito');
     }
 
+    public function titular(){
+
+        if($this->notarioTitular){
+
+            return $this->notarioTitular->name;
+
+        }elseif($this->notarioAdscrito){
+
+            return $this->notarioAdscrito->name;
+
+        }
+
+    }
+
     public function nombre(){
 
         if($this->numero_notaria){
