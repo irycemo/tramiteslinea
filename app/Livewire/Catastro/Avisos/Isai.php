@@ -284,7 +284,7 @@ class Isai extends Component
 
         try {
 
-            if($this->aviso->no_genera_isai === 0){
+            if($this->aviso->no_genera_isai){
 
                 $this->aviso->valor_isai = 0;
 
