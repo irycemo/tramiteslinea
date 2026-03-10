@@ -21,7 +21,7 @@ class AvisosListaResource extends JsonResource
             'folio' => $this->folio,
             'usuario' => $this->usuario,
             'isai' => $this->valor_isai,
-            'fecha_reduccion' => Carbon::parse($this->fecha_reduccion)->format('d/m/Y'),
+            'fecha_reduccion' => Carbon::parse($this->fecha_reduccion)->format('d-m-Y'),
             'localidad' => $this->predio->localidad,
             'oficina' => $this->predio->oficina,
             'tipo_predio' => $this->predio->tipo_predio,
