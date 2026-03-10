@@ -1,15 +1,17 @@
 <?php
 
-use App\Livewire\Admin\Roles;
-use App\Livewire\Admin\Permisos;
-use App\Livewire\Admin\Usuarios;
-use App\Livewire\Admin\Auditoria;
-use App\Livewire\Admin\Entidades;
-use App\Livewire\Admin\Avisos\Avisos;
-use Illuminate\Support\Facades\Route;
-use App\Livewire\Admin\Avisos\VerAviso;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TramiteReciboController;
+use App\Livewire\Admin\Auditoria;
+use App\Livewire\Admin\Avisos\Avisos;
+use App\Livewire\Admin\Avisos\VerAviso;
+use App\Livewire\Admin\CuotasMinimas;
+use App\Livewire\Admin\Entidades;
+use App\Livewire\Admin\Permisos;
+use App\Livewire\Admin\Roles;
+use App\Livewire\Admin\Usuarios;
+use Illuminate\Support\Facades\Route;
+
 Route::group([], function(){
 
     Route::get('dashboard', DashboardController::class)->name('dashboard');
@@ -29,5 +31,7 @@ Route::group([], function(){
     Route::get('auditoria', Auditoria::class)->middleware('permission:Auditoria')->name('auditoria');
 
     Route::get('orden_pago', [TramiteReciboController::class, 'imprimir'])->name('orden_pago');
+
+    Route::get('cuotas_minimas', CuotasMinimas::class)->middleware('permission:Cuotas minimas')->name('cuotas_minimas');
 
 });
