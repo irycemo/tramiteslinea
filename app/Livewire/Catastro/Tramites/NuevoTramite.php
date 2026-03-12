@@ -80,7 +80,6 @@ class NuevoTramite extends Component
         $this->reset([
             'localidad',
             'oficina',
-            'tipo',
             'registro',
             'tipo_servicio',
             'predios',
@@ -88,6 +87,12 @@ class NuevoTramite extends Component
             'total',
             'tramite',
         ]);
+
+        if(! in_array($this->servicioSeleccionado['clave_ingreso'], ['DÑ34', 'D729', 'DÑ33', 'D728'])){
+
+            $this->reset(['tipo']);
+
+        }
 
     }
 
@@ -213,7 +218,7 @@ class NuevoTramite extends Component
 
         try {
 
-            $servicios = (new SGCService())->consultarServicios(['DM32', 'D728', 'D729', 'DM31', 'DÑ34', 'DÑ33']);
+            $servicios = (new SGCService())->consultarServicios(['DM32', 'D728', 'D729', 'DM31', 'DÑ34', 'DÑ33', 'D774']);
 
             $this->servicios = collect($servicios['data'])->sortBy('nombre');
 
