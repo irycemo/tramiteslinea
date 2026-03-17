@@ -199,20 +199,24 @@
 
         @include('livewire.catastro.avisos.comun.errores')
 
-        <div class="space-y-2 mb-5 bg-white rounded-lg p-2 shadow-lg flex justify-end">
+        @if(isset($aviso->folio))
 
-            <x-button-green
-                wire:click="guardar"
-                wire:loading.attr="disabled"
-                wire:target="guardar">
+            <div class="space-y-2 mb-5 bg-white rounded-lg p-2 shadow-lg flex justify-end">
 
-                <img wire:loading wire:target="guardar" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                <x-button-green
+                    wire:click="guardar"
+                    wire:loading.attr="disabled"
+                    wire:target="guardar">
 
-                Guardar
+                    <img wire:loading wire:target="guardar" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-            </x-button-green>
+                    Guardar
 
-        </div>
+                </x-button-green>
+
+            </div>
+
+        @endif
 
     @endif
 
