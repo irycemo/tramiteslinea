@@ -22,7 +22,7 @@ class NuevoTramite extends Component
     public $nombre_solicitante;
 
     public $localidad;
-    public $oficina;
+    public $oficina = 101;
     public $tipo;
     public $registro;
 

@@ -42,7 +42,7 @@
 
                         <div>
 
-                            <input placeholder="Oficina" type="number" class="bg-white rounded text-sm lg:w-24  @error('oficina') border-red-500 @enderror" wire:model="oficina">
+                            <input placeholder="Oficina" type="number" class="bg-white rounded text-sm lg:w-24  @error('oficina') border-red-500 @enderror" readonly wire:model="oficina">
 
                         </div>
 
