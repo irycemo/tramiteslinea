@@ -346,11 +346,11 @@
 
                     </div>
 
-                    @if ($tramiteSeleccionado['folio_pago'])
+                    @if ($tramiteSeleccionado['documento_de_pago'])
 
                         <div class="rounded-lg bg-gray-100 py-1 px-2">
 
-                            <p><strong>Folio de pago:</strong> {{ $tramiteSeleccionado['folio_pago'] }}</p>
+                            <p><strong>Folio de pago:</strong> {{ $tramiteSeleccionado['documento_de_pago'] }}</p>
 
                         </div>
 
