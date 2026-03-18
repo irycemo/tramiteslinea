@@ -4,60 +4,64 @@
 
     <h4 class="text-2xl tracking-widest py-1 px-6 text-gray-600 rounded-xl border-b-2 border-gray-500 font-thin mb-6  bg-white">Datos generales</h4>
 
-    <div class="bg-white p-4 rounded-lg w-full shadow-lg mb-5 text-gray-600 flex gap-5 justify-end">
+    <div class=" overflow-scroll">
 
-        @if($aviso->tramite_sgc)
+        <div class="bg-white p-4 rounded-lg w-full shadow-lg mb-5 overflow-x-auto flex gap-5">
 
-            <x-button-blue
-                wire:click="verTramiteAviso"
-                wire:target="verTramiteAviso"
-                wire:loading.attr="disabled">
+            @if($aviso->tramite_sgc)
 
-                <img wire:loading wire:target="verTramiteAviso" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                <x-button-blue
+                    wire:click="verTramiteAviso"
+                    wire:target="verTramiteAviso"
+                    wire:loading.attr="disabled">
 
-                Trámite
-            </x-button-blue>
+                    <img wire:loading wire:target="verTramiteAviso" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-        @endif
+                    Trámite
+                </x-button-blue>
 
-        @if($aviso->certificado_sgc)
+            @endif
 
-            <x-button-gray
-                wire:click="reimprimirCertificado"
-                wire:target="reimprimirCertificado"
-                wire:loading.attr="disabled">
+            @if($aviso->certificado_sgc)
 
-                <img wire:loading wire:target="reimprimirCertificado" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                <x-button-gray
+                    wire:click="reimprimirCertificado"
+                    wire:target="reimprimirCertificado"
+                    wire:loading.attr="disabled">
 
-                Certificado
-            </x-button-gray>
+                    <img wire:loading wire:target="reimprimirCertificado" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-        @endif
+                    Certificado
+                </x-button-gray>
 
-        @if($aviso->avaluo_spe)
+            @endif
 
-            <x-button-red
-                wire:click="imprimirAvaluo"
-                wire:target="imprimirAvaluo"
-                wire:loading.attr="disabled">
+            @if($aviso->avaluo_spe)
 
-                <img wire:loading wire:target="imprimirAvaluo" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                <x-button-red
+                    wire:click="imprimirAvaluo"
+                    wire:target="imprimirAvaluo"
+                    wire:loading.attr="disabled">
 
-                Avalúo
-            </x-button-red>
+                    <img wire:loading wire:target="imprimirAvaluo" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-        @endif
+                    Avalúo
+                </x-button-red>
 
-        @if($aviso->avaluo_spe)
+            @endif
 
-            <x-link-green
-                href="{{ Storage::disk('avisos')->url($aviso->archivo()->first()->url) }}"
-                target="_blank"
-                >
-                Archivo
-            </x-link-green>
+            @if($aviso->avaluo_spe)
 
-        @endif
+                <x-link-green
+                    href="{{ Storage::disk('avisos')->url($aviso->archivo()->first()->url) }}"
+                    target="_blank"
+                    >
+                    Archivo
+                </x-link-green>
+
+            @endif
+
+        </div>
 
     </div>
 
@@ -161,7 +165,7 @@
 
             </div>
 
-            <div class="rounded-lg bg-gray-100 py-1 px-2 col-span-5">
+            <div class="rounded-lg bg-gray-100 py-1 px-2 col-span-1 sm:col-span-2 lg:col-span-5">
 
                 <strong>Observaciones</strong>
 
@@ -518,9 +522,9 @@
 
     <h4 class="text-2xl tracking-widest py-1 px-6 text-gray-600 rounded-xl border-b-2 border-gray-500 font-thin mb-6  bg-white">Colindancias ({{ $predio->colindancias->count() }})</h4>
 
-    <div class="bg-white p-4 rounded-lg w-full shadow-lg mb-5">
+    <div class="bg-white p-4 rounded-lg w-full shadow-lg mb-5 overflow-x-auto">
 
-        <table class="w-full overflow-x-auto table-fixed">
+        <table class="w-full">
 
             <thead class="border-b border-gray-300 ">
 
@@ -554,9 +558,9 @@
 
     <h4 class="text-2xl tracking-widest py-1 px-6 text-gray-600 rounded-xl border-b-2 border-gray-500 font-thin mb-6  bg-white">Transmitentes ({{ $predio->transmitentes()->count() }})</h4>
 
-    <div class="bg-white p-4 rounded-lg w-full shadow-lg mb-5">
+    <div class="bg-white p-4 rounded-lg w-full shadow-lg mb-5 overflow-x-auto">
 
-        <table class="w-full overflow-x-auto table-fixed">
+        <table class="w-full">
 
             <thead class="border-b border-gray-300 ">
 
@@ -594,9 +598,9 @@
 
     <h4 class="text-2xl tracking-widest py-1 px-6 text-gray-600 rounded-xl border-b-2 border-gray-500 font-thin mb-6  bg-white">Adquirientes ({{ $predio->adquirientes()->count() }})</h4>
 
-    <div class="bg-white p-4 rounded-lg w-full shadow-lg mb-5">
+    <div class="bg-white p-4 rounded-lg w-full shadow-lg mb-5 overflow-x-auto">
 
-        <table class="w-full overflow-x-auto table-fixed">
+        <table class="w-full ">
 
             <thead class="border-b border-gray-300 ">
 
@@ -634,9 +638,9 @@
 
     <h4 class="text-2xl tracking-widest py-1 px-6 text-gray-600 rounded-xl border-b-2 border-gray-500 font-thin mb-6  bg-white">Fideicomitentes ({{ $predio->fideicomitentes()->count() }})</h4>
 
-    <div class="bg-white p-4 rounded-lg w-full shadow-lg mb-5">
+    <div class="bg-white p-4 rounded-lg w-full shadow-lg mb-5 overflow-x-auto">
 
-        <table class="w-full overflow-x-auto table-fixed">
+        <table class="w-full">
 
             <thead class="border-b border-gray-300 ">
 
@@ -668,9 +672,9 @@
 
     <h4 class="text-2xl tracking-widest py-1 px-6 text-gray-600 rounded-xl border-b-2 border-gray-500 font-thin mb-6  bg-white">Fideicomisarios ({{ $predio->fideicomisarios()->count() }})</h4>
 
-    <div class="bg-white p-4 rounded-lg w-full shadow-lg mb-5">
+    <div class="bg-white p-4 rounded-lg w-full shadow-lg mb-5 overflow-x-auto">
 
-        <table class="w-full overflow-x-auto table-fixed">
+        <table class="w-full">
 
             <thead class="border-b border-gray-300 ">
 
@@ -702,9 +706,9 @@
 
     <h4 class="text-2xl tracking-widest py-1 px-6 text-gray-600 rounded-xl border-b-2 border-gray-500 font-thin mb-6  bg-white">Fiduciarias ({{ $predio->fiduciarias()->count() }})</h4>
 
-    <div class="bg-white p-4 rounded-lg w-full shadow-lg mb-5">
+    <div class="bg-white p-4 rounded-lg w-full shadow-lg mb-5 overflow-x-auto">
 
-        <table class="w-full overflow-x-auto table-fixed">
+        <table class="w-full">
 
             <thead class="border-b border-gray-300 ">
 
@@ -736,9 +740,9 @@
 
     <h4 class="text-2xl tracking-widest py-1 px-6 text-gray-600 rounded-xl border-b-2 border-gray-500 font-thin mb-6  bg-white">Auditoria ({{ $aviso->audits->count()}})</h4>
 
-    <div class="bg-white p-4 rounded-lg w-full shadow-lg mb-5">
+    <div class="bg-white p-4 rounded-lg w-full shadow-lg mb-5 overflow-x-auto">
 
-        <table class="w-full overflow-x-auto table-fixed">
+        <table class="w-full ">
 
             <thead class="border-b border-gray-300 ">
 
