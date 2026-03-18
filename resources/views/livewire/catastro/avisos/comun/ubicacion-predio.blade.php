@@ -72,7 +72,7 @@
 
         <x-input-group for="predio.manzana_fraccionador" label="Manzana del fraccionador" class="w-full">
 
-            <x-input-text id="predio.manzana_fraccionador" value="{{ $aviso->predio->lote_fraccionador }}" readonly />
+            <x-input-text id="predio.manzana_fraccionador" value="{{ $aviso->predio->manzana_fraccionador }}" readonly />
 
         </x-input-group>
 
