@@ -8,7 +8,6 @@
 
             <tr>
                 <th style="padding-right: 10px;">Folio real</th>
-                <th style="padding-right: 10px;">movimiento registral</th>
                 <th style="padding-right: 10px;">Tomo</th>
                 <th style="padding-right: 10px;">registro</th>
                 <th style="padding-right: 10px;">sección</th>
@@ -24,9 +23,6 @@
                 <tr>
                     <td style="padding-right: 40px;">
                         <p style="margin:0">{{ $antecedente->folio_real ?? 'N/A' }}</p>
-                    </td>
-                    <td style="padding-right: 40px;">
-                        <p style="margin:0">{{ $antecedente->movimiento_registral ?? 'N/A' }}</p>
                     </td>
                     <td style="padding-right: 40px;">
                         <p style="margin:0">{{ $antecedente->tomo ?? 'N/A' }}</p>
