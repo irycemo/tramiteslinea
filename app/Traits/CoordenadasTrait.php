@@ -42,8 +42,8 @@ trait CoordenadasTrait
 
             }else{
 
-                $this->aviso->predio->lat = $ll['attr']['lat'];
-                $this->aviso->predio->lon = $ll['attr']['lon'];
+                $this->aviso->predio->lat = strval($ll['attr']['lat']);
+                $this->aviso->predio->lon = strval($ll['attr']['lon']);
 
             }
 

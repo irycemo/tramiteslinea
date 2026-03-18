@@ -16,11 +16,11 @@
 
                 <div class="space-y-1">
 
-                    <input placeholder="X" type="text" class="bg-white rounded text-xs lg:w-40 @error('aviso.predio.xutm') border-red-500 @enderror" wire:model.blur="aviso.predio.xutm">
+                    <input placeholder="X" type="text" class="bg-white rounded text-xs lg:w-40 @error('aviso.predio.xutm') border-red-500 @enderror" wire:model.lazy="aviso.predio.xutm">
 
-                    <input placeholder="Y" type="text" class="bg-white rounded text-xs lg:w-40 @error('aviso.predio.yutm') border-red-500 @enderror" wire:model.blur="aviso.predio.yutm">
+                    <input placeholder="Y" type="text" class="bg-white rounded text-xs lg:w-40 @error('aviso.predio.yutm') border-red-500 @enderror" wire:model.lazy="aviso.predio.yutm">
 
-                    <select class="bg-white rounded text-xs lg:w-40" wire:model.blur="aviso.predio.zutm">
+                    <select class="bg-white rounded text-xs lg:w-40" wire:model.lazy="aviso.predio.zutm">
 
                         <option value="" selected>Z</option>
                         <option value="13" selected>13</option>
@@ -48,9 +48,9 @@
 
                 <div class="space-y-1">
 
-                    <input placeholder="Lat" type="number" class="bg-white rounded text-xs lg:w-40 @error('aviso.predio.lat') border-red-500 @enderror" wire:model.blur="aviso.predio.lat">
+                    <input placeholder="Lat" type="number" class="bg-white rounded text-xs lg:w-40 @error('aviso.predio.lat') border-red-500 @enderror" wire:model.lazy="aviso.predio.lat">
 
-                    <input placeholder="Lon" type="number" class="bg-white rounded text-xs lg:w-40 @error('aviso.predio.lon') border-red-500 @enderror" wire:model.blur="aviso.predio.lon">
+                    <input placeholder="Lon" type="number" class="bg-white rounded text-xs lg:w-40 @error('aviso.predio.lon') border-red-500 @enderror" wire:model.lazy="aviso.predio.lon">
 
                 </div>
 
