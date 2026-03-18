@@ -854,11 +854,11 @@
 
                     </div>
 
-                    @if ($data_tramite_aviso['folio_pago'])
+                    @if ($data_tramite_aviso['documento_de_pago'])
 
                         <div class="rounded-lg bg-gray-100 py-1 px-2">
 
-                            <p><strong>Folio de pago:</strong> {{ $data_tramite_aviso['folio_pago'] }}</p>
+                            <p><strong>Folio de pago:</strong> {{ $data_tramite_aviso['documento_de_pago'] }}</p>
 
                         </div>
 

@@ -107,7 +107,7 @@
 
                         <x-table.cell title="Entidad">
 
-                            <span class="whitespace-nowrap">{{ $entidad->numero_notaria ? 'Notaria ' . $entidad->numero_notaria : '' }}{{ $entidad->dependencia }}</span>
+                            <span class="whitespace-nowrap">{{ $aviso->entidad->numero_notaria ? 'Notaria ' . $aviso->entidad->numero_notaria : '' }}{{ $aviso->entidad->dependencia }}</span>
 
                         </x-table.cell>
 
