@@ -89,7 +89,7 @@ class Transmitentes extends Component
             if(!$persona){
 
                 $persona = Persona::create([
-                    'tipo' => isset($propietario['nombre']) ? 'FÍSICA' : 'MORAL',
+                    'tipo' => strlen($propietario['razon_social']) > 0 ? 'MORAL' : 'FÍSICA',
                     'nombre' => $propietario['nombre'],
                     'ap_paterno' => $propietario['ap_paterno'],
                     'ap_materno' => $propietario['ap_materno'],
