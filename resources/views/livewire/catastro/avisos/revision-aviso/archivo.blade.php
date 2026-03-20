@@ -83,8 +83,6 @@
 
                 Cerrar aviso
 
-                {{ $errors }}
-
             </x-slot>
 
             <x-slot name="content">
