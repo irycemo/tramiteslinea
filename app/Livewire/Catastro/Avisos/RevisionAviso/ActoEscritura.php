@@ -194,6 +194,8 @@ class ActoEscritura extends Component
 
         }
 
+        $this->predio->actores()->delete();
+
         foreach($data['propietarios'] as $propietario){
 
             $persona = $this->buscarPersona(
@@ -332,6 +334,8 @@ class ActoEscritura extends Component
     }
 
     public function procesarAdquirienteGobierno(){
+
+        $this->predio->actores()->delete();
 
         $persona = Persona::where('razon_social', 'Gobierno del estado de Michoacán')->first();
 
