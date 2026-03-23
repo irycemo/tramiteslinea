@@ -150,7 +150,6 @@
                 <tr>
 
                     <th style="text-align: left;">
-                        <p><strong>Solicitante:</strong> {{ $tramite['solicitante'] }}</p>
                         <p><strong>Número de control:</strong> {{ $tramite['año'] }}-{{ $tramite['folio'] }}-{{ $tramite['usuario'] }}</p>
                         <p><strong>Servicio:</strong> {{ $tramite['servicio'] }}</p>
                         <p><strong>Solicitante:</strong> {{ $tramite['nombre_solicitante'] }}</p>
@@ -158,6 +157,19 @@
                         <p><strong>Orden de pago:</strong> {{ $tramite['orden_de_pago'] }}</p>
                         <p><strong>Total a pagar:</strong> ${{ number_format($tramite['monto'], 2) }}</p>
                         <p><strong>Cantidad:</strong> {{ $tramite['cantidad']}}</p>
+                        @if(isset($tramite['observaciones']))
+                            <p>Observaciones:{{ $tramite->observaciones }}</p>
+                        @endif
+                        @if(isset($tramite['predios']))
+                            <p>
+                                @foreach ($tramite['predios'] as $predio)
+
+                                    {{ $predio['localidad'] }}-{{ $predio['oficina'] }}-{{ $predio['tipo_predio'] }}-{{ $predio['numero_registro'] }},
+
+                                @endforeach
+
+                            </p>
+                        @endif
                     </th>
 
                     <th style="vertical-align: middle">
