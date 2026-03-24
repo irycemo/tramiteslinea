@@ -153,7 +153,6 @@
                         <p><strong>Número de control:</strong> {{ $tramite['año'] }}-{{ $tramite['folio'] }}-{{ $tramite['usuario'] }}</p>
                         <p><strong>Servicio:</strong> {{ $tramite['servicio'] }}</p>
                         <p><strong>Solicitante:</strong> {{ $tramite['nombre_solicitante'] }}</p>
-                        <p><strong>Tipo de servicio:</strong> {{ $tramite['tipo_servicio'] }}</p>
                         <p><strong>Orden de pago:</strong> {{ $tramite['orden_de_pago'] }}</p>
                         <p><strong>Total a pagar:</strong> ${{ number_format($tramite['monto'], 2) }}</p>
                         <p><strong>Cantidad:</strong> {{ $tramite['cantidad']}}</p>

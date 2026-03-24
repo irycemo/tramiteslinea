@@ -61,7 +61,7 @@ trait ActoresTrait{
             'porcentaje_nuda' => 'nullable|numeric|min:0|max:100',
             'porcentaje_usufructo' => 'nullable|numeric|min:0|max:100',
             'tipo_persona' => 'required',
-            'multiple_nombre' => 'nullable',
+            'multiple_nombre' => 'nullable|max:255',
             'nombre' => [
                 Rule::requiredIf($this->tipo_persona === 'FISICA')
             ],

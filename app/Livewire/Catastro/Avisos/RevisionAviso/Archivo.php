@@ -213,6 +213,15 @@ class Archivo extends Component
 
     public function cerrar(){
 
+        $this->validate([
+            'año_aviso' => 'required',
+            'folio_aviso' => 'required',
+            'usuario_aviso' => 'required',
+            'año_certificado' => 'required',
+            'folio_certificado' => 'required',
+            'usuario_certificado' => 'required',
+        ]);
+
         try {
 
             $this->revisarAvisoCompleto();
