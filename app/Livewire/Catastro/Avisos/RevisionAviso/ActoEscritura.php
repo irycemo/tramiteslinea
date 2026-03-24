@@ -61,12 +61,6 @@ class ActoEscritura extends Component
 
             $data = (new PeritosExternosService())->consultarAvaluo($this->año_avaluo, $this->folio_avaluo, $this->usuario_avaluo);
 
-            if(Aviso::where('avaluo_spe', $data['id'])->first()){
-
-                throw new GeneralException('El avalúo ya esta asociado a otro aviso.');
-
-            }
-
             DB::transaction(function () use ($data){
 
                 if(!isset($this->aviso)){
@@ -114,6 +108,24 @@ class ActoEscritura extends Component
                 }
 
             });
+
+            $this->aviso->refresh();
+
+            $avisos = Aviso::where('avaluo_spe', $data['id'])->get();
+
+            foreach($avisos as $aviso){
+
+                if(
+                    $this->aviso->tipo_escritura != $aviso->tipo_escritura ||
+                    $this->aviso->numero_escritura != $aviso->numero_escritura ||
+                    $this->aviso->volumen_escritura != $aviso->volumen_escritura
+                ){
+
+                    throw new GeneralException('El avalúo ya esta asociado a otro aviso.');
+
+                }
+
+            }
 
             $this->dispatch('cargarAviso', $this->aviso->id);
 
