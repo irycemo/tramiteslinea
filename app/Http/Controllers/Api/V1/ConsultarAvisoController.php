@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\AvisoResource;
 use App\Http\Requests\AvisoFolioRequest;
-use App\Http\Resources\AvisosListaResource;
 use App\Http\Requests\ConsultarAvisosRequest;
+use App\Http\Resources\AvisoApiResource;
 
 class ConsultarAvisoController extends Controller
 {
@@ -17,41 +17,40 @@ class ConsultarAvisoController extends Controller
 
         $validated = $request->validated();
 
-        $avisos = Aviso::with('predio:id,localidad,oficina,tipo_predio,numero_registro', 'entidad:id,numero_notaria')
-                        ->where('estado', 'autorizado')
-                        ->when(isset($validated['año']), function($q) use($validated){
-                            $q->where('año', $validated['año']);
+        $avisos = Aviso::with(
+                                'predio.colindancias',
+                                'entidad',
+                                'archivo'
+                        )
+                        ->where('estado', 'operado')
+                        ->whereHas('predio', function($q) use($validated){
+                            $q->where('localidad', $validated['localidad'])
+                                ->where('oficina', $validated['oficina'])
+                                ->where('tipo_predio', $validated['tipo_predio'])
+                                ->whereBetween('numero_registro', [$validated['numero_registro_inicial'], $validated['numero_registro_final']]);
                         })
-                        ->when(isset($validated['folio']), function($q) use($validated){
-                            $q->where('folio', $validated['folio']);
-                        })
-                        ->when(isset($validated['usuario']), function($q) use($validated){
-                            $q->where('usuario', $validated['usuario']);
-                        })
-                        ->when(isset($validated['localidad']), function($q) use($validated){
-                            $q->whereHas('predio', function($q) use($validated){
-                                $q->where('localidad', $validated['localidad']);
-                            });
-                        })
-                        ->when(isset($validated['oficina']), function($q) use($validated){
-                            $q->whereHas('predio', function($q) use($validated){
-                                $q->where('oficina', $validated['oficina']);
-                            });
-                        })
-                        ->when(isset($validated['tipo_predio']), function($q) use($validated){
-                            $q->whereHas('predio', function($q) use($validated){
-                                $q->where('tipo_predio', $validated['tipo_predio']);
-                            });
-                        })
-                        ->when(isset($validated['numero_registro']), function($q) use($validated){
-                            $q->whereHas('predio', function($q) use($validated){
-                                $q->where('numero_registro', $validated['numero_registro']);
-                            });
-                        })
-                        ->orderBy('id', 'desc')
-                        ->paginate($validated['pagination'], ['*'], 'page', $validated['pagina']);
+                        ->get();
 
-        return AvisosListaResource::collection($avisos)->response()->setStatusCode(200);
+        return AvisoApiResource::collection($avisos)->response()->setStatusCode(200);
+
+    }
+
+    public function consultarAvisoFolio(AvisoFolioRequest $request){
+
+        $validated = $request->validated();
+
+        $aviso = Aviso::with(
+                                'predio.colindancias',
+                                'entidad',
+                                'archivo'
+                        )
+                        ->where('estado', 'operado')
+                        ->where('año', $validated['año'])
+                        ->where('folio', $validated['folio'])
+                        ->where('folio', $validated['folio'])
+                        ->first();
+
+        return (new AvisoApiResource($aviso))->response()->setStatusCode(200);
 
     }
 

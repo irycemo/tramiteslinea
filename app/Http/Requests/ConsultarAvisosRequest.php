@@ -22,15 +22,11 @@ class ConsultarAvisosRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'año' => 'nullable',
-            'folio' => 'nullable',
-            'usuario' => 'nullable',
             'localidad' => 'nullable',
             'oficina' => 'nullable',
             'tipo_predio' => 'nullable',
-            'numero_registro' => 'nullable',
-            'pagina' => 'required',
-            'pagination' => 'required'
+            'numero_registro_inicial' => 'nullable',
+            'numero_registro_final' => 'nullable',
         ];
     }
 }

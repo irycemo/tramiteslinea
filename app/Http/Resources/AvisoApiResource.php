@@ -3,10 +3,10 @@
 namespace App\Http\Resources;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Support\Facades\Storage;
 
-class AvisoResource extends JsonResource
+class AvisoApiResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -15,9 +15,7 @@ class AvisoResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-
         return [
-            'id' => $this->id,
             'año' => $this->año,
             'folio' => $this->folio,
             'usuario' => $this->usuario,
@@ -47,9 +45,11 @@ class AvisoResource extends JsonResource
             'valor_base' => $this->valor_base,
             'valor_isai' => $this->valor_isai,
             'anexos' => $this->anexos,
+            'entidad' => $this->entidad->nombre(),
+            'titular' => $this->entidad->titular(),
             'predio'=> new PredioResource($this->predio),
-            'archivo' => Storage::disk('avisos')->url($this->archivo?->url)
-        ];
+            'archivo' => Storage::disk('avisos')->url($this->archivo->url)
 
+        ];
     }
 }
