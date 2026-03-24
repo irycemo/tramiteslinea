@@ -109,24 +109,6 @@ class ActoEscritura extends Component
 
             });
 
-            $this->aviso->refresh();
-
-            $avisos = Aviso::where('avaluo_spe', $data['id'])->get();
-
-            foreach($avisos as $aviso){
-
-                if(
-                    $this->aviso->tipo_escritura != $aviso->tipo_escritura ||
-                    $this->aviso->numero_escritura != $aviso->numero_escritura ||
-                    $this->aviso->volumen_escritura != $aviso->volumen_escritura
-                ){
-
-                    throw new GeneralException('El avalúo ya esta asociado a otro aviso.');
-
-                }
-
-            }
-
             $this->dispatch('cargarAviso', $this->aviso->id);
 
         } catch (GeneralException $ex) {
@@ -139,6 +121,26 @@ class ActoEscritura extends Component
 
             Log::error("Error al consultar avalúo por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
             $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
+
+        }
+
+    }
+
+    public function revisarDisponibilidadAvaluo(){
+
+        $avisos = Aviso::where('avaluo_spe', $this->aviso->avaluo_spe)->get();
+
+        foreach($avisos as $aviso){
+
+            if(
+                $this->aviso->tipo_escritura != $aviso->tipo_escritura ||
+                $this->aviso->numero_escritura != $aviso->numero_escritura ||
+                $this->aviso->volumen_escritura != $aviso->volumen_escritura
+            ){
+
+                throw new GeneralException('El avalúo ya esta asociado a otro aviso.');
+
+            }
 
         }
 
@@ -369,6 +371,8 @@ class ActoEscritura extends Component
 
         try {
 
+            $this->revisarDisponibilidadAvaluo();
+
             $this->aviso->entidad_id = auth()->user()->entidad_id;
             $this->aviso->creado_por = auth()->id();
             $this->aviso->save();
@@ -396,6 +400,8 @@ class ActoEscritura extends Component
         $this->validate();
 
         try {
+
+            $this->revisarDisponibilidadAvaluo();
 
             $this->aviso->actualizado_por = auth()->id();
             $this->aviso->save();
