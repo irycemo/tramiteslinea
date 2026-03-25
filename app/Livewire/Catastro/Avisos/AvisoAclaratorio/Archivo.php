@@ -157,9 +157,13 @@ class Archivo extends Component
 
     public function revisarAvisosConIdTramite($id){
 
-        $aviso = Aviso::where('tramite_sgc', $id)->first();
+        $avisos = Aviso::where('tramite_sgc', $id)->where('id', '!=', $this->aviso->id)->get();
 
-        if($aviso && $aviso->id != $this->aviso->id) throw new GeneralException("El trámite del aviso ya esta asociado con otro aviso.");
+        if($avisos->count()){
+
+            throw new GeneralException("El trámite del aviso ya esta asociado a otro aviso con diferente escritura.");
+
+        }
 
     }
 
