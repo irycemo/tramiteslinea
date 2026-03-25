@@ -118,7 +118,7 @@ class Revisiones extends Component
                                             'actualizado_por' => auth()->id()
                                         ]);
 
-            $this->modelo_editar->predio->audits()->latest()->first()->update(['tags' => 'Reactivó aviso']);
+            $this->modelo_editar->audits()->latest()->first()->update(['tags' => 'Reactivó aviso']);
 
             $this->dispatch('mostrarMensaje', ['success', 'El aviso han sido reactivado.']);
 
