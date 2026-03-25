@@ -11,11 +11,11 @@ use Illuminate\Support\Facades\Log;
 class DesvincularAvaluoController extends Controller
 {
 
-    public function rechazarAviso(Request $request){
+    public function desvincularAvaluo(Request $request){
 
         $validated = $request->validate(['id' => 'required|numeric|min:1']);
 
-        $avisos = Aviso::whereIn('avaluo_spe', $validated['id'])->where('estado', 'nuevo')->get();
+        $avisos = Aviso::where('avaluo_spe', $validated['id'])->where('estado', 'nuevo')->get();
 
         try {
 

@@ -6,6 +6,7 @@ use App\Http\Controllers\Api\V1\AcreditarPagoController;
 use App\Http\Controllers\Api\V1\RechazarAvisoController;
 use App\Http\Controllers\Api\V1\AutorizarAvisoController;
 use App\Http\Controllers\Api\V1\ConsultarAvisoController;
+use App\Http\Controllers\Api\V1\DesvincularAvaluoController;
 use App\Http\Controllers\Api\V1\GenerarAvisoPdfController;
 use App\Http\Controllers\Api\V1\RevertirAvisoController;
 
@@ -28,6 +29,8 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('revertir_aviso', [RevertirAvisoController::class, 'revertirAviso']);
 
     Route::post('generar_aviso_pdf', [GenerarAvisoPdfController::class, 'generarPdf']);
+
+    Route::post('desvincular_avaluo', [DesvincularAvaluoController::class, 'desvincularAvaluo']);
 
 });
 
