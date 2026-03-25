@@ -26,7 +26,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar predio. " . $response);
+            Log::info("Error al consultar predio. " . $response);
 
             $data = json_decode($response, true);
 
@@ -64,7 +64,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar cuenta predial. " . $response);
+            Log::info("Error al consultar cuenta predial. " . $response);
 
             $data = json_decode($response, true);
 
@@ -102,7 +102,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar propietarios. " . $response);
+            Log::info("Error al consultar propietarios. " . $response);
 
             $data = json_decode($response, true);
 
@@ -137,7 +137,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar propietarios. " . $response);
+            Log::info("Error al consultar propietarios. " . $response);
 
             $data = json_decode($response, true);
 
@@ -172,7 +172,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar trámite. " . $response);
+            Log::info("Error al consultar trámite. " . $response);
 
             $data = json_decode($response, true);
 
@@ -210,7 +210,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar trámite de aviso. " . $response);
+            Log::info("Error al consultar trámite de aviso. " . $response);
 
             $data = json_decode($response, true);
 
@@ -248,7 +248,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar trámite de revisión de aviso. " . $response);
+            Log::info("Error al consultar trámite de revisión de aviso. " . $response);
 
             $data = json_decode($response, true);
 
@@ -286,7 +286,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar certificado catastral. " . $response);
+            Log::info("Error al consultar certificado catastral. " . $response);
 
             $data = json_decode($response, true);
 
@@ -436,7 +436,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar rechazos. " . $response);
+            Log::info("Error al consultar rechazos. " . $response);
 
             $data = json_decode($response, true);
 
@@ -471,7 +471,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar servicios. " . $response);
+            Log::info("Error al consultar servicios. " . $response);
 
             $data = json_decode($response, true);
 
@@ -555,7 +555,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar tramites. " . $response);
+            Log::info("Error al consultar tramites. " . $response);
 
             $data = json_decode($response, true);
 
@@ -599,7 +599,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar certificados. " . $response);
+            Log::info("Error al consultar certificados. " . $response);
 
             $data = json_decode($response, true);
 
@@ -789,7 +789,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar estadisticas. " . $response);
+            Log::info("Error al consultar estadisticas. " . $response);
 
             $data = json_decode($response, true);
 
@@ -826,7 +826,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar oficinas. " . $response);
+            Log::info("Error al consultar oficinas. " . $response);
 
             $data = json_decode($response, true);
 
@@ -856,7 +856,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar oficinas cabeceras. " . $response);
+            Log::info("Error al consultar oficinas cabeceras. " . $response);
 
             $data = json_decode($response, true);
 
@@ -892,7 +892,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar requerimientos de oficina. " . $response);
+            Log::info("Error al consultar requerimientos de oficina. " . $response);
 
             $data = json_decode($response, true);
 
@@ -927,7 +927,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar requerimiento. " . $response);
+            Log::info("Error al consultar requerimiento. " . $response);
 
             $data = json_decode($response, true);
 
