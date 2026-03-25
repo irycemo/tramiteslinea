@@ -128,7 +128,7 @@ class ActoEscritura extends Component
 
     public function revisarDisponibilidadAvaluo(){
 
-        $avisos = Aviso::where('avaluo_spe', $this->aviso->avaluo_spe)->get();
+        $avisos = Aviso::where('avaluo_spe', $this->aviso->avaluo_spe)->where('id', '!=', $this->aviso->id)->get();
 
         foreach($avisos as $aviso){
 
