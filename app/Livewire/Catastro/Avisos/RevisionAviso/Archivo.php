@@ -173,7 +173,7 @@ class Archivo extends Component
 
         $avisos = Aviso::where('tramite_sgc', $id)->get();
 
-        if($avisos->count){
+        if($avisos->count()){
 
             throw new GeneralException("El trámite del aviso ya esta asociado a otro aviso con diferente escritura.");
 
