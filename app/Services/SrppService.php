@@ -32,7 +32,7 @@ class SrppService {
 
         }elseif($response->status() !== 200){
 
-            Log::error("Error al consultar folio real. " . $response);
+            Log::info("Error al consultar folio real. " . $response);
 
             $data = json_decode($response, true);
 
@@ -69,7 +69,7 @@ class SrppService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar antecedentes. " . $response);
+            Log::info("Error al consultar antecedentes. " . $response);
 
             $data = json_decode($response, true);
 
@@ -145,7 +145,7 @@ class SrppService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar certificados. " . $response);
+            Log::info("Error al consultar certificados. " . $response);
 
             $data = json_decode($response, true);
 
@@ -180,7 +180,7 @@ class SrppService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar estadisticas. " . $response);
+            Log::info("Error al consultar estadisticas. " . $response);
 
             $data = json_decode($response, true);
 

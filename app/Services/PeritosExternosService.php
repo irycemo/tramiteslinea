@@ -25,7 +25,7 @@ class PeritosExternosService{
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar avalúo. " . $response);
+            Log::info("Error al consultar avalúo. " . $response);
 
             $data = json_decode($response, true);
 

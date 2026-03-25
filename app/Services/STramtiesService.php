@@ -64,7 +64,7 @@ class STramtiesService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar servicios. " . $response);
+            Log::info("Error al consultar servicios. " . $response);
 
             $data = json_decode($response, true);
 
@@ -106,7 +106,7 @@ class STramtiesService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al consultar tramites. " . $response);
+            Log::info("Error al consultar tramites. " . $response);
 
             $data = json_decode($response, true);
 
