@@ -138,7 +138,7 @@ class ActoEscritura extends Component
                 $this->aviso->volumen_escritura != $aviso->volumen_escritura
             ){
 
-                throw new GeneralException('El avalúo ya esta asociado a otro aviso.');
+                throw new GeneralException('El avalúo ya esta asociado a otro aviso con diferente escritura.');
 
             }
 

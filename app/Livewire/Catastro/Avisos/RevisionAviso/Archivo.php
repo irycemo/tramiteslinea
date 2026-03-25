@@ -230,8 +230,6 @@ class Archivo extends Component
 
             $data_certificado_aviso = (new SGCService())->consultarCertificadoAviso($this->año_certificado, $this->folio_certificado, $this->usuario_certificado, $this->aviso->predio_sgc);
 
-            $this->revisarAvisosConIdTramite($data_tramite_aviso['tramite_id']);
-
             $this->revisarAvisosConIdCertificado($data_certificado_aviso['certificado_id']);
 
             $data_traslado = (new SGCService())->ingresarRevisionAviso(
