@@ -173,19 +173,9 @@ class Archivo extends Component
 
         $avisos = Aviso::where('tramite_sgc', $id)->get();
 
-        $avisos = Aviso::where('certificado_sgc', $id)->get();
+        if($avisos->count){
 
-        foreach ($avisos as $aviso) {
-
-            if(
-                $aviso->tipo_escritura != $this->aviso->tipo_escritura ||
-                $aviso->numero_escritura != $this->aviso->numero_escritura ||
-                $aviso->volumen_escritura != $this->aviso->volumen_escritura
-            ){
-
-                throw new GeneralException("El trámite del aviso ya esta asociado a otro aviso con diferente escritura.");
-
-            }
+            throw new GeneralException("El trámite del aviso ya esta asociado a otro aviso con diferente escritura.");
 
         }
 
@@ -231,6 +221,8 @@ class Archivo extends Component
             $data_certificado_aviso = (new SGCService())->consultarCertificadoAviso($this->año_certificado, $this->folio_certificado, $this->usuario_certificado, $this->aviso->predio_sgc);
 
             $this->revisarAvisosConIdCertificado($data_certificado_aviso['certificado_id']);
+
+            $this->revisarAvisosConIdTramite($data_tramite_aviso['tramite_id']);
 
             $data_traslado = (new SGCService())->ingresarRevisionAviso(
                                                                     $this->aviso->predio_sgc,
