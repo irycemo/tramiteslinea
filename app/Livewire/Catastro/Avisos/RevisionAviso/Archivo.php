@@ -171,7 +171,7 @@ class Archivo extends Component
 
     public function revisarAvisosConIdTramite($id){
 
-        $avisos = Aviso::where('tramite_sgc', $id)->where('id', '!=', $this->aviso->id)->get();
+        $avisos = Aviso::where('tramite_sgc', $id)->where('id', '!=', $this->aviso->id)->where('predio_sgc', '!=', $this->aviso->predio_sgc)->get();
 
         if($avisos->count()){
 
