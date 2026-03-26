@@ -232,7 +232,7 @@
 
                 @endif
 
-                <div class="mb-5 bg-white rounded-lg p-2 shadow-lg flex gap-2 flex-wrap ">
+                <div class="mb-5 p-2 flex gap-2 flex-wrap">
 
                     <ul class="flex gap-2 felx flex-wrap list-disc ml-5">
                         @foreach ($errors->all() as $error)

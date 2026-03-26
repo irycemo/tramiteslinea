@@ -156,4 +156,5 @@ class MisTramites extends Component
 
         return view('livewire.catastro.tramites.mis-tramites', compact('tramites'))->extends('layouts.admin');
     }
+
 }

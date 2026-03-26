@@ -2,11 +2,12 @@
 
 namespace App\Providers;
 
-use Livewire\Livewire;
-use Illuminate\Support\Facades\URL;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
+use Livewire\Livewire;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+
+        if (app()->isProduction()) {
+
+            DB::prohibitDestructiveCommands();
+
+        }
 
         Model::shouldBeStrict();
 
