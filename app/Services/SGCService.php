@@ -330,7 +330,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al ingresar aviso aclaratorio. " . $response);
+            Log::error("Error al ingresar revision de aviso. " . $response);
 
             $data = json_decode($response, true);
 
@@ -340,7 +340,7 @@ class SGCService {
 
             }
 
-            throw new GeneralException("Error al ingresar aviso aclaratorio.");
+            throw new GeneralException("Error al ingresar revision de aviso.");
 
         }else{
 
@@ -372,7 +372,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al ingresar revision de aviso. " . $response);
+            Log::error("Error al ingresar revision de aviso aclaratorio. " . $response);
 
             $data = json_decode($response, true);
 
@@ -382,7 +382,7 @@ class SGCService {
 
             }
 
-            throw new GeneralException("Error al ingresar revision de aviso.");
+            throw new GeneralException("Error al ingresar revision de aviso aclaratorio.");
 
         }else{
 
