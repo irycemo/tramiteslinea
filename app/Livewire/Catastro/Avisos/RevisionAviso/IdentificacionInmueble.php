@@ -17,11 +17,13 @@ class IdentificacionInmueble extends Component
 
     public Aviso $aviso;
     public $avisoId;
+    public $superficie_notarial;
 
     protected function rules(){
 
         return [
-            'aviso.cantidad_tramitada' => 'required'
+            'aviso.cantidad_tramitada' => 'required',
+            'superficie_notarial' => 'required'
          ] + $this->rulesColindancias;
 
     }
@@ -68,6 +70,9 @@ class IdentificacionInmueble extends Component
 
                 $this->guardarColindancias($this->aviso->predio);
 
+                $this->aviso->predio->superficie_notarial = $this->superficie_notarial;
+                $this->aviso->predio->save();
+
                 $this->aviso->actualizado_por = auth()->id();
                 $this->aviso->save();
 
@@ -94,6 +99,8 @@ class IdentificacionInmueble extends Component
         if($this->avisoId){
 
             $this->cargarAviso();
+
+            $this->superficie_notarial = $this->aviso->predio->superficie_notarial;
 
         }
 
