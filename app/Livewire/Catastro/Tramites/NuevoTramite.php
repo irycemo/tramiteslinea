@@ -234,7 +234,7 @@ class NuevoTramite extends Component
 
         }
 
-        if(auth()->user()->hasRole(['Notario', 'Gestor'])){
+        if(auth()->user()->hasRole(['Notario', 'Gestor', 'Notario adscrito'])){
 
             $this->solicitante = 'Notaría';
 
