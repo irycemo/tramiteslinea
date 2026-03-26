@@ -232,6 +232,9 @@ class Archivo extends Component
                                                                     $this->aviso->id,
                                                                     $this->aviso->entidad_id,
                                                                     $this->aviso->entidad->nombre(),
+                                                                    $this->aviso->año,
+                                                                    $this->aviso->folio,
+                                                                    $this->aviso->usuario,
                                                                 );
 
             $this->aviso->update([
