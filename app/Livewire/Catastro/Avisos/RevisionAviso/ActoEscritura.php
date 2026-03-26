@@ -189,6 +189,7 @@ class ActoEscritura extends Component
             'uso_1' => $data['uso_1'],
             'uso_2' => $data['uso_2'],
             'uso_3' => $data['uso_3'],
+            'superficie_notarial' => $data['superficie_notarial'],
             'superficie_terreno' => $data['superficie_terreno'],
             'area_comun_terreno' => $data['area_comun_terreno'],
             'superficie_construccion' => $data['superficie_construccion'],
