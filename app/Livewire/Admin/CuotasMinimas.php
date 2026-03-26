@@ -17,6 +17,11 @@ class CuotasMinimas extends Component
 
     public CuotaMinima $modelo_editar;
 
+    public $filters = [
+        'fecha_inicial' => '',
+        'fecha_final' => ''
+    ];
+
     protected function rules(){
         return [
             'modelo_editar.municipio' => 'required|numeric',
@@ -29,6 +34,8 @@ class CuotasMinimas extends Component
             'modelo_editar.cuota_minima' => 'required|numeric',
          ];
     }
+
+    public function updatedFilters() { $this->resetPage(); }
 
     public function crearModeloVacio(){
         $this->modelo_editar = CuotaMinima::make();
@@ -114,6 +121,8 @@ class CuotasMinimas extends Component
     public function cuotas(){
 
         return CuotaMinima::where('municipio', 'like', '%' . $this->search .'%')
+                    ->when($this->filters['fecha_inicial'], fn($q, $fecha_inicial) => $q->where('fecha_inicial', $fecha_inicial))
+                    ->when($this->filters['fecha_final'], fn($q, $fecha_final) => $q->where('fecha_final', $fecha_final))
                     ->orderBy($this->sort, $this->direction)
                     ->paginate($this->pagination);
 

@@ -39,6 +39,7 @@ class Usuarios extends Component
 
     public $filters = [
         'rol' => '',
+        'notaria' => ''
     ];
 
     protected function rules(){
@@ -62,6 +63,8 @@ class Usuarios extends Component
     public function crearModeloVacio(){
         $this->modelo_editar =  User::make();
     }
+
+    public function updatedFilters() { $this->resetPage(); }
 
     public function updatedRole(){
 
@@ -348,6 +351,7 @@ class Usuarios extends Component
                                 ->orWhere('email', 'LIKE', '%' . $this->search . '%');
                         })
                         ->when($this->filters['rol'], fn($q, $rol) => $q->whereHas('roles', function($q) use($rol){ $q->where('name', $rol); }))
+                        ->when($this->filters['notaria'], fn($q, $notaria) => $q->whereHas('roles', function($q) use($notaria){ $q->where('entidad_id', $notaria); }))
                         ->orderBy($this->sort, $this->direction)
                         ->paginate($this->pagination);
 

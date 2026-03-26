@@ -10,6 +10,18 @@
 
                 <input type="text" wire:model.live.debounce.500ms="search" placeholder="Buscar" class="bg-white rounded-full text-sm ">
 
+                <select class="bg-white rounded-full text-sm" wire:model.live="filters.notaria">
+
+                    <option value="">Seleccione una notaria</option>
+
+                    @foreach ($notarias as $notaria_item)
+
+                        <option value="{{ $notaria_item->id }}">{{ $notaria_item->numero_notaria }}</option>
+
+                    @endforeach
+
+                </select>
+
                 <select class="bg-white rounded-full text-sm" wire:model.live="filters.rol">
 
                     <option value="">Seleccione un rol</option>
