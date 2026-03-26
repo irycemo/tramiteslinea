@@ -66,7 +66,6 @@
                 <x-table.heading>Servicio</x-table.heading>
                 <x-table.heading>Cantidad</x-table.heading>
                 <x-table.heading>Monto</x-table.heading>
-                <x-table.heading>Tipo de servicio</x-table.heading>
                 <x-table.heading>Acciones</x-table.heading>
 
             </x-slot>
@@ -130,12 +129,6 @@
                         <x-table.cell title="Monto">
 
                             ${{ number_format($tramite['monto'], 2) }}
-
-                        </x-table.cell>
-
-                        <x-table.cell title="Tipo de servicio">
-
-                            {{ ucfirst($tramite['tipo_servicio']) }}
 
                         </x-table.cell>
 
@@ -289,12 +282,6 @@
                     <div class="rounded-lg bg-gray-100 py-1 px-2">
 
                         <p><strong>Servicio:</strong> {{ $tramiteSeleccionado['servicio'] }}</p>
-
-                    </div>
-
-                    <div class="rounded-lg bg-gray-100 py-1 px-2">
-
-                        <p><strong>Tipo de servicio:</strong> {{ Str::ucfirst($tramiteSeleccionado['tipo_servicio']) }}</p>
 
                     </div>
 
