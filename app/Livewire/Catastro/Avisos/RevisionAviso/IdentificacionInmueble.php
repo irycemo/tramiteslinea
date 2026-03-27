@@ -58,6 +58,8 @@ class IdentificacionInmueble extends Component
 
         }
 
+        $this->superficie_notarial = $this->aviso->predio->superficie_notarial;
+
     }
 
     public function guardar(){
@@ -99,8 +101,6 @@ class IdentificacionInmueble extends Component
         if($this->avisoId){
 
             $this->cargarAviso();
-
-            $this->superficie_notarial = $this->aviso->predio->superficie_notarial;
 
         }
 
