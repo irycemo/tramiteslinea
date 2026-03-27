@@ -53,7 +53,7 @@
             @if($aviso->avaluo_spe)
 
                 <x-link-green
-                    href="{{ Storage::disk('avisos')->url($aviso->archivo()->first()->url) }}"
+                    href="{{ Storage::disk('avisos')->url($aviso->archivo()->first()?->url) }}"
                     target="_blank"
                     >
                     Archivo
