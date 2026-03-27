@@ -266,7 +266,8 @@ class ActoEscritura extends Component
 
     public function buscarAvisosConMismaEscritura(){
 
-        $avisos_misma_escritura = Aviso::with('predio')->where('tipo_escritura', $this->aviso->tipo_escritura)
+        $avisos_misma_escritura = Aviso::with('predio')
+                                        ->where('tipo_escritura', $this->aviso->tipo_escritura)
                                         ->where('numero_escritura', $this->aviso->numero_escritura)
                                         ->where('volumen_escritura', $this->aviso->volumen_escritura)
                                         ->where('predio_sgc', $this->aviso->predio_sgc)
@@ -499,4 +500,5 @@ class ActoEscritura extends Component
     {
         return view('livewire.catastro.avisos.revision-aviso.acto-escritura');
     }
+
 }

@@ -193,6 +193,41 @@ class Revisiones extends Component
 
     }
 
+    public function borrarAviso(Aviso $aviso){
+
+        if($aviso->traslado_sgc){
+
+            $this->dispatch('mostrarMensaje', ['error', "El aviso ya ha sido cerrado no es posible eliminarlo."]);
+
+            return;
+
+        }
+
+        try {
+
+            $aviso->predio->colindancias()->delete();
+
+            $aviso->predio->actores()->delete();
+
+            $aviso->predio->actores()->delete();
+
+            $aviso->antecedentes()->delete();
+
+            $aviso->files()->delete();
+
+            $aviso->delete();
+
+            $this->dispatch('mostrarMensaje', ['success', "El aviso se eliminó correctamente."]);
+
+        } catch (\Throwable $th) {
+
+            Log::error("Error al eliminar aviso por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+            $this->dispatch('mostrarMensaje', ['error', "Hubo un error."]);
+
+        }
+
+    }
+
     public function mount(){
 
         $this->años = Constantes::AÑOS;

@@ -205,6 +205,19 @@
                                         Ver rechazos
                                     </button>
 
+                                    @if($aviso->estado == 'nuevo')
+
+                                        <button
+                                            wire:confirm="¿Esta seguro que desea eliminar el aviso no será posible recuperar la información?"
+                                            wire:click="borrarAviso({{ $aviso->id }})"
+                                            wire:loading.attr="disabled"
+                                            class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                                            role="menuitem">
+                                            Eliminar
+                                        </button>
+
+                                    @endif
+
                                 </div>
 
                             </div>
