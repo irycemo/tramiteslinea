@@ -218,7 +218,7 @@ class NuevoTramite extends Component
 
         try {
 
-            $servicios = (new SGCService())->consultarServicios(['DM32', 'D728', 'D729', 'DM31', 'DÑ34', 'DÑ33', 'D774']);
+            $servicios = (new SGCService())->consultarServicios(['DM32', 'D728', 'D729', 'DM31', 'DÑ34', 'DÑ33']);
 
             $this->servicios = collect($servicios['data'])->sortBy('nombre');
 
