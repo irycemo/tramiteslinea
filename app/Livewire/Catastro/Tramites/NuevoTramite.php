@@ -127,7 +127,7 @@ class NuevoTramite extends Component
 
             $this->total = round((float)$this->servicioSeleccionado[$this->tipo_servicio] * count($this->predios));
 
-            $this->reset(['localidad', 'oficina', 'tipo', 'registro']);
+            $this->reset(['localidad', 'oficina', 'registro']);
 
         } catch (GeneralException $ex) {
 
