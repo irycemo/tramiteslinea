@@ -2,7 +2,6 @@
 
 namespace App\Traits;
 
-use App\Exceptions\GeneralException;
 use App\Models\Persona;
 
 trait BuscarPersonaTrait

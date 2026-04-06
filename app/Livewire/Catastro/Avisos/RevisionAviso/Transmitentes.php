@@ -27,7 +27,7 @@ class Transmitentes extends Component
     public $folio;
     public $usuario;
 
-    public $flag_encadenamiento;
+    public $flag_encadenamiento = false;
 
     #[On('cargarAviso')]
     public function cargarAviso($id = null){
@@ -46,6 +46,7 @@ class Transmitentes extends Component
                                         ->where('numero_escritura', $this->aviso->numero_escritura)
                                         ->where('volumen_escritura', $this->aviso->volumen_escritura)
                                         ->where('predio_sgc', $this->aviso->predio_sgc)
+                                        ->where('id', '!=', $this->aviso->id)
                                         ->get();
 
         if($avisos_misma_escritura->count()){
@@ -159,5 +160,5 @@ class Transmitentes extends Component
     {
         return view('livewire.catastro.avisos.revision-aviso.transmitentes');
     }
-    
+
 }
