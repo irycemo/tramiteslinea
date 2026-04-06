@@ -12,7 +12,7 @@
 
                     <div >
 
-                        <Label class="text-base tracking-widest rounded-xl border-gray-500">Certificado catastral</Label>
+                        <Label class="text-base tracking-widest rounded-xl border-gray-500">Trámite del certificado catastral</Label>
 
                     </div>
 
