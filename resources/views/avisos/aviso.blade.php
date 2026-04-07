@@ -193,7 +193,7 @@
                 <strong>Declarante:</strong>
 
                 @if($aviso->entidad->numero_notaria)
-                    {{ $aviso->entidad->notarioTitular->name }}
+                    {{ $aviso->entidad->titular() }}
                 @else
                     {{ $aviso->entidad->dependencia }}
                 @endif,
