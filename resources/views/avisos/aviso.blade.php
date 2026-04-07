@@ -193,9 +193,13 @@
                 <strong>Declarante:</strong>
 
                 @if($aviso->entidad->numero_notaria)
+
                     {{ $aviso->entidad->titular() }}
+
                 @else
+
                     {{ $aviso->entidad->dependencia }}
+
                 @endif,
 
                 <strong>cuenta predial:</strong> {{ $aviso->predio->cuentaPredial() }},
@@ -395,9 +399,13 @@
 
                             <p style="text-transform: uppercase; border-bottom: gray solid 1px; text-align: center; display: inline">
                                 @if($aviso->entidad->numero_notaria)
-                                    {{ $aviso->entidad->notarioTitular->name }}
+
+                                    {{ $aviso->entidad->titular() }}
+
                                 @else
+
                                     {{ $aviso->entidad->dependencia }}
+
                                 @endif
                             </p>
                             @if($aviso->entidad->numero_notaria)

@@ -57,6 +57,33 @@ class Transmitentes extends Component
 
     }
 
+    public function cargarTransmitentesConMismaEscritura(){
+
+        $avisos_misma_escritura = Aviso::with('predio')
+                                        ->where('tipo_escritura', $this->aviso->tipo_escritura)
+                                        ->where('numero_escritura', $this->aviso->numero_escritura)
+                                        ->where('volumen_escritura', $this->aviso->volumen_escritura)
+                                        ->where('predio_sgc', $this->aviso->predio_sgc)
+                                        ->get();
+
+        $this->aviso->predio->actores()->delete();
+
+        $folio = $avisos_misma_escritura->max('folio') - 1;
+
+        $aviso_anterior = $avisos_misma_escritura->where('folio', $folio)->first();
+
+        foreach($aviso_anterior->predio->adquirientes() as $adquiriente){
+
+            $transmitente = $adquiriente->replicate();
+
+            $transmitente->tipo = 'transmitente';
+            $transmitente->predio_id = $this->aviso->predio_id;
+            $transmitente->save();
+
+        }
+
+    }
+
     public function buscarCertificado(){
 
         $this->validate([
