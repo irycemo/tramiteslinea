@@ -220,25 +220,31 @@ trait ActoresTrait{
             ],
         ]);
 
-        $this->personas = Persona::when($this->rfc && $this->rfc != '', function($q){
-                                            $q->where('rfc', $this->rfc);
-                                        })
-                                        ->when($this->curp && $this->curp != '', function($q){
-                                            $q->where('curp', $this->curp);
-                                        })
-                                        ->when($this->nombre && $this->nombre != '', function($q){
-                                            $q->where('nombre', $this->nombre);
+        if(isset($this->rfc)){
+
+            $this->personas = Persona::where('rfc', $this->rfc)->get();
+
+        }elseif(isset($this->curp)){
+
+            $this->personas = Persona::where('curp', $this->curp)->get();
+
+        }else{
+
+            $this->personas = Persona::when($this->nombre && $this->nombre != '', function($q){
+                                            $q->where('nombre', 'like', '%' .$this->nombre . '%');
                                         })
                                         ->when($this->ap_materno && $this->ap_materno != '', function($q){
-                                            $q->where('ap_materno', $this->ap_materno);
+                                            $q->where('ap_materno', 'like', '%' .$this->ap_materno . '%');
                                         })
                                         ->when($this->ap_paterno && $this->ap_paterno != '', function($q){
-                                            $q->where('ap_paterno', $this->ap_paterno);
+                                            $q->where('ap_paterno', 'like', '%' .$this->ap_paterno . '%');
                                         })
                                         ->when($this->razon_social && $this->razon_social != '', function($q){
-                                            $q->where('razon_social', $this->razon_social);
+                                            $q->where('razon_social', 'like', '%' .$this->razon_social . '%');
                                         })
                                         ->get();
+
+        }
 
     }
 
