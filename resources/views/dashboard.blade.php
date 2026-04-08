@@ -24,7 +24,7 @@
 
         @livewire('dashboard.dashboard-admin', ['lazy' => true])
 
-    @else
+    @elseif(! auth()->user()->hasRole(['Consulta']))
 
         @livewire('dashboard.dashboard-entidad', ['lazy' => true])
 

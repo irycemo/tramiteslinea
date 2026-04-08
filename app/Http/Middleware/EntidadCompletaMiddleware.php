@@ -16,7 +16,7 @@ class EntidadCompletaMiddleware
     public function handle(Request $request, Closure $next): Response
     {
 
-        if(! auth()->user()->hasRole(['Administrador'])){
+        if(! auth()->user()->hasRole(['Administrador', 'Consulta'])){
 
             if(! auth()->user()->entidad){
 

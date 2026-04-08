@@ -47,7 +47,7 @@ class Usuarios extends Component
             'modelo_editar.name' => 'required',
             'modelo_editar.email' => 'required|email|unique:users,email,' . $this->modelo_editar->id,
             'modelo_editar.estado' => 'required|in:activo,inactivo',
-            'modelo_editar.entidad_id' => Rule::requiredIf(in_array($this->role, [2, 3, 4, 5, 6, 7])),
+            'modelo_editar.entidad_id' => Rule::requiredIf($this->role != 8),
             'role' => 'required',
             'modelo_editar.rfc' => [
                 'nullable',
