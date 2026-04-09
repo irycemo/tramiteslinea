@@ -49,11 +49,13 @@ class Transmitentes extends Component
                                         ->where('id', '!=', $this->aviso->id)
                                         ->get();
 
+        if(! $avisos_misma_escritura->count()) return;
+
         $folio = $avisos_misma_escritura->max('folio') - 1;
 
         $aviso_anterior = $avisos_misma_escritura->where('folio', $folio)->first();
 
-        if($aviso_anterior->id == $this->aviso->id) return;
+        if($aviso_anterior?->id == $this->aviso->id) return;
 
         if($avisos_misma_escritura->count()){
 
