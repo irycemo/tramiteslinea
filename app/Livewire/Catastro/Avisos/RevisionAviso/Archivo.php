@@ -109,11 +109,11 @@ class Archivo extends Component
 
         }
 
-        if(!$this->aviso->archivo()->first()){
+        /* if(!$this->aviso->archivo()->first()){
 
             throw new GeneralException("Debe subir el archivo.");
 
-        }
+        } */
 
         if($this->aviso->descripcion_fideicomiso){
 

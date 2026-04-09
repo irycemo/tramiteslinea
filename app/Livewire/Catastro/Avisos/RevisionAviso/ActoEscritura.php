@@ -385,7 +385,7 @@ class ActoEscritura extends Component
 
         $this->predio->actores()->delete();
 
-        $persona = Persona::where('razon_social', 'Gobierno del estado de Michoacán')->first();
+        $persona = Persona::where('razon_social', 'GOBIERNO DEL ESTADO DE MICHOACAN')->first();
 
         if(!$persona) throw new GeneralException('No esta registrado el gobierno del estado como persona moral.');
 
