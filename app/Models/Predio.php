@@ -81,11 +81,21 @@ class Predio extends Model
 
     }
 
+    public function getSuperficieTotalConstruccionFormateadaAttribute(){
+
+        if($this->attributes['superficie_total_construccion'] == 0) return null;
+
+        $partes = explode('.', strval($this->attributes['superficie_total_construccion']));
+
+        return $partes[0] . $this->parteDecimal($this->attributes['superficie_total_construccion']);
+
+    }
+
     public function getSuperficieTerrenoFormateadaAttribute(){
 
         if($this->attributes['superficie_terreno'] == 0) return null;
 
-        if($this->unidad_area == 'Hectareas'){
+        if($this->tipo_predio == 2){
 
             $string =  str_pad((string)(intval($this->attributes['superficie_terreno'])), 6, '0', STR_PAD_LEFT);
 
@@ -104,11 +114,34 @@ class Predio extends Model
 
     }
 
+    public function getSuperficieTotalTerrenoFormateadaAttribute(){
+
+        if($this->attributes['superficie_total_terreno'] == 0) return null;
+
+        if($this->tipo_predio == 2){
+
+            $string =  str_pad((string)(intval($this->attributes['superficie_total_terreno'])), 6, '0', STR_PAD_LEFT);
+
+            return substr($string,0, -4) . '-' .
+                    substr($string,-4, -2) . '-' .
+                    substr($string, -2, strlen($string)) .
+                    $this->parteDecimal($this->attributes['superficie_total_terreno']);
+
+        }else{
+
+            $partes = explode('.', strval($this->attributes['superficie_total_terreno']));
+
+            return $partes[0] . $this->parteDecimal($this->attributes['superficie_total_terreno']);
+
+        }
+
+    }
+
     public function getSuperficieNotarialFormateadaAttribute(){
 
         if($this->attributes['superficie_notarial'] == 0) return null;
 
-        if($this->unidad_area == 'Hectareas'){
+        if($this->tipo_predio == 2){
 
             $string =  str_pad((string)(intval($this->attributes['superficie_notarial'])), 6, '0', STR_PAD_LEFT);
 
@@ -131,7 +164,7 @@ class Predio extends Model
 
         if($this->attributes['superficie_judicial'] == 0) return null;
 
-        if($this->unidad_area == 'Hectareas'){
+        if($this->tipo_predio == 2){
 
             $string =  str_pad((string)(intval($this->attributes['superficie_judicial'])), 6, '0', STR_PAD_LEFT);
 
