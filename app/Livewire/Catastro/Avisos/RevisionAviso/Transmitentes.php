@@ -76,7 +76,11 @@ class Transmitentes extends Component
 
         if(! $aviso_anterior) return;
 
-        $this->aviso->predio->actores()->delete();
+        foreach($this->aviso->predio->transmitentes() as $transmitente){
+
+            $transmitente->delete();
+
+        }
 
         foreach($aviso_anterior->predio->adquirientes() as $adquiriente){
 
