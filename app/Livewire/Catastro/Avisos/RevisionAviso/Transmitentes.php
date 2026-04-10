@@ -80,6 +80,8 @@ class Transmitentes extends Component
 
         $aviso_anterior = $avisos_misma_escritura->where('folio', $folio)->first();
 
+        if(! $aviso_anterior) return;
+
         foreach($aviso_anterior->predio->adquirientes() as $adquiriente){
 
             $transmitente = $adquiriente->replicate();
