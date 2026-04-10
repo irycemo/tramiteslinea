@@ -51,9 +51,7 @@ class Transmitentes extends Component
 
         if(! $avisos_misma_escritura->count()) return;
 
-        $folio = $avisos_misma_escritura->max('folio') - 1;
-
-        $aviso_anterior = $avisos_misma_escritura->where('folio', $folio)->first();
+        $aviso_anterior = $avisos_misma_escritura->where('id', '<', $this->aviso->id)->first();
 
         if($aviso_anterior?->id == $this->aviso->id) return;
 
@@ -74,13 +72,11 @@ class Transmitentes extends Component
                                         ->where('predio_sgc', $this->aviso->predio_sgc)
                                         ->get();
 
-        $this->aviso->predio->actores()->delete();
-
-        $folio = $avisos_misma_escritura->max('folio') - 1;
-
-        $aviso_anterior = $avisos_misma_escritura->where('folio', $folio)->first();
+        $aviso_anterior = $avisos_misma_escritura->where('id', '<', $this->aviso->id)->first();
 
         if(! $aviso_anterior) return;
+
+        $this->aviso->predio->actores()->delete();
 
         foreach($aviso_anterior->predio->adquirientes() as $adquiriente){
 
