@@ -80,7 +80,13 @@ class Transmitentes extends Component
 
         $aviso_anterior = $avisos_misma_escritura->where('id', '<', $this->aviso->id)->first();
 
-        if(! $aviso_anterior) return;
+        if(! $aviso_anterior){
+
+            $this->flag_encadenamiento = false;
+
+            return;
+
+        }
 
         foreach($this->aviso->predio->transmitentes() as $transmitente){
 
