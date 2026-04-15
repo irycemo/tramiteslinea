@@ -292,13 +292,13 @@
 
             <x-input-group for="aviso.numero_escritura" label="Número de escritura" :error="$errors->first('aviso.numero_escritura')" class="lg:w-fit w-full">
 
-                <x-input-text type="number" id="aviso.numero_escritura" wire:model="aviso.numero_escritura" />
+                <x-input-text  id="aviso.numero_escritura" wire:model="aviso.numero_escritura" />
 
             </x-input-group>
 
             <x-input-group for="aviso.volumen_escritura" label="Volumen" :error="$errors->first('aviso.volumen_escritura')" class="lg:w-fit w-full">
 
-                <x-input-text type="number" id="aviso.volumen_escritura" wire:model="aviso.volumen_escritura" />
+                <x-input-text  id="aviso.volumen_escritura" wire:model="aviso.volumen_escritura" />
 
             </x-input-group>
 
