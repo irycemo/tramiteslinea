@@ -214,6 +214,7 @@
                             <input type="hidden" name="urlRetorno" value="{{ route('acredita_pago') }}">
                             <input type="hidden" name="fecha_vencimiento" value="{{ $tramite['fecha_vencimiento'] }}">
                             <input type="hidden" name="tkn" value="{{ $token }}">
+                            <input type="hidden" name="val_1" value="{{ $this->tramite['año'] . '-' . $this->tramite['folio'] . '-' . $this->tramite['usuario'] . ' ' . auth()->user()->entidad->titular() }}">
 
                             <button
                                 wire:loading.attr="disabled"
