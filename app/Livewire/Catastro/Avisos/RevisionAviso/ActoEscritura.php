@@ -445,7 +445,11 @@ class ActoEscritura extends Component
 
         try {
 
-            $this->revisarDisponibilidadAvaluo();
+            if(! auth()->user()->entidad->dependencia === 'Secretaría de gobernación'){
+
+                $this->revisarDisponibilidadAvaluo();
+
+            }
 
             $this->aviso->actualizado_por = auth()->id();
             $this->aviso->save();
