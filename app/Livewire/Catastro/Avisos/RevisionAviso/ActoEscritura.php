@@ -2,19 +2,20 @@
 
 namespace App\Livewire\Catastro\Avisos\RevisionAviso;
 
-use App\Models\File;
-use App\Models\Aviso;
-use App\Models\Predio;
-use App\Models\Persona;
-use Livewire\Component;
-use Illuminate\Support\Str;
 use App\Constantes\Constantes;
+use App\Exceptions\GeneralException;
+use App\Models\Aviso;
+use App\Models\File;
+use App\Models\Persona;
+use App\Models\Predio;
+use App\Services\PeritosExternosService;
 use App\Traits\BuscarPersonaTrait;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
-use App\Exceptions\GeneralException;
 use Illuminate\Support\Facades\Storage;
-use App\Services\PeritosExternosService;
+use Illuminate\Support\Str;
+use Livewire\Component;
 
 class ActoEscritura extends Component
 {
@@ -364,20 +365,26 @@ class ActoEscritura extends Component
 
         }
 
-        $contents = file_get_contents($url);
+        $response = Http::get($url);
 
-        $extension = pathinfo(parse_url($url, PHP_URL_PATH), PATHINFO_EXTENSION);
+        if ($response->successful()) {
 
-        $name = Str::random(40) . '.' . $extension;
+            $contents = file_get_contents($url);
 
-        Storage::disk('avisos')->put($name, $contents);
+            $extension = pathinfo(parse_url($url, PHP_URL_PATH), PATHINFO_EXTENSION);
 
-        File::create([
-            'fileable_id' => $this->aviso->id,
-            'fileable_type' => 'App\Models\Aviso',
-            'descripcion' => 'croquis',
-            'url' => $name
-        ]);
+            $name = Str::random(40) . '.' . $extension;
+
+            Storage::disk('avisos')->put($name, $contents);
+
+            File::create([
+                'fileable_id' => $this->aviso->id,
+                'fileable_type' => 'App\Models\Aviso',
+                'descripcion' => 'croquis',
+                'url' => $name
+            ]);
+
+        }
 
     }
 
