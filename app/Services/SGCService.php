@@ -84,6 +84,44 @@ class SGCService {
 
     }
 
+    public function consultarCuentaPredialTramite(int $localidad, int $oficina, int $tipo_predio, int $numero_registro):array
+    {
+
+        $response = Http::withToken(config('services.sgc.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.sgc.consultar_cuenta_predial_tramite'),
+                                [
+                                    'localidad' => $localidad,
+                                    'oficina' => $oficina,
+                                    'tipo_predio' => $tipo_predio,
+                                    'numero_registro' => $numero_registro,
+                                ]
+                            );
+
+        if($response->status() !== 200){
+
+            Log::info("Error al consultar cuenta predial. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al consultar cuenta predial.");
+
+        }else{
+
+            return json_decode($response, true)['data'];
+
+        }
+
+    }
+
     public function consultarPropietarios(int $año, int $folio, int $usuario, int $sgc_predio):array
     {
 

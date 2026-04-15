@@ -107,7 +107,7 @@ class NuevoTramite extends Component
 
         try {
 
-            $predio = (new SGCService())->consultarCuentaPredial($this->localidad, $this->oficina, $this->tipo, $this->registro);
+            $predio = (new SGCService())->consultarCuentaPredialTramite($this->localidad, $this->oficina, $this->tipo, $this->registro);
 
             if(collect($this->predios)->where('id', $predio['id'])->first()){
 
