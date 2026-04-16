@@ -15,7 +15,17 @@ class DesvincularAvaluoController extends Controller
 
         $validated = $request->validate(['id' => 'required|numeric|min:1']);
 
-        $avisos = Aviso::where('avaluo_spe', $validated['id'])->where('estado', 'nuevo')->get();
+        $avisos = Aviso::where('avaluo_spe', $validated['id'])->get();
+
+        $aviso_invalido = $avisos->where('estado', '!=', 'nuevo')->first();
+
+        if($aviso_invalido){
+
+            return response()->json([
+                'error' => "El aviso " . $aviso_invalido->año . '-' . $aviso_invalido->folio . '-' . $aviso_invalido->usuario . ' no esta nuevo, no es posible desvincularlo.',
+            ], 401);
+
+        }
 
         try {
 

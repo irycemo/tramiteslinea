@@ -48,8 +48,24 @@ class AvisoResource extends JsonResource
             'valor_isai' => $this->valor_isai,
             'anexos' => $this->anexos,
             'predio'=> new PredioResource($this->predio),
-            'archivo' => Storage::disk('avisos')->url($this->archivo?->url)
+            'archivo' => $this->archivo()
         ];
 
     }
+
+    private function archivo():string | null
+    {
+
+        if($this->archivo){
+
+            return Storage::disk('avisos')->url($this->archivo->url);
+
+        }else{
+
+            return null;
+
+        }
+
+    }
+
 }
