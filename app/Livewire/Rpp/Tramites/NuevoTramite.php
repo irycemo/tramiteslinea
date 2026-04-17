@@ -287,7 +287,8 @@ class NuevoTramite extends Component
                                                                         'DL27',
                                                                         'DL16',
                                                                         'DL17',
-                                                                        'DL07'
+                                                                        'DL07',
+                                                                        'D774'
                                                                     ]);
 
             $this->servicios = collect($servicios['data'])->sortBy('nombre');
