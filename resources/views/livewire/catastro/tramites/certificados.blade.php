@@ -120,7 +120,7 @@
 
                         <x-table.cell title="Servicio">
 
-                            {{ $certificado['tramite_año'] }}-{{ $certificado['tramite_folio'] }}-11
+                            {{ $certificado['tramite_año'] }}-{{ $certificado['tramite_folio'] }}-{{ $certificado['tramite_usuario'] }}
 
                         </x-table.cell>
 
