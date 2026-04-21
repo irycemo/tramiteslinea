@@ -53,6 +53,7 @@ class Transmitentes extends Component
                                         ->where('numero_escritura', $this->aviso->numero_escritura)
                                         ->where('volumen_escritura', $this->aviso->volumen_escritura)
                                         ->where('predio_sgc', $this->aviso->predio_sgc)
+                                        ->where('avaluo_spe', $this->aviso->avaluo_spe)
                                         ->where('id', '!=', $this->aviso->id)
                                         ->get();
 
@@ -77,6 +78,7 @@ class Transmitentes extends Component
                                         ->where('numero_escritura', $this->aviso->numero_escritura)
                                         ->where('volumen_escritura', $this->aviso->volumen_escritura)
                                         ->where('predio_sgc', $this->aviso->predio_sgc)
+                                        ->where('avaluo_spe', $this->aviso->avaluo_spe)
                                         ->get();
 
         $aviso_anterior = $avisos_misma_escritura->where('id', '<', $this->aviso->id)->first();
