@@ -13,7 +13,7 @@ class NuevaRevision extends Component
     public function render()
     {
 
-        if($this->aviso->entidad_id != auth()->user()->entidad_id){
+        if(isset($this->aviso) &&  $this->aviso->entidad_id != auth()->user()->entidad_id){
 
             abort(403, 'El aviso pertenece a otra entidad.');
 
