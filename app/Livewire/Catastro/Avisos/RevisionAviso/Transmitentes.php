@@ -28,6 +28,7 @@ class Transmitentes extends Component
     public $usuario;
 
     public $flag_encadenamiento = false;
+    public $avisos_misma_escritura;
 
     #[On('cargarAviso')]
     public function cargarAviso($id = null){
@@ -48,20 +49,20 @@ class Transmitentes extends Component
 
         }
 
-        $avisos_misma_escritura = Aviso::where('tipo_escritura', $this->aviso->tipo_escritura)
+        $this->avisos_misma_escritura = Aviso::where('tipo_escritura', $this->aviso->tipo_escritura)
                                         ->where('numero_escritura', $this->aviso->numero_escritura)
                                         ->where('volumen_escritura', $this->aviso->volumen_escritura)
                                         ->where('predio_sgc', $this->aviso->predio_sgc)
                                         ->where('id', '!=', $this->aviso->id)
                                         ->get();
 
-        if(! $avisos_misma_escritura->count()) return;
+        if(! $this->avisos_misma_escritura->count()) return;
 
-        $aviso_anterior = $avisos_misma_escritura->where('id', '<', $this->aviso->id)->first();
+        $aviso_anterior = $this->avisos_misma_escritura->where('id', '<', $this->aviso->id)->first();
 
         if($aviso_anterior?->id == $this->aviso->id) return;
 
-        if($avisos_misma_escritura->count()){
+        if($this->avisos_misma_escritura->count()){
 
             $this->flag_encadenamiento = true;
 

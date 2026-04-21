@@ -74,6 +74,17 @@
 
             </div>
 
+            <div class="mb-2 bg-white rounded-lg p-4 text-center text-sm">
+
+                <p>Avisos relacionados con el el documento de entrada</p>
+
+                @foreach ($avisos_misma_escritura as $aviso_item)
+
+                    {{ $aviso_item->año }}-{{ $aviso_item->folio }}-{{ $aviso_item->usuario }},
+
+                @endforeach
+
+            </div>
 
         @endif
 
