@@ -4,6 +4,7 @@
 
         <x-button-blue wire:click="abrirModal">Agregar propietario</x-button-blue>
 
+
     </div>
 
     <x-dialog-modal wire:model="modal">

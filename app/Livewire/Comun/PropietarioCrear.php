@@ -2,16 +2,17 @@
 
 namespace App\Livewire\Comun;
 
+use App\Exceptions\GeneralException;
 use App\Models\Actor;
 use App\Models\Aviso;
 use App\Models\Persona;
-use Livewire\Component;
-use Livewire\Attributes\On;
 use App\Traits\ActoresTrait;
 use App\Traits\BuscarPersonaTrait;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
-use App\Exceptions\GeneralException;
+use Illuminate\Validation\Rule;
+use Livewire\Attributes\On;
+use Livewire\Component;
 
 class PropietarioCrear extends Component
 {
@@ -25,7 +26,8 @@ class PropietarioCrear extends Component
 
         return $this->traitRules() +[
             'curp' => [
-                'required',
+                'nullable',
+                Rule::requiredIf($this->tipo_persona !== 'MORAL'),
                 'unique:personas,curp,' . $this->persona->id,
                 'regex:/^[A-Z]{1}[AEIOUX]{1}[A-Z]{2}[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM]{1}(AS|BC|BS|CC|CS|CH|CL|CM|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[B-DF-HJ-NP-TV-Z]{3}[0-9A-Z]{1}[0-9]{1}$/i'
             ],
