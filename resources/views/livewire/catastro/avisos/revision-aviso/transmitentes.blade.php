@@ -90,7 +90,7 @@
 
                     @foreach ($actores as $actor_item)
 
-                        <option value="{{ $actor_item->id }}">{{ $actor_item->persona->nombre }} {{ $actor_item->persona->ap_paterno }} {{ $actor_item->persona->ap_materno }} {{ $actor_item->persona->razon_social }} / {{ $actor_item->persona->tipo }}</option>
+                        <option value="{{ $actor_item->id }}">{{ $actor_item->persona->nombre }} {{ $actor_item->persona->ap_paterno }} {{ $actor_item->persona->ap_materno }} {{ $actor_item->persona->razon_social }} / {{ $actor_item->tipo }}</option>
 
                     @endforeach
 
