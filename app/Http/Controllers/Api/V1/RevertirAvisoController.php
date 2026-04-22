@@ -29,7 +29,9 @@ class RevertirAvisoController extends Controller
 
         try {
 
-            Mail::to($aviso->entidad->email)->send(new AvsioRevertidoMail($aviso, $validated['observaciones']));
+            $observaciones = $validated['observaciones'] ?? null;
+
+            Mail::to($aviso->entidad->email)->send(new AvsioRevertidoMail($aviso, $observaciones));
 
             $aviso->update(['estado' => 'autorizado']);
 
@@ -42,7 +44,7 @@ class RevertirAvisoController extends Controller
             Log::error("Error al reactivar aviso. " . $th);
 
             return response()->json([
-                'error' => "Error al rechazar el aviso.",
+                'error' => "Error al reactivar el aviso.",
             ], 500);
 
         }
@@ -65,7 +67,9 @@ class RevertirAvisoController extends Controller
 
         try {
 
-            Mail::to($aviso->entidad->email)->send(new RevertirRechazoMail($aviso, $validated['observaciones']));
+            $observaciones = $validated['observaciones'] ?? null;
+
+            Mail::to($aviso->entidad->email)->send(new RevertirRechazoMail($aviso, $observaciones));
 
             $aviso->update(['estado' => 'cerrado']);
 

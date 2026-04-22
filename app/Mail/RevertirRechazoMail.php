@@ -17,7 +17,7 @@ class RevertirRechazoMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct(public Aviso $aviso, public string $observaciones)
+    public function __construct(public Aviso $aviso, public string | null $observaciones)
     {}
 
     /**
