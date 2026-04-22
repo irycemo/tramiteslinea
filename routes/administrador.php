@@ -8,6 +8,8 @@ use App\Livewire\Admin\Avisos\VerAviso;
 use App\Livewire\Admin\CuotasMinimas;
 use App\Livewire\Admin\Entidades;
 use App\Livewire\Admin\Permisos;
+use App\Livewire\Admin\Personas\ConciliarPersonas;
+use App\Livewire\Admin\Personas\Personas;
 use App\Livewire\Admin\Roles;
 use App\Livewire\Admin\Usuarios;
 use Illuminate\Support\Facades\Route;
@@ -21,6 +23,10 @@ Route::group([], function(){
     Route::get('permisos', Permisos::class)->middleware('permission:Lista de permisos')->name('permisos');
 
     Route::get('usuarios', Usuarios::class)->middleware('permission:Lista de usuarios')->name('usuarios');
+
+    Route::get('personas', Personas::class)->middleware('permission:Lista de personas')->name('personas');
+
+    Route::get('conciliar_personas', ConciliarPersonas::class)->middleware('permission:Lista de personas')->name('conciliar_personas');
 
     Route::get('entidades', Entidades::class)->middleware('permission:Lista de entidades')->name('entidades');
 
