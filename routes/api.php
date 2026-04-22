@@ -28,6 +28,8 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::post('revertir_aviso', [RevertirAvisoController::class, 'revertirAviso']);
 
+    Route::post('revertir_rechazo', [RevertirAvisoController::class, 'revertirRechazo']);
+
     Route::post('generar_aviso_pdf', [GenerarAvisoPdfController::class, 'generarPdf']);
 
     Route::post('desvincular_avaluo', [DesvincularAvaluoController::class, 'desvincularAvaluo']);
