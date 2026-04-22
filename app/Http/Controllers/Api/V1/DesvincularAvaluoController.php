@@ -22,7 +22,7 @@ class DesvincularAvaluoController extends Controller
         if($aviso_invalido){
 
             return response()->json([
-                'error' => "El aviso " . $aviso_invalido->año . '-' . $aviso_invalido->folio . '-' . $aviso_invalido->usuario . ' no esta nuevo, no es posible desvincularlo.',
+                'error' => "El aviso " . $aviso_invalido->año . '-' . $aviso_invalido->folio . '-' . $aviso_invalido->usuario . ' no esta nuevo, no es posible desvincularlo, solicite a la notaria reactivar el avalúo.',
             ], 401);
 
         }

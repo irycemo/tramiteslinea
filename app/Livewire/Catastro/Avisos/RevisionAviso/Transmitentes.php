@@ -29,6 +29,28 @@ class Transmitentes extends Component
 
     public $flag_encadenamiento = false;
     public $avisos_misma_escritura;
+    public $actores;
+    public $actor;
+
+    public function updatedActor(){
+
+        $actor = Actor::find($this->actor);
+
+        if($this->aviso->predio->transmitentes()->where('persona_id', $actor->persona_id)->first()){
+
+            $this->dispatch('mostrarMensaje', ['success', "La persona ya es transmitente."]);
+
+            return;
+
+        }
+
+        $transmitente = $actor->replicate();
+
+        $transmitente->tipo = 'transmitente';
+        $transmitente->predio_id = $this->aviso->predio_id;
+        $transmitente->save();
+
+    }
 
     #[On('cargarAviso')]
     public function cargarAviso($id = null){
@@ -66,6 +88,13 @@ class Transmitentes extends Component
         if($this->avisos_misma_escritura->count()){
 
             $this->flag_encadenamiento = true;
+
+            $predios_ids = $this->avisos_misma_escritura->pluck('predio_id');
+
+            $this->actores = Actor::with('persona')
+                                    ->whereIn('predio_id', $predios_ids)
+                                    ->whereIn('tipo', ['transmitente', 'adquiriente'])
+                                    ->get();
 
         }
 

@@ -84,6 +84,18 @@
 
                 @endforeach
 
+                <x-input-select id="actor" wire:model.live="actor" class="w-min mx-auto">
+
+                    <option value="">Seleccione una opción</option>
+
+                    @foreach ($actores as $actor_item)
+
+                        <option value="{{ $actor_item->id }}">{{ $actor_item->persona->nombre }} {{ $actor_item->persona->ap_paterno }} {{ $actor_item->persona->ap_materno }} {{ $actor_item->persona->razon_social }} / {{ $actor_item->persona->tipo }}</option>
+
+                    @endforeach
+
+                </x-input-select>
+
             </div>
 
         @endif
