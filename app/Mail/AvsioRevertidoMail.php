@@ -10,7 +10,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class AvsioRechazadoMail extends Mailable
+class AvsioRevertidoMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -26,7 +26,7 @@ class AvsioRechazadoMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Avsio Rechazado',
+            subject: 'Cancelación de operación',
         );
     }
 
@@ -36,7 +36,7 @@ class AvsioRechazadoMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            markdown: 'emails.avisos.rechazado',
+            markdown: 'emails.avisos.revertido',
             with:[
                 'entidad' => $this->aviso->entidad->nombre(),
                 'aviso' => $this->aviso,
