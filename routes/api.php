@@ -30,6 +30,8 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::post('revertir_rechazo', [RevertirAvisoController::class, 'revertirRechazo']);
 
+    Route::post('revertir_autorizado', [RevertirAvisoController::class, 'revertirAutorizado']);
+
     Route::post('generar_aviso_pdf', [GenerarAvisoPdfController::class, 'generarPdf']);
 
     Route::post('desvincular_avaluo', [DesvincularAvaluoController::class, 'desvincularAvaluo']);
