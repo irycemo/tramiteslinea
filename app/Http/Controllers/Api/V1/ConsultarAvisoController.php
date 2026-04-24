@@ -68,7 +68,7 @@ class ConsultarAvisoController extends Controller
 
         }
 
-        if(!in_array($aviso->estado, ['cerrado', 'autorizado'])){
+        if(! in_array($aviso->estado, ['cerrado', 'autorizado'])){
 
             return response()->json([
                 'error' => "El aviso no esta cerrado ó autorizado.",
@@ -97,7 +97,7 @@ class ConsultarAvisoController extends Controller
 
         }
 
-        if(!in_array($aviso->estado, ['cerrado', 'autorizado'])){
+        if(! in_array($aviso->estado, ['cerrado', 'autorizado'])){
 
             return response()->json([
                 'error' => "El aviso no esta cerrado ó autorizado.",

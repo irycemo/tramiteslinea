@@ -4,101 +4,76 @@
 
         @include('livewire.catastro.avisos.comun.folio-aviso')
 
-        @if(!$flag_encadenamiento)
+        <div class="space-y-2 mb-5 bg-white rounded-lg p-2 shadow-lg">
 
-            <div class="space-y-2 mb-5 bg-white rounded-lg p-2 shadow-lg">
+            <div class="flex-auto text-center mb-3">
 
-                <div class="flex-auto text-center mb-3">
+                <div >
 
-                    <div >
-
-                        <Label class="text-base tracking-widest rounded-xl border-gray-500">Trámite del certificado catastral</Label>
-
-                    </div>
-
-                    <div class="inline-flex">
-
-                        <select class="bg-white rounded-l text-sm border border-r-transparent  focus:ring-0" wire:model="año">
-                            @foreach ($años as $año)
-
-                                <option value="{{ $año }}">{{ $año }}</option>
-
-                            @endforeach
-                        </select>
-
-                        <input type="number" class="bg-white text-sm w-20 focus:ring-0 @error('folio') border-red-500 @enderror" wire:model="folio">
-
-                        <input type="number" class="bg-white text-sm w-20 border-l-0 rounded-r focus:ring-0 @error('usuario') border-red-500 @enderror" wire:model="usuario">
-
-                    </div>
+                    <Label class="text-base tracking-widest rounded-xl border-gray-500">Trámite del certificado catastral</Label>
 
                 </div>
 
-                <div class="mb-2 flex-col sm:flex-row mx-auto mt-5 flex space-y-2 sm:space-y-0 sm:space-x-3 justify-center">
+                <div class="inline-flex">
 
-                    <button
-                        wire:click="buscarCertificado"
-                        wire:loading.attr="disabled"
-                        wire:target="buscarCertificado"
-                        type="button"
-                        class="bg-blue-400 mb-3 hover:shadow-lg text-white font-bold px-4 py-2 rounded text-xs hover:bg-blue-700 focus:outline-none flex items-center justify-center focus:outline-blue-400 focus:outline-offset-2">
+                    <select class="bg-white rounded-l text-sm border border-r-transparent  focus:ring-0" wire:model="año">
+                        @foreach ($años as $año)
 
-                        <img wire:loading wire:target="buscarCertificado" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                            <option value="{{ $año }}">{{ $año }}</option>
 
-                        Consultar certificado
+                        @endforeach
+                    </select>
 
-                    </button>
+                    <input type="number" class="bg-white text-sm w-20 focus:ring-0 @error('folio') border-red-500 @enderror" wire:model="folio">
+
+                    <input type="number" class="bg-white text-sm w-20 border-l-0 rounded-r focus:ring-0 @error('usuario') border-red-500 @enderror" wire:model="usuario">
 
                 </div>
 
             </div>
 
-        @endif
-
-        @if($flag_encadenamiento)
-
-            <div class="mb-2 bg-white rounded-lg p-4 flex justify-center">
+            <div class="mb-2 flex-col sm:flex-row mx-auto mt-5 flex space-y-2 sm:space-y-0 sm:space-x-3 justify-center">
 
                 <button
-                    wire:click="cargarTransmitentesConMismaEscritura"
+                    wire:click="buscarCertificado"
                     wire:loading.attr="disabled"
-                    wire:target="cargarTransmitentesConMismaEscritura"
+                    wire:target="buscarCertificado"
                     type="button"
-                    class="bg-blue-400 hover:shadow-lg text-white font-bold px-4 py-2 rounded text-xs hover:bg-blue-700 focus:outline-none flex items-center justify-center focus:outline-blue-400 focus:outline-offset-2">
+                    class="bg-blue-400 mb-3 hover:shadow-lg text-white font-bold px-4 py-2 rounded text-xs hover:bg-blue-700 focus:outline-none flex items-center justify-center focus:outline-blue-400 focus:outline-offset-2">
 
-                    <img wire:loading wire:target="cargarTransmitentesConMismaEscritura" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                    <img wire:loading wire:target="buscarCertificado" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-                    Cargar transmitentes
+                    Consultar certificado
 
                 </button>
 
             </div>
 
-            <div class="mb-2 bg-white rounded-lg p-4 text-center text-sm">
+        </div>
 
-                <p>Avisos relacionados con el el documento de entrada</p>
+        <div class="mb-2 bg-white rounded-lg p-4 text-center text-sm">
 
-                @foreach ($avisos_misma_escritura as $aviso_item)
+            <p>Avisos relacionados con el el documento de entrada</p>
 
-                    {{ $aviso_item->año }}-{{ $aviso_item->folio }}-{{ $aviso_item->usuario }},
+            @foreach ($avisos_misma_escritura as $aviso_item)
+
+                {{ $aviso_item->año }}-{{ $aviso_item->folio }}-{{ $aviso_item->usuario }},
+
+            @endforeach
+
+            <x-input-select id="actor" wire:model.live="actor" class="w-min mx-auto">
+
+                <option value="">Seleccione una opción</option>
+
+                @foreach ($actores as $actor_item)
+
+                    <option value="{{ $actor_item->id }}">{{ $actor_item->persona->nombre }} {{ $actor_item->persona->ap_paterno }} {{ $actor_item->persona->ap_materno }} {{ $actor_item->persona->razon_social }} / {{ $actor_item->tipo }}</option>
 
                 @endforeach
 
-                <x-input-select id="actor" wire:model.live="actor" class="w-min mx-auto">
+            </x-input-select>
 
-                    <option value="">Seleccione una opción</option>
-
-                    @foreach ($actores as $actor_item)
-
-                        <option value="{{ $actor_item->id }}">{{ $actor_item->persona->nombre }} {{ $actor_item->persona->ap_paterno }} {{ $actor_item->persona->ap_materno }} {{ $actor_item->persona->razon_social }} / {{ $actor_item->tipo }}</option>
-
-                    @endforeach
-
-                </x-input-select>
-
-            </div>
-
-        @endif
+        </div>
 
         <div class="mb-3 bg-white rounded-lg p-3 shadow-lg">
 
