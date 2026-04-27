@@ -51,29 +51,33 @@
 
         </div>
 
-        <div class="mb-2 bg-white rounded-lg p-4 text-center text-sm">
+        @if($flag_encadenamiento)
 
-            <p>Avisos relacionados con el el documento de entrada</p>
+            <div class="mb-2 bg-white rounded-lg p-4 text-center text-sm">
 
-            @foreach ($avisos_misma_escritura as $aviso_item)
+                <p>Avisos relacionados con el el documento de entrada</p>
 
-                {{ $aviso_item->año }}-{{ $aviso_item->folio }}-{{ $aviso_item->usuario }},
+                @foreach ($avisos_misma_escritura as $aviso_item)
 
-            @endforeach
-
-            <x-input-select id="actor" wire:model.live="actor" class="w-min mx-auto">
-
-                <option value="">Seleccione una opción</option>
-
-                @foreach ($actores as $actor_item)
-
-                    <option value="{{ $actor_item->id }}">{{ $actor_item->persona->nombre }} {{ $actor_item->persona->ap_paterno }} {{ $actor_item->persona->ap_materno }} {{ $actor_item->persona->razon_social }} / {{ $actor_item->tipo }}</option>
+                    {{ $aviso_item->año }}-{{ $aviso_item->folio }}-{{ $aviso_item->usuario }},
 
                 @endforeach
 
-            </x-input-select>
+                <x-input-select id="actor" wire:model.live="actor" class="w-min mx-auto">
 
-        </div>
+                    <option value="">Seleccione una opción</option>
+
+                    @foreach ($actores as $actor_item)
+
+                        <option value="{{ $actor_item->id }}">{{ $actor_item->persona->nombre }} {{ $actor_item->persona->ap_paterno }} {{ $actor_item->persona->ap_materno }} {{ $actor_item->persona->razon_social }} / {{ $actor_item->tipo }}</option>
+
+                    @endforeach
+
+                </x-input-select>
+
+            </div>
+
+        @endif
 
         <div class="mb-3 bg-white rounded-lg p-3 shadow-lg">
 
