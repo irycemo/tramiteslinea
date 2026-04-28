@@ -535,7 +535,7 @@ class SGCService {
 
     }
 
-    public function crearTramite(string $tipo_servicio, int $servicio_id, string $solicitante, string $nombre_solicitante, int $monto, int $cantidad, int $usuario_tramites_linea_id, array $predios):array
+    public function crearTramite(string $tipo_servicio, int $servicio_id, string $solicitante, string $nombre_solicitante, int $monto, int $cantidad, int $usuario_tramites_linea_id, array $predios, int $oficina):array
     {
 
         $response = Http::withToken(config('services.sgc.token'))
@@ -551,7 +551,8 @@ class SGCService {
                                     'monto' => $monto,
                                     'cantidad' => $cantidad,
                                     'usuario_tramites_linea_id' => $usuario_tramites_linea_id,
-                                    'predios' => $predios
+                                    'predios' => $predios,
+                                    'oficina' => $oficina
                                 ]
                             );
 

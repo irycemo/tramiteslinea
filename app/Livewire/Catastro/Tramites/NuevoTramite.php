@@ -127,7 +127,7 @@ class NuevoTramite extends Component
 
             $this->total = round((float)$this->servicioSeleccionado[$this->tipo_servicio] * count($this->predios));
 
-            $this->reset(['localidad', 'oficina', 'registro']);
+            $this->reset(['localidad', 'registro']);
 
         } catch (GeneralException $ex) {
 
@@ -173,7 +173,8 @@ class NuevoTramite extends Component
                                                                 $this->total,
                                                                 count($this->predios),
                                                                 auth()->user()->entidad_id,
-                                                                $this->predios
+                                                                $this->predios,
+                                                                $this->oficina
                                                             );
 
             $this->dispatch('mostrarMensaje', ['success', 'Trámite ' . $this->tramite['año'] . '-' . $this->tramite['folio'] . '-' . $this->tramite['usuario'] . ' se registró con éxito']);
