@@ -26,6 +26,8 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::post('rechazar_aviso', [RechazarAvisoController::class, 'rechazarAviso']);
 
+    Route::post('reactivar_aviso', [RevertirAvisoController::class, 'reactivartirAviso']);
+
     Route::post('revertir_aviso', [RevertirAvisoController::class, 'revertirAviso']);
 
     Route::post('revertir_rechazo', [RevertirAvisoController::class, 'revertirRechazo']);

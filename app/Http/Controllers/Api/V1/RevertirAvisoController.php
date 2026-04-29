@@ -14,6 +14,40 @@ use Illuminate\Support\Facades\Mail;
 class RevertirAvisoController extends Controller
 {
 
+    public function reactivartirAviso(Request $request){
+
+        $validated = $request->validate(['id' => 'required|numeric|min:1', 'observaciones' => 'nullable|string']);
+
+        $aviso = Aviso::with('predio')->find($validated['id']);
+
+        if(!$aviso){
+
+            return response()->json([
+                'error' => "El aviso no existe.",
+            ], 404);
+
+        }
+
+        try {
+
+            $aviso->update(['estado' => 'nuevo']);
+
+            return response()->json([
+                'data' => "El aviso cambio a nuevo con éxito.",
+            ], 200);
+
+        } catch (\Throwable $th) {
+
+            Log::error("Error al reactivar aviso. " . $th);
+
+            return response()->json([
+                'error' => "Error al reactivar el aviso.",
+            ], 500);
+
+        }
+
+    }
+
     public function revertirAviso(Request $request){
 
         $validated = $request->validate(['id' => 'required|numeric|min:1', 'observaciones' => 'nullable|string']);
