@@ -71,7 +71,8 @@ class Transmitentes extends Component
 
         }
 
-        $this->avisos_misma_escritura = Aviso::where('tipo_escritura', $this->aviso->tipo_escritura)
+        $this->avisos_misma_escritura = Aviso::where('tipo', 'revision')
+                                        ->where('tipo_escritura', $this->aviso->tipo_escritura)
                                         ->where('numero_escritura', $this->aviso->numero_escritura)
                                         ->where('volumen_escritura', $this->aviso->volumen_escritura)
                                         ->where('predio_sgc', $this->aviso->predio_sgc)
@@ -103,6 +104,7 @@ class Transmitentes extends Component
     public function cargarTransmitentesConMismaEscritura(){
 
         $avisos_misma_escritura = Aviso::with('predio')
+                                        ->where('tipo', 'revision')
                                         ->where('tipo_escritura', $this->aviso->tipo_escritura)
                                         ->where('numero_escritura', $this->aviso->numero_escritura)
                                         ->where('volumen_escritura', $this->aviso->volumen_escritura)

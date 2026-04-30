@@ -74,7 +74,7 @@
 
                             @else
 
-                                <span class="bg-blue-400 py-1 px-2 rounded-full text-white text-xs">Nuevo</span>
+                                <span class="bg-blue-400 py-1 px-2 rounded-full text-white text-xs">{{ ucfirst($certificado['estado']) }}</span>
 
                             @endif
 
