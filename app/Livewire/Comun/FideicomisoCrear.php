@@ -201,7 +201,7 @@ class FideicomisoCrear extends Component
 
         }elseif($this->sub_tipo == 'FIDEICOMISARIO'){
 
-            $actor = $this->modelo->actores()->where('persona_id', $personaId)->whereIn('tipo', ['FIDUCIARIA', 'FIDEICOMITENTE'])->first();
+            $actor = $this->modelo->actores()->where('persona_id', $personaId)->whereIn('tipo', ['FIDEICOMITENTE'])->first();
 
             if($actor) throw new GeneralException('La persona ya es un actor.');
 
