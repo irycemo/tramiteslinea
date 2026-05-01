@@ -31,6 +31,10 @@ class Revisiones extends Component
         'año' => '',
         'folio' => '',
         'usuario' => '',
+        'localidad' => '',
+        'oficina' => '',
+        'tipo_predio' => '',
+        'numero_registro' => ''
     ];
 
     public Aviso $modelo_editar;
@@ -244,6 +248,26 @@ class Revisiones extends Component
                         ->when($this->filters['año'], fn($q, $año) => $q->where('año', $año))
                         ->when($this->filters['folio'], fn($q, $folio) => $q->where('folio', $folio))
                         ->when($this->filters['usuario'], fn($q, $usuario) => $q->where('usuario', $usuario))
+                        ->when(! empty($this->filters['localidad']), function($q){
+                            $q->WhereHas('predio', function($q){
+                                $q->where('localidad', $this->filters['localidad']);
+                            });
+                        })
+                        ->when(! empty($this->filters['p_oficina']), function($q){
+                            $q->WhereHas('predio', function($q){
+                                $q->where('oficina', $this->filters['p_oficina']);
+                            });
+                        })
+                        ->when(! empty($this->filters['t_predio']), function($q){
+                            $q->WhereHas('predio', function($q){
+                                $q->where('tipo_predio', $this->filters['t_predio']);
+                            });
+                        })
+                        ->when(! empty($this->filters['registro']), function($q){
+                            $q->WhereHas('predio', function($q){
+                                $q->where('numero_registro', $this->filters['registro']);
+                            });
+                        })
                         ->where('entidad_id', auth()->user()->entidad_id)
                         ->where('tipo', 'revision')
                         ->orderBy($this->sort, $this->direction)
@@ -255,4 +279,5 @@ class Revisiones extends Component
     {
         return view('livewire.catastro.avisos.revision-aviso.revisiones')->extends('layouts.admin');
     }
+
 }
