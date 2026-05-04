@@ -23,10 +23,18 @@ trait BuscarPersonaTrait
         }else{
 
             $persona = Persona::query()
-                            ->where('nombre', trim($nombre))
-                            ->where('ap_paterno', trim($ap_paterno))
-                            ->where('ap_materno', trim($ap_materno))
-                            ->where('razon_social', trim($razon_social))
+                            ->when($nombre, function($q)use ($nombre){
+                                $q->where('nombre', trim($nombre));
+                            })
+                            ->when($ap_paterno, function($q) use ($ap_paterno){
+                                $q->where('ap_paterno', trim($ap_paterno));
+                            })
+                            ->when($ap_materno, function($q) use ($ap_materno){
+                                $q->where('ap_materno', trim($ap_materno));
+                            })
+                            ->when($razon_social, function($q) use ($razon_social){
+                                $q->where('razon_social', trim($razon_social));
+                            })
                             ->first();
 
         }
