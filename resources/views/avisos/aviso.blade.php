@@ -164,7 +164,7 @@
     <main>
 
         <div>
-
+            <p class="titulo">dirección de catastro</p>
             <p class="titulo">Aviso de modificación de inmuebles</p>
 
             @if($aviso->entidad->dependencia === 'Secretaría de gobernación')
