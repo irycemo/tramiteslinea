@@ -12,6 +12,7 @@
                 <th style="padding-right: 10px;">registro</th>
                 <th style="padding-right: 10px;">sección</th>
                 <th style="padding-right: 10px;">distrito</th>
+                <th style="padding-right: 10px;">acto</th>
             </tr>
 
         </thead>
@@ -35,6 +36,9 @@
                     </td>
                     <td style="padding-right: 40px;">
                         <p style="margin:0">{{ $antecedente->distrito ?? 'N/A' }}</p>
+                    </td>
+                    <td style="padding-right: 40px;">
+                        <p style="margin:0">{{ $antecedente->acto ?? 'N/A' }}</p>
                     </td>
                 </tr>
 
