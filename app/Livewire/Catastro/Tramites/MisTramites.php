@@ -80,6 +80,25 @@ class MisTramites extends Component
 
     }
 
+    public function validarPago($tramite){
+
+        try {
+
+            (new SGCService())->acreditarPago($tramite['linea_de_captura']);
+
+        } catch (GeneralException $ex) {
+
+            $this->dispatch('mostrarMensaje', ['warning', $ex->getMessage()]);
+
+        } catch (\Throwable $th) {
+
+            Log::error("Error validar pago por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+            $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
+
+        }
+
+    }
+
     public function mount(){
 
         if(auth()->user()->hasRole('Administrador')){
