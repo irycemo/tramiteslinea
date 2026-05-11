@@ -49,8 +49,30 @@ class NuevoTramite extends Component
     public function rules(){
 
         return [
-            'folio_real' => Rule::requiredIf($this->servicioSeleccionado['clave_ingreso'] === 'DL07'),
+            'folio_real' => Rule::requiredIf(
+                                $this->servicioSeleccionado['clave_ingreso'] === 'DL07' &&
+                                $this->distrito === null &&
+                                $this->tomo === null &&
+                                $this->registro === null &&
+                                $this->numero_propiedad === null
+                            ),
+            'tomo' => Rule::requiredIf($this->folio_real == null),
+            'distrito' => Rule::requiredIf($this->folio_real == null),
+            'registro' => Rule::requiredIf($this->folio_real == null),
+            'numero_propiedad' => Rule::requiredIf($this->folio_real == null),
         ];
+
+    }
+
+    public function updatedFolioReal(){
+
+        if($this->folio_real == ''){
+
+            $this->folio_real = null;
+
+        }
+
+        $this->reset(['predio', 'tomo', 'registro', 'numero_propiedad', 'distrito', 'tramite']);
 
     }
 
@@ -58,7 +80,7 @@ class NuevoTramite extends Component
 
         if($this->tomo == ''){
 
-            $this->reset('predio');
+            $this->reset(['predio', 'folio_real']);
 
         }
 
@@ -70,7 +92,7 @@ class NuevoTramite extends Component
 
         if($this->distrito == ''){
 
-            $this->reset('predio');
+            $this->reset(['predio', 'folio_real']);
 
         }
 
@@ -82,7 +104,7 @@ class NuevoTramite extends Component
 
         if($this->registro == ''){
 
-            $this->reset('predio');
+            $this->reset(['predio', 'folio_real']);
 
         }
 
@@ -94,7 +116,7 @@ class NuevoTramite extends Component
 
         if($this->numero_propiedad == ''){
 
-            $this->reset('predio');
+            $this->reset(['predio', 'folio_real']);
 
             return;
 
@@ -123,18 +145,6 @@ class NuevoTramite extends Component
     public function resetearTodo(){
 
         $this->reset(['folio_real', 'tomo', 'registro', 'numero_propiedad', 'total', 'predio', 'antecedentes', 'tramite']);
-
-    }
-
-    public function updatedFolioReal(){
-
-        if($this->folio_real == ''){
-
-            $this->folio_real = null;
-
-        }
-
-        $this->reset(['predio', 'tomo', 'registro', 'numero_propiedad', 'distrito', 'tramite']);
 
     }
 
@@ -199,7 +209,7 @@ class NuevoTramite extends Component
 
         if(auth()->user()->hasRole('Administrador')){
 
-            $this->dispatch('mostrarMensaje', ['warning', 'Los administradores no pueden generar traámites.']);
+            $this->dispatch('mostrarMensaje', ['warning', 'Los administradores no pueden generar trámites.']);
 
             return;
 
@@ -345,4 +355,5 @@ class NuevoTramite extends Component
     {
         return view('livewire.rpp.tramites.nuevo-tramite')->extends('layouts.admin');
     }
+
 }
