@@ -158,7 +158,7 @@
                                         Ver trámite
                                     </button>
 
-                                    @if($tramite['estado'] == 'nuevo')
+                                    @if(in_array($tramite['estado'], ['nuevo', 'expirado']))
 
                                         <button
                                             wire:click="genererOrdenPago({{ json_encode($tramite) }})"
