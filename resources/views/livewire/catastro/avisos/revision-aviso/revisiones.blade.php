@@ -30,6 +30,16 @@
 
                 <input type="number" wire:model.live.debounce.500ms="filters.registro" placeholder="# Registro" class="bg-white rounded-full text-sm w-24">
 
+                <select class="bg-white rounded-full text-sm" wire:model.live="filters.estado">
+
+                    <option value="nuevo">Nuevo</option>
+                    <option value="cerrado">Cerrado</option>
+                    <option value="autorizado">Autorizado</option>
+                    <option value="operado">Operado</option>
+                    <option value="rechazado">Rechazado</option>
+
+                </select>
+
                 <select class="bg-white rounded-full text-sm" wire:model.live="pagination">
 
                     <option value="10">10</option>

@@ -6,7 +6,6 @@ use App\Models\Aviso;
 use Livewire\Component;
 use App\Services\SGCService;
 use App\Services\SrppService;
-use Illuminate\Support\Facades\Cache;
 
 class DashboardEntidad extends Component
 {
@@ -28,17 +27,17 @@ class DashboardEntidad extends Component
 
     public function mount(){
 
-        $this->acalaratorios_nuevos = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'aclaratorio')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'nuevo')->where('created_at', '>', now()->startOfMonth())->count();
-        $this->acalaratorios_cerrados = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'aclaratorio')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'cerrado')->where('created_at', '>', now()->startOfMonth())->count();
-        $this->acalaratorios_operados = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'aclaratorio')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'operado')->where('created_at', '>', now()->startOfMonth())->count();
-        $this->acalaratorios_autorizados = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'aclaratorio')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'autorizado')->where('created_at', '>', now()->startOfMonth())->count();
-        $this->acalaratorios_rechazados = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'aclaratorio')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'rechazado')->where('created_at', '>', now()->startOfMonth())->count();
+        $this->acalaratorios_nuevos = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'aclaratorio')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'nuevo')->count();
+        $this->acalaratorios_cerrados = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'aclaratorio')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'cerrado')->count();
+        $this->acalaratorios_operados = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'aclaratorio')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'operado')->count();
+        $this->acalaratorios_autorizados = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'aclaratorio')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'autorizado')->count();
+        $this->acalaratorios_rechazados = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'aclaratorio')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'rechazado')->count();
 
-        $this->revisiones_nuevas = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'revision')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'nuevo')->where('created_at', '>', now()->startOfMonth())->count();
-        $this->revisiones_cerradas = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'revision')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'cerrado')->where('created_at', '>', now()->startOfMonth())->count();
-        $this->revisiones_operadas = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'revision')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'operado')->where('created_at', '>', now()->startOfMonth())->count();
-        $this->revisiones_autorizadas = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'revision')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'autorizado')->where('created_at', '>', now()->startOfMonth())->count();
-        $this->revisiones_rechazadas = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'revision')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'rechazado')->where('created_at', '>', now()->startOfMonth())->count();
+        $this->revisiones_nuevas = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'revision')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'nuevo')->count();
+        $this->revisiones_cerradas = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'revision')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'cerrado')->count();
+        $this->revisiones_operadas = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'revision')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'operado')->count();
+        $this->revisiones_autorizadas = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'revision')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'autorizado')->count();
+        $this->revisiones_rechazadas = Aviso::select('id', 'tipo', 'esatado', 'entidad_id', 'created_at')->where('tipo', 'revision')->where('entidad_id', auth()->user()->entidad_id)->where('estado', 'rechazado')->count();
 
         $this->certificados_catastrales = (new SGCService())->consultarEstadisticas(auth()->user()->entidad_id);
 

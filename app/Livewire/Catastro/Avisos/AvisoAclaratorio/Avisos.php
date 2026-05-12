@@ -33,7 +33,8 @@ class Avisos extends Component
         'localidad' => '',
         'oficina' => '',
         'tipo_predio' => '',
-        'numero_registro' => ''
+        'numero_registro' => '',
+        'estado' => ''
     ];
 
     public Aviso $modelo_editar;
@@ -138,6 +139,8 @@ class Avisos extends Component
 
         $this->filters['año'] = now()->format('Y');
 
+        $this->filters['estado'] = request()->query('estado');
+
     }
 
     #[Computed]
@@ -148,6 +151,7 @@ class Avisos extends Component
                         ->when($this->filters['año'], fn($q, $año) => $q->where('año', $año))
                         ->when($this->filters['folio'], fn($q, $folio) => $q->where('folio', $folio))
                         ->when($this->filters['usuario'], fn($q, $usuario) => $q->where('usuario', $usuario))
+                        ->when($this->filters['estado'], fn($q, $estado) => $q->where('estado', $estado))
                         ->when(! empty($this->filters['localidad']), function($q){
                             $q->WhereHas('predio', function($q){
                                 $q->where('localidad', $this->filters['localidad']);
