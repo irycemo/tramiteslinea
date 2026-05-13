@@ -32,6 +32,20 @@ class Transmitentes extends Component
     public $actores;
     public $actor;
 
+    public $fecha_nacimiento;
+    public $nacionalidad;
+    public $estado_civil;
+    public $calle;
+    public $numero_exterior;
+    public $numero_interior;
+    public $colonia;
+    public $cp;
+    public $entidad;
+    public $ciudad;
+    public $municipio;
+
+    public $modal = false;
+
     public function updatedActor(){
 
         $actor = Actor::find($this->actor);
@@ -97,6 +111,55 @@ class Transmitentes extends Component
                                     ->whereIn('tipo', ['transmitente', 'adquiriente'])
                                     ->get();
 
+        }
+
+    }
+
+    public function abrirModalEditar(Actor $actor){
+
+        $this->actor = $actor;
+
+        $this->fecha_nacimiento = $this->actor->persona->fecha_nacimiento;
+        $this->nacionalidad = $this->actor->persona->nacionalidad;
+        $this->estado_civil = $this->actor->persona->estado_civil;
+        $this->calle = $this->actor->persona->calle;
+        $this->numero_exterior = $this->actor->persona->numero_exterior;
+        $this->numero_interior = $this->actor->persona->numero_interior;
+        $this->colonia = $this->actor->persona->colonia;
+        $this->cp = $this->actor->persona->cp;
+        $this->entidad = $this->actor->persona->entidad;
+        $this->ciudad = $this->actor->persona->ciudad;
+        $this->municipio = $this->actor->persona->municipio;
+
+        $this->modal = true;
+
+    }
+
+    public function actualizarTransmitente(){
+
+        try {
+
+            $this->actor->persona->update([
+                'fecha_nacimiento' => $this->fecha_nacimiento,
+                'nacionalidad' => $this->nacionalidad,
+                'estado_civil' => $this->estado_civil,
+                'calle' => $this->calle,
+                'numero_exterior' => $this->numero_exterior,
+                'numero_interior' => $this->numero_interior,
+                'colonia' => $this->colonia,
+                'cp' => $this->cp,
+                'entidad' => $this->entidad,
+                'ciudad' => $this->ciudad,
+                'municipio' => $this->municipio,
+            ]);
+
+            $this->modal = false;
+
+            $this->dispatch('mostrarMensaje', ['success', "La información se actualizó con éxito."]);
+
+        } catch (\Throwable $th) {
+            Log::error("Error al actualizar generales de trasnmitente en revision de aviso por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+            $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
         }
 
     }
