@@ -16,9 +16,7 @@ class AvisoApiResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'año' => $this->año,
-            'folio' => $this->folio,
-            'usuario' => $this->usuario,
+            'folio' => $this->año . '-' . $this->folio . '-' . $this->usuario,
             'acto' => $this->acto,
             'fecha_ejecutoria' => $this->fecha_ejecutoria,
             'tipo_escritura' => $this->tipo_escritura,
