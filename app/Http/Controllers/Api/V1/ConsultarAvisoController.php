@@ -19,7 +19,8 @@ class ConsultarAvisoController extends Controller
 
         $avisos = Aviso::with(
                                 'predio.colindancias',
-                                'entidad',
+                                'entidad.notarioTitular',
+                                'entidad.notarioAdscrito',
                                 'archivo'
                         )
                         ->where('estado', 'operado')
@@ -31,6 +32,14 @@ class ConsultarAvisoController extends Controller
                         })
                         ->get();
 
+        if(! $avisos->count()){
+
+            return response()->json([
+                'error' => 'No se encontraron avisos.',
+            ], 404);
+
+        }
+
         return AvisoApiResource::collection($avisos)->response()->setStatusCode(200);
 
     }
@@ -41,14 +50,23 @@ class ConsultarAvisoController extends Controller
 
         $aviso = Aviso::with(
                                 'predio.colindancias',
-                                'entidad',
+                                'entidad.notarioTitular',
+                                'entidad.notarioAdscrito',
                                 'archivo'
                         )
                         ->where('estado', 'operado')
                         ->where('año', $validated['año'])
                         ->where('folio', $validated['folio'])
-                        ->where('folio', $validated['folio'])
+                        ->where('usuario', $validated['usuario'])
                         ->first();
+
+        if(! $aviso){
+
+            return response()->json([
+                'error' => 'No se encontró el aviso.',
+            ], 404);
+
+        }
 
         return (new AvisoApiResource($aviso))->response()->setStatusCode(200);
 

@@ -46,7 +46,7 @@ class AvisoApiResource extends JsonResource
             'entidad' => $this->entidad->nombre(),
             'titular' => $this->entidad->titular(),
             'predio'=> new PredioResource($this->predio),
-            'archivo' => Storage::disk('avisos')->url($this->archivo->url)
+            'archivo' => $this->archivoUrl()
 
         ];
     }

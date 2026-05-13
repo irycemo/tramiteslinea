@@ -2,12 +2,13 @@
 
 namespace App\Models;
 
+use App\Models\Antecedente;
+use App\Models\Entidad;
 use App\Models\File;
 use App\Models\Predio;
-use App\Models\Entidad;
-use App\Models\Antecedente;
 use App\Traits\ModelosTrait;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 use OwenIt\Auditing\Contracts\Auditable;
 
 class Aviso extends Model implements Auditable
@@ -42,6 +43,12 @@ class Aviso extends Model implements Auditable
 
     public function archivo(){
         return $this->morphOne(File::class, 'fileable')->where('descripcion', 'archivo');
+    }
+
+    public function archivoUrl(){
+        return $this->archivo ?
+                Storage::disk('avisos')->url($this->archivo->url)
+                : null;
     }
 
     public function croquis(){
