@@ -192,102 +192,98 @@
 
     @endif
 
-    <div>
+    <x-dialog-modal wire:model="modal">
 
-        <x-dialog-modal wire:model="modal">
+        <x-slot name="title">Actualizar generales</x-slot>
 
-            <x-slot name="title">Actualizar generales</x-slot>
+        <x-slot name="content">
 
-            <x-slot name="content">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-3 col-span-2 rounded-lg p-3">
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-3 col-span-2 rounded-lg p-3">
+                <x-input-group for="nacionalidad" label="Nacionalidad" :error="$errors->first('nacionalidad')" class="w-full">
 
-                    <x-input-group for="nacionalidad" label="Nacionalidad" :error="$errors->first('nacionalidad')" class="w-full">
+                    <x-input-text id="nacionalidad" wire:model="nacionalidad" />
 
-                        <x-input-text id="nacionalidad" wire:model="nacionalidad" />
+                </x-input-group>
 
-                    </x-input-group>
+                <x-input-group for="cp" label="Código postal" :error="$errors->first('cp')" class="w-full">
 
-                    <x-input-group for="cp" label="Código postal" :error="$errors->first('cp')" class="w-full">
+                    <x-input-text type="number" id="cp" wire:model="cp" />
 
-                        <x-input-text type="number" id="cp" wire:model="cp" />
+                </x-input-group>
 
-                    </x-input-group>
+                <x-input-group for="entidad" label="Estado" :error="$errors->first('entidad')" class="w-full">
 
-                    <x-input-group for="entidad" label="Estado" :error="$errors->first('entidad')" class="w-full">
+                    <x-input-text id="entidad" wire:model="entidad" />
 
-                        <x-input-text id="entidad" wire:model="entidad" />
+                </x-input-group>
 
-                    </x-input-group>
+                <x-input-group for="municipio" label="Municipio" :error="$errors->first('municipio')" class="w-full">
 
-                    <x-input-group for="municipio" label="Municipio" :error="$errors->first('municipio')" class="w-full">
+                    <x-input-text id="municipio" wire:model="municipio" />
 
-                        <x-input-text id="municipio" wire:model="municipio" />
+                </x-input-group>
 
-                    </x-input-group>
+                <x-input-group for="ciudad" label="Ciudad" :error="$errors->first('ciudad')" class="w-full">
 
-                    <x-input-group for="ciudad" label="Ciudad" :error="$errors->first('ciudad')" class="w-full">
+                    <x-input-text id="ciudad" wire:model="ciudad" />
 
-                        <x-input-text id="ciudad" wire:model="ciudad" />
+                </x-input-group>
 
-                    </x-input-group>
+                <x-input-group for="colonia" label="Colonia" :error="$errors->first('colonia')" class="w-full">
 
-                    <x-input-group for="colonia" label="Colonia" :error="$errors->first('colonia')" class="w-full">
+                    <x-input-text id="colonia" wire:model="colonia" />
 
-                        <x-input-text id="colonia" wire:model="colonia" />
+                </x-input-group>
 
-                    </x-input-group>
+                <x-input-group for="calle" label="Calle" :error="$errors->first('calle')" class="w-full">
 
-                    <x-input-group for="calle" label="Calle" :error="$errors->first('calle')" class="w-full">
+                    <x-input-text id="calle" wire:model="calle" />
 
-                        <x-input-text id="calle" wire:model="calle" />
+                </x-input-group>
 
-                    </x-input-group>
+                <x-input-group for="numero_exterior" label="Número exterior" :error="$errors->first('numero_exterior')" class="w-full">
 
-                    <x-input-group for="numero_exterior" label="Número exterior" :error="$errors->first('numero_exterior')" class="w-full">
+                    <x-input-text id="numero_exterior" wire:model="numero_exterior" />
 
-                        <x-input-text id="numero_exterior" wire:model="numero_exterior" />
+                </x-input-group>
 
-                    </x-input-group>
+                <x-input-group for="numero_interior" label="Número interior" :error="$errors->first('numero_interior')" class="w-full">
 
-                    <x-input-group for="numero_interior" label="Número interior" :error="$errors->first('numero_interior')" class="w-full">
+                    <x-input-text id="numero_interior" wire:model="numero_interior" />
 
-                        <x-input-text id="numero_interior" wire:model="numero_interior" />
+                </x-input-group>
 
-                    </x-input-group>
+            </div>
 
-                </div>
+        </x-slot>
 
-            </x-slot>
+        <x-slot name="footer">
 
-            <x-slot name="footer">
+            <div class="flex gap-3 justify-end">
 
-                <div class="flex gap-3 justify-end">
+                <x-button-green
+                    wire:click="actualizarTransmitente"
+                    wire:loading.attr="disabled"
+                    wire:target="actualizarTransmitente">
 
-                    <x-button-green
-                        wire:click="actualizarTransmitente"
-                        wire:loading.attr="disabled"
-                        wire:target="actualizarTransmitente">
+                    <img wire:loading wire:target="actualizarTransmitente" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-                        <img wire:loading wire:target="actualizarTransmitente" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                    <span>Actualizar</span>
+                </x-button-green>
 
-                        <span>Actualizar</span>
-                    </x-button-green>
+                <x-button-red
+                    wire:click="$toggle('modal')"
+                    wire:loading.attr="disabled"
+                    wire:target="$toggle('modal')"
+                    type="button">
+                    Cerrar
+                </x-button-red>
 
-                    <x-button-red
-                        wire:click="$toggle('modal')"
-                        wire:loading.attr="disabled"
-                        wire:target="$toggle('modal')"
-                        type="button">
-                        Cerrar
-                    </x-button-red>
+            </div>
 
-                </div>
+        </x-slot>
 
-            </x-slot>
-
-        </x-dialog-modal>
-
-    </div>
+    </x-dialog-modal>
 
 </div>
