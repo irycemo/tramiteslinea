@@ -126,4 +126,35 @@ class STramtiesService {
 
     }
 
+    public function acreditarPago(string $linea_captura):void
+    {
+
+        $response = Http::withToken(config('services.sistema_tramites.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.sistema_tramites.acreditar_pago'),
+                                [
+                                    'linea_captura' => $linea_captura,
+                                ]
+                            );
+
+        if($response->status() !== 200){
+
+            Log::info("Error al acreditar pago. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al acreditar pago, comuniquese al departamento de sistemas, tenga su comprobante de pago listo.");
+
+        }
+
+    }
+
 }
