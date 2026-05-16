@@ -427,6 +427,8 @@ class ActoEscritura extends Component
 
             $this->aviso->audits()->latest()->first()->update(['tags' => 'Guardó acto de escritura']);
 
+            (new PeritosExternosService())->asociarAvaluo($this->aviso->avaluo_spe, $this->aviso->entidad->nombre());
+
             $this->dispatch('cargarAviso', $this->aviso->id);
 
             $this->dispatch('mostrarMensaje', ['success', "El aviso se guardó correctamente."]);

@@ -41,6 +41,7 @@ return [
         'consultar_avaluo' => env('SISTEMA_PERITOS_EXTERNOS_CONSULTAR_AVALUO'),
         'reactivar_avaluo' => env('SISTEMA_PERITOS_EXTERNOS_REACTIVAR_AVALUO'),
         'generar_avaluo_pdf' => env('SISTEMA_PERITOS_EXTERNOS_GENERAR_AVALUO_PDF'),
+        'asociar_aviso' => env('SISTEMA_PERITOS_EXTERNOS_ASOCIAR_AVISO'),
     ],
 
     'sgc' => [

@@ -115,4 +115,40 @@ class PeritosExternosService{
 
     }
 
+    public function asociarAvaluo(int $avaluo_id, string $entidad):array
+    {
+
+        $response = Http::withToken(config('services.peritos_externos.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.peritos_externos.asociar_aviso'),
+                                [
+                                    'avaluo_id' => $avaluo_id,
+                                    'entidad' => $entidad,
+                                ]
+                            );
+
+        if($response->status() !== 200){
+
+            Log::error("Error al asociar aviso en avalúo. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al asociar aviso en avalúo.");
+
+        }else{
+
+            return json_decode($response, true);
+
+        }
+
+    }
+
 }
