@@ -74,6 +74,7 @@ return [
         'crear_requerimiento_oficina' => env('SGC_CREAR_REQUERIMIENTO_OFICINA'),
         'generar_certificado_pdf' => env('SGC_GENERAR_CERTIFICADO_PDF'),
         'acreditar_pago' => env('SGC_ACREDITAR_PAGO'),
+        'cambiar_estado_traslado' => env('SGC_CAMBIAR_ESTADO_TRASLADO'),
     ],
 
     'sap' => [

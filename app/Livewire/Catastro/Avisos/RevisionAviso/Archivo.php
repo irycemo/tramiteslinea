@@ -173,9 +173,17 @@ class Archivo extends Component
 
         $avisos = Aviso::where('tramite_sgc', $id)->where('id', '!=', $this->aviso->id)->where('predio_sgc', $this->aviso->predio_sgc)->get();
 
-        if($avisos->count()){
+        foreach ($avisos as $aviso) {
 
-            throw new GeneralException("El trámite del aviso ya esta asociado a otro aviso con diferente escritura.");
+            if(
+                $aviso->tipo_escritura != $this->aviso->tipo_escritura ||
+                $aviso->numero_escritura != $this->aviso->numero_escritura ||
+                $aviso->volumen_escritura != $this->aviso->volumen_escritura
+            ){
+
+                throw new GeneralException("El trámite del aviso ya esta asociado a otro aviso con diferente escritura.");
+
+            }
 
         }
 

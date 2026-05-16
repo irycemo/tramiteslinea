@@ -1023,4 +1023,40 @@ class SGCService {
 
     }
 
+    public function cambiarEstadoTraslado(string $estado, int $aviso_id):array
+    {
+
+        $response = Http::withToken(config('services.sgc.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.sgc.acreditar_pago'),
+                                [
+                                    'estado' => $estado,
+                                    'aviso_stl' => $aviso_id
+                                ]
+                            );
+
+        if($response->status() !== 200){
+
+            Log::error("Error al cambiar estado de traslado. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al cambiar estado de traslado.");
+
+        }else{
+
+            return json_decode($response, true)['data'];
+
+        }
+
+    }
+
 }

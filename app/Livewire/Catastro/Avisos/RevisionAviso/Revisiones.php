@@ -88,10 +88,23 @@ class Revisiones extends Component
 
             (new PeritosExternosService())->reactivarAvaluo($this->modelo_editar->avaluo_spe);
 
-            $this->modelo_editar->update([
-                                            'avaluo_spe' => null,
-                                            'actualizado_por' => auth()->id()
-                                        ]);
+            $avisos = Aviso::where('avaluo_spe', $this->modelo_editar->avaluo_spe)->get();
+
+            foreach ($avisos as $aviso) {
+
+                if($aviso->traslado_sgc){
+
+                    (new SGCService())->inactivarTraslado($this->modelo_editar->traslado_sgc);
+
+                }
+
+                $aviso->update([
+                    'estado' => 'nuevo',
+                    'avaluo_spe' => null,
+                    'actualizado_por' => auth()->id()
+                ]);
+
+            }
 
             $this->dispatch('mostrarMensaje', ['success', 'El avalúo ha sido reactivado.']);
 
@@ -148,15 +161,27 @@ class Revisiones extends Component
 
         try {
 
-            (new SGCService())->inactivarTraslado($this->modelo_editar->traslado_sgc);
+            if($this->modelo_editar->estado == 'operado') throw new GeneralException('El aviso esta operado no es posible reactivarlo.');
 
             (new PeritosExternosService())->reactivarAvaluo($this->modelo_editar->avaluo_spe);
 
-            $this->modelo_editar->update([
-                                            'avaluo_spe' => null,
-                                            'estado' => 'nuevo',
-                                            'actualizado_por' => auth()->id()
-                                        ]);
+            $avisos = Aviso::where('avaluo_spe', $this->modelo_editar->avaluo_spe)->get();
+
+            foreach ($avisos as $aviso) {
+
+                if($aviso->traslado_sgc){
+
+                    (new SGCService())->inactivarTraslado($aviso->traslado_sgc);
+
+                }
+
+                $aviso->update([
+                    'estado' => 'nuevo',
+                    'avaluo_spe' => null,
+                    'actualizado_por' => auth()->id()
+                ]);
+
+            }
 
             $this->modelo_editar->audits()->latest()->first()->update(['tags' => 'Reactivó aviso y avalúo']);
 
