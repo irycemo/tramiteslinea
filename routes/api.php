@@ -18,6 +18,8 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::post('consultar_aviso', [ConsultarAvisoController::class, 'consultarAviso']);
 
+    Route::post('consultar_aviso_2', [ConsultarAvisoController::class, 'consultarAviso2']);
+
     Route::post('consultar_aviso_con_folio', [ConsultarAvisoController::class, 'consultarAvisoConFolio']);
 
     Route::post('autorizar_aviso', [AutorizarAvisoController::class, 'autorizarAviso']);

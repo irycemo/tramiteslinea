@@ -131,4 +131,14 @@ class ConsultarAvisoController extends Controller
 
     }
 
+    public function consultarAviso2(Request $request){
+
+        $validated = $request->validate(['id' => 'required|numeric|min:1']);
+
+        $aviso = Aviso::with('predio')->find($validated['id']);
+
+        return (new AvisoResource($aviso))->response()->setStatusCode(200);
+
+    }
+
 }

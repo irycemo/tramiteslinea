@@ -47,6 +47,8 @@ class AvisoResource extends JsonResource
             'valor_base' => $this->valor_base,
             'valor_isai' => $this->valor_isai,
             'anexos' => $this->anexos,
+            'entidad' => $this->entidad->nombre(),
+            'titular' => $this->entidad->titular(),
             'predio'=> new PredioResource($this->predio),
             'archivo' => $this->archivo()
         ];
