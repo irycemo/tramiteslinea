@@ -19,7 +19,7 @@ class Fideicomisos extends Component
 
     protected function rules(){
         return [
-            'aviso.descripcion_fideicomiso' => 'required',
+            'aviso.descripcion_fideicomiso' => 'nullable',
          ];
     }
 
