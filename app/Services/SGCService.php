@@ -443,7 +443,7 @@ class SGCService {
                                 ]
                             );
 
-        if($response->status() !== 200){
+        if(! in_array($response->status(), [200, 204])){
 
             Log::error("Error al inactivar traslado. " . $response);
 
