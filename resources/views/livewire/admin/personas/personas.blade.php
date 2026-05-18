@@ -2,6 +2,19 @@
 
     <x-header>Personas</x-header>
 
+    <div class="mb-5 flex justify-end">
+
+        <button wire:click="abrirModalCrear" class="bg-gray-500 hover:shadow-lg hover:bg-gray-700 text-sm py-2 px-4 text-white rounded-full hidden md:block items-center justify-center focus:outline-gray-400 focus:outline-offset-2">
+
+            <img wire:loading wire:target="abrirModalCrear" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+            Agregar nueva persona
+
+        </button>
+
+        <button wire:click="abrirModalCrear" class="bg-gray-500 hover:shadow-lg hover:bg-gray-700 float-right text-sm py-2 px-4 text-white rounded-full md:hidden focus:outline-gray-400 focus:outline-offset-2">+</button>
+
+    </div>
+
     <div class="bg-white p-4 rounded-lg mb-5 shadow-xl">
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-3 col-span-2 rounded-lg w-full lg:w-1/2 mx-auto">
@@ -190,7 +203,15 @@
 
     <x-dialog-modal wire:model="modal">
 
-        <x-slot name="title">Actualizar Persona</x-slot>
+        <x-slot name="title">
+
+            @if($crear)
+                Nueva persona
+            @elseif($editar)
+                Editar persona
+            @endif
+
+        </x-slot>
 
         <x-slot name="content">
 
@@ -330,15 +351,32 @@
 
             <div class="flex justify-end gap-4">
 
-                <x-button-blue
-                    wire:click="actualizar"
-                    wire:loading.attr="disabled"
-                    wire:target="actualizar">
+                @if($crear)
 
-                    <img wire:loading wire:target="actualizar" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                    <x-button-blue
+                        wire:click="guardar"
+                        wire:loading.attr="disabled"
+                        wire:target="guardar">
 
-                    <span>Actualizar</span>
-                </x-button-blue>
+                        <img wire:loading wire:target="guardar" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+
+                        Guardar
+                    </x-button-blue>
+
+                @elseif($editar)
+
+                    <x-button-blue
+                        wire:click="actualizar"
+                        wire:loading.attr="disabled"
+                        wire:target="actualizar">
+
+                        <img wire:loading wire:target="actualizar" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+
+                        <span>Actualizar</span>
+
+                    </x-button-blue>
+
+                @endif
 
                 <x-button-red
                     wire:click="$toggle('modal')"

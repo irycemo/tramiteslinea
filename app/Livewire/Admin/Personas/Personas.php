@@ -94,6 +94,26 @@ class Personas extends Component
 
     }
 
+    public function guardar(){
+
+        $this->validate();
+
+        try {
+
+            $this->modelo_editar->save();
+
+            $this->resetearTodo();
+
+            $this->dispatch('mostrarMensaje', ['success', "La persona se creó con éxito."]);
+
+        } catch (\Throwable $th) {
+            Log::error("Error al crear persona por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+            $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
+            $this->resetearTodo();
+        }
+
+    }
+
     public function actualizar(){
 
         $this->validate();
