@@ -77,7 +77,20 @@ class Personas extends Component
         if($this->modelo_editar->isNot($modelo))
             $this->modelo_editar = $modelo;
 
-        $this->tipo_persona = $this->modelo_editar->tipo;
+
+        if(in_array($this->modelo_editar->tipo, ['FISICA', 'FÍSICA'])){
+
+            $this->modelo_editar->tipo = 'FÍSICA';
+
+            $this->tipo_persona = 'FÍSICA';
+
+        }else{
+
+            $this->modelo_editar->tipo = 'MORAL';
+
+            $this->tipo_persona = 'MORAL';
+
+        }
 
     }
 
