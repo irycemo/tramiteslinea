@@ -349,6 +349,18 @@ class ActoEscritura extends Component
             'valor_catastral' => $data['valor_catastral'],
         ]);
 
+        $this->predio->colindancias()->delete();
+
+        foreach($data['colindancias'] as $colindancia){
+
+            $this->predio->colindancias()->create([
+                'viento' => $colindancia['viento'],
+                'longitud' => $colindancia['longitud'],
+                'descripcion' => $colindancia['descripcion'],
+            ]);
+
+        }
+
     }
 
     public function porcesarCroquis($url){
