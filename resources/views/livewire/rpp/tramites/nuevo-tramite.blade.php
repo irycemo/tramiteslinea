@@ -2,6 +2,8 @@
 
     <x-header>Nuevo trámite</x-header>
 
+    {{ $errors }}
+
     <div class="flex justify-center lg:justify-end mb-3">
 
         <button

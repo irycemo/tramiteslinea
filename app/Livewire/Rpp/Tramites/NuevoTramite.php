@@ -56,10 +56,10 @@ class NuevoTramite extends Component
                                 $this->registro === null &&
                                 $this->numero_propiedad === null
                             ),
-            'tomo' => Rule::requiredIf($this->folio_real == null),
-            'distrito' => Rule::requiredIf($this->folio_real == null),
-            'registro' => Rule::requiredIf($this->folio_real == null),
-            'numero_propiedad' => Rule::requiredIf($this->folio_real == null),
+            'tomo' => Rule::requiredIf($this->folio_real == null && $this->servicioSeleccionado['clave_ingreso'] === 'DL07'),
+            'distrito' => Rule::requiredIf($this->folio_real == null && $this->servicioSeleccionado['clave_ingreso'] === 'DL07'),
+            'registro' => Rule::requiredIf($this->folio_real == null && $this->servicioSeleccionado['clave_ingreso'] === 'DL07'),
+            'numero_propiedad' => Rule::requiredIf($this->folio_real == null && $this->servicioSeleccionado['clave_ingreso'] === 'DL07'),
         ];
 
     }
