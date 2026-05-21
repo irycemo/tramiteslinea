@@ -149,6 +149,9 @@
 
     <header>
 
+            <p style="text-align: right; font-size: 9px; font-weight: bold; margin: 0;">{{ $aviso->entidad->numero_notaria ? 'Notaria ' . $aviso->entidad->numero_notaria : $aviso->entidad->dependencia }}</p>
+            <p style="text-align: right; font-size: 9px; font-weight: bold; margin: 0;">{{ $aviso->tipo == 'revision' ? 'Revisión de aviso' : 'Aviso aclaratorio' }} {{ $aviso->predio->cuentaPredial() }}</p>
+
             <img class="encabezado" src="{{ public_path('storage/img/encabezado.png') }}" alt="encabezado">
 
     </header>
