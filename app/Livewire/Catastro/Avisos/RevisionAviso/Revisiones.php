@@ -165,25 +165,29 @@ class Revisiones extends Component
 
             if($this->modelo_editar->estado == 'operado') throw new GeneralException('El aviso esta operado no es posible reactivarlo.');
 
-            (new PeritosExternosService())->reactivarAvaluo($this->modelo_editar->avaluo_spe);
+            if($this->modelo_editar->avaluo_spe){
 
-            $avisos = Aviso::where('avaluo_spe', $this->modelo_editar->avaluo_spe)->get();
+                (new PeritosExternosService())->reactivarAvaluo($this->modelo_editar->avaluo_spe);
 
-            foreach ($avisos as $aviso) {
+                $avisos = Aviso::where('avaluo_spe', $this->modelo_editar->avaluo_spe)->get();
 
-                if($aviso->traslado_sgc){
+                foreach ($avisos as $aviso) {
 
-                    (new SGCService())->inactivarTraslado($aviso->traslado_sgc);
+                    if($aviso->traslado_sgc){
+
+                        (new SGCService())->inactivarTraslado($aviso->traslado_sgc);
+
+                    }
+
+                    $aviso->update([
+                        'estado' => 'nuevo',
+                        'avaluo_spe' => null,
+                        'actualizado_por' => auth()->id()
+                    ]);
+
+                    $aviso->audits()->latest()->first()->update(['tags' => 'Reactivó aviso y avalúo']);
 
                 }
-
-                $aviso->update([
-                    'estado' => 'nuevo',
-                    'avaluo_spe' => null,
-                    'actualizado_por' => auth()->id()
-                ]);
-
-                $aviso->audits()->latest()->first()->update(['tags' => 'Reactivó aviso y avalúo']);
 
             }
 
