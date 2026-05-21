@@ -104,6 +104,8 @@ class Revisiones extends Component
                     'actualizado_por' => auth()->id()
                 ]);
 
+                $aviso->audits()->latest()->first()->update(['tags' => 'Reactivó avalúo']);
+
             }
 
             $this->dispatch('mostrarMensaje', ['success', 'El avalúo ha sido reactivado.']);
@@ -181,9 +183,9 @@ class Revisiones extends Component
                     'actualizado_por' => auth()->id()
                 ]);
 
-            }
+                $aviso->audits()->latest()->first()->update(['tags' => 'Reactivó aviso y avalúo']);
 
-            $this->modelo_editar->audits()->latest()->first()->update(['tags' => 'Reactivó aviso y avalúo']);
+            }
 
             $this->dispatch('mostrarMensaje', ['success', 'El aviso y el avalúo han sido reactivados.']);
 

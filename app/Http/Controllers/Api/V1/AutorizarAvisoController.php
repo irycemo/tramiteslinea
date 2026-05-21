@@ -41,7 +41,7 @@ class AutorizarAvisoController extends Controller
 
             DB::transaction(function () use ($aviso, $validated){
 
-                $aviso->update(['estado' => 'autorizado']);
+                $aviso->update(['estado' => 'autorizado','actualizado_por' => auth()->id()]);
 
                 if(! $aviso->entidad->email){
 

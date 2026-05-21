@@ -39,7 +39,7 @@ class RechazarAvisoController extends Controller
 
             DB::transaction(function () use ($aviso, $validated){
 
-                $aviso->update(['estado' => 'rechazado', 'avaluo_spe' => null]);
+                $aviso->update(['estado' => 'rechazado', 'avaluo_spe' => null, 'actualizado_por' => auth()->id()]);
 
                 Mail::to($aviso->entidad->email)->send(new AvsioRechazadoMail($aviso, $validated['observaciones']));
 

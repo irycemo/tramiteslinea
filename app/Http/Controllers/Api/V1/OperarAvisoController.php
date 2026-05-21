@@ -39,7 +39,7 @@ class OperarAvisoController extends Controller
 
             DB::transaction(function () use ($aviso){
 
-                $aviso->update(['estado' => 'operado']);
+                $aviso->update(['estado' => 'operado', 'actualizado_por' => auth()->id()]);
 
                 Mail::to($aviso->entidad->email)->send(new AvisoOperadoMail($aviso));
 
