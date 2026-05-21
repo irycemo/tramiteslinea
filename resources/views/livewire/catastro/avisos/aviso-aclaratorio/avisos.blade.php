@@ -282,7 +282,7 @@
 
                     <div class="text-xs text-right">
 
-                        <p>{{ $rechazo['creado_por'] }}</p>
+                        {{-- <p>{{ $rechazo['creado_por'] }}</p> --}}
                         <p>{{ $rechazo['created_at'] }}</p>
 
                     </div>
