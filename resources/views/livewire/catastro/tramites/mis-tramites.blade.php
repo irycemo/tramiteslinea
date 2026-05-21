@@ -367,15 +367,37 @@
                     <span class="col-span-1 lg:col-span-2">Cuentas prediales</span>
                 </div>
 
-                <div class="rounded-lg bg-gray-100 flex gap-4 py-1 px-2">
+                @if(! isset($tramiteSeleccionado['fecha_pago']))
 
-                    @foreach ($tramiteSeleccionado['predios'] as $predio)
+                    <div class="rounded-lg bg-gray-100 flex gap-4 py-1 px-2">
 
-                            <span class="whitespace-nowrap">{{ $predio['localidad'] }}-{{ $predio['oficina'] }}-{{ $predio['tipo_predio'] }}-{{ $predio['numero_registro'] }} </span>
+                        @foreach ($tramiteSeleccionado['predios'] as $predio)
 
-                    @endforeach
+                                <span class="whitespace-nowrap">{{ $predio['localidad'] }}-{{ $predio['oficina'] }}-{{ $predio['tipo_predio'] }}-{{ $predio['numero_registro'] }} </span>
 
-                </div>
+                        @endforeach
+
+                    </div>
+
+                @else
+
+                    <div class="rounded-lg bg-gray-100 gap-4 py-1 px-2 space-y-3">
+
+                        @foreach ($tramiteSeleccionado['predios'] as $predio)
+
+                            <div>
+
+                                <p class="whitespace-nowrap">{{ $predio['localidad'] }}-{{ $predio['oficina'] }}-{{ $predio['tipo_predio'] }}-{{ $predio['numero_registro'] }} </p>
+                                <p>Propietario: {{ $predio['propietario'] }}</p>
+                                <p>Ubicación: {{ $predio['ubicacion'] }}</p>
+
+                            </div>
+
+                        @endforeach
+
+                    </div>
+
+                @endif
 
             @endif
 

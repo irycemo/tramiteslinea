@@ -145,15 +145,15 @@ class MisTramites extends Component
         try {
 
             $data = (new SGCService())->consultarTramites(
-                                                                 auth()->user()->entidad_id,
-                                                                 $this->estado,
-                                                                 $this->año,
-                                                                 $this->folio,
-                                                                 $this->tipo_servicio,
-                                                                 $this->servicio,
-                                                                 $this->paginaActual,
-                                                                 $this->pagination
-                                                                );
+                                                            auth()->user()->entidad_id,
+                                                            $this->estado,
+                                                            $this->año,
+                                                            $this->folio,
+                                                            $this->tipo_servicio,
+                                                            $this->servicio,
+                                                            $this->paginaActual,
+                                                            $this->pagination
+                                                        );
 
             $this->paginaActual = Arr::get($data, 'meta.current_page');
             $this->paginaAnterior = Arr::get($data, 'links.prev');
