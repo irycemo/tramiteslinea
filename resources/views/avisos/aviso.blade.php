@@ -277,7 +277,7 @@
 
                         <tr>
                             <td style="padding-right: 20px;">
-                                <img class="imagenes" src="{{ public_path('avisos/' . $aviso->croquis->url) }}" alt="Croquis">
+                                <img class="imagenes" src="{{ public_path('avisos/' . $aviso->croquis?->url) }}" alt="Croquis">
                             </td>
 
                             <td style="padding-right: 40px;">
