@@ -277,7 +277,11 @@
 
                         <tr>
                             <td style="padding-right: 20px;">
-                                <img class="imagenes" src="{{ public_path('avisos/' . $aviso->croquis?->url) }}" alt="Croquis">
+                                @if($aviso->croquis)
+
+                                    <img class="imagenes" src="{{ public_path('avisos/' . $aviso->croquis->url) }}" alt="Croquis">
+
+                                @endif
                             </td>
 
                             <td style="padding-right: 40px;">
