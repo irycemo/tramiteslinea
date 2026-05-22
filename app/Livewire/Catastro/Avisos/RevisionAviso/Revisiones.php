@@ -94,7 +94,7 @@ class Revisiones extends Component
 
                 if($aviso->traslado_sgc){
 
-                    (new SGCService())->inactivarTraslado($this->modelo_editar->traslado_sgc);
+                    (new SGCService())->inactivarTraslado($aviso->traslado_sgc);
 
                 }
 
