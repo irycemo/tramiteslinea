@@ -358,7 +358,7 @@
 
                         </x-input-group>
 
-                    @elseif($role === "5")
+                    @elseif(in_array($role, ["5", "14"]))
 
                         <x-input-group for="modelo_editar.entidad_id" label="Dependencia" :error="$errors->first('modelo_editar.entidad_id')" class="w-full">
 

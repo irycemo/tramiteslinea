@@ -50,6 +50,8 @@ class Transmitentes extends Component
 
         $actor = Actor::find($this->actor);
 
+        if(! $actor) return;
+
         if($this->aviso->predio->transmitentes()->where('persona_id', $actor->persona_id)->first()){
 
             $this->dispatch('mostrarMensaje', ['success', "La persona ya es transmitente."]);
