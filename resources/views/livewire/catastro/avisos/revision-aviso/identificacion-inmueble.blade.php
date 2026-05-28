@@ -24,9 +24,9 @@
 
             </x-input-group>
 
-            <x-input-group for="aviso.predio.superficie_construccion" label="Superficie de construcción" class="w-full">
+            <x-input-group for="aviso.predio.superficie_total_construccion" label="Superficie de construcción" class="w-full">
 
-                <x-input-text type="number" id="aviso.predio.superficie_construccion" value="{{ $aviso->predio->superficie_construccion }}" readonly/>
+                <x-input-text type="number" id="aviso.predio.superficie_total_construccion" value="{{ $aviso->predio->superficie_total_construccion }}" readonly/>
 
             </x-input-group>
 
