@@ -61,7 +61,7 @@ class FideicomisoCrear extends Component
 
             if($this->persona->getKey() && $persona){
 
-                $this->revisarActorExistente($persona->id);
+                /* $this->revisarActorExistente($persona->id); */
 
                 $this->modelo->actores()->create([
                     'persona_id' => $persona->id,
@@ -73,7 +73,7 @@ class FideicomisoCrear extends Component
 
                 foreach($this->modelo->actores as $actor){
 
-                    $this->revisarActorExistente($persona->id);
+                    /* $this->revisarActorExistente($persona->id); */
 
                 }
 
