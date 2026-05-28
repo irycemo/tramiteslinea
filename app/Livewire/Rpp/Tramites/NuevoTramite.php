@@ -321,7 +321,7 @@ class NuevoTramite extends Component
 
             $this->nombre_solicitante =  auth()->user()->entidad->numero_notaria . ' - ' . auth()->user()->entidad->titular();
 
-        }elseif(auth()->user()->hasRole('Dependencia')){
+        }elseif(auth()->user()->hasRole(['Dependencia', 'Asociacion inmobiliaria'])){
 
             $this->solicitante = 'Usuario';
 
