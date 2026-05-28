@@ -281,7 +281,7 @@
 
                 <strong>Superficie notarial</strong>
 
-                <p>{{ number_format($predio->superficie_notarial, 2) }}</p>
+                <p>{{ number_format($predio->superficie_notarial, 4) }}</p>
 
             </div>
 
@@ -289,7 +289,7 @@
 
                 <strong>Superficie judicial</strong>
 
-                <p>{{ number_format($predio->superficie_judicial, 2) }}</p>
+                <p>{{ number_format($predio->superficie_judicial, 4) }}</p>
 
             </div>
 
@@ -297,7 +297,7 @@
 
                 <strong>Superficie total de terreno</strong>
 
-                <p>{{ number_format($predio->superficie_total_terreno, 2) }}</p>
+                <p>{{ number_format($predio->superficie_total_terreno, 4) }}</p>
 
             </div>
 
@@ -305,7 +305,7 @@
 
                 <strong>Valor total de terreno</strong>
 
-                <p>{{ number_format($predio->valor_total_terreno, 2) }}</p>
+                <p>{{ number_format($predio->valor_total_terreno, 4) }}</p>
 
             </div>
 
@@ -313,7 +313,7 @@
 
                 <strong>Superficie total de construcción</strong>
 
-                <p>{{ number_format($predio->superficie_total_construccion, 2) }}</p>
+                <p>{{ number_format($predio->superficie_total_construccion, 4) }}</p>
 
             </div>
 
@@ -321,7 +321,7 @@
 
                 <strong>Valor total de construcción</strong>
 
-                <p>{{ number_format($predio->valor_total_construccion, 2) }}</p>
+                <p>{{ number_format($predio->valor_total_construccion, 4) }}</p>
 
             </div>
 
@@ -329,7 +329,7 @@
 
                 <strong>Valor catastral</strong>
 
-                <p>${{ number_format($predio->valor_catastral, 2) }}</p>
+                <p>${{ number_format($predio->valor_catastral, 4) }}</p>
 
             </div>
 
