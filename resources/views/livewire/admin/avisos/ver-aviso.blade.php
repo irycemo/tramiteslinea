@@ -329,7 +329,7 @@
 
                 <strong>Valor catastral</strong>
 
-                <p>${{ number_format($predio->valor_catastral, 4) }}</p>
+                <p>${{ number_format($predio->valor_catastral, 2) }}</p>
 
             </div>
 

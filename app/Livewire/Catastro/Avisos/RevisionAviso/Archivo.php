@@ -181,7 +181,7 @@ class Archivo extends Component
                 $aviso->volumen_escritura != $this->aviso->volumen_escritura
             ){
 
-                throw new GeneralException("El trámite del aviso ya esta asociado a otro aviso con diferente escritura.");
+                throw new GeneralException("El trámite del aviso ya esta asociado a otro aviso con diferente escritura: " . $aviso->año . '-' . $aviso->folio . '-' . $aviso->usuario . '.');
 
             }
 
@@ -201,7 +201,7 @@ class Archivo extends Component
                 $aviso->volumen_escritura != $this->aviso->volumen_escritura
             ){
 
-                throw new GeneralException("El certificado ya esta asociado a otro aviso con diferente escritura.");
+                throw new GeneralException("El certificado ya esta asociado a otro aviso con diferente escritura: " . $aviso->año . '-' . $aviso->folio . '-' . $aviso->usuario . '.');
 
             }
 
