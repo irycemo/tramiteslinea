@@ -59,9 +59,30 @@ class FideicomisoCrear extends Component
 
             $persona = $this->buscarPersona($this->rfc, $this->curp, $this->tipo_persona, $this->nombre, $this->ap_materno, $this->ap_paterno, $this->razon_social);
 
-            if($this->persona->getKey() && $persona){
+            if($this->persona->getKey()){
 
-                /* $this->revisarActorExistente($persona->id); */
+                $this->persona->update([
+                    'tipo' => $this->tipo_persona,
+                    'nombre' => $this->nombre,
+                    'multiple_nombre' => $this->multiple_nombre,
+                    'ap_paterno' => $this->ap_paterno,
+                    'ap_materno' => $this->ap_materno,
+                    'curp' => $this->curp,
+                    'rfc' => $this->rfc,
+                    'razon_social' => $this->razon_social,
+                    'fecha_nacimiento' => $this->fecha_nacimiento,
+                    'nacionalidad' => $this->nacionalidad,
+                    'estado_civil' => $this->estado_civil,
+                    'calle' => $this->calle,
+                    'numero_exterior' => $this->numero_exterior,
+                    'numero_interior' => $this->numero_interior,
+                    'colonia' => $this->colonia,
+                    'cp' => $this->cp,
+                    'entidad' => $this->entidad,
+                    'ciudad' => $this->ciudad,
+                    'municipio' => $this->municipio,
+                    'actualizado_por' => auth()->id()
+                ]);
 
                 $this->modelo->actores()->create([
                     'persona_id' => $persona->id,
@@ -71,11 +92,11 @@ class FideicomisoCrear extends Component
 
             }elseif($persona){
 
-                foreach($this->modelo->actores as $actor){
+                /* foreach($this->modelo->actores as $actor){
 
-                    /* $this->revisarActorExistente($persona->id); */
+                    $this->revisarActorExistente($persona->id);
 
-                }
+                } */
 
                 throw new GeneralException('Ya existe un persona registrada con la información ingresada.');
 
@@ -124,7 +145,7 @@ class FideicomisoCrear extends Component
 
         } catch (GeneralException $ex) {
 
-            $this->dispatch('mostrarMensaje', ['error', $ex->getMessage()]);
+            $this->dispatch('mostrarMensaje', ['warning', $ex->getMessage()]);
 
         } catch (\Throwable $th) {
 
@@ -174,7 +195,7 @@ class FideicomisoCrear extends Component
 
         } catch (GeneralException $ex) {
 
-            $this->dispatch('mostrarMensaje', ['error', $ex->getMessage()]);
+            $this->dispatch('mostrarMensaje', ['warning', $ex->getMessage()]);
 
         } catch (\Throwable $th) {
 
