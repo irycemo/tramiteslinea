@@ -56,6 +56,8 @@
                     </td>
                     <td style="padding-right: 40px;">
                         <p>
+                            @if($adquiriente->persona->rfc)<strong>RFC:</strong> {{ $adquiriente->persona->rfc }},@endif
+                            @if($adquiriente->persona->curp)<strong>CURP:</strong> {{ $adquiriente->persona->curp }},@endif
                             @if($adquiriente->persona->nacionalidad)<strong>Nacionalidad:</strong> {{ $adquiriente->persona->nacionalidad }},@endif
                             @if($adquiriente->persona->fecha_nacimiento)<strong>Fecha de nacimiento:</strong> {{ $adquiriente->persona->fecha_nacimiento }},@endif
                             @if($adquiriente->persona->estado_civil)<strong>Estado civil:</strong> {{ $adquiriente->persona->estado_civil }},@endif

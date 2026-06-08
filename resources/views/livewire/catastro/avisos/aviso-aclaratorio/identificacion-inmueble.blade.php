@@ -89,7 +89,7 @@
 
             <x-input-group for="aviso.predio.valor_catastral" label="Valor catastral" class="w-full">
 
-                <x-input-text type="number" id="aviso.predio.valor_catastral" wire:model="aviso.predio.valor_catastral" readonly/>
+                <x-input-text type="number" id="aviso.predio.valor_catastral" wire:model="aviso.predio.valor_catastral"/>
 
             </x-input-group>
 
