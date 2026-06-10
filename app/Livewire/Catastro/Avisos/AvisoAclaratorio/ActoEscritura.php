@@ -94,7 +94,11 @@ class ActoEscritura extends Component
 
             $this->data_tramite_aviso = (new SGCService())->consultarTramieAvisoAclaratorio($this->aclaratorio_año, $this->aclaratorio_folio, $this->aclaratorio_usuario, null);
 
-            if(Aviso::where('tramite_sgc', $this->data_tramite_aviso['tramite_id'])->first()){
+            $aviso = Aviso::where('tramite_sgc', $this->data_tramite_aviso['tramite_id'])
+                                ->where('predio_sgc', $this->revision_aviso->predio_sgc)
+                                ->first();
+
+            if($aviso){
 
                 throw new GeneralException('El trámite ya esta asociado a otro aviso.');
 
@@ -157,7 +161,11 @@ class ActoEscritura extends Component
 
                 $this->data_tramite_aviso = (new SGCService())->consultarTramieAvisoAclaratorio($this->aclaratorio_año, $this->aclaratorio_folio, $this->aclaratorio_usuario, $data_predio['id']);
 
-                if(Aviso::where('tramite_sgc', $this->data_tramite_aviso['tramite_id'])->first()){
+                $aviso = Aviso::where('tramite_sgc', $this->data_tramite_aviso['tramite_id'])
+                                ->where('predio_sgc', $data_predio['id'])
+                                ->first();
+
+                if($aviso){
 
                     throw new GeneralException('El trámite ya esta asociado a otro aviso.');
 

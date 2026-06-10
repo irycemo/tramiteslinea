@@ -56,19 +56,19 @@
                     </td>
                     <td style="padding-right: 40px;">
                         <p>
-                            @if($adquiriente->persona->rfc)<strong>RFC:</strong> {{ $adquiriente->persona->rfc }},@endif
-                            @if($adquiriente->persona->curp)<strong>CURP:</strong> {{ $adquiriente->persona->curp }},@endif
-                            @if($adquiriente->persona->nacionalidad)<strong>Nacionalidad:</strong> {{ $adquiriente->persona->nacionalidad }},@endif
-                            @if($adquiriente->persona->fecha_nacimiento)<strong>Fecha de nacimiento:</strong> {{ $adquiriente->persona->fecha_nacimiento }},@endif
-                            @if($adquiriente->persona->estado_civil)<strong>Estado civil:</strong> {{ $adquiriente->persona->estado_civil }},@endif
-                            @if($adquiriente->persona->calle)<strong>Calle:</strong> {{ $adquiriente->persona->calle }},@endif
-                            @if($adquiriente->persona->numero_exterior)<strong>Número exterior:</strong> {{ $adquiriente->persona->numero_exterior }},@endif
-                            @if($adquiriente->persona->numero_interior)<strong>Número interior:</strong> {{ $adquiriente->persona->numero_interior }},@endif
-                            @if($adquiriente->persona->colonia)<strong>Colonia:</strong> {{ $adquiriente->persona->colonia }},@endif
-                            @if($adquiriente->persona->cp)<strong>Código postal:</strong> {{ $adquiriente->persona->cp }},@endif
-                            @if($adquiriente->persona->entidad)<strong>Entidad:</strong> {{ $adquiriente->persona->entidad }},@endif
-                            @if($adquiriente->persona->municipio)<strong>Municipio:</strong> {{ $adquiriente->persona->municipio }},@endif
-                            @if($adquiriente->persona->ciudad)<strong>Ciudad:</strong> {{ $adquiriente->persona->ciudad }},@endif
+                            @if($adquiriente->persona->rfc)RFC: <strong>{{ $adquiriente->persona->rfc }}</strong>,@endif
+                            @if($adquiriente->persona->curp)CURP: <strong>{{ $adquiriente->persona->curp }}</strong>,@endif
+                            @if($adquiriente->persona->nacionalidad)Nacionalidad: <strong>{{ $adquiriente->persona->nacionalidad }}</strong>,@endif
+                            @if($adquiriente->persona->fecha_nacimiento)Fecha de nacimiento: <strong>{{ $adquiriente->persona->fecha_nacimiento }}</strong>,@endif
+                            @if($adquiriente->persona->estado_civil)Estado civil: <strong>{{ $adquiriente->persona->estado_civil }}</strong>,@endif
+                            @if($adquiriente->persona->calle)Calle: <strong>{{ $adquiriente->persona->calle }}</strong>,@endif
+                            @if($adquiriente->persona->numero_exterior)Número exterior: <strong>{{ $adquiriente->persona->numero_exterior }}</strong>,@endif
+                            @if($adquiriente->persona->numero_interior)Número interior: <strong>{{ $adquiriente->persona->numero_interior }}</strong>,@endif
+                            @if($adquiriente->persona->colonia)Colonia: <strong>{{ $adquiriente->persona->colonia }}</strong>,@endif
+                            @if($adquiriente->persona->cp)Código postal: <strong>{{ $adquiriente->persona->cp }}</strong>,@endif
+                            @if($adquiriente->persona->entidad)Entidad: <strong>{{ $adquiriente->persona->entidad }}</strong>,@endif
+                            @if($adquiriente->persona->municipio)Municipio: <strong>{{ $adquiriente->persona->municipio }}</strong>,@endif
+                            @if($adquiriente->persona->ciudad)Ciudad: <strong>{{ $adquiriente->persona->ciudad }}</strong>,@endif
 
                         </p>
                     </td>

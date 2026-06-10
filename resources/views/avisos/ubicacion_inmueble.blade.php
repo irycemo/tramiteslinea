@@ -1,115 +1,120 @@
 <p class="separador">UBICACIÓN DEL INMUEBLE</p>
 
-<p class="parrafo">
-
-    @if ($predio->codigo_postal)
-        <strong>CÓDIGO POSTAL:</strong> {{ $predio->codigo_postal }};
-    @endif
-
-    @if ($predio->tipo_asentamiento)
-        <strong>TIPO DE ASENTAMIENTO:</strong> {{ $predio->tipo_asentamiento }};
-    @endif
-
-    @if ($predio->nombre_asentamiento)
-        <strong>NOMBRE DEL ASENTAMIENTO:</strong> {{ $predio->nombre_asentamiento }};
-    @endif
-
-    @if ($predio->municipio)
-        <strong>MUNICIPIO:</strong> {{ $predio->municipio }};
-    @endif
-
-    @if ($predio->localidad)
-        <strong>LOCALIDAD:</strong> {{ $predio->localidad }};
-    @endif
+<div>
 
     @if ($predio->tipo_vialidad)
-        <strong>TIPO DE VIALIDAD:</strong> {{ $predio->tipo_vialidad }};
+        <span>TIPO DE VIALIDAD: <strong>{{ $predio->tipo_vialidad }}</strong></span>
     @endif
 
     @if ($predio->nombre_vialidad)
-        <strong>NOMBRE DE LA VIALIDAD:</strong> {{ $predio->nombre_vialidad }};
+        <span style="padding-left: 5px;">NOMBRE DE LA VIALIDAD: <strong>{{ $predio->nombre_vialidad }}</strong></span>
     @endif
 
     @if ($predio->numero_exterior)
-        <strong>NÚMERO EXTERIOR:</strong> {{ $predio->numero_exterior }};
+        <span style="padding-left: 5px;">NÚMERO EXTERIOR: <strong>{{ $predio->numero_exterior }}</strong></span>
     @endif
 
     @if ($predio->numero_interior)
-        <strong>NÚMERO INTERIOR:</strong> {{ $predio->numero_interior }};
-    @endif
-
-    @if ($predio->nombre_edificio)
-        <strong>EDIFICIO:</strong> {{ $predio->nombre_edificio }};
-    @endif
-
-    @if ($predio->clave_edificio)
-        <strong>clave del edificio:</strong> {{ $predio->clave_edificio }};
-    @endif
-
-    @if ($predio->departamento_edificio)
-        <strong>DEPARTAMENTO:</strong> {{ $predio->departamento_edificio }};
+        <span style="padding-left: 5px;">NÚMERO INTERIOR: <strong>{{ $predio->numero_interior }}</strong></span>
     @endif
 
     @if ($predio->numero_exterior_2)
-        <strong>número exterior 2:</strong> {{ $predio->numero_exterior_2 }};
+        <span style="padding-left: 5px;">número exterior 2: <strong>{{ $predio->numero_exterior_2 }}</strong></span>
     @endif
 
     @if ($predio->numero_adicional)
-        <strong>número adicional:</strong> {{ $predio->numero_adicional }};
+        <span style="padding-left: 5px;">número adicional: <strong>{{ $predio->numero_adicional }}</strong></span>
     @endif
 
     @if ($predio->numero_adicional_2)
-        <strong>número adicional 2:</strong> {{ $predio->numero_adicional_2 }};
+        <span style="padding-left: 5px;">número adicional 2: <strong>{{ $predio->numero_adicional_2 }}</strong></span>
+    @endif
+
+    @if ($predio->tipo_asentamiento)
+        <span style="padding-left: 5px;">TIPO DE ASENTAMIENTO: <strong>{{ $predio->tipo_asentamiento }}</strong></span>
+    @endif
+
+    @if ($predio->nombre_asentamiento)
+        <span style="padding-left: 5px;">NOMBRE DEL ASENTAMIENTO: <strong>{{ $predio->nombre_asentamiento }}</strong></span>
+    @endif
+
+    @if ($predio->codigo_postal)
+        <span style="padding-left: 5px;">CÓDIGO POSTAL: <strong>{{ $predio->codigo_postal }}</strong></span>
+    @endif
+
+</div>
+
+<p class="parrafo">
+
+    @if ($predio->nombre_edificio)
+        EDIFICIO: <strong>{{ $predio->nombre_edificio }}</strong>
+    @endif
+
+    @if ($predio->clave_edificio)
+        clave del edificio: <strong>{{ $predio->clave_edificio }}</strong>
+    @endif
+
+    @if ($predio->departamento_edificio)
+        DEPARTAMENTO: <strong>{{ $predio->departamento_edificio }}</strong>
     @endif
 
     @if ($predio->lote_fraccionador)
-        <strong>lote del fraccionador:</strong> {{ $predio->lote_fraccionador }};
+        lote del fraccionador: <strong>{{ $predio->lote_fraccionador }}</strong>
     @endif
 
     @if ($predio->manzana_fraccionador)
-        <strong>manzana del fraccionador:</strong> {{ $predio->manzana_fraccionador }};
+        manzana del fraccionador: <strong>{{ $predio->manzana_fraccionador }}</strong>
     @endif
 
     @if ($predio->etapa_fraccionador)
-        <strong>etapa del fraccionador:</strong> {{ $predio->etapa_fraccionador }};
+        etapa del fraccionador: <strong>{{ $predio->etapa_fraccionador }}</strong>
     @endif
 
     @if ($predio->ubicacion_en_manzana)
-        <strong>ubicación en manzana:</strong> {{ $predio->ubicacion_en_manzana }};
+        ubicación en manzana: <strong>{{ $predio->ubicacion_en_manzana }}</strong>
     @endif
 
     @if ($predio->nombre_predio)
-        <strong>Predio Rústico Denominado ó Antecedente:</strong> {{ $predio->nombre_predio }};
+        Predio Rústico Denominado ó Antecedente: <strong>{{ $predio->nombre_predio }}</strong>
     @endif
 
-    @if ($predio->observaciones)
-        <strong>OBSERVACIONES:</strong> {{ $predio->observaciones }}.
+</p>
+
+<p class="parrafo">
+
+    @if ($predio->municipio)
+        MUNICIPIO: <strong>{{ $datos_control->municipio ?? $predio->municipio }}</strong>
+    @endif
+
+    @if ($predio->localidad)
+        LOCALIDAD: <strong>{{ $datos_control->oficina ?? $predio->localidad }}</strong>
     @endif
 
 </p>
 
 @if($predio->xutm || $predio->lat)
 
-    <p class="parrafo">
-        <strong>Coordenadas geográficas: </strong>
-    </p>
+    Coordenadas geográficas:
 
-    @if($predio->xutm)
+    <table style="width: 100%;">
 
-        <p class="parrafo">
+        <tbody>
+            <tr>
+                <td style="text-align: left;">
 
-            <strong>UTM: </strong>
-            <strong>X:</strong> {{ $predio->xutm }}, <strong>Y:</strong> {{ $predio->yutm }},  <strong>Z:</strong> {{ $predio->zutm }}
+                    UTM
+                    X: <strong>{{ $predio->xutm }}</strong>, Y: <strong>{{ $predio->yutm }}</strong>, Z: <strong>{{ $predio->zutm }}</strong>
 
-            @if($predio->xutm)
+                </td>
+                <td style="">
 
-                 | <strong>GEO: </strong>
-                <strong>LAT:</strong> {{ $predio->lat }}, <strong>LON:</strong> {{ $predio->lon }}
+                    GEO
+                    LAT: <strong>{{ $predio->lat }}</strong>, LON: <strong>{{ $predio->lon }}</strong>
 
-            @endif
+                </td>
+            </tr>
+        </tbody>
 
-        </p>
-
-    @endif
+    </table>
 
 @endif

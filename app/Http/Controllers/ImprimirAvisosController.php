@@ -29,9 +29,9 @@ class ImprimirAvisosController extends Controller
 
         $canvas = $dom_pdf->get_canvas();
 
-        $canvas->page_text(480, 745, "Página: {PAGE_NUM} de {PAGE_COUNT}", null, 10, array(1, 1, 1));
+        $canvas->page_text(480, 960, "Página: {PAGE_NUM} de {PAGE_COUNT}", null, 10, array(1, 1, 1));
 
-        $canvas->page_text(35, 745, 'Aviso - ' . $aviso->año .'-' . $aviso->folio .'-' . $aviso->usuario, null, 9, array(1, 1, 1));
+        $canvas->page_text(35, 960, 'Aviso - ' . $aviso->año .'-' . $aviso->folio .'-' . $aviso->usuario, null, 9, array(1, 1, 1));
 
         return $pdf;
 

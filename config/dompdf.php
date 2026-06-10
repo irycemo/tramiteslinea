@@ -161,7 +161,7 @@ return [
          *
          * @see CPDF_Adapter::PAPER_SIZES for valid sizes ('letter', 'legal', 'A4', etc.)
          */
-        'default_paper_size' => 'letter',
+        'default_paper_size' => 'legal',
 
         /**
          * The default paper orientation.

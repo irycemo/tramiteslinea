@@ -26,7 +26,7 @@
 
 
     body{
-        margin-top: 120px;
+        margin-top: 140px;
         margin-bottom: 40px;
         counter-reset: page;
         height: 100%;
@@ -149,10 +149,18 @@
 
     <header>
 
-            <p style="text-align: right; font-size: 9px; font-weight: bold; margin: 0;">{{ $aviso->entidad->numero_notaria ? 'Notaria ' . $aviso->entidad->numero_notaria : $aviso->entidad->dependencia }}</p>
-            <p style="text-align: right; font-size: 9px; font-weight: bold; margin: 0;">{{ $aviso->tipo == 'revision' ? 'Revisión de aviso' : 'Aviso aclaratorio' }} {{ $aviso->predio->cuentaPredial() }}</p>
+        <div style="text-align: right; margin: 0px; margin-bottom: 4px;">
 
-            <img class="encabezado" src="{{ public_path('storage/img/encabezado.png') }}" alt="encabezado">
+            <span style="font-size: 11px; font-weight: bold; border-style: solid; border-color: #5E1D45; border-radius: 50%;  padding: 3px 6px 3px 6px; margin: 0px; width:80ch">{{ $aviso->entidad->numero_notaria ? 'Notaria ' . $aviso->entidad->numero_notaria : $aviso->entidad->dependencia }}</span>
+        </div>
+
+        <div style="text-align: right; margin: 0px;">
+
+            <span style="font-size: 11px; font-weight: bold; border-style: solid; border-color: #5E1D45; border-radius: 50%;  padding: 3px 6px 3px 6px; margin: 0px; width:80ch">Cuenta predial {{ $aviso->predio->cuentaPredial() }}</span>
+
+        </div>
+
+        <img class="encabezado" src="{{ public_path('storage/img/encabezado.png') }}" alt="encabezado">
 
     </header>
 
@@ -191,23 +199,30 @@
         <div class="informacion" >
 
             <p>
-                <strong>Folio del aviso:</strong> {{ $aviso->año }}-{{ $aviso->folio }}-{{ $aviso->usuario }},
 
-                <strong>Declarante:</strong>
+                Declarante:
 
-                @if($aviso->entidad->numero_notaria)
+                <strong style="margin-right: 20px;">
+                    @if($aviso->entidad->numero_notaria)
 
-                    {{ $aviso->entidad->titular() }}
+                        {{ $aviso->entidad->titular() }}
 
-                @else
+                    @else
 
-                    {{ $aviso->entidad->dependencia }}
+                        {{ $aviso->entidad->dependencia }}
 
-                @endif,
+                    @endif
+                </strong>
 
-                <strong>cuenta predial:</strong> {{ $aviso->predio->cuentaPredial() }},
+                Folio del aviso: <strong>{{ $aviso->año }}-{{ $aviso->folio }}-{{ $aviso->usuario }}</strong>
 
-                <strong>Clave catastral:</strong> {{ $aviso->predio->claveCatastral() }}
+            </p>
+
+            <p>
+
+                cuenta predial: <strong style="margin-right: 40px;">{{ $aviso->predio->cuentaPredial() }}</strong>
+
+                Clave catastral: <strong>{{ $aviso->predio->claveCatastral() }}</strong>
             </p>
 
         </div>
@@ -216,33 +231,39 @@
 
         <div class="informacion" >
 
-            <p><strong>Acto transmitivo de dominio:</strong> {{ $aviso->acto }}</p>
-            <p><strong>Para el caso de adquisición por resolución judicial, fecha en la que causo ejecutoria: </strong> {{ $aviso->fecha_ejecutoria }}</p>
+            <p style="font-size: 11px;">Acto transmitivo de dominio: <strong>{{ $aviso->acto }}</strong></p>
+
+            @if($aviso->fecha_ejecutoria)
+
+                <p>Para el caso de adquisición por resolución judicial, fecha en la que causo ejecutoria: <strong>{{ $aviso->fecha_ejecutoria }}</strong></p>
+
+            @endif
+
             <p>
-                <strong>Tipo de escritura:</strong> {{ $aviso->tipo_escritura }},
-                <strong>Número de escritura:</strong> {{ $aviso->numero_escritura }},
-                <strong>Volumen de escritura:</strong> {{ $aviso->volumen_escritura }}
+                Tipo de escritura: <strong style="margin-right: 10px;">{{ $aviso->tipo_escritura }}</strong>
+                Número de escritura: <strong style="margin-right: 10px;">{{ $aviso->numero_escritura }}</strong>
+                Volumen de escritura: <strong style="margin-right: 10px;">{{ $aviso->volumen_escritura }}</strong>
             </p>
             <p>
-                <strong>Lugar de otorgamiento:</strong> {{ $aviso->lugar_otorgamiento }},
-                <strong>Fecha de otorgamiento:</strong> {{ $aviso->fecha_otorgamiento }}
+                Lugar de otorgamiento: <strong style="margin-right: 10px;">{{ $aviso->lugar_otorgamiento }}</strong>
+                Fecha de otorgamiento: <strong style="margin-right: 10px;">{{ $aviso->fecha_otorgamiento }}</strong>
             </p>
             <p>
-                <strong>Lugar de firma:</strong> {{ $aviso->lugar_firma }},
-                <strong>Fecha de firma:</strong> {{ $aviso->fecha_firma }}
+                Lugar de firma: <strong style="margin-right: 10px;">{{ $aviso->lugar_firma }}</strong>
+                Fecha de firma: <strong style="margin-right: 10px;">{{ $aviso->fecha_firma }}</strong>
             </p>
 
         </div>
+
+        @include('avisos.transmitentes')
+
+        @include('avisos.adquirientes')
 
         @include('avisos.ubicacion_inmueble')
 
         @include('avisos.colindancias')
 
         @include('avisos.descripcion_inmueble')
-
-        @include('avisos.transmitentes')
-
-        @include('avisos.adquirientes')
 
         @if($aviso->antecedentes->count())
 
@@ -301,37 +322,37 @@
 
                                         <tr>
                                             <td style="text-align: right;">
-                                                <strong>Base gravable:</strong>
+                                                Base gravable:
                                             </td>
                                             <td style="padding-right: 40px; text-align: right;">
-                                                ${{ number_format($aviso->base_gravable, 2) }}
+                                                <strong>${{ number_format($aviso->base_gravable, 2) }}</strong>
                                             </td>
                                         </tr>
 
                                         <tr>
                                             <td style="text-align: right;">
-                                                <strong>Reducción:</strong>
+                                                Reducción:
                                             </td>
                                             <td style="padding-right: 40px; text-align: right;">
-                                                ${{ number_format($aviso->reduccion, 2) }}
+                                                <strong>${{ number_format($aviso->reduccion, 2) }}</strong>
                                             </td>
                                         </tr>
 
                                         <tr>
                                             <td style="text-align: right;">
-                                                <strong>Valor base:</strong>
+                                                Valor base:
                                             </td>
                                             <td style="padding-right: 40px; text-align: right;">
-                                                ${{ number_format($aviso->valor_base, 2) }}
+                                                <strong>${{ number_format($aviso->valor_base, 2) }}</strong>
                                             </td>
                                         </tr>
 
                                         <tr>
                                             <td style="text-align: right;">
-                                                <strong>Valor isai:</strong>
+                                                Valor isai:
                                             </td>
                                             <td style="padding-right: 40px; text-align: right;">
-                                                ${{ number_format($aviso->valor_isai, 2) }}
+                                                <strong>${{ number_format($aviso->valor_isai, 2) }}</strong>
                                             </td>
                                         </tr>
 
@@ -339,10 +360,10 @@
 
                                         <tr>
                                             <td style="text-align: right;">
-                                                <strong>Valor de adquisición:</strong>
+                                                Valor de adquisición:
                                             </td>
                                             <td style="padding-right: 40px; text-align: right;">
-                                                ${{ number_format($aviso->valor_adquisicion, 2) }}
+                                                <strong>${{ number_format($aviso->valor_adquisicion, 2) }}</strong>
                                             </td>
                                         </tr>
 
@@ -350,10 +371,10 @@
 
                                             <tr>
                                                 <td style="text-align: right;">
-                                                    <strong>Valor de avalúo:</strong>
+                                                    Valor de avalúo:
                                                 </td>
                                                 <td style="padding-right: 40px; text-align: right;">
-                                                    ${{ number_format($predio->valor_catastral, 2) }}
+                                                    <strong>${{ number_format($predio->valor_catastral, 2) }}</strong>
                                                 </td>
                                             </tr>
 
@@ -426,8 +447,8 @@
             </table>
 
             <div class="informacion caracteristicas-tabla">
-                <p><strong>Impreso el:</strong> {{ $datos_control->impreso_en }}</p>
-                <p><strong>Impreso por:</strong> {{ $datos_control->impreso_por }}</p>
+                <p>Impreso el: <strong>{{ $datos_control->impreso_en }}</strong></p>
+                <p>Impreso por: <strong>{{ $datos_control->impreso_por }}</strong></p>
             </div>
 
         </div>
