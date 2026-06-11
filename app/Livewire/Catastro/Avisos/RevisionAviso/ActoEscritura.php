@@ -269,10 +269,14 @@ class ActoEscritura extends Component
 
         $avisos_misma_escritura = Aviso::with('predio')
                                         ->where('tipo', 'revision')
-                                        ->where('tipo_escritura', $this->aviso->tipo_escritura)
-                                        ->where('numero_escritura', $this->aviso->numero_escritura)
-                                        ->where('volumen_escritura', $this->aviso->volumen_escritura)
-                                        ->where('predio_sgc', $this->aviso->predio_sgc)
+                                        ->where(function($q){
+                                            $q->where('tipo_escritura', $this->aviso->tipo_escritura)
+                                            ->where('numero_escritura', $this->aviso->numero_escritura)
+                                            ->where('volumen_escritura', $this->aviso->volumen_escritura)
+                                            ->where('predio_sgc', $this->aviso->predio_sgc)
+                                            ->orWhere('fecha_firma', $this->aviso->fecha_firma);
+                                        })
+                                        ->where('entidad_id', auth()->user()->entidad_id)
                                         ->get();
 
         if($avisos_misma_escritura->count()){

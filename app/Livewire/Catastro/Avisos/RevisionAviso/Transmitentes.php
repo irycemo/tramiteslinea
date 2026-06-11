@@ -88,13 +88,17 @@ class Transmitentes extends Component
         }
 
         $this->avisos_misma_escritura = Aviso::where('tipo', 'revision')
-                                        ->where('tipo_escritura', $this->aviso->tipo_escritura)
-                                        ->where('numero_escritura', $this->aviso->numero_escritura)
-                                        ->where('volumen_escritura', $this->aviso->volumen_escritura)
-                                        ->where('predio_sgc', $this->aviso->predio_sgc)
-                                        ->where('avaluo_spe', $this->aviso->avaluo_spe)
-                                        ->where('id', '!=', $this->aviso->id)
-                                        ->get();
+                                                ->where(function($q){
+                                                    $q->where('tipo_escritura', $this->aviso->tipo_escritura)
+                                                    ->where('numero_escritura', $this->aviso->numero_escritura)
+                                                    ->where('volumen_escritura', $this->aviso->volumen_escritura)
+                                                    ->where('avaluo_spe', $this->aviso->avaluo_spe)
+                                                    ->where('predio_sgc', $this->aviso->predio_sgc)
+                                                    ->orWhere('fecha_firma', $this->aviso->fecha_firma);
+                                                })
+                                                ->where('entidad_id', auth()->user()->entidad_id)
+                                                ->where('id', '!=', $this->aviso->id)
+                                                ->get();
 
         if(! $this->avisos_misma_escritura->count()) return;
 
@@ -169,12 +173,16 @@ class Transmitentes extends Component
     public function cargarTransmitentesConMismaEscritura(){
 
         $avisos_misma_escritura = Aviso::with('predio')
-                                        ->where('tipo', 'revision')
-                                        ->where('tipo_escritura', $this->aviso->tipo_escritura)
-                                        ->where('numero_escritura', $this->aviso->numero_escritura)
-                                        ->where('volumen_escritura', $this->aviso->volumen_escritura)
-                                        ->where('predio_sgc', $this->aviso->predio_sgc)
-                                        ->where('avaluo_spe', $this->aviso->avaluo_spe)
+                                        ->where(function($q){
+                                            $q->where('tipo_escritura', $this->aviso->tipo_escritura)
+                                            ->where('numero_escritura', $this->aviso->numero_escritura)
+                                            ->where('volumen_escritura', $this->aviso->volumen_escritura)
+                                            ->where('avaluo_spe', $this->aviso->avaluo_spe)
+                                            ->where('predio_sgc', $this->aviso->predio_sgc)
+                                            ->orWhere('fecha_firma', $this->aviso->fecha_firma);
+                                        })
+                                        ->where('entidad_id', auth()->user()->entidad_id)
+                                        ->where('id', '!=', $this->aviso->id)
                                         ->get();
 
         $aviso_anterior = $avisos_misma_escritura->where('id', '<', $this->aviso->id)->first();
