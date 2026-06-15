@@ -3,7 +3,7 @@
     <p class="separador">fideicomiso</p>
 
     <p style=" margin-bottom: 8px;">
-        Objeto principal del fideicomiso: <strong>{{ $aviso->descripcion_fideico</strong>miso }}
+        Objeto principal del fideicomiso: <strong>{{ $aviso->descripcion_fideicomiso }}
     </p>
 
     <p style="text-align: center; font-weight:bold;">Fiduciarias</p>
@@ -33,7 +33,7 @@
                     </td>
                     <td style="padding-right: 40px;">
                         <p>
-                            @if($fiduciaria->persona->nacionalidad)Nacionalidad: <strong>{{ $fiduciaria->persona->nacionalidad }}</strong>,@endif
+                            @if($fiduciaria->persona->nacionalidad)Nacionalidad: <strong>{{ $fiduciaria->persona->nacionalidad }}</strong,@endif
                             @if($fiduciaria->persona->fecha_nacimiento)Fecha de nacimiento: <strong>{{ $fiduciaria->persona->fecha_nacimiento }}</strong>,@endif
                             @if($fiduciaria->persona->estado_civil)Estado civil: <strong>{{ $fiduciaria->persona->estado_civil }}</strong>,@endif
                             @if($fiduciaria->persona->calle)Calle: <strong>{{ $fiduciaria->persona->calle }}</strong>,@endif
