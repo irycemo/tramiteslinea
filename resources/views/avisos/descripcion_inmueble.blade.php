@@ -5,7 +5,7 @@
         <tr style="text-align: left;">
             <td style="width: 50%;">
 
-                superficie notarial: <strong>{{ $predio->superficie_notarial_formateada }} @if($predio->tipo_predio == 1) Metros cuadrado; @else Hectáreas @endif</strong>
+                superficie notarial: <strong>{{ $predio->superficie_notarial_formateada }} @if($predio->tipo_predio == 1) Metros cuadrados; @else Hectáreas @endif</strong>
 
             </td>
 
@@ -13,7 +13,7 @@
         <tr style="text-align: left;">
             <td style="width: 50%;">
 
-                Superficie de terreno: <strong>{{ $predio->superficie_total_terreno_formateada }} @if($predio->tipo_predio == 1) Metros cuadrado; @else Hectáreas @endif</strong>
+                Superficie de terreno: <strong>{{ $predio->superficie_total_terreno_formateada }} @if($predio->tipo_predio == 1) Metros cuadrados; @else Hectáreas @endif</strong>
 
             </td>
             <td style="width: 50%;">
