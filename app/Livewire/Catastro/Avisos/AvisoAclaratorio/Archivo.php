@@ -67,11 +67,11 @@ class Archivo extends Component
 
         }
 
-        if(!$this->aviso->predio->colindancias->count()){
+        /* if(!$this->aviso->predio->colindancias->count()){
 
             throw new GeneralException("Debe ingresar las colindancias.");
 
-        }
+        } */
 
         if($this->aviso->aviso_id){
 
