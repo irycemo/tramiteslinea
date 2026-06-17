@@ -226,7 +226,7 @@ class CalculadoraIsai extends Component
 
         }
 
-        if(! ($this->aviso->valor_adquisicion > $this->aviso->valor_catastral)){
+        /* if(! ($this->aviso->valor_adquisicion > $this->aviso->valor_catastral)){ */
 
             if($this->aviso->porcentaje_adquisicion > 0){
 
@@ -248,7 +248,7 @@ class CalculadoraIsai extends Component
 
         }
 
-    }
+    /* } */
 
     public function reduccionVivienda(){
 
