@@ -96,6 +96,7 @@ class Transmitentes extends Component
                                                     ->where('predio_sgc', $this->aviso->predio_sgc)
                                                     ->orWhere('fecha_firma', $this->aviso->fecha_firma);
                                                 })
+                                                ->where('predio_id', $this->aviso->predio_sgc)
                                                 ->where('entidad_id', auth()->user()->entidad_id)
                                                 ->where('id', '!=', $this->aviso->id)
                                                 ->get();
@@ -181,6 +182,7 @@ class Transmitentes extends Component
                                             ->where('predio_sgc', $this->aviso->predio_sgc)
                                             ->orWhere('fecha_firma', $this->aviso->fecha_firma);
                                         })
+                                        ->where('predio_id', $this->aviso->predio_sgc)
                                         ->where('entidad_id', auth()->user()->entidad_id)
                                         ->where('id', '!=', $this->aviso->id)
                                         ->get();
