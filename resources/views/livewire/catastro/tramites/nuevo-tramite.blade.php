@@ -42,7 +42,14 @@
 
                     <div>
 
-                        <input placeholder="Oficina" type="number" class="bg-white rounded text-sm lg:w-24  @error('oficina') border-red-500 @enderror" readonly wire:model="oficina">
+                        {{-- <input placeholder="Oficina" type="number" class="bg-white rounded text-sm lg:w-24  @error('oficina') border-red-500 @enderror" readonly wire:model="oficina"> --}}
+
+                        <select class="bg-white rounded text-sm w-full" wire:model.live="oficina">
+
+                            <option value="101">101</option>
+                            <option value="1801">1801</option>
+
+                        </select>
 
                     </div>
 
