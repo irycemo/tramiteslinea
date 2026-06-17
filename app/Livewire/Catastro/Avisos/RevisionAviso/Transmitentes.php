@@ -90,13 +90,13 @@ class Transmitentes extends Component
         $this->avisos_misma_escritura = Aviso::where('tipo', 'revision')
                                                 ->where(function($q){
                                                     $q->where('tipo_escritura', $this->aviso->tipo_escritura)
-                                                    ->where('numero_escritura', $this->aviso->numero_escritura)
-                                                    ->where('volumen_escritura', $this->aviso->volumen_escritura)
-                                                    ->where('avaluo_spe', $this->aviso->avaluo_spe)
-                                                    ->where('predio_sgc', $this->aviso->predio_sgc)
-                                                    ->orWhere('fecha_firma', $this->aviso->fecha_firma);
+                                                        ->where('numero_escritura', $this->aviso->numero_escritura)
+                                                        ->where('volumen_escritura', $this->aviso->volumen_escritura)
+                                                        ->where('avaluo_spe', $this->aviso->avaluo_spe)
+                                                        ->where('predio_sgc', $this->aviso->predio_sgc)
+                                                        ->orWhere('fecha_firma', $this->aviso->fecha_firma);
                                                 })
-                                                ->where('predio_id', $this->aviso->predio_sgc)
+                                                ->where('predio_sgc', $this->aviso->predio_sgc)
                                                 ->where('entidad_id', auth()->user()->entidad_id)
                                                 ->where('id', '!=', $this->aviso->id)
                                                 ->get();
