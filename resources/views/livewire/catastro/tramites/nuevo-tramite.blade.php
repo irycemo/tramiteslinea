@@ -44,7 +44,7 @@
 
                         {{-- <input placeholder="Oficina" type="number" class="bg-white rounded text-sm lg:w-24  @error('oficina') border-red-500 @enderror" readonly wire:model="oficina"> --}}
 
-                        <select class="bg-white rounded text-sm w-full" wire:model.live="oficina">
+                        <select class="bg-white rounded text-sm w-full" wire:model.live="oficina" @if(count($predios) > 0) disabled @endif>
 
                             <option value="101">101</option>
                             <option value="1801">1801</option>

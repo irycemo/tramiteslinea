@@ -13,7 +13,6 @@ use App\Traits\BuscarPersonaTrait;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use App\Exceptions\GeneralException;
-use App\Services\PeritosExternosService;
 
 class ActoEscritura extends Component
 {

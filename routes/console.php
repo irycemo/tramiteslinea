@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Aviso;
+use App\Models\User;
 use App\Services\PeritosExternosService;
 use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Artisan;
@@ -43,5 +44,19 @@ Artisan::command('avaluos', function(){
     $progressbar->finish();
 
     $this->info($count);
+
+});
+
+Artisan::command('usuarios', function(){
+
+    $usuarios = User::all();
+
+    foreach ($usuarios as $usuario) {
+
+        if($usuario->hasRole('Administrador')) continue;
+
+        $usuario->update(['estado' => 'inactivo']);
+
+    }
 
 });
