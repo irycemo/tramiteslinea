@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
 use App\Models\Aviso;
+use App\Services\SGCService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -33,7 +34,16 @@ class DesvincularAvaluoController extends Controller
 
                 foreach($avisos as  $aviso){
 
-                    $aviso->update(['avaluo_spe' => null, 'actualizado_por' => auth()->id()]);
+                    $aviso->update([
+                        'avaluo_spe' => null,
+                        'actualizado_por' => auth()->id()
+                    ]);
+
+                    if($aviso->traslado_sgc){
+
+                        (new SGCService())->inactivarTraslado($aviso->traslado_sgc);
+
+                    }
 
                 }
 

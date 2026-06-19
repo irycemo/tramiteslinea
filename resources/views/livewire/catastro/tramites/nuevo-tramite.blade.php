@@ -259,60 +259,64 @@
 
     </div>
 
-    <div class="bg-white shadow-lg  rounded-lg p-4 mt-5 text-center text-sm">
+    @if($oficina == 101)
 
-        <p class="font-bold">EQUIVALENCIAS CON EL AYUNTAMIENTO DE MORELIA</p>
+        <div class="bg-white shadow-lg  rounded-lg p-4 mt-5 text-center text-sm">
 
-        <table class="mx-auto">
+            <p class="font-bold">EQUIVALENCIAS CON EL AYUNTAMIENTO DE MORELIA</p>
 
-            <thead>
-                <tr>
-                    <th class="pr-6">Oficina Predial</th>
-                    <th class="pr-6">Localidad</th>
-                    <th class="pr-6">Oficina</th>
-                </tr>
-            </thead>
+            <table class="mx-auto">
 
-            <tbody>
-                <tr>
-                    <td>0101</td>
-                    <td>1</td>
-                    <td>101</td>
-                </tr>
-                <tr>
-                    <td>0103</td>
-                    <td>2</td>
-                    <td>101</td>
-                </tr>
-                <tr>
-                    <td>2907</td>
-                    <td>3</td>
-                    <td>101</td>
-                </tr>
-                <tr>
-                    <td>3004</td>
-                    <td>4</td>
-                    <td>101</td>
-                </tr>
-                <tr>
-                    <td>3008</td>
-                    <td>5</td>
-                    <td>101</td>
-                </tr>
-                <tr>
-                    <td>3009</td>
-                    <td>6</td>
-                    <td>101</td>
-                </tr>
-                <tr>
-                    <td>0130</td>
-                    <td>7</td>
-                    <td>101</td>
-                </tr>
-            </tbody>
+                <thead>
+                    <tr>
+                        <th class="pr-6">Oficina Predial</th>
+                        <th class="pr-6">Localidad</th>
+                        <th class="pr-6">Oficina</th>
+                    </tr>
+                </thead>
 
-        </table>
+                <tbody>
+                    <tr>
+                        <td>0101</td>
+                        <td>1</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <td>0103</td>
+                        <td>2</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <td>2907</td>
+                        <td>3</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <td>3004</td>
+                        <td>4</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <td>3008</td>
+                        <td>5</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <td>3009</td>
+                        <td>6</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <td>0130</td>
+                        <td>7</td>
+                        <td>101</td>
+                    </tr>
+                </tbody>
 
-    </div>
+            </table>
+
+        </div>
+
+    @endif
 
 </div>
