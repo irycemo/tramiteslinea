@@ -68,10 +68,10 @@ class RevertirAvisoController extends Controller
 
             Mail::to($aviso->entidad->email)->send(new AvsioRevertidoMail($aviso, $observaciones));
 
-            $aviso->update(['estado' => 'autorizado', 'actualizado_por' => auth()->id()]);
+            $aviso->update(['estado' => 'nuevo', 'actualizado_por' => auth()->id()]);
 
             return response()->json([
-                'data' => "El aviso cambio a autorizado con éxito.",
+                'data' => "El aviso cambio a nuevo con éxito.",
             ], 200);
 
         } catch (\Throwable $th) {
@@ -106,10 +106,10 @@ class RevertirAvisoController extends Controller
 
             Mail::to($aviso->entidad->email)->send(new RevertirRechazoMail($aviso, $observaciones));
 
-            $aviso->update(['estado' => 'cerrado', 'actualizado_por' => auth()->id()]);
+            $aviso->update(['estado' => 'nuevo', 'actualizado_por' => auth()->id()]);
 
             return response()->json([
-                'data' => "El aviso cambio a cerrado con éxito.",
+                'data' => "El aviso cambio a nuevo con éxito.",
             ], 200);
 
         } catch (\Throwable $th) {
@@ -144,10 +144,10 @@ class RevertirAvisoController extends Controller
 
             Mail::to($aviso->entidad->email)->send(new RevertirAutorizadoMail($aviso, $observaciones));
 
-            $aviso->update(['estado' => 'cerrado', 'actualizado_por' => auth()->id()]);
+            $aviso->update(['estado' => 'nuevo', 'actualizado_por' => auth()->id()]);
 
             return response()->json([
-                'data' => "El aviso cambio a cerrado con éxito.",
+                'data' => "El aviso cambio a nuevo con éxito.",
             ], 200);
 
         } catch (\Throwable $th) {
