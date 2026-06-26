@@ -41,6 +41,8 @@ class RechazarAvisoController extends Controller
 
                 $aviso->update(['estado' => 'rechazado', 'avaluo_spe' => null, 'actualizado_por' => auth()->id()]);
 
+                $aviso->audits()->latest()->first()->update(['tags' => 'Rechazó aviso']);
+
                 Mail::to($aviso->entidad->email)->send(new AvsioRechazadoMail($aviso, $validated['observaciones']));
 
             });

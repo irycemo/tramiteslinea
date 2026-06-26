@@ -32,6 +32,8 @@ class RevertirAvisoController extends Controller
 
             $aviso->update(['estado' => 'nuevo', 'actualizado_por' => auth()->id()]);
 
+            $aviso->audits()->latest()->first()->update(['tags' => 'Reactivó aviso']);
+
             return response()->json([
                 'data' => "El aviso cambio a nuevo con éxito.",
             ], 200);
@@ -69,6 +71,8 @@ class RevertirAvisoController extends Controller
             Mail::to($aviso->entidad->email)->send(new AvsioRevertidoMail($aviso, $observaciones));
 
             $aviso->update(['estado' => 'nuevo', 'actualizado_por' => auth()->id()]);
+
+            $aviso->audits()->latest()->first()->update(['tags' => 'Revirtió aviso']);
 
             return response()->json([
                 'data' => "El aviso cambio a nuevo con éxito.",
@@ -108,6 +112,8 @@ class RevertirAvisoController extends Controller
 
             $aviso->update(['estado' => 'nuevo', 'actualizado_por' => auth()->id()]);
 
+            $aviso->audits()->latest()->first()->update(['tags' => 'Revirtió rechazo aviso']);
+
             return response()->json([
                 'data' => "El aviso cambio a nuevo con éxito.",
             ], 200);
@@ -145,6 +151,8 @@ class RevertirAvisoController extends Controller
             Mail::to($aviso->entidad->email)->send(new RevertirAutorizadoMail($aviso, $observaciones));
 
             $aviso->update(['estado' => 'nuevo', 'actualizado_por' => auth()->id()]);
+
+            $aviso->audits()->latest()->first()->update(['tags' => 'Revirtió autorización aviso']);
 
             return response()->json([
                 'data' => "El aviso cambio a nuevo con éxito.",

@@ -43,6 +43,8 @@ class AutorizarAvisoController extends Controller
 
                 $aviso->update(['estado' => 'autorizado','actualizado_por' => auth()->id()]);
 
+                $aviso->audits()->latest()->first()->update(['tags' => 'Autorizó aviso']);
+
                 if(! $aviso->entidad->email){
 
                     throw new GeneralException('La entidad no tiene correo registrado.');

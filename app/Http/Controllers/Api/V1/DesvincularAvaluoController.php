@@ -39,6 +39,8 @@ class DesvincularAvaluoController extends Controller
                         'actualizado_por' => auth()->id()
                     ]);
 
+                    $aviso->audits()->latest()->first()->update(['tags' => 'Desvinculó avalúo']);
+
                     if($aviso->traslado_sgc){
 
                         (new SGCService())->inactivarTraslado($aviso->traslado_sgc);

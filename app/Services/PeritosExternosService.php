@@ -52,7 +52,7 @@ class PeritosExternosService{
                             ->accept('application/json')
                             ->asForm()
                             ->post(
-                                config('services.peritos_externos.consultar_avaluo'),
+                                config('services.peritos_externos.consultar_avaluo_id'),
                                 [
                                     'id' => $avaluo_id
                                 ]

@@ -41,6 +41,8 @@ class OperarAvisoController extends Controller
 
                 $aviso->update(['estado' => 'operado', 'actualizado_por' => auth()->id()]);
 
+                $aviso->audits()->latest()->first()->update(['tags' => 'Operó aviso']);
+
                 Mail::to($aviso->entidad->email)->send(new AvisoOperadoMail($aviso));
 
             });
