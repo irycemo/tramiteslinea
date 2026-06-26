@@ -51,31 +51,35 @@
 
         @include('livewire.catastro.avisos.comun.errores')
 
-        <div class="mb-5 bg-white rounded-lg p-2 shadow-lg flex justify-end gap-4">
+        @if($aviso->estado == 'nuevo')
 
-            <x-button-green
-                wire:click="guardar"
-                wire:loading.attr="disabled"
-                wire:target="guardar">
+            <div class="mb-5 bg-white rounded-lg p-2 shadow-lg flex justify-end gap-4">
 
-                <img wire:loading wire:target="guardar" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                <x-button-green
+                    wire:click="guardar"
+                    wire:loading.attr="disabled"
+                    wire:target="guardar">
 
-                Guardar
+                    <img wire:loading wire:target="guardar" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-            </x-button-green>
+                    Guardar
 
-            <x-button-red
-                wire:click="abrirModal"
-                wire:loading.attr="disabled"
-                wire:target="abrirModal">
+                </x-button-green>
 
-                <img wire:loading wire:target="abrirModal" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                <x-button-red
+                    wire:click="abrirModal"
+                    wire:loading.attr="disabled"
+                    wire:target="abrirModal">
 
-                Cerrar aviso
+                    <img wire:loading wire:target="abrirModal" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-            </x-button-red>
+                    Cerrar aviso
 
-        </div>
+                </x-button-red>
+
+            </div>
+
+        @endif
 
         <x-dialog-modal wire:model="modal" maxWidth="sm">
 

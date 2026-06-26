@@ -199,7 +199,7 @@
 
         @include('livewire.catastro.avisos.comun.errores')
 
-        @if(isset($aviso->folio))
+        @if($aviso->estado == 'nuevo')
 
             <div class="space-y-2 mb-5 bg-white rounded-lg p-2 shadow-lg flex justify-end">
 

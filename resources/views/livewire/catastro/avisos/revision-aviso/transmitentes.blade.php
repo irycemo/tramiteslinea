@@ -32,22 +32,26 @@
 
             </div>
 
-            <div class="mb-2 flex-col sm:flex-row mx-auto mt-5 flex space-y-2 sm:space-y-0 sm:space-x-3 justify-center">
+            @if($aviso->estado == 'nuevo')
 
-                <button
-                    wire:click="buscarCertificado"
-                    wire:loading.attr="disabled"
-                    wire:target="buscarCertificado"
-                    type="button"
-                    class="bg-blue-400 mb-3 hover:shadow-lg text-white font-bold px-4 py-2 rounded text-xs hover:bg-blue-700 focus:outline-none flex items-center justify-center focus:outline-blue-400 focus:outline-offset-2">
+                <div class="mb-2 flex-col sm:flex-row mx-auto mt-5 flex space-y-2 sm:space-y-0 sm:space-x-3 justify-center">
 
-                    <img wire:loading wire:target="buscarCertificado" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                    <button
+                        wire:click="buscarCertificado"
+                        wire:loading.attr="disabled"
+                        wire:target="buscarCertificado"
+                        type="button"
+                        class="bg-blue-400 mb-3 hover:shadow-lg text-white font-bold px-4 py-2 rounded text-xs hover:bg-blue-700 focus:outline-none flex items-center justify-center focus:outline-blue-400 focus:outline-offset-2">
 
-                    Consultar certificado
+                        <img wire:loading wire:target="buscarCertificado" class="h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-                </button>
+                        Consultar certificado
 
-            </div>
+                    </button>
+
+                </div>
+
+            @endif
 
         </div>
 
@@ -134,45 +138,49 @@
 
                                 <x-table.cell tile="Acciones">
 
-                                    <div class="ml-3 relative" x-data="{ open_drop_down:false }">
+                                    @if($aviso->estado == 'nuevo')
 
-                                        <div>
+                                        <div class="ml-3 relative" x-data="{ open_drop_down:false }">
 
-                                            <button x-on:click="open_drop_down=true" type="button" class="rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                                            <div>
 
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                                </svg>
+                                                <button x-on:click="open_drop_down=true" type="button" class="rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
 
-                                            </button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                                    </svg>
+
+                                                </button>
+
+                                            </div>
+
+                                            <div x-cloak x-show="open_drop_down" x-on:click="open_drop_down=false" x-on:click.away="open_drop_down=false" class="z-50 origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
+
+                                                @if($aviso->estado === 'nuevo')
+
+                                                    <button
+                                                        wire:click="borrarTransmitente({{ $transmitente->id }})"
+                                                        wire:loading.attr="disabled"
+                                                        class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                                                        role="menuitem">
+                                                        Borrar
+                                                    </button>
+
+                                                    <button
+                                                        wire:click="abrirModalEditar({{ $transmitente->id }})"
+                                                        wire:loading.attr="disabled"
+                                                        class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                                                        role="menuitem">
+                                                        Editar generales
+                                                    </button>
+
+                                                @endif
+
+                                            </div>
 
                                         </div>
 
-                                        <div x-cloak x-show="open_drop_down" x-on:click="open_drop_down=false" x-on:click.away="open_drop_down=false" class="z-50 origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
-
-                                            @if($aviso->estado === 'nuevo')
-
-                                                <button
-                                                    wire:click="borrarTransmitente({{ $transmitente->id }})"
-                                                    wire:loading.attr="disabled"
-                                                    class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                                                    role="menuitem">
-                                                    Borrar
-                                                </button>
-
-                                                <button
-                                                    wire:click="abrirModalEditar({{ $transmitente->id }})"
-                                                    wire:loading.attr="disabled"
-                                                    class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-                                                    role="menuitem">
-                                                    Editar generales
-                                                </button>
-
-                                            @endif
-
-                                        </div>
-
-                                    </div>
+                                    @endif
 
                                 </x-table.cell>
 

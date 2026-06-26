@@ -342,37 +342,41 @@
 
         @include('livewire.catastro.avisos.comun.errores')
 
-        <div class="space-y-2 mb-5 bg-white rounded-lg p-2 shadow-lg flex justify-end">
+        @if($aviso->estado == 'nuevo')
 
-            @if($actualizacion)
+            <div class="space-y-2 mb-5 bg-white rounded-lg p-2 shadow-lg flex justify-end">
 
-                <x-button-green
-                    wire:click="actualizar"
-                    wire:loading.attr="disabled"
-                    wire:target="actualizar">
+                @if($actualizacion)
 
-                    <img wire:loading wire:target="actualizar" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                    <x-button-green
+                        wire:click="actualizar"
+                        wire:loading.attr="disabled"
+                        wire:target="actualizar">
 
-                    Actualizar
+                        <img wire:loading wire:target="actualizar" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-                </x-button-green>
+                        Actualizar
 
-            @else
+                    </x-button-green>
 
-                <x-button-green
-                    wire:click="guardar"
-                    wire:loading.attr="disabled"
-                    wire:target="guardar">
+                @else
 
-                    <img wire:loading wire:target="guardar" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
+                    <x-button-green
+                        wire:click="guardar"
+                        wire:loading.attr="disabled"
+                        wire:target="guardar">
 
-                    Guardar
+                        <img wire:loading wire:target="guardar" class="mx-auto h-4 mr-1" src="{{ asset('storage/img/loading3.svg') }}" alt="Loading">
 
-                </x-button-green>
+                        Guardar
 
-            @endif
+                    </x-button-green>
 
-        </div>
+                @endif
+
+            </div>
+
+        @endif
 
     @endif
 
