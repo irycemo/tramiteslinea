@@ -17,7 +17,7 @@
         font-weight: normal;
         line-height: 1.5;
         text-transform: uppercase;
-        font-size: 9px;
+        font-size: 11px;
     }
 
     h1{

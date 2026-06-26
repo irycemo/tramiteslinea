@@ -2,17 +2,18 @@
 
 namespace App\Livewire\Catastro\Avisos\RevisionAviso;
 
-use App\Models\File;
-use App\Models\Aviso;
-use Livewire\Component;
-use Livewire\Attributes\On;
-use App\Services\SGCService;
-use Livewire\WithFileUploads;
 use App\Constantes\Constantes;
+use App\Exceptions\GeneralException;
+use App\Models\Aviso;
+use App\Models\File;
+use App\Services\PeritosExternosService;
+use App\Services\SGCService;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
-use App\Exceptions\GeneralException;
 use Illuminate\Support\Facades\Storage;
+use Livewire\Attributes\On;
+use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class Archivo extends Component
 {
@@ -223,6 +224,8 @@ class Archivo extends Component
         try {
 
             $this->revisarAvisoCompleto();
+
+            (new PeritosExternosService())->consultarAvaluoId($this->aviso->avaluo_spe);
 
             $data_tramite_aviso = (new SGCService())->consultarTramieAviso($this->año_aviso, $this->folio_aviso, $this->usuario_aviso, $this->aviso->predio_sgc);
 

@@ -45,6 +45,41 @@ class PeritosExternosService{
 
     }
 
+    public function consultarAvaluoId(int $avaluo_id):array
+    {
+
+        $response = Http::withToken(config('services.peritos_externos.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.peritos_externos.consultar_avaluo'),
+                                [
+                                    'id' => $avaluo_id
+                                ]
+                            );
+
+        if($response->status() !== 200){
+
+            Log::info("Error al consultar avalúo. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al consultar avalúo.");
+
+        }else{
+
+            return json_decode($response, true)['data'];
+
+        }
+
+    }
+
     public function reactivarAvaluo(int $avaluo_id):string
     {
 
