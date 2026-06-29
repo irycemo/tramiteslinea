@@ -36,6 +36,8 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::post('revertir_autorizado', [RevertirAvisoController::class, 'revertirAutorizado']);
 
+    Route::post('corregir_autorizacion', [RevertirAvisoController::class, 'corregirAutorizacion']);
+
     Route::post('corregir_operacion', [RevertirAvisoController::class, 'corregirOperacion']);
 
     Route::post('generar_aviso_pdf', [GenerarAvisoPdfController::class, 'generarPdf']);
