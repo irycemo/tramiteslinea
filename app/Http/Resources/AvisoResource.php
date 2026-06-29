@@ -22,6 +22,7 @@ class AvisoResource extends JsonResource
             'folio' => $this->folio,
             'usuario' => $this->usuario,
             'acto' => $this->acto,
+            'estado' => $this->estado,
             'fecha_ejecutoria' => $this->fecha_ejecutoria,
             'tipo_escritura' => $this->tipo_escritura,
             'numero_escritura' => $this->numero_escritura,
