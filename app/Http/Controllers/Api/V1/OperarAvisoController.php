@@ -48,7 +48,7 @@ class OperarAvisoController extends Controller
             });
 
             return response()->json([
-                'data' => "El aviso se autorizó con éxito.",
+                'data' => "El aviso se operó con éxito.",
             ], 200);
 
         } catch (\Throwable $th) {

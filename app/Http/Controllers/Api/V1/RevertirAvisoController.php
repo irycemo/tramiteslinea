@@ -170,4 +170,40 @@ class RevertirAvisoController extends Controller
 
     }
 
+    public function corregirOperacion(Request $request){
+
+        $validated = $request->validate(['id' => 'required|numeric|min:1']);
+
+        $aviso = Aviso::with('predio')->find($validated['id']);
+
+        if(!$aviso){
+
+            return response()->json([
+                'error' => "El aviso no existe.",
+            ], 404);
+
+        }
+
+        try {
+
+            $aviso->update(['estado' => 'autorizado', 'actualizado_por' => auth()->id()]);
+
+            $aviso->audits()->latest()->first()->update(['tags' => 'Corrigio operación']);
+
+            return response()->json([
+                'data' => "El aviso cambio a autorizado con éxito.",
+            ], 200);
+
+        } catch (\Throwable $th) {
+
+            Log::error("Error al reactivar aviso. " . $th);
+
+            return response()->json([
+                'error' => "Error al revertir el aviso.",
+            ], 500);
+
+        }
+
+    }
+
 }
