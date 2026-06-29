@@ -156,15 +156,27 @@ class Archivo extends Component
 
         $porcentaje_usufructo_adquirientes = $this->aviso->predio->actores()->where('tipo', 'adquiriente')->sum('porcentaje_usufructo');
 
-        if(($porcentaje_propiedad_adquirientes + $porcentaje_nuda_adquirientes) > ($porcentaje_propiedad_transmitentes + $porcentaje_nuda_transmitentes)){
+        if($this->aviso->acto == 'CONSOLIDACIÓN DEL USUFRUCTO'){
 
-            throw new GeneralException("Revisar los porcentajes de de los adquirientes.");
+            if($porcentaje_propiedad_adquirientes != $porcentaje_usufructo_transmitentes){
 
-        }
+                throw new GeneralException("El porcentaje de propiedad de los adquirientes no corresponde al porcentaje de usufructo de los transmitentes.");
 
-        if(($porcentaje_propiedad_adquirientes + $porcentaje_usufructo_adquirientes) > ($porcentaje_propiedad_transmitentes + $porcentaje_usufructo_transmitentes)){
+            }
 
-            throw new GeneralException("Revisar los porcentajes de de los adquirientes.");
+        }else{
+
+            if(($porcentaje_propiedad_adquirientes + $porcentaje_nuda_adquirientes) > ($porcentaje_propiedad_transmitentes + $porcentaje_nuda_transmitentes)){
+
+                throw new GeneralException("Revisar los porcentajes de de los adquirientes.");
+
+            }
+
+            if(($porcentaje_propiedad_adquirientes + $porcentaje_usufructo_adquirientes) > ($porcentaje_propiedad_transmitentes + $porcentaje_usufructo_transmitentes)){
+
+                throw new GeneralException("Revisar los porcentajes de de los adquirientes.");
+
+            }
 
         }
 
