@@ -6,7 +6,7 @@
 
 {{ $entidad }}
 
-Se le informa que esta autoridad catastral ha cancelado la autorización del traslado de dominio con folio {{ $aviso->año }}-{{ $aviso->folio }}-{{ $aviso->usuario }}.
+Se le informa que esta autoridad catastral ha reiniciado la autorización del traslado de dominio con folio {{ $aviso->año }}-{{ $aviso->folio }}-{{ $aviso->usuario }}. Es necesario cerrar el aviso.
 
 Con fundamento en el Reglamento de la Ley de la Función Registral y Catastral del Estado de Michoacán de Ocampo
 
