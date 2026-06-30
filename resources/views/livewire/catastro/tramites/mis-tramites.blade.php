@@ -40,6 +40,14 @@
 
             </select>
 
+            <input type="number" wire:model="localidad" placeholder="Localidad" class="bg-white rounded-full text-sm w-24">
+
+            <input type="number" wire:model="oficina" placeholder="Oficina" class="bg-white rounded-full text-sm w-24">
+
+            <input type="number" wire:model="t_predio" placeholder="T. Predio" class="bg-white rounded-full text-sm w-24">
+
+            <input type="number" wire:model.live.debounce.500ms="registro" placeholder="# Registro" class="bg-white rounded-full text-sm w-24">
+
             <select class="bg-white rounded-full text-sm" wire:model.live="pagination">
 
                 <option value="10">10</option>

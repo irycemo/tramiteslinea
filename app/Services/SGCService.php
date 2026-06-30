@@ -578,7 +578,7 @@ class SGCService {
 
     }
 
-    public function consultarTramites(int $entidad_id, string | null $estado, int | null $año, int |null $folio, string | null $tipo_servicio, string | null $servicio, int $pagina_actual, int $pagination):array
+    public function consultarTramites(int $entidad_id, string | null $estado, int | null $año, int |null $folio, string | null $tipo_servicio, string | null $servicio, int |null $localidad, int |null $oficina, int |null $t_predio, int |null $registro, int $pagina_actual, int $pagination):array
     {
 
         $response = Http::withToken(config('services.sgc.token'))
@@ -593,6 +593,10 @@ class SGCService {
                                     'folio' => $folio,
                                     'tipo_servicio' => $tipo_servicio,
                                     'servicio' => $servicio,
+                                    'localidad' => $localidad,
+                                    'oficina' => $oficina,
+                                    't_predio' => $t_predio,
+                                    'registro' => $registro,
                                     'pagina' => $pagina_actual,
                                     'pagination' => $pagination,
                                 ]

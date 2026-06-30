@@ -23,6 +23,10 @@ class MisTramites extends Component
     public $tipo_servicio;
     public $servicio;
     public $año;
+    public $localidad;
+    public $oficina;
+    public $t_predio;
+    public $registro;
     public $paginaActual = 1;
     public $paginaAnterior;
     public $paginaSiguiente;
@@ -36,9 +40,9 @@ class MisTramites extends Component
     public $token;
     public $link_pago_linea;
 
-    public function updatedFolio(){
+    public function updated($field, $value){
 
-        if($this->folio == '') $this->folio = null;
+        if($value == '') $this->{$field} = null;
 
     }
 
@@ -151,6 +155,10 @@ class MisTramites extends Component
                                                             $this->folio,
                                                             $this->tipo_servicio,
                                                             $this->servicio,
+                                                            $this->localidad,
+                                                            $this->oficina,
+                                                            $this->t_predio,
+                                                            $this->registro,
                                                             $this->paginaActual,
                                                             $this->pagination
                                                         );
