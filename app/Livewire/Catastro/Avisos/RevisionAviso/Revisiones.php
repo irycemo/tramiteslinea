@@ -92,7 +92,11 @@ class Revisiones extends Component
 
             foreach ($avisos as $aviso) {
 
-                if($aviso->estado === 'operado') continue;
+                if($aviso->estado === 'operado'){
+
+                    throw new GeneralException("El avalúo no se puede reactivar, esta asociado a un aviso ya operado (" . $aviso->año . '-' . $aviso->folio . '-' . $aviso->usuario . ").");
+
+                }
 
                 if($aviso->traslado_sgc){
 
@@ -132,6 +136,8 @@ class Revisiones extends Component
         $this->modelo_editar = $aviso;
 
         try {
+
+            if($this->modelo_editar->estado == 'operado') throw new GeneralException('El aviso esta operado no es posible reactivarlo.');
 
             (new SGCService())->inactivarTraslado($this->modelo_editar->traslado_sgc);
 
@@ -175,7 +181,11 @@ class Revisiones extends Component
 
                 foreach ($avisos as $aviso) {
 
-                    if($aviso->estado === 'operado') continue;
+                    if($aviso->estado === 'operado'){
+
+                        throw new GeneralException("El avalúo no se puede reactivar, esta asociado a un aviso ya operado (" . $aviso->año . '-' . $aviso->folio . '-' . $aviso->usuario . ").");
+
+                    }
 
                     if($aviso->traslado_sgc){
 

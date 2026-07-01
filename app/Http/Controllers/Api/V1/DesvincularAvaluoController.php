@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api\V1;
 
+use App\Exceptions\GeneralException;
 use App\Http\Controllers\Controller;
 use App\Models\Aviso;
 use App\Services\SGCService;
@@ -34,7 +35,11 @@ class DesvincularAvaluoController extends Controller
 
                 foreach($avisos as  $aviso){
 
-                    if($aviso->estado === 'operado') continue;
+                    if($aviso->estado === 'operado'){
+
+                        throw new GeneralException("El avalúo no se puede desvincular, esta asociado a un aviso ya operado.");
+
+                    }
 
                     $aviso->update([
                         'avaluo_spe' => null,
@@ -56,6 +61,12 @@ class DesvincularAvaluoController extends Controller
             return response()->json([
                 'data' => "El avalúo se desvinculo con éxito.",
             ], 200);
+
+        } catch (GeneralException $ex) {
+
+            return response()->json([
+                'error' => $ex->getMessage(),
+            ], 401);
 
         } catch (\Throwable $th) {
 
