@@ -92,6 +92,8 @@ class Revisiones extends Component
 
             foreach ($avisos as $aviso) {
 
+                if($aviso->estado === 'operado') continue;
+
                 if($aviso->traslado_sgc){
 
                     (new SGCService())->inactivarTraslado($aviso->traslado_sgc);
@@ -172,6 +174,8 @@ class Revisiones extends Component
                 $avisos = Aviso::where('avaluo_spe', $this->modelo_editar->avaluo_spe)->get();
 
                 foreach ($avisos as $aviso) {
+
+                    if($aviso->estado === 'operado') continue;
 
                     if($aviso->traslado_sgc){
 

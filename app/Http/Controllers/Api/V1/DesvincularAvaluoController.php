@@ -34,6 +34,8 @@ class DesvincularAvaluoController extends Controller
 
                 foreach($avisos as  $aviso){
 
+                    if($aviso->estado === 'operado') continue;
+
                     $aviso->update([
                         'avaluo_spe' => null,
                         'actualizado_por' => auth()->id()
