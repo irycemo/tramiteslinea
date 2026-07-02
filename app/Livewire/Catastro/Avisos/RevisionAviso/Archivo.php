@@ -156,7 +156,7 @@ class Archivo extends Component
 
         $porcentaje_usufructo_adquirientes = $this->aviso->predio->actores()->where('tipo', 'adquiriente')->sum('porcentaje_usufructo');
 
-        if($this->aviso->acto == 'CONSOLIDACIÓN DEL USUFRUCTO'){
+        if(in_array($this->aviso->acto, ['CONSOLIDACIÓN DEL USUFRUCTO', 'EXTINCIÓN DE USUFRUCTO VITALICIO'])){
 
             if($porcentaje_propiedad_adquirientes != $porcentaje_usufructo_transmitentes){
 
@@ -188,15 +188,7 @@ class Archivo extends Component
 
         foreach ($avisos as $aviso) {
 
-            if(
-                $aviso->tipo_escritura != $this->aviso->tipo_escritura ||
-                $aviso->numero_escritura != $this->aviso->numero_escritura ||
-                $aviso->volumen_escritura != $this->aviso->volumen_escritura
-            ){
-
-                throw new GeneralException("El trámite del aviso ya esta asociado a otro aviso con diferente escritura: " . $aviso->año . '-' . $aviso->folio . '-' . $aviso->usuario . '.');
-
-            }
+            throw new GeneralException("El trámite del aviso ya esta asociado a otro aviso: " . $aviso->año . '-' . $aviso->folio . '-' . $aviso->usuario . '.');
 
         }
 
@@ -212,7 +204,10 @@ class Archivo extends Component
                 $aviso->tipo_escritura != $this->aviso->tipo_escritura ||
                 $aviso->numero_escritura != $this->aviso->numero_escritura ||
                 $aviso->volumen_escritura != $this->aviso->volumen_escritura
+
             ){
+
+                if($aviso->fecha_firma == $this->aviso->fecha_firma) continue;
 
                 throw new GeneralException("El certificado ya esta asociado a otro aviso con diferente escritura: " . $aviso->año . '-' . $aviso->folio . '-' . $aviso->usuario . '.');
 
