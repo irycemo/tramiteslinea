@@ -2,16 +2,17 @@
 
 namespace App\Livewire\Catastro\Avisos\AvisoAclaratorio;
 
-use App\Models\Aviso;
-use Livewire\Component;
-use App\Services\SGCService;
-use Livewire\WithPagination;
 use App\Constantes\Constantes;
-use App\Traits\ComponentesTrait;
-use Livewire\Attributes\Computed;
-use Illuminate\Support\Facades\Log;
 use App\Exceptions\GeneralException;
 use App\Http\Controllers\ImprimirAvisosController;
+use App\Models\Aviso;
+use App\Services\SGCService;
+use App\Traits\ComponentesTrait;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+use Livewire\Attributes\Computed;
+use Livewire\Component;
+use Livewire\WithPagination;
 
 class Avisos extends Component
 {
@@ -127,6 +128,47 @@ class Avisos extends Component
 
             Log::error("Error al imprimir aviso por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
 
+            $this->dispatch('mostrarMensaje', ['error', "Hubo un error."]);
+
+        }
+
+    }
+
+    public function borrarAviso(Aviso $aviso){
+
+        try {
+
+            DB::transaction(function () use($aviso){
+
+                $aviso->predio->colindancias()->delete();
+
+                $aviso->predio->actores()->delete();
+
+                $aviso->predio->actores()->delete();
+
+                $aviso->antecedentes()->delete();
+
+                $aviso->files()->delete();
+
+                if($aviso->traslado_sgc){
+
+                    (new SGCService())->eliminarTraslado($aviso->traslado_sgc);
+
+                }
+
+                $aviso->delete();
+
+            });
+
+            $this->dispatch('mostrarMensaje', ['success', "El aviso se eliminó correctamente."]);
+
+        } catch (GeneralException $ex) {
+
+            $this->dispatch('mostrarMensaje', ['error', $ex->getMessage()]);
+
+        } catch (\Throwable $th) {
+
+            Log::error("Error al eliminar aviso por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
             $this->dispatch('mostrarMensaje', ['error', "Hubo un error."]);
 
         }

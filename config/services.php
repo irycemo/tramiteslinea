@@ -76,6 +76,7 @@ return [
         'generar_certificado_pdf' => env('SGC_GENERAR_CERTIFICADO_PDF'),
         'acreditar_pago' => env('SGC_ACREDITAR_PAGO'),
         'cambiar_estado_traslado' => env('SGC_CAMBIAR_ESTADO_TRASLADO'),
+        'eliminar_traslado' => env('SGC_ELIMINAR_TRASLADO'),
     ],
 
     'sap' => [

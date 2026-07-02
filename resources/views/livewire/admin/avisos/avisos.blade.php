@@ -6,6 +6,32 @@
 
         <div class="flex gap-3 overflow-auto p-1">
 
+            <div class="flex gap-1">
+
+                <input type="number" wire:model.live.debounce.500ms="filters.localidad" placeholder="Localidad" class="bg-white rounded-full text-sm w-24">
+
+                <input type="number" wire:model.live.debounce.500ms="filters.oficina" placeholder="Oficina" class="bg-white rounded-full text-sm w-24">
+
+                <input type="number" wire:model.live.debounce.500ms="filters.t_predio" placeholder="T. Predio" class="bg-white rounded-full text-sm w-24">
+
+                <input type="number" wire:model.live.debounce.500ms="filters.registro" placeholder="# Registro" class="bg-white rounded-full text-sm w-24">
+
+            </div>
+
+            <select class="bg-white rounded-full text-sm" wire:model.live="filters.año">
+
+                @foreach ($años as $año)
+
+                    <option value="{{ $año }}">{{ $año }}</option>
+
+                @endforeach
+
+            </select>
+
+            <input type="number" wire:model.live.debounce.500mse="filters.folio" placeholder="Folio" class="bg-white rounded-full text-sm w-24">
+
+            <input type="number" wire:model.live.debounce.500mse="filters.usuario" placeholder="Usuario" class="bg-white rounded-full text-sm w-24">
+
             <select class="bg-white rounded-full text-sm" wire:model.live="filters.estado">
                 <option value="">Estado</option>
                 <option value="nuevo">Nuevo</option>
@@ -34,20 +60,6 @@
 
             </select>
 
-            <select class="bg-white rounded-full text-sm" wire:model.live="filters.año">
-
-                @foreach ($años as $año)
-
-                    <option value="{{ $año }}">{{ $año }}</option>
-
-                @endforeach
-
-            </select>
-
-            <input type="number" wire:model.live.debounce.500mse="filters.folio" placeholder="Folio" class="bg-white rounded-full text-sm w-24">
-
-            <input type="number" wire:model.live.debounce.500mse="filters.usuario" placeholder="Usuario" class="bg-white rounded-full text-sm w-24">
-
             <select class="bg-white rounded-full text-sm" wire:model.live="pagination">
 
                 <option value="10">10</option>
@@ -56,18 +68,6 @@
                 <option value="100">100</option>
 
             </select>
-
-            <div class="flex gap-1">
-
-                <input type="number" wire:model.live.debounce.500ms="filters.localidad" placeholder="Localidad" class="bg-white rounded-full text-sm w-24">
-
-                <input type="number" wire:model.live.debounce.500ms="filters.oficina" placeholder="Oficina" class="bg-white rounded-full text-sm w-24">
-
-                <input type="number" wire:model.live.debounce.500ms="filters.t_predio" placeholder="T. Predio" class="bg-white rounded-full text-sm w-24">
-
-                <input type="number" wire:model.live.debounce.500ms="filters.registro" placeholder="# Registro" class="bg-white rounded-full text-sm w-24">
-
-            </div>
 
         </div>
 

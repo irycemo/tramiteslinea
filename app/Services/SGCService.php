@@ -1063,4 +1063,35 @@ class SGCService {
 
     }
 
+    public function eliminarTraslado(int $traslado_id):void
+    {
+
+        $response = Http::withToken(config('services.sgc.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.sgc.eliminar_traslado'),
+                                [
+                                    'id' => $traslado_id
+                                ]
+                            );
+
+        if(! in_array($response->status(), [201, 404])){
+
+            Log::error("Error al eliminar traslado. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al eliminar traslado.");
+
+        }
+
+    }
+
 }
