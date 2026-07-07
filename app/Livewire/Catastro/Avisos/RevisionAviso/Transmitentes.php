@@ -52,13 +52,13 @@ class Transmitentes extends Component
 
         if(! $actor) return;
 
-        if($this->aviso->predio->transmitentes()->where('persona_id', $actor->persona_id)->first()){
+       /*  if($this->aviso->predio->transmitentes()->where('persona_id', $actor->persona_id)->first()){
 
             $this->dispatch('mostrarMensaje', ['success', "La persona ya es transmitente."]);
 
             return;
 
-        }
+        } */
 
         $transmitente = $actor->replicate();
 
