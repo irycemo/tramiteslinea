@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use Illuminate\Validation\Rule;
 use Livewire\Component;
 
 class ActoEscritura extends Component
@@ -41,8 +42,8 @@ class ActoEscritura extends Component
             'aviso.acto' => 'required',
             'aviso.fecha_ejecutoria' => 'nullable|date',
             'aviso.tipo_escritura' => 'required',
-            'aviso.numero_escritura' => 'required|string',
-            'aviso.volumen_escritura' => 'required|string',
+            'aviso.numero_escritura' => Rule::requiredIf($this->tipo_escritura != 'SIN DOCUMENTO'),
+            'aviso.volumen_escritura' => Rule::requiredIf($this->tipo_escritura != 'SIN DOCUMENTO'),
             'aviso.lugar_otorgamiento' => 'required',
             'aviso.fecha_otorgamiento' => 'required|date',
             'aviso.lugar_firma' => 'required',

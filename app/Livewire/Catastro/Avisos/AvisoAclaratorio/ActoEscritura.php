@@ -2,17 +2,18 @@
 
 namespace App\Livewire\Catastro\Avisos\AvisoAclaratorio;
 
-use App\Models\File;
-use App\Models\Aviso;
-use App\Models\Predio;
-use App\Models\Persona;
-use Livewire\Component;
-use App\Services\SGCService;
 use App\Constantes\Constantes;
+use App\Exceptions\GeneralException;
+use App\Models\Aviso;
+use App\Models\File;
+use App\Models\Persona;
+use App\Models\Predio;
+use App\Services\SGCService;
 use App\Traits\BuscarPersonaTrait;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
-use App\Exceptions\GeneralException;
+use Illuminate\Validation\Rule;
+use Livewire\Component;
 
 class ActoEscritura extends Component
 {
@@ -51,8 +52,8 @@ class ActoEscritura extends Component
             'aviso.acto' => 'required',
             'aviso.fecha_ejecutoria' => 'nullable|date',
             'aviso.tipo_escritura' => 'required',
-            'aviso.numero_escritura' => 'required|string',
-            'aviso.volumen_escritura' => 'required|string',
+            'aviso.numero_escritura' => Rule::requiredIf($this->tipo_escritura != 'SIN DOCUMENTO'),
+            'aviso.volumen_escritura' => Rule::requiredIf($this->tipo_escritura != 'SIN DOCUMENTO'),
             'aviso.lugar_otorgamiento' => 'required',
             'aviso.fecha_otorgamiento' => 'required|date',
             'aviso.lugar_firma' => 'required',
