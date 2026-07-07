@@ -110,7 +110,7 @@ class RevertirAvisoController extends Controller
 
             Mail::to($aviso->entidad->email)->send(new RevertirRechazoMail($aviso, $observaciones));
 
-            $aviso->update(['estado' => 'nuevo', 'actualizado_por' => auth()->id()]);
+            $aviso->update(['estado' => 'cerrado', 'actualizado_por' => auth()->id()]);
 
             $aviso->audits()->latest()->first()->update(['tags' => 'Revirtió rechazo aviso']);
 
@@ -150,7 +150,7 @@ class RevertirAvisoController extends Controller
 
             Mail::to($aviso->entidad->email)->send(new RevertirAutorizadoMail($aviso, $observaciones));
 
-            $aviso->update(['estado' => 'nuevo', 'actualizado_por' => auth()->id()]);
+            $aviso->update(['estado' => 'cerrado', 'actualizado_por' => auth()->id()]);
 
             $aviso->audits()->latest()->first()->update(['tags' => 'Revirtió autorización aviso']);
 
