@@ -18,6 +18,8 @@
 
             <input type="number" wire:model.live.debounce.500mse="folio" placeholder="Folio" class="bg-white rounded-full text-sm w-24">
 
+            <input type="number" wire:model.live.debounce.500mse="usuario" placeholder="Usuario" class="bg-white rounded-full text-sm w-24">
+
             <select class="bg-white rounded-full text-sm" wire:model.live="estado">
 
                 <option value="" selected>Estado</option>

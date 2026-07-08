@@ -20,6 +20,7 @@ class MisTramites extends Component
     public $estado;
     public $años;
     public $folio;
+    public $usuario = 11;
     public $tipo_servicio;
     public $servicio;
     public $año;
@@ -153,6 +154,7 @@ class MisTramites extends Component
                                                             $this->estado,
                                                             $this->año,
                                                             $this->folio,
+                                                            $this->usuario,
                                                             $this->tipo_servicio,
                                                             $this->servicio,
                                                             $this->localidad,
