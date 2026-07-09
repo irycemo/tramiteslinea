@@ -344,7 +344,7 @@ class SGCService {
 
     }
 
-    public function ingresarRevisionAviso(int $predio_id, int $tramite_id, int $certificado_id, int $avaluo_id, int $aviso_id, int $entidad_id, string $entidad_nombre, int $año, int $folio, int $usuario):array
+    public function ingresarRevisionAviso(int $predio_id, int $tramite_id, int $certificado_id, int $avaluo_id, int $aviso_id, int $entidad_id, string $entidad_nombre, int $año, int $folio, int $usuario, string $acto):array
     {
 
         $response = Http::withToken(config('services.sgc.token'))
@@ -363,6 +363,7 @@ class SGCService {
                                     'año_aviso' => $año,
                                     'folio_aviso' => $folio,
                                     'usuario_aviso' => $usuario,
+                                    'acto' => $acto,
                                 ]
                             );
 
@@ -388,7 +389,7 @@ class SGCService {
 
     }
 
-    public function ingresarAvisoAclaratorio(int $predio_id, int $tramite_id, int $aviso_id, int $entidad_id, string $entidad_nombre, int $año, int $folio, int $usuario):array
+    public function ingresarAvisoAclaratorio(int $predio_id, int $tramite_id, int $aviso_id, int $entidad_id, string $entidad_nombre, int $año, int $folio, int $usuario, string $acto):array
     {
 
         $response = Http::withToken(config('services.sgc.token'))
@@ -405,6 +406,7 @@ class SGCService {
                                     'año_aviso' => $año,
                                     'folio_aviso' => $folio,
                                     'usuario_aviso' => $usuario,
+                                    'acto' => $acto,
                                 ]
                             );
 

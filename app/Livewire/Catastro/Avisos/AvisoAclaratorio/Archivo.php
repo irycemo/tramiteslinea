@@ -184,6 +184,7 @@ class Archivo extends Component
                                                                     $this->aviso->año,
                                                                     $this->aviso->folio,
                                                                     $this->aviso->usuario,
+                                                                    $this->aviso->acto,
                                                                 );
 
             $this->aviso->update([
