@@ -113,6 +113,7 @@
                                 <th class="px-2">Oficina</th>
                                 <th class="px-2">Tipo de predio</th>
                                 <th class="px-2">Número de registro</th>
+                                <th class="px-2">Es habitacional</th>
                                 <th class="px-2"></th>
 
                             </tr>
@@ -136,7 +137,9 @@
                                     <td class="px-2">
                                         <p>{{ $item['numero_registro'] }}</p>
                                     </td>
-
+                                    <td class="px-2">
+                                        <p>{{ $item['es_habitacional'] == 1 ? 'Si' : 'No' }}</p>
+                                    </td>
                                     <td class="py-1">
                                         <button
                                             wire:click="quitarPredio({{ $key }})"

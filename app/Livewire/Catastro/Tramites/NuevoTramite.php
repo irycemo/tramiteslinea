@@ -122,6 +122,7 @@ class NuevoTramite extends Component
                     'oficina' => $predio['oficina'],
                     'tipo_predio' => $predio['tipo_predio'],
                     'numero_registro' => $predio['numero_registro'],
+                    'es_habitacional' => $predio['es_habitacional']
                 ]
             );
 
