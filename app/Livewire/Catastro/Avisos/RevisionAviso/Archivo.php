@@ -156,7 +156,7 @@ class Archivo extends Component
 
         $porcentaje_usufructo_adquirientes = $this->aviso->predio->actores()->where('tipo', 'adquiriente')->sum('porcentaje_usufructo');
 
-        if(in_array($this->aviso->acto, ['CONSOLIDACIÓN DEL USUFRUCTO', 'EXTINCIÓN DE USUFRUCTO VITALICIO'])){
+        if(in_array($this->aviso->acto, ['CONSOLIDACIÓN DEL USUFRUCTO', 'EXTINCIÓN DE USUFRUCTO VITALICIO', 'RENUNCIA DEL USUFRUCTO VITALICIO'])){
 
             if($porcentaje_propiedad_adquirientes != $porcentaje_usufructo_transmitentes){
 
