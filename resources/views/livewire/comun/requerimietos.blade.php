@@ -1,6 +1,6 @@
 <div class="">
 
-    <x-header>Requermientos</x-header>
+    <x-header>Requerimientos</x-header>
 
     <div class="">
 
