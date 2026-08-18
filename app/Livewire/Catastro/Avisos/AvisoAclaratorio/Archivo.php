@@ -73,7 +73,7 @@ class Archivo extends Component
 
         } */
 
-        if($this->aviso->aviso_id){
+        /* if($this->aviso->aviso_id){
 
             if(!$this->aviso->predio->transmitentes()->count()){
 
@@ -81,7 +81,7 @@ class Archivo extends Component
 
             }
 
-        }
+        } */
 
         /* if(!$this->aviso->archivo()->first()){
 
