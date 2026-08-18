@@ -158,9 +158,9 @@ class Archivo extends Component
 
         if(in_array($this->aviso->acto, ['CONSOLIDACIÓN DEL USUFRUCTO', 'EXTINCIÓN DE USUFRUCTO VITALICIO', 'RENUNCIA DEL USUFRUCTO VITALICIO'])){
 
-            if($porcentaje_propiedad_adquirientes == 0){
+            if($porcentaje_propiedad_adquirientes == 0 && $porcentaje_nuda_adquirientes == 0){
 
-                if( $porcentaje_nuda_adquirientes != $porcentaje_usufructo_adquirientes){
+                if( $porcentaje_usufructo_transmitentes != $porcentaje_usufructo_adquirientes){
 
                     throw new GeneralException("El porcentaje de nuda de los adquirientes no corresponde al porcentaje de usufructo de los transmitentes.");
 
