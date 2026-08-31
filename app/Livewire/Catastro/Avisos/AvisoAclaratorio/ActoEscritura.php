@@ -77,7 +77,6 @@ class ActoEscritura extends Component
             $this->revision_aviso = Aviso::where('año', $this->año_aviso)
                                         ->where('folio', $this->folio_aviso)
                                         ->where('usuario', $this->usuario_aviso)
-                                        ->where('entidad_id', auth()->user()->entidad_id)
                                         ->first();
 
             if(!$this->revision_aviso){
