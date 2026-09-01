@@ -102,7 +102,14 @@
 
     <x-input-group for="nacionalidad" label="Nacionalidad" :error="$errors->first('nacionalidad')" class="w-full">
 
-        <x-input-text id="nacionalidad" wire:model="nacionalidad" />
+        <x-input-select id="nacionalidad" wire:model="nacionalidad" class="w-full">
+
+            <option value="">Seleccione una opción</option>
+
+            <option value="MEXICANA">MEXICANA</option>
+            <option value="EXTRANJERA">EXTRANJERA</option>
+
+        </x-input-select>
 
     </x-input-group>
 
