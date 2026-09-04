@@ -124,11 +124,11 @@ class Archivo extends Component
 
             }
 
-            if(!$this->aviso->predio->fideicomisarios()->count()){
+            // if(!$this->aviso->predio->fideicomisarios()->count()){
 
-                throw new GeneralException("Debe ingresar la información de fideicomisarios.");
+            //     throw new GeneralException("Debe ingresar la información de fideicomisarios.");
 
-            }
+            // }
 
             if(!$this->aviso->predio->fiduciarias()->count()){
 
