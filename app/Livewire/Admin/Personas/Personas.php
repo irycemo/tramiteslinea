@@ -41,11 +41,11 @@ class Personas extends Component
             ],
             'modelo_editar.multiple_nombre' => 'nullable',
             'modelo_editar.nombre' => [
-                Rule::requiredIf($this->tipo_persona === 'FISICA')
+                Rule::requiredIf($this->modelo_editar->tipo === 'FISICA')
             ],
             'modelo_editar.ap_paterno' => 'nullable',
             'modelo_editar.ap_materno' => 'nullable',
-            'modelo_editar.razon_social' => [Rule::requiredIf($this->tipo_persona === 'MORAL')],
+            'modelo_editar.razon_social' => [Rule::requiredIf($this->modelo_editar->tipo === 'MORAL')],
             'modelo_editar.fecha_nacimiento' => 'nullable',
             'modelo_editar.nacionalidad' => 'nullable',
             'modelo_editar.estado_civil' => 'nullable',

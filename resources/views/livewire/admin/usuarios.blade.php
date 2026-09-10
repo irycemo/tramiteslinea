@@ -388,6 +388,8 @@
 
             </div>
 
+            {{ $errors }}
+
         </x-slot>
 
         <x-slot name="footer">
