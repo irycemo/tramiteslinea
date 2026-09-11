@@ -278,7 +278,7 @@
 
         <x-slot name="title">
 
-            Rechazos
+            Rechazos ({{ $this->modelo_editar->año . '-' . $this->modelo_editar->folio . '-' . $this->modelo_editar->usuario }})
 
         </x-slot>
 

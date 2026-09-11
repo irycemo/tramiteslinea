@@ -124,6 +124,7 @@ class FideicomisoCrear extends Component
                         'entidad' => $this->entidad,
                         'ciudad' => $this->ciudad,
                         'municipio' => $this->municipio,
+                        'creado_por' => auth()->id()
                     ]);
 
                     $this->modelo->actores()->create([

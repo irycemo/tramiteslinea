@@ -51,7 +51,7 @@ class Revisiones extends Component
 
         $this->modelo_editar = $aviso;
 
-        if(!$this->modelo_editar->traslado_sgc){
+        if(! $this->modelo_editar->traslado_sgc){
 
             $this->dispatch('mostrarMensaje', ['warning', 'No hay rechazos']);
 
@@ -292,6 +292,8 @@ class Revisiones extends Component
         $this->filters['año'] = now()->format('Y');
 
         $this->filters['estado'] = request()->query('estado');
+
+        $this->crearModeloVacio();
 
     }
 

@@ -183,6 +183,8 @@ class Avisos extends Component
 
         $this->filters['estado'] = request()->query('estado');
 
+        $this->crearModeloVacio();
+
     }
 
     #[Computed]

@@ -277,6 +277,7 @@ class PropietarioCrear extends Component
                         'entidad' => $this->entidad,
                         'ciudad' => $this->ciudad,
                         'municipio' => $this->municipio,
+                        'creado_por' => auth()->id()
                     ]);
 
                     $actor = $this->modelo->actores()->create([
