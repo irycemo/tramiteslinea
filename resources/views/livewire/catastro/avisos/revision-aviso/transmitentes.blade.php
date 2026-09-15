@@ -83,6 +83,16 @@
 
         @endif
 
+        @if($fuera_del_primer_mes)
+
+            <div class="mb-2 bg-white rounded-lg p-4 text-center text-sm">
+
+                <p>Hay avisos con el mismo predio relacionados, pero ha pasado mas de un mes desde la fecha de creación del certificado, no es posible asociarlos.</p>
+
+            </div>
+
+        @endif
+
         <div class="mb-3 bg-white rounded-lg p-3 shadow-lg">
 
             <span class="flex items-center justify-center text-lg text-gray-700 mb-5">Transmitentes</span>

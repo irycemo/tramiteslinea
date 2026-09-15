@@ -28,6 +28,7 @@ class Transmitentes extends Component
     public $usuario;
 
     public $flag_encadenamiento = false;
+    public $fuera_del_primer_mes;
     public $avisos_misma_escritura;
     public $actores;
     public $actor;
@@ -87,39 +88,6 @@ class Transmitentes extends Component
 
         }
 
-        $this->avisos_misma_escritura = Aviso::where('tipo', 'revision')
-                                                ->where(function($q){
-                                                    $q->where('tipo_escritura', $this->aviso->tipo_escritura)
-                                                        ->where('numero_escritura', $this->aviso->numero_escritura)
-                                                        ->where('volumen_escritura', $this->aviso->volumen_escritura)
-                                                        ->where('avaluo_spe', $this->aviso->avaluo_spe)
-                                                        ->where('predio_sgc', $this->aviso->predio_sgc)
-                                                        ->orWhere('fecha_firma', $this->aviso->fecha_firma);
-                                                })
-                                                ->where('predio_sgc', $this->aviso->predio_sgc)
-                                                ->where('entidad_id', auth()->user()->entidad_id)
-                                                ->where('id', '!=', $this->aviso->id)
-                                                ->get();
-
-        if(! $this->avisos_misma_escritura->count()) return;
-
-        $aviso_anterior = $this->avisos_misma_escritura->where('id', '<', $this->aviso->id)->first();
-
-        if($aviso_anterior?->id == $this->aviso->id) return;
-
-        if($this->avisos_misma_escritura->count()){
-
-            $this->flag_encadenamiento = true;
-
-            $predios_ids = $this->avisos_misma_escritura->pluck('predio_id');
-
-            $this->actores = Actor::with('persona')
-                                    ->whereIn('predio_id', $predios_ids)
-                                    ->whereIn('tipo', ['transmitente', 'adquiriente'])
-                                    ->get();
-
-        }
-
     }
 
     public function abrirModalEditar(Actor $actor){
@@ -171,25 +139,20 @@ class Transmitentes extends Component
 
     }
 
-    public function cargarTransmitentesConMismaEscritura(){
+    public function cargarTransmitentesConMismoPredio($dentro_del_mes){
 
-        $avisos_misma_escritura = Aviso::with('predio')
-                                        ->where(function($q){
-                                            $q->where('tipo_escritura', $this->aviso->tipo_escritura)
-                                            ->where('numero_escritura', $this->aviso->numero_escritura)
-                                            ->where('volumen_escritura', $this->aviso->volumen_escritura)
-                                            ->where('avaluo_spe', $this->aviso->avaluo_spe)
-                                            ->where('predio_sgc', $this->aviso->predio_sgc)
-                                            ->orWhere('fecha_firma', $this->aviso->fecha_firma);
-                                        })
-                                        ->where('predio_id', $this->aviso->predio_sgc)
+        $this->avisos_misma_escritura = Aviso::with('predio')
+                                        ->where('avaluo_spe', $this->aviso->avaluo_spe)
+                                        ->where('predio_sgc', $this->aviso->predio_sgc)
                                         ->where('entidad_id', auth()->user()->entidad_id)
                                         ->where('id', '!=', $this->aviso->id)
                                         ->get();
 
-        $aviso_anterior = $avisos_misma_escritura->where('id', '<', $this->aviso->id)->first();
+        if($this->avisos_misma_escritura->count() === 0) return;
 
-        if(! $aviso_anterior){
+        if(! $dentro_del_mes){
+
+            $this->fuera_del_primer_mes = true;
 
             $this->flag_encadenamiento = false;
 
@@ -197,21 +160,14 @@ class Transmitentes extends Component
 
         }
 
-        foreach($this->aviso->predio->transmitentes() as $transmitente){
+        $this->flag_encadenamiento = true;
 
-            $transmitente->delete();
+        $predios_ids = $this->avisos_misma_escritura->pluck('predio_id');
 
-        }
-
-        foreach($aviso_anterior->predio->adquirientes() as $adquiriente){
-
-            $transmitente = $adquiriente->replicate();
-
-            $transmitente->tipo = 'transmitente';
-            $transmitente->predio_id = $this->aviso->predio_id;
-            $transmitente->save();
-
-        }
+        $this->actores = Actor::with('persona')
+                                ->whereIn('predio_id', $predios_ids)
+                                ->whereIn('tipo', ['transmitente', 'adquiriente'])
+                                ->get();
 
     }
 
@@ -229,9 +185,11 @@ class Transmitentes extends Component
 
             DB::transaction(function () use ($data){
 
-                $this->procesarTransmitentes($data);
+                $this->procesarTransmitentes($data['propietarios']);
 
             });
+
+            $this->cargarTransmitentesConMismoPredio($data['dentro_del_primer_mes']);
 
         } catch (GeneralException $ex) {
 
