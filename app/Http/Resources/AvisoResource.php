@@ -51,7 +51,8 @@ class AvisoResource extends JsonResource
             'entidad' => $this->entidad->nombre(),
             'titular' => $this->entidad->titular(),
             'predio'=> new PredioResource($this->predio),
-            'archivo' => $this->archivo()
+            'archivo' => $this->archivo(),
+            'caratula' => $this->caratulaUrl()
         ];
 
     }

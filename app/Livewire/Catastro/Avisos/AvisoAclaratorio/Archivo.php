@@ -12,6 +12,7 @@ use App\Constantes\Constantes;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use App\Exceptions\GeneralException;
+use App\Jobs\Avisos\CrearCaratulaAvisoJob;
 use Illuminate\Support\Facades\Storage;
 
 class Archivo extends Component
@@ -175,24 +176,30 @@ class Archivo extends Component
 
             $this->revisarAvisosConIdTramite($this->aviso->tramite_sgc);
 
-            $data_traslado = (new SGCService())->ingresarAvisoAclaratorio(
-                                                                    $this->aviso->predio_sgc,
-                                                                    $this->aviso->tramite_sgc,
-                                                                    $this->aviso->id,
-                                                                    $this->aviso->entidad_id,
-                                                                    $this->aviso->entidad->nombre(),
-                                                                    $this->aviso->año,
-                                                                    $this->aviso->folio,
-                                                                    $this->aviso->usuario,
-                                                                    $this->aviso->acto,
-                                                                );
+            DB::transaction(function () {
 
-            $this->aviso->update([
-                'traslado_sgc' => $data_traslado['traslado_id'],
-                'estado' => 'cerrado'
-            ]);
+                $data_traslado = (new SGCService())->ingresarAvisoAclaratorio(
+                                                                        $this->aviso->predio_sgc,
+                                                                        $this->aviso->tramite_sgc,
+                                                                        $this->aviso->id,
+                                                                        $this->aviso->entidad_id,
+                                                                        $this->aviso->entidad->nombre(),
+                                                                        $this->aviso->año,
+                                                                        $this->aviso->folio,
+                                                                        $this->aviso->usuario,
+                                                                        $this->aviso->acto,
+                                                                    );
 
-            $this->aviso->audits()->latest()->first()->update(['tags' => 'Cerró aviso']);
+                $this->aviso->update([
+                    'traslado_sgc' => $data_traslado['traslado_id'],
+                    'estado' => 'cerrado'
+                ]);
+
+                $this->aviso->audits()->latest()->first()->update(['tags' => 'Cerró aviso']);
+
+                CrearCaratulaAvisoJob::dispatch($this->aviso, auth()->user())->afterCommit();
+
+            });
 
             return to_route('mis_avisos');
 

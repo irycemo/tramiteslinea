@@ -3,18 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Models\Aviso;
+use App\Models\User;
 use Barryvdh\DomPDF\Facade\Pdf;
 
 class ImprimirAvisosController extends Controller
 {
 
-    public function imprimir(Aviso $aviso){
+    public function imprimir(Aviso $aviso, User $user){
 
         $aviso->load('predio.actores.persona');
 
         $datos_control = (object)[];
 
-        $datos_control->impreso_por = auth()->user()->name;
+        $datos_control->impreso_por = $user->name;
         $datos_control->impreso_en = now()->format('d/m/Y H:i:s');
 
         $pdf = Pdf::loadView('avisos.aviso', [

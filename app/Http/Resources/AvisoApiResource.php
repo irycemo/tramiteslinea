@@ -46,8 +46,8 @@ class AvisoApiResource extends JsonResource
             'entidad' => $this->entidad->nombre(),
             'titular' => $this->entidad->titular(),
             'predio'=> new PredioResource($this->predio),
-            'archivo' => $this->archivoUrl()
-
+            'archivo' => $this->archivoUrl(),
+            'caratula' => $this->caratulaUrl()
         ];
     }
 }

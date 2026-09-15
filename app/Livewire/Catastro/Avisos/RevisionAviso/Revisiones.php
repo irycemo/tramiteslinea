@@ -227,7 +227,7 @@ class Revisiones extends Component
 
         try {
 
-            $pdf = (new ImprimirAvisosController())->imprimir($aviso);
+            $pdf = (new ImprimirAvisosController())->imprimir($aviso, auth()->user());
 
             return response()->streamDownload(
                 fn () => print($pdf->output()),

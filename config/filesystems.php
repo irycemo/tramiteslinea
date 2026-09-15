@@ -84,6 +84,14 @@ return [
             'throw' => false,
         ],
 
+        'caratulas' => [
+            'driver' => 'local',
+            'root' => storage_path('app/caratulas'),
+            'url' => env('APP_URL').'/caratulas',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
         's3_backups' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),
@@ -115,6 +123,7 @@ return [
         public_path('avisos') => storage_path('app/avisos'),
         public_path('requerimientos') => storage_path('app/requerimientos'),
         public_path('preguntas') => storage_path('app/preguntas'),
+        public_path('caratulas') => storage_path('app/caratulas'),
     ],
 
 ];

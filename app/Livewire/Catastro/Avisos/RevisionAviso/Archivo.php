@@ -4,6 +4,7 @@ namespace App\Livewire\Catastro\Avisos\RevisionAviso;
 
 use App\Constantes\Constantes;
 use App\Exceptions\GeneralException;
+use App\Jobs\Avisos\CrearCaratulaAvisoJob;
 use App\Models\Aviso;
 use App\Models\File;
 use App\Services\PeritosExternosService;
@@ -250,28 +251,34 @@ class Archivo extends Component
 
             $this->revisarAvisosConIdTramite($data_tramite_aviso['tramite_id']);
 
-            $data_traslado = (new SGCService())->ingresarRevisionAviso(
-                                                                    $this->aviso->predio_sgc,
-                                                                    (int)$data_tramite_aviso['tramite_id'],
-                                                                    (int)$data_certificado_aviso['certificado_id'],
-                                                                    $this->aviso->avaluo_spe,
-                                                                    $this->aviso->id,
-                                                                    $this->aviso->entidad_id,
-                                                                    $this->aviso->entidad->nombre(),
-                                                                    $this->aviso->año,
-                                                                    $this->aviso->folio,
-                                                                    $this->aviso->usuario,
-                                                                    $this->aviso->acto,
-                                                                );
+            DB::transaction(function () use ($data_tramite_aviso, $data_certificado_aviso){
 
-            $this->aviso->update([
-                'certificado_sgc' => $data_certificado_aviso['certificado_id'],
-                'tramite_sgc' => $data_tramite_aviso['tramite_id'],
-                'traslado_sgc' => $data_traslado['traslado_id'],
-                'estado' => 'cerrado'
-            ]);
+                $data_traslado = (new SGCService())->ingresarRevisionAviso(
+                                                                        $this->aviso->predio_sgc,
+                                                                        (int)$data_tramite_aviso['tramite_id'],
+                                                                        (int)$data_certificado_aviso['certificado_id'],
+                                                                        $this->aviso->avaluo_spe,
+                                                                        $this->aviso->id,
+                                                                        $this->aviso->entidad_id,
+                                                                        $this->aviso->entidad->nombre(),
+                                                                        $this->aviso->año,
+                                                                        $this->aviso->folio,
+                                                                        $this->aviso->usuario,
+                                                                        $this->aviso->acto,
+                                                                    );
 
-            $this->aviso->audits()->latest()->first()->update(['tags' => 'Cerro aviso']);
+                $this->aviso->update([
+                    'certificado_sgc' => $data_certificado_aviso['certificado_id'],
+                    'tramite_sgc' => $data_tramite_aviso['tramite_id'],
+                    'traslado_sgc' => $data_traslado['traslado_id'],
+                    'estado' => 'cerrado'
+                ]);
+
+                $this->aviso->audits()->latest()->first()->update(['tags' => 'Cerro aviso']);
+
+                CrearCaratulaAvisoJob::dispatch($this->aviso, auth()->user())->afterCommit();
+
+            });
 
             return to_route('mis_revisiones');
 

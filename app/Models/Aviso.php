@@ -55,6 +55,17 @@ class Aviso extends Model implements Auditable
         return $this->morphOne(File::class, 'fileable')->where('descripcion', 'croquis');
     }
 
+    public function caratula(){
+        return $this->morphOne(File::class, 'fileable')->where('descripcion', 'caratula');
+    }
+
+    public function caratulaUrl(){
+
+        return $this->caratula ?
+                $this->caratula->getLink()
+                : null;
+    }
+
     public function predio(){
         return $this->belongsTo(Predio::class);
     }
