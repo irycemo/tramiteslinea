@@ -4,6 +4,8 @@ use Illuminate\Support\Str;
 
 return [
 
+    'proxy_path' => env('HORIZON_PROXY_PATH', ''),
+
     /*
     |--------------------------------------------------------------------------
     | Horizon Name
