@@ -19,7 +19,7 @@ class GenerarAvisoPdfController extends Controller
 
         try {
 
-            $pdf = (new ImprimirAvisosController())->imprimir($aviso, auth()->user);
+            $pdf = (new ImprimirAvisosController())->imprimir($aviso, auth()->user());
 
             return response()->json([
                 'data' => [
