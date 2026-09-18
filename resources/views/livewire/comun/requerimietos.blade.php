@@ -35,6 +35,8 @@
 
                                 <p>{{ $requerimiento['created_at'] }}</p>
 
+                                <p>Estado: {{ $requerimiento['estado'] }}</p>
+
                             </div>
 
                         </div>
