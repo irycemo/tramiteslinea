@@ -89,7 +89,6 @@ class Avisos extends Component
             (new SGCService())->inactivarTraslado($this->modelo_editar->traslado_sgc);
 
             $this->modelo_editar->update([
-                                            'avaluo_spe' => null,
                                             'estado' => 'nuevo',
                                             'actualizado_por' => auth()->id()
                                         ]);
@@ -227,4 +226,5 @@ class Avisos extends Component
     {
         return view('livewire.catastro.avisos.aviso-aclaratorio.avisos')->extends('layouts.admin');
     }
+
 }

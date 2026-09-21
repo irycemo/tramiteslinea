@@ -39,7 +39,7 @@ class RechazarAvisoController extends Controller
 
             DB::transaction(function () use ($aviso, $validated){
 
-                $aviso->update(['estado' => 'rechazado', 'avaluo_spe' => null, 'actualizado_por' => auth()->id()]);
+                $aviso->update(['estado' => 'rechazado', 'actualizado_por' => auth()->id()]);
 
                 $aviso->audits()->latest()->first()->update(['tags' => 'Rechazó aviso']);
 
