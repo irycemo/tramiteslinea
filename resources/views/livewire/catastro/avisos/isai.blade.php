@@ -13,7 +13,7 @@
                     <div class="w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
 
                         <div class="flex items-center ps-3">
-                            <input type="checkbox" wire:model="aviso.no_genera_isai" name="sin reducción" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                            <input type="checkbox" wire:model="aviso.no_genera_isai" @if($aviso->no_genera_isai) checked @endif name="sin reducción" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
                             <label for="sin reducción" class="w-full p-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">No genera ISAI (fusiones, cuando las fracciones estan registradas al mismo propietario, divisiones, particiones y cuando no haya exedencia)</label>
                         </div>
 

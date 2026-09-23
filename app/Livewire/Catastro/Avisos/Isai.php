@@ -58,8 +58,7 @@ class Isai extends Component
             'aviso.valor_catastral' => 'required',
             'aviso.valor_base' => 'nullable',
             'aviso.fecha_reduccion' => [
-                Rule::requiredIf($this->aviso->no_genera_isai === 0),
-                'nullable',
+                'required',
                 'date',
                 'before:today'
             ],
@@ -291,6 +290,14 @@ class Isai extends Component
             if($this->aviso->no_genera_isai){
 
                 $this->aviso->valor_isai = 0;
+                $this->aviso->valor_adquisicion = null;
+                $this->aviso->fecha_reduccion = null;
+                $this->aviso->valor_construccion_vivienda = null;
+                $this->aviso->valor_construccion_otro = null;
+                $this->aviso->porcentaje_adquisicion = null;
+                $this->aviso->reduccion = null;
+                $this->aviso->base_gravable = null;
+                $this->aviso->valor_base = null;
 
             }
 
@@ -327,4 +334,5 @@ class Isai extends Component
     {
         return view('livewire.catastro.avisos.isai');
     }
+
 }
