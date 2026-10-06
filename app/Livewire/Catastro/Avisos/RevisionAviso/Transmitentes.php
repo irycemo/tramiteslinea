@@ -181,7 +181,7 @@ class Transmitentes extends Component
 
         try {
 
-            $data = (new SGCService())->consultarPropietarios($this->año, $this->folio, $this->usuario, $this->aviso->predio_sgc);
+            $data = (new SGCService())->consultarPropietarios($this->año, $this->folio, $this->usuario, $this->aviso->predio_sgc, $this->aviso->primer_cierre);
 
             DB::transaction(function () use ($data){
 

@@ -214,7 +214,9 @@
                     @endif
                 </strong>
 
-                Folio del aviso: <strong>{{ $aviso->año }}-{{ $aviso->folio }}-{{ $aviso->usuario }}</strong>
+                Folio del aviso: <strong style="margin-right: 20px;">{{ $aviso->año }}-{{ $aviso->folio }}-{{ $aviso->usuario }}</strong>
+
+                <strong>Aviso {{ $aviso->estado }}</strong>
 
             </p>
 

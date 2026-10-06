@@ -19,6 +19,18 @@ class NuevoAviso extends Component
 
         }
 
+        if(in_array($this->aviso->estado, ['autorizado', 'operado'])){
+
+            abort(403, 'El aviso no puede ser modificado estando autorizado o operado.');
+
+        }
+
+        if($this->aviso->estado === 'rechazado'){
+
+            abort(403, 'El aviso esta rechazado debe reactivarlo.');
+
+        }
+
         return view('livewire.catastro.avisos.aviso-aclaratorio.nuevo-aviso')->extends('layouts.admin');
     }
 

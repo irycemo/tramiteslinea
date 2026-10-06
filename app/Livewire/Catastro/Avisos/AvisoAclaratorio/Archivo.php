@@ -178,6 +178,16 @@ class Archivo extends Component
 
             DB::transaction(function () {
 
+                if(! $this->aviso->primer_cierre){
+
+                    $primer_cierre = now()->toTimeString();
+
+                }else{
+
+                    $primer_cierre = $this->aviso->primer_cierre;
+
+                }
+
                 $data_traslado = (new SGCService())->ingresarAvisoAclaratorio(
                                                                         $this->aviso->predio_sgc,
                                                                         $this->aviso->tramite_sgc,
@@ -192,7 +202,8 @@ class Archivo extends Component
 
                 $this->aviso->update([
                     'traslado_sgc' => $data_traslado['traslado_id'],
-                    'estado' => 'cerrado'
+                    'estado' => 'cerrado',
+                    'primer_cierre' => $primer_cierre
                 ]);
 
                 $this->aviso->audits()->latest()->first()->update(['tags' => 'Cerró aviso']);

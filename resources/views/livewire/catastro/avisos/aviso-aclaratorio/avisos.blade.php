@@ -187,7 +187,7 @@
 
                                     @endif
 
-                                    @if(in_array($aviso->estado, ['autorizado', 'cerrado', 'rechazado']))
+                                    @if(in_array($aviso->estado, ['cerrado', 'rechazado']))
 
                                         <button
                                             wire:click="reactivarAviso({{ $aviso->id }})"

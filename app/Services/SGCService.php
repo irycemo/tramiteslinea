@@ -122,7 +122,7 @@ class SGCService {
 
     }
 
-    public function consultarPropietarios(int $año, int $folio, int $usuario, int $sgc_predio):array
+    public function consultarPropietarios(int $año, int $folio, int $usuario, int $sgc_predio, string | null $primer_cierre):array
     {
 
         $response = Http::withToken(config('services.sgc.token'))
@@ -134,7 +134,8 @@ class SGCService {
                                     'año' => $año,
                                     'folio' => $folio,
                                     'usuario' => $usuario,
-                                    'predio' => $sgc_predio
+                                    'predio' => $sgc_predio,
+                                    'primer_cierre' => $primer_cierre
                                 ]
                             );
 
