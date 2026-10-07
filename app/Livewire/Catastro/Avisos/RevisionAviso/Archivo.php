@@ -253,13 +253,11 @@ class Archivo extends Component
 
             DB::transaction(function () use ($data_tramite_aviso, $data_certificado_aviso){
 
+                $primer_cierre = $this->aviso->primer_cierre;
+
                 if(! $this->aviso->primer_cierre){
 
-                    $primer_cierre = now()->toTimeString();
-
-                }else{
-
-                    $primer_cierre = $this->aviso->primer_cierre;
+                    $primer_cierre = now();
 
                 }
 

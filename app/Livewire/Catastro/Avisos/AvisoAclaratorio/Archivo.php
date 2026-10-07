@@ -178,15 +178,15 @@ class Archivo extends Component
 
             DB::transaction(function () {
 
+                $primer_cierre = $this->aviso->primer_cierre;
+
                 if(! $this->aviso->primer_cierre){
 
-                    $primer_cierre = now()->toTimeString();
-
-                }else{
-
-                    $primer_cierre = $this->aviso->primer_cierre;
+                    $primer_cierre = now();
 
                 }
+
+                dd($primer_cierre);
 
                 $data_traslado = (new SGCService())->ingresarAvisoAclaratorio(
                                                                         $this->aviso->predio_sgc,
