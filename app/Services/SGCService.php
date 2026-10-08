@@ -1017,17 +1017,7 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::info("Error al acreditar pago. " . $response);
-
-            $data = json_decode($response, true);
-
-            if(isset($data['error'])){
-
-                throw new GeneralException($data['error']);
-
-            }
-
-            throw new GeneralException("Error al acreditar pago, comuniquese al departamento de sistemas, tenga su comprobante de pago listo.");
+            throw new GeneralException("Error al acreditar pago es SAP, comuniquese al departamento de sistemas, tenga su comprobante de pago listo.");
 
         }
 

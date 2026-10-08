@@ -93,11 +93,30 @@ class MisTramites extends Component
 
         } catch (GeneralException $ex) {
 
+            Log::warning(
+                "Error validar pago de servicio catastra.",
+                [
+                    'usuario' => auth()->user()->name,
+                    'entidad' => auth()->user()->entidad->nombre(),
+                    'linea de captura' => $tramite['linea_de_captura']
+                ]
+            );
+
             $this->dispatch('mostrarMensaje', ['warning', $ex->getMessage()]);
 
         } catch (\Throwable $th) {
 
-            Log::error("Error validar pago por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+            Log::error(
+                "Error validar pago de servicio catastra.",
+                [
+                    'usuario' => auth()->user()->name,
+                    'entidad' => auth()->user()->entidad->nombre(),
+                    'linea de captura' => $tramite['linea_de_captura'],
+                    'message' => $th->getMessage(),
+                    'trace' => $th
+                ]
+            );
+
             $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
 
         }

@@ -48,7 +48,12 @@ class AcreditarPagoController extends Controller
 
                 if($response->status() !== 200){
 
-                    Log::warning("Error al acreditar pago, línea de captura: " . $linea_de_captura);
+                    Log::warning(
+                        "Error al acreditar pago desde servicio de pago en línea.",
+                        [
+                            'linea de captura' => $linea_de_captura,
+                        ]
+                    );
 
                     return redirect()->route('dashboard', ['error' => 'No fue posible acreditar el trámite.']);
 
@@ -66,7 +71,14 @@ class AcreditarPagoController extends Controller
 
         } catch (\Throwable $th) {
 
-            Log::error("Error al acreditar pago desde servicio de pago en línea. " . $th);
+            Log::error(
+                "Error al acreditar pago desde servicio de pago en línea.",
+                [
+                    'message' => $th->getMessage(),
+                    'linea de captura' => $linea_de_captura,
+                    'trace' => $th
+                ]
+            );
 
             return response()->json([
                 'result' => 'error',
