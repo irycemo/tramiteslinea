@@ -25,33 +25,37 @@ class IngresarRevisionJob implements ShouldQueue
     public function handle(): void
     {
 
-        try {
+        $data_traslado = (new SGCService())->ingresarRevisionAviso(
+                                                                    $this->aviso->predio_sgc,
+                                                                    $this->aviso->tramite_sgc,
+                                                                    $this->aviso->certificado_sgc,
+                                                                    $this->aviso->avaluo_spe,
+                                                                    $this->aviso->id,
+                                                                    $this->aviso->entidad_id,
+                                                                    $this->aviso->entidad->nombre(),
+                                                                    $this->aviso->año,
+                                                                    $this->aviso->folio,
+                                                                    $this->aviso->usuario,
+                                                                    $this->aviso->acto,
+                                                                    $this->aviso->estado
+                                                                );
 
-            $data_traslado = (new SGCService())->ingresarRevisionAviso(
-                                                                        $this->aviso->predio_sgc,
-                                                                        $this->aviso->tramite_sgc,
-                                                                        $this->aviso->certificado_sgc,
-                                                                        $this->aviso->avaluo_spe,
-                                                                        $this->aviso->id,
-                                                                        $this->aviso->entidad_id,
-                                                                        $this->aviso->entidad->nombre(),
-                                                                        $this->aviso->año,
-                                                                        $this->aviso->folio,
-                                                                        $this->aviso->usuario,
-                                                                        $this->aviso->acto,
-                                                                        $this->aviso->estado
-                                                                    );
+        $this->aviso->update(['traslado_sgc' => $data_traslado['traslado_id']]);
 
-            $this->aviso->update(['traslado_sgc' => $data_traslado['traslado_id']]);
+    }
 
-        } catch (\Throwable $th) {
+    public function failed(?\Throwable $exception): void
+    {
 
-            Log::error("Error al ingresar revisión de aviso mediante Job: ", [
-                'aviso' => $this->aviso,
-                'error' => $th
-            ]);
+        $this->aviso->update([
+            'traslado_sgc' => null,
+        ]);
 
-        }
+        Log::error('Falló el Job de aviso aclaratorio', [
+            'aviso_id' => $this->aviso->id,
+            'error' => $exception?->getMessage(),
+            'trace' => $exception
+        ]);
 
     }
 
