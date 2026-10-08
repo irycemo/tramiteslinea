@@ -20,6 +20,7 @@ class AvisoResource extends JsonResource
             'id' => $this->id,
             'año' => $this->año,
             'folio' => $this->folio,
+            'avaluo_spe' => $this->avaluo_spe,
             'usuario' => $this->usuario,
             'acto' => $this->acto,
             'estado' => $this->estado,

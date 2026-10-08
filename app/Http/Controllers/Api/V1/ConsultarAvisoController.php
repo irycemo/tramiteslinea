@@ -137,6 +137,14 @@ class ConsultarAvisoController extends Controller
 
         $aviso = Aviso::with('predio')->find($validated['id']);
 
+        if(! $aviso){
+
+            return response()->json([
+                'error' => 'No se encontró el aviso.',
+            ], 404);
+
+        }
+
         return (new AvisoResource($aviso))->response()->setStatusCode(200);
 
     }
