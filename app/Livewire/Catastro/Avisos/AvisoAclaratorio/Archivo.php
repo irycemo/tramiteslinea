@@ -3,6 +3,7 @@
 namespace App\Livewire\Catastro\Avisos\AvisoAclaratorio;
 
 use App\Models\File;
+use App\Jobs\Avisos\IngresarAclaratorioJob;
 use App\Models\Aviso;
 use Livewire\Component;
 use Livewire\Attributes\On;
@@ -186,27 +187,14 @@ class Archivo extends Component
 
                 }
 
-                dd($primer_cierre);
-
-                $data_traslado = (new SGCService())->ingresarAvisoAclaratorio(
-                                                                        $this->aviso->predio_sgc,
-                                                                        $this->aviso->tramite_sgc,
-                                                                        $this->aviso->id,
-                                                                        $this->aviso->entidad_id,
-                                                                        $this->aviso->entidad->nombre(),
-                                                                        $this->aviso->año,
-                                                                        $this->aviso->folio,
-                                                                        $this->aviso->usuario,
-                                                                        $this->aviso->acto,
-                                                                    );
-
                 $this->aviso->update([
-                    'traslado_sgc' => $data_traslado['traslado_id'],
                     'estado' => 'cerrado',
                     'primer_cierre' => $primer_cierre
                 ]);
 
                 $this->aviso->audits()->latest()->first()->update(['tags' => 'Cerró aviso']);
+
+                IngresarAclaratorioJob::dispatch($this->aviso->id)->afterCommit();
 
                 CrearCaratulaAvisoJob::dispatch($this->aviso, auth()->user())->afterCommit();
 

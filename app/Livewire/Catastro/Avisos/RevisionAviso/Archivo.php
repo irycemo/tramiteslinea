@@ -3,6 +3,7 @@
 namespace App\Livewire\Catastro\Avisos\RevisionAviso;
 
 use App\Constantes\Constantes;
+use App\Jobs\Avisos\IngresarRevisionJob;
 use App\Exceptions\GeneralException;
 use App\Jobs\Avisos\CrearCaratulaAvisoJob;
 use App\Models\Aviso;
@@ -261,29 +262,16 @@ class Archivo extends Component
 
                 }
 
-                $data_traslado = (new SGCService())->ingresarRevisionAviso(
-                                                                        $this->aviso->predio_sgc,
-                                                                        (int)$data_tramite_aviso['tramite_id'],
-                                                                        (int)$data_certificado_aviso['certificado_id'],
-                                                                        $this->aviso->avaluo_spe,
-                                                                        $this->aviso->id,
-                                                                        $this->aviso->entidad_id,
-                                                                        $this->aviso->entidad->nombre(),
-                                                                        $this->aviso->año,
-                                                                        $this->aviso->folio,
-                                                                        $this->aviso->usuario,
-                                                                        $this->aviso->acto,
-                                                                    );
-
                 $this->aviso->update([
                     'certificado_sgc' => $data_certificado_aviso['certificado_id'],
                     'tramite_sgc' => $data_tramite_aviso['tramite_id'],
-                    'traslado_sgc' => $data_traslado['traslado_id'],
                     'estado' => 'cerrado',
                     'primer_cierre' => $primer_cierre
                 ]);
 
                 $this->aviso->audits()->latest()->first()->update(['tags' => 'Cerro aviso']);
+
+                IngresarRevisionJob::dispatch($this->aviso->id)->afterCommit();
 
                 CrearCaratulaAvisoJob::dispatch($this->aviso, auth()->user())->afterCommit();
 
@@ -298,6 +286,7 @@ class Archivo extends Component
         } catch (\Throwable $th) {
 
             Log::error("Error al cerrar aviso por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+
             $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
 
         }
