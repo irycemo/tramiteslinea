@@ -37,6 +37,22 @@ class Aviso extends Model implements Auditable
         return $this->hasMany(Antecedente::class);
     }
 
+    public function ultimoAntecedente(){
+
+        $folio_real =  $this->antecedentes->whereNotNull('folio_real')->first();
+
+        if($folio_real){
+
+            return $folio_real;
+
+        }else{
+
+            return $this->antecedentes->sortByDesc('id')->first();
+
+        }
+
+    }
+
     public function files(){
         return $this->morphMany(File::class, 'fileable');
     }

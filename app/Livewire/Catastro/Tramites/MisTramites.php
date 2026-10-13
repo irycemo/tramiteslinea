@@ -78,7 +78,16 @@ class MisTramites extends Component
 
         } catch (\Throwable $th) {
 
-            Log::error("Error al generar orden de pago por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+            Log::error(
+                "Error al generar orden de pago de servicio catastral.",
+                [
+                    'usuario' => auth()->user()->name,
+                    'entidad' => auth()->user()->entidad->nombre(),
+                    'linea de captura' => $tramite['linea_de_captura'],
+                    'message' => $th->getMessage(),
+                    'trace' => $th
+                ]
+            );
             $this->dispatch('mostrarMensaje', ['error', "Ha ocurrido un error."]);
 
         }
@@ -147,15 +156,29 @@ class MisTramites extends Component
 
         } catch (GeneralException $ex) {
 
-            abort(403, message:$ex->getMessage());
+            Log::error("Error al consultar consultar servicios es SGC.",
+                [
+                    'usuario' => auth()->user()->name,
+                    'entidad' => auth()->user()->entidad->nombre(),
+                    'message' => $ex->getMessage(),
+                    'trace' => $ex
+                ]
+            );
 
-            Log::error("Error al consultar consultar servicios es SGC. " . $th);
+            abort(403, message:$ex->getMessage());
 
         } catch (\Throwable $th) {
 
-            abort(403, message:"Error al consultar servicios");
+            Log::error("Error al consultar consultar servicios es SGC.",
+                [
+                    'usuario' => auth()->user()->name,
+                    'entidad' => auth()->user()->entidad->nombre(),
+                    'message' => $th->getMessage(),
+                    'trace' => $th
+                ]
+            );
 
-            Log::error("Error al consultar consultar servicios es SGC. " . $th);
+            abort(403, message:"Error al consultar servicios");
 
         }
 
