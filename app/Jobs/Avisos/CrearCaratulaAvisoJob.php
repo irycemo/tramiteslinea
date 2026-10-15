@@ -77,7 +77,15 @@ class CrearCaratulaAvisoJob implements ShouldQueue
 
         } catch (\Throwable $th) {
 
-            Log::error('Error al crear caratula en job' . $th);
+            Log::error(
+                'Error al crear caratula de aviso en job',
+                [
+                    'message' => $th->getMessage(),
+                    'aviso' => $this->aviso,
+                    'usuario' => $this->user,
+                    'trace' => $th
+                ]
+            );
 
         }
 

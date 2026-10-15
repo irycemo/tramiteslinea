@@ -19,7 +19,7 @@ class NuevaRevision extends Component
 
         }
 
-        if(isset($this->aviso) && in_array($this->aviso->estado, ['autorizado', 'operado'])){
+        if(isset($this->aviso) && in_array($this->aviso->estado, ['operado'])){
 
             abort(403, 'El aviso no puede ser modificado estando autorizado o operado.');
 
