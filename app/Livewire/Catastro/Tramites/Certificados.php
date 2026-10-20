@@ -124,12 +124,7 @@ class Certificados extends Component
 
             $data = (new SGCService())->generarCertificadoPdf($certificado['id']);
 
-            $pdf = base64_decode($data['data']['pdf']);
-
-            return response()->streamDownload(
-                fn () => print($pdf),
-                $certificado['localidad'] . '-' . $certificado['oficina'] . '-' . $certificado['tipo_predio'] . '-' . $certificado['numero_registro'] . '-' . 'certificado_de_registro.pdf'
-            );
+            return redirect($data['data']['pdf']);
 
         } catch (GeneralException $ex) {
 
