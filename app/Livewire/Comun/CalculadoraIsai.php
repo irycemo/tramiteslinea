@@ -129,9 +129,18 @@ class CalculadoraIsai extends Component
 
         if(!$this->cuota_minima){
 
-            $this->dispatch('mostrarMensaje', ['warning', "La fecha de reducción no cuenta con cuota mínima."]);
+            $this->cuota_minima = CuotaMinima::where('municipio', 0)
+                                            ->where('fecha_inicial', '<=', $this->aviso->fecha_reduccion)
+                                            ->where('fecha_final', '>=', $this->aviso->fecha_reduccion)
+                                            ->first();
 
-            return;
+            if(!$this->cuota_minima){
+
+                $this->dispatch('mostrarMensaje', ['warning', "La fecha de reducción no cuenta con cuota mínima."]);
+
+                return;
+
+            }
 
         }
 
