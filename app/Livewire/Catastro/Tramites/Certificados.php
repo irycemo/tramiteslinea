@@ -132,7 +132,15 @@ class Certificados extends Component
 
         } catch (\Throwable $th) {
 
-            Log::error("Error al generar pdf del certificado por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+            Log::error(
+                "Error al generar pdf del certificado",
+                [
+                    'message' => $th->getMessage(),
+                    'usuario' => auth()->user()->name,
+                    'entidad' => auth()->user()->entidad->nombre(),
+                    'trace' => $th
+                ]
+            );
 
             $this->dispatch('mostrarMensaje', ['error', 'Hubo un error.']);
 
@@ -196,4 +204,5 @@ class Certificados extends Component
 
         return view('livewire.catastro.tramites.certificados', compact('certificados'))->extends('layouts.admin');
     }
+
 }

@@ -809,11 +809,17 @@ class SGCService {
 
         if($response->status() !== 200){
 
-            Log::error("Error al generar pdf del certificado. " . $response);
-
             $data = json_decode($response, true);
 
             if(isset($data['error'])){
+
+                Log::error(
+                    "Error al generar pdf del certificado catastral.",
+                    [
+                        'certificacion_id' => $certificacion_id,
+                        'error' => $data['error']
+                    ]
+                );
 
                 throw new GeneralException($data['error']);
 

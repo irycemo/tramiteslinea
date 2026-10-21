@@ -66,6 +66,7 @@ class Isai extends Component
             'aviso.valor_isai' => 'nullable|numeric',
             'aviso.reduccion' => 'nullable|numeric',
             'aviso.base_gravable' => 'nullable|numeric',
+            'aviso.predio_id' => 'required'
         ];
     }
 
