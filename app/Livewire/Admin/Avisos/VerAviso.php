@@ -39,18 +39,13 @@ class VerAviso extends Component
 
     }
 
-    public function reimprimirCertificado(){
+    public function reimprimirCertificado($certificado){
 
         try {
 
-            $data = (new SGCService())->generarCertificadoPdf($this->aviso->certificado_sgc);
+            $data = (new SGCService())->generarCertificadoPdf($certificado['id']);
 
-            $pdf = base64_decode($data['data']['pdf']);
-
-            return response()->streamDownload(
-                fn () => print($pdf),
-                $this->predio->cuentaPredial() . '-' . 'certificado_de_registro.pdf'
-            );
+            return redirect($data['data']['pdf']);
 
         } catch (GeneralException $ex) {
 
@@ -58,7 +53,15 @@ class VerAviso extends Component
 
         } catch (\Throwable $th) {
 
-            Log::error("Error al generar pdf del certificado en ver aviso por el usuario: (id: " . auth()->user()->id . ") " . auth()->user()->name . ". " . $th);
+            Log::error(
+                "Error al generar pdf del certificado",
+                [
+                    'message' => $th->getMessage(),
+                    'usuario' => auth()->user()->name,
+                    'entidad' => auth()->user()->entidad->nombre(),
+                    'trace' => $th
+                ]
+            );
 
             $this->dispatch('mostrarMensaje', ['error', 'Hubo un error.']);
 
