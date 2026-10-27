@@ -39,11 +39,11 @@ class VerAviso extends Component
 
     }
 
-    public function reimprimirCertificado($certificado){
+    public function reimprimirCertificado(){
 
         try {
 
-            $data = (new SGCService())->generarCertificadoPdf($certificado['id']);
+            $data = (new SGCService())->generarCertificadoPdf($this->aviso->certificado_sgc);
 
             return redirect($data['data']['pdf']);
 
