@@ -3,12 +3,11 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Models\Aviso;
+use App\Jobs\Mails\AvisoOperadoMailJob;
 use Illuminate\Http\Request;
-use App\Mail\AvisoOperadoMail;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Mail;
 
 class OperarAvisoController extends Controller
 {
@@ -43,7 +42,7 @@ class OperarAvisoController extends Controller
 
                 $aviso->audits()->latest()->first()->update(['tags' => 'Operó aviso']);
 
-                Mail::to($aviso->entidad->email)->send(new AvisoOperadoMail($aviso));
+                AvisoOperadoMailJob::dispatch($aviso->id)->afterCommit();
 
             });
 

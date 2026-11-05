@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Admin;
 
+use App\Jobs\Mails\RegistroUsuarioMailJob;
 use App\Models\Role;
 use App\Models\User;
 use App\Models\Entidad;
@@ -188,7 +189,7 @@ class Usuarios extends Component
 
                 }
 
-                Mail::to($this->modelo_editar->email)->send(new RegistroUsuarioMail($this->modelo_editar));
+                RegistroUsuarioMailJob::dispatch($this->modelo_editar->id)->afterCommit();
 
                 if(app()->isProduction()){
 
@@ -226,7 +227,7 @@ class Usuarios extends Component
 
                     $this->modelo_editar->update(['password' => bcrypt('sistema')]);
 
-                    Mail::to($this->modelo_editar->email)->send(new RegistroUsuarioMail($this->modelo_editar));
+                    RegistroUsuarioMailJob::dispatch($this->modelo_editar->id)->afterCommit();
 
                     if(app()->isProduction()){
 
@@ -297,7 +298,7 @@ class Usuarios extends Component
 
             $usuario->password = bcrypt('sistema');
 
-            Mail::to($usuario->email)->send(new RegistroUsuarioMail($usuario));
+            RegistroUsuarioMailJob::dispatch($usuario->id);
 
             $usuario->save();
 

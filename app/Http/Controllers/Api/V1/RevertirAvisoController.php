@@ -3,13 +3,12 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
-use App\Mail\AvsioRevertidoMail;
-use App\Mail\RevertirAutorizadoMail;
-use App\Mail\RevertirRechazoMail;
+use App\Jobs\Mails\RevertirAutorizadoMailJob;
+use App\Jobs\Mails\RevertirAvisoMailJob;
+use App\Jobs\Mails\RevertirRechazoMailJob;
 use App\Models\Aviso;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Mail;
 
 class RevertirAvisoController extends Controller
 {
@@ -68,11 +67,11 @@ class RevertirAvisoController extends Controller
 
             $observaciones = $validated['observaciones'] ?? null;
 
-            Mail::to($aviso->entidad->email)->send(new AvsioRevertidoMail($aviso, $observaciones));
-
             $aviso->update(['estado' => 'nuevo', 'actualizado_por' => auth()->id()]);
 
             $aviso->audits()->latest()->first()->update(['tags' => 'Revirtió aviso']);
+
+            RevertirAvisoMailJob::dispatch($aviso->id, $observaciones);
 
             return response()->json([
                 'data' => "El aviso cambio a nuevo con éxito.",
@@ -108,11 +107,11 @@ class RevertirAvisoController extends Controller
 
             $observaciones = $validated['observaciones'] ?? null;
 
-            Mail::to($aviso->entidad->email)->send(new RevertirRechazoMail($aviso, $observaciones));
-
             $aviso->update(['estado' => 'cerrado', 'actualizado_por' => auth()->id()]);
 
             $aviso->audits()->latest()->first()->update(['tags' => 'Revirtió rechazo aviso']);
+
+            RevertirRechazoMailJob::dispatch($aviso->id, $observaciones);
 
             return response()->json([
                 'data' => "El aviso cambio a nuevo con éxito.",
@@ -148,11 +147,11 @@ class RevertirAvisoController extends Controller
 
             $observaciones = $validated['observaciones'] ?? null;
 
-            Mail::to($aviso->entidad->email)->send(new RevertirAutorizadoMail($aviso, $observaciones));
-
             $aviso->update(['estado' => 'cerrado', 'actualizado_por' => auth()->id()]);
 
             $aviso->audits()->latest()->first()->update(['tags' => 'Revirtió autorización aviso']);
+
+            RevertirAutorizadoMailJob::dispatch($aviso->id, $observaciones);
 
             return response()->json([
                 'data' => "El aviso cambio a nuevo con éxito.",

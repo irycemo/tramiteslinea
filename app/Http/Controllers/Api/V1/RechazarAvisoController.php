@@ -3,11 +3,10 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Models\Aviso;
-use App\Mail\AvsioRechazadoMail;
+use App\Jobs\Mails\AvisoRechazadoMailJob;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\RechazarAvisoRequest;
 
 class RechazarAvisoController extends Controller
@@ -43,7 +42,7 @@ class RechazarAvisoController extends Controller
 
                 $aviso->audits()->latest()->first()->update(['tags' => 'Rechazó aviso']);
 
-                Mail::to($aviso->entidad->email)->send(new AvsioRechazadoMail($aviso, $validated['observaciones']));
+                AvisoRechazadoMailJob::dispatch($aviso->id, $validated['observaciones'])->afterCommit();
 
             });
 

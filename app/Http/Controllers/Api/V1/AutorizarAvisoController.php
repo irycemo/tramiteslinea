@@ -3,12 +3,11 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Exceptions\GeneralException;
+use App\Jobs\Mails\AvisoAutorizadoMailJob;
 use App\Models\Aviso;
-use App\Mail\AvisoAutorizadoMail;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\AutorizarAvisoRequest;
 
 class AutorizarAvisoController extends Controller
@@ -51,7 +50,7 @@ class AutorizarAvisoController extends Controller
 
                 }
 
-                Mail::to($aviso->entidad->email)->send(new AvisoAutorizadoMail($aviso, $validated['observaciones'] ?? null));
+                AvisoAutorizadoMailJob::dispatch($aviso->id)->afterCommit();
 
             });
 
