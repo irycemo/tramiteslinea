@@ -77,9 +77,8 @@ class Aviso extends Model implements Auditable
 
     public function caratulaUrl(){
 
-        return $this->caratula ?
-                $this->caratula->getLink()
-                : null;
+        return $this->caratula ? $this->caratula->getLink() : null;
+
     }
 
     public function predio(){
@@ -95,6 +94,12 @@ class Aviso extends Model implements Auditable
     public function claveCatastral(){
 
         return '16-' . $this->region_catastral . '-' . $this->municipio . '-' . $this->zona_catastral . '-' . $this->localidad . '-' . $this->sector . '-' . $this->manzana . '-' . $this->predio . '-' . $this->edificio . '-' . $this->departamento;
+
+    }
+
+    public function folio(){
+
+        return $this->año . '-' . $this->folio . '-' . $this->usuario;
 
     }
 

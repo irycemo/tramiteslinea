@@ -75,12 +75,9 @@ class VerAviso extends Component
 
             $data = (new PeritosExternosService())->generarAvaluoPdf($this->aviso->avaluo_spe);
 
-            $pdf = base64_decode($data['data']['pdf']);
+            $pdf = $data['data']['pdf'];
 
-            return response()->streamDownload(
-                fn () => print($pdf),
-                'avaluo.pdf'
-            );
+            $this->js('window.open(\' '. $pdf . '\', \'_blank\');');
 
         } catch (GeneralException $ex) {
 
