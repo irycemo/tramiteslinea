@@ -134,6 +134,8 @@ class NuevoTramite extends Component
 
     public function updatedServicioId(){
 
+        if($this->servicio_id == '') return;
+
         $this->servicioSeleccionado = collect($this->servicios)->where('id', $this->servicio_id)->first();
 
         $this->resetearTodo();

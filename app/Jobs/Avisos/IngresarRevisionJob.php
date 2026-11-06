@@ -53,8 +53,9 @@ class IngresarRevisionJob implements ShouldQueue
 
         Log::error('Falló el Job de aviso aclaratorio', [
             'aviso_id' => $this->aviso->id,
-            'error' => $exception?->getMessage(),
-            'trace' => $exception
+            'aviso_folio' => $this->aviso->folioAviso(),
+            'message' => $exception->getMessage(),
+            'trace' => $exception->getTraceAsString()
         ]);
 
     }
