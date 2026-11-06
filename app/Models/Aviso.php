@@ -97,7 +97,7 @@ class Aviso extends Model implements Auditable
 
     }
 
-    public function folio(){
+    public function folioAviso(){
 
         return $this->año . '-' . $this->folio . '-' . $this->usuario;
 
