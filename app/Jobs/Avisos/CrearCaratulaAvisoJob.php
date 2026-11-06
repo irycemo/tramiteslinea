@@ -56,7 +56,7 @@ class CrearCaratulaAvisoJob implements ShouldQueue
 
             $pdf = (new ImprimirAvisosController())->imprimir($this->aviso, $this->user);
 
-            $nombre = 'aviso_' . $this->aviso->folio() . '_' . now()->format('Ymd_His') . '.pdf';
+            $nombre = 'aviso_' . $this->aviso->folioAviso() . '_' . now()->format('Ymd_His') . '.pdf';
 
             if(app()->isProduction()){
 
