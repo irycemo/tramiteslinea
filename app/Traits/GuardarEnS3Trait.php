@@ -14,7 +14,7 @@ trait GuardarEnS3Trait
 
         $filename = 'aviso_' . $aviso->folioAviso() . '_' . now()->format('Ymd_His') . '.pdf';
 
-        $clave = config('services.ses.ruta_pdfs') . $filename;
+        $clave = config('services.ses.ruta_caratulas') . $filename;
 
         if(app()->isProduction()){
 

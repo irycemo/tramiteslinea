@@ -60,3 +60,48 @@ Artisan::command('usuarios', function(){
     }
 
 });
+
+Artisan::command('notaria', function(){
+
+    $count = 0;
+
+    $avisos = Aviso::with('predio', 'antecedentes')->whereHas('entidad', function($q){
+                        $q->where('numero_notaria', 48);
+                    })
+                    ->where('estado', 'operado')
+                    ->get();
+
+    $progressbar = $this->output->createProgressBar($avisos->count());
+
+    $progressbar->start();
+
+    $handle = fopen(storage_path('app/public/not_48.csv'), 'w');
+
+    foreach($avisos as $aviso){
+
+        fputcsv($handle,[
+            $aviso->folioAviso(),
+            $aviso->created_at,
+            $aviso->predio->cuentaPredial(),
+            $aviso->predio->claveCatastral(),
+            $aviso->predio->nombre_vialidad . ' ' . $aviso->predio->nombre_asentamiento . ' ' . $aviso->predio->numero_exterior . ' ' . $aviso->predio->numero_exterior_2 . ' ' . $aviso->predio->numero_interior . ' ' . $aviso->predio->numero_adicional . ' ' . $aviso->predio->codigo_postal,
+            $aviso->predio->superficie_total_terreno,
+            $aviso->predio->superficie_total_construccion,
+            $aviso->antecedentes->first()->tomo,
+            $aviso->antecedentes->first()->registro,
+            $aviso->numero_escritura,
+            $aviso->predio->valor_catastral,
+            $aviso->valor_isai,
+        ]);
+
+    }
+
+    rewind($handle);
+
+    fclose($handle);
+
+    $progressbar->finish();
+
+    $this->info($count);
+
+});
