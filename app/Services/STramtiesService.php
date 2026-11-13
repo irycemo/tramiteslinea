@@ -157,4 +157,48 @@ class STramtiesService {
 
     }
 
+    public function crearTramitePrimerAviso(string $tipo_servicio, int $servicio_id, string $solicitante, string $nombre_solicitante, int $monto, int $usuario_tramites_linea_id, array $predio, string $fecha_documento, string $nombre_autoridad, int $numero_autoridad):array
+    {
+
+        $response = Http::withToken(config('services.sistema_tramites.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.sistema_tramites.crear_tramite_primer_aviso'),
+                                [
+                                    'tipo_servicio' => $tipo_servicio,
+                                    'servicio_id' => $servicio_id,
+                                    'solicitante' => $solicitante,
+                                    'nombre_solicitante' => $nombre_solicitante,
+                                    'monto' => $monto,
+                                    'usuario_tramites_linea_id' => $usuario_tramites_linea_id,
+                                    'predio' => $predio,
+                                    'fecha_documento' => $fecha_documento,
+                                    'nombre_autoridad' => $nombre_autoridad,
+                                    'numero_autoridad' => $numero_autoridad
+                                ]
+                            );
+
+        if($response->status() !== 200){
+
+            Log::error("Error al crear trámite. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al crear trámite.");
+
+        }else{
+
+            return json_decode($response, true)['data'];
+
+        }
+
+    }
+
 }

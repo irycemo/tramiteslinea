@@ -200,4 +200,39 @@ class SrppService {
 
     }
 
+    public function generarAvisoPreventivoPdf(int $movimiento_registral_id):array
+    {
+
+        $response = Http::withToken(config('services.sistema_rpp.token'))
+                            ->accept('application/json')
+                            ->asForm()
+                            ->post(
+                                config('services.sistema_rpp.generar_aviso_preventivo_pdf'),
+                                [
+                                    'movimiento_registral_id' => $movimiento_registral_id,
+                                ]
+                            );
+
+        if($response->status() !== 200){
+
+            Log::error("Error al generar pdf del aviso preventivo. " . $response);
+
+            $data = json_decode($response, true);
+
+            if(isset($data['error'])){
+
+                throw new GeneralException($data['error']);
+
+            }
+
+            throw new GeneralException("Error al generar pdf del aviso preventivo.");
+
+        }else{
+
+            return json_decode($response, true);
+
+        }
+
+    }
+
 }

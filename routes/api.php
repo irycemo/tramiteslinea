@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\V1\AvisoPreventivoController;
 use App\Http\Controllers\Api\V1\OperarAvisoController;
 use App\Http\Controllers\Api\V1\AcreditarPagoController;
 use App\Http\Controllers\Api\V1\RechazarAvisoController;
@@ -43,6 +44,12 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('generar_aviso_pdf', [GenerarAvisoPdfController::class, 'generarPdf']);
 
     Route::post('desvincular_avaluo', [DesvincularAvaluoController::class, 'desvincularAvaluo']);
+
+    Route::post('consultar_aviso_preventivo', [AvisoPreventivoController::class, 'consultarAvisoPreventivo']);
+
+    Route::post('actualizar_movimiento_registral', [AvisoPreventivoController::class, 'actualizarMovimientoRegistral']);
+
+    Route::post('actualizar_estado', [AvisoPreventivoController::class, 'actualizarEstado']);
 
 });
 

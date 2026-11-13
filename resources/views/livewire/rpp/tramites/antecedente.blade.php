@@ -11,13 +11,13 @@
 </div>
 
 
-<div class="space-y-5 flex gap-3 items-end" wire:loading.class.delay.longest="opacity-50">
+{{-- <div class="space-y-5 flex gap-3 items-end" wire:loading.class.delay.longest="opacity-50">
 
     <div>
 
         <label class="block text-sm font-medium leading-6 text-gray-900" for="distrito">Distrito</label>
 
-        <select id="distrito" class="bg-white rounded-full text-sm w-full" wire:model="distrito" @if($folio_real) disabled @endif>
+        <select id="distrito" class="bg-white rounded text-sm w-full  @error('distrito') border-red-500 @enderror" wire:model="distrito" @if($folio_real) disabled @endif>
 
             <option value="" selected>Seleccione un distrito</option>
             <option value="2" class="truncate">Ururapan</option>
@@ -44,4 +44,4 @@
 
     </x-input-group>
 
-</div>
+</div> --}}

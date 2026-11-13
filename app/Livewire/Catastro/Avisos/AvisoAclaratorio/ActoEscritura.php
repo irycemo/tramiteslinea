@@ -443,7 +443,10 @@ class ActoEscritura extends Component
 
         }
 
-        $this->actos = Constantes::ACTOS;
+        $this->actos = [
+            'AVISO ACLARATORIO',
+            'CANCELACIÓN DE AVISO ANTERIOR'
+        ];
 
         $this->tipos_escritura = Constantes::TIPO_ESCRITURA;
 

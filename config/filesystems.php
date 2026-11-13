@@ -92,6 +92,14 @@ return [
             'throw' => false,
         ],
 
+        'documento_entrada' => [
+            'driver' => 'local',
+            'root' => storage_path('app/documento_entrada'),
+            'url' => env('APP_URL').'/documento_entrada',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
         's3_backups' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),
@@ -124,6 +132,7 @@ return [
         public_path('requerimientos') => storage_path('app/requerimientos'),
         public_path('preguntas') => storage_path('app/preguntas'),
         public_path('caratulas') => storage_path('app/caratulas'),
+        public_path('documento_entrada') => storage_path('app/documento_entrada'),
     ],
 
 ];

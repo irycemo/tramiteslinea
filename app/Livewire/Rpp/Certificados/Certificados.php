@@ -69,12 +69,7 @@ class Certificados extends Component
 
             $data = (new SrppService())->generarCertificadoGravamenPdf($certificado['id']);
 
-            $pdf = base64_decode($data['data']['pdf']);
-
-            return response()->streamDownload(
-                fn () => print($pdf),
-                'certificado_gravamen_folio_real_' . $certificado['folio_real'] . '.pdf'
-            );
+            $this->js('window.open(\' '. $data["data"]["pdf"] . '\', \'_blank\');');
 
         } catch (GeneralException $ex) {
 

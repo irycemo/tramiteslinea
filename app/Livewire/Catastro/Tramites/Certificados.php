@@ -98,7 +98,7 @@ class Certificados extends Component
 
             (new SGCService())->crearRequerimiento($this->observacion, $url, $this->certificadoSeleccionado['id'], auth()->user()->name);
 
-            $this->dispatch('mostrarMensaje', ['success', 'El requerimiento de ingresó con éxito']);
+            $this->dispatch('mostrarMensaje', ['success', 'El requerimiento se ingresó con éxito']);
 
             $this->reset('observacion', 'documento');
 
@@ -138,7 +138,7 @@ class Certificados extends Component
                     'message' => $th->getMessage(),
                     'usuario' => auth()->user()->name,
                     'entidad' => auth()->user()->entidad->nombre(),
-                    'trace' => $th
+                    'trace' => $th->getTraceAsString()
                 ]
             );
 

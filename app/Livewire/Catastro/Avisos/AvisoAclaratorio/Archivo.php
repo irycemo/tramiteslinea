@@ -7,7 +7,6 @@ use App\Jobs\Avisos\IngresarAclaratorioJob;
 use App\Models\Aviso;
 use Livewire\Component;
 use Livewire\Attributes\On;
-use App\Services\SGCService;
 use Livewire\WithFileUploads;
 use App\Constantes\Constantes;
 use Illuminate\Support\Facades\DB;

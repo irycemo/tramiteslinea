@@ -24,6 +24,7 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
         'ruta_caratulas' => 'tramiteslinea/caratulas/',
+        'documento_entrada' => 'tramiteslinea/documento_entrada/',
     ],
 
     'resend' => [
@@ -93,6 +94,7 @@ return [
         'crear_tramite' => env('SISTEMA_TRAMITES_CREAR_TRAMITE'),
         'consultar_servicios' => env('SISTEMA_TRAMITES_CONSULTAR_SERVICIOS'),
         'consultar_tramites' => env('SISTEMA_TRAMITES_CONSULTAR_TRAMITES'),
+        'crear_tramite_primer_aviso' => env('SISTEMA_TRAMITES_CREAR_TRAMITE_PRIMER_AVISO'),
     ],
 
     'sistema_rpp' => [
@@ -102,6 +104,7 @@ return [
         'generar_certificado_gravamen_pdf' => env('SISTEMA_RPP_GENERAR_CERTIFICADO_GRAVAMEN_PDF'),
         'consultar_certificados' => env('SISTEMA_RPP_CONSULTAR_CERTIFICADOS_GRAVAMEN'),
         'consultar_estadisticas' => env('SISTEMA_RPP_CONSULTAR_ESTADISTICAS'),
+        'generar_aviso_preventivo_pdf' => env('SISTEMA_RPP_GENERAR_AVISO_PREVENTIVO_PDF'),
     ],
 
 ];
